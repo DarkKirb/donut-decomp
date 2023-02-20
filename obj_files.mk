@@ -1140,24 +1140,25 @@ $(BUILD_DIR)/asm/src/scn/history/Spotlight.o \
 $(BUILD_DIR)/asm/src/scn/history/Stage.o \
 $(BUILD_DIR)/asm/src/scn/history/StageParts.o \
 \
+$(BUILD_DIR)/asm/src/scn/history/detail/BGM.o \
+$(BUILD_DIR)/asm/src/scn/history/detail/Button.o \
+$(BUILD_DIR)/asm/src/scn/history/detail/Cursor.o \
+$(BUILD_DIR)/asm/src/scn/history/detail/Detail.o \
+$(BUILD_DIR)/asm/src/scn/history/detail/DetailContext.o \
+$(BUILD_DIR)/asm/src/scn/history/detail/GameCheckWindow.o \
+$(BUILD_DIR)/asm/src/scn/history/detail/Message.o \
+$(BUILD_DIR)/asm/src/scn/history/detail/MovieButtonContent.o \
+$(BUILD_DIR)/asm/src/scn/history/detail/MovieWindow.o \
+$(BUILD_DIR)/asm/src/scn/history/detail/MusicCheckWindow.o \
+$(BUILD_DIR)/asm/src/scn/history/detail/PackageButtonContent.o \
+$(BUILD_DIR)/asm/src/scn/history/detail/PackageWindow.o \
+$(BUILD_DIR)/asm/src/scn/history/detail/Product.o \
+$(BUILD_DIR)/asm/src/scn/history/detail/SelectButtonContent.o \
+$(BUILD_DIR)/asm/src/scn/history/detail/Text.o \
+$(BUILD_DIR)/asm/src/scn/history/detail/Year.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/history/detail/BGM_8021124c.o \
-$(BUILD_DIR)/asm/src/scn/history/detail/Button_80211260.o \
-$(BUILD_DIR)/asm/src/scn/history/detail/Cursor_802114dc.o \
-$(BUILD_DIR)/asm/src/scn/history/detail/Detail_802117d0.o \
-$(BUILD_DIR)/asm/src/scn/history/detail/DetailContext_80214b18.o \
-$(BUILD_DIR)/asm/src/scn/history/detail/GameCheckWindow_80214cb0.o \
-$(BUILD_DIR)/asm/src/scn/history/detail/Message_802157cc.o \
-$(BUILD_DIR)/asm/src/scn/history/detail/MovieButtonContent_802158cc.o \
-$(BUILD_DIR)/asm/src/scn/history/detail/MovieWindow_80215a38.o \
-$(BUILD_DIR)/asm/src/scn/history/detail/MusicCheckWindow_802174d4.o \
-$(BUILD_DIR)/asm/src/scn/history/detail/PackageButtonContent_80217fb4.o \
-$(BUILD_DIR)/asm/src/scn/history/detail/PackageWindow_80218120.o \
-$(BUILD_DIR)/asm/src/scn/history/detail/Product_80219eac.o \
-$(BUILD_DIR)/asm/src/scn/history/detail/SelectButtonContent_8021a3f4.o \
-$(BUILD_DIR)/asm/src/scn/history/detail/Text_8021a7d8.o \
-$(BUILD_DIR)/asm/src/scn/history/detail/Year_8021b2e0.o \
 $(BUILD_DIR)/asm/src/scn/history/effect/Table_8021b648.o \
 $(BUILD_DIR)/asm/src/scn/init/SceneInit_8021b7d4.o \
 $(BUILD_DIR)/asm/src/scn/packagelist/Main_8021c05c.o \
@@ -2979,9 +2980,6 @@ $(BUILD_DIR)/asm/src/util/SIntAABBox_80405b68.o \
 $(BUILD_DIR)/asm/src/util/StateChanger_80405cd0.o \
 $(BUILD_DIR)/asm/src/util/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/util/UIntAABBox_8040603c.o \
-$(BUILD_DIR)/asm/src/scn/history/detail/Detail_80560170.o \
-$(BUILD_DIR)/asm/src/scn/history/detail/MovieWindow_80560180.o \
-$(BUILD_DIR)/asm/src/scn/history/detail/PackageWindow_805601a8.o \
 $(BUILD_DIR)/asm/src/scn/history/effect/Table_805601f0.o \
 $(BUILD_DIR)/asm/src/scn/init/SceneInit_805601f8.o \
 $(BUILD_DIR)/asm/src/scn/step/GridPos_80560200.o \

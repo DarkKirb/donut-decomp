@@ -2615,22 +2615,23 @@ $(BUILD_DIR)/asm/src/scn/step/hero/interference/StateSpaceJump.o \
 $(BUILD_DIR)/asm/src/scn/step/hero/interference/StateVacuumReceive.o \
 $(BUILD_DIR)/asm/src/scn/step/hero/interference/StateVomited.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/hero/damage/StateAbilityCrash.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/damage/StateBodyHit.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/damage/StateExtreme.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/damage/StateFireBlock.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/damage/StateFireLv2.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/damage/StateFireLv3.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/damage/StateGuard.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/damage/StateHover.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/damage/StateSparkLv1.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/damage/StateSparkLv2.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/damage/StateSparkLv3.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/damage/StateSpine.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/damage/StateSuperTeamAttack.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/damage/Utility.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/hero/damage/StateAbilityCrash_80375580.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/damage/StateBodyHit_80375878.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/damage/StateExtreme_80375ad8.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/damage/StateFireBlock_80376020.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/damage/StateFireLv2_80376644.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/damage/StateFireLv3_80376b04.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/damage/StateGuard_80376fd4.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/damage/StateHover_80377244.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/damage/StateSparkLv1_803774f8.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/damage/StateSparkLv2_803776e0.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/damage/StateSparkLv3_80377bac.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/damage/StateSpine_80377f44.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/damage/StateSuperTeamAttack_80378270.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/damage/Utility_803784f8.o \
 $(BUILD_DIR)/asm/src/scn/step/hero/gimmick/StateAllStageClear_803789a4.o \
 $(BUILD_DIR)/asm/src/scn/step/hero/gimmick/StateAreaMapDemoFirstPlay_80378cb0.o \
 $(BUILD_DIR)/asm/src/scn/step/hero/gimmick/StateChallengeBattleLose_80378ed8.o \
@@ -3118,19 +3119,6 @@ $(BUILD_DIR)/asm/src/util/StateChanger_80405cd0.o \
 $(BUILD_DIR)/asm/src/util/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/util/UIntAABBox_8040603c.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/hero/damage/StateAbilityCrash_805632a0.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/damage/StateBodyHit_805632b0.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/damage/StateExtreme_805632b8.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/damage/StateFireBlock_805632d0.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/damage/StateFireLv2_80563300.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/damage/StateFireLv3_80563318.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/damage/StateGuard_80563330.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/damage/StateHover_80563338.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/damage/StateSparkLv1_80563340.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/damage/StateSparkLv2_80563348.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/damage/StateSparkLv3_80563360.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/damage/StateSpine_80563378.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/damage/StateSuperTeamAttack_80563398.o \
 $(BUILD_DIR)/asm/src/scn/step/hero/gimmick/Utility_805633a0.o \
 $(BUILD_DIR)/asm/src/scn/step/hero/gimmick/StateChallengeBattleLose_805633a8.o \
 $(BUILD_DIR)/asm/src/scn/step/hero/gimmick/StateChallengeBattleWinPre_805633d0.o \

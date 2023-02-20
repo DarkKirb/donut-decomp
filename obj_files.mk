@@ -2002,16 +2002,17 @@ $(BUILD_DIR)/asm/src/scn/step/enemy/pierce/StateFlyPursuit.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/pierce/StateFlySinCurve.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/pierce/StateFlyWait.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/enemy/poppybrojr/AddOnMint.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/poppybrojr/BrainMoveAttack.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/poppybrojr/BrainWaitAttack.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/poppybrojr/CharaParam.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/poppybrojr/Custom.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/poppybrojr/ModelDesc.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/poppybrojr/StateMove.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/poppybrojr/StateThrow.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/enemy/poppybrojr/AddOnMint_802d11f4.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/poppybrojr/BrainMoveAttack_802d156c.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/poppybrojr/BrainWaitAttack_802d1634.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/poppybrojr/CharaParam_802d167c.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/poppybrojr/Custom_802d1724.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/poppybrojr/ModelDesc_802d1d28.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/poppybrojr/StateMove_802d1ff8.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/poppybrojr/StateThrow_802d25a0.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/poppybrojrbomb/BrainShot_802d274c.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/poppybrojrbomb/CharaParam_802d2830.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/poppybrojrbomb/Custom_802d28d0.o \
@@ -3051,10 +3052,6 @@ $(BUILD_DIR)/asm/src/util/StateChanger_80405cd0.o \
 $(BUILD_DIR)/asm/src/util/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/util/UIntAABBox_8040603c.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/enemy/poppybrojr/CharaParam_80561f50.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/poppybrojr/Custom_80561f60.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/poppybrojr/ModelDesc_80561f68.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/poppybrojr/StateMove_80561f90.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/poppybrojrbomb/Custom_80561fa8.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/poppybrojrbomb/StateShot_80561fb0.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/puppetdee/CharaParam_80561fd0.o \

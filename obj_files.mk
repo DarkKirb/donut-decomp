@@ -3164,16 +3164,17 @@ $(BUILD_DIR)/asm/src/sfx/Utility.o \
 $(BUILD_DIR)/asm/src/sfx/Warp.o \
 $(BUILD_DIR)/asm/src/sfx/Wipe.o \
 \
+$(BUILD_DIR)/asm/src/snd/AddOnMint.o \
+$(BUILD_DIR)/asm/src/snd/BgmPlayer.o \
+$(BUILD_DIR)/asm/src/snd/MintSERequestor.o \
+$(BUILD_DIR)/asm/src/snd/SERequestor.o \
+$(BUILD_DIR)/asm/src/snd/SoundManager.o \
+$(BUILD_DIR)/asm/src/snd/SoundSystem.o \
+$(BUILD_DIR)/asm/src/snd/SystemSERequestor.o \
+$(BUILD_DIR)/asm/src/snd/WaveHandle.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/snd/AddOnMint_8040257c.o \
-$(BUILD_DIR)/asm/src/snd/BgmPlayer_80402654.o \
-$(BUILD_DIR)/asm/src/snd/MintSERequestor_80402a3c.o \
-$(BUILD_DIR)/asm/src/snd/SERequestor_80402a6c.o \
-$(BUILD_DIR)/asm/src/snd/SoundManager_80402ee0.o \
-$(BUILD_DIR)/asm/src/snd/SoundSystem_80403638.o \
-$(BUILD_DIR)/asm/src/snd/SystemSERequestor_80403c74.o \
-$(BUILD_DIR)/asm/src/snd/WaveHandle_80403d0c.o \
 $(BUILD_DIR)/asm/src/storage/BackupData_8040429c.o \
 $(BUILD_DIR)/asm/src/storage/BackupFileData2_804042fc.o \
 $(BUILD_DIR)/asm/src/storage/GhostData_804047e4.o \
@@ -3193,8 +3194,6 @@ $(BUILD_DIR)/asm/src/util/StateChanger_80405cd0.o \
 $(BUILD_DIR)/asm/src/util/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/util/UIntAABBox_8040603c.o \
 \
-$(BUILD_DIR)/asm/src/snd/BgmPlayer_80564358.o \
-$(BUILD_DIR)/asm/src/snd/WaveHandle_80564360.o \
 $(BUILD_DIR)/asm/src/storage/StorageManager_80564368.o \
 $(BUILD_DIR)/asm/src/storage/VolatileData2_80564370.o \
 $(BUILD_DIR)/asm/src/util/Alarm_80564378.o \

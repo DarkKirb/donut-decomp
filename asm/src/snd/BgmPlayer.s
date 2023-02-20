@@ -315,3 +315,15 @@ volumeFadeForPauseMenuClosed__Q23snd9BgmPlayerFv:
 volumeFade__Q23snd9BgmPlayerFfi:
 /* 80402A34 003FE874  38 63 00 08 */	addi r3, r3, 0x8
 /* 80402A38 003FE878  4B FF FF D8 */	b SetVolume__Q34nw4r3snd11SoundHandleFfi
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@49146"
+"@49146":
+
+	.4byte 0x3F800000
+
+.global "@49208_8056435C"
+"@49208_8056435C":
+
+	.4byte 0x3ECCCCCD

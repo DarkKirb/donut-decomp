@@ -465,3 +465,11 @@ __vt__Q53scn4step5enemy4kabu9StateMove:
 "@55553":
 
 	.4byte 0x3E4CCCCD
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@56136_80561B40"
+"@56136_80561B40":
+
+	.4byte 0x3DCCCCCD
+	.4byte 0

@@ -1854,26 +1854,27 @@ $(BUILD_DIR)/asm/src/scn/step/enemy/juckle/ModelDesc.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/juckle/StateAttack.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/juckle/StateFollow.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/enemy/kabu/AddOnMint.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/kabu/BrainGrandLowper.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/kabu/BrainJump.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/kabu/BrainMoveAround.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/kabu/BrainMoveStraight.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/kabu/BrainTeleport.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/kabu/BrainTeleportRepeat.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/kabu/CharaParam.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/kabu/Custom.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/kabu/ModelDesc.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/kabu/StateFall.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/kabu/StateGrandLowperAppear.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/kabu/StateGrandLowperEscape.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/kabu/StateGrandLowperEscapeStart.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/kabu/StateJump.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/kabu/StateMove.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/kabu/StateMoveAround.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/kabu/StateTeleport.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/enemy/kabu/AddOnMint_802bc190.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/kabu/BrainGrandLowper_802bc5c4.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/kabu/BrainJump_802bc708.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/kabu/BrainMoveAround_802bc74c.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/kabu/BrainMoveStraight_802bc8c4.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/kabu/BrainTeleport_802bc990.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/kabu/BrainTeleportRepeat_802bca80.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/kabu/CharaParam_802bcbec.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/kabu/Custom_802bcc6c.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/kabu/ModelDesc_802bcdc8.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/kabu/StateFall_802bcebc.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/kabu/StateGrandLowperAppear_802bd0d0.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/kabu/StateGrandLowperEscape_802bd34c.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/kabu/StateGrandLowperEscapeStart_802bd584.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/kabu/StateJump_802bd6b8.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/kabu/StateMove_802bdbf0.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/kabu/StateMoveAround_802be048.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/kabu/StateTeleport_802be464.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/knucklejoe/AddOnMint_802bec5c.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/knucklejoe/BrainWalk_802bf0a0.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/knucklejoe/BrainWalkStepBack_802bf168.o \
@@ -3037,14 +3038,6 @@ $(BUILD_DIR)/asm/src/util/StateChanger_80405cd0.o \
 $(BUILD_DIR)/asm/src/util/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/util/UIntAABBox_8040603c.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/enemy/kabu/BrainGrandLowper_80561b08.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/kabu/CharaParam_80561b10.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/kabu/StateFall_80561b18.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/kabu/StateGrandLowperAppear_80561b20.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/kabu/StateJump_80561b38.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/kabu/StateMove_80561b40.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/kabu/StateMoveAround_80561b48.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/kabu/StateTeleport_80561b50.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/knucklejoe/AddOnMint_80561b70.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/knucklejoe/Custom_80561b78.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/knucklejoe/ModelDesc_80561b90.o \

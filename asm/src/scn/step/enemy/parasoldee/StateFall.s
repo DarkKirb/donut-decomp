@@ -282,3 +282,21 @@ __vt__Q53scn4step5enemy10parasoldee9StateFall:
 	.4byte procConstraint__Q43scn4step5enemy9StateBaseFv
 	.4byte procFixPos__Q53scn4step5enemy10parasoldee9StateFallFv
 	.4byte procObjCollReact__Q43scn4step5enemy9StateBaseFv
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@56052_80561E70"
+"@56052_80561E70":
+
+	.4byte 0
+
+.global "@56053_80561E74"
+"@56053_80561E74":
+
+	.4byte 0xBF800000
+
+.global "@56054_80561E78"
+"@56054_80561E78":
+
+	.4byte 0x3C23D70A
+	.4byte 0

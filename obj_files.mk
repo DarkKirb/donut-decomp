@@ -1971,18 +1971,19 @@ $(BUILD_DIR)/asm/src/scn/step/enemy/parasol/ModelDesc.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/parasol/StateLink.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/parasol/StateRise.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/enemy/parasoldee/BrainNoseDive.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/parasoldee/BrainRelease.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/parasoldee/BrainWalk.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/parasoldee/CharaParam.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/parasoldee/Custom.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/parasoldee/StateFall.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/parasoldee/StateLanding.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/parasoldee/StateNoseDive.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/parasoldee/StateParasolFall.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/parasoldee/StateWalkStraight.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/enemy/parasoldee/BrainNoseDive_802cb6e0.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/parasoldee/BrainRelease_802cb85c.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/parasoldee/BrainWalk_802cb9b0.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/parasoldee/CharaParam_802cba74.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/parasoldee/Custom_802cbafc.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/parasoldee/StateFall_802cc554.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/parasoldee/StateLanding_802cc8a0.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/parasoldee/StateNoseDive_802cccf4.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/parasoldee/StateParasolFall_802cd104.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/waddledee/StateWalkStraight_802cd458.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/parasoldoo/BrainNoseDive_802cd80c.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/parasoldoo/BrainRelease_802cd988.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/parasoldoo/BrainWalk_802cdadc.o \
@@ -3048,12 +3049,6 @@ $(BUILD_DIR)/asm/src/util/StateChanger_80405cd0.o \
 $(BUILD_DIR)/asm/src/util/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/util/UIntAABBox_8040603c.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/enemy/parasoldee/Custom_80561e68.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/parasoldee/StateFall_80561e70.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/parasoldee/StateLanding_80561e80.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/parasoldee/StateNoseDive_80561e88.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/parasoldee/StateParasolFall_80561e98.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/waddledee/StateWalkStraight_80561eb0.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/parasoldoo/Custom_80561eb8.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/parasoldoo/StateFall_80561ec0.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/parasoldoo/StateLanding_80561ed0.o \

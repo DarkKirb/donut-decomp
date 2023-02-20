@@ -43,3 +43,11 @@ lbl_802C9DD0:
 /* 802C9DEC 002C5C2C  7C 08 03 A6 */	mtlr r0
 /* 802C9DF0 002C5C30  38 21 00 B0 */	addi r1, r1, 0xb0
 /* 802C9DF4 002C5C34  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@48778_80561DD8"
+"@48778_80561DD8":
+
+	.4byte 0x3ECCCCCD
+	.4byte 0

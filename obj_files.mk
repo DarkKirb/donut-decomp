@@ -1952,19 +1952,20 @@ $(BUILD_DIR)/asm/src/scn/step/enemy/nruff/StateStop.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/nruff/StateStopAir.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/nruff/StateWalk.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/enemy/owgulf/AddOnMint.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/owgulf/BrainFlyAround.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/owgulf/BrainFlyStraight.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/owgulf/BrainFlyWait.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/owgulf/CharaParam.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/owgulf/Custom.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/owgulf/ModelDesc.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/owgulf/StateAttack1Way.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/owgulf/StateAttack3Way.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/owgulf/StateFlyStraight.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/owgulf/StateFlyWaitFix.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/enemy/owgulf/AddOnMint_802c97f0.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/owgulf/BrainFlyAround_802c9acc.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/owgulf/BrainFlyStraight_802c9cd8.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/owgulf/BrainFlyWait_802c9d20.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/owgulf/CharaParam_802c9d68.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/owgulf/Custom_802c9df8.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/owgulf/ModelDesc_802c9f18.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/owgulf/StateAttack1Way_802ca004.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/owgulf/StateAttack3Way_802ca36c.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/parasol/StateFlyStraight_802ca72c.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/owgulf/StateFlyWaitFix_802ca940.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/parasol/BrainRise_802caa14.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/parasol/CharaParam_802caaf8.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/parasol/Custom_802cab8c.o \
@@ -3046,11 +3047,6 @@ $(BUILD_DIR)/asm/src/util/StateChanger_80405cd0.o \
 $(BUILD_DIR)/asm/src/util/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/util/UIntAABBox_8040603c.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/enemy/owgulf/CharaParam_80561dd8.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/owgulf/StateAttack1Way_80561de0.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/owgulf/StateAttack3Way_80561df8.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/parasol/StateFlyStraight_80561e08.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/owgulf/StateFlyWaitFix_80561e18.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/parasol/Custom_80561e20.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/parasol/StateLink_80561e38.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/parasol/StateRise_80561e40.o \

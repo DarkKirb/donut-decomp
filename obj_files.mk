@@ -2041,14 +2041,15 @@ $(BUILD_DIR)/asm/src/scn/step/enemy/rocky/StateWalk.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/rocky/StateWalkEnd.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/rocky/StateWalkStart.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/enemy/rollball/BrainMove.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/rollball/CharaParam.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/rollball/Custom.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/rollball/ModelDesc.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/rollball/StateDamage.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/rollball/StateMove.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/enemy/rollball/BrainMove_802d608c.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/rollball/CharaParam_802d6170.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/rollball/Custom_802d6228.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/rollball/ModelDesc_802d662c.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/rollball/StateDamage_802d67b4.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/rollball/StateMove_802d69ec.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/sandbag/CharaParam_802d87f8.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/sandbag/Custom_802d8880.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/sandbag/ModelDesc_802d9188.o \
@@ -3055,9 +3056,6 @@ $(BUILD_DIR)/asm/src/util/StateChanger_80405cd0.o \
 $(BUILD_DIR)/asm/src/util/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/util/UIntAABBox_8040603c.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/enemy/rollball/CharaParam_80562040.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/rollball/Custom_80562050.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/rollball/StateMove_80562060.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/sandbag/Custom_805620c0.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/scarfy/ModelDesc_805620d8.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/scarfy/StateAngerChase_805620e0.o \

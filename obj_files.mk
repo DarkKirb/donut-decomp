@@ -2328,13 +2328,15 @@ $(BUILD_DIR)/asm/src/scn/step/gimmick/consecutivebattle/Manager.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/cutropestep/CutRopeStep.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/cutropestep/Manager.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/gimmick/door/Door.o \
+$(BUILD_DIR)/asm/src/scn/step/gimmick/door/Manager.o \
+$(BUILD_DIR)/asm/src/scn/step/gimmick/door/Result.o \
+\
+$(BUILD_DIR)/asm/src/scn/step/gimmick/enemylist/EnemyList.o \
+$(BUILD_DIR)/asm/src/scn/step/gimmick/enemylist/Manager.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/door/Door_8030d910.o \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/door/Manager_8030e550.o \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/door/Result_8030ea10.o \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/enemylist/EnemyList_8030ea60.o \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/enemylist/Manager_8030eb08.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/ghost/Ghost_8030f2d0.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/ghost/Manager_8030fb9c.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/goalflag/GoalFlag_8030fd90.o \
@@ -3087,8 +3089,6 @@ $(BUILD_DIR)/asm/src/util/StateChanger_80405cd0.o \
 $(BUILD_DIR)/asm/src/util/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/util/UIntAABBox_8040603c.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/door/Door_80562870.o \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/door/Result_80562888.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/ghost/Ghost_80562890.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/goalflag/GoalFlag_805628c0.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/guideboard/ActionAttack_805628c8.o \

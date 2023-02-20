@@ -23,3 +23,11 @@ __ct__Q53scn4step7gimmick4door6ResultFv:
 /* 8030EA54 0030A894  7C 08 03 A6 */	mtlr r0
 /* 8030EA58 0030A898  38 21 00 10 */	addi r1, r1, 0x10
 /* 8030EA5C 0030A89C  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@49653_80562888"
+"@49653_80562888":
+
+	.4byte 0
+	.4byte 0

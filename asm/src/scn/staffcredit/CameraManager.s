@@ -344,3 +344,15 @@ lbl_803F90DC:
 /* 803F90E4 003F4F24  7C 08 03 A6 */	mtlr r0
 /* 803F90E8 003F4F28  38 21 00 10 */	addi r1, r1, 0x10
 /* 803F90EC 003F4F2C  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@54825_80564250"
+"@54825_80564250":
+
+	.4byte 0
+
+.global "@54849"
+"@54849":
+
+	.4byte 0x3F800000

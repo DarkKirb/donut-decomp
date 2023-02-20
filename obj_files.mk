@@ -3129,17 +3129,18 @@ $(BUILD_DIR)/asm/src/scn/grandmenu/menu/Item.o \
 $(BUILD_DIR)/asm/src/scn/grandmenu/menu/Menu.o \
 $(BUILD_DIR)/asm/src/scn/grandmenu/menu/PlayerWindow.o \
 \
+$(BUILD_DIR)/asm/src/scn/staffcredit/AddOnMint.o \
+$(BUILD_DIR)/asm/src/scn/staffcredit/BgManager.o \
+$(BUILD_DIR)/asm/src/scn/staffcredit/CameraManager.o \
+$(BUILD_DIR)/asm/src/scn/staffcredit/Commander.o \
+$(BUILD_DIR)/asm/src/scn/staffcredit/Component.o \
+$(BUILD_DIR)/asm/src/scn/staffcredit/MintCommander.o \
+$(BUILD_DIR)/asm/src/scn/staffcredit/SceneStaffCredit.o \
+$(BUILD_DIR)/asm/src/scn/staffcredit/StaffRoll.o \
+$(BUILD_DIR)/asm/src/scn/staffcredit/StepMain.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/staffcredit/AddOnMint_803f7fc8.o \
-$(BUILD_DIR)/asm/src/scn/staffcredit/BgManager_803f8874.o \
-$(BUILD_DIR)/asm/src/scn/staffcredit/CameraManager_803f8c14.o \
-$(BUILD_DIR)/asm/src/scn/staffcredit/Commander_803f90f0.o \
-$(BUILD_DIR)/asm/src/scn/staffcredit/Component_803f95e0.o \
-$(BUILD_DIR)/asm/src/scn/staffcredit/MintCommander_803f9b58.o \
-$(BUILD_DIR)/asm/src/scn/staffcredit/SceneStaffCredit_803f9b7c.o \
-$(BUILD_DIR)/asm/src/scn/staffcredit/StaffRoll_803f9fd8.o \
-$(BUILD_DIR)/asm/src/scn/staffcredit/StepMain_803fc074.o \
 $(BUILD_DIR)/asm/src/seq/ContextStory_803fcb20.o \
 $(BUILD_DIR)/asm/src/seq/ISequence_803fcbdc.o \
 $(BUILD_DIR)/asm/src/seq/SequenceChallengeRoot_803fcc4c.o \
@@ -3190,10 +3191,6 @@ $(BUILD_DIR)/asm/src/util/StateChanger_80405cd0.o \
 $(BUILD_DIR)/asm/src/util/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/util/UIntAABBox_8040603c.o \
 \
-$(BUILD_DIR)/asm/src/scn/staffcredit/BgManager_80564248.o \
-$(BUILD_DIR)/asm/src/scn/staffcredit/CameraManager_80564250.o \
-$(BUILD_DIR)/asm/src/scn/staffcredit/Commander_80564258.o \
-$(BUILD_DIR)/asm/src/scn/staffcredit/StaffRoll_80564278.o \
 $(BUILD_DIR)/asm/src/seq/SequenceStep_805642a0.o \
 $(BUILD_DIR)/asm/src/sfx/Fade_805642a8.o \
 $(BUILD_DIR)/asm/src/sfx/FullScreenModel_805642d0.o \

@@ -2412,10 +2412,11 @@ $(BUILD_DIR)/asm/src/scn/step/gimmick/warpstarcontinue/Manager.o \
 \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/waterflow/WaterFlow.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/gimmick/zoneswitch/Manager.o \
+$(BUILD_DIR)/asm/src/scn/step/gimmick/zoneswitch/ZoneSwitch.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/zoneswitch/Manager_8032b1d0.o \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/zoneswitch/ZoneSwitch_8032b4b0.o \
 $(BUILD_DIR)/asm/src/scn/step/hero/AbilityBase_8032b780.o \
 $(BUILD_DIR)/asm/src/scn/step/hero/AbilityCustomBase_8032b7ec.o \
 $(BUILD_DIR)/asm/src/scn/step/hero/AbilityKindUtil_8032b808.o \

@@ -157,3 +157,11 @@ __vt__Q53scn4step4boss12creditdedede6Custom:
 	.4byte onUpdateUseGPU__Q43scn4step4boss10CustomBaseFv
 	.4byte getFirstOffs__Q43scn4step4boss10CustomBaseCFv
 	.4byte 0
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@56572_80560650"
+"@56572_80560650":
+
+	.4byte 0x3FCCCCCD
+	.4byte 0

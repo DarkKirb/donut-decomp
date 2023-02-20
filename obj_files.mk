@@ -1302,13 +1302,14 @@ $(BUILD_DIR)/asm/src/scn/step/boss/common/StateMoveJoint.o \
 $(BUILD_DIR)/asm/src/scn/step/boss/common/StateVacuumReceive.o \
 $(BUILD_DIR)/asm/src/scn/step/boss/common/StateWait.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/boss/creditdedede/Custom.o \
+$(BUILD_DIR)/asm/src/scn/step/boss/creditdedede/ModelDesc.o \
+$(BUILD_DIR)/asm/src/scn/step/boss/creditdedede/StateHide.o \
+$(BUILD_DIR)/asm/src/scn/step/boss/creditdedede/StateHoverFar.o \
+$(BUILD_DIR)/asm/src/scn/step/boss/creditdedede/StatePraise.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/boss/creditdedede/Custom_80247b0c.o \
-$(BUILD_DIR)/asm/src/scn/step/boss/creditdedede/ModelDesc_80247c58.o \
-$(BUILD_DIR)/asm/src/scn/step/boss/creditdedede/StateHide_80247d3c.o \
-$(BUILD_DIR)/asm/src/scn/step/boss/creditdedede/StateHoverFar_80247ea4.o \
-$(BUILD_DIR)/asm/src/scn/step/boss/creditdedede/StatePraise_80248268.o \
 $(BUILD_DIR)/asm/src/scn/step/boss/creditdee/Custom_8024855c.o \
 $(BUILD_DIR)/asm/src/scn/step/boss/creditdee/ModelDesc_802486a8.o \
 $(BUILD_DIR)/asm/src/scn/step/boss/creditdee/StateFlightFar_8024891c.o \
@@ -2989,9 +2990,6 @@ $(BUILD_DIR)/asm/src/util/SIntAABBox_80405b68.o \
 $(BUILD_DIR)/asm/src/util/StateChanger_80405cd0.o \
 $(BUILD_DIR)/asm/src/util/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/util/UIntAABBox_8040603c.o \
-$(BUILD_DIR)/asm/src/scn/step/boss/creditdedede/Custom_80560650.o \
-$(BUILD_DIR)/asm/src/scn/step/boss/creditdedede/StateHoverFar_80560658.o \
-$(BUILD_DIR)/asm/src/scn/step/boss/creditdedede/StatePraise_80560660.o \
 $(BUILD_DIR)/asm/src/scn/step/boss/creditdee/Custom_80560668.o \
 $(BUILD_DIR)/asm/src/scn/step/boss/creditdee/ModelDesc_80560670.o \
 $(BUILD_DIR)/asm/src/scn/step/boss/creditdee/StateFlightFar_80560678.o \

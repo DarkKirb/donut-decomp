@@ -224,7 +224,7 @@ procMove__Q53scn4step5enemy5sheld12StateSmashedFv:
 /* 802DF5CC 002DB40C  7C 08 02 A6 */	mflr r0
 /* 802DF5D0 002DB410  90 01 00 24 */	stw r0, 0x24(r1)
 /* 802DF5D4 002DB414  39 61 00 20 */	addi r11, r1, 0x20
-/* 802DF5D8 002DB418  4B D2 7D 6D */	bl lbl_80007344
+/* 802DF5D8 002DB418  4B D2 7D 6D */	bl _savegpr_29
 /* 802DF5DC 002DB41C  7C 7D 1B 78 */	mr r29, r3
 /* 802DF5E0 002DB420  4B E2 12 01 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 802DF5E4 002DB424  4B FA 8A A1 */	bl param__Q43scn4step5enemy5EnemyCFv
@@ -242,7 +242,7 @@ procMove__Q53scn4step5enemy5sheld12StateSmashedFv:
 /* 802DF614 002DB454  38 BE 00 54 */	addi r5, r30, 0x54
 /* 802DF618 002DB458  4B EB BF 11 */	bl airDecelFall__Q24gobj4MoveFRCQ24gobj14MoveParamDecelRCQ24gobj13MoveParamFall
 /* 802DF61C 002DB45C  39 61 00 20 */	addi r11, r1, 0x20
-/* 802DF620 002DB460  4B D2 7D 71 */	bl lbl_80007390
+/* 802DF620 002DB460  4B D2 7D 71 */	bl _restgpr_29
 /* 802DF624 002DB464  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802DF628 002DB468  7C 08 03 A6 */	mtlr r0
 /* 802DF62C 002DB46C  38 21 00 20 */	addi r1, r1, 0x20
@@ -254,7 +254,7 @@ procFixPos__Q53scn4step5enemy5sheld12StateSmashedFv:
 /* 802DF638 002DB478  7C 08 02 A6 */	mflr r0
 /* 802DF63C 002DB47C  90 01 00 74 */	stw r0, 0x74(r1)
 /* 802DF640 002DB480  39 61 00 70 */	addi r11, r1, 0x70
-/* 802DF644 002DB484  4B D2 7D 01 */	bl lbl_80007344
+/* 802DF644 002DB484  4B D2 7D 01 */	bl _savegpr_29
 /* 802DF648 002DB488  7C 7F 1B 78 */	mr r31, r3
 /* 802DF64C 002DB48C  4B E2 11 95 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 802DF650 002DB490  4B FA 8A 75 */	bl move__Q43scn4step5enemy5EnemyFv
@@ -368,7 +368,7 @@ lbl_802DF78C:
 .global lbl_802DF7C8
 lbl_802DF7C8:
 /* 802DF7C8 002DB608  39 61 00 70 */	addi r11, r1, 0x70
-/* 802DF7CC 002DB60C  4B D2 7B C5 */	bl lbl_80007390
+/* 802DF7CC 002DB60C  4B D2 7B C5 */	bl _restgpr_29
 /* 802DF7D0 002DB610  80 01 00 74 */	lwz r0, 0x74(r1)
 /* 802DF7D4 002DB614  7C 08 03 A6 */	mtlr r0
 /* 802DF7D8 002DB618  38 21 00 70 */	addi r1, r1, 0x70

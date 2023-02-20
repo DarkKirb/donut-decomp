@@ -29,7 +29,7 @@ lbl_801A1DE4:
 /* 801A1E00 0019DC40  7C 08 02 A6 */	mflr r0
 /* 801A1E04 0019DC44  90 01 00 24 */	stw r0, 0x24(r1)
 /* 801A1E08 0019DC48  39 61 00 20 */	addi r11, r1, 0x20
-/* 801A1E0C 0019DC4C  4B E6 55 39 */	bl lbl_80007344
+/* 801A1E0C 0019DC4C  4B E6 55 39 */	bl _savegpr_29
 /* 801A1E10 0019DC50  7C 7D 1B 78 */	mr r29, r3
 /* 801A1E14 0019DC54  88 0D EE 51 */	lbz r0, "@GUARD@t_slot__Q33hel4mint30@unnamed@AddOnMathVector3_cpp@FUl@objs"@sda21(r13)
 /* 801A1E18 0019DC58  7C 00 07 74 */	extsb r0, r0
@@ -57,7 +57,7 @@ lbl_801A1E4C:
 /* 801A1E60 0019DCA0  38 03 53 48 */	addi r0, r3, "@LOCAL@t_slot__Q33hel4mint30@unnamed@AddOnMathVector3_cpp@FUl@objs"@l
 /* 801A1E64 0019DCA4  7C 60 22 14 */	add r3, r0, r4
 /* 801A1E68 0019DCA8  39 61 00 20 */	addi r11, r1, 0x20
-/* 801A1E6C 0019DCAC  4B E6 55 25 */	bl lbl_80007390
+/* 801A1E6C 0019DCAC  4B E6 55 25 */	bl _restgpr_29
 /* 801A1E70 0019DCB0  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 801A1E74 0019DCB4  7C 08 03 A6 */	mtlr r0
 /* 801A1E78 0019DCB8  38 21 00 20 */	addi r1, r1, 0x20
@@ -120,7 +120,7 @@ SetXYZ__Q33hel4mint16AddOnMathVector3Ffff:
 /* 801A1F34 0019DD74  7C 08 02 A6 */	mflr r0
 /* 801A1F38 0019DD78  90 01 00 24 */	stw r0, 0x24(r1)
 /* 801A1F3C 0019DD7C  39 61 00 20 */	addi r11, r1, 0x20
-/* 801A1F40 0019DD80  4B E6 53 6D */	bl lbl_800072AC
+/* 801A1F40 0019DD80  4B E6 53 6D */	bl _savefpr_29
 /* 801A1F44 0019DD84  FF A0 08 90 */	fmr f29, f1
 /* 801A1F48 0019DD88  FF C0 10 90 */	fmr f30, f2
 /* 801A1F4C 0019DD8C  FF E0 18 90 */	fmr f31, f3
@@ -131,7 +131,7 @@ SetXYZ__Q33hel4mint16AddOnMathVector3Ffff:
 /* 801A1F60 0019DDA0  4B FF FE 55 */	bl "t_obj__Q33hel4mint30@unnamed@AddOnMathVector3_cpp@Fv"
 /* 801A1F64 0019DDA4  D3 E3 00 08 */	stfs f31, 0x8(r3)
 /* 801A1F68 0019DDA8  39 61 00 20 */	addi r11, r1, 0x20
-/* 801A1F6C 0019DDAC  4B E6 53 8D */	bl lbl_800072F8
+/* 801A1F6C 0019DDAC  4B E6 53 8D */	bl _restfpr_29
 /* 801A1F70 0019DDB0  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 801A1F74 0019DDB4  7C 08 03 A6 */	mtlr r0
 /* 801A1F78 0019DDB8  38 21 00 20 */	addi r1, r1, 0x20

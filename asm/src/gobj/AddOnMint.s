@@ -607,7 +607,7 @@ Func__Q34gobj9AddOnMint34Mint_SetScale_0$53556AddOnMint_cppFRQ26mintvm13MintFunc
 /* 80198778 001945B8  7C 08 02 A6 */	mflr r0
 /* 8019877C 001945BC  90 01 00 24 */	stw r0, 0x24(r1)
 /* 80198780 001945C0  39 61 00 20 */	addi r11, r1, 0x20
-/* 80198784 001945C4  4B E6 EB C1 */	bl lbl_80007344
+/* 80198784 001945C4  4B E6 EB C1 */	bl _savegpr_29
 /* 80198788 001945C8  7C 7D 1B 78 */	mr r29, r3
 /* 8019878C 001945CC  38 80 00 02 */	li r4, 0x2
 /* 80198790 001945D0  4B FF FE 65 */	bl internal_getArg_addr__Q26mintvm13MintFuncProxyCFUi
@@ -624,7 +624,7 @@ Func__Q34gobj9AddOnMint34Mint_SetScale_0$53556AddOnMint_cppFRQ26mintvm13MintFunc
 /* 801987BC 001945FC  C0 7E 00 00 */	lfs f3, 0x0(r30)
 /* 801987C0 00194600  48 00 26 91 */	bl SetScale__Q24gobj9MintModelFfff
 /* 801987C4 00194604  39 61 00 20 */	addi r11, r1, 0x20
-/* 801987C8 00194608  4B E6 EB C9 */	bl lbl_80007390
+/* 801987C8 00194608  4B E6 EB C9 */	bl _restgpr_29
 /* 801987CC 0019460C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 801987D0 00194610  7C 08 03 A6 */	mtlr r0
 /* 801987D4 00194614  38 21 00 20 */	addi r1, r1, 0x20
@@ -796,7 +796,7 @@ Func__Q34gobj9AddOnMint31Mint_Start_0$53526AddOnMint_cppFRQ26mintvm13MintFuncPro
 /* 801989CC 0019480C  7C 08 02 A6 */	mflr r0
 /* 801989D0 00194810  90 01 00 24 */	stw r0, 0x24(r1)
 /* 801989D4 00194814  39 61 00 20 */	addi r11, r1, 0x20
-/* 801989D8 00194818  4B E6 E9 6D */	bl lbl_80007344
+/* 801989D8 00194818  4B E6 E9 6D */	bl _savegpr_29
 /* 801989DC 0019481C  7C 7D 1B 78 */	mr r29, r3
 /* 801989E0 00194820  38 80 00 02 */	li r4, 0x2
 /* 801989E4 00194824  4B FF FC 11 */	bl internal_getArg_addr__Q26mintvm13MintFuncProxyCFUi
@@ -813,7 +813,7 @@ Func__Q34gobj9AddOnMint31Mint_Start_0$53526AddOnMint_cppFRQ26mintvm13MintFuncPro
 /* 80198A10 00194850  80 BE 00 00 */	lwz r5, 0x0(r30)
 /* 80198A14 00194854  48 00 22 BD */	bl Start__Q24gobj12MintGearAnimFUlbUl
 /* 80198A18 00194858  39 61 00 20 */	addi r11, r1, 0x20
-/* 80198A1C 0019485C  4B E6 E9 75 */	bl lbl_80007390
+/* 80198A1C 0019485C  4B E6 E9 75 */	bl _restgpr_29
 /* 80198A20 00194860  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80198A24 00194864  7C 08 03 A6 */	mtlr r0
 /* 80198A28 00194868  38 21 00 20 */	addi r1, r1, 0x20
@@ -830,7 +830,7 @@ Func__Q34gobj9AddOnMint31Mint_Start_0$53524AddOnMint_cppFRQ26mintvm13MintFuncPro
 /* 80198A44 00194884  7C 08 02 A6 */	mflr r0
 /* 80198A48 00194888  90 01 00 24 */	stw r0, 0x24(r1)
 /* 80198A4C 0019488C  39 61 00 20 */	addi r11, r1, 0x20
-/* 80198A50 00194890  4B E6 E8 F5 */	bl lbl_80007344
+/* 80198A50 00194890  4B E6 E8 F5 */	bl _savegpr_29
 /* 80198A54 00194894  7C 7D 1B 78 */	mr r29, r3
 /* 80198A58 00194898  7C 9E 23 78 */	mr r30, r4
 /* 80198A5C 0019489C  7F C3 F3 78 */	mr r3, r30
@@ -846,7 +846,7 @@ Func__Q34gobj9AddOnMint31Mint_Start_0$53524AddOnMint_cppFRQ26mintvm13MintFuncPro
 /* 80198A84 001948C4  7D 89 03 A6 */	mtctr r12
 /* 80198A88 001948C8  4E 80 04 21 */	bctrl
 /* 80198A8C 001948CC  39 61 00 20 */	addi r11, r1, 0x20
-/* 80198A90 001948D0  4B E6 E9 01 */	bl lbl_80007390
+/* 80198A90 001948D0  4B E6 E9 01 */	bl _restgpr_29
 /* 80198A94 001948D4  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80198A98 001948D8  7C 08 03 A6 */	mtlr r0
 /* 80198A9C 001948DC  38 21 00 20 */	addi r1, r1, 0x20
@@ -1271,7 +1271,7 @@ Func__Q34gobj9AddOnMint31Mint_start_0$53502AddOnMint_cppFRQ26mintvm13MintFuncPro
 /* 80199020 00194E60  7C 08 02 A6 */	mflr r0
 /* 80199024 00194E64  90 01 00 34 */	stw r0, 0x34(r1)
 /* 80199028 00194E68  39 61 00 30 */	addi r11, r1, 0x30
-/* 8019902C 00194E6C  4B E6 E3 15 */	bl lbl_80007340
+/* 8019902C 00194E6C  4B E6 E3 15 */	bl _savegpr_28
 /* 80199030 00194E70  7C 7C 1B 78 */	mr r28, r3
 /* 80199034 00194E74  3C 80 80 45 */	lis r4, "@55359"@ha
 /* 80199038 00194E78  38 A4 4F 30 */	addi r5, r4, "@55359"@l
@@ -1303,7 +1303,7 @@ Func__Q34gobj9AddOnMint31Mint_start_0$53502AddOnMint_cppFRQ26mintvm13MintFuncPro
 /* 801990A0 00194EE0  4B E6 E1 25 */	bl __ptmf_scall
 /* 801990A4 00194EE4  60 00 00 00 */	nop
 /* 801990A8 00194EE8  39 61 00 30 */	addi r11, r1, 0x30
-/* 801990AC 00194EEC  4B E6 E2 E1 */	bl lbl_8000738C
+/* 801990AC 00194EEC  4B E6 E2 E1 */	bl _restgpr_28
 /* 801990B0 00194EF0  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 801990B4 00194EF4  7C 08 03 A6 */	mtlr r0
 /* 801990B8 00194EF8  38 21 00 30 */	addi r1, r1, 0x30
@@ -1319,7 +1319,7 @@ Func__Q34gobj9AddOnMint31Mint_start_0$53500AddOnMint_cppFRQ26mintvm13MintFuncPro
 /* 801990CC 00194F0C  7C 08 02 A6 */	mflr r0
 /* 801990D0 00194F10  90 01 00 34 */	stw r0, 0x34(r1)
 /* 801990D4 00194F14  39 61 00 30 */	addi r11, r1, 0x30
-/* 801990D8 00194F18  4B E6 E2 6D */	bl lbl_80007344
+/* 801990D8 00194F18  4B E6 E2 6D */	bl _savegpr_29
 /* 801990DC 00194F1C  7C 7D 1B 78 */	mr r29, r3
 /* 801990E0 00194F20  3C 80 80 45 */	lis r4, "@55366"@ha
 /* 801990E4 00194F24  38 A4 4F 3C */	addi r5, r4, "@55366"@l
@@ -1346,7 +1346,7 @@ Func__Q34gobj9AddOnMint31Mint_start_0$53500AddOnMint_cppFRQ26mintvm13MintFuncPro
 /* 80199138 00194F78  4B E6 E0 8D */	bl __ptmf_scall
 /* 8019913C 00194F7C  60 00 00 00 */	nop
 /* 80199140 00194F80  39 61 00 30 */	addi r11, r1, 0x30
-/* 80199144 00194F84  4B E6 E2 4D */	bl lbl_80007390
+/* 80199144 00194F84  4B E6 E2 4D */	bl _restgpr_29
 /* 80199148 00194F88  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 8019914C 00194F8C  7C 08 03 A6 */	mtlr r0
 /* 80199150 00194F90  38 21 00 30 */	addi r1, r1, 0x30
@@ -1472,7 +1472,7 @@ Func__Q34gobj9AddOnMint31Mint_Start_0$53470AddOnMint_cppFRQ26mintvm13MintFuncPro
 /* 801992A0 001950E0  7C 08 02 A6 */	mflr r0
 /* 801992A4 001950E4  90 01 00 24 */	stw r0, 0x24(r1)
 /* 801992A8 001950E8  39 61 00 20 */	addi r11, r1, 0x20
-/* 801992AC 001950EC  4B E6 E0 99 */	bl lbl_80007344
+/* 801992AC 001950EC  4B E6 E0 99 */	bl _savegpr_29
 /* 801992B0 001950F0  7C 7D 1B 78 */	mr r29, r3
 /* 801992B4 001950F4  38 80 00 02 */	li r4, 0x2
 /* 801992B8 001950F8  4B FF F3 3D */	bl internal_getArg_addr__Q26mintvm13MintFuncProxyCFUi
@@ -1489,7 +1489,7 @@ Func__Q34gobj9AddOnMint31Mint_Start_0$53470AddOnMint_cppFRQ26mintvm13MintFuncPro
 /* 801992E4 00195124  C0 3E 00 00 */	lfs f1, 0x0(r30)
 /* 801992E8 00195128  48 00 19 11 */	bl Start__Q24gobj8MintAnimFUlbf
 /* 801992EC 0019512C  39 61 00 20 */	addi r11, r1, 0x20
-/* 801992F0 00195130  4B E6 E0 A1 */	bl lbl_80007390
+/* 801992F0 00195130  4B E6 E0 A1 */	bl _restgpr_29
 /* 801992F4 00195134  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 801992F8 00195138  7C 08 03 A6 */	mtlr r0
 /* 801992FC 0019513C  38 21 00 20 */	addi r1, r1, 0x20

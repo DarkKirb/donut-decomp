@@ -70,7 +70,7 @@ Func__Q38mintglue11App__Random33Mint_RandF_0$51912App__Random_cppFRQ26mintvm13Mi
 /* 801C16B0 001BD4F0  7C 08 02 A6 */	mflr r0
 /* 801C16B4 001BD4F4  90 01 00 24 */	stw r0, 0x24(r1)
 /* 801C16B8 001BD4F8  39 61 00 20 */	addi r11, r1, 0x20
-/* 801C16BC 001BD4FC  4B E4 5C 89 */	bl lbl_80007344
+/* 801C16BC 001BD4FC  4B E4 5C 89 */	bl _savegpr_29
 /* 801C16C0 001BD500  7C 7D 1B 78 */	mr r29, r3
 /* 801C16C4 001BD504  4B FD 6E 61 */	bl useRetVal__Q26mintvm13MintFuncProxyFv
 /* 801C16C8 001BD508  7F A3 EB 78 */	mr r3, r29
@@ -93,7 +93,7 @@ Func__Q38mintglue11App__Random33Mint_RandF_0$51912App__Random_cppFRQ26mintvm13Mi
 .global lbl_801C170C
 lbl_801C170C:
 /* 801C170C 001BD54C  39 61 00 20 */	addi r11, r1, 0x20
-/* 801C1710 001BD550  4B E4 5C 81 */	bl lbl_80007390
+/* 801C1710 001BD550  4B E4 5C 81 */	bl _restgpr_29
 /* 801C1714 001BD554  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 801C1718 001BD558  7C 08 03 A6 */	mtlr r0
 /* 801C171C 001BD55C  38 21 00 20 */	addi r1, r1, 0x20
@@ -104,7 +104,7 @@ Func__Q38mintglue11App__Random32Mint_Rand_0$51910App__Random_cppFRQ26mintvm13Min
 /* 801C1728 001BD568  7C 08 02 A6 */	mflr r0
 /* 801C172C 001BD56C  90 01 00 24 */	stw r0, 0x24(r1)
 /* 801C1730 001BD570  39 61 00 20 */	addi r11, r1, 0x20
-/* 801C1734 001BD574  4B E4 5C 11 */	bl lbl_80007344
+/* 801C1734 001BD574  4B E4 5C 11 */	bl _savegpr_29
 /* 801C1738 001BD578  7C 7D 1B 78 */	mr r29, r3
 /* 801C173C 001BD57C  4B FD 6D E9 */	bl useRetVal__Q26mintvm13MintFuncProxyFv
 /* 801C1740 001BD580  7F A3 EB 78 */	mr r3, r29
@@ -128,7 +128,7 @@ Func__Q38mintglue11App__Random32Mint_Rand_0$51910App__Random_cppFRQ26mintvm13Min
 .global lbl_801C1788
 lbl_801C1788:
 /* 801C1788 001BD5C8  39 61 00 20 */	addi r11, r1, 0x20
-/* 801C178C 001BD5CC  4B E4 5C 05 */	bl lbl_80007390
+/* 801C178C 001BD5CC  4B E4 5C 05 */	bl _restgpr_29
 /* 801C1790 001BD5D0  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 801C1794 001BD5D4  7C 08 03 A6 */	mtlr r0
 /* 801C1798 001BD5D8  38 21 00 20 */	addi r1, r1, 0x20

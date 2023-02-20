@@ -72,7 +72,7 @@ updateChallengeHighScore__Q27storage15BackupFileData2FQ33scn4step13ChallengeKind
 /* 804043CC 0040020C  7C 08 02 A6 */	mflr r0
 /* 804043D0 00400210  90 01 00 24 */	stw r0, 0x24(r1)
 /* 804043D4 00400214  39 61 00 20 */	addi r11, r1, 0x20
-/* 804043D8 00400218  4B C0 2F 69 */	bl lbl_80007340
+/* 804043D8 00400218  4B C0 2F 69 */	bl _savegpr_28
 /* 804043DC 0040021C  7C 9C 23 78 */	mr r28, r4
 /* 804043E0 00400220  7C DF 33 78 */	mr r31, r6
 /* 804043E4 00400224  1C 04 00 24 */	mulli r0, r4, 0x24
@@ -143,7 +143,7 @@ lbl_804044A0:
 .global lbl_804044B0
 lbl_804044B0:
 /* 804044B0 004002F0  39 61 00 20 */	addi r11, r1, 0x20
-/* 804044B4 004002F4  4B C0 2E D9 */	bl lbl_8000738C
+/* 804044B4 004002F4  4B C0 2E D9 */	bl _restgpr_28
 /* 804044B8 004002F8  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 804044BC 004002FC  7C 08 03 A6 */	mtlr r0
 /* 804044C0 00400300  38 21 00 20 */	addi r1, r1, 0x20

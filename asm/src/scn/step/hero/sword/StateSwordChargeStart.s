@@ -7,7 +7,7 @@ TryToChangeState__Q53scn4step4hero5sword21StateSwordChargeStartFPQ43scn4step4her
 /* 80387108 00382F48  7C 08 02 A6 */	mflr r0
 /* 8038710C 00382F4C  90 01 00 24 */	stw r0, 0x24(r1)
 /* 80387110 00382F50  39 61 00 20 */	addi r11, r1, 0x20
-/* 80387114 00382F54  4B C8 02 31 */	bl lbl_80007344
+/* 80387114 00382F54  4B C8 02 31 */	bl _savegpr_29
 /* 80387118 00382F58  7C 7D 1B 78 */	mr r29, r3
 /* 8038711C 00382F5C  4B FB 91 E1 */	bl footState__Q43scn4step4hero4HeroFv
 /* 80387120 00382F60  4B DF A5 B5 */	bl dataType__Q36effect6detail10GenContextCFv
@@ -44,7 +44,7 @@ lbl_80387188:
 .global lbl_8038718C
 lbl_8038718C:
 /* 8038718C 00382FCC  39 61 00 20 */	addi r11, r1, 0x20
-/* 80387190 00382FD0  4B C8 02 01 */	bl lbl_80007390
+/* 80387190 00382FD0  4B C8 02 01 */	bl _restgpr_29
 /* 80387194 00382FD4  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80387198 00382FD8  7C 08 03 A6 */	mtlr r0
 /* 8038719C 00382FDC  38 21 00 20 */	addi r1, r1, 0x20
@@ -89,7 +89,7 @@ procAnim__Q53scn4step4hero5sword21StateSwordChargeStartFv:
 /* 80387218 00383058  7C 08 02 A6 */	mflr r0
 /* 8038721C 0038305C  90 01 00 24 */	stw r0, 0x24(r1)
 /* 80387220 00383060  39 61 00 20 */	addi r11, r1, 0x20
-/* 80387224 00383064  4B C8 01 21 */	bl lbl_80007344
+/* 80387224 00383064  4B C8 01 21 */	bl _savegpr_29
 /* 80387228 00383068  7C 7D 1B 78 */	mr r29, r3
 /* 8038722C 0038306C  80 83 00 08 */	lwz r4, 0x8(r3)
 /* 80387230 00383070  38 04 00 01 */	addi r0, r4, 0x1
@@ -154,7 +154,7 @@ lbl_80387300:
 .global lbl_80387304
 lbl_80387304:
 /* 80387304 00383144  39 61 00 20 */	addi r11, r1, 0x20
-/* 80387308 00383148  4B C8 00 89 */	bl lbl_80007390
+/* 80387308 00383148  4B C8 00 89 */	bl _restgpr_29
 /* 8038730C 0038314C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80387310 00383150  7C 08 03 A6 */	mtlr r0
 /* 80387314 00383154  38 21 00 20 */	addi r1, r1, 0x20

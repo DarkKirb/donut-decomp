@@ -7,7 +7,7 @@ TryToChangeState__Q53scn4step4hero6common10StateDrinkFPQ43scn4step4hero4Hero:
 /* 8036214C 0035DF8C  7C 08 02 A6 */	mflr r0
 /* 80362150 0035DF90  90 01 00 24 */	stw r0, 0x24(r1)
 /* 80362154 0035DF94  39 61 00 20 */	addi r11, r1, 0x20
-/* 80362158 0035DF98  4B CA 51 ED */	bl lbl_80007344
+/* 80362158 0035DF98  4B CA 51 ED */	bl _savegpr_29
 /* 8036215C 0035DF9C  7C 7D 1B 78 */	mr r29, r3
 /* 80362160 0035DFA0  4B FD E2 0D */	bl vacuumAttacker__Q43scn4step4hero4HeroFv
 /* 80362164 0035DFA4  4B DB ED 0D */	bl Tell__Q34nw4r2ut13DvdFileStreamCFv
@@ -58,7 +58,7 @@ lbl_803621F4:
 .global lbl_803621F8
 lbl_803621F8:
 /* 803621F8 0035E038  39 61 00 20 */	addi r11, r1, 0x20
-/* 803621FC 0035E03C  4B CA 51 95 */	bl lbl_80007390
+/* 803621FC 0035E03C  4B CA 51 95 */	bl _restgpr_29
 /* 80362200 0035E040  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80362204 0035E044  7C 08 03 A6 */	mtlr r0
 /* 80362208 0035E048  38 21 00 20 */	addi r1, r1, 0x20
@@ -69,7 +69,7 @@ __ct__Q53scn4step4hero6common10StateDrinkFPQ43scn4step4hero4Hero:
 /* 80362214 0035E054  7C 08 02 A6 */	mflr r0
 /* 80362218 0035E058  90 01 00 34 */	stw r0, 0x34(r1)
 /* 8036221C 0035E05C  39 61 00 30 */	addi r11, r1, 0x30
-/* 80362220 0035E060  4B CA 51 21 */	bl lbl_80007340
+/* 80362220 0035E060  4B CA 51 21 */	bl _savegpr_28
 /* 80362224 0035E064  7C 7C 1B 78 */	mr r28, r3
 /* 80362228 0035E068  4B FF 32 C9 */	bl __ct__Q43scn4step4hero9StateBaseFPQ43scn4step4hero4Hero
 /* 8036222C 0035E06C  3C 60 80 49 */	lis r3, __vt__Q53scn4step4hero6common10StateDrink@ha
@@ -259,7 +259,7 @@ lbl_80362480:
 /* 803624CC 0035E30C  4B E5 4D 49 */	bl setIsPassThroughLand__Q35mcoll6detail9DetectArgFb
 /* 803624D0 0035E310  7F 83 E3 78 */	mr r3, r28
 /* 803624D4 0035E314  39 61 00 30 */	addi r11, r1, 0x30
-/* 803624D8 0035E318  4B CA 4E B5 */	bl lbl_8000738C
+/* 803624D8 0035E318  4B CA 4E B5 */	bl _restgpr_28
 /* 803624DC 0035E31C  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 803624E0 0035E320  7C 08 03 A6 */	mtlr r0
 /* 803624E4 0035E324  38 21 00 30 */	addi r1, r1, 0x30
@@ -331,7 +331,7 @@ procAnim__Q53scn4step4hero6common10StateDrinkFv:
 /* 803625C4 0035E404  7C 08 02 A6 */	mflr r0
 /* 803625C8 0035E408  90 01 00 24 */	stw r0, 0x24(r1)
 /* 803625CC 0035E40C  39 61 00 20 */	addi r11, r1, 0x20
-/* 803625D0 0035E410  4B CA 4D 75 */	bl lbl_80007344
+/* 803625D0 0035E410  4B CA 4D 75 */	bl _savegpr_29
 /* 803625D4 0035E414  7C 7D 1B 78 */	mr r29, r3
 /* 803625D8 0035E418  88 03 00 0C */	lbz r0, 0xc(r3)
 /* 803625DC 0035E41C  2C 00 00 00 */	cmpwi r0, 0x0
@@ -430,7 +430,7 @@ lbl_803626FC:
 .global lbl_80362728
 lbl_80362728:
 /* 80362728 0035E568  39 61 00 20 */	addi r11, r1, 0x20
-/* 8036272C 0035E56C  4B CA 4C 65 */	bl lbl_80007390
+/* 8036272C 0035E56C  4B CA 4C 65 */	bl _restgpr_29
 /* 80362730 0035E570  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80362734 0035E574  7C 08 03 A6 */	mtlr r0
 /* 80362738 0035E578  38 21 00 20 */	addi r1, r1, 0x20

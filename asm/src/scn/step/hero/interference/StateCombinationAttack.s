@@ -7,7 +7,7 @@ TryToChangeState__Q53scn4step4hero12interference22StateCombinationAttackFPQ43scn
 /* 8036FFA0 0036BDE0  7C 08 02 A6 */	mflr r0
 /* 8036FFA4 0036BDE4  90 01 00 24 */	stw r0, 0x24(r1)
 /* 8036FFA8 0036BDE8  39 61 00 20 */	addi r11, r1, 0x20
-/* 8036FFAC 0036BDEC  4B C9 73 99 */	bl lbl_80007344
+/* 8036FFAC 0036BDEC  4B C9 73 99 */	bl _savegpr_29
 /* 8036FFB0 0036BDF0  7C 7D 1B 78 */	mr r29, r3
 /* 8036FFB4 0036BDF4  4B FD 04 61 */	bl piggyback__Q43scn4step4hero4HeroFv
 /* 8036FFB8 0036BDF8  4B FE 34 D1 */	bl canChargeAttack__Q43scn4step4hero9PiggybackCFv
@@ -45,7 +45,7 @@ lbl_80370024:
 .global lbl_80370028
 lbl_80370028:
 /* 80370028 0036BE68  39 61 00 20 */	addi r11, r1, 0x20
-/* 8037002C 0036BE6C  4B C9 73 65 */	bl lbl_80007390
+/* 8037002C 0036BE6C  4B C9 73 65 */	bl _restgpr_29
 /* 80370030 0036BE70  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80370034 0036BE74  7C 08 03 A6 */	mtlr r0
 /* 80370038 0036BE78  38 21 00 20 */	addi r1, r1, 0x20
@@ -586,7 +586,7 @@ shotWeaponDedede__Q53scn4step4hero12interference22StateCombinationAttackFv:
 /* 8037077C 0036C5BC  DB 41 00 B0 */	stfd f26, 0xb0(r1)
 /* 80370780 0036C5C0  F3 41 00 B8 */	psq_st f26, 0xb8(r1), 0, qr0
 /* 80370784 0036C5C4  39 61 00 B0 */	addi r11, r1, 0xb0
-/* 80370788 0036C5C8  4B C9 6B B1 */	bl lbl_80007338
+/* 80370788 0036C5C8  4B C9 6B B1 */	bl _savegpr_26
 /* 8037078C 0036C5CC  7C 7A 1B 78 */	mr r26, r3
 /* 80370790 0036C5D0  48 00 05 79 */	bl paramDededeBomb__Q53scn4step4hero12interference22StateCombinationAttackCFv
 /* 80370794 0036C5D4  C3 83 00 00 */	lfs f28, 0x0(r3)
@@ -722,7 +722,7 @@ lbl_8037081C:
 /* 80370984 0036C7C4  13 41 00 0C */	psq_lx f26, r1, r0, 0, qr0
 /* 80370988 0036C7C8  CB 41 00 B0 */	lfd f26, 0xb0(r1)
 /* 8037098C 0036C7CC  39 61 00 B0 */	addi r11, r1, 0xb0
-/* 80370990 0036C7D0  4B C9 69 F5 */	bl lbl_80007384
+/* 80370990 0036C7D0  4B C9 69 F5 */	bl _restgpr_26
 /* 80370994 0036C7D4  80 01 01 14 */	lwz r0, 0x114(r1)
 /* 80370998 0036C7D8  7C 08 03 A6 */	mtlr r0
 /* 8037099C 0036C7DC  38 21 01 10 */	addi r1, r1, 0x110

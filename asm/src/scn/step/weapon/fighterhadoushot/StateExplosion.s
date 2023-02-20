@@ -9,7 +9,7 @@ __ct__Q53scn4step6weapon16fighterhadoushot14StateExplosionFPQ43scn4step6weapon6W
 /* 803E6C5C 003E2A9C  DB E1 00 20 */	stfd f31, 0x20(r1)
 /* 803E6C60 003E2AA0  F3 E1 00 28 */	psq_st f31, 0x28(r1), 0, qr0
 /* 803E6C64 003E2AA4  39 61 00 20 */	addi r11, r1, 0x20
-/* 803E6C68 003E2AA8  4B C2 06 DD */	bl lbl_80007344
+/* 803E6C68 003E2AA8  4B C2 06 DD */	bl _savegpr_29
 /* 803E6C6C 003E2AAC  7C 7D 1B 78 */	mr r29, r3
 /* 803E6C70 003E2AB0  7C BE 2B 78 */	mr r30, r5
 /* 803E6C74 003E2AB4  4B FF 1C CD */	bl __ct__Q43scn4step6weapon9StateBaseFPQ43scn4step6weapon6Weapon
@@ -62,7 +62,7 @@ lbl_803E6CEC:
 /* 803E6D20 003E2B60  13 E1 00 0C */	psq_lx f31, r1, r0, 0, qr0
 /* 803E6D24 003E2B64  CB E1 00 20 */	lfd f31, 0x20(r1)
 /* 803E6D28 003E2B68  39 61 00 20 */	addi r11, r1, 0x20
-/* 803E6D2C 003E2B6C  4B C2 06 65 */	bl lbl_80007390
+/* 803E6D2C 003E2B6C  4B C2 06 65 */	bl _restgpr_29
 /* 803E6D30 003E2B70  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 803E6D34 003E2B74  7C 08 03 A6 */	mtlr r0
 /* 803E6D38 003E2B78  38 21 00 30 */	addi r1, r1, 0x30

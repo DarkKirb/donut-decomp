@@ -161,7 +161,7 @@ procFixPos__Q53scn4step4hero6common19StateClearDanceFallFv:
 /* 8035F7D0 0035B610  7C 08 02 A6 */	mflr r0
 /* 8035F7D4 0035B614  90 01 00 54 */	stw r0, 0x54(r1)
 /* 8035F7D8 0035B618  39 61 00 50 */	addi r11, r1, 0x50
-/* 8035F7DC 0035B61C  4B CA 7B 69 */	bl lbl_80007344
+/* 8035F7DC 0035B61C  4B CA 7B 69 */	bl _savegpr_29
 /* 8035F7E0 0035B620  7C 7F 1B 78 */	mr r31, r3
 /* 8035F7E4 0035B624  4B DA 0F FD */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 8035F7E8 0035B628  4B FE 0B 55 */	bl mapColl__Q43scn4step4hero4HeroFv
@@ -234,7 +234,7 @@ lbl_8035F8E8:
 .global lbl_8035F8EC
 lbl_8035F8EC:
 /* 8035F8EC 0035B72C  39 61 00 50 */	addi r11, r1, 0x50
-/* 8035F8F0 0035B730  4B CA 7A A1 */	bl lbl_80007390
+/* 8035F8F0 0035B730  4B CA 7A A1 */	bl _restgpr_29
 /* 8035F8F4 0035B734  80 01 00 54 */	lwz r0, 0x54(r1)
 /* 8035F8F8 0035B738  7C 08 03 A6 */	mtlr r0
 /* 8035F8FC 0035B73C  38 21 00 50 */	addi r1, r1, 0x50

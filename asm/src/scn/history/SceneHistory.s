@@ -31,7 +31,7 @@ __ct__Q33scn7history12SceneHistoryFRCQ43scn7history12SceneHistory6Recipe:
 /* 8020E6B8 0020A4F8  7C 08 02 A6 */	mflr r0
 /* 8020E6BC 0020A4FC  90 01 06 B4 */	stw r0, 0x6b4(r1)
 /* 8020E6C0 0020A500  39 61 06 B0 */	addi r11, r1, 0x6b0
-/* 8020E6C4 0020A504  4B DF 8C 7D */	bl lbl_80007340
+/* 8020E6C4 0020A504  4B DF 8C 7D */	bl _savegpr_28
 /* 8020E6C8 0020A508  7C 7F 1B 78 */	mr r31, r3
 /* 8020E6CC 0020A50C  7C 9C 23 78 */	mr r28, r4
 /* 8020E6D0 0020A510  3C 80 80 46 */	lis r4, __vt__Q33scn7history12SceneHistory@ha
@@ -126,7 +126,7 @@ lbl_8020E7E0:
 /* 8020E80C 0020A64C  4B F6 73 5D */	bl __dt__Q23scn6ISceneFv
 /* 8020E810 0020A650  7F E3 FB 78 */	mr r3, r31
 /* 8020E814 0020A654  39 61 06 B0 */	addi r11, r1, 0x6b0
-/* 8020E818 0020A658  4B DF 8B 75 */	bl lbl_8000738C
+/* 8020E818 0020A658  4B DF 8B 75 */	bl _restgpr_28
 /* 8020E81C 0020A65C  80 01 06 B4 */	lwz r0, 0x6b4(r1)
 /* 8020E820 0020A660  7C 08 03 A6 */	mtlr r0
 /* 8020E824 0020A664  38 21 06 B0 */	addi r1, r1, 0x6b0

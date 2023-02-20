@@ -57,7 +57,7 @@ procMove__Q53scn4step4boss9creditdee8StateRunFv:
 /* 8024973C 0024557C  7C 08 02 A6 */	mflr r0
 /* 80249740 00245580  90 01 00 24 */	stw r0, 0x24(r1)
 /* 80249744 00245584  39 61 00 20 */	addi r11, r1, 0x20
-/* 80249748 00245588  4B DB DB FD */	bl lbl_80007344
+/* 80249748 00245588  4B DB DB FD */	bl _savegpr_29
 /* 8024974C 0024558C  7C 7D 1B 78 */	mr r29, r3
 /* 80249750 00245590  4B EB 70 91 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 80249754 00245594  4B FE 37 BD */	bl param__Q43scn4step4boss4BossCFv
@@ -75,7 +75,7 @@ procMove__Q53scn4step4boss9creditdee8StateRunFv:
 /* 80249784 002455C4  38 BE 00 2C */	addi r5, r30, 0x2c
 /* 80249788 002455C8  4B F5 1C ED */	bl groundAccel__Q24gobj4MoveFbRCQ24gobj14MoveParamAccel
 /* 8024978C 002455CC  39 61 00 20 */	addi r11, r1, 0x20
-/* 80249790 002455D0  4B DB DC 01 */	bl lbl_80007390
+/* 80249790 002455D0  4B DB DC 01 */	bl _restgpr_29
 /* 80249794 002455D4  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80249798 002455D8  7C 08 03 A6 */	mtlr r0
 /* 8024979C 002455DC  38 21 00 20 */	addi r1, r1, 0x20
@@ -89,7 +89,7 @@ procFixPos__Q53scn4step4boss9creditdee8StateRunFv:
 /* 802497B0 002455F0  DB E1 00 20 */	stfd f31, 0x20(r1)
 /* 802497B4 002455F4  F3 E1 00 28 */	psq_st f31, 0x28(r1), 0, qr0
 /* 802497B8 002455F8  39 61 00 20 */	addi r11, r1, 0x20
-/* 802497BC 002455FC  4B DB DB 89 */	bl lbl_80007344
+/* 802497BC 002455FC  4B DB DB 89 */	bl _savegpr_29
 /* 802497C0 00245600  7C 7D 1B 78 */	mr r29, r3
 /* 802497C4 00245604  4B EB 70 1D */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 802497C8 00245608  4B FE 37 49 */	bl param__Q43scn4step4boss4BossCFv
@@ -138,7 +138,7 @@ lbl_80249858:
 /* 8024985C 0024569C  13 E1 00 0C */	psq_lx f31, r1, r0, 0, qr0
 /* 80249860 002456A0  CB E1 00 20 */	lfd f31, 0x20(r1)
 /* 80249864 002456A4  39 61 00 20 */	addi r11, r1, 0x20
-/* 80249868 002456A8  4B DB DB 29 */	bl lbl_80007390
+/* 80249868 002456A8  4B DB DB 29 */	bl _restgpr_29
 /* 8024986C 002456AC  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 80249870 002456B0  7C 08 03 A6 */	mtlr r0
 /* 80249874 002456B4  38 21 00 30 */	addi r1, r1, 0x30

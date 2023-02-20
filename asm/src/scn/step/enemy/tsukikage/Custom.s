@@ -7,7 +7,7 @@ __ct__Q53scn4step5enemy9tsukikage6CustomFRQ43scn4step5enemy5Enemy:
 /* 802EA78C 002E65CC  7C 08 02 A6 */	mflr r0
 /* 802EA790 002E65D0  90 01 00 34 */	stw r0, 0x34(r1)
 /* 802EA794 002E65D4  39 61 00 30 */	addi r11, r1, 0x30
-/* 802EA798 002E65D8  4B D1 CB A9 */	bl lbl_80007340
+/* 802EA798 002E65D8  4B D1 CB A9 */	bl _savegpr_28
 /* 802EA79C 002E65DC  7C 7C 1B 78 */	mr r28, r3
 /* 802EA7A0 002E65E0  7C 9D 23 78 */	mr r29, r4
 /* 802EA7A4 002E65E4  4B F9 76 CD */	bl __ct__Q43scn4step5enemy10CustomBaseFRQ43scn4step5enemy5Enemy
@@ -32,7 +32,7 @@ __ct__Q53scn4step5enemy9tsukikage6CustomFRQ43scn4step5enemy5Enemy:
 /* 802EA7F0 002E6630  93 DC 00 1C */	stw r30, 0x1c(r28)
 /* 802EA7F4 002E6634  7F 83 E3 78 */	mr r3, r28
 /* 802EA7F8 002E6638  39 61 00 30 */	addi r11, r1, 0x30
-/* 802EA7FC 002E663C  4B D1 CB 91 */	bl lbl_8000738C
+/* 802EA7FC 002E663C  4B D1 CB 91 */	bl _restgpr_28
 /* 802EA800 002E6640  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 802EA804 002E6644  7C 08 03 A6 */	mtlr r0
 /* 802EA808 002E6648  38 21 00 30 */	addi r1, r1, 0x30
@@ -202,7 +202,7 @@ isWall__Q53scn4step5enemy9tsukikage6CustomFv:
 /* 802EAA24 002E6864  7C 08 02 A6 */	mflr r0
 /* 802EAA28 002E6868  90 01 00 44 */	stw r0, 0x44(r1)
 /* 802EAA2C 002E686C  39 61 00 40 */	addi r11, r1, 0x40
-/* 802EAA30 002E6870  4B D1 C9 11 */	bl lbl_80007340
+/* 802EAA30 002E6870  4B D1 C9 11 */	bl _savegpr_28
 /* 802EAA34 002E6874  7C 7C 1B 78 */	mr r28, r3
 /* 802EAA38 002E6878  4B E1 5D A9 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 802EAA3C 002E687C  4B F9 D6 81 */	bl location__Q43scn4step5enemy5EnemyCFv
@@ -258,7 +258,7 @@ lbl_802EAAA0:
 lbl_802EAAF8:
 /* 802EAAF8 002E6938  88 7C 00 08 */	lbz r3, 0x8(r28)
 /* 802EAAFC 002E693C  39 61 00 40 */	addi r11, r1, 0x40
-/* 802EAB00 002E6940  4B D1 C8 8D */	bl lbl_8000738C
+/* 802EAB00 002E6940  4B D1 C8 8D */	bl _restgpr_28
 /* 802EAB04 002E6944  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 802EAB08 002E6948  7C 08 03 A6 */	mtlr r0
 /* 802EAB0C 002E694C  38 21 00 40 */	addi r1, r1, 0x40
@@ -484,7 +484,7 @@ isWallAttack__Q53scn4step5enemy9tsukikage6CustomFv:
 /* 802EAE1C 002E6C5C  7C 08 02 A6 */	mflr r0
 /* 802EAE20 002E6C60  90 01 00 44 */	stw r0, 0x44(r1)
 /* 802EAE24 002E6C64  39 61 00 40 */	addi r11, r1, 0x40
-/* 802EAE28 002E6C68  4B D1 C5 19 */	bl lbl_80007340
+/* 802EAE28 002E6C68  4B D1 C5 19 */	bl _savegpr_28
 /* 802EAE2C 002E6C6C  7C 7C 1B 78 */	mr r28, r3
 /* 802EAE30 002E6C70  4B E1 59 B1 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 802EAE34 002E6C74  4B F9 D2 51 */	bl param__Q43scn4step5enemy5EnemyCFv
@@ -565,7 +565,7 @@ lbl_802EAF30:
 lbl_802EAF44:
 /* 802EAF44 002E6D84  7F A3 EB 78 */	mr r3, r29
 /* 802EAF48 002E6D88  39 61 00 40 */	addi r11, r1, 0x40
-/* 802EAF4C 002E6D8C  4B D1 C4 41 */	bl lbl_8000738C
+/* 802EAF4C 002E6D8C  4B D1 C4 41 */	bl _restgpr_28
 /* 802EAF50 002E6D90  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 802EAF54 002E6D94  7C 08 03 A6 */	mtlr r0
 /* 802EAF58 002E6D98  38 21 00 40 */	addi r1, r1, 0x40

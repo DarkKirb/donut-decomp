@@ -7,7 +7,7 @@ TryToChangeState__Q53scn4step4boss15challengemaster10StatePanicFPQ43scn4step4bos
 /* 802416E8 0023D528  7C 08 02 A6 */	mflr r0
 /* 802416EC 0023D52C  90 01 00 24 */	stw r0, 0x24(r1)
 /* 802416F0 0023D530  39 61 00 20 */	addi r11, r1, 0x20
-/* 802416F4 0023D534  4B DC 5C 51 */	bl lbl_80007344
+/* 802416F4 0023D534  4B DC 5C 51 */	bl _savegpr_29
 /* 802416F8 0023D538  7C 7D 1B 78 */	mr r29, r3
 /* 802416FC 0023D53C  4B FE B8 ED */	bl custom__Q43scn4step4boss4BossFv
 /* 80241700 0023D540  4B FF AE 4D */	bl "DynamicCastToRef<Q53scn4step4boss15challengemaster6Custom,Q43scn4step4boss7ICustom>__Q23hel6commonFPQ43scn4step4boss7ICustom_RQ53scn4step4boss15challengemaster6Custom"
@@ -57,7 +57,7 @@ lbl_8024179C:
 .global lbl_802417A0
 lbl_802417A0:
 /* 802417A0 0023D5E0  39 61 00 20 */	addi r11, r1, 0x20
-/* 802417A4 0023D5E4  4B DC 5B ED */	bl lbl_80007390
+/* 802417A4 0023D5E4  4B DC 5B ED */	bl _restgpr_29
 /* 802417A8 0023D5E8  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802417AC 0023D5EC  7C 08 03 A6 */	mtlr r0
 /* 802417B0 0023D5F0  38 21 00 20 */	addi r1, r1, 0x20
@@ -68,7 +68,7 @@ __ct__Q53scn4step4boss15challengemaster10StatePanicFPQ43scn4step4boss4Boss:
 /* 802417BC 0023D5FC  7C 08 02 A6 */	mflr r0
 /* 802417C0 0023D600  90 01 00 24 */	stw r0, 0x24(r1)
 /* 802417C4 0023D604  39 61 00 20 */	addi r11, r1, 0x20
-/* 802417C8 0023D608  4B DC 5B 7D */	bl lbl_80007344
+/* 802417C8 0023D608  4B DC 5B 7D */	bl _savegpr_29
 /* 802417CC 0023D60C  7C 7D 1B 78 */	mr r29, r3
 /* 802417D0 0023D610  4B FF 2D 11 */	bl __ct__Q43scn4step4boss9StateBaseFPQ43scn4step4boss4Boss
 /* 802417D4 0023D614  3C 60 80 46 */	lis r3, __vt__Q53scn4step4boss15challengemaster10StatePanic@ha
@@ -104,7 +104,7 @@ __ct__Q53scn4step4boss15challengemaster10StatePanicFPQ43scn4step4boss4Boss:
 /* 8024184C 0023D68C  4B FF AE ED */	bl reqSweat__Q53scn4step4boss15challengemaster11EmotionCtrlFv
 /* 80241850 0023D690  7F A3 EB 78 */	mr r3, r29
 /* 80241854 0023D694  39 61 00 20 */	addi r11, r1, 0x20
-/* 80241858 0023D698  4B DC 5B 39 */	bl lbl_80007390
+/* 80241858 0023D698  4B DC 5B 39 */	bl _restgpr_29
 /* 8024185C 0023D69C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80241860 0023D6A0  7C 08 03 A6 */	mtlr r0
 /* 80241864 0023D6A4  38 21 00 20 */	addi r1, r1, 0x20
@@ -120,7 +120,7 @@ procAnim__Q53scn4step4boss15challengemaster10StatePanicFv:
 /* 80241874 0023D6B4  7C 08 02 A6 */	mflr r0
 /* 80241878 0023D6B8  90 01 00 24 */	stw r0, 0x24(r1)
 /* 8024187C 0023D6BC  39 61 00 20 */	addi r11, r1, 0x20
-/* 80241880 0023D6C0  4B DC 5A C5 */	bl lbl_80007344
+/* 80241880 0023D6C0  4B DC 5A C5 */	bl _savegpr_29
 /* 80241884 0023D6C4  7C 7F 1B 78 */	mr r31, r3
 /* 80241888 0023D6C8  4B EB EF 59 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 8024188C 0023D6CC  4B FE B7 5D */	bl custom__Q43scn4step4boss4BossFv
@@ -190,7 +190,7 @@ lbl_80241970:
 .global lbl_80241974
 lbl_80241974:
 /* 80241974 0023D7B4  39 61 00 20 */	addi r11, r1, 0x20
-/* 80241978 0023D7B8  4B DC 5A 19 */	bl lbl_80007390
+/* 80241978 0023D7B8  4B DC 5A 19 */	bl _restgpr_29
 /* 8024197C 0023D7BC  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80241980 0023D7C0  7C 08 03 A6 */	mtlr r0
 /* 80241984 0023D7C4  38 21 00 20 */	addi r1, r1, 0x20
@@ -209,7 +209,7 @@ isPanicEnd__Q53scn4step4boss15challengemaster10StatePanicFv:
 /* 80241998 0023D7D8  7C 08 02 A6 */	mflr r0
 /* 8024199C 0023D7DC  90 01 00 24 */	stw r0, 0x24(r1)
 /* 802419A0 0023D7E0  39 61 00 20 */	addi r11, r1, 0x20
-/* 802419A4 0023D7E4  4B DC 59 A1 */	bl lbl_80007344
+/* 802419A4 0023D7E4  4B DC 59 A1 */	bl _savegpr_29
 /* 802419A8 0023D7E8  7C 7D 1B 78 */	mr r29, r3
 /* 802419AC 0023D7EC  4B EB EE 35 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 802419B0 0023D7F0  4B FE B6 39 */	bl custom__Q43scn4step4boss4BossFv
@@ -237,7 +237,7 @@ lbl_802419FC:
 .global lbl_80241A00
 lbl_80241A00:
 /* 80241A00 0023D840  39 61 00 20 */	addi r11, r1, 0x20
-/* 80241A04 0023D844  4B DC 59 8D */	bl lbl_80007390
+/* 80241A04 0023D844  4B DC 59 8D */	bl _restgpr_29
 /* 80241A08 0023D848  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80241A0C 0023D84C  7C 08 03 A6 */	mtlr r0
 /* 80241A10 0023D850  38 21 00 20 */	addi r1, r1, 0x20

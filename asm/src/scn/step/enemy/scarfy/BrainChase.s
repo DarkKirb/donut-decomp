@@ -25,7 +25,7 @@ onStart__Q53scn4step5enemy6scarfy10BrainChaseFv:
 /* 802D94E0 002D5320  7C 08 02 A6 */	mflr r0
 /* 802D94E4 002D5324  90 01 00 24 */	stw r0, 0x24(r1)
 /* 802D94E8 002D5328  39 61 00 20 */	addi r11, r1, 0x20
-/* 802D94EC 002D532C  4B D2 DE 59 */	bl lbl_80007344
+/* 802D94EC 002D532C  4B D2 DE 59 */	bl _savegpr_29
 /* 802D94F0 002D5330  7C 7D 1B 78 */	mr r29, r3
 /* 802D94F4 002D5334  4B E2 72 ED */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 802D94F8 002D5338  7C 7E 1B 78 */	mr r30, r3
@@ -49,7 +49,7 @@ lbl_802D9538:
 /* 802D9538 002D5378  93 BF 00 0C */	stw r29, 0xc(r31)
 /* 802D953C 002D537C  38 60 00 01 */	li r3, 0x1
 /* 802D9540 002D5380  39 61 00 20 */	addi r11, r1, 0x20
-/* 802D9544 002D5384  4B D2 DE 4D */	bl lbl_80007390
+/* 802D9544 002D5384  4B D2 DE 4D */	bl _restgpr_29
 /* 802D9548 002D5388  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802D954C 002D538C  7C 08 03 A6 */	mtlr r0
 /* 802D9550 002D5390  38 21 00 20 */	addi r1, r1, 0x20
@@ -61,7 +61,7 @@ onRecover__Q53scn4step5enemy6scarfy10BrainChaseFv:
 /* 802D955C 002D539C  7C 08 02 A6 */	mflr r0
 /* 802D9560 002D53A0  90 01 00 24 */	stw r0, 0x24(r1)
 /* 802D9564 002D53A4  39 61 00 20 */	addi r11, r1, 0x20
-/* 802D9568 002D53A8  4B D2 DD DD */	bl lbl_80007344
+/* 802D9568 002D53A8  4B D2 DD DD */	bl _savegpr_29
 /* 802D956C 002D53AC  7C 7D 1B 78 */	mr r29, r3
 /* 802D9570 002D53B0  4B E2 72 71 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 802D9574 002D53B4  4B FA EC 21 */	bl custom__Q43scn4step5enemy5EnemyFv
@@ -153,7 +153,7 @@ lbl_802D967C:
 lbl_802D9680:
 /* 802D9680 002D54C0  38 60 00 01 */	li r3, 0x1
 /* 802D9684 002D54C4  39 61 00 20 */	addi r11, r1, 0x20
-/* 802D9688 002D54C8  4B D2 DD 09 */	bl lbl_80007390
+/* 802D9688 002D54C8  4B D2 DD 09 */	bl _restgpr_29
 /* 802D968C 002D54CC  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802D9690 002D54D0  7C 08 03 A6 */	mtlr r0
 /* 802D9694 002D54D4  38 21 00 20 */	addi r1, r1, 0x20

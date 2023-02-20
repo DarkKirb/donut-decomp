@@ -182,7 +182,7 @@ procMove__Q53scn4step4hero6common18StatePlancherBoundFv:
 /* 80367B18 00363958  7C 08 02 A6 */	mflr r0
 /* 80367B1C 0036395C  90 01 00 54 */	stw r0, 0x54(r1)
 /* 80367B20 00363960  39 61 00 50 */	addi r11, r1, 0x50
-/* 80367B24 00363964  4B C9 F8 21 */	bl lbl_80007344
+/* 80367B24 00363964  4B C9 F8 21 */	bl _savegpr_29
 /* 80367B28 00363968  7C 7D 1B 78 */	mr r29, r3
 /* 80367B2C 0036396C  4B D9 8C B5 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 80367B30 00363970  4B FD 87 DD */	bl move__Q43scn4step4hero4HeroFv
@@ -260,7 +260,7 @@ lbl_80367C0C:
 /* 80367C30 00363A70  38 C1 00 20 */	addi r6, r1, 0x20
 /* 80367C34 00363A74  4B FE F1 7D */	bl MoveFromKeyState__Q43scn4step4hero7UtilityFRQ43scn4step4hero4HeroRCQ24gobj14MoveParamAccelRCQ24gobj14MoveParamDecelRCQ24gobj13MoveParamFall
 /* 80367C38 00363A78  39 61 00 50 */	addi r11, r1, 0x50
-/* 80367C3C 00363A7C  4B C9 F7 55 */	bl lbl_80007390
+/* 80367C3C 00363A7C  4B C9 F7 55 */	bl _restgpr_29
 /* 80367C40 00363A80  80 01 00 54 */	lwz r0, 0x54(r1)
 /* 80367C44 00363A84  7C 08 03 A6 */	mtlr r0
 /* 80367C48 00363A88  38 21 00 50 */	addi r1, r1, 0x50

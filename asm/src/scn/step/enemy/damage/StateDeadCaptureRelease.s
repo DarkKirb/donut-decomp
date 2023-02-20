@@ -11,7 +11,7 @@ __ct__Q53scn4step5enemy6damage23StateDeadCaptureReleaseFPQ43scn4step5enemy5Enemy
 /* 802AA244 002A6084  DB C1 00 40 */	stfd f30, 0x40(r1)
 /* 802AA248 002A6088  F3 C1 00 48 */	psq_st f30, 0x48(r1), 0, qr0
 /* 802AA24C 002A608C  39 61 00 40 */	addi r11, r1, 0x40
-/* 802AA250 002A6090  4B D5 D0 F5 */	bl lbl_80007344
+/* 802AA250 002A6090  4B D5 D0 F5 */	bl _savegpr_29
 /* 802AA254 002A6094  7C 7D 1B 78 */	mr r29, r3
 /* 802AA258 002A6098  7C 9E 23 78 */	mr r30, r4
 /* 802AA25C 002A609C  7C BF 2B 78 */	mr r31, r5
@@ -144,7 +144,7 @@ lbl_802AA3B4:
 /* 802AA450 002A6290  13 C1 00 0C */	psq_lx f30, r1, r0, 0, qr0
 /* 802AA454 002A6294  CB C1 00 40 */	lfd f30, 0x40(r1)
 /* 802AA458 002A6298  39 61 00 40 */	addi r11, r1, 0x40
-/* 802AA45C 002A629C  4B D5 CF 35 */	bl lbl_80007390
+/* 802AA45C 002A629C  4B D5 CF 35 */	bl _restgpr_29
 /* 802AA460 002A62A0  80 01 00 64 */	lwz r0, 0x64(r1)
 /* 802AA464 002A62A4  7C 08 03 A6 */	mtlr r0
 /* 802AA468 002A62A8  38 21 00 60 */	addi r1, r1, 0x60

@@ -7,7 +7,7 @@ __ct__Q53scn4step6weapon13vacuumedblock18StateVacuumReceiveFPQ43scn4step6weapon6
 /* 803EEEB8 003EACF8  7C 08 02 A6 */	mflr r0
 /* 803EEEBC 003EACFC  90 01 00 54 */	stw r0, 0x54(r1)
 /* 803EEEC0 003EAD00  39 61 00 50 */	addi r11, r1, 0x50
-/* 803EEEC4 003EAD04  4B C1 84 7D */	bl lbl_80007340
+/* 803EEEC4 003EAD04  4B C1 84 7D */	bl _savegpr_28
 /* 803EEEC8 003EAD08  7C 7C 1B 78 */	mr r28, r3
 /* 803EEECC 003EAD0C  7C BD 2B 78 */	mr r29, r5
 /* 803EEED0 003EAD10  4B FE 9A 71 */	bl __ct__Q43scn4step6weapon9StateBaseFPQ43scn4step6weapon6Weapon
@@ -65,7 +65,7 @@ __ct__Q53scn4step6weapon13vacuumedblock18StateVacuumReceiveFPQ43scn4step6weapon6
 /* 803EEFA0 003EADE0  4B E8 29 FD */	bl init__Q43scn4step5chara26MoveAlgorithmVacuumReceiveFRCQ33hel4math7Vector2RCQ33hel4math7Vector2fUl
 /* 803EEFA4 003EADE4  7F 83 E3 78 */	mr r3, r28
 /* 803EEFA8 003EADE8  39 61 00 50 */	addi r11, r1, 0x50
-/* 803EEFAC 003EADEC  4B C1 83 E1 */	bl lbl_8000738C
+/* 803EEFAC 003EADEC  4B C1 83 E1 */	bl _restgpr_28
 /* 803EEFB0 003EADF0  80 01 00 54 */	lwz r0, 0x54(r1)
 /* 803EEFB4 003EADF4  7C 08 03 A6 */	mtlr r0
 /* 803EEFB8 003EADF8  38 21 00 50 */	addi r1, r1, 0x50

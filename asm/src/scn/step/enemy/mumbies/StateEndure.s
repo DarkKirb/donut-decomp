@@ -7,7 +7,7 @@ __ct__Q53scn4step5enemy7mumbies11StateEndureFPQ43scn4step5enemy5Enemy:
 /* 802C5884 002C16C4  7C 08 02 A6 */	mflr r0
 /* 802C5888 002C16C8  90 01 00 24 */	stw r0, 0x24(r1)
 /* 802C588C 002C16CC  39 61 00 20 */	addi r11, r1, 0x20
-/* 802C5890 002C16D0  4B D4 1A B5 */	bl lbl_80007344
+/* 802C5890 002C16D0  4B D4 1A B5 */	bl _savegpr_29
 /* 802C5894 002C16D4  7C 7D 1B 78 */	mr r29, r3
 /* 802C5898 002C16D8  4B FC 85 2D */	bl __ct__Q43scn4step5enemy9StateBaseFPQ43scn4step5enemy5Enemy
 /* 802C589C 002C16DC  3C 60 80 48 */	lis r3, __vt__Q53scn4step5enemy7mumbies11StateEndure@ha
@@ -74,7 +74,7 @@ lbl_802C5958:
 /* 802C5960 002C17A0  4B FA 7F DD */	bl setValid__Q43scn4step5chara7CullingFb
 /* 802C5964 002C17A4  7F A3 EB 78 */	mr r3, r29
 /* 802C5968 002C17A8  39 61 00 20 */	addi r11, r1, 0x20
-/* 802C596C 002C17AC  4B D4 1A 25 */	bl lbl_80007390
+/* 802C596C 002C17AC  4B D4 1A 25 */	bl _restgpr_29
 /* 802C5970 002C17B0  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802C5974 002C17B4  7C 08 03 A6 */	mtlr r0
 /* 802C5978 002C17B8  38 21 00 20 */	addi r1, r1, 0x20

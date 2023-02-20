@@ -25,7 +25,7 @@ onStart__Q53scn4step5enemy4como9BrainHangFv:
 /* 802A6F58 002A2D98  7C 08 02 A6 */	mflr r0
 /* 802A6F5C 002A2D9C  90 01 00 24 */	stw r0, 0x24(r1)
 /* 802A6F60 002A2DA0  39 61 00 20 */	addi r11, r1, 0x20
-/* 802A6F64 002A2DA4  4B D6 03 DD */	bl lbl_80007340
+/* 802A6F64 002A2DA4  4B D6 03 DD */	bl _savegpr_28
 /* 802A6F68 002A2DA8  7C 7C 1B 78 */	mr r28, r3
 /* 802A6F6C 002A2DAC  4B E5 98 75 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 802A6F70 002A2DB0  7C 7E 1B 78 */	mr r30, r3
@@ -56,7 +56,7 @@ lbl_802A6FB0:
 /* 802A6FCC 002A2E0C  48 00 19 95 */	bl setLength__Q53scn4step5enemy4como10ThreadCtrlFf
 /* 802A6FD0 002A2E10  38 60 00 01 */	li r3, 0x1
 /* 802A6FD4 002A2E14  39 61 00 20 */	addi r11, r1, 0x20
-/* 802A6FD8 002A2E18  4B D6 03 B5 */	bl lbl_8000738C
+/* 802A6FD8 002A2E18  4B D6 03 B5 */	bl _restgpr_28
 /* 802A6FDC 002A2E1C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802A6FE0 002A2E20  7C 08 03 A6 */	mtlr r0
 /* 802A6FE4 002A2E24  38 21 00 20 */	addi r1, r1, 0x20
@@ -68,7 +68,7 @@ onRecover__Q53scn4step5enemy4como9BrainHangFv:
 /* 802A6FF0 002A2E30  7C 08 02 A6 */	mflr r0
 /* 802A6FF4 002A2E34  90 01 00 24 */	stw r0, 0x24(r1)
 /* 802A6FF8 002A2E38  39 61 00 20 */	addi r11, r1, 0x20
-/* 802A6FFC 002A2E3C  4B D6 03 49 */	bl lbl_80007344
+/* 802A6FFC 002A2E3C  4B D6 03 49 */	bl _savegpr_29
 /* 802A7000 002A2E40  7C 7D 1B 78 */	mr r29, r3
 /* 802A7004 002A2E44  4B E5 97 DD */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 802A7008 002A2E48  4B FE 11 8D */	bl custom__Q43scn4step5enemy5EnemyFv
@@ -113,7 +113,7 @@ lbl_802A7088:
 .global lbl_802A708C
 lbl_802A708C:
 /* 802A708C 002A2ECC  39 61 00 20 */	addi r11, r1, 0x20
-/* 802A7090 002A2ED0  4B D6 03 01 */	bl lbl_80007390
+/* 802A7090 002A2ED0  4B D6 03 01 */	bl _restgpr_29
 /* 802A7094 002A2ED4  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802A7098 002A2ED8  7C 08 03 A6 */	mtlr r0
 /* 802A709C 002A2EDC  38 21 00 20 */	addi r1, r1, 0x20

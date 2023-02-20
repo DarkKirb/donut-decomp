@@ -7,7 +7,7 @@ __ct__Q53scn4step4boss6whispy11StateVacuumFPQ43scn4step4boss4Boss:
 /* 8025E8DC 0025A71C  7C 08 02 A6 */	mflr r0
 /* 8025E8E0 0025A720  90 01 00 34 */	stw r0, 0x34(r1)
 /* 8025E8E4 0025A724  39 61 00 30 */	addi r11, r1, 0x30
-/* 8025E8E8 0025A728  4B DA 8A 55 */	bl lbl_8000733C
+/* 8025E8E8 0025A728  4B DA 8A 55 */	bl _savegpr_27
 /* 8025E8EC 0025A72C  7C 7B 1B 78 */	mr r27, r3
 /* 8025E8F0 0025A730  4B FD 5B F1 */	bl __ct__Q43scn4step4boss9StateBaseFPQ43scn4step4boss4Boss
 /* 8025E8F4 0025A734  3C 60 80 47 */	lis r3, __vt__Q53scn4step4boss6whispy11StateVacuum@ha
@@ -84,7 +84,7 @@ lbl_8025E990:
 /* 8025E9F8 0025A838  48 00 0B 29 */	bl set__Q53scn4step4boss6whispy8WindCtrlFfff
 /* 8025E9FC 0025A83C  7F 63 DB 78 */	mr r3, r27
 /* 8025EA00 0025A840  39 61 00 30 */	addi r11, r1, 0x30
-/* 8025EA04 0025A844  4B DA 89 85 */	bl lbl_80007388
+/* 8025EA04 0025A844  4B DA 89 85 */	bl _restgpr_27
 /* 8025EA08 0025A848  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 8025EA0C 0025A84C  7C 08 03 A6 */	mtlr r0
 /* 8025EA10 0025A850  38 21 00 30 */	addi r1, r1, 0x30
@@ -96,7 +96,7 @@ __dt__Q53scn4step4boss6whispy11StateVacuumFv:
 /* 8025EA1C 0025A85C  7C 08 02 A6 */	mflr r0
 /* 8025EA20 0025A860  90 01 00 24 */	stw r0, 0x24(r1)
 /* 8025EA24 0025A864  39 61 00 20 */	addi r11, r1, 0x20
-/* 8025EA28 0025A868  4B DA 89 1D */	bl lbl_80007344
+/* 8025EA28 0025A868  4B DA 89 1D */	bl _savegpr_29
 /* 8025EA2C 0025A86C  7C 7D 1B 78 */	mr r29, r3
 /* 8025EA30 0025A870  7C 9E 23 78 */	mr r30, r4
 /* 8025EA34 0025A874  2C 03 00 00 */	cmpwi r3, 0x0
@@ -129,7 +129,7 @@ __dt__Q53scn4step4boss6whispy11StateVacuumFv:
 lbl_8025EA9C:
 /* 8025EA9C 0025A8DC  7F A3 EB 78 */	mr r3, r29
 /* 8025EAA0 0025A8E0  39 61 00 20 */	addi r11, r1, 0x20
-/* 8025EAA4 0025A8E4  4B DA 88 ED */	bl lbl_80007390
+/* 8025EAA4 0025A8E4  4B DA 88 ED */	bl _restgpr_29
 /* 8025EAA8 0025A8E8  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8025EAAC 0025A8EC  7C 08 03 A6 */	mtlr r0
 /* 8025EAB0 0025A8F0  38 21 00 20 */	addi r1, r1, 0x20
@@ -141,7 +141,7 @@ procAnim__Q53scn4step4boss6whispy11StateVacuumFv:
 /* 8025EABC 0025A8FC  7C 08 02 A6 */	mflr r0
 /* 8025EAC0 0025A900  90 01 00 34 */	stw r0, 0x34(r1)
 /* 8025EAC4 0025A904  39 61 00 30 */	addi r11, r1, 0x30
-/* 8025EAC8 0025A908  4B DA 88 7D */	bl lbl_80007344
+/* 8025EAC8 0025A908  4B DA 88 7D */	bl _savegpr_29
 /* 8025EACC 0025A90C  7C 7F 1B 78 */	mr r31, r3
 /* 8025EAD0 0025A910  4B EA 1D 11 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 8025EAD4 0025A914  4B FC E5 15 */	bl custom__Q43scn4step4boss4BossFv
@@ -234,7 +234,7 @@ lbl_8025EBF8:
 .global lbl_8025EC00
 lbl_8025EC00:
 /* 8025EC00 0025AA40  39 61 00 30 */	addi r11, r1, 0x30
-/* 8025EC04 0025AA44  4B DA 87 8D */	bl lbl_80007390
+/* 8025EC04 0025AA44  4B DA 87 8D */	bl _restgpr_29
 /* 8025EC08 0025AA48  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 8025EC0C 0025AA4C  7C 08 03 A6 */	mtlr r0
 /* 8025EC10 0025AA50  38 21 00 30 */	addi r1, r1, 0x30
@@ -250,7 +250,7 @@ procObjCollReact__Q53scn4step4boss6whispy11StateVacuumFv:
 /* 8025EC20 0025AA60  7C 08 02 A6 */	mflr r0
 /* 8025EC24 0025AA64  90 01 00 24 */	stw r0, 0x24(r1)
 /* 8025EC28 0025AA68  39 61 00 20 */	addi r11, r1, 0x20
-/* 8025EC2C 0025AA6C  4B DA 87 19 */	bl lbl_80007344
+/* 8025EC2C 0025AA6C  4B DA 87 19 */	bl _savegpr_29
 /* 8025EC30 0025AA70  7C 7D 1B 78 */	mr r29, r3
 /* 8025EC34 0025AA74  4B EA 1B AD */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 8025EC38 0025AA78  4B FC E3 B1 */	bl custom__Q43scn4step4boss4BossFv
@@ -283,7 +283,7 @@ lbl_8025EC98:
 .global lbl_8025EC9C
 lbl_8025EC9C:
 /* 8025EC9C 0025AADC  39 61 00 20 */	addi r11, r1, 0x20
-/* 8025ECA0 0025AAE0  4B DA 86 F1 */	bl lbl_80007390
+/* 8025ECA0 0025AAE0  4B DA 86 F1 */	bl _restgpr_29
 /* 8025ECA4 0025AAE4  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8025ECA8 0025AAE8  7C 08 03 A6 */	mtlr r0
 /* 8025ECAC 0025AAEC  38 21 00 20 */	addi r1, r1, 0x20

@@ -62,7 +62,7 @@ updateMainNormal__Q43scn4step4core7UpdaterFv:
 /* 8027969C 002754DC  7C 08 02 A6 */	mflr r0
 /* 802796A0 002754E0  90 01 00 24 */	stw r0, 0x24(r1)
 /* 802796A4 002754E4  39 61 00 20 */	addi r11, r1, 0x20
-/* 802796A8 002754E8  4B D8 DC 95 */	bl lbl_8000733C
+/* 802796A8 002754E8  4B D8 DC 95 */	bl _savegpr_27
 /* 802796AC 002754EC  7C 7B 1B 78 */	mr r27, r3
 /* 802796B0 002754F0  48 00 03 8D */	bl procBegin__Q43scn4step4core7UpdaterFv
 /* 802796B4 002754F4  7F 63 DB 78 */	mr r3, r27
@@ -201,7 +201,7 @@ lbl_80279880:
 .global lbl_80279898
 lbl_80279898:
 /* 80279898 002756D8  39 61 00 20 */	addi r11, r1, 0x20
-/* 8027989C 002756DC  4B D8 DA ED */	bl lbl_80007388
+/* 8027989C 002756DC  4B D8 DA ED */	bl _restgpr_27
 /* 802798A0 002756E0  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802798A4 002756E4  7C 08 03 A6 */	mtlr r0
 /* 802798A8 002756E8  38 21 00 20 */	addi r1, r1, 0x20
@@ -811,7 +811,7 @@ procPauseMenuOpen__Q43scn4step4core7UpdaterFv:
 /* 8027A158 00275F98  7C 08 02 A6 */	mflr r0
 /* 8027A15C 00275F9C  90 01 00 94 */	stw r0, 0x94(r1)
 /* 8027A160 00275FA0  39 61 00 90 */	addi r11, r1, 0x90
-/* 8027A164 00275FA4  4B D8 D1 D9 */	bl lbl_8000733C
+/* 8027A164 00275FA4  4B D8 D1 D9 */	bl _savegpr_27
 /* 8027A168 00275FA8  7C 7B 1B 78 */	mr r27, r3
 /* 8027A16C 00275FAC  80 63 00 00 */	lwz r3, 0x0(r3)
 /* 8027A170 00275FB0  4B F7 1C 6D */	bl charaManager__Q33scn14challengetitle9ComponentFv
@@ -999,7 +999,7 @@ lbl_8027A3E0:
 .global lbl_8027A3F8
 lbl_8027A3F8:
 /* 8027A3F8 00276238  39 61 00 90 */	addi r11, r1, 0x90
-/* 8027A3FC 0027623C  4B D8 CF 8D */	bl lbl_80007388
+/* 8027A3FC 0027623C  4B D8 CF 8D */	bl _restgpr_27
 /* 8027A400 00276240  80 01 00 94 */	lwz r0, 0x94(r1)
 /* 8027A404 00276244  7C 08 03 A6 */	mtlr r0
 /* 8027A408 00276248  38 21 00 90 */	addi r1, r1, 0x90

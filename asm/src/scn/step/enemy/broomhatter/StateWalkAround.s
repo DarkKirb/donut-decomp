@@ -69,7 +69,7 @@ procAnim__Q53scn4step5enemy11broomhatter15StateWalkAroundFv:
 /* 802A1CC4 0029DB04  DB E1 00 B0 */	stfd f31, 0xb0(r1)
 /* 802A1CC8 0029DB08  F3 E1 00 B8 */	psq_st f31, 0xb8(r1), 0, qr0
 /* 802A1CCC 0029DB0C  39 61 00 B0 */	addi r11, r1, 0xb0
-/* 802A1CD0 0029DB10  4B D6 56 75 */	bl lbl_80007344
+/* 802A1CD0 0029DB10  4B D6 56 75 */	bl _savegpr_29
 /* 802A1CD4 0029DB14  7C 7F 1B 78 */	mr r31, r3
 /* 802A1CD8 0029DB18  4B E5 EB 09 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 802A1CDC 0029DB1C  4B FE 63 A9 */	bl param__Q43scn4step5enemy5EnemyCFv
@@ -230,7 +230,7 @@ lbl_802A1F14:
 /* 802A1F18 0029DD58  13 E1 00 0C */	psq_lx f31, r1, r0, 0, qr0
 /* 802A1F1C 0029DD5C  CB E1 00 B0 */	lfd f31, 0xb0(r1)
 /* 802A1F20 0029DD60  39 61 00 B0 */	addi r11, r1, 0xb0
-/* 802A1F24 0029DD64  4B D6 54 6D */	bl lbl_80007390
+/* 802A1F24 0029DD64  4B D6 54 6D */	bl _restgpr_29
 /* 802A1F28 0029DD68  80 01 00 C4 */	lwz r0, 0xc4(r1)
 /* 802A1F2C 0029DD6C  7C 08 03 A6 */	mtlr r0
 /* 802A1F30 0029DD70  38 21 00 C0 */	addi r1, r1, 0xc0

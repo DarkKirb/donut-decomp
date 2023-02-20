@@ -161,7 +161,7 @@ procMove__Q53scn4step5enemy8cerulean8StateFlyFv:
 /* 802A5870 002A16B0  7C 08 02 A6 */	mflr r0
 /* 802A5874 002A16B4  90 01 00 44 */	stw r0, 0x44(r1)
 /* 802A5878 002A16B8  39 61 00 40 */	addi r11, r1, 0x40
-/* 802A587C 002A16BC  4B D6 1A C9 */	bl lbl_80007344
+/* 802A587C 002A16BC  4B D6 1A C9 */	bl _savegpr_29
 /* 802A5880 002A16C0  7C 7D 1B 78 */	mr r29, r3
 /* 802A5884 002A16C4  4B E5 AF 5D */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 802A5888 002A16C8  4B FE 27 FD */	bl param__Q43scn4step5enemy5EnemyCFv
@@ -220,7 +220,7 @@ lbl_802A5920:
 .global lbl_802A594C
 lbl_802A594C:
 /* 802A594C 002A178C  39 61 00 40 */	addi r11, r1, 0x40
-/* 802A5950 002A1790  4B D6 1A 41 */	bl lbl_80007390
+/* 802A5950 002A1790  4B D6 1A 41 */	bl _restgpr_29
 /* 802A5954 002A1794  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 802A5958 002A1798  7C 08 03 A6 */	mtlr r0
 /* 802A595C 002A179C  38 21 00 40 */	addi r1, r1, 0x40

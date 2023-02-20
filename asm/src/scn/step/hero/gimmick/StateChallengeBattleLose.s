@@ -7,7 +7,7 @@ __ct__Q53scn4step4hero7gimmick24StateChallengeBattleLoseFPQ43scn4step4hero4Hero:
 /* 80378EDC 00374D1C  7C 08 02 A6 */	mflr r0
 /* 80378EE0 00374D20  90 01 00 54 */	stw r0, 0x54(r1)
 /* 80378EE4 00374D24  39 61 00 50 */	addi r11, r1, 0x50
-/* 80378EE8 00374D28  4B C8 E4 5D */	bl lbl_80007344
+/* 80378EE8 00374D28  4B C8 E4 5D */	bl _savegpr_29
 /* 80378EEC 00374D2C  7C 7D 1B 78 */	mr r29, r3
 /* 80378EF0 00374D30  7C 9E 23 78 */	mr r30, r4
 /* 80378EF4 00374D34  4B FD C5 FD */	bl __ct__Q43scn4step4hero9StateBaseFPQ43scn4step4hero4Hero
@@ -71,7 +71,7 @@ __ct__Q53scn4step4hero7gimmick24StateChallengeBattleLoseFPQ43scn4step4hero4Hero:
 /* 80378FDC 00374E1C  48 00 09 C5 */	bl construct__Q53scn4step4hero7gimmick24StateChallengeBattleLoseFv
 /* 80378FE0 00374E20  7F A3 EB 78 */	mr r3, r29
 /* 80378FE4 00374E24  39 61 00 50 */	addi r11, r1, 0x50
-/* 80378FE8 00374E28  4B C8 E3 A9 */	bl lbl_80007390
+/* 80378FE8 00374E28  4B C8 E3 A9 */	bl _restgpr_29
 /* 80378FEC 00374E2C  80 01 00 54 */	lwz r0, 0x54(r1)
 /* 80378FF0 00374E30  7C 08 03 A6 */	mtlr r0
 /* 80378FF4 00374E34  38 21 00 50 */	addi r1, r1, 0x50
@@ -150,7 +150,7 @@ procAnim__Q53scn4step4hero7gimmick24StateChallengeBattleLoseFv:
 /* 803790F8 00374F38  DB E1 00 80 */	stfd f31, 0x80(r1)
 /* 803790FC 00374F3C  F3 E1 00 88 */	psq_st f31, 0x88(r1), 0, qr0
 /* 80379100 00374F40  39 61 00 80 */	addi r11, r1, 0x80
-/* 80379104 00374F44  4B C8 E2 41 */	bl lbl_80007344
+/* 80379104 00374F44  4B C8 E2 41 */	bl _savegpr_29
 /* 80379108 00374F48  7C 7E 1B 78 */	mr r30, r3
 /* 8037910C 00374F4C  48 00 0B 25 */	bl tryReqStop__Q53scn4step4hero7gimmick24StateChallengeBattleLoseFv
 /* 80379110 00374F50  88 1E 00 51 */	lbz r0, 0x51(r30)
@@ -634,7 +634,7 @@ lbl_803797E4:
 /* 803797E8 00375628  13 E1 00 0C */	psq_lx f31, r1, r0, 0, qr0
 /* 803797EC 0037562C  CB E1 00 80 */	lfd f31, 0x80(r1)
 /* 803797F0 00375630  39 61 00 80 */	addi r11, r1, 0x80
-/* 803797F4 00375634  4B C8 DB 9D */	bl lbl_80007390
+/* 803797F4 00375634  4B C8 DB 9D */	bl _restgpr_29
 /* 803797F8 00375638  80 01 00 94 */	lwz r0, 0x94(r1)
 /* 803797FC 0037563C  7C 08 03 A6 */	mtlr r0
 /* 80379800 00375640  38 21 00 90 */	addi r1, r1, 0x90
@@ -755,7 +755,7 @@ construct__Q53scn4step4hero7gimmick24StateChallengeBattleLoseFv:
 /* 803799A4 003757E4  7C 08 02 A6 */	mflr r0
 /* 803799A8 003757E8  90 01 00 54 */	stw r0, 0x54(r1)
 /* 803799AC 003757EC  39 61 00 50 */	addi r11, r1, 0x50
-/* 803799B0 003757F0  4B C8 D9 95 */	bl lbl_80007344
+/* 803799B0 003757F0  4B C8 D9 95 */	bl _savegpr_29
 /* 803799B4 003757F4  7C 7D 1B 78 */	mr r29, r3
 /* 803799B8 003757F8  4B D8 6E 29 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 803799BC 003757FC  4B FC 69 21 */	bl param__Q43scn4step4hero4HeroFv
@@ -914,7 +914,7 @@ lbl_80379C10:
 /* 80379C10 00375A50  7F A3 EB 78 */	mr r3, r29
 /* 80379C14 00375A54  48 00 01 6D */	bl setCameraTargetPos__Q53scn4step4hero7gimmick24StateChallengeBattleLoseFv
 /* 80379C18 00375A58  39 61 00 50 */	addi r11, r1, 0x50
-/* 80379C1C 00375A5C  4B C8 D7 75 */	bl lbl_80007390
+/* 80379C1C 00375A5C  4B C8 D7 75 */	bl _restgpr_29
 /* 80379C20 00375A60  80 01 00 54 */	lwz r0, 0x54(r1)
 /* 80379C24 00375A64  7C 08 03 A6 */	mtlr r0
 /* 80379C28 00375A68  38 21 00 50 */	addi r1, r1, 0x50
@@ -1015,7 +1015,7 @@ setCameraTargetPos__Q53scn4step4hero7gimmick24StateChallengeBattleLoseFv:
 /* 80379D84 00375BC4  7C 08 02 A6 */	mflr r0
 /* 80379D88 00375BC8  90 01 06 94 */	stw r0, 0x694(r1)
 /* 80379D8C 00375BCC  39 61 06 90 */	addi r11, r1, 0x690
-/* 80379D90 00375BD0  4B C8 D5 B5 */	bl lbl_80007344
+/* 80379D90 00375BD0  4B C8 D5 B5 */	bl _savegpr_29
 /* 80379D94 00375BD4  7C 7D 1B 78 */	mr r29, r3
 /* 80379D98 00375BD8  4B D8 6A 49 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 80379D9C 00375BDC  4B FC 65 41 */	bl param__Q43scn4step4hero4HeroFv
@@ -1086,7 +1086,7 @@ lbl_80379E84:
 /* 80379E98 00375CD8  38 80 FF FF */	li r4, -0x1
 /* 80379E9C 00375CDC  4B E3 BD 21 */	bl __dt__Q35mcoll6detail12DetectResultFv
 /* 80379EA0 00375CE0  39 61 06 90 */	addi r11, r1, 0x690
-/* 80379EA4 00375CE4  4B C8 D4 ED */	bl lbl_80007390
+/* 80379EA4 00375CE4  4B C8 D4 ED */	bl _restgpr_29
 /* 80379EA8 00375CE8  80 01 06 94 */	lwz r0, 0x694(r1)
 /* 80379EAC 00375CEC  7C 08 03 A6 */	mtlr r0
 /* 80379EB0 00375CF0  38 21 06 90 */	addi r1, r1, 0x690

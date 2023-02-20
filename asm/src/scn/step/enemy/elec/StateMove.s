@@ -210,7 +210,7 @@ procMove__Q53scn4step5enemy4elec9StateMoveFv:
 /* 802B0584 002AC3C4  DB A1 00 80 */	stfd f29, 0x80(r1)
 /* 802B0588 002AC3C8  F3 A1 00 88 */	psq_st f29, 0x88(r1), 0, qr0
 /* 802B058C 002AC3CC  39 61 00 80 */	addi r11, r1, 0x80
-/* 802B0590 002AC3D0  4B D5 6D B1 */	bl lbl_80007340
+/* 802B0590 002AC3D0  4B D5 6D B1 */	bl _savegpr_28
 /* 802B0594 002AC3D4  7C 7C 1B 78 */	mr r28, r3
 /* 802B0598 002AC3D8  4B E5 02 49 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 802B059C 002AC3DC  4B FD 7A E9 */	bl param__Q43scn4step5enemy5EnemyCFv
@@ -529,7 +529,7 @@ lbl_802B09F4:
 /* 802B0A10 002AC850  13 A1 00 0C */	psq_lx f29, r1, r0, 0, qr0
 /* 802B0A14 002AC854  CB A1 00 80 */	lfd f29, 0x80(r1)
 /* 802B0A18 002AC858  39 61 00 80 */	addi r11, r1, 0x80
-/* 802B0A1C 002AC85C  4B D5 69 71 */	bl lbl_8000738C
+/* 802B0A1C 002AC85C  4B D5 69 71 */	bl _restgpr_28
 /* 802B0A20 002AC860  80 01 00 B4 */	lwz r0, 0xb4(r1)
 /* 802B0A24 002AC864  7C 08 03 A6 */	mtlr r0
 /* 802B0A28 002AC868  38 21 00 B0 */	addi r1, r1, 0xb0
@@ -668,7 +668,7 @@ xy2roundDist__Q53scn4step5enemy4elec9StateMoveCFiiQ33hel4math7Vector2:
 /* 802B0C08 002ACA48  DB 41 00 60 */	stfd f26, 0x60(r1)
 /* 802B0C0C 002ACA4C  F3 41 00 68 */	psq_st f26, 0x68(r1), 0, qr0
 /* 802B0C10 002ACA50  39 61 00 60 */	addi r11, r1, 0x60
-/* 802B0C14 002ACA54  4B D5 67 29 */	bl lbl_8000733C
+/* 802B0C14 002ACA54  4B D5 67 29 */	bl _savegpr_27
 /* 802B0C18 002ACA58  7C 7B 1B 78 */	mr r27, r3
 /* 802B0C1C 002ACA5C  7C DC 33 78 */	mr r28, r6
 /* 802B0C20 002ACA60  3C 00 43 30 */	lis r0, 0x4330
@@ -830,7 +830,7 @@ lbl_802B0E00:
 /* 802B0E40 002ACC80  13 41 00 0C */	psq_lx f26, r1, r0, 0, qr0
 /* 802B0E44 002ACC84  CB 41 00 60 */	lfd f26, 0x60(r1)
 /* 802B0E48 002ACC88  39 61 00 60 */	addi r11, r1, 0x60
-/* 802B0E4C 002ACC8C  4B D5 65 3D */	bl lbl_80007388
+/* 802B0E4C 002ACC8C  4B D5 65 3D */	bl _restgpr_27
 /* 802B0E50 002ACC90  80 01 00 C4 */	lwz r0, 0xc4(r1)
 /* 802B0E54 002ACC94  7C 08 03 A6 */	mtlr r0
 /* 802B0E58 002ACC98  38 21 00 C0 */	addi r1, r1, 0xc0
@@ -849,7 +849,7 @@ roundDist2xy__Q53scn4step5enemy4elec9StateMoveCFiif:
 /* 802B0E84 002ACCC4  DB 81 00 80 */	stfd f28, 0x80(r1)
 /* 802B0E88 002ACCC8  F3 81 00 88 */	psq_st f28, 0x88(r1), 0, qr0
 /* 802B0E8C 002ACCCC  39 61 00 80 */	addi r11, r1, 0x80
-/* 802B0E90 002ACCD0  4B D5 64 B1 */	bl lbl_80007340
+/* 802B0E90 002ACCD0  4B D5 64 B1 */	bl _savegpr_28
 /* 802B0E94 002ACCD4  7C 7C 1B 78 */	mr r28, r3
 /* 802B0E98 002ACCD8  7C 9F 23 78 */	mr r31, r4
 /* 802B0E9C 002ACCDC  7C BD 2B 78 */	mr r29, r5
@@ -1008,7 +1008,7 @@ lbl_802B1098:
 /* 802B10C0 002ACF00  13 81 00 0C */	psq_lx f28, r1, r0, 0, qr0
 /* 802B10C4 002ACF04  CB 81 00 80 */	lfd f28, 0x80(r1)
 /* 802B10C8 002ACF08  39 61 00 80 */	addi r11, r1, 0x80
-/* 802B10CC 002ACF0C  4B D5 62 C1 */	bl lbl_8000738C
+/* 802B10CC 002ACF0C  4B D5 62 C1 */	bl _restgpr_28
 /* 802B10D0 002ACF10  80 01 00 C4 */	lwz r0, 0xc4(r1)
 /* 802B10D4 002ACF14  7C 08 03 A6 */	mtlr r0
 /* 802B10D8 002ACF18  38 21 00 C0 */	addi r1, r1, 0xc0

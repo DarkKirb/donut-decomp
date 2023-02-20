@@ -164,7 +164,7 @@ update__Q53scn4step4boss15challengemaster14AvoidEnemyCtrlFv:
 /* 8023B078 00236EB8  7C 08 02 A6 */	mflr r0
 /* 8023B07C 00236EBC  90 01 00 24 */	stw r0, 0x24(r1)
 /* 8023B080 00236EC0  39 61 00 20 */	addi r11, r1, 0x20
-/* 8023B084 00236EC4  4B DC C2 BD */	bl lbl_80007340
+/* 8023B084 00236EC4  4B DC C2 BD */	bl _savegpr_28
 /* 8023B088 00236EC8  7C 7C 1B 78 */	mr r28, r3
 /* 8023B08C 00236ECC  80 63 00 00 */	lwz r3, 0x0(r3)
 /* 8023B090 00236ED0  4B FF 1F 59 */	bl custom__Q43scn4step4boss4BossFv
@@ -257,7 +257,7 @@ lbl_8023B18C:
 .global lbl_8023B194
 lbl_8023B194:
 /* 8023B194 00236FD4  39 61 00 20 */	addi r11, r1, 0x20
-/* 8023B198 00236FD8  4B DC C1 F5 */	bl lbl_8000738C
+/* 8023B198 00236FD8  4B DC C1 F5 */	bl _restgpr_28
 /* 8023B19C 00236FDC  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8023B1A0 00236FE0  7C 08 03 A6 */	mtlr r0
 /* 8023B1A4 00236FE4  38 21 00 20 */	addi r1, r1, 0x20
@@ -288,7 +288,7 @@ __as__Q63scn4step4boss15challengemaster14AvoidEnemyCtrl9EnemyDataFRCQ63scn4step4
 /* 8023B1F8 00237038  7C 08 02 A6 */	mflr r0
 /* 8023B1FC 0023703C  90 01 00 24 */	stw r0, 0x24(r1)
 /* 8023B200 00237040  39 61 00 20 */	addi r11, r1, 0x20
-/* 8023B204 00237044  4B DC C1 41 */	bl lbl_80007344
+/* 8023B204 00237044  4B DC C1 41 */	bl _savegpr_29
 /* 8023B208 00237048  7C 7D 1B 78 */	mr r29, r3
 /* 8023B20C 0023704C  7C 9E 23 78 */	mr r30, r4
 /* 8023B210 00237050  4B F4 13 D5 */	bl "isLink__Q24util51ObjListNode<Q23g3d5Model,Q24util16ObjListDummyType>CFv"
@@ -328,7 +328,7 @@ lbl_8023B27C:
 /* 8023B280 002370C0  D0 1D 00 10 */	stfs f0, 0x10(r29)
 /* 8023B284 002370C4  7F A3 EB 78 */	mr r3, r29
 /* 8023B288 002370C8  39 61 00 20 */	addi r11, r1, 0x20
-/* 8023B28C 002370CC  4B DC C1 05 */	bl lbl_80007390
+/* 8023B28C 002370CC  4B DC C1 05 */	bl _restgpr_29
 /* 8023B290 002370D0  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8023B294 002370D4  7C 08 03 A6 */	mtlr r0
 /* 8023B298 002370D8  38 21 00 20 */	addi r1, r1, 0x20
@@ -372,7 +372,7 @@ isExistFuture__Q53scn4step4boss15challengemaster14AvoidEnemyCtrlCFRCQ33hel4math7
 /* 8023B318 00237158  DB C1 00 70 */	stfd f30, 0x70(r1)
 /* 8023B31C 0023715C  F3 C1 00 78 */	psq_st f30, 0x78(r1), 0, qr0
 /* 8023B320 00237160  39 61 00 70 */	addi r11, r1, 0x70
-/* 8023B324 00237164  4B DC C0 19 */	bl lbl_8000733C
+/* 8023B324 00237164  4B DC C0 19 */	bl _savegpr_27
 /* 8023B328 00237168  7C 7B 1B 78 */	mr r27, r3
 /* 8023B32C 0023716C  7C 9C 23 78 */	mr r28, r4
 /* 8023B330 00237170  80 63 00 00 */	lwz r3, 0x0(r3)
@@ -474,7 +474,7 @@ lbl_8023B480:
 /* 8023B490 002372D0  13 C1 00 0C */	psq_lx f30, r1, r0, 0, qr0
 /* 8023B494 002372D4  CB C1 00 70 */	lfd f30, 0x70(r1)
 /* 8023B498 002372D8  39 61 00 70 */	addi r11, r1, 0x70
-/* 8023B49C 002372DC  4B DC BE ED */	bl lbl_80007388
+/* 8023B49C 002372DC  4B DC BE ED */	bl _restgpr_27
 /* 8023B4A0 002372E0  80 01 00 94 */	lwz r0, 0x94(r1)
 /* 8023B4A4 002372E4  7C 08 03 A6 */	mtlr r0
 /* 8023B4A8 002372E8  38 21 00 90 */	addi r1, r1, 0x90

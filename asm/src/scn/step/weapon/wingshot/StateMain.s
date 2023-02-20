@@ -9,7 +9,7 @@ __ct__Q53scn4step6weapon8wingshot9StateMainFPQ43scn4step6weapon6Weapon:
 /* 803E5C1C 003E1A5C  DB E1 00 40 */	stfd f31, 0x40(r1)
 /* 803E5C20 003E1A60  F3 E1 00 48 */	psq_st f31, 0x48(r1), 0, qr0
 /* 803E5C24 003E1A64  39 61 00 40 */	addi r11, r1, 0x40
-/* 803E5C28 003E1A68  4B C2 17 1D */	bl lbl_80007344
+/* 803E5C28 003E1A68  4B C2 17 1D */	bl _savegpr_29
 /* 803E5C2C 003E1A6C  7C 7D 1B 78 */	mr r29, r3
 /* 803E5C30 003E1A70  4B FF 2D 11 */	bl __ct__Q43scn4step6weapon9StateBaseFPQ43scn4step6weapon6Weapon
 /* 803E5C34 003E1A74  3C 60 80 49 */	lis r3, __vt__Q53scn4step6weapon8wingshot9StateMain@ha
@@ -100,7 +100,7 @@ __ct__Q53scn4step6weapon8wingshot9StateMainFPQ43scn4step6weapon6Weapon:
 /* 803E5D88 003E1BC8  13 E1 00 0C */	psq_lx f31, r1, r0, 0, qr0
 /* 803E5D8C 003E1BCC  CB E1 00 40 */	lfd f31, 0x40(r1)
 /* 803E5D90 003E1BD0  39 61 00 40 */	addi r11, r1, 0x40
-/* 803E5D94 003E1BD4  4B C2 15 FD */	bl lbl_80007390
+/* 803E5D94 003E1BD4  4B C2 15 FD */	bl _restgpr_29
 /* 803E5D98 003E1BD8  80 01 00 54 */	lwz r0, 0x54(r1)
 /* 803E5D9C 003E1BDC  7C 08 03 A6 */	mtlr r0
 /* 803E5DA0 003E1BE0  38 21 00 50 */	addi r1, r1, 0x50
@@ -243,7 +243,7 @@ __ct__Q53scn4step6weapon13wingshockwave9StateMainFPQ43scn4step6weapon6Weapon:
 /* 803E5F60 003E1DA0  DB C1 00 30 */	stfd f30, 0x30(r1)
 /* 803E5F64 003E1DA4  F3 C1 00 38 */	psq_st f30, 0x38(r1), 0, qr0
 /* 803E5F68 003E1DA8  39 61 00 30 */	addi r11, r1, 0x30
-/* 803E5F6C 003E1DAC  4B C2 13 D9 */	bl lbl_80007344
+/* 803E5F6C 003E1DAC  4B C2 13 D9 */	bl _savegpr_29
 /* 803E5F70 003E1DB0  7C 7D 1B 78 */	mr r29, r3
 /* 803E5F74 003E1DB4  4B FF 29 CD */	bl __ct__Q43scn4step6weapon9StateBaseFPQ43scn4step6weapon6Weapon
 /* 803E5F78 003E1DB8  3C 60 80 49 */	lis r3, __vt__Q53scn4step6weapon13wingshockwave9StateMain@ha
@@ -309,7 +309,7 @@ lbl_803E5FF0:
 /* 803E6060 003E1EA0  13 C1 00 0C */	psq_lx f30, r1, r0, 0, qr0
 /* 803E6064 003E1EA4  CB C1 00 30 */	lfd f30, 0x30(r1)
 /* 803E6068 003E1EA8  39 61 00 30 */	addi r11, r1, 0x30
-/* 803E606C 003E1EAC  4B C2 13 25 */	bl lbl_80007390
+/* 803E606C 003E1EAC  4B C2 13 25 */	bl _restgpr_29
 /* 803E6070 003E1EB0  80 01 00 54 */	lwz r0, 0x54(r1)
 /* 803E6074 003E1EB4  7C 08 03 A6 */	mtlr r0
 /* 803E6078 003E1EB8  38 21 00 50 */	addi r1, r1, 0x50

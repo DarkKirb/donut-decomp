@@ -9,7 +9,7 @@ __ct__Q33scn10grandtitle5BlockFRQ33scn10grandtitle9ComponentRQ23g3d8StdModelUl:
 /* 80200B54 001FC994  DB E1 00 E0 */	stfd f31, 0xe0(r1)
 /* 80200B58 001FC998  F3 E1 00 E8 */	psq_st f31, 0xe8(r1), 0, qr0
 /* 80200B5C 001FC99C  39 61 00 E0 */	addi r11, r1, 0xe0
-/* 80200B60 001FC9A0  4B E0 67 D5 */	bl lbl_80007334
+/* 80200B60 001FC9A0  4B E0 67 D5 */	bl _savegpr_25
 /* 80200B64 001FC9A4  7C 79 1B 78 */	mr r25, r3
 /* 80200B68 001FC9A8  7C 9C 23 78 */	mr r28, r4
 /* 80200B6C 001FC9AC  7C BA 2B 78 */	mr r26, r5
@@ -103,7 +103,7 @@ __ct__Q33scn10grandtitle5BlockFRQ33scn10grandtitle9ComponentRQ23g3d8StdModelUl:
 /* 80200CCC 001FCB0C  13 E1 00 0C */	psq_lx f31, r1, r0, 0, qr0
 /* 80200CD0 001FCB10  CB E1 00 E0 */	lfd f31, 0xe0(r1)
 /* 80200CD4 001FCB14  39 61 00 E0 */	addi r11, r1, 0xe0
-/* 80200CD8 001FCB18  4B E0 66 A9 */	bl lbl_80007380
+/* 80200CD8 001FCB18  4B E0 66 A9 */	bl _restgpr_25
 /* 80200CDC 001FCB1C  80 01 00 F4 */	lwz r0, 0xf4(r1)
 /* 80200CE0 001FCB20  7C 08 03 A6 */	mtlr r0
 /* 80200CE4 001FCB24  38 21 00 F0 */	addi r1, r1, 0xf0

@@ -7,7 +7,7 @@ Create__Q53scn4step5enemy8rollball9ModelDescFv:
 /* 802D6630 002D2470  7C 08 02 A6 */	mflr r0
 /* 802D6634 002D2474  90 01 00 34 */	stw r0, 0x34(r1)
 /* 802D6638 002D2478  39 61 00 30 */	addi r11, r1, 0x30
-/* 802D663C 002D247C  4B D3 0D 09 */	bl lbl_80007344
+/* 802D663C 002D247C  4B D3 0D 09 */	bl _savegpr_29
 /* 802D6640 002D2480  3C 60 80 48 */	lis r3, "@50123_8047B010"@ha
 /* 802D6644 002D2484  3B E3 B0 10 */	addi r31, r3, "@50123_8047B010"@l
 /* 802D6648 002D2488  3B BF 00 98 */	addi r29, r31, 0x98
@@ -44,7 +44,7 @@ lbl_802D6674:
 /* 802D66BC 002D24FC  4B FB 47 21 */	bl Set__Q43scn4step5enemy13ModelDescUtilFRQ43scn4step5chara9ModelDescRQ24gobj8AnimDescRQ24gobj10ScriptDescPCcPCcUlPPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry
 /* 802D66C0 002D2500  38 7F 17 D0 */	addi r3, r31, 0x17d0
 /* 802D66C4 002D2504  39 61 00 30 */	addi r11, r1, 0x30
-/* 802D66C8 002D2508  4B D3 0C C9 */	bl lbl_80007390
+/* 802D66C8 002D2508  4B D3 0C C9 */	bl _restgpr_29
 /* 802D66CC 002D250C  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 802D66D0 002D2510  7C 08 03 A6 */	mtlr r0
 /* 802D66D4 002D2514  38 21 00 30 */	addi r1, r1, 0x30
@@ -56,7 +56,7 @@ CreateMaster__Q53scn4step5enemy8rollball9ModelDescFv:
 /* 802D66E0 002D2520  7C 08 02 A6 */	mflr r0
 /* 802D66E4 002D2524  90 01 00 34 */	stw r0, 0x34(r1)
 /* 802D66E8 002D2528  39 61 00 30 */	addi r11, r1, 0x30
-/* 802D66EC 002D252C  4B D3 0C 59 */	bl lbl_80007344
+/* 802D66EC 002D252C  4B D3 0C 59 */	bl _savegpr_29
 /* 802D66F0 002D2530  3C 60 80 48 */	lis r3, "@50123_8047B010"@ha
 /* 802D66F4 002D2534  3B E3 B0 10 */	addi r31, r3, "@50123_8047B010"@l
 /* 802D66F8 002D2538  3B BF 00 C0 */	addi r29, r31, 0xc0
@@ -93,7 +93,7 @@ lbl_802D6724:
 /* 802D676C 002D25AC  4B FB 46 71 */	bl Set__Q43scn4step5enemy13ModelDescUtilFRQ43scn4step5chara9ModelDescRQ24gobj8AnimDescRQ24gobj10ScriptDescPCcPCcUlPPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry
 /* 802D6770 002D25B0  38 7F 18 68 */	addi r3, r31, 0x1868
 /* 802D6774 002D25B4  39 61 00 30 */	addi r11, r1, 0x30
-/* 802D6778 002D25B8  4B D3 0C 19 */	bl lbl_80007390
+/* 802D6778 002D25B8  4B D3 0C 19 */	bl _restgpr_29
 /* 802D677C 002D25BC  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 802D6780 002D25C0  7C 08 03 A6 */	mtlr r0
 /* 802D6784 002D25C4  38 21 00 30 */	addi r1, r1, 0x30

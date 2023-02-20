@@ -1654,7 +1654,7 @@ Func__Q53scn4step4hero9AddOnMint35Mint_SetCamRot_0$56857AddOnMint_cppFRQ26mintvm
 /* 8032F6C4 0032B504  7C 08 02 A6 */	mflr r0
 /* 8032F6C8 0032B508  90 01 00 24 */	stw r0, 0x24(r1)
 /* 8032F6CC 0032B50C  39 61 00 20 */	addi r11, r1, 0x20
-/* 8032F6D0 0032B510  4B CD 7C 75 */	bl lbl_80007344
+/* 8032F6D0 0032B510  4B CD 7C 75 */	bl _savegpr_29
 /* 8032F6D4 0032B514  7C 7D 1B 78 */	mr r29, r3
 /* 8032F6D8 0032B518  7C 9E 23 78 */	mr r30, r4
 /* 8032F6DC 0032B51C  7F C3 F3 78 */	mr r3, r30
@@ -1670,7 +1670,7 @@ Func__Q53scn4step4hero9AddOnMint35Mint_SetCamRot_0$56857AddOnMint_cppFRQ26mintvm
 /* 8032F704 0032B544  7D 89 03 A6 */	mtctr r12
 /* 8032F708 0032B548  4E 80 04 21 */	bctrl
 /* 8032F70C 0032B54C  39 61 00 20 */	addi r11, r1, 0x20
-/* 8032F710 0032B550  4B CD 7C 81 */	bl lbl_80007390
+/* 8032F710 0032B550  4B CD 7C 81 */	bl _restgpr_29
 /* 8032F714 0032B554  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8032F718 0032B558  7C 08 03 A6 */	mtlr r0
 /* 8032F71C 0032B55C  38 21 00 20 */	addi r1, r1, 0x20
@@ -1690,7 +1690,7 @@ Func__Q53scn4step4hero9AddOnMint33Mint_SetZoom_0$56851AddOnMint_cppFRQ26mintvm13
 /* 8032F73C 0032B57C  7C 08 02 A6 */	mflr r0
 /* 8032F740 0032B580  90 01 00 24 */	stw r0, 0x24(r1)
 /* 8032F744 0032B584  39 61 00 20 */	addi r11, r1, 0x20
-/* 8032F748 0032B588  4B CD 7B FD */	bl lbl_80007344
+/* 8032F748 0032B588  4B CD 7B FD */	bl _savegpr_29
 /* 8032F74C 0032B58C  7C 7D 1B 78 */	mr r29, r3
 /* 8032F750 0032B590  38 80 00 02 */	li r4, 0x2
 /* 8032F754 0032B594  4B E6 8E A1 */	bl internal_getArg_addr__Q26mintvm13MintFuncProxyCFUi
@@ -1707,7 +1707,7 @@ Func__Q53scn4step4hero9AddOnMint33Mint_SetZoom_0$56851AddOnMint_cppFRQ26mintvm13
 /* 8032F780 0032B5C0  C0 7E 00 00 */	lfs f3, 0x0(r30)
 /* 8032F784 0032B5C4  48 01 C5 21 */	bl SetZoom__Q43scn4step4hero15MintStagingCtrlFfff
 /* 8032F788 0032B5C8  39 61 00 20 */	addi r11, r1, 0x20
-/* 8032F78C 0032B5CC  4B CD 7C 05 */	bl lbl_80007390
+/* 8032F78C 0032B5CC  4B CD 7C 05 */	bl _restgpr_29
 /* 8032F790 0032B5D0  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8032F794 0032B5D4  7C 08 03 A6 */	mtlr r0
 /* 8032F798 0032B5D8  38 21 00 20 */	addi r1, r1, 0x20
@@ -1757,7 +1757,7 @@ Func__Q53scn4step4hero9AddOnMint35Mint_SetTarget_0$56837AddOnMint_cppFRQ26mintvm
 /* 8032F808 0032B648  7C 08 02 A6 */	mflr r0
 /* 8032F80C 0032B64C  90 01 00 24 */	stw r0, 0x24(r1)
 /* 8032F810 0032B650  39 61 00 20 */	addi r11, r1, 0x20
-/* 8032F814 0032B654  4B CD 7B 29 */	bl lbl_8000733C
+/* 8032F814 0032B654  4B CD 7B 29 */	bl _savegpr_27
 /* 8032F818 0032B658  7C 7B 1B 78 */	mr r27, r3
 /* 8032F81C 0032B65C  7C 9C 23 78 */	mr r28, r4
 /* 8032F820 0032B660  7F 83 E3 78 */	mr r3, r28
@@ -1783,7 +1783,7 @@ Func__Q53scn4step4hero9AddOnMint35Mint_SetTarget_0$56837AddOnMint_cppFRQ26mintvm
 /* 8032F870 0032B6B0  7D 89 03 A6 */	mtctr r12
 /* 8032F874 0032B6B4  4E 80 04 21 */	bctrl
 /* 8032F878 0032B6B8  39 61 00 20 */	addi r11, r1, 0x20
-/* 8032F87C 0032B6BC  4B CD 7B 0D */	bl lbl_80007388
+/* 8032F87C 0032B6BC  4B CD 7B 0D */	bl _restgpr_27
 /* 8032F880 0032B6C0  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8032F884 0032B6C4  7C 08 03 A6 */	mtlr r0
 /* 8032F888 0032B6C8  38 21 00 20 */	addi r1, r1, 0x20
@@ -1815,7 +1815,7 @@ Func__Q53scn4step4hero9AddOnMint35Mint_IsTrigger_0$56829AddOnMint_cppFRQ26mintvm
 /* 8032F8C8 0032B708  7C 08 02 A6 */	mflr r0
 /* 8032F8CC 0032B70C  90 01 00 24 */	stw r0, 0x24(r1)
 /* 8032F8D0 0032B710  39 61 00 20 */	addi r11, r1, 0x20
-/* 8032F8D4 0032B714  4B CD 7A 71 */	bl lbl_80007344
+/* 8032F8D4 0032B714  4B CD 7A 71 */	bl _savegpr_29
 /* 8032F8D8 0032B718  7C 7D 1B 78 */	mr r29, r3
 /* 8032F8DC 0032B71C  7C 9E 23 78 */	mr r30, r4
 /* 8032F8E0 0032B720  7F C3 F3 78 */	mr r3, r30
@@ -1838,7 +1838,7 @@ Func__Q53scn4step4hero9AddOnMint35Mint_IsTrigger_0$56829AddOnMint_cppFRQ26mintvm
 .global lbl_8032F924
 lbl_8032F924:
 /* 8032F924 0032B764  39 61 00 20 */	addi r11, r1, 0x20
-/* 8032F928 0032B768  4B CD 7A 69 */	bl lbl_80007390
+/* 8032F928 0032B768  4B CD 7A 69 */	bl _restgpr_29
 /* 8032F92C 0032B76C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8032F930 0032B770  7C 08 03 A6 */	mtlr r0
 /* 8032F934 0032B774  38 21 00 20 */	addi r1, r1, 0x20
@@ -2080,7 +2080,7 @@ Func__Q53scn4step4hero9AddOnMint37Mint_isAnimExist_0$56797AddOnMint_cppFRQ26mint
 /* 8032FC28 0032BA68  7C 08 02 A6 */	mflr r0
 /* 8032FC2C 0032BA6C  90 01 00 34 */	stw r0, 0x34(r1)
 /* 8032FC30 0032BA70  39 61 00 30 */	addi r11, r1, 0x30
-/* 8032FC34 0032BA74  4B CD 77 11 */	bl lbl_80007344
+/* 8032FC34 0032BA74  4B CD 77 11 */	bl _savegpr_29
 /* 8032FC38 0032BA78  7C 7D 1B 78 */	mr r29, r3
 /* 8032FC3C 0032BA7C  3C 80 80 48 */	lis r4, "@59669"@ha
 /* 8032FC40 0032BA80  38 A4 3B 30 */	addi r5, r4, "@59669"@l
@@ -2114,7 +2114,7 @@ Func__Q53scn4step4hero9AddOnMint37Mint_isAnimExist_0$56797AddOnMint_cppFRQ26mint
 .global lbl_8032FCB0
 lbl_8032FCB0:
 /* 8032FCB0 0032BAF0  39 61 00 30 */	addi r11, r1, 0x30
-/* 8032FCB4 0032BAF4  4B CD 76 DD */	bl lbl_80007390
+/* 8032FCB4 0032BAF4  4B CD 76 DD */	bl _restgpr_29
 /* 8032FCB8 0032BAF8  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 8032FCBC 0032BAFC  7C 08 03 A6 */	mtlr r0
 /* 8032FCC0 0032BB00  38 21 00 30 */	addi r1, r1, 0x30
@@ -2130,7 +2130,7 @@ Func__Q53scn4step4hero9AddOnMint43Mint_setNodeVisibility_0$56795AddOnMint_cppFRQ
 /* 8032FCD4 0032BB14  7C 08 02 A6 */	mflr r0
 /* 8032FCD8 0032BB18  90 01 00 34 */	stw r0, 0x34(r1)
 /* 8032FCDC 0032BB1C  39 61 00 30 */	addi r11, r1, 0x30
-/* 8032FCE0 0032BB20  4B CD 76 65 */	bl lbl_80007344
+/* 8032FCE0 0032BB20  4B CD 76 65 */	bl _savegpr_29
 /* 8032FCE4 0032BB24  7C 7D 1B 78 */	mr r29, r3
 /* 8032FCE8 0032BB28  3C 80 80 48 */	lis r4, "@59683"@ha
 /* 8032FCEC 0032BB2C  38 A4 3B 3C */	addi r5, r4, "@59683"@l
@@ -2157,7 +2157,7 @@ Func__Q53scn4step4hero9AddOnMint43Mint_setNodeVisibility_0$56795AddOnMint_cppFRQ
 /* 8032FD40 0032BB80  4B CD 74 85 */	bl __ptmf_scall
 /* 8032FD44 0032BB84  60 00 00 00 */	nop
 /* 8032FD48 0032BB88  39 61 00 30 */	addi r11, r1, 0x30
-/* 8032FD4C 0032BB8C  4B CD 76 45 */	bl lbl_80007390
+/* 8032FD4C 0032BB8C  4B CD 76 45 */	bl _restgpr_29
 /* 8032FD50 0032BB90  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 8032FD54 0032BB94  7C 08 03 A6 */	mtlr r0
 /* 8032FD58 0032BB98  38 21 00 30 */	addi r1, r1, 0x30
@@ -2473,7 +2473,7 @@ Func__Q53scn4step4hero9AddOnMint44Mint_AddAttackGearNode8_0$56695AddOnMint_cppFR
 /* 80330078 0032BEB8  7C 08 02 A6 */	mflr r0
 /* 8033007C 0032BEBC  90 01 00 34 */	stw r0, 0x34(r1)
 /* 80330080 0032BEC0  39 61 00 30 */	addi r11, r1, 0x30
-/* 80330084 0032BEC4  4B CD 72 AD */	bl lbl_80007330
+/* 80330084 0032BEC4  4B CD 72 AD */	bl _savegpr_24
 /* 80330088 0032BEC8  7C 78 1B 78 */	mr r24, r3
 /* 8033008C 0032BECC  38 80 00 07 */	li r4, 0x7
 /* 80330090 0032BED0  4B E6 85 65 */	bl internal_getArg_addr__Q26mintvm13MintFuncProxyCFUi
@@ -2515,7 +2515,7 @@ Func__Q53scn4step4hero9AddOnMint44Mint_AddAttackGearNode8_0$56695AddOnMint_cppFR
 /* 80330120 0032BF60  88 B9 00 00 */	lbz r5, 0x0(r25)
 /* 80330124 0032BF64  48 01 C4 61 */	bl AddAttackGearNode8__Q43scn4step4hero11MintUtilityFUlUlfffffb
 /* 80330128 0032BF68  39 61 00 30 */	addi r11, r1, 0x30
-/* 8033012C 0032BF6C  4B CD 72 51 */	bl lbl_8000737C
+/* 8033012C 0032BF6C  4B CD 72 51 */	bl _restgpr_24
 /* 80330130 0032BF70  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 80330134 0032BF74  7C 08 03 A6 */	mtlr r0
 /* 80330138 0032BF78  38 21 00 30 */	addi r1, r1, 0x30
@@ -2526,7 +2526,7 @@ Func__Q53scn4step4hero9AddOnMint44Mint_AddAttackGearNode7_0$56693AddOnMint_cppFR
 /* 80330144 0032BF84  7C 08 02 A6 */	mflr r0
 /* 80330148 0032BF88  90 01 00 34 */	stw r0, 0x34(r1)
 /* 8033014C 0032BF8C  39 61 00 30 */	addi r11, r1, 0x30
-/* 80330150 0032BF90  4B CD 71 E5 */	bl lbl_80007334
+/* 80330150 0032BF90  4B CD 71 E5 */	bl _savegpr_25
 /* 80330154 0032BF94  7C 79 1B 78 */	mr r25, r3
 /* 80330158 0032BF98  38 80 00 06 */	li r4, 0x6
 /* 8033015C 0032BF9C  4B E6 84 99 */	bl internal_getArg_addr__Q26mintvm13MintFuncProxyCFUi
@@ -2563,7 +2563,7 @@ Func__Q53scn4step4hero9AddOnMint44Mint_AddAttackGearNode7_0$56693AddOnMint_cppFR
 /* 803301D8 0032C018  C0 BA 00 00 */	lfs f5, 0x0(r26)
 /* 803301DC 0032C01C  48 01 C3 A1 */	bl AddAttackGearNode7__Q43scn4step4hero11MintUtilityFUlUlfffff
 /* 803301E0 0032C020  39 61 00 30 */	addi r11, r1, 0x30
-/* 803301E4 0032C024  4B CD 71 9D */	bl lbl_80007380
+/* 803301E4 0032C024  4B CD 71 9D */	bl _restgpr_25
 /* 803301E8 0032C028  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 803301EC 0032C02C  7C 08 03 A6 */	mtlr r0
 /* 803301F0 0032C030  38 21 00 30 */	addi r1, r1, 0x30
@@ -2574,7 +2574,7 @@ Func__Q53scn4step4hero9AddOnMint44Mint_AddAttackGearNode5_0$56691AddOnMint_cppFR
 /* 803301FC 0032C03C  7C 08 02 A6 */	mflr r0
 /* 80330200 0032C040  90 01 00 24 */	stw r0, 0x24(r1)
 /* 80330204 0032C044  39 61 00 20 */	addi r11, r1, 0x20
-/* 80330208 0032C048  4B CD 71 35 */	bl lbl_8000733C
+/* 80330208 0032C048  4B CD 71 35 */	bl _savegpr_27
 /* 8033020C 0032C04C  7C 7B 1B 78 */	mr r27, r3
 /* 80330210 0032C050  38 80 00 04 */	li r4, 0x4
 /* 80330214 0032C054  4B E6 83 E1 */	bl internal_getArg_addr__Q26mintvm13MintFuncProxyCFUi
@@ -2601,7 +2601,7 @@ Func__Q53scn4step4hero9AddOnMint44Mint_AddAttackGearNode5_0$56691AddOnMint_cppFR
 /* 80330268 0032C0A8  C0 7C 00 00 */	lfs f3, 0x0(r28)
 /* 8033026C 0032C0AC  48 01 C3 05 */	bl AddAttackGearNode5__Q43scn4step4hero11MintUtilityFUlUlfff
 /* 80330270 0032C0B0  39 61 00 20 */	addi r11, r1, 0x20
-/* 80330274 0032C0B4  4B CD 71 15 */	bl lbl_80007388
+/* 80330274 0032C0B4  4B CD 71 15 */	bl _restgpr_27
 /* 80330278 0032C0B8  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8033027C 0032C0BC  7C 08 03 A6 */	mtlr r0
 /* 80330280 0032C0C0  38 21 00 20 */	addi r1, r1, 0x20

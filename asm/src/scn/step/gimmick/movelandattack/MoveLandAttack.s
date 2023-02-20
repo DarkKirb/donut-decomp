@@ -7,7 +7,7 @@ __ct__Q53scn4step7gimmick14movelandattack14MoveLandAttackFRCQ43scn4step3map18Bin
 /* 80319C90 00315AD0  7C 08 02 A6 */	mflr r0
 /* 80319C94 00315AD4  90 01 00 B4 */	stw r0, 0xb4(r1)
 /* 80319C98 00315AD8  39 61 00 B0 */	addi r11, r1, 0xb0
-/* 80319C9C 00315ADC  4B CE D6 A9 */	bl lbl_80007344
+/* 80319C9C 00315ADC  4B CE D6 A9 */	bl _savegpr_29
 /* 80319CA0 00315AE0  7C 7F 1B 78 */	mr r31, r3
 /* 80319CA4 00315AE4  7C 9E 23 78 */	mr r30, r4
 /* 80319CA8 00315AE8  7C BD 2B 78 */	mr r29, r5
@@ -154,7 +154,7 @@ lbl_80319E10:
 /* 80319EC4 00315D04  4B F5 30 D5 */	bl __dt__Q25ocoll8NodeDescFv
 /* 80319EC8 00315D08  7F E3 FB 78 */	mr r3, r31
 /* 80319ECC 00315D0C  39 61 00 B0 */	addi r11, r1, 0xb0
-/* 80319ED0 00315D10  4B CE D4 C1 */	bl lbl_80007390
+/* 80319ED0 00315D10  4B CE D4 C1 */	bl _restgpr_29
 /* 80319ED4 00315D14  80 01 00 B4 */	lwz r0, 0xb4(r1)
 /* 80319ED8 00315D18  7C 08 03 A6 */	mtlr r0
 /* 80319EDC 00315D1C  38 21 00 B0 */	addi r1, r1, 0xb0

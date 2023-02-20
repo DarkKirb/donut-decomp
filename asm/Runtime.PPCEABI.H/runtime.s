@@ -39,22 +39,22 @@ lbl_80007268:
 /* 80007288 000030C8  DA 8B FF A0 */	stfd f20, -0x60(r11)
 /* 8000728C 000030CC  DA AB FF A8 */	stfd f21, -0x58(r11)
 /* 80007290 000030D0  DA CB FF B0 */	stfd f22, -0x50(r11)
-.global lbl_80007294
-lbl_80007294:
+.global _savefpr_23
+_savefpr_23:
 /* 80007294 000030D4  DA EB FF B8 */	stfd f23, -0x48(r11)
 /* 80007298 000030D8  DB 0B FF C0 */	stfd f24, -0x40(r11)
 /* 8000729C 000030DC  DB 2B FF C8 */	stfd f25, -0x38(r11)
-.global lbl_800072A0
-lbl_800072A0:
+.global _savefpr_26
+_savefpr_26:
 /* 800072A0 000030E0  DB 4B FF D0 */	stfd f26, -0x30(r11)
-.global lbl_800072A4
-lbl_800072A4:
+.global _savefpr_27
+_savefpr_27:
 /* 800072A4 000030E4  DB 6B FF D8 */	stfd f27, -0x28(r11)
-.global lbl_800072A8
-lbl_800072A8:
+.global _savefpr_28
+_savefpr_28:
 /* 800072A8 000030E8  DB 8B FF E0 */	stfd f28, -0x20(r11)
-.global lbl_800072AC
-lbl_800072AC:
+.global _savefpr_29
+_savefpr_29:
 /* 800072AC 000030EC  DB AB FF E8 */	stfd f29, -0x18(r11)
 /* 800072B0 000030F0  DB CB FF F0 */	stfd f30, -0x10(r11)
 /* 800072B4 000030F4  DB EB FF F8 */	stfd f31, -0x8(r11)
@@ -68,22 +68,22 @@ lbl_800072AC:
 /* 800072D4 00003114  CA 8B FF A0 */	lfd f20, -0x60(r11)
 /* 800072D8 00003118  CA AB FF A8 */	lfd f21, -0x58(r11)
 /* 800072DC 0000311C  CA CB FF B0 */	lfd f22, -0x50(r11)
-.global lbl_800072E0
-lbl_800072E0:
+.global _restfpr_23
+_restfpr_23:
 /* 800072E0 00003120  CA EB FF B8 */	lfd f23, -0x48(r11)
 /* 800072E4 00003124  CB 0B FF C0 */	lfd f24, -0x40(r11)
 /* 800072E8 00003128  CB 2B FF C8 */	lfd f25, -0x38(r11)
-.global lbl_800072EC
-lbl_800072EC:
+.global _restfpr_26
+_restfpr_26:
 /* 800072EC 0000312C  CB 4B FF D0 */	lfd f26, -0x30(r11)
-.global lbl_800072F0
-lbl_800072F0:
+.global _restfpr_27
+_restfpr_27:
 /* 800072F0 00003130  CB 6B FF D8 */	lfd f27, -0x28(r11)
-.global lbl_800072F4
-lbl_800072F4:
+.global _restfpr_28
+_restfpr_28:
 /* 800072F4 00003134  CB 8B FF E0 */	lfd f28, -0x20(r11)
-.global lbl_800072F8
-lbl_800072F8:
+.global _restfpr_29
+_restfpr_29:
 /* 800072F8 00003138  CB AB FF E8 */	lfd f29, -0x18(r11)
 /* 800072FC 0000313C  CB CB FF F0 */	lfd f30, -0x10(r11)
 /* 80007300 00003140  CB EB FF F8 */	lfd f31, -0x8(r11)
@@ -91,50 +91,50 @@ lbl_800072F8:
 .global __save_gpr
 __save_gpr:
 /* 80007308 00003148  91 CB FF B8 */	stw r14, -0x48(r11)
-.global lbl_8000730C
-lbl_8000730C:
+.global _savegpr_15
+_savegpr_15:
 /* 8000730C 0000314C  91 EB FF BC */	stw r15, -0x44(r11)
-.global lbl_80007310
-lbl_80007310:
+.global _savegpr_16
+_savegpr_16:
 /* 80007310 00003150  92 0B FF C0 */	stw r16, -0x40(r11)
-.global lbl_80007314
-lbl_80007314:
+.global _savegpr_17
+_savegpr_17:
 /* 80007314 00003154  92 2B FF C4 */	stw r17, -0x3c(r11)
-.global lbl_80007318
-lbl_80007318:
+.global _savegpr_18
+_savegpr_18:
 /* 80007318 00003158  92 4B FF C8 */	stw r18, -0x38(r11)
-.global lbl_8000731C
-lbl_8000731C:
+.global _savegpr_19
+_savegpr_19:
 /* 8000731C 0000315C  92 6B FF CC */	stw r19, -0x34(r11)
-.global lbl_80007320
-lbl_80007320:
+.global _savegpr_20
+_savegpr_20:
 /* 80007320 00003160  92 8B FF D0 */	stw r20, -0x30(r11)
-.global lbl_80007324
-lbl_80007324:
+.global _savegpr_21
+_savegpr_21:
 /* 80007324 00003164  92 AB FF D4 */	stw r21, -0x2c(r11)
-.global lbl_80007328
-lbl_80007328:
+.global _savegpr_22
+_savegpr_22:
 /* 80007328 00003168  92 CB FF D8 */	stw r22, -0x28(r11)
-.global lbl_8000732C
-lbl_8000732C:
+.global _savegpr_23
+_savegpr_23:
 /* 8000732C 0000316C  92 EB FF DC */	stw r23, -0x24(r11)
-.global lbl_80007330
-lbl_80007330:
+.global _savegpr_24
+_savegpr_24:
 /* 80007330 00003170  93 0B FF E0 */	stw r24, -0x20(r11)
-.global lbl_80007334
-lbl_80007334:
+.global _savegpr_25
+_savegpr_25:
 /* 80007334 00003174  93 2B FF E4 */	stw r25, -0x1c(r11)
-.global lbl_80007338
-lbl_80007338:
+.global _savegpr_26
+_savegpr_26:
 /* 80007338 00003178  93 4B FF E8 */	stw r26, -0x18(r11)
-.global lbl_8000733C
-lbl_8000733C:
+.global _savegpr_27
+_savegpr_27:
 /* 8000733C 0000317C  93 6B FF EC */	stw r27, -0x14(r11)
-.global lbl_80007340
-lbl_80007340:
+.global _savegpr_28
+_savegpr_28:
 /* 80007340 00003180  93 8B FF F0 */	stw r28, -0x10(r11)
-.global lbl_80007344
-lbl_80007344:
+.global _savegpr_29
+_savegpr_29:
 /* 80007344 00003184  93 AB FF F4 */	stw r29, -0xc(r11)
 /* 80007348 00003188  93 CB FF F8 */	stw r30, -0x8(r11)
 /* 8000734C 0000318C  93 EB FF FC */	stw r31, -0x4(r11)
@@ -142,50 +142,50 @@ lbl_80007344:
 .global __restore_gpr
 __restore_gpr:
 /* 80007354 00003194  81 CB FF B8 */	lwz r14, -0x48(r11)
-.global lbl_80007358
-lbl_80007358:
+.global _restgpr_15
+_restgpr_15:
 /* 80007358 00003198  81 EB FF BC */	lwz r15, -0x44(r11)
-.global lbl_8000735C
-lbl_8000735C:
+.global _restgpr_16
+_restgpr_16:
 /* 8000735C 0000319C  82 0B FF C0 */	lwz r16, -0x40(r11)
-.global lbl_80007360
-lbl_80007360:
+.global _restgpr_17
+_restgpr_17:
 /* 80007360 000031A0  82 2B FF C4 */	lwz r17, -0x3c(r11)
-.global lbl_80007364
-lbl_80007364:
+.global _restgpr_18
+_restgpr_18:
 /* 80007364 000031A4  82 4B FF C8 */	lwz r18, -0x38(r11)
-.global lbl_80007368
-lbl_80007368:
+.global _restgpr_19
+_restgpr_19:
 /* 80007368 000031A8  82 6B FF CC */	lwz r19, -0x34(r11)
-.global lbl_8000736C
-lbl_8000736C:
+.global _restgpr_20
+_restgpr_20:
 /* 8000736C 000031AC  82 8B FF D0 */	lwz r20, -0x30(r11)
-.global lbl_80007370
-lbl_80007370:
+.global _restgpr_21
+_restgpr_21:
 /* 80007370 000031B0  82 AB FF D4 */	lwz r21, -0x2c(r11)
-.global lbl_80007374
-lbl_80007374:
+.global _restgpr_22
+_restgpr_22:
 /* 80007374 000031B4  82 CB FF D8 */	lwz r22, -0x28(r11)
-.global lbl_80007378
-lbl_80007378:
+.global _restgpr_23
+_restgpr_23:
 /* 80007378 000031B8  82 EB FF DC */	lwz r23, -0x24(r11)
-.global lbl_8000737C
-lbl_8000737C:
+.global _restgpr_24
+_restgpr_24:
 /* 8000737C 000031BC  83 0B FF E0 */	lwz r24, -0x20(r11)
-.global lbl_80007380
-lbl_80007380:
+.global _restgpr_25
+_restgpr_25:
 /* 80007380 000031C0  83 2B FF E4 */	lwz r25, -0x1c(r11)
-.global lbl_80007384
-lbl_80007384:
+.global _restgpr_26
+_restgpr_26:
 /* 80007384 000031C4  83 4B FF E8 */	lwz r26, -0x18(r11)
-.global lbl_80007388
-lbl_80007388:
+.global _restgpr_27
+_restgpr_27:
 /* 80007388 000031C8  83 6B FF EC */	lwz r27, -0x14(r11)
-.global lbl_8000738C
-lbl_8000738C:
+.global _restgpr_28
+_restgpr_28:
 /* 8000738C 000031CC  83 8B FF F0 */	lwz r28, -0x10(r11)
-.global lbl_80007390
-lbl_80007390:
+.global _restgpr_29
+_restgpr_29:
 /* 80007390 000031D0  83 AB FF F4 */	lwz r29, -0xc(r11)
 /* 80007394 000031D4  83 CB FF F8 */	lwz r30, -0x8(r11)
 /* 80007398 000031D8  83 EB FF FC */	lwz r31, -0x4(r11)

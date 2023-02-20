@@ -7,7 +7,7 @@ __ct__Q53scn4step4hero6common9StateDemoFPQ43scn4step4hero4HeroQ43scn4step4hero10
 /* 80361E30 0035DC70  7C 08 02 A6 */	mflr r0
 /* 80361E34 0035DC74  90 01 00 24 */	stw r0, 0x24(r1)
 /* 80361E38 0035DC78  39 61 00 20 */	addi r11, r1, 0x20
-/* 80361E3C 0035DC7C  4B CA 55 09 */	bl lbl_80007344
+/* 80361E3C 0035DC7C  4B CA 55 09 */	bl _savegpr_29
 /* 80361E40 0035DC80  7C 7D 1B 78 */	mr r29, r3
 /* 80361E44 0035DC84  7C BE 2B 78 */	mr r30, r5
 /* 80361E48 0035DC88  7C DF 33 78 */	mr r31, r6
@@ -61,7 +61,7 @@ __ct__Q53scn4step4hero6common9StateDemoFPQ43scn4step4hero4HeroQ43scn4step4hero10
 lbl_80361F04:
 /* 80361F04 0035DD44  7F A3 EB 78 */	mr r3, r29
 /* 80361F08 0035DD48  39 61 00 20 */	addi r11, r1, 0x20
-/* 80361F0C 0035DD4C  4B CA 54 85 */	bl lbl_80007390
+/* 80361F0C 0035DD4C  4B CA 54 85 */	bl _restgpr_29
 /* 80361F10 0035DD50  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80361F14 0035DD54  7C 08 03 A6 */	mtlr r0
 /* 80361F18 0035DD58  38 21 00 20 */	addi r1, r1, 0x20

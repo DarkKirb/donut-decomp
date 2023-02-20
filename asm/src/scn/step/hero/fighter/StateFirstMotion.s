@@ -7,7 +7,7 @@ TryToChangeState__Q53scn4step4hero7fighter16StateFirstMotionFPQ43scn4step4hero4H
 /* 8039CABC 003988FC  7C 08 02 A6 */	mflr r0
 /* 8039CAC0 00398900  90 01 00 24 */	stw r0, 0x24(r1)
 /* 8039CAC4 00398904  39 61 00 20 */	addi r11, r1, 0x20
-/* 8039CAC8 00398908  4B C6 A8 7D */	bl lbl_80007344
+/* 8039CAC8 00398908  4B C6 A8 7D */	bl _savegpr_29
 /* 8039CACC 0039890C  7C 7D 1B 78 */	mr r29, r3
 /* 8039CAD0 00398910  4B FA 39 BD */	bl commandManager__Q43scn4step4hero4HeroFv
 /* 8039CAD4 00398914  38 80 00 20 */	li r4, 0x20
@@ -41,7 +41,7 @@ lbl_8039CB30:
 .global lbl_8039CB34
 lbl_8039CB34:
 /* 8039CB34 00398974  39 61 00 20 */	addi r11, r1, 0x20
-/* 8039CB38 00398978  4B C6 A8 59 */	bl lbl_80007390
+/* 8039CB38 00398978  4B C6 A8 59 */	bl _restgpr_29
 /* 8039CB3C 0039897C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8039CB40 00398980  7C 08 03 A6 */	mtlr r0
 /* 8039CB44 00398984  38 21 00 20 */	addi r1, r1, 0x20
@@ -153,7 +153,7 @@ procAnim__Q53scn4step4hero7fighter16StateFirstMotionFv:
 /* 8039CCB4 00398AF4  7C 08 02 A6 */	mflr r0
 /* 8039CCB8 00398AF8  90 01 00 24 */	stw r0, 0x24(r1)
 /* 8039CCBC 00398AFC  39 61 00 20 */	addi r11, r1, 0x20
-/* 8039CCC0 00398B00  4B C6 A6 81 */	bl lbl_80007340
+/* 8039CCC0 00398B00  4B C6 A6 81 */	bl _savegpr_28
 /* 8039CCC4 00398B04  7C 7F 1B 78 */	mr r31, r3
 /* 8039CCC8 00398B08  80 83 00 08 */	lwz r4, 0x8(r3)
 /* 8039CCCC 00398B0C  38 04 00 01 */	addi r0, r4, 0x1
@@ -411,7 +411,7 @@ lbl_8039D050:
 .global lbl_8039D054
 lbl_8039D054:
 /* 8039D054 00398E94  39 61 00 20 */	addi r11, r1, 0x20
-/* 8039D058 00398E98  4B C6 A3 35 */	bl lbl_8000738C
+/* 8039D058 00398E98  4B C6 A3 35 */	bl _restgpr_28
 /* 8039D05C 00398E9C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8039D060 00398EA0  7C 08 03 A6 */	mtlr r0
 /* 8039D064 00398EA4  38 21 00 20 */	addi r1, r1, 0x20

@@ -119,7 +119,7 @@ setStartVacuumed__Q53scn4step6weapon13vacuumedblock14VacuumReceiverFRQ43scn4step
 /* 803EF39C 003EB1DC  7C 08 02 A6 */	mflr r0
 /* 803EF3A0 003EB1E0  90 01 00 44 */	stw r0, 0x44(r1)
 /* 803EF3A4 003EB1E4  39 61 00 40 */	addi r11, r1, 0x40
-/* 803EF3A8 003EB1E8  4B C1 7F 99 */	bl lbl_80007340
+/* 803EF3A8 003EB1E8  4B C1 7F 99 */	bl _savegpr_28
 /* 803EF3AC 003EB1EC  7C 7C 1B 78 */	mr r28, r3
 /* 803EF3B0 003EB1F0  38 61 00 18 */	addi r3, r1, 0x18
 /* 803EF3B4 003EB1F4  4B FE 32 25 */	bl handle__Q43scn4step6vacuum8AttackerFv
@@ -169,7 +169,7 @@ lbl_803EF454:
 /* 803EF45C 003EB29C  4B FE BD 35 */	bl stateChanger__Q43scn4step6weapon6WeaponFv
 /* 803EF460 003EB2A0  48 01 69 19 */	bl changeStateIfPossible__Q24util16StateChangerBaseFv
 /* 803EF464 003EB2A4  39 61 00 40 */	addi r11, r1, 0x40
-/* 803EF468 003EB2A8  4B C1 7F 25 */	bl lbl_8000738C
+/* 803EF468 003EB2A8  4B C1 7F 25 */	bl _restgpr_28
 /* 803EF46C 003EB2AC  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 803EF470 003EB2B0  7C 08 03 A6 */	mtlr r0
 /* 803EF474 003EB2B4  38 21 00 40 */	addi r1, r1, 0x40

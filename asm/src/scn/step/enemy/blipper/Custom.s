@@ -99,7 +99,7 @@ onInWater__Q53scn4step5enemy7blipper6CustomFv:
 /* 80299068 00294EA8  7C 08 02 A6 */	mflr r0
 /* 8029906C 00294EAC  90 01 00 24 */	stw r0, 0x24(r1)
 /* 80299070 00294EB0  39 61 00 20 */	addi r11, r1, 0x20
-/* 80299074 00294EB4  4B D6 E2 D1 */	bl lbl_80007344
+/* 80299074 00294EB4  4B D6 E2 D1 */	bl _savegpr_29
 /* 80299078 00294EB8  7C 7D 1B 78 */	mr r29, r3
 /* 8029907C 00294EBC  4B E6 77 65 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 80299080 00294EC0  4B FE F0 5D */	bl soundSE__Q43scn4step5enemy5EnemyFv
@@ -188,7 +188,7 @@ lbl_80299194:
 lbl_80299198:
 /* 80299198 00294FD8  38 60 00 01 */	li r3, 0x1
 /* 8029919C 00294FDC  39 61 00 20 */	addi r11, r1, 0x20
-/* 802991A0 00294FE0  4B D6 E1 F1 */	bl lbl_80007390
+/* 802991A0 00294FE0  4B D6 E1 F1 */	bl _restgpr_29
 /* 802991A4 00294FE4  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802991A8 00294FE8  7C 08 03 A6 */	mtlr r0
 /* 802991AC 00294FEC  38 21 00 20 */	addi r1, r1, 0x20
@@ -200,7 +200,7 @@ onOutWater__Q53scn4step5enemy7blipper6CustomFv:
 /* 802991B8 00294FF8  7C 08 02 A6 */	mflr r0
 /* 802991BC 00294FFC  90 01 00 24 */	stw r0, 0x24(r1)
 /* 802991C0 00295000  39 61 00 20 */	addi r11, r1, 0x20
-/* 802991C4 00295004  4B D6 E1 81 */	bl lbl_80007344
+/* 802991C4 00295004  4B D6 E1 81 */	bl _savegpr_29
 /* 802991C8 00295008  7C 7D 1B 78 */	mr r29, r3
 /* 802991CC 0029500C  4B E6 76 15 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 802991D0 00295010  4B FE EF 0D */	bl soundSE__Q43scn4step5enemy5EnemyFv
@@ -265,7 +265,7 @@ lbl_8029929C:
 lbl_802992A0:
 /* 802992A0 002950E0  38 60 00 01 */	li r3, 0x1
 /* 802992A4 002950E4  39 61 00 20 */	addi r11, r1, 0x20
-/* 802992A8 002950E8  4B D6 E0 E9 */	bl lbl_80007390
+/* 802992A8 002950E8  4B D6 E0 E9 */	bl _restgpr_29
 /* 802992AC 002950EC  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802992B0 002950F0  7C 08 03 A6 */	mtlr r0
 /* 802992B4 002950F4  38 21 00 20 */	addi r1, r1, 0x20

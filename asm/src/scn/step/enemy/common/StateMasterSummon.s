@@ -359,7 +359,7 @@ sendAvoidData__Q53scn4step5enemy6common17StateMasterSummonFv:
 /* 80293160 0028EFA0  7C 08 02 A6 */	mflr r0
 /* 80293164 0028EFA4  90 01 00 94 */	stw r0, 0x94(r1)
 /* 80293168 0028EFA8  39 61 00 90 */	addi r11, r1, 0x90
-/* 8029316C 0028EFAC  4B D7 41 D9 */	bl lbl_80007344
+/* 8029316C 0028EFAC  4B D7 41 D9 */	bl _savegpr_29
 /* 80293170 0028EFB0  7C 7D 1B 78 */	mr r29, r3
 /* 80293174 0028EFB4  4B E6 D6 6D */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 80293178 0028EFB8  4B DA 39 E9 */	bl GXGetTexObjUserData
@@ -578,7 +578,7 @@ lbl_802933E0:
 .global lbl_8029343C
 lbl_8029343C:
 /* 8029343C 0028F27C  39 61 00 90 */	addi r11, r1, 0x90
-/* 80293440 0028F280  4B D7 3F 51 */	bl lbl_80007390
+/* 80293440 0028F280  4B D7 3F 51 */	bl _restgpr_29
 /* 80293444 0028F284  80 01 00 94 */	lwz r0, 0x94(r1)
 /* 80293448 0028F288  7C 08 03 A6 */	mtlr r0
 /* 8029344C 0028F28C  38 21 00 90 */	addi r1, r1, 0x90

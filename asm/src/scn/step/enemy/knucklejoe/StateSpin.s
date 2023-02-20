@@ -197,7 +197,7 @@ procMove__Q53scn4step5enemy10knucklejoe9StateSpinFv:
 /* 802C0A20 002BC860  7C 08 02 A6 */	mflr r0
 /* 802C0A24 002BC864  90 01 00 24 */	stw r0, 0x24(r1)
 /* 802C0A28 002BC868  39 61 00 20 */	addi r11, r1, 0x20
-/* 802C0A2C 002BC86C  4B D4 69 19 */	bl lbl_80007344
+/* 802C0A2C 002BC86C  4B D4 69 19 */	bl _savegpr_29
 /* 802C0A30 002BC870  7C 7D 1B 78 */	mr r29, r3
 /* 802C0A34 002BC874  4B E3 FD AD */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 802C0A38 002BC878  4B FC 76 7D */	bl footState__Q43scn4step5enemy5EnemyFv
@@ -223,7 +223,7 @@ procMove__Q53scn4step5enemy10knucklejoe9StateSpinFv:
 .global lbl_802C0A88
 lbl_802C0A88:
 /* 802C0A88 002BC8C8  39 61 00 20 */	addi r11, r1, 0x20
-/* 802C0A8C 002BC8CC  4B D4 69 05 */	bl lbl_80007390
+/* 802C0A8C 002BC8CC  4B D4 69 05 */	bl _restgpr_29
 /* 802C0A90 002BC8D0  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802C0A94 002BC8D4  7C 08 03 A6 */	mtlr r0
 /* 802C0A98 002BC8D8  38 21 00 20 */	addi r1, r1, 0x20

@@ -7,7 +7,7 @@ __ct__Q53scn4step7gimmick7mahoroa7MahoroaFRCQ43scn4step3map18BinGmkGeneralEntryR
 /* 80313304 0030F144  7C 08 02 A6 */	mflr r0
 /* 80313308 0030F148  90 01 00 44 */	stw r0, 0x44(r1)
 /* 8031330C 0030F14C  39 61 00 40 */	addi r11, r1, 0x40
-/* 80313310 0030F150  4B CF 40 35 */	bl lbl_80007344
+/* 80313310 0030F150  4B CF 40 35 */	bl _savegpr_29
 /* 80313314 0030F154  7C 7D 1B 78 */	mr r29, r3
 /* 80313318 0030F158  7C BE 2B 78 */	mr r30, r5
 /* 8031331C 0030F15C  90 A3 00 00 */	stw r5, 0x0(r3)
@@ -81,7 +81,7 @@ __ct__Q53scn4step7gimmick7mahoroa7MahoroaFRCQ43scn4step3map18BinGmkGeneralEntryR
 /* 8031342C 0030F26C  4B F5 E0 99 */	bl setDrawLayerForce__Q43scn4step5chara5ModelFQ43scn4step4core13DrawLayerKind
 /* 80313430 0030F270  7F A3 EB 78 */	mr r3, r29
 /* 80313434 0030F274  39 61 00 40 */	addi r11, r1, 0x40
-/* 80313438 0030F278  4B CF 3F 59 */	bl lbl_80007390
+/* 80313438 0030F278  4B CF 3F 59 */	bl _restgpr_29
 /* 8031343C 0030F27C  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 80313440 0030F280  7C 08 03 A6 */	mtlr r0
 /* 80313444 0030F284  38 21 00 40 */	addi r1, r1, 0x40
@@ -365,7 +365,7 @@ setupConstruct__Q53scn4step7gimmick7mahoroa7MahoroaFv:
 /* 80313814 0030F654  7C 08 02 A6 */	mflr r0
 /* 80313818 0030F658  90 01 00 F4 */	stw r0, 0xf4(r1)
 /* 8031381C 0030F65C  39 61 00 F0 */	addi r11, r1, 0xf0
-/* 80313820 0030F660  4B CF 3B 19 */	bl lbl_80007338
+/* 80313820 0030F660  4B CF 3B 19 */	bl _savegpr_26
 /* 80313824 0030F664  7C 7F 1B 78 */	mr r31, r3
 /* 80313828 0030F668  38 00 00 00 */	li r0, 0x0
 /* 8031382C 0030F66C  98 01 00 08 */	stb r0, 0x8(r1)
@@ -519,7 +519,7 @@ lbl_803139D8:
 lbl_80313A50:
 /* 80313A50 0030F890  90 7F 00 A4 */	stw r3, 0xa4(r31)
 /* 80313A54 0030F894  39 61 00 F0 */	addi r11, r1, 0xf0
-/* 80313A58 0030F898  4B CF 39 2D */	bl lbl_80007384
+/* 80313A58 0030F898  4B CF 39 2D */	bl _restgpr_26
 /* 80313A5C 0030F89C  80 01 00 F4 */	lwz r0, 0xf4(r1)
 /* 80313A60 0030F8A0  7C 08 03 A6 */	mtlr r0
 /* 80313A64 0030F8A4  38 21 00 F0 */	addi r1, r1, 0xf0
@@ -554,7 +554,7 @@ createModelDesc__Q53scn4step7gimmick7mahoroa7MahoroaFv:
 /* 80313AC0 0030F900  7C 08 02 A6 */	mflr r0
 /* 80313AC4 0030F904  90 01 00 34 */	stw r0, 0x34(r1)
 /* 80313AC8 0030F908  39 61 00 30 */	addi r11, r1, 0x30
-/* 80313ACC 0030F90C  4B CF 38 75 */	bl lbl_80007340
+/* 80313ACC 0030F90C  4B CF 38 75 */	bl _savegpr_28
 /* 80313AD0 0030F910  7C 7E 1B 78 */	mr r30, r3
 /* 80313AD4 0030F914  3C 60 80 48 */	lis r3, "@55208_804815B8"@ha
 /* 80313AD8 0030F918  3B E3 15 B8 */	addi r31, r3, "@55208_804815B8"@l
@@ -686,7 +686,7 @@ lbl_80313C3C:
 /* 80313CA8 0030FAE8  80 04 00 7C */	lwz r0, 0x7c(r4)
 /* 80313CAC 0030FAEC  90 1E 00 7C */	stw r0, 0x7c(r30)
 /* 80313CB0 0030FAF0  39 61 00 30 */	addi r11, r1, 0x30
-/* 80313CB4 0030FAF4  4B CF 36 D9 */	bl lbl_8000738C
+/* 80313CB4 0030FAF4  4B CF 36 D9 */	bl _restgpr_28
 /* 80313CB8 0030FAF8  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 80313CBC 0030FAFC  7C 08 03 A6 */	mtlr r0
 /* 80313CC0 0030FB00  38 21 00 30 */	addi r1, r1, 0x30

@@ -19,7 +19,7 @@ __ct__Q53scn4step4hero12interference10StateEatenFPQ43scn4step4hero4Hero:
 /* 80370E68 0036CCA8  7C 08 02 A6 */	mflr r0
 /* 80370E6C 0036CCAC  90 01 00 24 */	stw r0, 0x24(r1)
 /* 80370E70 0036CCB0  39 61 00 20 */	addi r11, r1, 0x20
-/* 80370E74 0036CCB4  4B C9 64 CD */	bl lbl_80007340
+/* 80370E74 0036CCB4  4B C9 64 CD */	bl _savegpr_28
 /* 80370E78 0036CCB8  7C 7C 1B 78 */	mr r28, r3
 /* 80370E7C 0036CCBC  4B FE 46 75 */	bl __ct__Q43scn4step4hero9StateBaseFPQ43scn4step4hero4Hero
 /* 80370E80 0036CCC0  3C 60 80 49 */	lis r3, __vt__Q53scn4step4hero12interference10StateEaten@ha
@@ -149,7 +149,7 @@ lbl_80370FB4:
 /* 80371068 0036CEA8  4B FE 37 B5 */	bl setEnv__Q43scn4step4hero11ShakeChargeFiiiUl
 /* 8037106C 0036CEAC  7F 83 E3 78 */	mr r3, r28
 /* 80371070 0036CEB0  39 61 00 20 */	addi r11, r1, 0x20
-/* 80371074 0036CEB4  4B C9 63 19 */	bl lbl_8000738C
+/* 80371074 0036CEB4  4B C9 63 19 */	bl _restgpr_28
 /* 80371078 0036CEB8  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8037107C 0036CEBC  7C 08 03 A6 */	mtlr r0
 /* 80371080 0036CEC0  38 21 00 20 */	addi r1, r1, 0x20
@@ -295,7 +295,7 @@ procAnim__Q53scn4step4hero12interference10StateEatenFv:
 /* 80371278 0036D0B8  7C 08 02 A6 */	mflr r0
 /* 8037127C 0036D0BC  90 01 00 24 */	stw r0, 0x24(r1)
 /* 80371280 0036D0C0  39 61 00 20 */	addi r11, r1, 0x20
-/* 80371284 0036D0C4  4B C9 60 C1 */	bl lbl_80007344
+/* 80371284 0036D0C4  4B C9 60 C1 */	bl _savegpr_29
 /* 80371288 0036D0C8  7C 7D 1B 78 */	mr r29, r3
 /* 8037128C 0036D0CC  4B D8 F5 55 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 80371290 0036D0D0  4B FC F2 25 */	bl vacuumReceiver__Q43scn4step4hero4HeroFv
@@ -373,7 +373,7 @@ lbl_80371380:
 .global lbl_80371390
 lbl_80371390:
 /* 80371390 0036D1D0  39 61 00 20 */	addi r11, r1, 0x20
-/* 80371394 0036D1D4  4B C9 5F FD */	bl lbl_80007390
+/* 80371394 0036D1D4  4B C9 5F FD */	bl _restgpr_29
 /* 80371398 0036D1D8  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8037139C 0036D1DC  7C 08 03 A6 */	mtlr r0
 /* 803713A0 0036D1E0  38 21 00 20 */	addi r1, r1, 0x20

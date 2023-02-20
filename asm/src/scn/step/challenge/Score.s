@@ -272,7 +272,7 @@ getScore__Q43scn4step9challenge5ScoreCFv:
 /* 80269CBC 00265AFC  7C 08 02 A6 */	mflr r0
 /* 80269CC0 00265B00  90 01 00 24 */	stw r0, 0x24(r1)
 /* 80269CC4 00265B04  39 61 00 20 */	addi r11, r1, 0x20
-/* 80269CC8 00265B08  4B D9 D6 79 */	bl lbl_80007340
+/* 80269CC8 00265B08  4B D9 D6 79 */	bl _savegpr_28
 /* 80269CCC 00265B0C  7C 7C 1B 78 */	mr r28, r3
 /* 80269CD0 00265B10  4B FF FD 2D */	bl getCoinLScore__Q43scn4step9challenge5ScoreCFv
 /* 80269CD4 00265B14  7C 7D 1B 78 */	mr r29, r3
@@ -290,7 +290,7 @@ getScore__Q43scn4step9challenge5ScoreCFv:
 /* 80269D04 00265B44  7C 03 02 14 */	add r0, r3, r0
 /* 80269D08 00265B48  7C 64 02 14 */	add r3, r4, r0
 /* 80269D0C 00265B4C  39 61 00 20 */	addi r11, r1, 0x20
-/* 80269D10 00265B50  4B D9 D6 7D */	bl lbl_8000738C
+/* 80269D10 00265B50  4B D9 D6 7D */	bl _restgpr_28
 /* 80269D14 00265B54  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80269D18 00265B58  7C 08 03 A6 */	mtlr r0
 /* 80269D1C 00265B5C  38 21 00 20 */	addi r1, r1, 0x20
@@ -485,7 +485,7 @@ getTotalScore__Q43scn4step9challenge5ScoreCFv:
 /* 80269F90 00265DD0  7C 08 02 A6 */	mflr r0
 /* 80269F94 00265DD4  90 01 00 24 */	stw r0, 0x24(r1)
 /* 80269F98 00265DD8  39 61 00 20 */	addi r11, r1, 0x20
-/* 80269F9C 00265DDC  4B D9 D3 A9 */	bl lbl_80007344
+/* 80269F9C 00265DDC  4B D9 D3 A9 */	bl _savegpr_29
 /* 80269FA0 00265DE0  7C 7D 1B 78 */	mr r29, r3
 /* 80269FA4 00265DE4  4B FF FB C9 */	bl getSecondsScore__Q43scn4step9challenge5ScoreCFv
 /* 80269FA8 00265DE8  7C 7E 1B 78 */	mr r30, r3
@@ -497,7 +497,7 @@ getTotalScore__Q43scn4step9challenge5ScoreCFv:
 /* 80269FC0 00265E00  7C 1F F2 14 */	add r0, r31, r30
 /* 80269FC4 00265E04  7C 63 02 14 */	add r3, r3, r0
 /* 80269FC8 00265E08  39 61 00 20 */	addi r11, r1, 0x20
-/* 80269FCC 00265E0C  4B D9 D3 C5 */	bl lbl_80007390
+/* 80269FCC 00265E0C  4B D9 D3 C5 */	bl _restgpr_29
 /* 80269FD0 00265E10  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80269FD4 00265E14  7C 08 03 A6 */	mtlr r0
 /* 80269FD8 00265E18  38 21 00 20 */	addi r1, r1, 0x20

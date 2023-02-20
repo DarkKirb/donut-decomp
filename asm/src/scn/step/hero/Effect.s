@@ -7,7 +7,7 @@ __ct__Q43scn4step4hero6EffectFRQ33scn4step9ComponentRQ43scn4step4hero4Hero:
 /* 80335E98 00331CD8  7C 08 02 A6 */	mflr r0
 /* 80335E9C 00331CDC  90 01 00 24 */	stw r0, 0x24(r1)
 /* 80335EA0 00331CE0  39 61 00 20 */	addi r11, r1, 0x20
-/* 80335EA4 00331CE4  4B CD 14 A1 */	bl lbl_80007344
+/* 80335EA4 00331CE4  4B CD 14 A1 */	bl _savegpr_29
 /* 80335EA8 00331CE8  7C 7D 1B 78 */	mr r29, r3
 /* 80335EAC 00331CEC  7C 9E 23 78 */	mr r30, r4
 /* 80335EB0 00331CF0  7C BF 2B 78 */	mr r31, r5
@@ -162,7 +162,7 @@ __ct__Q43scn4step4hero6EffectFRQ33scn4step9ComponentRQ43scn4step4hero4Hero:
 /* 80336104 00331F44  4B F3 82 35 */	bl changeLayer__Q43scn4step5chara6EffectFQ43scn4step4core13DrawLayerKind
 /* 80336108 00331F48  7F A3 EB 78 */	mr r3, r29
 /* 8033610C 00331F4C  39 61 00 20 */	addi r11, r1, 0x20
-/* 80336110 00331F50  4B CD 12 81 */	bl lbl_80007390
+/* 80336110 00331F50  4B CD 12 81 */	bl _restgpr_29
 /* 80336114 00331F54  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80336118 00331F58  7C 08 03 A6 */	mtlr r0
 /* 8033611C 00331F5C  38 21 00 20 */	addi r1, r1, 0x20

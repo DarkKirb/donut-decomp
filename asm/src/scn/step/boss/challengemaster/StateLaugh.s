@@ -7,7 +7,7 @@ TryToChangeState__Q53scn4step4boss15challengemaster10StateLaughFPQ43scn4step4bos
 /* 80240CDC 0023CB1C  7C 08 02 A6 */	mflr r0
 /* 80240CE0 0023CB20  90 01 00 24 */	stw r0, 0x24(r1)
 /* 80240CE4 0023CB24  39 61 00 20 */	addi r11, r1, 0x20
-/* 80240CE8 0023CB28  4B DC 66 5D */	bl lbl_80007344
+/* 80240CE8 0023CB28  4B DC 66 5D */	bl _savegpr_29
 /* 80240CEC 0023CB2C  7C 7D 1B 78 */	mr r29, r3
 /* 80240CF0 0023CB30  4B FE C2 F9 */	bl custom__Q43scn4step4boss4BossFv
 /* 80240CF4 0023CB34  4B FF B8 59 */	bl "DynamicCastToRef<Q53scn4step4boss15challengemaster6Custom,Q43scn4step4boss7ICustom>__Q23hel6commonFPQ43scn4step4boss7ICustom_RQ53scn4step4boss15challengemaster6Custom"
@@ -40,7 +40,7 @@ lbl_80240D4C:
 .global lbl_80240D50
 lbl_80240D50:
 /* 80240D50 0023CB90  39 61 00 20 */	addi r11, r1, 0x20
-/* 80240D54 0023CB94  4B DC 66 3D */	bl lbl_80007390
+/* 80240D54 0023CB94  4B DC 66 3D */	bl _restgpr_29
 /* 80240D58 0023CB98  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80240D5C 0023CB9C  7C 08 03 A6 */	mtlr r0
 /* 80240D60 0023CBA0  38 21 00 20 */	addi r1, r1, 0x20
@@ -121,7 +121,7 @@ procAnim__Q53scn4step4boss15challengemaster10StateLaughFv:
 /* 80240E64 0023CCA4  7C 08 02 A6 */	mflr r0
 /* 80240E68 0023CCA8  90 01 00 24 */	stw r0, 0x24(r1)
 /* 80240E6C 0023CCAC  39 61 00 20 */	addi r11, r1, 0x20
-/* 80240E70 0023CCB0  4B DC 64 D5 */	bl lbl_80007344
+/* 80240E70 0023CCB0  4B DC 64 D5 */	bl _savegpr_29
 /* 80240E74 0023CCB4  7C 7F 1B 78 */	mr r31, r3
 /* 80240E78 0023CCB8  4B EB F9 69 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 80240E7C 0023CCBC  4B FF 3A C9 */	bl TurnMainHero__Q43scn4step4boss7UtilityFRQ43scn4step4boss4Boss
@@ -167,7 +167,7 @@ lbl_80240F08:
 .global lbl_80240F0C
 lbl_80240F0C:
 /* 80240F0C 0023CD4C  39 61 00 20 */	addi r11, r1, 0x20
-/* 80240F10 0023CD50  4B DC 64 81 */	bl lbl_80007390
+/* 80240F10 0023CD50  4B DC 64 81 */	bl _restgpr_29
 /* 80240F14 0023CD54  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80240F18 0023CD58  7C 08 03 A6 */	mtlr r0
 /* 80240F1C 0023CD5C  38 21 00 20 */	addi r1, r1, 0x20

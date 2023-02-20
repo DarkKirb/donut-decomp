@@ -299,7 +299,7 @@ constraint__Q43scn4step4hero9PiggybackFv:
 /* 80352218 0034E058  DB E1 00 80 */	stfd f31, 0x80(r1)
 /* 8035221C 0034E05C  F3 E1 00 88 */	psq_st f31, 0x88(r1), 0, qr0
 /* 80352220 0034E060  39 61 00 80 */	addi r11, r1, 0x80
-/* 80352224 0034E064  4B CB 51 21 */	bl lbl_80007344
+/* 80352224 0034E064  4B CB 51 21 */	bl _savegpr_29
 /* 80352228 0034E068  7C 7D 1B 78 */	mr r29, r3
 /* 8035222C 0034E06C  4B E2 58 89 */	bl "isConstruct__Q23mem43ExplicitScopedPtr<Q23app16HIDErrorMenuImpl>CFv"
 /* 80352230 0034E070  2C 03 00 00 */	cmpwi r3, 0x0
@@ -564,7 +564,7 @@ lbl_803525C0:
 /* 803525C4 0034E404  13 E1 00 0C */	psq_lx f31, r1, r0, 0, qr0
 /* 803525C8 0034E408  CB E1 00 80 */	lfd f31, 0x80(r1)
 /* 803525CC 0034E40C  39 61 00 80 */	addi r11, r1, 0x80
-/* 803525D0 0034E410  4B CB 4D C1 */	bl lbl_80007390
+/* 803525D0 0034E410  4B CB 4D C1 */	bl _restgpr_29
 /* 803525D4 0034E414  80 01 00 94 */	lwz r0, 0x94(r1)
 /* 803525D8 0034E418  7C 08 03 A6 */	mtlr r0
 /* 803525DC 0034E41C  38 21 00 90 */	addi r1, r1, 0x90
@@ -619,7 +619,7 @@ chkCollide__Q43scn4step4hero9PiggybackFRQ43scn4step4hero9Piggyback:
 /* 80352690 0034E4D0  DB E1 00 40 */	stfd f31, 0x40(r1)
 /* 80352694 0034E4D4  F3 E1 00 48 */	psq_st f31, 0x48(r1), 0, qr0
 /* 80352698 0034E4D8  39 61 00 40 */	addi r11, r1, 0x40
-/* 8035269C 0034E4DC  4B CB 4C A9 */	bl lbl_80007344
+/* 8035269C 0034E4DC  4B CB 4C A9 */	bl _savegpr_29
 /* 803526A0 0034E4E0  7C 7D 1B 78 */	mr r29, r3
 /* 803526A4 0034E4E4  7C 9E 23 78 */	mr r30, r4
 /* 803526A8 0034E4E8  7C 03 20 40 */	cmplw r3, r4
@@ -735,7 +735,7 @@ lbl_80352834:
 /* 80352838 0034E678  13 E1 00 0C */	psq_lx f31, r1, r0, 0, qr0
 /* 8035283C 0034E67C  CB E1 00 40 */	lfd f31, 0x40(r1)
 /* 80352840 0034E680  39 61 00 40 */	addi r11, r1, 0x40
-/* 80352844 0034E684  4B CB 4B 4D */	bl lbl_80007390
+/* 80352844 0034E684  4B CB 4B 4D */	bl _restgpr_29
 /* 80352848 0034E688  80 01 00 54 */	lwz r0, 0x54(r1)
 /* 8035284C 0034E68C  7C 08 03 A6 */	mtlr r0
 /* 80352850 0034E690  38 21 00 50 */	addi r1, r1, 0x50
@@ -887,7 +887,7 @@ getConstraintOffset__Q43scn4step4hero9PiggybackFv:
 /* 80352A48 0034E888  DB C1 00 D0 */	stfd f30, 0xd0(r1)
 /* 80352A4C 0034E88C  F3 C1 00 D8 */	psq_st f30, 0xd8(r1), 0, qr0
 /* 80352A50 0034E890  39 61 00 D0 */	addi r11, r1, 0xd0
-/* 80352A54 0034E894  4B CB 48 ED */	bl lbl_80007340
+/* 80352A54 0034E894  4B CB 48 ED */	bl _savegpr_28
 /* 80352A58 0034E898  7C 7C 1B 78 */	mr r28, r3
 /* 80352A5C 0034E89C  7C 9D 23 78 */	mr r29, r4
 /* 80352A60 0034E8A0  C0 02 CE 50 */	lfs f0, "@61280"@sda21(r2)
@@ -1198,7 +1198,7 @@ lbl_80352D14:
 /* 80352E1C 0034EC5C  13 C1 00 0C */	psq_lx f30, r1, r0, 0, qr0
 /* 80352E20 0034EC60  CB C1 00 D0 */	lfd f30, 0xd0(r1)
 /* 80352E24 0034EC64  39 61 00 D0 */	addi r11, r1, 0xd0
-/* 80352E28 0034EC68  4B CB 45 65 */	bl lbl_8000738C
+/* 80352E28 0034EC68  4B CB 45 65 */	bl _restgpr_28
 /* 80352E2C 0034EC6C  80 01 00 F4 */	lwz r0, 0xf4(r1)
 /* 80352E30 0034EC70  7C 08 03 A6 */	mtlr r0
 /* 80352E34 0034EC74  38 21 00 F0 */	addi r1, r1, 0xf0

@@ -7,7 +7,7 @@ __ct__Q53scn4step4boss6common11StateAttackFPQ43scn4step4boss4BossRQ53scn4step4bo
 /* 80244B90 002409D0  7C 08 02 A6 */	mflr r0
 /* 80244B94 002409D4  90 01 00 24 */	stw r0, 0x24(r1)
 /* 80244B98 002409D8  39 61 00 20 */	addi r11, r1, 0x20
-/* 80244B9C 002409DC  4B DC 27 A9 */	bl lbl_80007344
+/* 80244B9C 002409DC  4B DC 27 A9 */	bl _savegpr_29
 /* 80244BA0 002409E0  7C 7D 1B 78 */	mr r29, r3
 /* 80244BA4 002409E4  7C BE 2B 78 */	mr r30, r5
 /* 80244BA8 002409E8  7C DF 33 78 */	mr r31, r6
@@ -30,7 +30,7 @@ __ct__Q53scn4step4boss6common11StateAttackFPQ43scn4step4boss4BossRQ53scn4step4bo
 /* 80244BEC 00240A2C  4B FF 0D 31 */	bl ControlHateOnAction__Q43scn4step4boss7UtilityFRQ43scn4step4boss4Boss
 /* 80244BF0 00240A30  7F A3 EB 78 */	mr r3, r29
 /* 80244BF4 00240A34  39 61 00 20 */	addi r11, r1, 0x20
-/* 80244BF8 00240A38  4B DC 27 99 */	bl lbl_80007390
+/* 80244BF8 00240A38  4B DC 27 99 */	bl _restgpr_29
 /* 80244BFC 00240A3C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80244C00 00240A40  7C 08 03 A6 */	mtlr r0
 /* 80244C04 00240A44  38 21 00 20 */	addi r1, r1, 0x20

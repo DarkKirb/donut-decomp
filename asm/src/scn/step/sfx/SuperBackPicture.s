@@ -70,7 +70,7 @@ __ct__Q43scn4step3sfx16SuperBackPictureFRQ33scn4step9Component:
 /* 803CFDF8 003CBC38  7C 08 02 A6 */	mflr r0
 /* 803CFDFC 003CBC3C  90 01 00 B4 */	stw r0, 0xb4(r1)
 /* 803CFE00 003CBC40  39 61 00 B0 */	addi r11, r1, 0xb0
-/* 803CFE04 003CBC44  4B C3 75 3D */	bl lbl_80007340
+/* 803CFE04 003CBC44  4B C3 75 3D */	bl _savegpr_28
 /* 803CFE08 003CBC48  7C 7C 1B 78 */	mr r28, r3
 /* 803CFE0C 003CBC4C  7C 9D 23 78 */	mr r29, r4
 /* 803CFE10 003CBC50  3C A0 80 49 */	lis r5, __vt__Q43scn4step3sfx16SuperBackPicture@ha
@@ -165,7 +165,7 @@ __ct__Q43scn4step3sfx16SuperBackPictureFRQ33scn4step9Component:
 /* 803CFF74 003CBDB4  48 00 07 95 */	bl registerEventReceiver__Q43scn4step3sfx16SuperBackPictureFv
 /* 803CFF78 003CBDB8  7F 83 E3 78 */	mr r3, r28
 /* 803CFF7C 003CBDBC  39 61 00 B0 */	addi r11, r1, 0xb0
-/* 803CFF80 003CBDC0  4B C3 74 0D */	bl lbl_8000738C
+/* 803CFF80 003CBDC0  4B C3 74 0D */	bl _restgpr_28
 /* 803CFF84 003CBDC4  80 01 00 B4 */	lwz r0, 0xb4(r1)
 /* 803CFF88 003CBDC8  7C 08 03 A6 */	mtlr r0
 /* 803CFF8C 003CBDCC  38 21 00 B0 */	addi r1, r1, 0xb0
@@ -234,7 +234,7 @@ update__Q43scn4step3sfx16SuperBackPictureFv:
 /* 803D006C 003CBEAC  DB E1 01 00 */	stfd f31, 0x100(r1)
 /* 803D0070 003CBEB0  F3 E1 01 08 */	psq_st f31, 0x108(r1), 0, qr0
 /* 803D0074 003CBEB4  39 61 01 00 */	addi r11, r1, 0x100
-/* 803D0078 003CBEB8  4B C3 72 CD */	bl lbl_80007344
+/* 803D0078 003CBEB8  4B C3 72 CD */	bl _savegpr_29
 /* 803D007C 003CBEBC  7C 7F 1B 78 */	mr r31, r3
 /* 803D0080 003CBEC0  80 63 00 04 */	lwz r3, 0x4(r3)
 /* 803D0084 003CBEC4  4B E5 0B 05 */	bl mainCamera__Q33scn4step9ComponentCFv
@@ -449,7 +449,7 @@ lbl_803D0358:
 /* 803D0378 003CC1B8  13 E1 00 0C */	psq_lx f31, r1, r0, 0, qr0
 /* 803D037C 003CC1BC  CB E1 01 00 */	lfd f31, 0x100(r1)
 /* 803D0380 003CC1C0  39 61 01 00 */	addi r11, r1, 0x100
-/* 803D0384 003CC1C4  4B C3 70 0D */	bl lbl_80007390
+/* 803D0384 003CC1C4  4B C3 70 0D */	bl _restgpr_29
 /* 803D0388 003CC1C8  80 01 01 14 */	lwz r0, 0x114(r1)
 /* 803D038C 003CC1CC  7C 08 03 A6 */	mtlr r0
 /* 803D0390 003CC1D0  38 21 01 10 */	addi r1, r1, 0x110
@@ -485,7 +485,7 @@ requestEffect__Q43scn4step3sfx16SuperBackPictureFQ43scn4step6effect4KindRCQ33hel
 /* 803D03F8 003CC238  7C 08 02 A6 */	mflr r0
 /* 803D03FC 003CC23C  90 01 00 34 */	stw r0, 0x34(r1)
 /* 803D0400 003CC240  39 61 00 30 */	addi r11, r1, 0x30
-/* 803D0404 003CC244  4B C3 6F 41 */	bl lbl_80007344
+/* 803D0404 003CC244  4B C3 6F 41 */	bl _savegpr_29
 /* 803D0408 003CC248  7C 7D 1B 78 */	mr r29, r3
 /* 803D040C 003CC24C  7C 9E 23 78 */	mr r30, r4
 /* 803D0410 003CC250  7C BF 2B 78 */	mr r31, r5
@@ -501,7 +501,7 @@ requestEffect__Q43scn4step3sfx16SuperBackPictureFQ43scn4step6effect4KindRCQ33hel
 /* 803D0438 003CC278  38 80 FF FF */	li r4, -0x1
 /* 803D043C 003CC27C  4B DA C2 55 */	bl __dt__Q23g3d12NodeAccessorFv
 /* 803D0440 003CC280  39 61 00 30 */	addi r11, r1, 0x30
-/* 803D0444 003CC284  4B C3 6F 4D */	bl lbl_80007390
+/* 803D0444 003CC284  4B C3 6F 4D */	bl _restgpr_29
 /* 803D0448 003CC288  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 803D044C 003CC28C  7C 08 03 A6 */	mtlr r0
 /* 803D0450 003CC290  38 21 00 30 */	addi r1, r1, 0x30
@@ -541,7 +541,7 @@ requestEffect2__Q43scn4step3sfx16SuperBackPictureFQ43scn4step6effect4KindRCQ33he
 /* 803D04C0 003CC300  7C 08 02 A6 */	mflr r0
 /* 803D04C4 003CC304  90 01 00 34 */	stw r0, 0x34(r1)
 /* 803D04C8 003CC308  39 61 00 30 */	addi r11, r1, 0x30
-/* 803D04CC 003CC30C  4B C3 6E 79 */	bl lbl_80007344
+/* 803D04CC 003CC30C  4B C3 6E 79 */	bl _savegpr_29
 /* 803D04D0 003CC310  7C 7D 1B 78 */	mr r29, r3
 /* 803D04D4 003CC314  7C 9E 23 78 */	mr r30, r4
 /* 803D04D8 003CC318  7C BF 2B 78 */	mr r31, r5
@@ -557,7 +557,7 @@ requestEffect2__Q43scn4step3sfx16SuperBackPictureFQ43scn4step6effect4KindRCQ33he
 /* 803D0500 003CC340  38 80 FF FF */	li r4, -0x1
 /* 803D0504 003CC344  4B DA C1 8D */	bl __dt__Q23g3d12NodeAccessorFv
 /* 803D0508 003CC348  39 61 00 30 */	addi r11, r1, 0x30
-/* 803D050C 003CC34C  4B C3 6E 85 */	bl lbl_80007390
+/* 803D050C 003CC34C  4B C3 6E 85 */	bl _restgpr_29
 /* 803D0510 003CC350  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 803D0514 003CC354  7C 08 03 A6 */	mtlr r0
 /* 803D0518 003CC358  38 21 00 30 */	addi r1, r1, 0x30
@@ -597,7 +597,7 @@ requestEffectNonStop__Q43scn4step3sfx16SuperBackPictureFQ43scn4step6effect4KindR
 /* 803D0588 003CC3C8  7C 08 02 A6 */	mflr r0
 /* 803D058C 003CC3CC  90 01 00 34 */	stw r0, 0x34(r1)
 /* 803D0590 003CC3D0  39 61 00 30 */	addi r11, r1, 0x30
-/* 803D0594 003CC3D4  4B C3 6D B1 */	bl lbl_80007344
+/* 803D0594 003CC3D4  4B C3 6D B1 */	bl _savegpr_29
 /* 803D0598 003CC3D8  7C 7D 1B 78 */	mr r29, r3
 /* 803D059C 003CC3DC  7C 9E 23 78 */	mr r30, r4
 /* 803D05A0 003CC3E0  7C BF 2B 78 */	mr r31, r5
@@ -613,7 +613,7 @@ requestEffectNonStop__Q43scn4step3sfx16SuperBackPictureFQ43scn4step6effect4KindR
 /* 803D05C8 003CC408  38 80 FF FF */	li r4, -0x1
 /* 803D05CC 003CC40C  4B DA C0 C5 */	bl __dt__Q23g3d12NodeAccessorFv
 /* 803D05D0 003CC410  39 61 00 30 */	addi r11, r1, 0x30
-/* 803D05D4 003CC414  4B C3 6D BD */	bl lbl_80007390
+/* 803D05D4 003CC414  4B C3 6D BD */	bl _restgpr_29
 /* 803D05D8 003CC418  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 803D05DC 003CC41C  7C 08 03 A6 */	mtlr r0
 /* 803D05E0 003CC420  38 21 00 30 */	addi r1, r1, 0x30
@@ -653,7 +653,7 @@ requestEffectNonStop2__Q43scn4step3sfx16SuperBackPictureFQ43scn4step6effect4Kind
 /* 803D0650 003CC490  7C 08 02 A6 */	mflr r0
 /* 803D0654 003CC494  90 01 00 34 */	stw r0, 0x34(r1)
 /* 803D0658 003CC498  39 61 00 30 */	addi r11, r1, 0x30
-/* 803D065C 003CC49C  4B C3 6C E9 */	bl lbl_80007344
+/* 803D065C 003CC49C  4B C3 6C E9 */	bl _savegpr_29
 /* 803D0660 003CC4A0  7C 7D 1B 78 */	mr r29, r3
 /* 803D0664 003CC4A4  7C 9E 23 78 */	mr r30, r4
 /* 803D0668 003CC4A8  7C BF 2B 78 */	mr r31, r5
@@ -669,7 +669,7 @@ requestEffectNonStop2__Q43scn4step3sfx16SuperBackPictureFQ43scn4step6effect4Kind
 /* 803D0690 003CC4D0  38 80 FF FF */	li r4, -0x1
 /* 803D0694 003CC4D4  4B DA BF FD */	bl __dt__Q23g3d12NodeAccessorFv
 /* 803D0698 003CC4D8  39 61 00 30 */	addi r11, r1, 0x30
-/* 803D069C 003CC4DC  4B C3 6C F5 */	bl lbl_80007390
+/* 803D069C 003CC4DC  4B C3 6C F5 */	bl _restgpr_29
 /* 803D06A0 003CC4E0  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 803D06A4 003CC4E4  7C 08 03 A6 */	mtlr r0
 /* 803D06A8 003CC4E8  38 21 00 30 */	addi r1, r1, 0x30

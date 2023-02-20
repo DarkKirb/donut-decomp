@@ -7,7 +7,7 @@ TryToChangeState__Q53scn4step4hero6common14StateWaterWalkFPQ43scn4step4hero4Hero
 /* 8036FAEC 0036B92C  7C 08 02 A6 */	mflr r0
 /* 8036FAF0 0036B930  90 01 00 24 */	stw r0, 0x24(r1)
 /* 8036FAF4 0036B934  39 61 00 20 */	addi r11, r1, 0x20
-/* 8036FAF8 0036B938  4B C9 78 4D */	bl lbl_80007344
+/* 8036FAF8 0036B938  4B C9 78 4D */	bl _savegpr_29
 /* 8036FAFC 0036B93C  7C 7D 1B 78 */	mr r29, r3
 /* 8036FB00 0036B940  4B FE 85 C9 */	bl CanWaterLanding__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Hero
 /* 8036FB04 0036B944  2C 03 00 00 */	cmpwi r3, 0x0
@@ -45,7 +45,7 @@ lbl_8036FB68:
 .global lbl_8036FB6C
 lbl_8036FB6C:
 /* 8036FB6C 0036B9AC  39 61 00 20 */	addi r11, r1, 0x20
-/* 8036FB70 0036B9B0  4B C9 78 21 */	bl lbl_80007390
+/* 8036FB70 0036B9B0  4B C9 78 21 */	bl _restgpr_29
 /* 8036FB74 0036B9B4  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8036FB78 0036B9B8  7C 08 03 A6 */	mtlr r0
 /* 8036FB7C 0036B9BC  38 21 00 20 */	addi r1, r1, 0x20
@@ -229,7 +229,7 @@ procMove__Q53scn4step4hero6common14StateWaterWalkFv:
 /* 8036FDF0 0036BC30  7C 08 02 A6 */	mflr r0
 /* 8036FDF4 0036BC34  90 01 00 24 */	stw r0, 0x24(r1)
 /* 8036FDF8 0036BC38  39 61 00 20 */	addi r11, r1, 0x20
-/* 8036FDFC 0036BC3C  4B C9 75 45 */	bl lbl_80007340
+/* 8036FDFC 0036BC3C  4B C9 75 45 */	bl _savegpr_28
 /* 8036FE00 0036BC40  7C 7C 1B 78 */	mr r28, r3
 /* 8036FE04 0036BC44  4B D9 09 DD */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 8036FE08 0036BC48  4B FD 04 D5 */	bl param__Q43scn4step4hero4HeroFv
@@ -252,7 +252,7 @@ procMove__Q53scn4step4hero6common14StateWaterWalkFv:
 /* 8036FE4C 0036BC8C  38 DD 00 D4 */	addi r6, r29, 0xd4
 /* 8036FE50 0036BC90  4B FE 6F 61 */	bl MoveFromKeyState__Q43scn4step4hero7UtilityFRQ43scn4step4hero4HeroRCQ24gobj14MoveParamAccelRCQ24gobj14MoveParamDecelRCQ24gobj13MoveParamFall
 /* 8036FE54 0036BC94  39 61 00 20 */	addi r11, r1, 0x20
-/* 8036FE58 0036BC98  4B C9 75 35 */	bl lbl_8000738C
+/* 8036FE58 0036BC98  4B C9 75 35 */	bl _restgpr_28
 /* 8036FE5C 0036BC9C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8036FE60 0036BCA0  7C 08 03 A6 */	mtlr r0
 /* 8036FE64 0036BCA4  38 21 00 20 */	addi r1, r1, 0x20

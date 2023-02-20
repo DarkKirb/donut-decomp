@@ -7,7 +7,7 @@ TryToChangeState__Q53scn4step4hero6common9StateWaitFPQ43scn4step4hero4Hero:
 /* 8036D94C 0036978C  7C 08 02 A6 */	mflr r0
 /* 8036D950 00369790  90 01 00 54 */	stw r0, 0x54(r1)
 /* 8036D954 00369794  39 61 00 50 */	addi r11, r1, 0x50
-/* 8036D958 00369798  4B C9 99 ED */	bl lbl_80007344
+/* 8036D958 00369798  4B C9 99 ED */	bl _savegpr_29
 /* 8036D95C 0036979C  7C 7D 1B 78 */	mr r29, r3
 /* 8036D960 003697A0  4B FD 29 DD */	bl mapColl__Q43scn4step4hero4HeroFv
 /* 8036D964 003697A4  7C 64 1B 78 */	mr r4, r3
@@ -45,7 +45,7 @@ lbl_8036D9D0:
 .global lbl_8036D9D4
 lbl_8036D9D4:
 /* 8036D9D4 00369814  39 61 00 50 */	addi r11, r1, 0x50
-/* 8036D9D8 00369818  4B C9 99 B9 */	bl lbl_80007390
+/* 8036D9D8 00369818  4B C9 99 B9 */	bl _restgpr_29
 /* 8036D9DC 0036981C  80 01 00 54 */	lwz r0, 0x54(r1)
 /* 8036D9E0 00369820  7C 08 03 A6 */	mtlr r0
 /* 8036D9E4 00369824  38 21 00 50 */	addi r1, r1, 0x50
@@ -60,7 +60,7 @@ TryToChangeStateWithScript__Q53scn4step4hero6common9StateWaitFPQ43scn4step4hero4
 /* 8036D9F8 00369838  7C 08 02 A6 */	mflr r0
 /* 8036D9FC 0036983C  90 01 00 54 */	stw r0, 0x54(r1)
 /* 8036DA00 00369840  39 61 00 50 */	addi r11, r1, 0x50
-/* 8036DA04 00369844  4B C9 99 3D */	bl lbl_80007340
+/* 8036DA04 00369844  4B C9 99 3D */	bl _savegpr_28
 /* 8036DA08 00369848  7C 7C 1B 78 */	mr r28, r3
 /* 8036DA0C 0036984C  7C 9D 23 78 */	mr r29, r4
 /* 8036DA10 00369850  4B FD 29 2D */	bl mapColl__Q43scn4step4hero4HeroFv
@@ -100,7 +100,7 @@ lbl_8036DA84:
 .global lbl_8036DA88
 lbl_8036DA88:
 /* 8036DA88 003698C8  39 61 00 50 */	addi r11, r1, 0x50
-/* 8036DA8C 003698CC  4B C9 99 01 */	bl lbl_8000738C
+/* 8036DA8C 003698CC  4B C9 99 01 */	bl _restgpr_28
 /* 8036DA90 003698D0  80 01 00 54 */	lwz r0, 0x54(r1)
 /* 8036DA94 003698D4  7C 08 03 A6 */	mtlr r0
 /* 8036DA98 003698D8  38 21 00 50 */	addi r1, r1, 0x50
@@ -418,7 +418,7 @@ procFixPos__Q53scn4step4hero6common9StateWaitFv:
 /* 8036DEE0 00369D20  7C 08 02 A6 */	mflr r0
 /* 8036DEE4 00369D24  90 01 00 54 */	stw r0, 0x54(r1)
 /* 8036DEE8 00369D28  39 61 00 50 */	addi r11, r1, 0x50
-/* 8036DEEC 00369D2C  4B C9 94 59 */	bl lbl_80007344
+/* 8036DEEC 00369D2C  4B C9 94 59 */	bl _savegpr_29
 /* 8036DEF0 00369D30  7C 7D 1B 78 */	mr r29, r3
 /* 8036DEF4 00369D34  4B D9 28 ED */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 8036DEF8 00369D38  4B FD 24 45 */	bl mapColl__Q43scn4step4hero4HeroFv
@@ -464,7 +464,7 @@ lbl_8036DF84:
 .global lbl_8036DF88
 lbl_8036DF88:
 /* 8036DF88 00369DC8  39 61 00 50 */	addi r11, r1, 0x50
-/* 8036DF8C 00369DCC  4B C9 94 05 */	bl lbl_80007390
+/* 8036DF8C 00369DCC  4B C9 94 05 */	bl _restgpr_29
 /* 8036DF90 00369DD0  80 01 00 54 */	lwz r0, 0x54(r1)
 /* 8036DF94 00369DD4  7C 08 03 A6 */	mtlr r0
 /* 8036DF98 00369DD8  38 21 00 50 */	addi r1, r1, 0x50

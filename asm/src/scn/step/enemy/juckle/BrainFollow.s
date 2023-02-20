@@ -25,7 +25,7 @@ onStart__Q53scn4step5enemy6juckle11BrainFollowFv:
 /* 802BB1AC 002B6FEC  7C 08 02 A6 */	mflr r0
 /* 802BB1B0 002B6FF0  90 01 00 24 */	stw r0, 0x24(r1)
 /* 802BB1B4 002B6FF4  39 61 00 20 */	addi r11, r1, 0x20
-/* 802BB1B8 002B6FF8  4B D4 C1 8D */	bl lbl_80007344
+/* 802BB1B8 002B6FF8  4B D4 C1 8D */	bl _savegpr_29
 /* 802BB1BC 002B6FFC  7C 7D 1B 78 */	mr r29, r3
 /* 802BB1C0 002B7000  4B E4 56 21 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 802BB1C4 002B7004  4B FC CF D1 */	bl custom__Q43scn4step5enemy5EnemyFv
@@ -76,7 +76,7 @@ lbl_802BB224:
 /* 802BB248 002B7088  4B FD 60 89 */	bl "setNextState<Q53scn4step5enemy6common8StateFly,PQ43scn4step5enemy5Enemy>__Q24util42StateChanger<Q43scn4step5enemy6IState,256>FPQ43scn4step5enemy5Enemy_v"
 /* 802BB24C 002B708C  38 60 00 01 */	li r3, 0x1
 /* 802BB250 002B7090  39 61 00 20 */	addi r11, r1, 0x20
-/* 802BB254 002B7094  4B D4 C1 3D */	bl lbl_80007390
+/* 802BB254 002B7094  4B D4 C1 3D */	bl _restgpr_29
 /* 802BB258 002B7098  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802BB25C 002B709C  7C 08 03 A6 */	mtlr r0
 /* 802BB260 002B70A0  38 21 00 20 */	addi r1, r1, 0x20

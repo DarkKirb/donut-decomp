@@ -7,7 +7,7 @@ __ct__Q53scn4step7gimmick5stake5StakeFRCQ43scn4step3map18BinGmkGeneralEntryRQ33s
 /* 80325538 00321378  7C 08 02 A6 */	mflr r0
 /* 8032553C 0032137C  90 01 00 A4 */	stw r0, 0xa4(r1)
 /* 80325540 00321380  39 61 00 A0 */	addi r11, r1, 0xa0
-/* 80325544 00321384  4B CE 1D FD */	bl lbl_80007340
+/* 80325544 00321384  4B CE 1D FD */	bl _savegpr_28
 /* 80325548 00321388  7C 7F 1B 78 */	mr r31, r3
 /* 8032554C 0032138C  7C 9E 23 78 */	mr r30, r4
 /* 80325550 00321390  7C BC 2B 78 */	mr r28, r5
@@ -186,7 +186,7 @@ lbl_80325764:
 /* 803257EC 0032162C  4B E5 6E A5 */	bl __dt__Q23g3d12NodeAccessorFv
 /* 803257F0 00321630  7F E3 FB 78 */	mr r3, r31
 /* 803257F4 00321634  39 61 00 A0 */	addi r11, r1, 0xa0
-/* 803257F8 00321638  4B CE 1B 95 */	bl lbl_8000738C
+/* 803257F8 00321638  4B CE 1B 95 */	bl _restgpr_28
 /* 803257FC 0032163C  80 01 00 A4 */	lwz r0, 0xa4(r1)
 /* 80325800 00321640  7C 08 03 A6 */	mtlr r0
 /* 80325804 00321644  38 21 00 A0 */	addi r1, r1, 0xa0
@@ -253,7 +253,7 @@ procBegin__Q53scn4step7gimmick5stake5StakeFv:
 /* 803258D8 00321718  7C 08 02 A6 */	mflr r0
 /* 803258DC 0032171C  90 01 00 24 */	stw r0, 0x24(r1)
 /* 803258E0 00321720  39 61 00 20 */	addi r11, r1, 0x20
-/* 803258E4 00321724  4B CE 1A 61 */	bl lbl_80007344
+/* 803258E4 00321724  4B CE 1A 61 */	bl _savegpr_29
 /* 803258E8 00321728  7C 7D 1B 78 */	mr r29, r3
 /* 803258EC 0032172C  88 03 0A CD */	lbz r0, 0xacd(r3)
 /* 803258F0 00321730  2C 00 00 00 */	cmpwi r0, 0x0
@@ -274,7 +274,7 @@ procBegin__Q53scn4step7gimmick5stake5StakeFv:
 .global lbl_8032592C
 lbl_8032592C:
 /* 8032592C 0032176C  39 61 00 20 */	addi r11, r1, 0x20
-/* 80325930 00321770  4B CE 1A 61 */	bl lbl_80007390
+/* 80325930 00321770  4B CE 1A 61 */	bl _restgpr_29
 /* 80325934 00321774  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80325938 00321778  7C 08 03 A6 */	mtlr r0
 /* 8032593C 0032177C  38 21 00 20 */	addi r1, r1, 0x20

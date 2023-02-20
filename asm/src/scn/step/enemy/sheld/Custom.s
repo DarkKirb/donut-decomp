@@ -122,7 +122,7 @@ onVacuumReceive__Q53scn4step5enemy5sheld6CustomFv:
 /* 802DD0A8 002D8EE8  7C 08 02 A6 */	mflr r0
 /* 802DD0AC 002D8EEC  90 01 00 A4 */	stw r0, 0xa4(r1)
 /* 802DD0B0 002D8EF0  39 61 00 A0 */	addi r11, r1, 0xa0
-/* 802DD0B4 002D8EF4  4B D2 A2 91 */	bl lbl_80007344
+/* 802DD0B4 002D8EF4  4B D2 A2 91 */	bl _savegpr_29
 /* 802DD0B8 002D8EF8  7C 7D 1B 78 */	mr r29, r3
 /* 802DD0BC 002D8EFC  4B E9 F5 29 */	bl "isLink__Q24util51ObjListNode<Q23g3d5Model,Q24util16ObjListDummyType>CFv"
 /* 802DD0C0 002D8F00  2C 03 00 00 */	cmpwi r3, 0x0
@@ -241,7 +241,7 @@ lbl_802DD220:
 lbl_802DD268:
 /* 802DD268 002D90A8  38 60 00 00 */	li r3, 0x0
 /* 802DD26C 002D90AC  39 61 00 A0 */	addi r11, r1, 0xa0
-/* 802DD270 002D90B0  4B D2 A1 21 */	bl lbl_80007390
+/* 802DD270 002D90B0  4B D2 A1 21 */	bl _restgpr_29
 /* 802DD274 002D90B4  80 01 00 A4 */	lwz r0, 0xa4(r1)
 /* 802DD278 002D90B8  7C 08 03 A6 */	mtlr r0
 /* 802DD27C 002D90BC  38 21 00 A0 */	addi r1, r1, 0xa0
@@ -257,7 +257,7 @@ onDamaged__Q53scn4step5enemy5sheld6CustomFv:
 /* 802DD298 002D90D8  DB C1 00 C0 */	stfd f30, 0xc0(r1)
 /* 802DD29C 002D90DC  F3 C1 00 C8 */	psq_st f30, 0xc8(r1), 0, qr0
 /* 802DD2A0 002D90E0  39 61 00 C0 */	addi r11, r1, 0xc0
-/* 802DD2A4 002D90E4  4B D2 A0 9D */	bl lbl_80007340
+/* 802DD2A4 002D90E4  4B D2 A0 9D */	bl _savegpr_28
 /* 802DD2A8 002D90E8  7C 7F 1B 78 */	mr r31, r3
 /* 802DD2AC 002D90EC  3B 80 00 00 */	li r28, 0x0
 /* 802DD2B0 002D90F0  4B E9 F3 35 */	bl "isLink__Q24util51ObjListNode<Q23g3d5Model,Q24util16ObjListDummyType>CFv"
@@ -553,7 +553,7 @@ lbl_802DD6BC:
 /* 802DD6D8 002D9518  13 C1 00 0C */	psq_lx f30, r1, r0, 0, qr0
 /* 802DD6DC 002D951C  CB C1 00 C0 */	lfd f30, 0xc0(r1)
 /* 802DD6E0 002D9520  39 61 00 C0 */	addi r11, r1, 0xc0
-/* 802DD6E4 002D9524  4B D2 9C A9 */	bl lbl_8000738C
+/* 802DD6E4 002D9524  4B D2 9C A9 */	bl _restgpr_28
 /* 802DD6E8 002D9528  80 01 00 E4 */	lwz r0, 0xe4(r1)
 /* 802DD6EC 002D952C  7C 08 03 A6 */	mtlr r0
 /* 802DD6F0 002D9530  38 21 00 E0 */	addi r1, r1, 0xe0

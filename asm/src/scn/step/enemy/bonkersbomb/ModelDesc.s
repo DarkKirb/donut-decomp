@@ -7,7 +7,7 @@ Create__Q53scn4step5enemy11bonkersbomb9ModelDescFv:
 /* 8029C0E4 00297F24  7C 08 02 A6 */	mflr r0
 /* 8029C0E8 00297F28  90 01 00 34 */	stw r0, 0x34(r1)
 /* 8029C0EC 00297F2C  39 61 00 30 */	addi r11, r1, 0x30
-/* 8029C0F0 00297F30  4B D6 B2 55 */	bl lbl_80007344
+/* 8029C0F0 00297F30  4B D6 B2 55 */	bl _savegpr_29
 /* 8029C0F4 00297F34  83 ED F5 A8 */	lwz r31, "T_ANIM_ENTRIES__Q53scn4step5enemy11bonkersbomb23@unnamed@ModelDesc_cpp@"@sda21(r13)
 /* 8029C0F8 00297F38  3C 60 80 47 */	lis r3, "@50201_80473FDC"@ha
 /* 8029C0FC 00297F3C  3B A3 3F DC */	addi r29, r3, "@50201_80473FDC"@l
@@ -44,7 +44,7 @@ lbl_8029C12C:
 /* 8029C170 00297FB0  4B FE EC 6D */	bl Set__Q43scn4step5enemy13ModelDescUtilFRQ43scn4step5chara9ModelDescRQ24gobj8AnimDescRQ24gobj10ScriptDescPCcPCcUlPPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry
 /* 8029C174 00297FB4  38 7F FC 28 */	addi r3, r31, -0x3d8
 /* 8029C178 00297FB8  39 61 00 30 */	addi r11, r1, 0x30
-/* 8029C17C 00297FBC  4B D6 B2 15 */	bl lbl_80007390
+/* 8029C17C 00297FBC  4B D6 B2 15 */	bl _restgpr_29
 /* 8029C180 00297FC0  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 8029C184 00297FC4  7C 08 03 A6 */	mtlr r0
 /* 8029C188 00297FC8  38 21 00 30 */	addi r1, r1, 0x30

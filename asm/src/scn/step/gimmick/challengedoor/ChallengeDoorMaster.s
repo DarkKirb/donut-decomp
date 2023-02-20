@@ -7,7 +7,7 @@ __ct__Q53scn4step7gimmick13challengedoor19ChallengeDoorMasterFRCQ43scn4step3map1
 /* 80307ED4 00303D14  7C 08 02 A6 */	mflr r0
 /* 80307ED8 00303D18  90 01 00 34 */	stw r0, 0x34(r1)
 /* 80307EDC 00303D1C  39 61 00 30 */	addi r11, r1, 0x30
-/* 80307EE0 00303D20  4B CF F4 65 */	bl lbl_80007344
+/* 80307EE0 00303D20  4B CF F4 65 */	bl _savegpr_29
 /* 80307EE4 00303D24  7C 7D 1B 78 */	mr r29, r3
 /* 80307EE8 00303D28  7C BE 2B 78 */	mr r30, r5
 /* 80307EEC 00303D2C  3C C0 80 48 */	lis r6, "@56036_804809A8"@ha
@@ -60,7 +60,7 @@ __ct__Q53scn4step7gimmick13challengedoor19ChallengeDoorMasterFRCQ43scn4step3map1
 /* 80307FA8 00303DE8  90 7D 0C 88 */	stw r3, 0xc88(r29)
 /* 80307FAC 00303DEC  7F A3 EB 78 */	mr r3, r29
 /* 80307FB0 00303DF0  39 61 00 30 */	addi r11, r1, 0x30
-/* 80307FB4 00303DF4  4B CF F3 DD */	bl lbl_80007390
+/* 80307FB4 00303DF4  4B CF F3 DD */	bl _restgpr_29
 /* 80307FB8 00303DF8  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 80307FBC 00303DFC  7C 08 03 A6 */	mtlr r0
 /* 80307FC0 00303E00  38 21 00 30 */	addi r1, r1, 0x30

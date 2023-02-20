@@ -82,7 +82,7 @@ procAnim__Q53scn4step4boss7bonkers17StateSwingPursuitFv:
 /* 80239688 002354C8  7C 08 02 A6 */	mflr r0
 /* 8023968C 002354CC  90 01 00 24 */	stw r0, 0x24(r1)
 /* 80239690 002354D0  39 61 00 20 */	addi r11, r1, 0x20
-/* 80239694 002354D4  4B DC DC B1 */	bl lbl_80007344
+/* 80239694 002354D4  4B DC DC B1 */	bl _savegpr_29
 /* 80239698 002354D8  7C 7D 1B 78 */	mr r29, r3
 /* 8023969C 002354DC  4B EC 71 45 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 802396A0 002354E0  4B FF 38 71 */	bl param__Q43scn4step4boss4BossCFv
@@ -159,7 +159,7 @@ lbl_80239764:
 .global lbl_8023979C
 lbl_8023979C:
 /* 8023979C 002355DC  39 61 00 20 */	addi r11, r1, 0x20
-/* 802397A0 002355E0  4B DC DB F1 */	bl lbl_80007390
+/* 802397A0 002355E0  4B DC DB F1 */	bl _restgpr_29
 /* 802397A4 002355E4  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802397A8 002355E8  7C 08 03 A6 */	mtlr r0
 /* 802397AC 002355EC  38 21 00 20 */	addi r1, r1, 0x20

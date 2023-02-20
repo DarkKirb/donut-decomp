@@ -23,7 +23,7 @@ __ct__Q43scn4step6camera18ZoomControllerDataFRQ43scn4step6camera14ZoomController
 /* 80268034 00263E74  DB C1 00 20 */	stfd f30, 0x20(r1)
 /* 80268038 00263E78  F3 C1 00 28 */	psq_st f30, 0x28(r1), 0, qr0
 /* 8026803C 00263E7C  39 61 00 20 */	addi r11, r1, 0x20
-/* 80268040 00263E80  4B D9 F3 01 */	bl lbl_80007340
+/* 80268040 00263E80  4B D9 F3 01 */	bl _savegpr_28
 /* 80268044 00263E84  7C 7C 1B 78 */	mr r28, r3
 /* 80268048 00263E88  7C BD 2B 78 */	mr r29, r5
 /* 8026804C 00263E8C  FF C0 08 90 */	fmr f30, f1
@@ -49,7 +49,7 @@ __ct__Q43scn4step6camera18ZoomControllerDataFRQ43scn4step6camera14ZoomController
 /* 8026809C 00263EDC  13 C1 00 0C */	psq_lx f30, r1, r0, 0, qr0
 /* 802680A0 00263EE0  CB C1 00 20 */	lfd f30, 0x20(r1)
 /* 802680A4 00263EE4  39 61 00 20 */	addi r11, r1, 0x20
-/* 802680A8 00263EE8  4B D9 F2 E5 */	bl lbl_8000738C
+/* 802680A8 00263EE8  4B D9 F2 E5 */	bl _restgpr_28
 /* 802680AC 00263EEC  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 802680B0 00263EF0  7C 08 03 A6 */	mtlr r0
 /* 802680B4 00263EF4  38 21 00 40 */	addi r1, r1, 0x40

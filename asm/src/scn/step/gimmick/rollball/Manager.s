@@ -210,7 +210,7 @@ __ct__Q63scn4step7gimmick8rollball7Manager13EntryGenerateFRCQ63scn4step7gimmick8
 /* 8031A970 003167B0  7C 08 02 A6 */	mflr r0
 /* 8031A974 003167B4  90 01 00 24 */	stw r0, 0x24(r1)
 /* 8031A978 003167B8  39 61 00 20 */	addi r11, r1, 0x20
-/* 8031A97C 003167BC  4B CE C9 C9 */	bl lbl_80007344
+/* 8031A97C 003167BC  4B CE C9 C9 */	bl _savegpr_29
 /* 8031A980 003167C0  7C 7D 1B 78 */	mr r29, r3
 /* 8031A984 003167C4  7C 9E 23 78 */	mr r30, r4
 /* 8031A988 003167C8  88 04 00 00 */	lbz r0, 0x0(r4)
@@ -223,7 +223,7 @@ __ct__Q63scn4step7gimmick8rollball7Manager13EntryGenerateFRCQ63scn4step7gimmick8
 /* 8031A9A4 003167E4  4B F2 25 15 */	bl "__as__Q24util37ObjRefHandle<Q43scn4step5enemy5Enemy>FRCQ24util37ObjRefHandle<Q43scn4step5enemy5Enemy>"
 /* 8031A9A8 003167E8  7F A3 EB 78 */	mr r3, r29
 /* 8031A9AC 003167EC  39 61 00 20 */	addi r11, r1, 0x20
-/* 8031A9B0 003167F0  4B CE C9 E1 */	bl lbl_80007390
+/* 8031A9B0 003167F0  4B CE C9 E1 */	bl _restgpr_29
 /* 8031A9B4 003167F4  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8031A9B8 003167F8  7C 08 03 A6 */	mtlr r0
 /* 8031A9BC 003167FC  38 21 00 20 */	addi r1, r1, 0x20
@@ -288,7 +288,7 @@ procAnim__Q53scn4step7gimmick8rollball7ManagerFv:
 /* 8031AA88 003168C8  DB A1 00 C0 */	stfd f29, 0xc0(r1)
 /* 8031AA8C 003168CC  F3 A1 00 C8 */	psq_st f29, 0xc8(r1), 0, qr0
 /* 8031AA90 003168D0  39 61 00 C0 */	addi r11, r1, 0xc0
-/* 8031AA94 003168D4  4B CE C8 A9 */	bl lbl_8000733C
+/* 8031AA94 003168D4  4B CE C8 A9 */	bl _savegpr_27
 /* 8031AA98 003168D8  7C 7F 1B 78 */	mr r31, r3
 /* 8031AA9C 003168DC  80 63 00 00 */	lwz r3, 0x0(r3)
 /* 8031AAA0 003168E0  4B EC FF 51 */	bl resFileRepos__Q33scn14challengetitle9ComponentFv
@@ -476,7 +476,7 @@ lbl_8031AD10:
 /* 8031AD38 00316B78  13 A1 00 0C */	psq_lx f29, r1, r0, 0, qr0
 /* 8031AD3C 00316B7C  CB A1 00 C0 */	lfd f29, 0xc0(r1)
 /* 8031AD40 00316B80  39 61 00 C0 */	addi r11, r1, 0xc0
-/* 8031AD44 00316B84  4B CE C6 45 */	bl lbl_80007388
+/* 8031AD44 00316B84  4B CE C6 45 */	bl _restgpr_27
 /* 8031AD48 00316B88  80 01 00 F4 */	lwz r0, 0xf4(r1)
 /* 8031AD4C 00316B8C  7C 08 03 A6 */	mtlr r0
 /* 8031AD50 00316B90  38 21 00 F0 */	addi r1, r1, 0xf0
@@ -487,7 +487,7 @@ mfGenerateEnemy__Q53scn4step7gimmick8rollball7ManagerFRCQ43scn4step3map18BinGmkG
 /* 8031AD5C 00316B9C  7C 08 02 A6 */	mflr r0
 /* 8031AD60 00316BA0  90 01 00 C4 */	stw r0, 0xc4(r1)
 /* 8031AD64 00316BA4  39 61 00 C0 */	addi r11, r1, 0xc0
-/* 8031AD68 00316BA8  4B CE C5 D5 */	bl lbl_8000733C
+/* 8031AD68 00316BA8  4B CE C5 D5 */	bl _savegpr_27
 /* 8031AD6C 00316BAC  7C 7B 1B 78 */	mr r27, r3
 /* 8031AD70 00316BB0  7C 9C 23 78 */	mr r28, r4
 /* 8031AD74 00316BB4  7C BD 2B 78 */	mr r29, r5
@@ -561,7 +561,7 @@ lbl_8031AE10:
 /* 8031AE64 00316CA4  38 A1 00 68 */	addi r5, r1, 0x68
 /* 8031AE68 00316CA8  4B F6 E4 89 */	bl request__Q43scn4step5enemy7ManagerFRCQ43scn4step5enemy4Desc
 /* 8031AE6C 00316CAC  39 61 00 C0 */	addi r11, r1, 0xc0
-/* 8031AE70 00316CB0  4B CE C5 19 */	bl lbl_80007388
+/* 8031AE70 00316CB0  4B CE C5 19 */	bl _restgpr_27
 /* 8031AE74 00316CB4  80 01 00 C4 */	lwz r0, 0xc4(r1)
 /* 8031AE78 00316CB8  7C 08 03 A6 */	mtlr r0
 /* 8031AE7C 00316CBC  38 21 00 C0 */	addi r1, r1, 0xc0
@@ -631,7 +631,7 @@ procAnim__Q53scn4step7gimmick13rollballsound7ManagerFv:
 /* 8031AF5C 00316D9C  7C 08 02 A6 */	mflr r0
 /* 8031AF60 00316DA0  90 01 00 34 */	stw r0, 0x34(r1)
 /* 8031AF64 00316DA4  39 61 00 30 */	addi r11, r1, 0x30
-/* 8031AF68 00316DA8  4B CE C3 D5 */	bl lbl_8000733C
+/* 8031AF68 00316DA8  4B CE C3 D5 */	bl _savegpr_27
 /* 8031AF6C 00316DAC  7C 7B 1B 78 */	mr r27, r3
 /* 8031AF70 00316DB0  80 63 00 00 */	lwz r3, 0x0(r3)
 /* 8031AF74 00316DB4  4B F0 5E C1 */	bl enemyManager__Q33scn4step9ComponentFv
@@ -745,7 +745,7 @@ lbl_8031B0AC:
 .global lbl_8031B0C4
 lbl_8031B0C4:
 /* 8031B0C4 00316F04  39 61 00 30 */	addi r11, r1, 0x30
-/* 8031B0C8 00316F08  4B CE C2 C1 */	bl lbl_80007388
+/* 8031B0C8 00316F08  4B CE C2 C1 */	bl _restgpr_27
 /* 8031B0CC 00316F0C  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 8031B0D0 00316F10  7C 08 03 A6 */	mtlr r0
 /* 8031B0D4 00316F14  38 21 00 30 */	addi r1, r1, 0x30
@@ -756,7 +756,7 @@ __ct__Q53scn4step7gimmick11roomguarder7ManagerFRQ33scn4step9Component:
 /* 8031B0E0 00316F20  7C 08 02 A6 */	mflr r0
 /* 8031B0E4 00316F24  90 01 00 34 */	stw r0, 0x34(r1)
 /* 8031B0E8 00316F28  39 61 00 30 */	addi r11, r1, 0x30
-/* 8031B0EC 00316F2C  4B CE C2 4D */	bl lbl_80007338
+/* 8031B0EC 00316F2C  4B CE C2 4D */	bl _savegpr_26
 /* 8031B0F0 00316F30  7C 7A 1B 78 */	mr r26, r3
 /* 8031B0F4 00316F34  7C 9B 23 78 */	mr r27, r4
 /* 8031B0F8 00316F38  7F 63 DB 78 */	mr r3, r27
@@ -826,7 +826,7 @@ lbl_8031B1C4:
 lbl_8031B1CC:
 /* 8031B1CC 0031700C  7F 43 D3 78 */	mr r3, r26
 /* 8031B1D0 00317010  39 61 00 30 */	addi r11, r1, 0x30
-/* 8031B1D4 00317014  4B CE C1 B1 */	bl lbl_80007384
+/* 8031B1D4 00317014  4B CE C1 B1 */	bl _restgpr_26
 /* 8031B1D8 00317018  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 8031B1DC 0031701C  7C 08 03 A6 */	mtlr r0
 /* 8031B1E0 00317020  38 21 00 30 */	addi r1, r1, 0x30
@@ -837,7 +837,7 @@ lbl_8031B1CC:
 /* 8031B1EC 0031702C  7C 08 02 A6 */	mflr r0
 /* 8031B1F0 00317030  90 01 00 24 */	stw r0, 0x24(r1)
 /* 8031B1F4 00317034  39 61 00 20 */	addi r11, r1, 0x20
-/* 8031B1F8 00317038  4B CE C1 45 */	bl lbl_8000733C
+/* 8031B1F8 00317038  4B CE C1 45 */	bl _savegpr_27
 /* 8031B1FC 0031703C  7C 7B 1B 78 */	mr r27, r3
 /* 8031B200 00317040  7C 9C 23 78 */	mr r28, r4
 /* 8031B204 00317044  2C 03 00 00 */	cmpwi r3, 0x0
@@ -884,7 +884,7 @@ lbl_8031B268:
 lbl_8031B294:
 /* 8031B294 003170D4  7F 63 DB 78 */	mr r3, r27
 /* 8031B298 003170D8  39 61 00 20 */	addi r11, r1, 0x20
-/* 8031B29C 003170DC  4B CE C0 ED */	bl lbl_80007388
+/* 8031B29C 003170DC  4B CE C0 ED */	bl _restgpr_27
 /* 8031B2A0 003170E0  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8031B2A4 003170E4  7C 08 03 A6 */	mtlr r0
 /* 8031B2A8 003170E8  38 21 00 20 */	addi r1, r1, 0x20

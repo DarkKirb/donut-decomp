@@ -7,7 +7,7 @@ TryToChangeState__Q53scn4step4hero5sword15StateSwordMinceFPQ43scn4step4hero4Hero
 /* 80388518 00384358  7C 08 02 A6 */	mflr r0
 /* 8038851C 0038435C  90 01 00 24 */	stw r0, 0x24(r1)
 /* 80388520 00384360  39 61 00 20 */	addi r11, r1, 0x20
-/* 80388524 00384364  4B C7 EE 21 */	bl lbl_80007344
+/* 80388524 00384364  4B C7 EE 21 */	bl _savegpr_29
 /* 80388528 00384368  7C 7D 1B 78 */	mr r29, r3
 /* 8038852C 0038436C  4B FB 7D D1 */	bl footState__Q43scn4step4hero4HeroFv
 /* 80388530 00384370  4B DF 91 A5 */	bl dataType__Q36effect6detail10GenContextCFv
@@ -44,7 +44,7 @@ lbl_80388598:
 .global lbl_8038859C
 lbl_8038859C:
 /* 8038859C 003843DC  39 61 00 20 */	addi r11, r1, 0x20
-/* 803885A0 003843E0  4B C7 ED F1 */	bl lbl_80007390
+/* 803885A0 003843E0  4B C7 ED F1 */	bl _restgpr_29
 /* 803885A4 003843E4  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803885A8 003843E8  7C 08 03 A6 */	mtlr r0
 /* 803885AC 003843EC  38 21 00 20 */	addi r1, r1, 0x20
@@ -110,7 +110,7 @@ procAnim__Q53scn4step4hero5sword15StateSwordMinceFv:
 /* 8038867C 003844BC  7C 08 02 A6 */	mflr r0
 /* 80388680 003844C0  90 01 00 24 */	stw r0, 0x24(r1)
 /* 80388684 003844C4  39 61 00 20 */	addi r11, r1, 0x20
-/* 80388688 003844C8  4B C7 EC BD */	bl lbl_80007344
+/* 80388688 003844C8  4B C7 EC BD */	bl _savegpr_29
 /* 8038868C 003844CC  7C 7D 1B 78 */	mr r29, r3
 /* 80388690 003844D0  4B D7 81 51 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 80388694 003844D4  4B FB 7C 49 */	bl param__Q43scn4step4hero4HeroFv
@@ -200,7 +200,7 @@ lbl_803887C0:
 .global lbl_803887C4
 lbl_803887C4:
 /* 803887C4 00384604  39 61 00 20 */	addi r11, r1, 0x20
-/* 803887C8 00384608  4B C7 EB C9 */	bl lbl_80007390
+/* 803887C8 00384608  4B C7 EB C9 */	bl _restgpr_29
 /* 803887CC 0038460C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803887D0 00384610  7C 08 03 A6 */	mtlr r0
 /* 803887D4 00384614  38 21 00 20 */	addi r1, r1, 0x20

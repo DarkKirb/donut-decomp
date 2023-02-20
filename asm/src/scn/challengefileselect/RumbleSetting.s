@@ -7,7 +7,7 @@ __ct__Q33scn19challengefileselect13RumbleSettingFRQ23mem10IAllocatorRCQ23lyt12Pa
 /* 801E43F8 001E0238  7C 08 02 A6 */	mflr r0
 /* 801E43FC 001E023C  90 01 00 E4 */	stw r0, 0xe4(r1)
 /* 801E4400 001E0240  39 61 00 E0 */	addi r11, r1, 0xe0
-/* 801E4404 001E0244  4B E2 2F 35 */	bl lbl_80007338
+/* 801E4404 001E0244  4B E2 2F 35 */	bl _savegpr_26
 /* 801E4408 001E0248  7C 7A 1B 78 */	mr r26, r3
 /* 801E440C 001E024C  7C 9B 23 78 */	mr r27, r4
 /* 801E4410 001E0250  7C BC 2B 78 */	mr r28, r5
@@ -95,7 +95,7 @@ __ct__Q33scn19challengefileselect13RumbleSettingFRQ23mem10IAllocatorRCQ23lyt12Pa
 /* 801E4558 001E0398  4B FC 38 FD */	bl setText__Q34info6common6ButtonFPCw
 /* 801E455C 001E039C  7F 43 D3 78 */	mr r3, r26
 /* 801E4560 001E03A0  39 61 00 E0 */	addi r11, r1, 0xe0
-/* 801E4564 001E03A4  4B E2 2E 21 */	bl lbl_80007384
+/* 801E4564 001E03A4  4B E2 2E 21 */	bl _restgpr_26
 /* 801E4568 001E03A8  80 01 00 E4 */	lwz r0, 0xe4(r1)
 /* 801E456C 001E03AC  7C 08 03 A6 */	mtlr r0
 /* 801E4570 001E03B0  38 21 00 E0 */	addi r1, r1, 0xe0

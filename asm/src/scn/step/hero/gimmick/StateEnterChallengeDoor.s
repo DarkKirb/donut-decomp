@@ -7,7 +7,7 @@ __ct__Q53scn4step4hero7gimmick23StateEnterChallengeDoorFPQ43scn4step4hero4HeroRC
 /* 8037C374 003781B4  7C 08 02 A6 */	mflr r0
 /* 8037C378 003781B8  90 01 00 24 */	stw r0, 0x24(r1)
 /* 8037C37C 003781BC  39 61 00 20 */	addi r11, r1, 0x20
-/* 8037C380 003781C0  4B C8 AF BD */	bl lbl_8000733C
+/* 8037C380 003781C0  4B C8 AF BD */	bl _savegpr_27
 /* 8037C384 003781C4  7C 7B 1B 78 */	mr r27, r3
 /* 8037C388 003781C8  7C BC 2B 78 */	mr r28, r5
 /* 8037C38C 003781CC  7C DD 33 78 */	mr r29, r6
@@ -40,7 +40,7 @@ __ct__Q53scn4step4hero7gimmick23StateEnterChallengeDoorFPQ43scn4step4hero4HeroRC
 /* 8037C3F8 00378238  4B FD 34 25 */	bl setXlu__Q43scn4step4hero7ObjCollFv
 /* 8037C3FC 0037823C  7F 63 DB 78 */	mr r3, r27
 /* 8037C400 00378240  39 61 00 20 */	addi r11, r1, 0x20
-/* 8037C404 00378244  4B C8 AF 85 */	bl lbl_80007388
+/* 8037C404 00378244  4B C8 AF 85 */	bl _restgpr_27
 /* 8037C408 00378248  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8037C40C 0037824C  7C 08 03 A6 */	mtlr r0
 /* 8037C410 00378250  38 21 00 20 */	addi r1, r1, 0x20
@@ -175,7 +175,7 @@ tryReqStop__Q53scn4step4hero7gimmick23StateEnterChallengeDoorFv:
 /* 8037C5BC 003783FC  7C 08 02 A6 */	mflr r0
 /* 8037C5C0 00378400  90 01 00 84 */	stw r0, 0x84(r1)
 /* 8037C5C4 00378404  39 61 00 80 */	addi r11, r1, 0x80
-/* 8037C5C8 00378408  4B C8 AD 7D */	bl lbl_80007344
+/* 8037C5C8 00378408  4B C8 AD 7D */	bl _savegpr_29
 /* 8037C5CC 0037840C  7C 7D 1B 78 */	mr r29, r3
 /* 8037C5D0 00378410  88 03 00 28 */	lbz r0, 0x28(r3)
 /* 8037C5D4 00378414  2C 00 00 00 */	cmpwi r0, 0x0
@@ -272,7 +272,7 @@ lbl_8037C6FC:
 .global lbl_8037C730
 lbl_8037C730:
 /* 8037C730 00378570  39 61 00 80 */	addi r11, r1, 0x80
-/* 8037C734 00378574  4B C8 AC 5D */	bl lbl_80007390
+/* 8037C734 00378574  4B C8 AC 5D */	bl _restgpr_29
 /* 8037C738 00378578  80 01 00 84 */	lwz r0, 0x84(r1)
 /* 8037C73C 0037857C  7C 08 03 A6 */	mtlr r0
 /* 8037C740 00378580  38 21 00 80 */	addi r1, r1, 0x80

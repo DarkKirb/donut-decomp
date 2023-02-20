@@ -23,7 +23,7 @@ procObjCollReact__Q43scn4step4boss12ObjCollReactFv:
 /* 80232BA8 0022E9E8  DB E1 01 A0 */	stfd f31, 0x1a0(r1)
 /* 80232BAC 0022E9EC  F3 E1 01 A8 */	psq_st f31, 0x1a8(r1), 0, qr0
 /* 80232BB0 0022E9F0  39 61 01 A0 */	addi r11, r1, 0x1a0
-/* 80232BB4 0022E9F4  4B DD 47 8D */	bl lbl_80007340
+/* 80232BB4 0022E9F4  4B DD 47 8D */	bl _savegpr_28
 /* 80232BB8 0022E9F8  7C 7D 1B 78 */	mr r29, r3
 /* 80232BBC 0022E9FC  80 63 00 00 */	lwz r3, 0x0(r3)
 /* 80232BC0 0022EA00  4B FF A3 C9 */	bl objColl__Q43scn4step4boss4BossFv
@@ -488,7 +488,7 @@ lbl_802331E8:
 /* 802331EC 0022F02C  13 E1 00 0C */	psq_lx f31, r1, r0, 0, qr0
 /* 802331F0 0022F030  CB E1 01 A0 */	lfd f31, 0x1a0(r1)
 /* 802331F4 0022F034  39 61 01 A0 */	addi r11, r1, 0x1a0
-/* 802331F8 0022F038  4B DD 41 95 */	bl lbl_8000738C
+/* 802331F8 0022F038  4B DD 41 95 */	bl _restgpr_28
 /* 802331FC 0022F03C  80 01 01 B4 */	lwz r0, 0x1b4(r1)
 /* 80233200 0022F040  7C 08 03 A6 */	mtlr r0
 /* 80233204 0022F044  38 21 01 B0 */	addi r1, r1, 0x1b0
@@ -560,7 +560,7 @@ requestHitEffect__Q43scn4step4boss12ObjCollReactFUl:
 /* 802332DC 0022F11C  DB C1 00 F0 */	stfd f30, 0xf0(r1)
 /* 802332E0 0022F120  F3 C1 00 F8 */	psq_st f30, 0xf8(r1), 0, qr0
 /* 802332E4 0022F124  39 61 00 F0 */	addi r11, r1, 0xf0
-/* 802332E8 0022F128  4B DD 40 55 */	bl lbl_8000733C
+/* 802332E8 0022F128  4B DD 40 55 */	bl _savegpr_27
 /* 802332EC 0022F12C  7C 7B 1B 78 */	mr r27, r3
 /* 802332F0 0022F130  7C 9C 23 78 */	mr r28, r4
 /* 802332F4 0022F134  80 63 00 00 */	lwz r3, 0x0(r3)
@@ -755,7 +755,7 @@ lbl_80233590:
 /* 802335A0 0022F3E0  13 C1 00 0C */	psq_lx f30, r1, r0, 0, qr0
 /* 802335A4 0022F3E4  CB C1 00 F0 */	lfd f30, 0xf0(r1)
 /* 802335A8 0022F3E8  39 61 00 F0 */	addi r11, r1, 0xf0
-/* 802335AC 0022F3EC  4B DD 3D DD */	bl lbl_80007388
+/* 802335AC 0022F3EC  4B DD 3D DD */	bl _restgpr_27
 /* 802335B0 0022F3F0  80 01 01 14 */	lwz r0, 0x114(r1)
 /* 802335B4 0022F3F4  7C 08 03 A6 */	mtlr r0
 /* 802335B8 0022F3F8  38 21 01 10 */	addi r1, r1, 0x110

@@ -429,7 +429,7 @@ clearMighty__Q43scn4step4hero10InvincibleFv:
 /* 8034274C 0033E58C  7C 08 02 A6 */	mflr r0
 /* 80342750 0033E590  90 01 00 34 */	stw r0, 0x34(r1)
 /* 80342754 0033E594  39 61 00 30 */	addi r11, r1, 0x30
-/* 80342758 0033E598  4B CC 4B ED */	bl lbl_80007344
+/* 80342758 0033E598  4B CC 4B ED */	bl _savegpr_29
 /* 8034275C 0033E59C  7C 7D 1B 78 */	mr r29, r3
 /* 80342760 0033E5A0  38 63 00 04 */	addi r3, r3, 0x4
 /* 80342764 0033E5A4  4B F2 C7 D1 */	bl isMighty__Q43scn4step5chara10InvincibleCFv
@@ -497,7 +497,7 @@ lbl_80342818:
 .global lbl_8034283C
 lbl_8034283C:
 /* 8034283C 0033E67C  39 61 00 30 */	addi r11, r1, 0x30
-/* 80342840 0033E680  4B CC 4B 51 */	bl lbl_80007390
+/* 80342840 0033E680  4B CC 4B 51 */	bl _restgpr_29
 /* 80342844 0033E684  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 80342848 0033E688  7C 08 03 A6 */	mtlr r0
 /* 8034284C 0033E68C  38 21 00 30 */	addi r1, r1, 0x30

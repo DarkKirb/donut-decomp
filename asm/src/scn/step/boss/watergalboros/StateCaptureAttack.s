@@ -74,7 +74,7 @@ procAnim__Q53scn4step4boss13watergalboros18StateCaptureAttackFv:
 /* 8025A528 00256368  DB E1 00 30 */	stfd f31, 0x30(r1)
 /* 8025A52C 0025636C  F3 E1 00 38 */	psq_st f31, 0x38(r1), 0, qr0
 /* 8025A530 00256370  39 61 00 30 */	addi r11, r1, 0x30
-/* 8025A534 00256374  4B DA CE 11 */	bl lbl_80007344
+/* 8025A534 00256374  4B DA CE 11 */	bl _savegpr_29
 /* 8025A538 00256378  7C 7D 1B 78 */	mr r29, r3
 /* 8025A53C 0025637C  4B EA 62 A5 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 8025A540 00256380  4B FD 29 D1 */	bl param__Q43scn4step4boss4BossCFv
@@ -216,7 +216,7 @@ lbl_8025A71C:
 /* 8025A720 00256560  13 E1 00 0C */	psq_lx f31, r1, r0, 0, qr0
 /* 8025A724 00256564  CB E1 00 30 */	lfd f31, 0x30(r1)
 /* 8025A728 00256568  39 61 00 30 */	addi r11, r1, 0x30
-/* 8025A72C 0025656C  4B DA CC 65 */	bl lbl_80007390
+/* 8025A72C 0025656C  4B DA CC 65 */	bl _restgpr_29
 /* 8025A730 00256570  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 8025A734 00256574  7C 08 03 A6 */	mtlr r0
 /* 8025A738 00256578  38 21 00 40 */	addi r1, r1, 0x40
@@ -232,7 +232,7 @@ procObjCollReact__Q53scn4step4boss13watergalboros18StateCaptureAttackFv:
 /* 8025A748 00256588  7C 08 02 A6 */	mflr r0
 /* 8025A74C 0025658C  90 01 00 24 */	stw r0, 0x24(r1)
 /* 8025A750 00256590  39 61 00 20 */	addi r11, r1, 0x20
-/* 8025A754 00256594  4B DA CB F1 */	bl lbl_80007344
+/* 8025A754 00256594  4B DA CB F1 */	bl _savegpr_29
 /* 8025A758 00256598  7C 7D 1B 78 */	mr r29, r3
 /* 8025A75C 0025659C  4B EA 60 85 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 8025A760 002565A0  4B FD 28 89 */	bl custom__Q43scn4step4boss4BossFv
@@ -281,7 +281,7 @@ lbl_8025A7C0:
 .global lbl_8025A7DC
 lbl_8025A7DC:
 /* 8025A7DC 0025661C  39 61 00 20 */	addi r11, r1, 0x20
-/* 8025A7E0 00256620  4B DA CB B1 */	bl lbl_80007390
+/* 8025A7E0 00256620  4B DA CB B1 */	bl _restgpr_29
 /* 8025A7E4 00256624  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8025A7E8 00256628  7C 08 03 A6 */	mtlr r0
 /* 8025A7EC 0025662C  38 21 00 20 */	addi r1, r1, 0x20

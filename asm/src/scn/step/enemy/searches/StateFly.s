@@ -34,7 +34,7 @@ procAnim__Q53scn4step5enemy8searches8StateFlyFv:
 /* 802DC178 002D7FB8  7C 08 02 A6 */	mflr r0
 /* 802DC17C 002D7FBC  90 01 00 24 */	stw r0, 0x24(r1)
 /* 802DC180 002D7FC0  39 61 00 20 */	addi r11, r1, 0x20
-/* 802DC184 002D7FC4  4B D2 B1 C1 */	bl lbl_80007344
+/* 802DC184 002D7FC4  4B D2 B1 C1 */	bl _savegpr_29
 /* 802DC188 002D7FC8  7C 7D 1B 78 */	mr r29, r3
 /* 802DC18C 002D7FCC  4B E2 46 55 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 802DC190 002D7FD0  4B FA C0 05 */	bl custom__Q43scn4step5enemy5EnemyFv
@@ -103,7 +103,7 @@ lbl_802DC250:
 .global lbl_802DC254
 lbl_802DC254:
 /* 802DC254 002D8094  39 61 00 20 */	addi r11, r1, 0x20
-/* 802DC258 002D8098  4B D2 B1 39 */	bl lbl_80007390
+/* 802DC258 002D8098  4B D2 B1 39 */	bl _restgpr_29
 /* 802DC25C 002D809C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802DC260 002D80A0  7C 08 03 A6 */	mtlr r0
 /* 802DC264 002D80A4  38 21 00 20 */	addi r1, r1, 0x20

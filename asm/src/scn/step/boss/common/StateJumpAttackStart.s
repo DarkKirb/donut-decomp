@@ -7,7 +7,7 @@ __ct__Q53scn4step4boss6common20StateJumpAttackStartFPQ43scn4step4boss4BossRQ53sc
 /* 80246ED8 00242D18  7C 08 02 A6 */	mflr r0
 /* 80246EDC 00242D1C  90 01 00 24 */	stw r0, 0x24(r1)
 /* 80246EE0 00242D20  39 61 00 20 */	addi r11, r1, 0x20
-/* 80246EE4 00242D24  4B DC 04 5D */	bl lbl_80007340
+/* 80246EE4 00242D24  4B DC 04 5D */	bl _savegpr_28
 /* 80246EE8 00242D28  7C 7C 1B 78 */	mr r28, r3
 /* 80246EEC 00242D2C  7C BD 2B 78 */	mr r29, r5
 /* 80246EF0 00242D30  7C DE 33 78 */	mr r30, r6
@@ -32,7 +32,7 @@ __ct__Q53scn4step4boss6common20StateJumpAttackStartFPQ43scn4step4boss4BossRQ53sc
 /* 80246F3C 00242D7C  4B FE E9 E1 */	bl ControlHateOnAction__Q43scn4step4boss7UtilityFRQ43scn4step4boss4Boss
 /* 80246F40 00242D80  7F 83 E3 78 */	mr r3, r28
 /* 80246F44 00242D84  39 61 00 20 */	addi r11, r1, 0x20
-/* 80246F48 00242D88  4B DC 04 45 */	bl lbl_8000738C
+/* 80246F48 00242D88  4B DC 04 45 */	bl _restgpr_28
 /* 80246F4C 00242D8C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80246F50 00242D90  7C 08 03 A6 */	mtlr r0
 /* 80246F54 00242D94  38 21 00 20 */	addi r1, r1, 0x20
@@ -48,7 +48,7 @@ procAnim__Q53scn4step4boss6common20StateJumpAttackStartFv:
 /* 80246F64 00242DA4  7C 08 02 A6 */	mflr r0
 /* 80246F68 00242DA8  90 01 00 54 */	stw r0, 0x54(r1)
 /* 80246F6C 00242DAC  39 61 00 50 */	addi r11, r1, 0x50
-/* 80246F70 00242DB0  4B DC 03 D1 */	bl lbl_80007340
+/* 80246F70 00242DB0  4B DC 03 D1 */	bl _savegpr_28
 /* 80246F74 00242DB4  7C 7C 1B 78 */	mr r28, r3
 /* 80246F78 00242DB8  4B EB 98 69 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 80246F7C 00242DBC  4B FE 5F BD */	bl model__Q43scn4step4boss4BossFv
@@ -92,7 +92,7 @@ lbl_80247008:
 .global lbl_8024700C
 lbl_8024700C:
 /* 8024700C 00242E4C  39 61 00 50 */	addi r11, r1, 0x50
-/* 80247010 00242E50  4B DC 03 7D */	bl lbl_8000738C
+/* 80247010 00242E50  4B DC 03 7D */	bl _restgpr_28
 /* 80247014 00242E54  80 01 00 54 */	lwz r0, 0x54(r1)
 /* 80247018 00242E58  7C 08 03 A6 */	mtlr r0
 /* 8024701C 00242E5C  38 21 00 50 */	addi r1, r1, 0x50

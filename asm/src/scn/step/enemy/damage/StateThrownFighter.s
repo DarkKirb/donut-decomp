@@ -7,7 +7,7 @@ __ct__Q53scn4step5enemy6damage18StateThrownFighterFPQ43scn4step5enemy5EnemyUx:
 /* 802ABB3C 002A797C  7C 08 02 A6 */	mflr r0
 /* 802ABB40 002A7980  90 01 00 74 */	stw r0, 0x74(r1)
 /* 802ABB44 002A7984  39 61 00 70 */	addi r11, r1, 0x70
-/* 802ABB48 002A7988  4B D5 B7 F9 */	bl lbl_80007340
+/* 802ABB48 002A7988  4B D5 B7 F9 */	bl _savegpr_28
 /* 802ABB4C 002A798C  7C 7C 1B 78 */	mr r28, r3
 /* 802ABB50 002A7990  7C BE 2B 78 */	mr r30, r5
 /* 802ABB54 002A7994  7C DD 33 78 */	mr r29, r6
@@ -196,7 +196,7 @@ lbl_802ABDF0:
 /* 802ABDF8 002A7C38  4B F8 48 D1 */	bl "__dt__Q24util35ObjRefHandle<Q43scn4step4hero4Hero>Fv"
 /* 802ABDFC 002A7C3C  7F 83 E3 78 */	mr r3, r28
 /* 802ABE00 002A7C40  39 61 00 70 */	addi r11, r1, 0x70
-/* 802ABE04 002A7C44  4B D5 B5 89 */	bl lbl_8000738C
+/* 802ABE04 002A7C44  4B D5 B5 89 */	bl _restgpr_28
 /* 802ABE08 002A7C48  80 01 00 74 */	lwz r0, 0x74(r1)
 /* 802ABE0C 002A7C4C  7C 08 03 A6 */	mtlr r0
 /* 802ABE10 002A7C50  38 21 00 70 */	addi r1, r1, 0x70

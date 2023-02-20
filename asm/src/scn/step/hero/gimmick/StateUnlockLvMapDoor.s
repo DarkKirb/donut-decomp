@@ -100,7 +100,7 @@ procAnim__Q53scn4step4hero7gimmick20StateUnlockLvMapDoorFv:
 /* 80381F78 0037DDB8  7C 08 02 A6 */	mflr r0
 /* 80381F7C 0037DDBC  90 01 00 24 */	stw r0, 0x24(r1)
 /* 80381F80 0037DDC0  39 61 00 20 */	addi r11, r1, 0x20
-/* 80381F84 0037DDC4  4B C8 53 C1 */	bl lbl_80007344
+/* 80381F84 0037DDC4  4B C8 53 C1 */	bl _savegpr_29
 /* 80381F88 0037DDC8  7C 7D 1B 78 */	mr r29, r3
 /* 80381F8C 0037DDCC  4B D7 E8 55 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 80381F90 0037DDD0  4B FB E4 DD */	bl door__Q43scn4step4hero4HeroFv
@@ -223,7 +223,7 @@ lbl_80382124:
 .global lbl_8038213C
 lbl_8038213C:
 /* 8038213C 0037DF7C  39 61 00 20 */	addi r11, r1, 0x20
-/* 80382140 0037DF80  4B C8 52 51 */	bl lbl_80007390
+/* 80382140 0037DF80  4B C8 52 51 */	bl _restgpr_29
 /* 80382144 0037DF84  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80382148 0037DF88  7C 08 03 A6 */	mtlr r0
 /* 8038214C 0037DF8C  38 21 00 20 */	addi r1, r1, 0x20

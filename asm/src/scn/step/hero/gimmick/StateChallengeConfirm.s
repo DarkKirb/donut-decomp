@@ -7,7 +7,7 @@ TryToChangeState__Q53scn4step4hero7gimmick21StateChallengeConfirmFPQ43scn4step4h
 /* 8037B4CC 0037730C  7C 08 02 A6 */	mflr r0
 /* 8037B4D0 00377310  90 01 00 24 */	stw r0, 0x24(r1)
 /* 8037B4D4 00377314  39 61 00 20 */	addi r11, r1, 0x20
-/* 8037B4D8 00377318  4B C8 BE 69 */	bl lbl_80007340
+/* 8037B4D8 00377318  4B C8 BE 69 */	bl _savegpr_28
 /* 8037B4DC 0037731C  7C 7C 1B 78 */	mr r28, r3
 /* 8037B4E0 00377320  7C 9D 23 78 */	mr r29, r4
 /* 8037B4E4 00377324  7C BE 2B 78 */	mr r30, r5
@@ -40,7 +40,7 @@ TryToChangeState__Q53scn4step4hero7gimmick21StateChallengeConfirmFPQ43scn4step4h
 lbl_8037B54C:
 /* 8037B54C 0037738C  90 9F 00 0C */	stw r4, 0xc(r31)
 /* 8037B550 00377390  39 61 00 20 */	addi r11, r1, 0x20
-/* 8037B554 00377394  4B C8 BE 39 */	bl lbl_8000738C
+/* 8037B554 00377394  4B C8 BE 39 */	bl _restgpr_28
 /* 8037B558 00377398  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8037B55C 0037739C  7C 08 03 A6 */	mtlr r0
 /* 8037B560 003773A0  38 21 00 20 */	addi r1, r1, 0x20
@@ -51,7 +51,7 @@ __ct__Q53scn4step4hero7gimmick21StateChallengeConfirmFPQ43scn4step4hero4HeroQ33s
 /* 8037B56C 003773AC  7C 08 02 A6 */	mflr r0
 /* 8037B570 003773B0  90 01 00 24 */	stw r0, 0x24(r1)
 /* 8037B574 003773B4  39 61 00 20 */	addi r11, r1, 0x20
-/* 8037B578 003773B8  4B C8 BD C9 */	bl lbl_80007340
+/* 8037B578 003773B8  4B C8 BD C9 */	bl _savegpr_28
 /* 8037B57C 003773BC  7C 7C 1B 78 */	mr r28, r3
 /* 8037B580 003773C0  7C BD 2B 78 */	mr r29, r5
 /* 8037B584 003773C4  7C DE 33 78 */	mr r30, r6
@@ -79,7 +79,7 @@ __ct__Q53scn4step4hero7gimmick21StateChallengeConfirmFPQ43scn4step4hero4HeroQ33s
 /* 8037B5DC 0037741C  48 00 02 85 */	bl tryReqStop__Q53scn4step4hero7gimmick21StateChallengeConfirmFv
 /* 8037B5E0 00377420  7F 83 E3 78 */	mr r3, r28
 /* 8037B5E4 00377424  39 61 00 20 */	addi r11, r1, 0x20
-/* 8037B5E8 00377428  4B C8 BD A5 */	bl lbl_8000738C
+/* 8037B5E8 00377428  4B C8 BD A5 */	bl _restgpr_28
 /* 8037B5EC 0037742C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8037B5F0 00377430  7C 08 03 A6 */	mtlr r0
 /* 8037B5F4 00377434  38 21 00 20 */	addi r1, r1, 0x20

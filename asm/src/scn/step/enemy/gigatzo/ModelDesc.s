@@ -7,7 +7,7 @@ Create__Q53scn4step5enemy7gigatzo9ModelDescFv:
 /* 802B76BC 002B34FC  7C 08 02 A6 */	mflr r0
 /* 802B76C0 002B3500  90 01 00 34 */	stw r0, 0x34(r1)
 /* 802B76C4 002B3504  39 61 00 30 */	addi r11, r1, 0x30
-/* 802B76C8 002B3508  4B D4 FC 79 */	bl lbl_80007340
+/* 802B76C8 002B3508  4B D4 FC 79 */	bl _savegpr_28
 /* 802B76CC 002B350C  3C 60 80 47 */	lis r3, "T_NODE_NAMES_GIGA__Q53scn4step5enemy7gigatzo23@unnamed@ModelDesc_cpp@"@ha
 /* 802B76D0 002B3510  3B C3 73 18 */	addi r30, r3, "T_NODE_NAMES_GIGA__Q53scn4step5enemy7gigatzo23@unnamed@ModelDesc_cpp@"@l
 /* 802B76D4 002B3514  3B 8D B7 18 */	addi r28, r13, "@50265_80559B38"@sda21
@@ -44,7 +44,7 @@ lbl_802B7700:
 /* 802B7748 002B3588  4B FD 36 95 */	bl Set__Q43scn4step5enemy13ModelDescUtilFRQ43scn4step5chara9ModelDescRQ24gobj8AnimDescRQ24gobj10ScriptDescPCcPCcUlPPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry
 /* 802B774C 002B358C  38 7F 08 10 */	addi r3, r31, 0x810
 /* 802B7750 002B3590  39 61 00 30 */	addi r11, r1, 0x30
-/* 802B7754 002B3594  4B D4 FC 39 */	bl lbl_8000738C
+/* 802B7754 002B3594  4B D4 FC 39 */	bl _restgpr_28
 /* 802B7758 002B3598  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 802B775C 002B359C  7C 08 03 A6 */	mtlr r0
 /* 802B7760 002B35A0  38 21 00 30 */	addi r1, r1, 0x30
@@ -56,7 +56,7 @@ CreateVolt__Q53scn4step5enemy7gigatzo9ModelDescFv:
 /* 802B776C 002B35AC  7C 08 02 A6 */	mflr r0
 /* 802B7770 002B35B0  90 01 00 34 */	stw r0, 0x34(r1)
 /* 802B7774 002B35B4  39 61 00 30 */	addi r11, r1, 0x30
-/* 802B7778 002B35B8  4B D4 FB C9 */	bl lbl_80007340
+/* 802B7778 002B35B8  4B D4 FB C9 */	bl _savegpr_28
 /* 802B777C 002B35BC  3C 60 80 47 */	lis r3, "T_NODE_NAMES_GIGA__Q53scn4step5enemy7gigatzo23@unnamed@ModelDesc_cpp@"@ha
 /* 802B7780 002B35C0  3B C3 73 18 */	addi r30, r3, "T_NODE_NAMES_GIGA__Q53scn4step5enemy7gigatzo23@unnamed@ModelDesc_cpp@"@l
 /* 802B7784 002B35C4  3B 8D B7 20 */	addi r28, r13, "@50269_80559B40"@sda21
@@ -93,7 +93,7 @@ lbl_802B77B0:
 /* 802B77F8 002B3638  4B FD 35 E5 */	bl Set__Q43scn4step5enemy13ModelDescUtilFRQ43scn4step5chara9ModelDescRQ24gobj8AnimDescRQ24gobj10ScriptDescPCcPCcUlPPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry
 /* 802B77FC 002B363C  38 7F 08 A8 */	addi r3, r31, 0x8a8
 /* 802B7800 002B3640  39 61 00 30 */	addi r11, r1, 0x30
-/* 802B7804 002B3644  4B D4 FB 89 */	bl lbl_8000738C
+/* 802B7804 002B3644  4B D4 FB 89 */	bl _restgpr_28
 /* 802B7808 002B3648  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 802B780C 002B364C  7C 08 03 A6 */	mtlr r0
 /* 802B7810 002B3650  38 21 00 30 */	addi r1, r1, 0x30
@@ -105,7 +105,7 @@ CreateCold__Q53scn4step5enemy7gigatzo9ModelDescFv:
 /* 802B781C 002B365C  7C 08 02 A6 */	mflr r0
 /* 802B7820 002B3660  90 01 00 34 */	stw r0, 0x34(r1)
 /* 802B7824 002B3664  39 61 00 30 */	addi r11, r1, 0x30
-/* 802B7828 002B3668  4B D4 FB 19 */	bl lbl_80007340
+/* 802B7828 002B3668  4B D4 FB 19 */	bl _savegpr_28
 /* 802B782C 002B366C  3C 60 80 47 */	lis r3, "T_NODE_NAMES_GIGA__Q53scn4step5enemy7gigatzo23@unnamed@ModelDesc_cpp@"@ha
 /* 802B7830 002B3670  3B C3 73 18 */	addi r30, r3, "T_NODE_NAMES_GIGA__Q53scn4step5enemy7gigatzo23@unnamed@ModelDesc_cpp@"@l
 /* 802B7834 002B3674  3B 8D B7 28 */	addi r28, r13, "@50273_80559B48"@sda21
@@ -142,7 +142,7 @@ lbl_802B7860:
 /* 802B78A8 002B36E8  4B FD 35 35 */	bl Set__Q43scn4step5enemy13ModelDescUtilFRQ43scn4step5chara9ModelDescRQ24gobj8AnimDescRQ24gobj10ScriptDescPCcPCcUlPPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry
 /* 802B78AC 002B36EC  38 7F 09 40 */	addi r3, r31, 0x940
 /* 802B78B0 002B36F0  39 61 00 30 */	addi r11, r1, 0x30
-/* 802B78B4 002B36F4  4B D4 FA D9 */	bl lbl_8000738C
+/* 802B78B4 002B36F4  4B D4 FA D9 */	bl _restgpr_28
 /* 802B78B8 002B36F8  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 802B78BC 002B36FC  7C 08 03 A6 */	mtlr r0
 /* 802B78C0 002B3700  38 21 00 30 */	addi r1, r1, 0x30

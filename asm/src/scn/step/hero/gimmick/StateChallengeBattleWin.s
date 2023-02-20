@@ -7,7 +7,7 @@ __ct__Q53scn4step4hero7gimmick23StateChallengeBattleWinFPQ43scn4step4hero4Herob:
 /* 80379EBC 00375CFC  7C 08 02 A6 */	mflr r0
 /* 80379EC0 00375D00  90 01 00 24 */	stw r0, 0x24(r1)
 /* 80379EC4 00375D04  39 61 00 20 */	addi r11, r1, 0x20
-/* 80379EC8 00375D08  4B C8 D4 79 */	bl lbl_80007340
+/* 80379EC8 00375D08  4B C8 D4 79 */	bl _savegpr_28
 /* 80379ECC 00375D0C  7C 7C 1B 78 */	mr r28, r3
 /* 80379ED0 00375D10  7C 9D 23 78 */	mr r29, r4
 /* 80379ED4 00375D14  7C BE 2B 78 */	mr r30, r5
@@ -88,7 +88,7 @@ lbl_80379F94:
 /* 80379FF8 00375E38  4B FC DE 29 */	bl incPauseDisableCount__Q43scn4step4hero7ManagerFv
 /* 80379FFC 00375E3C  7F 83 E3 78 */	mr r3, r28
 /* 8037A000 00375E40  39 61 00 20 */	addi r11, r1, 0x20
-/* 8037A004 00375E44  4B C8 D3 89 */	bl lbl_8000738C
+/* 8037A004 00375E44  4B C8 D3 89 */	bl _restgpr_28
 /* 8037A008 00375E48  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8037A00C 00375E4C  7C 08 03 A6 */	mtlr r0
 /* 8037A010 00375E50  38 21 00 20 */	addi r1, r1, 0x20
@@ -287,7 +287,7 @@ startResult__Q53scn4step4hero7gimmick23StateChallengeBattleWinFv:
 /* 8037A294 003760D4  7C 08 02 A6 */	mflr r0
 /* 8037A298 003760D8  90 01 01 74 */	stw r0, 0x174(r1)
 /* 8037A29C 003760DC  39 61 01 70 */	addi r11, r1, 0x170
-/* 8037A2A0 003760E0  4B C8 D0 A5 */	bl lbl_80007344
+/* 8037A2A0 003760E0  4B C8 D0 A5 */	bl _savegpr_29
 /* 8037A2A4 003760E4  7C 7E 1B 78 */	mr r30, r3
 /* 8037A2A8 003760E8  4B D8 65 39 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 8037A2AC 003760EC  4B CF B4 85 */	bl GKI_getfirst
@@ -433,7 +433,7 @@ lbl_8037A484:
 /* 8037A4BC 003762FC  38 81 00 08 */	addi r4, r1, 0x8
 /* 8037A4C0 00376300  48 03 C4 69 */	bl appear__Q63scn4step4info9challenge12masterresult6ResultFRCQ73scn4step4info9challenge12masterresult6Result6Recipe
 /* 8037A4C4 00376304  39 61 01 70 */	addi r11, r1, 0x170
-/* 8037A4C8 00376308  4B C8 CE C9 */	bl lbl_80007390
+/* 8037A4C8 00376308  4B C8 CE C9 */	bl _restgpr_29
 /* 8037A4CC 0037630C  80 01 01 74 */	lwz r0, 0x174(r1)
 /* 8037A4D0 00376310  7C 08 03 A6 */	mtlr r0
 /* 8037A4D4 00376314  38 21 01 70 */	addi r1, r1, 0x170
@@ -508,7 +508,7 @@ tryResultEnd__Q53scn4step4hero7gimmick23StateChallengeBattleWinFv:
 /* 8037A5D0 00376410  7C 08 02 A6 */	mflr r0
 /* 8037A5D4 00376414  90 01 00 24 */	stw r0, 0x24(r1)
 /* 8037A5D8 00376418  39 61 00 20 */	addi r11, r1, 0x20
-/* 8037A5DC 0037641C  4B C8 CD 69 */	bl lbl_80007344
+/* 8037A5DC 0037641C  4B C8 CD 69 */	bl _savegpr_29
 /* 8037A5E0 00376420  7C 7D 1B 78 */	mr r29, r3
 /* 8037A5E4 00376424  88 03 00 14 */	lbz r0, 0x14(r3)
 /* 8037A5E8 00376428  2C 00 00 00 */	cmpwi r0, 0x0
@@ -593,7 +593,7 @@ lbl_8037A6F8:
 .global lbl_8037A704
 lbl_8037A704:
 /* 8037A704 00376544  39 61 00 20 */	addi r11, r1, 0x20
-/* 8037A708 00376548  4B C8 CC 89 */	bl lbl_80007390
+/* 8037A708 00376548  4B C8 CC 89 */	bl _restgpr_29
 /* 8037A70C 0037654C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8037A710 00376550  7C 08 03 A6 */	mtlr r0
 /* 8037A714 00376554  38 21 00 20 */	addi r1, r1, 0x20

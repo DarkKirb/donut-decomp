@@ -7,7 +7,7 @@ TryToChangeState__Q53scn4step4hero5smash18StateHammerAirSpinFPQ43scn4step4hero4H
 /* 803A1CB8 0039DAF8  7C 08 02 A6 */	mflr r0
 /* 803A1CBC 0039DAFC  90 01 00 24 */	stw r0, 0x24(r1)
 /* 803A1CC0 0039DB00  39 61 00 20 */	addi r11, r1, 0x20
-/* 803A1CC4 0039DB04  4B C6 56 81 */	bl lbl_80007344
+/* 803A1CC4 0039DB04  4B C6 56 81 */	bl _savegpr_29
 /* 803A1CC8 0039DB08  7C 7D 1B 78 */	mr r29, r3
 /* 803A1CCC 0039DB0C  4B F9 E6 31 */	bl footState__Q43scn4step4hero4HeroFv
 /* 803A1CD0 0039DB10  4B DF 81 E9 */	bl isAir__Q24gobj9FootStateCFv
@@ -50,7 +50,7 @@ lbl_803A1D50:
 .global lbl_803A1D54
 lbl_803A1D54:
 /* 803A1D54 0039DB94  39 61 00 20 */	addi r11, r1, 0x20
-/* 803A1D58 0039DB98  4B C6 56 39 */	bl lbl_80007390
+/* 803A1D58 0039DB98  4B C6 56 39 */	bl _restgpr_29
 /* 803A1D5C 0039DB9C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803A1D60 0039DBA0  7C 08 03 A6 */	mtlr r0
 /* 803A1D64 0039DBA4  38 21 00 20 */	addi r1, r1, 0x20
@@ -61,7 +61,7 @@ __ct__Q53scn4step4hero5smash18StateHammerAirSpinFPQ43scn4step4hero4Hero:
 /* 803A1D70 0039DBB0  7C 08 02 A6 */	mflr r0
 /* 803A1D74 0039DBB4  90 01 00 24 */	stw r0, 0x24(r1)
 /* 803A1D78 0039DBB8  39 61 00 20 */	addi r11, r1, 0x20
-/* 803A1D7C 0039DBBC  4B C6 55 C9 */	bl lbl_80007344
+/* 803A1D7C 0039DBBC  4B C6 55 C9 */	bl _savegpr_29
 /* 803A1D80 0039DBC0  7C 7D 1B 78 */	mr r29, r3
 /* 803A1D84 0039DBC4  4B FB 37 6D */	bl __ct__Q43scn4step4hero9StateBaseFPQ43scn4step4hero4Hero
 /* 803A1D88 0039DBC8  3C 60 80 49 */	lis r3, __vt__Q53scn4step4hero5smash18StateHammerAirSpin@ha
@@ -122,7 +122,7 @@ __ct__Q53scn4step4hero5smash18StateHammerAirSpinFPQ43scn4step4hero4Hero:
 /* 803A1E64 0039DCA4  4B FB 52 81 */	bl AirAttackInitSpeedV__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Hero
 /* 803A1E68 0039DCA8  7F A3 EB 78 */	mr r3, r29
 /* 803A1E6C 0039DCAC  39 61 00 20 */	addi r11, r1, 0x20
-/* 803A1E70 0039DCB0  4B C6 55 21 */	bl lbl_80007390
+/* 803A1E70 0039DCB0  4B C6 55 21 */	bl _restgpr_29
 /* 803A1E74 0039DCB4  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803A1E78 0039DCB8  7C 08 03 A6 */	mtlr r0
 /* 803A1E7C 0039DCBC  38 21 00 20 */	addi r1, r1, 0x20
@@ -185,7 +185,7 @@ procAnim__Q53scn4step4hero5smash18StateHammerAirSpinFv:
 /* 803A1F38 0039DD78  7C 08 02 A6 */	mflr r0
 /* 803A1F3C 0039DD7C  90 01 00 44 */	stw r0, 0x44(r1)
 /* 803A1F40 0039DD80  39 61 00 40 */	addi r11, r1, 0x40
-/* 803A1F44 0039DD84  4B C6 53 FD */	bl lbl_80007340
+/* 803A1F44 0039DD84  4B C6 53 FD */	bl _savegpr_28
 /* 803A1F48 0039DD88  7C 7C 1B 78 */	mr r28, r3
 /* 803A1F4C 0039DD8C  4B D5 E8 95 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 803A1F50 0039DD90  4B F9 E3 CD */	bl model__Q43scn4step4hero4HeroFv
@@ -240,7 +240,7 @@ lbl_803A2000:
 .global lbl_803A200C
 lbl_803A200C:
 /* 803A200C 0039DE4C  39 61 00 40 */	addi r11, r1, 0x40
-/* 803A2010 0039DE50  4B C6 53 7D */	bl lbl_8000738C
+/* 803A2010 0039DE50  4B C6 53 7D */	bl _restgpr_28
 /* 803A2014 0039DE54  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 803A2018 0039DE58  7C 08 03 A6 */	mtlr r0
 /* 803A201C 0039DE5C  38 21 00 40 */	addi r1, r1, 0x40

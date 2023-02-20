@@ -7,7 +7,7 @@ Create__Q53scn4step6weapon16enemywaterbullet9ModelDescFv:
 /* 803E2A10 003DE850  7C 08 02 A6 */	mflr r0
 /* 803E2A14 003DE854  90 01 00 54 */	stw r0, 0x54(r1)
 /* 803E2A18 003DE858  39 61 00 50 */	addi r11, r1, 0x50
-/* 803E2A1C 003DE85C  4B C2 49 29 */	bl lbl_80007344
+/* 803E2A1C 003DE85C  4B C2 49 29 */	bl _savegpr_29
 /* 803E2A20 003DE860  3C 60 80 49 */	lis r3, "@50123_80494458"@ha
 /* 803E2A24 003DE864  3B E3 44 58 */	addi r31, r3, "@50123_80494458"@l
 /* 803E2A28 003DE868  3B BF 00 44 */	addi r29, r31, 0x44
@@ -71,7 +71,7 @@ lbl_803E2AE4:
 /* 803E2AF8 003DE938  3C 60 80 55 */	lis r3, "@LOCAL@CreateTmpl<24>__Q43scn4step6weapon13ModelDescUtilFPCcPCcUlPPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc"@ha
 /* 803E2AFC 003DE93C  38 63 50 A0 */	addi r3, r3, "@LOCAL@CreateTmpl<24>__Q43scn4step6weapon13ModelDescUtilFPCcPCcUlPPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc"@l
 /* 803E2B00 003DE940  39 61 00 50 */	addi r11, r1, 0x50
-/* 803E2B04 003DE944  4B C2 48 8D */	bl lbl_80007390
+/* 803E2B04 003DE944  4B C2 48 8D */	bl _restgpr_29
 /* 803E2B08 003DE948  80 01 00 54 */	lwz r0, 0x54(r1)
 /* 803E2B0C 003DE94C  7C 08 03 A6 */	mtlr r0
 /* 803E2B10 003DE950  38 21 00 50 */	addi r1, r1, 0x50

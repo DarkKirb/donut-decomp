@@ -7,7 +7,7 @@ __ct__Q33scn14challengetitle6ShadowFRQ33scn14challengetitle9ComponentRQ23g3d10Ch
 /* 801EFBC4 001EBA04  7C 08 02 A6 */	mflr r0
 /* 801EFBC8 001EBA08  90 01 00 C4 */	stw r0, 0xc4(r1)
 /* 801EFBCC 001EBA0C  39 61 00 C0 */	addi r11, r1, 0xc0
-/* 801EFBD0 001EBA10  4B E1 77 65 */	bl lbl_80007334
+/* 801EFBD0 001EBA10  4B E1 77 65 */	bl _savegpr_25
 /* 801EFBD4 001EBA14  7C 79 1B 78 */	mr r25, r3
 /* 801EFBD8 001EBA18  7C 9A 23 78 */	mr r26, r4
 /* 801EFBDC 001EBA1C  7C BB 2B 78 */	mr r27, r5
@@ -59,7 +59,7 @@ __ct__Q33scn14challengetitle6ShadowFRQ33scn14challengetitle9ComponentRQ23g3d10Ch
 /* 801EFC94 001EBAD4  4B FA 4E 61 */	bl registerToRoot__Q23g3d8StdModelFRQ23g3d4Root
 /* 801EFC98 001EBAD8  7F 23 CB 78 */	mr r3, r25
 /* 801EFC9C 001EBADC  39 61 00 C0 */	addi r11, r1, 0xc0
-/* 801EFCA0 001EBAE0  4B E1 76 E1 */	bl lbl_80007380
+/* 801EFCA0 001EBAE0  4B E1 76 E1 */	bl _restgpr_25
 /* 801EFCA4 001EBAE4  80 01 00 C4 */	lwz r0, 0xc4(r1)
 /* 801EFCA8 001EBAE8  7C 08 03 A6 */	mtlr r0
 /* 801EFCAC 001EBAEC  38 21 00 C0 */	addi r1, r1, 0xc0

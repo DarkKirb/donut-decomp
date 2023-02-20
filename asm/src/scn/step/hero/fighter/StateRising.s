@@ -83,7 +83,7 @@ __dt__Q53scn4step4hero7fighter11StateRisingFv:
 /* 8039DED0 00399D10  7C 08 02 A6 */	mflr r0
 /* 8039DED4 00399D14  90 01 00 24 */	stw r0, 0x24(r1)
 /* 8039DED8 00399D18  39 61 00 20 */	addi r11, r1, 0x20
-/* 8039DEDC 00399D1C  4B C6 94 69 */	bl lbl_80007344
+/* 8039DEDC 00399D1C  4B C6 94 69 */	bl _savegpr_29
 /* 8039DEE0 00399D20  7C 7D 1B 78 */	mr r29, r3
 /* 8039DEE4 00399D24  7C 9E 23 78 */	mr r30, r4
 /* 8039DEE8 00399D28  2C 03 00 00 */	cmpwi r3, 0x0
@@ -122,7 +122,7 @@ __dt__Q53scn4step4hero7fighter11StateRisingFv:
 lbl_8039DF68:
 /* 8039DF68 00399DA8  7F A3 EB 78 */	mr r3, r29
 /* 8039DF6C 00399DAC  39 61 00 20 */	addi r11, r1, 0x20
-/* 8039DF70 00399DB0  4B C6 94 21 */	bl lbl_80007390
+/* 8039DF70 00399DB0  4B C6 94 21 */	bl _restgpr_29
 /* 8039DF74 00399DB4  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8039DF78 00399DB8  7C 08 03 A6 */	mtlr r0
 /* 8039DF7C 00399DBC  38 21 00 20 */	addi r1, r1, 0x20

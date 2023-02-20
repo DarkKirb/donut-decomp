@@ -70,7 +70,7 @@ requestWipeOut__Q43scn4step3sfx4WipeFQ43scn4step3sfx8WipeKindRCQ33hel4math7Vecto
 /* 803D09EC 003CC82C  7C 08 02 A6 */	mflr r0
 /* 803D09F0 003CC830  90 01 00 24 */	stw r0, 0x24(r1)
 /* 803D09F4 003CC834  39 61 00 20 */	addi r11, r1, 0x20
-/* 803D09F8 003CC838  4B C3 69 49 */	bl lbl_80007340
+/* 803D09F8 003CC838  4B C3 69 49 */	bl _savegpr_28
 /* 803D09FC 003CC83C  7C 7C 1B 78 */	mr r28, r3
 /* 803D0A00 003CC840  7C 9D 23 78 */	mr r29, r4
 /* 803D0A04 003CC844  7C DE 33 78 */	mr r30, r6
@@ -91,7 +91,7 @@ requestWipeOut__Q43scn4step3sfx4WipeFQ43scn4step3sfx8WipeKindRCQ33hel4math7Vecto
 .global lbl_803D0A40
 lbl_803D0A40:
 /* 803D0A40 003CC880  39 61 00 20 */	addi r11, r1, 0x20
-/* 803D0A44 003CC884  4B C3 69 49 */	bl lbl_8000738C
+/* 803D0A44 003CC884  4B C3 69 49 */	bl _restgpr_28
 /* 803D0A48 003CC888  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803D0A4C 003CC88C  7C 08 03 A6 */	mtlr r0
 /* 803D0A50 003CC890  38 21 00 20 */	addi r1, r1, 0x20

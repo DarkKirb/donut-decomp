@@ -9,7 +9,7 @@ __ct__Q53scn4step4hero7gimmick15StateWarpStarInFPQ43scn4step4hero4HeroQ33hel4mat
 /* 8038331C 0037F15C  DB E1 01 00 */	stfd f31, 0x100(r1)
 /* 80383320 0037F160  F3 E1 01 08 */	psq_st f31, 0x108(r1), 0, qr0
 /* 80383324 0037F164  39 61 01 00 */	addi r11, r1, 0x100
-/* 80383328 0037F168  4B C8 40 1D */	bl lbl_80007344
+/* 80383328 0037F168  4B C8 40 1D */	bl _savegpr_29
 /* 8038332C 0037F16C  7C 7D 1B 78 */	mr r29, r3
 /* 80383330 0037F170  7C BE 2B 78 */	mr r30, r5
 /* 80383334 0037F174  4B FD 21 BD */	bl __ct__Q43scn4step4hero9StateBaseFPQ43scn4step4hero4Hero
@@ -314,7 +314,7 @@ lbl_80383798:
 /* 803837A0 0037F5E0  13 E1 00 0C */	psq_lx f31, r1, r0, 0, qr0
 /* 803837A4 0037F5E4  CB E1 01 00 */	lfd f31, 0x100(r1)
 /* 803837A8 0037F5E8  39 61 01 00 */	addi r11, r1, 0x100
-/* 803837AC 0037F5EC  4B C8 3B E5 */	bl lbl_80007390
+/* 803837AC 0037F5EC  4B C8 3B E5 */	bl _restgpr_29
 /* 803837B0 0037F5F0  80 01 01 14 */	lwz r0, 0x114(r1)
 /* 803837B4 0037F5F4  7C 08 03 A6 */	mtlr r0
 /* 803837B8 0037F5F8  38 21 01 10 */	addi r1, r1, 0x110
@@ -437,7 +437,7 @@ procAnim__Q53scn4step4hero7gimmick15StateWarpStarInFv:
 /* 80383964 0037F7A4  DB E1 00 30 */	stfd f31, 0x30(r1)
 /* 80383968 0037F7A8  F3 E1 00 38 */	psq_st f31, 0x38(r1), 0, qr0
 /* 8038396C 0037F7AC  39 61 00 30 */	addi r11, r1, 0x30
-/* 80383970 0037F7B0  4B C8 39 D5 */	bl lbl_80007344
+/* 80383970 0037F7B0  4B C8 39 D5 */	bl _savegpr_29
 /* 80383974 0037F7B4  7C 7F 1B 78 */	mr r31, r3
 /* 80383978 0037F7B8  80 83 00 08 */	lwz r4, 0x8(r3)
 /* 8038397C 0037F7BC  38 04 00 01 */	addi r0, r4, 0x1
@@ -571,7 +571,7 @@ lbl_80383B48:
 /* 80383B4C 0037F98C  13 E1 00 0C */	psq_lx f31, r1, r0, 0, qr0
 /* 80383B50 0037F990  CB E1 00 30 */	lfd f31, 0x30(r1)
 /* 80383B54 0037F994  39 61 00 30 */	addi r11, r1, 0x30
-/* 80383B58 0037F998  4B C8 38 39 */	bl lbl_80007390
+/* 80383B58 0037F998  4B C8 38 39 */	bl _restgpr_29
 /* 80383B5C 0037F99C  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 80383B60 0037F9A0  7C 08 03 A6 */	mtlr r0
 /* 80383B64 0037F9A4  38 21 00 40 */	addi r1, r1, 0x40

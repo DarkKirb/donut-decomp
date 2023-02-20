@@ -179,7 +179,7 @@ setupDrawOriginal__Q23sfx11ScreenRemapFv:
 /* 804019AC 003FD7EC  7C 08 02 A6 */	mflr r0
 /* 804019B0 003FD7F0  90 01 00 44 */	stw r0, 0x44(r1)
 /* 804019B4 003FD7F4  39 61 00 40 */	addi r11, r1, 0x40
-/* 804019B8 003FD7F8  4B C0 59 8D */	bl lbl_80007344
+/* 804019B8 003FD7F8  4B C0 59 8D */	bl _savegpr_29
 /* 804019BC 003FD7FC  7C 7D 1B 78 */	mr r29, r3
 /* 804019C0 003FD800  80 63 00 00 */	lwz r3, 0x0(r3)
 /* 804019C4 003FD804  4B D8 17 75 */	bl block__Q23mem9DataBlockCFv
@@ -217,7 +217,7 @@ setupDrawOriginal__Q23sfx11ScreenRemapFv:
 /* 80401A44 003FD884  38 80 00 00 */	li r4, 0x0
 /* 80401A48 003FD888  4B C3 53 E9 */	bl GXLoadTexObj
 /* 80401A4C 003FD88C  39 61 00 40 */	addi r11, r1, 0x40
-/* 80401A50 003FD890  4B C0 59 41 */	bl lbl_80007390
+/* 80401A50 003FD890  4B C0 59 41 */	bl _restgpr_29
 /* 80401A54 003FD894  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 80401A58 003FD898  7C 08 03 A6 */	mtlr r0
 /* 80401A5C 003FD89C  38 21 00 40 */	addi r1, r1, 0x40

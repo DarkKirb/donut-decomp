@@ -7,7 +7,7 @@ TryToChangeState__Q53scn4step4boss10creditmeta10StateGlideFPQ43scn4step4boss4Bos
 /* 80249E28 00245C68  7C 08 02 A6 */	mflr r0
 /* 80249E2C 00245C6C  90 01 00 24 */	stw r0, 0x24(r1)
 /* 80249E30 00245C70  39 61 00 20 */	addi r11, r1, 0x20
-/* 80249E34 00245C74  4B DB D5 11 */	bl lbl_80007344
+/* 80249E34 00245C74  4B DB D5 11 */	bl _savegpr_29
 /* 80249E38 00245C78  7C 7D 1B 78 */	mr r29, r3
 /* 80249E3C 00245C7C  4B E2 B8 F5 */	bl GKI_getfirst
 /* 80249E40 00245C80  4B FD 70 29 */	bl bossManager__Q33scn4step9ComponentFv
@@ -42,7 +42,7 @@ lbl_80249EA0:
 .global lbl_80249EA4
 lbl_80249EA4:
 /* 80249EA4 00245CE4  39 61 00 20 */	addi r11, r1, 0x20
-/* 80249EA8 00245CE8  4B DB D4 E9 */	bl lbl_80007390
+/* 80249EA8 00245CE8  4B DB D4 E9 */	bl _restgpr_29
 /* 80249EAC 00245CEC  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80249EB0 00245CF0  7C 08 03 A6 */	mtlr r0
 /* 80249EB4 00245CF4  38 21 00 20 */	addi r1, r1, 0x20
@@ -53,7 +53,7 @@ __ct__Q53scn4step4boss10creditmeta10StateGlideFPQ43scn4step4boss4Bossb:
 /* 80249EC0 00245D00  7C 08 02 A6 */	mflr r0
 /* 80249EC4 00245D04  90 01 00 54 */	stw r0, 0x54(r1)
 /* 80249EC8 00245D08  39 61 00 50 */	addi r11, r1, 0x50
-/* 80249ECC 00245D0C  4B DB D4 79 */	bl lbl_80007344
+/* 80249ECC 00245D0C  4B DB D4 79 */	bl _savegpr_29
 /* 80249ED0 00245D10  7C 7D 1B 78 */	mr r29, r3
 /* 80249ED4 00245D14  7C BE 2B 78 */	mr r30, r5
 /* 80249ED8 00245D18  4B FE A6 09 */	bl __ct__Q43scn4step4boss9StateBaseFPQ43scn4step4boss4Boss
@@ -135,7 +135,7 @@ lbl_80249FD0:
 /* 8024A000 00245E40  4B F3 D5 39 */	bl __ct__Q24file8DNOptionFv
 /* 8024A004 00245E44  7F A3 EB 78 */	mr r3, r29
 /* 8024A008 00245E48  39 61 00 50 */	addi r11, r1, 0x50
-/* 8024A00C 00245E4C  4B DB D3 85 */	bl lbl_80007390
+/* 8024A00C 00245E4C  4B DB D3 85 */	bl _restgpr_29
 /* 8024A010 00245E50  80 01 00 54 */	lwz r0, 0x54(r1)
 /* 8024A014 00245E54  7C 08 03 A6 */	mtlr r0
 /* 8024A018 00245E58  38 21 00 50 */	addi r1, r1, 0x50
@@ -301,7 +301,7 @@ procFixPos__Q53scn4step4boss10creditmeta10StateGlideFv:
 /* 8024A230 00246070  DB E1 00 20 */	stfd f31, 0x20(r1)
 /* 8024A234 00246074  F3 E1 00 28 */	psq_st f31, 0x28(r1), 0, qr0
 /* 8024A238 00246078  39 61 00 20 */	addi r11, r1, 0x20
-/* 8024A23C 0024607C  4B DB D1 09 */	bl lbl_80007344
+/* 8024A23C 0024607C  4B DB D1 09 */	bl _savegpr_29
 /* 8024A240 00246080  7C 7D 1B 78 */	mr r29, r3
 /* 8024A244 00246084  4B EB 65 9D */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 8024A248 00246088  4B FE 2C C9 */	bl param__Q43scn4step4boss4BossCFv
@@ -358,7 +358,7 @@ lbl_8024A2F0:
 /* 8024A2F4 00246134  13 E1 00 0C */	psq_lx f31, r1, r0, 0, qr0
 /* 8024A2F8 00246138  CB E1 00 20 */	lfd f31, 0x20(r1)
 /* 8024A2FC 0024613C  39 61 00 20 */	addi r11, r1, 0x20
-/* 8024A300 00246140  4B DB D0 91 */	bl lbl_80007390
+/* 8024A300 00246140  4B DB D0 91 */	bl _restgpr_29
 /* 8024A304 00246144  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 8024A308 00246148  7C 08 03 A6 */	mtlr r0
 /* 8024A30C 0024614C  38 21 00 30 */	addi r1, r1, 0x30

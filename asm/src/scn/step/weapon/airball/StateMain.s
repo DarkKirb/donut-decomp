@@ -9,7 +9,7 @@ __ct__Q53scn4step6weapon7airball9StateMainFPQ43scn4step6weapon6Weapon:
 /* 803DB2DC 003D711C  DB E1 00 30 */	stfd f31, 0x30(r1)
 /* 803DB2E0 003D7120  F3 E1 00 38 */	psq_st f31, 0x38(r1), 0, qr0
 /* 803DB2E4 003D7124  39 61 00 30 */	addi r11, r1, 0x30
-/* 803DB2E8 003D7128  4B C2 C0 59 */	bl lbl_80007340
+/* 803DB2E8 003D7128  4B C2 C0 59 */	bl _savegpr_28
 /* 803DB2EC 003D712C  7C 7C 1B 78 */	mr r28, r3
 /* 803DB2F0 003D7130  4B FF D6 51 */	bl __ct__Q43scn4step6weapon9StateBaseFPQ43scn4step6weapon6Weapon
 /* 803DB2F4 003D7134  3C 60 80 49 */	lis r3, __vt__Q53scn4step6weapon7airball9StateMain@ha
@@ -63,7 +63,7 @@ __ct__Q53scn4step6weapon7airball9StateMainFPQ43scn4step6weapon6Weapon:
 /* 803DB3B4 003D71F4  13 E1 00 0C */	psq_lx f31, r1, r0, 0, qr0
 /* 803DB3B8 003D71F8  CB E1 00 30 */	lfd f31, 0x30(r1)
 /* 803DB3BC 003D71FC  39 61 00 30 */	addi r11, r1, 0x30
-/* 803DB3C0 003D7200  4B C2 BF CD */	bl lbl_8000738C
+/* 803DB3C0 003D7200  4B C2 BF CD */	bl _restgpr_28
 /* 803DB3C4 003D7204  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 803DB3C8 003D7208  7C 08 03 A6 */	mtlr r0
 /* 803DB3CC 003D720C  38 21 00 40 */	addi r1, r1, 0x40
@@ -110,7 +110,7 @@ procMove__Q53scn4step6weapon7airball9StateMainFv:
 /* 803DB448 003D7288  7C 08 02 A6 */	mflr r0
 /* 803DB44C 003D728C  90 01 00 24 */	stw r0, 0x24(r1)
 /* 803DB450 003D7290  39 61 00 20 */	addi r11, r1, 0x20
-/* 803DB454 003D7294  4B C2 BE ED */	bl lbl_80007340
+/* 803DB454 003D7294  4B C2 BE ED */	bl _savegpr_28
 /* 803DB458 003D7298  7C 7C 1B 78 */	mr r28, r3
 /* 803DB45C 003D729C  4B D2 53 85 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 803DB460 003D72A0  4B FF FC 79 */	bl param__Q43scn4step6weapon6WeaponCFv
@@ -134,7 +134,7 @@ procMove__Q53scn4step6weapon7airball9StateMainFv:
 /* 803DB4A8 003D72E8  38 DD 00 20 */	addi r6, r29, 0x20
 /* 803DB4AC 003D72EC  4B DC 00 31 */	bl airAccelFall__Q24gobj4MoveFbRCQ24gobj14MoveParamAccelRCQ24gobj13MoveParamFall
 /* 803DB4B0 003D72F0  39 61 00 20 */	addi r11, r1, 0x20
-/* 803DB4B4 003D72F4  4B C2 BE D9 */	bl lbl_8000738C
+/* 803DB4B4 003D72F4  4B C2 BE D9 */	bl _restgpr_28
 /* 803DB4B8 003D72F8  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803DB4BC 003D72FC  7C 08 03 A6 */	mtlr r0
 /* 803DB4C0 003D7300  38 21 00 20 */	addi r1, r1, 0x20

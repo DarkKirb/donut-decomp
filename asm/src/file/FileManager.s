@@ -7,7 +7,7 @@ __ct__Q24file11FileManagerFv:
 /* 80188208 00184048  7C 08 02 A6 */	mflr r0
 /* 8018820C 0018404C  90 01 00 24 */	stw r0, 0x24(r1)
 /* 80188210 00184050  39 61 00 20 */	addi r11, r1, 0x20
-/* 80188214 00184054  4B E7 F1 31 */	bl lbl_80007344
+/* 80188214 00184054  4B E7 F1 31 */	bl _savegpr_29
 /* 80188218 00184058  7C 7D 1B 78 */	mr r29, r3
 /* 8018821C 0018405C  83 CD ED 00 */	lwz r30, "object___Q33hel6common32ExplicitSingleton<Q23mem6Memory>"@sda21(r13)
 /* 80188220 00184060  7F C3 F3 78 */	mr r3, r30
@@ -30,7 +30,7 @@ __ct__Q24file11FileManagerFv:
 /* 80188264 001840A4  48 00 04 A9 */	bl setCompactionHeap__Q24file8FileTreeFRQ23mem14HeapCompaction
 /* 80188268 001840A8  7F A3 EB 78 */	mr r3, r29
 /* 8018826C 001840AC  39 61 00 20 */	addi r11, r1, 0x20
-/* 80188270 001840B0  4B E7 F1 21 */	bl lbl_80007390
+/* 80188270 001840B0  4B E7 F1 21 */	bl _restgpr_29
 /* 80188274 001840B4  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80188278 001840B8  7C 08 03 A6 */	mtlr r0
 /* 8018827C 001840BC  38 21 00 20 */	addi r1, r1, 0x20

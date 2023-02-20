@@ -71,7 +71,7 @@ setup__Q53scn4step4hero7parasol7ParasolFv:
 /* 80392634 0038E474  7C 08 02 A6 */	mflr r0
 /* 80392638 0038E478  90 01 00 24 */	stw r0, 0x24(r1)
 /* 8039263C 0038E47C  39 61 00 20 */	addi r11, r1, 0x20
-/* 80392640 0038E480  4B C7 4D 05 */	bl lbl_80007344
+/* 80392640 0038E480  4B C7 4D 05 */	bl _savegpr_29
 /* 80392644 0038E484  7C 7D 1B 78 */	mr r29, r3
 /* 80392648 0038E488  80 63 00 04 */	lwz r3, 0x4(r3)
 /* 8039264C 0038E48C  4B E7 9B ED */	bl sfxManager__Q33scn7history9ComponentFv
@@ -128,7 +128,7 @@ setup__Q53scn4step4hero7parasol7ParasolFv:
 /* 80392718 0038E558  38 00 00 01 */	li r0, 0x1
 /* 8039271C 0038E55C  98 1D 00 0C */	stb r0, 0xc(r29)
 /* 80392720 0038E560  39 61 00 20 */	addi r11, r1, 0x20
-/* 80392724 0038E564  4B C7 4C 6D */	bl lbl_80007390
+/* 80392724 0038E564  4B C7 4C 6D */	bl _restgpr_29
 /* 80392728 0038E568  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8039272C 0038E56C  7C 08 03 A6 */	mtlr r0
 /* 80392730 0038E570  38 21 00 20 */	addi r1, r1, 0x20

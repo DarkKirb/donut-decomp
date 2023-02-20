@@ -40,7 +40,7 @@ procAnim__Q53scn4step5enemy6juckle11StateAttackFv:
 /* 802BB8F0 002B7730  7C 08 02 A6 */	mflr r0
 /* 802BB8F4 002B7734  90 01 01 94 */	stw r0, 0x194(r1)
 /* 802BB8F8 002B7738  39 61 01 90 */	addi r11, r1, 0x190
-/* 802BB8FC 002B773C  4B D4 BA 49 */	bl lbl_80007344
+/* 802BB8FC 002B773C  4B D4 BA 49 */	bl _savegpr_29
 /* 802BB900 002B7740  7C 7D 1B 78 */	mr r29, r3
 /* 802BB904 002B7744  4B E4 4E DD */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 802BB908 002B7748  4B FC C7 7D */	bl param__Q43scn4step5enemy5EnemyCFv
@@ -240,7 +240,7 @@ lbl_802BBBCC:
 .global lbl_802BBBD0
 lbl_802BBBD0:
 /* 802BBBD0 002B7A10  39 61 01 90 */	addi r11, r1, 0x190
-/* 802BBBD4 002B7A14  4B D4 B7 BD */	bl lbl_80007390
+/* 802BBBD4 002B7A14  4B D4 B7 BD */	bl _restgpr_29
 /* 802BBBD8 002B7A18  80 01 01 94 */	lwz r0, 0x194(r1)
 /* 802BBBDC 002B7A1C  7C 08 03 A6 */	mtlr r0
 /* 802BBBE0 002B7A20  38 21 01 90 */	addi r1, r1, 0x190

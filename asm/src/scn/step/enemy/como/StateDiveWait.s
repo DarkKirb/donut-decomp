@@ -27,7 +27,7 @@ procAnim__Q53scn4step5enemy4como13StateDiveWaitFv:
 /* 802A8150 002A3F90  7C 08 02 A6 */	mflr r0
 /* 802A8154 002A3F94  90 01 00 24 */	stw r0, 0x24(r1)
 /* 802A8158 002A3F98  39 61 00 20 */	addi r11, r1, 0x20
-/* 802A815C 002A3F9C  4B D5 F1 E9 */	bl lbl_80007344
+/* 802A815C 002A3F9C  4B D5 F1 E9 */	bl _savegpr_29
 /* 802A8160 002A3FA0  7C 7D 1B 78 */	mr r29, r3
 /* 802A8164 002A3FA4  4B E5 86 7D */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 802A8168 002A3FA8  4B FD FF 1D */	bl param__Q43scn4step5enemy5EnemyCFv
@@ -62,7 +62,7 @@ lbl_802A81D0:
 .global lbl_802A81D4
 lbl_802A81D4:
 /* 802A81D4 002A4014  39 61 00 20 */	addi r11, r1, 0x20
-/* 802A81D8 002A4018  4B D5 F1 B9 */	bl lbl_80007390
+/* 802A81D8 002A4018  4B D5 F1 B9 */	bl _restgpr_29
 /* 802A81DC 002A401C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802A81E0 002A4020  7C 08 03 A6 */	mtlr r0
 /* 802A81E4 002A4024  38 21 00 20 */	addi r1, r1, 0x20
@@ -82,7 +82,7 @@ procObjCollReact__Q53scn4step5enemy4como13StateDiveWaitFv:
 /* 802A81F8 002A4038  7C 08 02 A6 */	mflr r0
 /* 802A81FC 002A403C  90 01 00 24 */	stw r0, 0x24(r1)
 /* 802A8200 002A4040  39 61 00 20 */	addi r11, r1, 0x20
-/* 802A8204 002A4044  4B D5 F1 41 */	bl lbl_80007344
+/* 802A8204 002A4044  4B D5 F1 41 */	bl _savegpr_29
 /* 802A8208 002A4048  7C 7D 1B 78 */	mr r29, r3
 /* 802A820C 002A404C  4B E5 85 D5 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 802A8210 002A4050  4B FD FF 85 */	bl custom__Q43scn4step5enemy5EnemyFv
@@ -150,7 +150,7 @@ lbl_802A82CC:
 .global lbl_802A82D0
 lbl_802A82D0:
 /* 802A82D0 002A4110  39 61 00 20 */	addi r11, r1, 0x20
-/* 802A82D4 002A4114  4B D5 F0 BD */	bl lbl_80007390
+/* 802A82D4 002A4114  4B D5 F0 BD */	bl _restgpr_29
 /* 802A82D8 002A4118  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802A82DC 002A411C  7C 08 03 A6 */	mtlr r0
 /* 802A82E0 002A4120  38 21 00 20 */	addi r1, r1, 0x20

@@ -7,7 +7,7 @@ __ct__Q33scn7history9SpotlightFRQ33scn7history9ComponentRQ23g3d4RootUl:
 /* 8020F690 0020B4D0  7C 08 02 A6 */	mflr r0
 /* 8020F694 0020B4D4  90 01 00 E4 */	stw r0, 0xe4(r1)
 /* 8020F698 0020B4D8  39 61 00 E0 */	addi r11, r1, 0xe0
-/* 8020F69C 0020B4DC  4B DF 7C 95 */	bl lbl_80007330
+/* 8020F69C 0020B4DC  4B DF 7C 95 */	bl _savegpr_24
 /* 8020F6A0 0020B4E0  7C 78 1B 78 */	mr r24, r3
 /* 8020F6A4 0020B4E4  7C 99 23 78 */	mr r25, r4
 /* 8020F6A8 0020B4E8  7C BA 2B 78 */	mr r26, r5
@@ -108,7 +108,7 @@ __ct__Q33scn7history9SpotlightFRQ33scn7history9ComponentRQ23g3d4RootUl:
 /* 8020F824 0020B664  4B F8 55 E1 */	bl start__Q23g3d8StdModelFb
 /* 8020F828 0020B668  7F 03 C3 78 */	mr r3, r24
 /* 8020F82C 0020B66C  39 61 00 E0 */	addi r11, r1, 0xe0
-/* 8020F830 0020B670  4B DF 7B 4D */	bl lbl_8000737C
+/* 8020F830 0020B670  4B DF 7B 4D */	bl _restgpr_24
 /* 8020F834 0020B674  80 01 00 E4 */	lwz r0, 0xe4(r1)
 /* 8020F838 0020B678  7C 08 03 A6 */	mtlr r0
 /* 8020F83C 0020B67C  38 21 00 E0 */	addi r1, r1, 0xe0

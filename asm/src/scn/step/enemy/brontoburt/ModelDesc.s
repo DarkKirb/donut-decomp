@@ -7,7 +7,7 @@ Create__Q53scn4step5enemy10brontoburt9ModelDescFv:
 /* 8029F368 0029B1A8  7C 08 02 A6 */	mflr r0
 /* 8029F36C 0029B1AC  90 01 00 34 */	stw r0, 0x34(r1)
 /* 8029F370 0029B1B0  39 61 00 30 */	addi r11, r1, 0x30
-/* 8029F374 0029B1B4  4B D6 7F D1 */	bl lbl_80007344
+/* 8029F374 0029B1B4  4B D6 7F D1 */	bl _savegpr_29
 /* 8029F378 0029B1B8  3C 60 80 47 */	lis r3, "@50124_80474920"@ha
 /* 8029F37C 0029B1BC  3B E3 49 20 */	addi r31, r3, "@50124_80474920"@l
 /* 8029F380 0029B1C0  3B BF 01 18 */	addi r29, r31, 0x118
@@ -44,7 +44,7 @@ lbl_8029F3AC:
 /* 8029F3F4 0029B234  4B FE B9 E9 */	bl Set__Q43scn4step5enemy13ModelDescUtilFRQ43scn4step5chara9ModelDescRQ24gobj8AnimDescRQ24gobj10ScriptDescPCcPCcUlPPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry
 /* 8029F3F8 0029B238  38 7F FE 88 */	addi r3, r31, -0x178
 /* 8029F3FC 0029B23C  39 61 00 30 */	addi r11, r1, 0x30
-/* 8029F400 0029B240  4B D6 7F 91 */	bl lbl_80007390
+/* 8029F400 0029B240  4B D6 7F 91 */	bl _restgpr_29
 /* 8029F404 0029B244  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 8029F408 0029B248  7C 08 03 A6 */	mtlr r0
 /* 8029F40C 0029B24C  38 21 00 30 */	addi r1, r1, 0x30
@@ -56,7 +56,7 @@ HalcandleCreate__Q53scn4step5enemy10brontoburt9ModelDescFv:
 /* 8029F418 0029B258  7C 08 02 A6 */	mflr r0
 /* 8029F41C 0029B25C  90 01 00 34 */	stw r0, 0x34(r1)
 /* 8029F420 0029B260  39 61 00 30 */	addi r11, r1, 0x30
-/* 8029F424 0029B264  4B D6 7F 21 */	bl lbl_80007344
+/* 8029F424 0029B264  4B D6 7F 21 */	bl _savegpr_29
 /* 8029F428 0029B268  3C 60 80 47 */	lis r3, "@50124_80474920"@ha
 /* 8029F42C 0029B26C  3B E3 49 20 */	addi r31, r3, "@50124_80474920"@l
 /* 8029F430 0029B270  3B BF 01 3C */	addi r29, r31, 0x13c
@@ -93,7 +93,7 @@ lbl_8029F45C:
 /* 8029F4A4 0029B2E4  4B FE B9 39 */	bl Set__Q43scn4step5enemy13ModelDescUtilFRQ43scn4step5chara9ModelDescRQ24gobj8AnimDescRQ24gobj10ScriptDescPCcPCcUlPPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry
 /* 8029F4A8 0029B2E8  38 7F FF 20 */	addi r3, r31, -0xe0
 /* 8029F4AC 0029B2EC  39 61 00 30 */	addi r11, r1, 0x30
-/* 8029F4B0 0029B2F0  4B D6 7E E1 */	bl lbl_80007390
+/* 8029F4B0 0029B2F0  4B D6 7E E1 */	bl _restgpr_29
 /* 8029F4B4 0029B2F4  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 8029F4B8 0029B2F8  7C 08 03 A6 */	mtlr r0
 /* 8029F4BC 0029B2FC  38 21 00 30 */	addi r1, r1, 0x30

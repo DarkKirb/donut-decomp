@@ -118,7 +118,7 @@ procMove__Q53scn4step5enemy11sisterbound9StateJumpFv:
 /* 802E2FE8 002DEE28  7C 08 02 A6 */	mflr r0
 /* 802E2FEC 002DEE2C  90 01 00 34 */	stw r0, 0x34(r1)
 /* 802E2FF0 002DEE30  39 61 00 30 */	addi r11, r1, 0x30
-/* 802E2FF4 002DEE34  4B D2 43 51 */	bl lbl_80007344
+/* 802E2FF4 002DEE34  4B D2 43 51 */	bl _savegpr_29
 /* 802E2FF8 002DEE38  7C 7D 1B 78 */	mr r29, r3
 /* 802E2FFC 002DEE3C  4B E1 D7 E5 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 802E3000 002DEE40  4B FA 50 85 */	bl param__Q43scn4step5enemy5EnemyCFv
@@ -142,7 +142,7 @@ procMove__Q53scn4step5enemy11sisterbound9StateJumpFv:
 /* 802E3048 002DEE88  38 DE 00 10 */	addi r6, r30, 0x10
 /* 802E304C 002DEE8C  4B EB 84 91 */	bl airAccelFall__Q24gobj4MoveFbRCQ24gobj14MoveParamAccelRCQ24gobj13MoveParamFall
 /* 802E3050 002DEE90  39 61 00 30 */	addi r11, r1, 0x30
-/* 802E3054 002DEE94  4B D2 43 3D */	bl lbl_80007390
+/* 802E3054 002DEE94  4B D2 43 3D */	bl _restgpr_29
 /* 802E3058 002DEE98  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 802E305C 002DEE9C  7C 08 03 A6 */	mtlr r0
 /* 802E3060 002DEEA0  38 21 00 30 */	addi r1, r1, 0x30

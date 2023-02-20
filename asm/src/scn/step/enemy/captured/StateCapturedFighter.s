@@ -99,7 +99,7 @@ procAnim__Q53scn4step5enemy8captured20StateCapturedFighterFv:
 /* 802A4374 002A01B4  7C 08 02 A6 */	mflr r0
 /* 802A4378 002A01B8  90 01 00 54 */	stw r0, 0x54(r1)
 /* 802A437C 002A01BC  39 61 00 50 */	addi r11, r1, 0x50
-/* 802A4380 002A01C0  4B D6 2F B9 */	bl lbl_80007338
+/* 802A4380 002A01C0  4B D6 2F B9 */	bl _savegpr_26
 /* 802A4384 002A01C4  7C 7A 1B 78 */	mr r26, r3
 /* 802A4388 002A01C8  80 83 00 14 */	lwz r4, 0x14(r3)
 /* 802A438C 002A01CC  38 04 00 01 */	addi r0, r4, 0x1
@@ -230,7 +230,7 @@ lbl_802A455C:
 .global lbl_802A4560
 lbl_802A4560:
 /* 802A4560 002A03A0  39 61 00 50 */	addi r11, r1, 0x50
-/* 802A4564 002A03A4  4B D6 2E 21 */	bl lbl_80007384
+/* 802A4564 002A03A4  4B D6 2E 21 */	bl _restgpr_26
 /* 802A4568 002A03A8  80 01 00 54 */	lwz r0, 0x54(r1)
 /* 802A456C 002A03AC  7C 08 03 A6 */	mtlr r0
 /* 802A4570 002A03B0  38 21 00 50 */	addi r1, r1, 0x50

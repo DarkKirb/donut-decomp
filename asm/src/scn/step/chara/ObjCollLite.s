@@ -7,7 +7,7 @@ __ct__Q43scn4step5chara11ObjCollLiteFRQ33scn4step9ComponentRQ43scn4step5chara5Mo
 /* 80272364 0026E1A4  7C 08 02 A6 */	mflr r0
 /* 80272368 0026E1A8  90 01 00 24 */	stw r0, 0x24(r1)
 /* 8027236C 0026E1AC  39 61 00 20 */	addi r11, r1, 0x20
-/* 80272370 0026E1B0  4B D9 4F CD */	bl lbl_8000733C
+/* 80272370 0026E1B0  4B D9 4F CD */	bl _savegpr_27
 /* 80272374 0026E1B4  7C 7B 1B 78 */	mr r27, r3
 /* 80272378 0026E1B8  7C DC 33 78 */	mr r28, r6
 /* 8027237C 0026E1BC  7C FE 3B 78 */	mr r30, r7
@@ -77,7 +77,7 @@ lbl_80272458:
 /* 8027245C 0026E29C  48 00 05 29 */	bl ctorCommon__Q43scn4step5chara11ObjCollLiteFv
 /* 80272460 0026E2A0  7F 63 DB 78 */	mr r3, r27
 /* 80272464 0026E2A4  39 61 00 20 */	addi r11, r1, 0x20
-/* 80272468 0026E2A8  4B D9 4F 21 */	bl lbl_80007388
+/* 80272468 0026E2A8  4B D9 4F 21 */	bl _restgpr_27
 /* 8027246C 0026E2AC  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80272470 0026E2B0  7C 08 03 A6 */	mtlr r0
 /* 80272474 0026E2B4  38 21 00 20 */	addi r1, r1, 0x20
@@ -243,7 +243,7 @@ addHit__Q43scn4step5chara11ObjCollLiteFUlfRCQ33hel4math7Vector2RCQ33hel4math7Vec
 /* 8027267C 0026E4BC  90 01 00 64 */	stw r0, 0x64(r1)
 /* 80272680 0026E4C0  DB E1 00 58 */	stfd f31, 0x58(r1)
 /* 80272684 0026E4C4  39 61 00 58 */	addi r11, r1, 0x58
-/* 80272688 0026E4C8  4B D9 4C B9 */	bl lbl_80007340
+/* 80272688 0026E4C8  4B D9 4C B9 */	bl _savegpr_28
 /* 8027268C 0026E4CC  7C 7C 1B 78 */	mr r28, r3
 /* 80272690 0026E4D0  7C 9D 23 78 */	mr r29, r4
 /* 80272694 0026E4D4  FF E0 08 90 */	fmr f31, f1
@@ -279,7 +279,7 @@ addHit__Q43scn4step5chara11ObjCollLiteFUlfRCQ33hel4math7Vector2RCQ33hel4math7Vec
 /* 8027270C 0026E54C  4B FF A8 8D */	bl __dt__Q25ocoll8NodeDescFv
 /* 80272710 0026E550  CB E1 00 58 */	lfd f31, 0x58(r1)
 /* 80272714 0026E554  39 61 00 58 */	addi r11, r1, 0x58
-/* 80272718 0026E558  4B D9 4C 75 */	bl lbl_8000738C
+/* 80272718 0026E558  4B D9 4C 75 */	bl _restgpr_28
 /* 8027271C 0026E55C  80 01 00 64 */	lwz r0, 0x64(r1)
 /* 80272720 0026E560  7C 08 03 A6 */	mtlr r0
 /* 80272724 0026E564  38 21 00 60 */	addi r1, r1, 0x60
@@ -302,7 +302,7 @@ setAttackCenter__Q43scn4step5chara11ObjCollLiteFUlRCQ33hel4math7Vector2:
 /* 80272748 0026E588  7C 08 02 A6 */	mflr r0
 /* 8027274C 0026E58C  90 01 00 34 */	stw r0, 0x34(r1)
 /* 80272750 0026E590  39 61 00 30 */	addi r11, r1, 0x30
-/* 80272754 0026E594  4B D9 4B F1 */	bl lbl_80007344
+/* 80272754 0026E594  4B D9 4B F1 */	bl _savegpr_29
 /* 80272758 0026E598  7C 7D 1B 78 */	mr r29, r3
 /* 8027275C 0026E59C  7C 9E 23 78 */	mr r30, r4
 /* 80272760 0026E5A0  7C BF 2B 78 */	mr r31, r5
@@ -321,7 +321,7 @@ setAttackCenter__Q43scn4step5chara11ObjCollLiteFUlRCQ33hel4math7Vector2:
 /* 80272794 0026E5D4  38 80 FF FF */	li r4, -0x1
 /* 80272798 0026E5D8  4B F0 9E F9 */	bl __dt__Q23g3d12NodeAccessorFv
 /* 8027279C 0026E5DC  39 61 00 30 */	addi r11, r1, 0x30
-/* 802727A0 0026E5E0  4B D9 4B F1 */	bl lbl_80007390
+/* 802727A0 0026E5E0  4B D9 4B F1 */	bl _restgpr_29
 /* 802727A4 0026E5E4  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 802727A8 0026E5E8  7C 08 03 A6 */	mtlr r0
 /* 802727AC 0026E5EC  38 21 00 30 */	addi r1, r1, 0x30
@@ -349,7 +349,7 @@ addAttack__Q43scn4step5chara11ObjCollLiteFUlfRCQ33hel4math7Vector2RCQ33hel4math7
 /* 802727DC 0026E61C  90 01 00 74 */	stw r0, 0x74(r1)
 /* 802727E0 0026E620  DB E1 00 68 */	stfd f31, 0x68(r1)
 /* 802727E4 0026E624  39 61 00 68 */	addi r11, r1, 0x68
-/* 802727E8 0026E628  4B D9 4B 55 */	bl lbl_8000733C
+/* 802727E8 0026E628  4B D9 4B 55 */	bl _savegpr_27
 /* 802727EC 0026E62C  7C 7B 1B 78 */	mr r27, r3
 /* 802727F0 0026E630  7C 9C 23 78 */	mr r28, r4
 /* 802727F4 0026E634  FF E0 08 90 */	fmr f31, f1
@@ -389,7 +389,7 @@ addAttack__Q43scn4step5chara11ObjCollLiteFUlfRCQ33hel4math7Vector2RCQ33hel4math7
 /* 8027287C 0026E6BC  4B FF A7 1D */	bl __dt__Q25ocoll8NodeDescFv
 /* 80272880 0026E6C0  CB E1 00 68 */	lfd f31, 0x68(r1)
 /* 80272884 0026E6C4  39 61 00 68 */	addi r11, r1, 0x68
-/* 80272888 0026E6C8  4B D9 4B 01 */	bl lbl_80007388
+/* 80272888 0026E6C8  4B D9 4B 01 */	bl _restgpr_27
 /* 8027288C 0026E6CC  80 01 00 74 */	lwz r0, 0x74(r1)
 /* 80272890 0026E6D0  7C 08 03 A6 */	mtlr r0
 /* 80272894 0026E6D4  38 21 00 70 */	addi r1, r1, 0x70
@@ -412,7 +412,7 @@ addAttackSub__Q43scn4step5chara11ObjCollLiteFUlfRCQ33hel4math7Vector2RCQ33hel4ma
 /* 802728C0 0026E700  90 01 00 64 */	stw r0, 0x64(r1)
 /* 802728C4 0026E704  DB E1 00 58 */	stfd f31, 0x58(r1)
 /* 802728C8 0026E708  39 61 00 58 */	addi r11, r1, 0x58
-/* 802728CC 0026E70C  4B D9 4A 75 */	bl lbl_80007340
+/* 802728CC 0026E70C  4B D9 4A 75 */	bl _savegpr_28
 /* 802728D0 0026E710  7C 7C 1B 78 */	mr r28, r3
 /* 802728D4 0026E714  7C 9D 23 78 */	mr r29, r4
 /* 802728D8 0026E718  FF E0 08 90 */	fmr f31, f1
@@ -449,7 +449,7 @@ addAttackSub__Q43scn4step5chara11ObjCollLiteFUlfRCQ33hel4math7Vector2RCQ33hel4ma
 /* 80272954 0026E794  4B FF A6 45 */	bl __dt__Q25ocoll8NodeDescFv
 /* 80272958 0026E798  CB E1 00 58 */	lfd f31, 0x58(r1)
 /* 8027295C 0026E79C  39 61 00 58 */	addi r11, r1, 0x58
-/* 80272960 0026E7A0  4B D9 4A 2D */	bl lbl_8000738C
+/* 80272960 0026E7A0  4B D9 4A 2D */	bl _restgpr_28
 /* 80272964 0026E7A4  80 01 00 64 */	lwz r0, 0x64(r1)
 /* 80272968 0026E7A8  7C 08 03 A6 */	mtlr r0
 /* 8027296C 0026E7AC  38 21 00 60 */	addi r1, r1, 0x60
@@ -466,7 +466,7 @@ ctorCommon__Q43scn4step5chara11ObjCollLiteFv:
 /* 80272988 0026E7C8  7C 08 02 A6 */	mflr r0
 /* 8027298C 0026E7CC  90 01 00 24 */	stw r0, 0x24(r1)
 /* 80272990 0026E7D0  39 61 00 20 */	addi r11, r1, 0x20
-/* 80272994 0026E7D4  4B D9 49 B1 */	bl lbl_80007344
+/* 80272994 0026E7D4  4B D9 49 B1 */	bl _savegpr_29
 /* 80272998 0026E7D8  7C 7D 1B 78 */	mr r29, r3
 /* 8027299C 0026E7DC  80 63 00 08 */	lwz r3, 0x8(r3)
 /* 802729A0 0026E7E0  4B DB 1B 01 */	bl DefaultSwitchThreadCallback
@@ -527,7 +527,7 @@ lbl_80272A5C:
 /* 80272A64 0026E8A4  38 80 00 02 */	li r4, 0x2
 /* 80272A68 0026E8A8  4B EB 75 A9 */	bl setDrawInfo__Q310homebutton3gui11PaneManagerFPCQ36nw4hbm3lyt8DrawInfo
 /* 80272A6C 0026E8AC  39 61 00 20 */	addi r11, r1, 0x20
-/* 80272A70 0026E8B0  4B D9 49 21 */	bl lbl_80007390
+/* 80272A70 0026E8B0  4B D9 49 21 */	bl _restgpr_29
 /* 80272A74 0026E8B4  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80272A78 0026E8B8  7C 08 03 A6 */	mtlr r0
 /* 80272A7C 0026E8BC  38 21 00 20 */	addi r1, r1, 0x20

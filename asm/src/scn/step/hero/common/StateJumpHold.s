@@ -128,7 +128,7 @@ procAnim__Q53scn4step4hero6common13StateJumpHoldFv:
 /* 80364E0C 00360C4C  7C 08 02 A6 */	mflr r0
 /* 80364E10 00360C50  90 01 00 34 */	stw r0, 0x34(r1)
 /* 80364E14 00360C54  39 61 00 30 */	addi r11, r1, 0x30
-/* 80364E18 00360C58  4B CA 25 2D */	bl lbl_80007344
+/* 80364E18 00360C58  4B CA 25 2D */	bl _savegpr_29
 /* 80364E1C 00360C5C  7C 7F 1B 78 */	mr r31, r3
 /* 80364E20 00360C60  4B D9 B9 C1 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 80364E24 00360C64  4B FD B5 51 */	bl abilityManager__Q43scn4step4hero4HeroFv
@@ -231,7 +231,7 @@ lbl_80364F94:
 .global lbl_80364F98
 lbl_80364F98:
 /* 80364F98 00360DD8  39 61 00 30 */	addi r11, r1, 0x30
-/* 80364F9C 00360DDC  4B CA 23 F5 */	bl lbl_80007390
+/* 80364F9C 00360DDC  4B CA 23 F5 */	bl _restgpr_29
 /* 80364FA0 00360DE0  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 80364FA4 00360DE4  7C 08 03 A6 */	mtlr r0
 /* 80364FA8 00360DE8  38 21 00 30 */	addi r1, r1, 0x30
@@ -243,7 +243,7 @@ procMove__Q53scn4step4hero6common13StateJumpHoldFv:
 /* 80364FB4 00360DF4  7C 08 02 A6 */	mflr r0
 /* 80364FB8 00360DF8  90 01 00 54 */	stw r0, 0x54(r1)
 /* 80364FBC 00360DFC  39 61 00 50 */	addi r11, r1, 0x50
-/* 80364FC0 00360E00  4B CA 23 85 */	bl lbl_80007344
+/* 80364FC0 00360E00  4B CA 23 85 */	bl _savegpr_29
 /* 80364FC4 00360E04  7C 7D 1B 78 */	mr r29, r3
 /* 80364FC8 00360E08  4B D9 B8 19 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 80364FCC 00360E0C  4B FD B3 41 */	bl move__Q43scn4step4hero4HeroFv
@@ -321,7 +321,7 @@ lbl_803650A8:
 /* 803650CC 00360F0C  38 C1 00 20 */	addi r6, r1, 0x20
 /* 803650D0 00360F10  4B FF 1C E1 */	bl MoveFromKeyState__Q43scn4step4hero7UtilityFRQ43scn4step4hero4HeroRCQ24gobj14MoveParamAccelRCQ24gobj14MoveParamDecelRCQ24gobj13MoveParamFall
 /* 803650D4 00360F14  39 61 00 50 */	addi r11, r1, 0x50
-/* 803650D8 00360F18  4B CA 22 B9 */	bl lbl_80007390
+/* 803650D8 00360F18  4B CA 22 B9 */	bl _restgpr_29
 /* 803650DC 00360F1C  80 01 00 54 */	lwz r0, 0x54(r1)
 /* 803650E0 00360F20  7C 08 03 A6 */	mtlr r0
 /* 803650E4 00360F24  38 21 00 50 */	addi r1, r1, 0x50

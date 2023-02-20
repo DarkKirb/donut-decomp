@@ -7,7 +7,7 @@ Create__Q53scn4step6weapon12leafanpollen9ModelDescFv:
 /* 803DF07C 003DAEBC  7C 08 02 A6 */	mflr r0
 /* 803DF080 003DAEC0  90 01 00 54 */	stw r0, 0x54(r1)
 /* 803DF084 003DAEC4  39 61 00 50 */	addi r11, r1, 0x50
-/* 803DF088 003DAEC8  4B C2 82 BD */	bl lbl_80007344
+/* 803DF088 003DAEC8  4B C2 82 BD */	bl _savegpr_29
 /* 803DF08C 003DAECC  3C 60 80 49 */	lis r3, "@50233_8049421C"@ha
 /* 803DF090 003DAED0  3B A3 42 1C */	addi r29, r3, "@50233_8049421C"@l
 /* 803DF094 003DAED4  3C 60 80 49 */	lis r3, "@50234_80494228"@ha
@@ -67,7 +67,7 @@ lbl_803DF140:
 /* 803DF154 003DAF94  3C 60 80 55 */	lis r3, "@LOCAL@CreateTmpl<12>__Q43scn4step6weapon13ModelDescUtilFPCcPCcUlPPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc"@ha
 /* 803DF158 003DAF98  38 63 4D 90 */	addi r3, r3, "@LOCAL@CreateTmpl<12>__Q43scn4step6weapon13ModelDescUtilFPCcPCcUlPPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc"@l
 /* 803DF15C 003DAF9C  39 61 00 50 */	addi r11, r1, 0x50
-/* 803DF160 003DAFA0  4B C2 82 31 */	bl lbl_80007390
+/* 803DF160 003DAFA0  4B C2 82 31 */	bl _restgpr_29
 /* 803DF164 003DAFA4  80 01 00 54 */	lwz r0, 0x54(r1)
 /* 803DF168 003DAFA8  7C 08 03 A6 */	mtlr r0
 /* 803DF16C 003DAFAC  38 21 00 50 */	addi r1, r1, 0x50

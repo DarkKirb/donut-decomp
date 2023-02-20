@@ -190,7 +190,7 @@ Func__Q63scn4step5enemy10poppybrojr9AddOnMint31Mint_Throw_0$55369AddOnMint_cppFR
 /* 802D144C 002CD28C  7C 08 02 A6 */	mflr r0
 /* 802D1450 002CD290  90 01 00 24 */	stw r0, 0x24(r1)
 /* 802D1454 002CD294  39 61 00 20 */	addi r11, r1, 0x20
-/* 802D1458 002CD298  4B D3 5E ED */	bl lbl_80007344
+/* 802D1458 002CD298  4B D3 5E ED */	bl _savegpr_29
 /* 802D145C 002CD29C  4B FB 99 71 */	bl Obj__Q43scn4step5enemy9MintEnemyFv
 /* 802D1460 002CD2A0  7C 7E 1B 78 */	mr r30, r3
 /* 802D1464 002CD2A4  4B FB 99 69 */	bl Obj__Q43scn4step5enemy9MintEnemyFv
@@ -211,7 +211,7 @@ Func__Q63scn4step5enemy10poppybrojr9AddOnMint31Mint_Throw_0$55369AddOnMint_cppFR
 lbl_802D149C:
 /* 802D149C 002CD2DC  93 BF 00 0C */	stw r29, 0xc(r31)
 /* 802D14A0 002CD2E0  39 61 00 20 */	addi r11, r1, 0x20
-/* 802D14A4 002CD2E4  4B D3 5E ED */	bl lbl_80007390
+/* 802D14A4 002CD2E4  4B D3 5E ED */	bl _restgpr_29
 /* 802D14A8 002CD2E8  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802D14AC 002CD2EC  7C 08 03 A6 */	mtlr r0
 /* 802D14B0 002CD2F0  38 21 00 20 */	addi r1, r1, 0x20
@@ -225,7 +225,7 @@ Func__Q63scn4step5enemy10poppybrojr9AddOnMint30Mint_Move_0$55367AddOnMint_cppFRQ
 /* 802D14C0 002CD300  7C 08 02 A6 */	mflr r0
 /* 802D14C4 002CD304  90 01 00 24 */	stw r0, 0x24(r1)
 /* 802D14C8 002CD308  39 61 00 20 */	addi r11, r1, 0x20
-/* 802D14CC 002CD30C  4B D3 5E 79 */	bl lbl_80007344
+/* 802D14CC 002CD30C  4B D3 5E 79 */	bl _savegpr_29
 /* 802D14D0 002CD310  4B FB 98 FD */	bl Obj__Q43scn4step5enemy9MintEnemyFv
 /* 802D14D4 002CD314  7C 7E 1B 78 */	mr r30, r3
 /* 802D14D8 002CD318  4B FB 98 F5 */	bl Obj__Q43scn4step5enemy9MintEnemyFv
@@ -246,7 +246,7 @@ Func__Q63scn4step5enemy10poppybrojr9AddOnMint30Mint_Move_0$55367AddOnMint_cppFRQ
 lbl_802D1510:
 /* 802D1510 002CD350  93 BF 00 0C */	stw r29, 0xc(r31)
 /* 802D1514 002CD354  39 61 00 20 */	addi r11, r1, 0x20
-/* 802D1518 002CD358  4B D3 5E 79 */	bl lbl_80007390
+/* 802D1518 002CD358  4B D3 5E 79 */	bl _restgpr_29
 /* 802D151C 002CD35C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802D1520 002CD360  7C 08 03 A6 */	mtlr r0
 /* 802D1524 002CD364  38 21 00 20 */	addi r1, r1, 0x20

@@ -7,7 +7,7 @@ __ct__Q53scn4step4hero7parasol6CustomFRQ43scn4step4hero4Hero:
 /* 80392470 0038E2B0  7C 08 02 A6 */	mflr r0
 /* 80392474 0038E2B4  90 01 00 24 */	stw r0, 0x24(r1)
 /* 80392478 0038E2B8  39 61 00 20 */	addi r11, r1, 0x20
-/* 8039247C 0038E2BC  4B C7 4E C9 */	bl lbl_80007344
+/* 8039247C 0038E2BC  4B C7 4E C9 */	bl _savegpr_29
 /* 80392480 0038E2C0  7C 7D 1B 78 */	mr r29, r3
 /* 80392484 0038E2C4  4B F9 93 69 */	bl __ct__Q43scn4step4hero17AbilityCustomBaseFRQ43scn4step4hero4Hero
 /* 80392488 0038E2C8  3C 60 80 49 */	lis r3, __vt__Q53scn4step4hero7parasol6Custom@ha
@@ -29,7 +29,7 @@ __ct__Q53scn4step4hero7parasol6CustomFRQ43scn4step4hero4Hero:
 /* 803924C8 0038E308  4B E4 15 49 */	bl __ct__Q25ocoll6AttackFRQ25ocoll7ManagerRQ25ocoll5OwnerUl
 /* 803924CC 0038E30C  7F A3 EB 78 */	mr r3, r29
 /* 803924D0 0038E310  39 61 00 20 */	addi r11, r1, 0x20
-/* 803924D4 0038E314  4B C7 4E BD */	bl lbl_80007390
+/* 803924D4 0038E314  4B C7 4E BD */	bl _restgpr_29
 /* 803924D8 0038E318  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803924DC 0038E31C  7C 08 03 A6 */	mtlr r0
 /* 803924E0 0038E320  38 21 00 20 */	addi r1, r1, 0x20

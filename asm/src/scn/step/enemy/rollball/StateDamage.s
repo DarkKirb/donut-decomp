@@ -8,7 +8,7 @@ __ct__Q53scn4step5enemy8rollball11StateDamageFPQ43scn4step5enemy5Enemy:
 /* 802D67BC 002D25FC  90 01 00 44 */	stw r0, 0x44(r1)
 /* 802D67C0 002D2600  DB E1 00 38 */	stfd f31, 0x38(r1)
 /* 802D67C4 002D2604  39 61 00 38 */	addi r11, r1, 0x38
-/* 802D67C8 002D2608  4B D3 0B 7D */	bl lbl_80007344
+/* 802D67C8 002D2608  4B D3 0B 7D */	bl _savegpr_29
 /* 802D67CC 002D260C  7C 7D 1B 78 */	mr r29, r3
 /* 802D67D0 002D2610  4B FB 75 F5 */	bl __ct__Q43scn4step5enemy9StateBaseFPQ43scn4step5enemy5Enemy
 /* 802D67D4 002D2614  3C 60 80 48 */	lis r3, __vt__Q53scn4step5enemy8rollball11StateDamage@ha
@@ -141,7 +141,7 @@ lbl_802D6938:
 /* 802D6980 002D27C0  7F A3 EB 78 */	mr r3, r29
 /* 802D6984 002D27C4  CB E1 00 38 */	lfd f31, 0x38(r1)
 /* 802D6988 002D27C8  39 61 00 38 */	addi r11, r1, 0x38
-/* 802D698C 002D27CC  4B D3 0A 05 */	bl lbl_80007390
+/* 802D698C 002D27CC  4B D3 0A 05 */	bl _restgpr_29
 /* 802D6990 002D27D0  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 802D6994 002D27D4  7C 08 03 A6 */	mtlr r0
 /* 802D6998 002D27D8  38 21 00 40 */	addi r1, r1, 0x40

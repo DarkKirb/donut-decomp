@@ -7,7 +7,7 @@ __ct__Q53scn4step5enemy5sheld11StateEscapeFPQ43scn4step5enemy5Enemy:
 /* 802DE260 002DA0A0  7C 08 02 A6 */	mflr r0
 /* 802DE264 002DA0A4  90 01 00 34 */	stw r0, 0x34(r1)
 /* 802DE268 002DA0A8  39 61 00 30 */	addi r11, r1, 0x30
-/* 802DE26C 002DA0AC  4B D2 90 D9 */	bl lbl_80007344
+/* 802DE26C 002DA0AC  4B D2 90 D9 */	bl _savegpr_29
 /* 802DE270 002DA0B0  7C 7D 1B 78 */	mr r29, r3
 /* 802DE274 002DA0B4  4B FA FB 51 */	bl __ct__Q43scn4step5enemy9StateBaseFPQ43scn4step5enemy5Enemy
 /* 802DE278 002DA0B8  3C 60 80 48 */	lis r3, __vt__Q53scn4step5enemy5sheld11StateEscape@ha
@@ -88,7 +88,7 @@ lbl_802DE360:
 /* 802DE374 002DA1B4  4B FA 0C CD */	bl toValid__Q43scn4step5enemy9BrainCtrlFv
 /* 802DE378 002DA1B8  7F A3 EB 78 */	mr r3, r29
 /* 802DE37C 002DA1BC  39 61 00 30 */	addi r11, r1, 0x30
-/* 802DE380 002DA1C0  4B D2 90 11 */	bl lbl_80007390
+/* 802DE380 002DA1C0  4B D2 90 11 */	bl _restgpr_29
 /* 802DE384 002DA1C4  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 802DE388 002DA1C8  7C 08 03 A6 */	mtlr r0
 /* 802DE38C 002DA1CC  38 21 00 30 */	addi r1, r1, 0x30

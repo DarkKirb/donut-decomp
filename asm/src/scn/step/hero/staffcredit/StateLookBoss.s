@@ -7,7 +7,7 @@ TryToChangeState__Q53scn4step4hero11staffcredit13StateLookBossFPQ43scn4step4hero
 /* 803A4638 003A0478  7C 08 02 A6 */	mflr r0
 /* 803A463C 003A047C  90 01 00 24 */	stw r0, 0x24(r1)
 /* 803A4640 003A0480  39 61 00 20 */	addi r11, r1, 0x20
-/* 803A4644 003A0484  4B C6 2C FD */	bl lbl_80007340
+/* 803A4644 003A0484  4B C6 2C FD */	bl _savegpr_28
 /* 803A4648 003A0488  7C 7C 1B 78 */	mr r28, r3
 /* 803A464C 003A048C  4B CD 10 E5 */	bl GKI_getfirst
 /* 803A4650 003A0490  4B E7 C7 A9 */	bl heroManager__Q33scn4step9ComponentFv
@@ -54,7 +54,7 @@ lbl_803A46C4:
 .global lbl_803A46CC
 lbl_803A46CC:
 /* 803A46CC 003A050C  39 61 00 20 */	addi r11, r1, 0x20
-/* 803A46D0 003A0510  4B C6 2C BD */	bl lbl_8000738C
+/* 803A46D0 003A0510  4B C6 2C BD */	bl _restgpr_28
 /* 803A46D4 003A0514  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803A46D8 003A0518  7C 08 03 A6 */	mtlr r0
 /* 803A46DC 003A051C  38 21 00 20 */	addi r1, r1, 0x20
@@ -135,7 +135,7 @@ procAnim__Q53scn4step4hero11staffcredit13StateLookBossFv:
 /* 803A47E0 003A0620  7C 08 02 A6 */	mflr r0
 /* 803A47E4 003A0624  90 01 00 24 */	stw r0, 0x24(r1)
 /* 803A47E8 003A0628  39 61 00 20 */	addi r11, r1, 0x20
-/* 803A47EC 003A062C  4B C6 2B 59 */	bl lbl_80007344
+/* 803A47EC 003A062C  4B C6 2B 59 */	bl _savegpr_29
 /* 803A47F0 003A0630  7C 7D 1B 78 */	mr r29, r3
 /* 803A47F4 003A0634  4B D5 BF ED */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 803A47F8 003A0638  48 00 05 A1 */	bl TryToChangeState__Q53scn4step4hero11staffcredit9StateWaitFPQ43scn4step4hero4Hero
@@ -276,7 +276,7 @@ lbl_803A49C8:
 .global lbl_803A49CC
 lbl_803A49CC:
 /* 803A49CC 003A080C  39 61 00 20 */	addi r11, r1, 0x20
-/* 803A49D0 003A0810  4B C6 29 C1 */	bl lbl_80007390
+/* 803A49D0 003A0810  4B C6 29 C1 */	bl _restgpr_29
 /* 803A49D4 003A0814  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803A49D8 003A0818  7C 08 03 A6 */	mtlr r0
 /* 803A49DC 003A081C  38 21 00 20 */	addi r1, r1, 0x20
@@ -299,7 +299,7 @@ turnToBoss__Q53scn4step4hero11staffcredit13StateLookBossFQ43scn4step3map11BinBos
 /* 803A4A00 003A0840  DB C1 00 80 */	stfd f30, 0x80(r1)
 /* 803A4A04 003A0844  F3 C1 00 88 */	psq_st f30, 0x88(r1), 0, qr0
 /* 803A4A08 003A0848  39 61 00 80 */	addi r11, r1, 0x80
-/* 803A4A0C 003A084C  4B C6 29 35 */	bl lbl_80007340
+/* 803A4A0C 003A084C  4B C6 29 35 */	bl _savegpr_28
 /* 803A4A10 003A0850  7C 7F 1B 78 */	mr r31, r3
 /* 803A4A14 003A0854  7C 9C 23 78 */	mr r28, r4
 /* 803A4A18 003A0858  38 00 00 00 */	li r0, 0x0
@@ -534,7 +534,7 @@ lbl_803A4D24:
 /* 803A4D34 003A0B74  13 C1 00 0C */	psq_lx f30, r1, r0, 0, qr0
 /* 803A4D38 003A0B78  CB C1 00 80 */	lfd f30, 0x80(r1)
 /* 803A4D3C 003A0B7C  39 61 00 80 */	addi r11, r1, 0x80
-/* 803A4D40 003A0B80  4B C6 26 4D */	bl lbl_8000738C
+/* 803A4D40 003A0B80  4B C6 26 4D */	bl _restgpr_28
 /* 803A4D44 003A0B84  80 01 00 A4 */	lwz r0, 0xa4(r1)
 /* 803A4D48 003A0B88  7C 08 03 A6 */	mtlr r0
 /* 803A4D4C 003A0B8C  38 21 00 A0 */	addi r1, r1, 0xa0

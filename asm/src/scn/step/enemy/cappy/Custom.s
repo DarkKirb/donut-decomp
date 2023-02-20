@@ -59,7 +59,7 @@ onProcFixPos__Q53scn4step5enemy5cappy6CustomFv:
 /* 802A2918 0029E758  7C 08 02 A6 */	mflr r0
 /* 802A291C 0029E75C  90 01 00 24 */	stw r0, 0x24(r1)
 /* 802A2920 0029E760  39 61 00 20 */	addi r11, r1, 0x20
-/* 802A2924 0029E764  4B D6 4A 1D */	bl lbl_80007340
+/* 802A2924 0029E764  4B D6 4A 1D */	bl _savegpr_28
 /* 802A2928 0029E768  7C 7C 1B 78 */	mr r28, r3
 /* 802A292C 0029E76C  88 03 00 10 */	lbz r0, 0x10(r3)
 /* 802A2930 0029E770  2C 00 00 00 */	cmpwi r0, 0x0
@@ -98,7 +98,7 @@ lbl_802A2998:
 .global lbl_802A29AC
 lbl_802A29AC:
 /* 802A29AC 0029E7EC  39 61 00 20 */	addi r11, r1, 0x20
-/* 802A29B0 0029E7F0  4B D6 49 DD */	bl lbl_8000738C
+/* 802A29B0 0029E7F0  4B D6 49 DD */	bl _restgpr_28
 /* 802A29B4 0029E7F4  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802A29B8 0029E7F8  7C 08 03 A6 */	mtlr r0
 /* 802A29BC 0029E7FC  38 21 00 20 */	addi r1, r1, 0x20
@@ -112,7 +112,7 @@ onVacuumReceive__Q53scn4step5enemy5cappy6CustomFv:
 /* 802A29D0 0029E810  DB E1 00 C0 */	stfd f31, 0xc0(r1)
 /* 802A29D4 0029E814  F3 E1 00 C8 */	psq_st f31, 0xc8(r1), 0, qr0
 /* 802A29D8 0029E818  39 61 00 C0 */	addi r11, r1, 0xc0
-/* 802A29DC 0029E81C  4B D6 49 65 */	bl lbl_80007340
+/* 802A29DC 0029E81C  4B D6 49 65 */	bl _savegpr_28
 /* 802A29E0 0029E820  7C 7C 1B 78 */	mr r28, r3
 /* 802A29E4 0029E824  4B E5 DD FD */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 802A29E8 0029E828  4B FE 56 E5 */	bl model__Q43scn4step5enemy5EnemyFv
@@ -265,7 +265,7 @@ lbl_802A2BEC:
 /* 802A2C04 0029EA44  13 E1 00 0C */	psq_lx f31, r1, r0, 0, qr0
 /* 802A2C08 0029EA48  CB E1 00 C0 */	lfd f31, 0xc0(r1)
 /* 802A2C0C 0029EA4C  39 61 00 C0 */	addi r11, r1, 0xc0
-/* 802A2C10 0029EA50  4B D6 47 7D */	bl lbl_8000738C
+/* 802A2C10 0029EA50  4B D6 47 7D */	bl _restgpr_28
 /* 802A2C14 0029EA54  80 01 00 D4 */	lwz r0, 0xd4(r1)
 /* 802A2C18 0029EA58  7C 08 03 A6 */	mtlr r0
 /* 802A2C1C 0029EA5C  38 21 00 D0 */	addi r1, r1, 0xd0

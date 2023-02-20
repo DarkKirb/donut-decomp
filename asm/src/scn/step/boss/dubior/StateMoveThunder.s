@@ -149,7 +149,7 @@ procAnim__Q53scn4step4boss6dubior16StateMoveThunderFv:
 /* 8024F4C8 0024B308  DB E1 00 70 */	stfd f31, 0x70(r1)
 /* 8024F4CC 0024B30C  F3 E1 00 78 */	psq_st f31, 0x78(r1), 0, qr0
 /* 8024F4D0 0024B310  39 61 00 70 */	addi r11, r1, 0x70
-/* 8024F4D4 0024B314  4B DB 7E 6D */	bl lbl_80007340
+/* 8024F4D4 0024B314  4B DB 7E 6D */	bl _savegpr_28
 /* 8024F4D8 0024B318  7C 7E 1B 78 */	mr r30, r3
 /* 8024F4DC 0024B31C  4B EB 13 05 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 8024F4E0 0024B320  4B FD DA 31 */	bl param__Q43scn4step4boss4BossCFv
@@ -398,7 +398,7 @@ lbl_8024F810:
 /* 8024F814 0024B654  13 E1 00 0C */	psq_lx f31, r1, r0, 0, qr0
 /* 8024F818 0024B658  CB E1 00 70 */	lfd f31, 0x70(r1)
 /* 8024F81C 0024B65C  39 61 00 70 */	addi r11, r1, 0x70
-/* 8024F820 0024B660  4B DB 7B 6D */	bl lbl_8000738C
+/* 8024F820 0024B660  4B DB 7B 6D */	bl _restgpr_28
 /* 8024F824 0024B664  80 01 00 84 */	lwz r0, 0x84(r1)
 /* 8024F828 0024B668  7C 08 03 A6 */	mtlr r0
 /* 8024F82C 0024B66C  38 21 00 80 */	addi r1, r1, 0x80

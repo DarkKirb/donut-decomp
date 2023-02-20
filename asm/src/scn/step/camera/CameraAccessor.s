@@ -25,9 +25,9 @@ projMtx__Q43scn4step6camera14CameraAccessorCFQ43scn4step6camera4Kind:
 /* 80262A5C 0025E89C  7C 08 02 A6 */	mflr r0
 /* 80262A60 0025E8A0  90 01 00 34 */	stw r0, 0x34(r1)
 /* 80262A64 0025E8A4  39 61 00 30 */	addi r11, r1, 0x30
-/* 80262A68 0025E8A8  4B DA 48 45 */	bl lbl_800072AC
+/* 80262A68 0025E8A8  4B DA 48 45 */	bl _savefpr_29
 /* 80262A6C 0025E8AC  39 61 00 18 */	addi r11, r1, 0x18
-/* 80262A70 0025E8B0  4B DA 48 D5 */	bl lbl_80007344
+/* 80262A70 0025E8B0  4B DA 48 D5 */	bl _savegpr_29
 /* 80262A74 0025E8B4  7C 7D 1B 78 */	mr r29, r3
 /* 80262A78 0025E8B8  7C 9E 23 78 */	mr r30, r4
 /* 80262A7C 0025E8BC  7C BF 2B 78 */	mr r31, r5
@@ -52,9 +52,9 @@ projMtx__Q43scn4step6camera14CameraAccessorCFQ43scn4step6camera4Kind:
 /* 80262AC8 0025E908  FC 80 E8 90 */	fmr f4, f29
 /* 80262ACC 0025E90C  4B F3 C0 21 */	bl CreatePerspective__Q33hel4math8Matrix44Fffff
 /* 80262AD0 0025E910  39 61 00 30 */	addi r11, r1, 0x30
-/* 80262AD4 0025E914  4B DA 48 25 */	bl lbl_800072F8
+/* 80262AD4 0025E914  4B DA 48 25 */	bl _restfpr_29
 /* 80262AD8 0025E918  39 61 00 18 */	addi r11, r1, 0x18
-/* 80262ADC 0025E91C  4B DA 48 B5 */	bl lbl_80007390
+/* 80262ADC 0025E91C  4B DA 48 B5 */	bl _restgpr_29
 /* 80262AE0 0025E920  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 80262AE4 0025E924  7C 08 03 A6 */	mtlr r0
 /* 80262AE8 0025E928  38 21 00 30 */	addi r1, r1, 0x30
@@ -358,7 +358,7 @@ viewMtxMultiPath__Q43scn4step6camera14CameraAccessorCFQ43scn4step6camera4KindUl:
 /* 80262EA8 0025ECE8  7C 08 02 A6 */	mflr r0
 /* 80262EAC 0025ECEC  90 01 00 F4 */	stw r0, 0xf4(r1)
 /* 80262EB0 0025ECF0  39 61 00 F0 */	addi r11, r1, 0xf0
-/* 80262EB4 0025ECF4  4B DA 44 91 */	bl lbl_80007344
+/* 80262EB4 0025ECF4  4B DA 44 91 */	bl _savegpr_29
 /* 80262EB8 0025ECF8  7C 7D 1B 78 */	mr r29, r3
 /* 80262EBC 0025ECFC  7C 9E 23 78 */	mr r30, r4
 /* 80262EC0 0025ED00  7C DF 33 78 */	mr r31, r6
@@ -441,7 +441,7 @@ lbl_80262FC0:
 .global lbl_80262FC4
 lbl_80262FC4:
 /* 80262FC4 0025EE04  39 61 00 F0 */	addi r11, r1, 0xf0
-/* 80262FC8 0025EE08  4B DA 43 C9 */	bl lbl_80007390
+/* 80262FC8 0025EE08  4B DA 43 C9 */	bl _restgpr_29
 /* 80262FCC 0025EE0C  80 01 00 F4 */	lwz r0, 0xf4(r1)
 /* 80262FD0 0025EE10  7C 08 03 A6 */	mtlr r0
 /* 80262FD4 0025EE14  38 21 00 F0 */	addi r1, r1, 0xf0
@@ -452,7 +452,7 @@ projConvMtx__Q43scn4step6camera14CameraAccessorCFQ43scn4step6camera4Kind:
 /* 80262FE0 0025EE20  7C 08 02 A6 */	mflr r0
 /* 80262FE4 0025EE24  90 01 00 D4 */	stw r0, 0xd4(r1)
 /* 80262FE8 0025EE28  39 61 00 D0 */	addi r11, r1, 0xd0
-/* 80262FEC 0025EE2C  4B DA 43 59 */	bl lbl_80007344
+/* 80262FEC 0025EE2C  4B DA 43 59 */	bl _savegpr_29
 /* 80262FF0 0025EE30  7C 7D 1B 78 */	mr r29, r3
 /* 80262FF4 0025EE34  7C 9E 23 78 */	mr r30, r4
 /* 80262FF8 0025EE38  7C BF 2B 78 */	mr r31, r5
@@ -470,7 +470,7 @@ projConvMtx__Q43scn4step6camera14CameraAccessorCFQ43scn4step6camera4Kind:
 /* 80263028 0025EE68  38 A1 00 38 */	addi r5, r1, 0x38
 /* 8026302C 0025EE6C  4B F3 BB 99 */	bl mulMtx__Q33hel4math8Matrix44CFRCQ33hel4math8Matrix44
 /* 80263030 0025EE70  39 61 00 D0 */	addi r11, r1, 0xd0
-/* 80263034 0025EE74  4B DA 43 5D */	bl lbl_80007390
+/* 80263034 0025EE74  4B DA 43 5D */	bl _restgpr_29
 /* 80263038 0025EE78  80 01 00 D4 */	lwz r0, 0xd4(r1)
 /* 8026303C 0025EE7C  7C 08 03 A6 */	mtlr r0
 /* 80263040 0025EE80  38 21 00 D0 */	addi r1, r1, 0xd0

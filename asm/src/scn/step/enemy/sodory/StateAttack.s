@@ -204,7 +204,7 @@ procAnim__Q53scn4step5enemy6sodory11StateAttackFv:
 /* 802E5790 002E15D0  DB C1 00 D0 */	stfd f30, 0xd0(r1)
 /* 802E5794 002E15D4  F3 C1 00 D8 */	psq_st f30, 0xd8(r1), 0, qr0
 /* 802E5798 002E15D8  39 61 00 D0 */	addi r11, r1, 0xd0
-/* 802E579C 002E15DC  4B D2 1B A9 */	bl lbl_80007344
+/* 802E579C 002E15DC  4B D2 1B A9 */	bl _savegpr_29
 /* 802E57A0 002E15E0  7C 7F 1B 78 */	mr r31, r3
 /* 802E57A4 002E15E4  4B E1 B0 3D */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 802E57A8 002E15E8  4B FA 28 DD */	bl param__Q43scn4step5enemy5EnemyCFv
@@ -612,7 +612,7 @@ lbl_802E5D18:
 /* 802E5D28 002E1B68  13 C1 00 0C */	psq_lx f30, r1, r0, 0, qr0
 /* 802E5D2C 002E1B6C  CB C1 00 D0 */	lfd f30, 0xd0(r1)
 /* 802E5D30 002E1B70  39 61 00 D0 */	addi r11, r1, 0xd0
-/* 802E5D34 002E1B74  4B D2 16 5D */	bl lbl_80007390
+/* 802E5D34 002E1B74  4B D2 16 5D */	bl _restgpr_29
 /* 802E5D38 002E1B78  80 01 00 F4 */	lwz r0, 0xf4(r1)
 /* 802E5D3C 002E1B7C  7C 08 03 A6 */	mtlr r0
 /* 802E5D40 002E1B80  38 21 00 F0 */	addi r1, r1, 0xf0

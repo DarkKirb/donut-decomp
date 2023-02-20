@@ -336,7 +336,7 @@ procFixPos__Q53scn4step4boss10creditmeta14StateGlideAwayFv:
 /* 8024A930 00246770  DB E1 00 B0 */	stfd f31, 0xb0(r1)
 /* 8024A934 00246774  F3 E1 00 B8 */	psq_st f31, 0xb8(r1), 0, qr0
 /* 8024A938 00246778  39 61 00 B0 */	addi r11, r1, 0xb0
-/* 8024A93C 0024677C  4B DB CA 09 */	bl lbl_80007344
+/* 8024A93C 0024677C  4B DB CA 09 */	bl _savegpr_29
 /* 8024A940 00246780  7C 7F 1B 78 */	mr r31, r3
 /* 8024A944 00246784  4B EB 5E 9D */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 8024A948 00246788  4B FE 25 C9 */	bl param__Q43scn4step4boss4BossCFv
@@ -492,7 +492,7 @@ lbl_8024AB84:
 /* 8024AB88 002469C8  13 E1 00 0C */	psq_lx f31, r1, r0, 0, qr0
 /* 8024AB8C 002469CC  CB E1 00 B0 */	lfd f31, 0xb0(r1)
 /* 8024AB90 002469D0  39 61 00 B0 */	addi r11, r1, 0xb0
-/* 8024AB94 002469D4  4B DB C7 FD */	bl lbl_80007390
+/* 8024AB94 002469D4  4B DB C7 FD */	bl _restgpr_29
 /* 8024AB98 002469D8  80 01 00 C4 */	lwz r0, 0xc4(r1)
 /* 8024AB9C 002469DC  7C 08 03 A6 */	mtlr r0
 /* 8024ABA0 002469E0  38 21 00 C0 */	addi r1, r1, 0xc0

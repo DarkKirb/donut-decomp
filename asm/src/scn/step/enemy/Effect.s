@@ -7,7 +7,7 @@ __ct__Q43scn4step5enemy6EffectFRQ43scn4step5enemy5Enemy:
 /* 802846F4 00280534  7C 08 02 A6 */	mflr r0
 /* 802846F8 00280538  90 01 00 24 */	stw r0, 0x24(r1)
 /* 802846FC 0028053C  39 61 00 20 */	addi r11, r1, 0x20
-/* 80284700 00280540  4B D8 2C 45 */	bl lbl_80007344
+/* 80284700 00280540  4B D8 2C 45 */	bl _savegpr_29
 /* 80284704 00280544  7C 7D 1B 78 */	mr r29, r3
 /* 80284708 00280548  7C 9E 23 78 */	mr r30, r4
 /* 8028470C 0028054C  90 83 00 00 */	stw r4, 0x0(r3)
@@ -64,7 +64,7 @@ __ct__Q43scn4step5enemy6EffectFRQ43scn4step5enemy5Enemy:
 /* 802847D8 00280618  4B FE 9B 61 */	bl changeLayer__Q43scn4step5chara6EffectFQ43scn4step4core13DrawLayerKind
 /* 802847DC 0028061C  7F A3 EB 78 */	mr r3, r29
 /* 802847E0 00280620  39 61 00 20 */	addi r11, r1, 0x20
-/* 802847E4 00280624  4B D8 2B AD */	bl lbl_80007390
+/* 802847E4 00280624  4B D8 2B AD */	bl _restgpr_29
 /* 802847E8 00280628  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802847EC 0028062C  7C 08 03 A6 */	mtlr r0
 /* 802847F0 00280630  38 21 00 20 */	addi r1, r1, 0x20

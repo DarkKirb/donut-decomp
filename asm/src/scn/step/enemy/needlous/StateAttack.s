@@ -101,7 +101,7 @@ procMove__Q53scn4step5enemy8needlous11StateAttackFv:
 /* 802C6428 002C2268  7C 08 02 A6 */	mflr r0
 /* 802C642C 002C226C  90 01 00 24 */	stw r0, 0x24(r1)
 /* 802C6430 002C2270  39 61 00 20 */	addi r11, r1, 0x20
-/* 802C6434 002C2274  4B D4 0F 0D */	bl lbl_80007340
+/* 802C6434 002C2274  4B D4 0F 0D */	bl _savegpr_28
 /* 802C6438 002C2278  7C 7C 1B 78 */	mr r28, r3
 /* 802C643C 002C227C  4B E3 A3 A5 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 802C6440 002C2280  4B FC 1C 45 */	bl param__Q43scn4step5enemy5EnemyCFv
@@ -140,7 +140,7 @@ lbl_802C6490:
 /* 802C64BC 002C22FC  7F A3 EB 78 */	mr r3, r29
 /* 802C64C0 002C2300  4B EC FD 31 */	bl setWriteEnable__Q23gfx19GXFifoMemoryManagerFv
 /* 802C64C4 002C2304  39 61 00 20 */	addi r11, r1, 0x20
-/* 802C64C8 002C2308  4B D4 0E C5 */	bl lbl_8000738C
+/* 802C64C8 002C2308  4B D4 0E C5 */	bl _restgpr_28
 /* 802C64CC 002C230C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802C64D0 002C2310  7C 08 03 A6 */	mtlr r0
 /* 802C64D4 002C2314  38 21 00 20 */	addi r1, r1, 0x20
@@ -154,7 +154,7 @@ procFixPos__Q53scn4step5enemy8needlous11StateAttackFv:
 /* 802C64E8 002C2328  DB E1 00 50 */	stfd f31, 0x50(r1)
 /* 802C64EC 002C232C  F3 E1 00 58 */	psq_st f31, 0x58(r1), 0, qr0
 /* 802C64F0 002C2330  39 61 00 50 */	addi r11, r1, 0x50
-/* 802C64F4 002C2334  4B D4 0E 51 */	bl lbl_80007344
+/* 802C64F4 002C2334  4B D4 0E 51 */	bl _savegpr_29
 /* 802C64F8 002C2338  7C 7D 1B 78 */	mr r29, r3
 /* 802C64FC 002C233C  4B E3 A2 E5 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 802C6500 002C2340  4B FC 1B 85 */	bl param__Q43scn4step5enemy5EnemyCFv
@@ -309,7 +309,7 @@ lbl_802C6708:
 /* 802C670C 002C254C  13 E1 00 0C */	psq_lx f31, r1, r0, 0, qr0
 /* 802C6710 002C2550  CB E1 00 50 */	lfd f31, 0x50(r1)
 /* 802C6714 002C2554  39 61 00 50 */	addi r11, r1, 0x50
-/* 802C6718 002C2558  4B D4 0C 79 */	bl lbl_80007390
+/* 802C6718 002C2558  4B D4 0C 79 */	bl _restgpr_29
 /* 802C671C 002C255C  80 01 00 64 */	lwz r0, 0x64(r1)
 /* 802C6720 002C2560  7C 08 03 A6 */	mtlr r0
 /* 802C6724 002C2564  38 21 00 60 */	addi r1, r1, 0x60

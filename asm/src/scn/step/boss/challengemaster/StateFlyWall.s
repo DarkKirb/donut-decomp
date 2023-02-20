@@ -66,7 +66,7 @@ __dt__Q53scn4step4boss15challengemaster12StateFlyWallFv:
 /* 802402D0 0023C110  7C 08 02 A6 */	mflr r0
 /* 802402D4 0023C114  90 01 00 24 */	stw r0, 0x24(r1)
 /* 802402D8 0023C118  39 61 00 20 */	addi r11, r1, 0x20
-/* 802402DC 0023C11C  4B DC 70 69 */	bl lbl_80007344
+/* 802402DC 0023C11C  4B DC 70 69 */	bl _savegpr_29
 /* 802402E0 0023C120  7C 7D 1B 78 */	mr r29, r3
 /* 802402E4 0023C124  7C 9E 23 78 */	mr r30, r4
 /* 802402E8 0023C128  2C 03 00 00 */	cmpwi r3, 0x0
@@ -100,7 +100,7 @@ __dt__Q53scn4step4boss15challengemaster12StateFlyWallFv:
 lbl_80240354:
 /* 80240354 0023C194  7F A3 EB 78 */	mr r3, r29
 /* 80240358 0023C198  39 61 00 20 */	addi r11, r1, 0x20
-/* 8024035C 0023C19C  4B DC 70 35 */	bl lbl_80007390
+/* 8024035C 0023C19C  4B DC 70 35 */	bl _restgpr_29
 /* 80240360 0023C1A0  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80240364 0023C1A4  7C 08 03 A6 */	mtlr r0
 /* 80240368 0023C1A8  38 21 00 20 */	addi r1, r1, 0x20

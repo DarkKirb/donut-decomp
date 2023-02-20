@@ -7,7 +7,7 @@ __ct__Q33scn14challengetitle9TitleInfoFRQ33scn14challengetitle9Component:
 /* 801EFDEC 001EBC2C  7C 08 02 A6 */	mflr r0
 /* 801EFDF0 001EBC30  90 01 01 A4 */	stw r0, 0x1a4(r1)
 /* 801EFDF4 001EBC34  39 61 01 A0 */	addi r11, r1, 0x1a0
-/* 801EFDF8 001EBC38  4B E1 75 49 */	bl lbl_80007340
+/* 801EFDF8 001EBC38  4B E1 75 49 */	bl _savegpr_28
 /* 801EFDFC 001EBC3C  7C 7C 1B 78 */	mr r28, r3
 /* 801EFE00 001EBC40  7C 9D 23 78 */	mr r29, r4
 /* 801EFE04 001EBC44  3C A0 80 46 */	lis r5, "@52920"@ha
@@ -118,7 +118,7 @@ __ct__Q33scn14challengetitle9TitleInfoFRQ33scn14challengetitle9Component:
 /* 801EFFA8 001EBDE8  4B F8 82 79 */	bl __dt__Q23lyt12PaneAccessorFv
 /* 801EFFAC 001EBDEC  7F 83 E3 78 */	mr r3, r28
 /* 801EFFB0 001EBDF0  39 61 01 A0 */	addi r11, r1, 0x1a0
-/* 801EFFB4 001EBDF4  4B E1 73 D9 */	bl lbl_8000738C
+/* 801EFFB4 001EBDF4  4B E1 73 D9 */	bl _restgpr_28
 /* 801EFFB8 001EBDF8  80 01 01 A4 */	lwz r0, 0x1a4(r1)
 /* 801EFFBC 001EBDFC  7C 08 03 A6 */	mtlr r0
 /* 801EFFC0 001EBE00  38 21 01 A0 */	addi r1, r1, 0x1a0
@@ -347,7 +347,7 @@ updatePushText__Q33scn14challengetitle9TitleInfoFv:
 /* 801F02C4 001EC104  DB E1 00 70 */	stfd f31, 0x70(r1)
 /* 801F02C8 001EC108  F3 E1 00 78 */	psq_st f31, 0x78(r1), 0, qr0
 /* 801F02CC 001EC10C  39 61 00 70 */	addi r11, r1, 0x70
-/* 801F02D0 001EC110  4B E1 70 75 */	bl lbl_80007344
+/* 801F02D0 001EC110  4B E1 70 75 */	bl _savegpr_29
 /* 801F02D4 001EC114  7C 7D 1B 78 */	mr r29, r3
 /* 801F02D8 001EC118  3C 60 80 46 */	lis r3, "@52920"@ha
 /* 801F02DC 001EC11C  3B E3 EE 88 */	addi r31, r3, "@52920"@l
@@ -451,7 +451,7 @@ lbl_801F03C8:
 /* 801F043C 001EC27C  13 E1 00 0C */	psq_lx f31, r1, r0, 0, qr0
 /* 801F0440 001EC280  CB E1 00 70 */	lfd f31, 0x70(r1)
 /* 801F0444 001EC284  39 61 00 70 */	addi r11, r1, 0x70
-/* 801F0448 001EC288  4B E1 6F 49 */	bl lbl_80007390
+/* 801F0448 001EC288  4B E1 6F 49 */	bl _restgpr_29
 /* 801F044C 001EC28C  80 01 00 84 */	lwz r0, 0x84(r1)
 /* 801F0450 001EC290  7C 08 03 A6 */	mtlr r0
 /* 801F0454 001EC294  38 21 00 80 */	addi r1, r1, 0x80

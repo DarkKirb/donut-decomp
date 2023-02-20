@@ -7,7 +7,7 @@ __ct__Q53scn4step5enemy6damage16StateDeadExtremeFPQ43scn4step5enemy5EnemyUl:
 /* 802AA524 002A6364  7C 08 02 A6 */	mflr r0
 /* 802AA528 002A6368  90 01 00 34 */	stw r0, 0x34(r1)
 /* 802AA52C 002A636C  39 61 00 30 */	addi r11, r1, 0x30
-/* 802AA530 002A6370  4B D5 CE 15 */	bl lbl_80007344
+/* 802AA530 002A6370  4B D5 CE 15 */	bl _savegpr_29
 /* 802AA534 002A6374  7C 7D 1B 78 */	mr r29, r3
 /* 802AA538 002A6378  7C BE 2B 78 */	mr r30, r5
 /* 802AA53C 002A637C  4B FE 38 89 */	bl __ct__Q43scn4step5enemy9StateBaseFPQ43scn4step5enemy5Enemy
@@ -96,7 +96,7 @@ lbl_802AA644:
 lbl_802AA674:
 /* 802AA674 002A64B4  7F A3 EB 78 */	mr r3, r29
 /* 802AA678 002A64B8  39 61 00 30 */	addi r11, r1, 0x30
-/* 802AA67C 002A64BC  4B D5 CD 15 */	bl lbl_80007390
+/* 802AA67C 002A64BC  4B D5 CD 15 */	bl _restgpr_29
 /* 802AA680 002A64C0  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 802AA684 002A64C4  7C 08 03 A6 */	mtlr r0
 /* 802AA688 002A64C8  38 21 00 30 */	addi r1, r1, 0x30

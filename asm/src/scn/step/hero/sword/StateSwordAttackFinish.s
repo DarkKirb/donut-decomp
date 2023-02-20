@@ -7,7 +7,7 @@ TryToChangeState__Q53scn4step4hero5sword22StateSwordAttackFinishFPQ43scn4step4he
 /* 80386C0C 00382A4C  7C 08 02 A6 */	mflr r0
 /* 80386C10 00382A50  90 01 00 24 */	stw r0, 0x24(r1)
 /* 80386C14 00382A54  39 61 00 20 */	addi r11, r1, 0x20
-/* 80386C18 00382A58  4B C8 07 2D */	bl lbl_80007344
+/* 80386C18 00382A58  4B C8 07 2D */	bl _savegpr_29
 /* 80386C1C 00382A5C  7C 7D 1B 78 */	mr r29, r3
 /* 80386C20 00382A60  4B FB 96 DD */	bl footState__Q43scn4step4hero4HeroFv
 /* 80386C24 00382A64  4B DF AA B1 */	bl dataType__Q36effect6detail10GenContextCFv
@@ -49,7 +49,7 @@ lbl_80386CA0:
 .global lbl_80386CA4
 lbl_80386CA4:
 /* 80386CA4 00382AE4  39 61 00 20 */	addi r11, r1, 0x20
-/* 80386CA8 00382AE8  4B C8 06 E9 */	bl lbl_80007390
+/* 80386CA8 00382AE8  4B C8 06 E9 */	bl _restgpr_29
 /* 80386CAC 00382AEC  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80386CB0 00382AF0  7C 08 03 A6 */	mtlr r0
 /* 80386CB4 00382AF4  38 21 00 20 */	addi r1, r1, 0x20
@@ -96,7 +96,7 @@ procAnim__Q53scn4step4hero5sword22StateSwordAttackFinishFv:
 /* 80386D38 00382B78  DB E1 00 20 */	stfd f31, 0x20(r1)
 /* 80386D3C 00382B7C  F3 E1 00 28 */	psq_st f31, 0x28(r1), 0, qr0
 /* 80386D40 00382B80  39 61 00 20 */	addi r11, r1, 0x20
-/* 80386D44 00382B84  4B C8 06 01 */	bl lbl_80007344
+/* 80386D44 00382B84  4B C8 06 01 */	bl _savegpr_29
 /* 80386D48 00382B88  7C 7D 1B 78 */	mr r29, r3
 /* 80386D4C 00382B8C  4B D7 9A 95 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 80386D50 00382B90  4B FB 95 8D */	bl param__Q43scn4step4hero4HeroFv
@@ -154,7 +154,7 @@ lbl_80386E04:
 /* 80386E08 00382C48  13 E1 00 0C */	psq_lx f31, r1, r0, 0, qr0
 /* 80386E0C 00382C4C  CB E1 00 20 */	lfd f31, 0x20(r1)
 /* 80386E10 00382C50  39 61 00 20 */	addi r11, r1, 0x20
-/* 80386E14 00382C54  4B C8 05 7D */	bl lbl_80007390
+/* 80386E14 00382C54  4B C8 05 7D */	bl _restgpr_29
 /* 80386E18 00382C58  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 80386E1C 00382C5C  7C 08 03 A6 */	mtlr r0
 /* 80386E20 00382C60  38 21 00 30 */	addi r1, r1, 0x30
@@ -178,7 +178,7 @@ procFixPos__Q53scn4step4hero5sword22StateSwordAttackFinishFv:
 /* 80386E50 00382C90  7C 08 02 A6 */	mflr r0
 /* 80386E54 00382C94  90 01 00 54 */	stw r0, 0x54(r1)
 /* 80386E58 00382C98  39 61 00 50 */	addi r11, r1, 0x50
-/* 80386E5C 00382C9C  4B C8 04 E9 */	bl lbl_80007344
+/* 80386E5C 00382C9C  4B C8 04 E9 */	bl _savegpr_29
 /* 80386E60 00382CA0  7C 7D 1B 78 */	mr r29, r3
 /* 80386E64 00382CA4  4B D7 99 7D */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 80386E68 00382CA8  4B FB 94 D5 */	bl mapColl__Q43scn4step4hero4HeroFv
@@ -254,7 +254,7 @@ lbl_80386F6C:
 .global lbl_80386F70
 lbl_80386F70:
 /* 80386F70 00382DB0  39 61 00 50 */	addi r11, r1, 0x50
-/* 80386F74 00382DB4  4B C8 04 1D */	bl lbl_80007390
+/* 80386F74 00382DB4  4B C8 04 1D */	bl _restgpr_29
 /* 80386F78 00382DB8  80 01 00 54 */	lwz r0, 0x54(r1)
 /* 80386F7C 00382DBC  7C 08 03 A6 */	mtlr r0
 /* 80386F80 00382DC0  38 21 00 50 */	addi r1, r1, 0x50

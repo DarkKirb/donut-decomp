@@ -7,7 +7,7 @@ TryToChangeState__Q53scn4step4hero4wing9StateTossFPQ43scn4step4hero4Hero:
 /* 80399FB0 00395DF0  7C 08 02 A6 */	mflr r0
 /* 80399FB4 00395DF4  90 01 00 34 */	stw r0, 0x34(r1)
 /* 80399FB8 00395DF8  39 61 00 30 */	addi r11, r1, 0x30
-/* 80399FBC 00395DFC  4B C6 D3 89 */	bl lbl_80007344
+/* 80399FBC 00395DFC  4B C6 D3 89 */	bl _savegpr_29
 /* 80399FC0 00395E00  7C 7D 1B 78 */	mr r29, r3
 /* 80399FC4 00395E04  4B FA 63 31 */	bl target__Q43scn4step4hero4HeroFv
 /* 80399FC8 00395E08  4B DE 77 0D */	bl dataType__Q36effect6detail10GenContextCFv
@@ -67,7 +67,7 @@ lbl_8039A07C:
 .global lbl_8039A080
 lbl_8039A080:
 /* 8039A080 00395EC0  39 61 00 30 */	addi r11, r1, 0x30
-/* 8039A084 00395EC4  4B C6 D3 0D */	bl lbl_80007390
+/* 8039A084 00395EC4  4B C6 D3 0D */	bl _restgpr_29
 /* 8039A088 00395EC8  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 8039A08C 00395ECC  7C 08 03 A6 */	mtlr r0
 /* 8039A090 00395ED0  38 21 00 30 */	addi r1, r1, 0x30
@@ -166,7 +166,7 @@ procAnim__Q53scn4step4hero4wing9StateTossFv:
 /* 8039A1D4 00396014  7C 08 02 A6 */	mflr r0
 /* 8039A1D8 00396018  90 01 00 24 */	stw r0, 0x24(r1)
 /* 8039A1DC 0039601C  39 61 00 20 */	addi r11, r1, 0x20
-/* 8039A1E0 00396020  4B C6 D1 65 */	bl lbl_80007344
+/* 8039A1E0 00396020  4B C6 D1 65 */	bl _savegpr_29
 /* 8039A1E4 00396024  7C 7D 1B 78 */	mr r29, r3
 /* 8039A1E8 00396028  88 03 00 0D */	lbz r0, 0xd(r3)
 /* 8039A1EC 0039602C  2C 00 00 00 */	cmpwi r0, 0x0
@@ -252,7 +252,7 @@ lbl_8039A300:
 .global lbl_8039A304
 lbl_8039A304:
 /* 8039A304 00396144  39 61 00 20 */	addi r11, r1, 0x20
-/* 8039A308 00396148  4B C6 D0 89 */	bl lbl_80007390
+/* 8039A308 00396148  4B C6 D0 89 */	bl _restgpr_29
 /* 8039A30C 0039614C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8039A310 00396150  7C 08 03 A6 */	mtlr r0
 /* 8039A314 00396154  38 21 00 20 */	addi r1, r1, 0x20

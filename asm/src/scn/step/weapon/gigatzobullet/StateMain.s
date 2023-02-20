@@ -11,7 +11,7 @@ __ct__Q53scn4step6weapon13gigatzobullet9StateMainFPQ43scn4step6weapon6Weapon:
 /* 803E050C 003DC34C  DB C1 00 50 */	stfd f30, 0x50(r1)
 /* 803E0510 003DC350  F3 C1 00 58 */	psq_st f30, 0x58(r1), 0, qr0
 /* 803E0514 003DC354  39 61 00 50 */	addi r11, r1, 0x50
-/* 803E0518 003DC358  4B C2 6E 29 */	bl lbl_80007340
+/* 803E0518 003DC358  4B C2 6E 29 */	bl _savegpr_28
 /* 803E051C 003DC35C  7C 7E 1B 78 */	mr r30, r3
 /* 803E0520 003DC360  7C 9C 23 78 */	mr r28, r4
 /* 803E0524 003DC364  4B FF 84 1D */	bl __ct__Q43scn4step6weapon9StateBaseFPQ43scn4step6weapon6Weapon
@@ -323,7 +323,7 @@ lbl_803E0920:
 /* 803E0934 003DC774  13 C1 00 0C */	psq_lx f30, r1, r0, 0, qr0
 /* 803E0938 003DC778  CB C1 00 50 */	lfd f30, 0x50(r1)
 /* 803E093C 003DC77C  39 61 00 50 */	addi r11, r1, 0x50
-/* 803E0940 003DC780  4B C2 6A 4D */	bl lbl_8000738C
+/* 803E0940 003DC780  4B C2 6A 4D */	bl _restgpr_28
 /* 803E0944 003DC784  80 01 00 74 */	lwz r0, 0x74(r1)
 /* 803E0948 003DC788  7C 08 03 A6 */	mtlr r0
 /* 803E094C 003DC78C  38 21 00 70 */	addi r1, r1, 0x70
@@ -597,7 +597,7 @@ procObjCollReact__Q53scn4step6weapon13gigatzobullet9StateMainFv:
 /* 803E0CFC 003DCB3C  7C 08 02 A6 */	mflr r0
 /* 803E0D00 003DCB40  90 01 00 54 */	stw r0, 0x54(r1)
 /* 803E0D04 003DCB44  39 61 00 50 */	addi r11, r1, 0x50
-/* 803E0D08 003DCB48  4B C2 66 31 */	bl lbl_80007338
+/* 803E0D08 003DCB48  4B C2 66 31 */	bl _savegpr_26
 /* 803E0D0C 003DCB4C  7C 7A 1B 78 */	mr r26, r3
 /* 803E0D10 003DCB50  4B D1 FA D1 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 803E0D14 003DCB54  4B FF A3 C5 */	bl param__Q43scn4step6weapon6WeaponCFv
@@ -778,7 +778,7 @@ lbl_803E0F50:
 .global lbl_803E0F80
 lbl_803E0F80:
 /* 803E0F80 003DCDC0  39 61 00 50 */	addi r11, r1, 0x50
-/* 803E0F84 003DCDC4  4B C2 64 01 */	bl lbl_80007384
+/* 803E0F84 003DCDC4  4B C2 64 01 */	bl _restgpr_26
 /* 803E0F88 003DCDC8  80 01 00 54 */	lwz r0, 0x54(r1)
 /* 803E0F8C 003DCDCC  7C 08 03 A6 */	mtlr r0
 /* 803E0F90 003DCDD0  38 21 00 50 */	addi r1, r1, 0x50
@@ -1717,7 +1717,7 @@ setExplode__Q53scn4step6weapon13gigatzobullet9StateMainFv:
 /* 803E1C44 003DDA84  7C 08 02 A6 */	mflr r0
 /* 803E1C48 003DDA88  90 01 00 34 */	stw r0, 0x34(r1)
 /* 803E1C4C 003DDA8C  39 61 00 30 */	addi r11, r1, 0x30
-/* 803E1C50 003DDA90  4B C2 56 F5 */	bl lbl_80007344
+/* 803E1C50 003DDA90  4B C2 56 F5 */	bl _savegpr_29
 /* 803E1C54 003DDA94  7C 7D 1B 78 */	mr r29, r3
 /* 803E1C58 003DDA98  3B C0 00 EC */	li r30, 0xec
 /* 803E1C5C 003DDA9C  80 03 00 48 */	lwz r0, 0x48(r3)
@@ -1792,7 +1792,7 @@ lbl_803E1D04:
 /* 803E1D50 003DDB90  38 80 00 03 */	li r4, 0x3
 /* 803E1D54 003DDB94  4B E8 1E E5 */	bl reqQuake__Q43scn4step6camera16CameraControllerFQ43scn4step6camera9QuakeKind
 /* 803E1D58 003DDB98  39 61 00 30 */	addi r11, r1, 0x30
-/* 803E1D5C 003DDB9C  4B C2 56 35 */	bl lbl_80007390
+/* 803E1D5C 003DDB9C  4B C2 56 35 */	bl _restgpr_29
 /* 803E1D60 003DDBA0  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 803E1D64 003DDBA4  7C 08 03 A6 */	mtlr r0
 /* 803E1D68 003DDBA8  38 21 00 30 */	addi r1, r1, 0x30

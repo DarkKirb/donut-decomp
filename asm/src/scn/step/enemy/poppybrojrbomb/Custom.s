@@ -35,7 +35,7 @@ onDamaged__Q53scn4step5enemy14poppybrojrbomb6CustomFv:
 /* 802D292C 002CE76C  7C 08 02 A6 */	mflr r0
 /* 802D2930 002CE770  90 01 00 A4 */	stw r0, 0xa4(r1)
 /* 802D2934 002CE774  39 61 00 A0 */	addi r11, r1, 0xa0
-/* 802D2938 002CE778  4B D3 4A 0D */	bl lbl_80007344
+/* 802D2938 002CE778  4B D3 4A 0D */	bl _savegpr_29
 /* 802D293C 002CE77C  7C 7D 1B 78 */	mr r29, r3
 /* 802D2940 002CE780  4B E2 DE A1 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 802D2944 002CE784  4B FB 57 D1 */	bl damageInfo__Q43scn4step5enemy5EnemyFv
@@ -182,7 +182,7 @@ lbl_802D2B1C:
 .global lbl_802D2B38
 lbl_802D2B38:
 /* 802D2B38 002CE978  39 61 00 A0 */	addi r11, r1, 0xa0
-/* 802D2B3C 002CE97C  4B D3 48 55 */	bl lbl_80007390
+/* 802D2B3C 002CE97C  4B D3 48 55 */	bl _restgpr_29
 /* 802D2B40 002CE980  80 01 00 A4 */	lwz r0, 0xa4(r1)
 /* 802D2B44 002CE984  7C 08 03 A6 */	mtlr r0
 /* 802D2B48 002CE988  38 21 00 A0 */	addi r1, r1, 0xa0

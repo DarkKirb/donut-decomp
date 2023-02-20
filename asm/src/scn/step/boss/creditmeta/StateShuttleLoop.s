@@ -7,7 +7,7 @@ TryToChangeState__Q53scn4step4boss10creditmeta16StateShuttleLoopFPQ43scn4step4bo
 /* 8024AF18 00246D58  7C 08 02 A6 */	mflr r0
 /* 8024AF1C 00246D5C  90 01 00 24 */	stw r0, 0x24(r1)
 /* 8024AF20 00246D60  39 61 00 20 */	addi r11, r1, 0x20
-/* 8024AF24 00246D64  4B DB C4 21 */	bl lbl_80007344
+/* 8024AF24 00246D64  4B DB C4 21 */	bl _savegpr_29
 /* 8024AF28 00246D68  7C 7D 1B 78 */	mr r29, r3
 /* 8024AF2C 00246D6C  4B E2 A8 05 */	bl GKI_getfirst
 /* 8024AF30 00246D70  4B FD 5F 39 */	bl bossManager__Q33scn4step9ComponentFv
@@ -40,7 +40,7 @@ lbl_8024AF88:
 .global lbl_8024AF8C
 lbl_8024AF8C:
 /* 8024AF8C 00246DCC  39 61 00 20 */	addi r11, r1, 0x20
-/* 8024AF90 00246DD0  4B DB C4 01 */	bl lbl_80007390
+/* 8024AF90 00246DD0  4B DB C4 01 */	bl _restgpr_29
 /* 8024AF94 00246DD4  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8024AF98 00246DD8  7C 08 03 A6 */	mtlr r0
 /* 8024AF9C 00246DDC  38 21 00 20 */	addi r1, r1, 0x20
@@ -139,7 +139,7 @@ procAnim__Q53scn4step4boss10creditmeta16StateShuttleLoopFv:
 /* 8024B0E8 00246F28  7C 08 02 A6 */	mflr r0
 /* 8024B0EC 00246F2C  90 01 00 24 */	stw r0, 0x24(r1)
 /* 8024B0F0 00246F30  39 61 00 20 */	addi r11, r1, 0x20
-/* 8024B0F4 00246F34  4B DB C2 51 */	bl lbl_80007344
+/* 8024B0F4 00246F34  4B DB C2 51 */	bl _savegpr_29
 /* 8024B0F8 00246F38  7C 7D 1B 78 */	mr r29, r3
 /* 8024B0FC 00246F3C  4B EB 56 E5 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 8024B100 00246F40  4B FE 1E 39 */	bl model__Q43scn4step4boss4BossFv
@@ -170,7 +170,7 @@ lbl_8024B158:
 .global lbl_8024B15C
 lbl_8024B15C:
 /* 8024B15C 00246F9C  39 61 00 20 */	addi r11, r1, 0x20
-/* 8024B160 00246FA0  4B DB C2 31 */	bl lbl_80007390
+/* 8024B160 00246FA0  4B DB C2 31 */	bl _restgpr_29
 /* 8024B164 00246FA4  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8024B168 00246FA8  7C 08 03 A6 */	mtlr r0
 /* 8024B16C 00246FAC  38 21 00 20 */	addi r1, r1, 0x20

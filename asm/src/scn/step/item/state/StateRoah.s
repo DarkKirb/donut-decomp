@@ -7,7 +7,7 @@ __ct__Q53scn4step4item5state9StateRoahFPQ43scn4step4item4Item:
 /* 803C865C 003C449C  7C 08 02 A6 */	mflr r0
 /* 803C8660 003C44A0  90 01 00 34 */	stw r0, 0x34(r1)
 /* 803C8664 003C44A4  39 61 00 30 */	addi r11, r1, 0x30
-/* 803C8668 003C44A8  4B C3 EC DD */	bl lbl_80007344
+/* 803C8668 003C44A8  4B C3 EC DD */	bl _savegpr_29
 /* 803C866C 003C44AC  7C 7D 1B 78 */	mr r29, r3
 /* 803C8670 003C44B0  7C 9E 23 78 */	mr r30, r4
 /* 803C8674 003C44B4  4B FF CB 75 */	bl __ct__Q43scn4step4item9StateBaseFPQ43scn4step4item4Item
@@ -58,7 +58,7 @@ __ct__Q53scn4step4item5state9StateRoahFPQ43scn4step4item4Item:
 /* 803C8728 003C4568  D0 1D 00 10 */	stfs f0, 0x10(r29)
 /* 803C872C 003C456C  7F A3 EB 78 */	mr r3, r29
 /* 803C8730 003C4570  39 61 00 30 */	addi r11, r1, 0x30
-/* 803C8734 003C4574  4B C3 EC 5D */	bl lbl_80007390
+/* 803C8734 003C4574  4B C3 EC 5D */	bl _restgpr_29
 /* 803C8738 003C4578  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 803C873C 003C457C  7C 08 03 A6 */	mtlr r0
 /* 803C8740 003C4580  38 21 00 30 */	addi r1, r1, 0x30

@@ -7,7 +7,7 @@ __ct__Q53scn4step4hero6common19StateClearDanceWalkFPQ43scn4step4hero4HeroUl:
 /* 8035FBB0 0035B9F0  7C 08 02 A6 */	mflr r0
 /* 8035FBB4 0035B9F4  90 01 00 34 */	stw r0, 0x34(r1)
 /* 8035FBB8 0035B9F8  39 61 00 30 */	addi r11, r1, 0x30
-/* 8035FBBC 0035B9FC  4B CA 77 85 */	bl lbl_80007340
+/* 8035FBBC 0035B9FC  4B CA 77 85 */	bl _savegpr_28
 /* 8035FBC0 0035BA00  7C 7C 1B 78 */	mr r28, r3
 /* 8035FBC4 0035BA04  7C 9D 23 78 */	mr r29, r4
 /* 8035FBC8 0035BA08  7C BE 2B 78 */	mr r30, r5
@@ -98,7 +98,7 @@ __ct__Q53scn4step4hero6common19StateClearDanceWalkFPQ43scn4step4hero4HeroUl:
 /* 8035FD1C 0035BB5C  90 7C 00 14 */	stw r3, 0x14(r28)
 /* 8035FD20 0035BB60  7F 83 E3 78 */	mr r3, r28
 /* 8035FD24 0035BB64  39 61 00 30 */	addi r11, r1, 0x30
-/* 8035FD28 0035BB68  4B CA 76 65 */	bl lbl_8000738C
+/* 8035FD28 0035BB68  4B CA 76 65 */	bl _restgpr_28
 /* 8035FD2C 0035BB6C  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 8035FD30 0035BB70  7C 08 03 A6 */	mtlr r0
 /* 8035FD34 0035BB74  38 21 00 30 */	addi r1, r1, 0x30
@@ -131,7 +131,7 @@ procMove__Q53scn4step4hero6common19StateClearDanceWalkFv:
 /* 8035FD7C 0035BBBC  7C 08 02 A6 */	mflr r0
 /* 8035FD80 0035BBC0  90 01 00 34 */	stw r0, 0x34(r1)
 /* 8035FD84 0035BBC4  39 61 00 30 */	addi r11, r1, 0x30
-/* 8035FD88 0035BBC8  4B CA 75 BD */	bl lbl_80007344
+/* 8035FD88 0035BBC8  4B CA 75 BD */	bl _savegpr_29
 /* 8035FD8C 0035BBCC  7C 7D 1B 78 */	mr r29, r3
 /* 8035FD90 0035BBD0  4B DA 0A 51 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 8035FD94 0035BBD4  4B FE 05 71 */	bl location__Q43scn4step4hero4HeroCFv
@@ -183,7 +183,7 @@ procMove__Q53scn4step4hero6common19StateClearDanceWalkFv:
 /* 8035FE4C 0035BC8C  38 81 00 14 */	addi r4, r1, 0x14
 /* 8035FE50 0035BC90  4B F0 F8 6D */	bl setPos__Q43scn4step5chara8LocationFRCQ33hel4math7Vector3
 /* 8035FE54 0035BC94  39 61 00 30 */	addi r11, r1, 0x30
-/* 8035FE58 0035BC98  4B CA 75 39 */	bl lbl_80007390
+/* 8035FE58 0035BC98  4B CA 75 39 */	bl _restgpr_29
 /* 8035FE5C 0035BC9C  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 8035FE60 0035BCA0  7C 08 03 A6 */	mtlr r0
 /* 8035FE64 0035BCA4  38 21 00 30 */	addi r1, r1, 0x30
@@ -197,7 +197,7 @@ procFixPos__Q53scn4step4hero6common19StateClearDanceWalkFv:
 /* 8035FE78 0035BCB8  DB E1 00 40 */	stfd f31, 0x40(r1)
 /* 8035FE7C 0035BCBC  F3 E1 00 48 */	psq_st f31, 0x48(r1), 0, qr0
 /* 8035FE80 0035BCC0  39 61 00 40 */	addi r11, r1, 0x40
-/* 8035FE84 0035BCC4  4B CA 74 C1 */	bl lbl_80007344
+/* 8035FE84 0035BCC4  4B CA 74 C1 */	bl _savegpr_29
 /* 8035FE88 0035BCC8  7C 7F 1B 78 */	mr r31, r3
 /* 8035FE8C 0035BCCC  4B DA 09 55 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 8035FE90 0035BCD0  4B FE 04 75 */	bl location__Q43scn4step4hero4HeroCFv
@@ -264,7 +264,7 @@ lbl_8035FF68:
 /* 8035FF6C 0035BDAC  13 E1 00 0C */	psq_lx f31, r1, r0, 0, qr0
 /* 8035FF70 0035BDB0  CB E1 00 40 */	lfd f31, 0x40(r1)
 /* 8035FF74 0035BDB4  39 61 00 40 */	addi r11, r1, 0x40
-/* 8035FF78 0035BDB8  4B CA 74 19 */	bl lbl_80007390
+/* 8035FF78 0035BDB8  4B CA 74 19 */	bl _restgpr_29
 /* 8035FF7C 0035BDBC  80 01 00 54 */	lwz r0, 0x54(r1)
 /* 8035FF80 0035BDC0  7C 08 03 A6 */	mtlr r0
 /* 8035FF84 0035BDC4  38 21 00 50 */	addi r1, r1, 0x50

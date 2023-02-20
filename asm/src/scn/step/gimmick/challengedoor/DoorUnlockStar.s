@@ -7,7 +7,7 @@ __ct__Q53scn4step7gimmick13challengedoor14DoorUnlockStarFRQ33scn4step9Component:
 /* 80309D14 00305B54  7C 08 02 A6 */	mflr r0
 /* 80309D18 00305B58  90 01 00 24 */	stw r0, 0x24(r1)
 /* 80309D1C 00305B5C  39 61 00 20 */	addi r11, r1, 0x20
-/* 80309D20 00305B60  4B CF D6 25 */	bl lbl_80007344
+/* 80309D20 00305B60  4B CF D6 25 */	bl _savegpr_29
 /* 80309D24 00305B64  7C 7D 1B 78 */	mr r29, r3
 /* 80309D28 00305B68  7C 9E 23 78 */	mr r30, r4
 /* 80309D2C 00305B6C  90 83 00 00 */	stw r4, 0x0(r3)
@@ -71,7 +71,7 @@ lbl_80309DEC:
 /* 80309E0C 00305C4C  48 00 00 21 */	bl "__dt__Q33hel6common55ScopedPtr<Q53scn4step7gimmick11areamapdemo10CameraCtrl>Fv"
 /* 80309E10 00305C50  7F A3 EB 78 */	mr r3, r29
 /* 80309E14 00305C54  39 61 00 20 */	addi r11, r1, 0x20
-/* 80309E18 00305C58  4B CF D5 79 */	bl lbl_80007390
+/* 80309E18 00305C58  4B CF D5 79 */	bl _restgpr_29
 /* 80309E1C 00305C5C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80309E20 00305C60  7C 08 03 A6 */	mtlr r0
 /* 80309E24 00305C64  38 21 00 20 */	addi r1, r1, 0x20
@@ -153,7 +153,7 @@ setPos__Q53scn4step7gimmick13challengedoor14DoorUnlockStarFRCQ33hel4math7Vector2
 /* 80309F2C 00305D6C  7C 08 02 A6 */	mflr r0
 /* 80309F30 00305D70  90 01 00 54 */	stw r0, 0x54(r1)
 /* 80309F34 00305D74  39 61 00 50 */	addi r11, r1, 0x50
-/* 80309F38 00305D78  4B CF D4 05 */	bl lbl_8000733C
+/* 80309F38 00305D78  4B CF D4 05 */	bl _savegpr_27
 /* 80309F3C 00305D7C  7C 7B 1B 78 */	mr r27, r3
 /* 80309F40 00305D80  7C 9C 23 78 */	mr r28, r4
 /* 80309F44 00305D84  7C BD 2B 78 */	mr r29, r5
@@ -197,7 +197,7 @@ setPos__Q53scn4step7gimmick13challengedoor14DoorUnlockStarFRCQ33hel4math7Vector2
 /* 80309FDC 00305E1C  38 81 00 20 */	addi r4, r1, 0x20
 /* 80309FE0 00305E20  4B FF 08 61 */	bl addSubTarget__Q53scn4step7gimmick11areamapdemo10CameraCtrlFRCQ63scn4step7gimmick11areamapdemo10CameraCtrl13SubTargetInfo
 /* 80309FE4 00305E24  39 61 00 50 */	addi r11, r1, 0x50
-/* 80309FE8 00305E28  4B CF D3 A1 */	bl lbl_80007388
+/* 80309FE8 00305E28  4B CF D3 A1 */	bl _restgpr_27
 /* 80309FEC 00305E2C  80 01 00 54 */	lwz r0, 0x54(r1)
 /* 80309FF0 00305E30  7C 08 03 A6 */	mtlr r0
 /* 80309FF4 00305E34  38 21 00 50 */	addi r1, r1, 0x50

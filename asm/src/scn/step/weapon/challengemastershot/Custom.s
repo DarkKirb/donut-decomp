@@ -37,7 +37,7 @@ onInit__Q53scn4step6weapon19challengemastershot6CustomFv:
 /* 803F0284 003EC0C4  7C 08 02 A6 */	mflr r0
 /* 803F0288 003EC0C8  90 01 00 24 */	stw r0, 0x24(r1)
 /* 803F028C 003EC0CC  39 61 00 20 */	addi r11, r1, 0x20
-/* 803F0290 003EC0D0  4B C1 70 B5 */	bl lbl_80007344
+/* 803F0290 003EC0D0  4B C1 70 B5 */	bl _savegpr_29
 /* 803F0294 003EC0D4  7C 7D 1B 78 */	mr r29, r3
 /* 803F0298 003EC0D8  4B D1 05 49 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 803F029C 003EC0DC  7C 7E 1B 78 */	mr r30, r3
@@ -61,7 +61,7 @@ lbl_803F02DC:
 /* 803F02DC 003EC11C  93 BF 00 0C */	stw r29, 0xc(r31)
 /* 803F02E0 003EC120  38 60 00 01 */	li r3, 0x1
 /* 803F02E4 003EC124  39 61 00 20 */	addi r11, r1, 0x20
-/* 803F02E8 003EC128  4B C1 70 A9 */	bl lbl_80007390
+/* 803F02E8 003EC128  4B C1 70 A9 */	bl _restgpr_29
 /* 803F02EC 003EC12C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803F02F0 003EC130  7C 08 03 A6 */	mtlr r0
 /* 803F02F4 003EC134  38 21 00 20 */	addi r1, r1, 0x20
@@ -137,7 +137,7 @@ attack__Q53scn4step6weapon19challengemastershot6CustomFv:
 /* 803F03F0 003EC230  7C 08 02 A6 */	mflr r0
 /* 803F03F4 003EC234  90 01 00 24 */	stw r0, 0x24(r1)
 /* 803F03F8 003EC238  39 61 00 20 */	addi r11, r1, 0x20
-/* 803F03FC 003EC23C  4B C1 6F 49 */	bl lbl_80007344
+/* 803F03FC 003EC23C  4B C1 6F 49 */	bl _savegpr_29
 /* 803F0400 003EC240  7C 7D 1B 78 */	mr r29, r3
 /* 803F0404 003EC244  4B D1 03 DD */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 803F0408 003EC248  7C 7E 1B 78 */	mr r30, r3
@@ -160,7 +160,7 @@ attack__Q53scn4step6weapon19challengemastershot6CustomFv:
 lbl_803F0448:
 /* 803F0448 003EC288  93 BF 00 0C */	stw r29, 0xc(r31)
 /* 803F044C 003EC28C  39 61 00 20 */	addi r11, r1, 0x20
-/* 803F0450 003EC290  4B C1 6F 41 */	bl lbl_80007390
+/* 803F0450 003EC290  4B C1 6F 41 */	bl _restgpr_29
 /* 803F0454 003EC294  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803F0458 003EC298  7C 08 03 A6 */	mtlr r0
 /* 803F045C 003EC29C  38 21 00 20 */	addi r1, r1, 0x20

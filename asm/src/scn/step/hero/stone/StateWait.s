@@ -127,7 +127,7 @@ procFixPos__Q53scn4step4hero5stone9StateWaitFv:
 /* 80391A04 0038D844  7C 08 02 A6 */	mflr r0
 /* 80391A08 0038D848  90 01 00 24 */	stw r0, 0x24(r1)
 /* 80391A0C 0038D84C  39 61 00 20 */	addi r11, r1, 0x20
-/* 80391A10 0038D850  4B C7 59 31 */	bl lbl_80007340
+/* 80391A10 0038D850  4B C7 59 31 */	bl _savegpr_28
 /* 80391A14 0038D854  7C 7C 1B 78 */	mr r28, r3
 /* 80391A18 0038D858  4B D6 ED C9 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 80391A1C 0038D85C  4B FC 55 7D */	bl MapCollReactDefaultAction__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Hero
@@ -204,7 +204,7 @@ lbl_80391B1C:
 .global lbl_80391B20
 lbl_80391B20:
 /* 80391B20 0038D960  39 61 00 20 */	addi r11, r1, 0x20
-/* 80391B24 0038D964  4B C7 58 69 */	bl lbl_8000738C
+/* 80391B24 0038D964  4B C7 58 69 */	bl _restgpr_28
 /* 80391B28 0038D968  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80391B2C 0038D96C  7C 08 03 A6 */	mtlr r0
 /* 80391B30 0038D970  38 21 00 20 */	addi r1, r1, 0x20

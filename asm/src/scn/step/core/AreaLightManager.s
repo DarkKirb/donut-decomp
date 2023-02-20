@@ -7,7 +7,7 @@ lightInfo__Q43scn4step4core16AreaLightManagerCFRCQ33hel4math7Vector2:
 /* 80273ED8 0026FD18  7C 08 02 A6 */	mflr r0
 /* 80273EDC 0026FD1C  90 01 00 24 */	stw r0, 0x24(r1)
 /* 80273EE0 0026FD20  39 61 00 20 */	addi r11, r1, 0x20
-/* 80273EE4 0026FD24  4B D9 34 61 */	bl lbl_80007344
+/* 80273EE4 0026FD24  4B D9 34 61 */	bl _savegpr_29
 /* 80273EE8 0026FD28  7C 7D 1B 78 */	mr r29, r3
 /* 80273EEC 0026FD2C  7C 9E 23 78 */	mr r30, r4
 /* 80273EF0 0026FD30  7C BF 2B 78 */	mr r31, r5
@@ -17,7 +17,7 @@ lightInfo__Q43scn4step4core16AreaLightManagerCFRCQ33hel4math7Vector2:
 /* 80273F00 0026FD40  7F E5 FB 78 */	mr r5, r31
 /* 80273F04 0026FD44  48 00 00 45 */	bl setupDirectional__Q43scn4step4core16AreaLightManagerCFRQ43scn4step4core13AreaLightInfoRCQ33hel4math7Vector2
 /* 80273F08 0026FD48  39 61 00 20 */	addi r11, r1, 0x20
-/* 80273F0C 0026FD4C  4B D9 34 85 */	bl lbl_80007390
+/* 80273F0C 0026FD4C  4B D9 34 85 */	bl _restgpr_29
 /* 80273F10 0026FD50  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80273F14 0026FD54  7C 08 03 A6 */	mtlr r0
 /* 80273F18 0026FD58  38 21 00 20 */	addi r1, r1, 0x20

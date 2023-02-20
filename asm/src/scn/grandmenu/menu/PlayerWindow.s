@@ -7,7 +7,7 @@ __ct__Q43scn9grandmenu4menu12PlayerWindowFRQ33scn9grandmenu9ComponentRQ23mem10IA
 /* 803F7BA4 003F39E4  7C 08 02 A6 */	mflr r0
 /* 803F7BA8 003F39E8  90 01 01 14 */	stw r0, 0x114(r1)
 /* 803F7BAC 003F39EC  39 61 01 10 */	addi r11, r1, 0x110
-/* 803F7BB0 003F39F0  4B C0 F7 91 */	bl lbl_80007340
+/* 803F7BB0 003F39F0  4B C0 F7 91 */	bl _savegpr_28
 /* 803F7BB4 003F39F4  7C 7C 1B 78 */	mr r28, r3
 /* 803F7BB8 003F39F8  7C BD 2B 78 */	mr r29, r5
 /* 803F7BBC 003F39FC  7C DE 33 78 */	mr r30, r6
@@ -78,7 +78,7 @@ __ct__Q43scn9grandmenu4menu12PlayerWindowFRQ33scn9grandmenu9ComponentRQ23mem10IA
 /* 803F7CC0 003F3B00  4B DB 54 41 */	bl start__Q23lyt6LayoutFb
 /* 803F7CC4 003F3B04  7F 83 E3 78 */	mr r3, r28
 /* 803F7CC8 003F3B08  39 61 01 10 */	addi r11, r1, 0x110
-/* 803F7CCC 003F3B0C  4B C0 F6 C1 */	bl lbl_8000738C
+/* 803F7CCC 003F3B0C  4B C0 F6 C1 */	bl _restgpr_28
 /* 803F7CD0 003F3B10  80 01 01 14 */	lwz r0, 0x114(r1)
 /* 803F7CD4 003F3B14  7C 08 03 A6 */	mtlr r0
 /* 803F7CD8 003F3B18  38 21 01 10 */	addi r1, r1, 0x110

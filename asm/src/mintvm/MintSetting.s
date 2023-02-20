@@ -254,7 +254,7 @@ messageCallbackDefault__Q26mintvm11MintSettingFQ26mintvm11MintMsgKindPCcPCc:
 /* 801C5E30 001C1C70  7C 08 02 A6 */	mflr r0
 /* 801C5E34 001C1C74  90 01 00 24 */	stw r0, 0x24(r1)
 /* 801C5E38 001C1C78  39 61 00 20 */	addi r11, r1, 0x20
-/* 801C5E3C 001C1C7C  4B E4 15 05 */	bl lbl_80007340
+/* 801C5E3C 001C1C7C  4B E4 15 05 */	bl _savegpr_28
 /* 801C5E40 001C1C80  7C 9C 23 78 */	mr r28, r4
 /* 801C5E44 001C1C84  7C BD 2B 78 */	mr r29, r5
 /* 801C5E48 001C1C88  3C 80 80 46 */	lis r4, "@49262_8045BA30"@ha
@@ -280,7 +280,7 @@ messageCallbackDefault__Q26mintvm11MintSettingFQ26mintvm11MintMsgKindPCcPCc:
 /* 801C5E98 001C1CD8  4C C6 31 82 */	crclr 4*cr1+eq
 /* 801C5E9C 001C1CDC  4B E4 74 9D */	bl printf
 /* 801C5EA0 001C1CE0  39 61 00 20 */	addi r11, r1, 0x20
-/* 801C5EA4 001C1CE4  4B E4 14 E9 */	bl lbl_8000738C
+/* 801C5EA4 001C1CE4  4B E4 14 E9 */	bl _restgpr_28
 /* 801C5EA8 001C1CE8  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 801C5EAC 001C1CEC  7C 08 03 A6 */	mtlr r0
 /* 801C5EB0 001C1CF0  38 21 00 20 */	addi r1, r1, 0x20

@@ -7,7 +7,7 @@ __ct__Q53scn4step4hero12interference16StateKissReceiveFPQ43scn4step4hero4HeroQ33
 /* 803729D0 0036E810  7C 08 02 A6 */	mflr r0
 /* 803729D4 0036E814  90 01 00 34 */	stw r0, 0x34(r1)
 /* 803729D8 0036E818  39 61 00 30 */	addi r11, r1, 0x30
-/* 803729DC 0036E81C  4B C9 49 65 */	bl lbl_80007340
+/* 803729DC 0036E81C  4B C9 49 65 */	bl _savegpr_28
 /* 803729E0 0036E820  7C 7C 1B 78 */	mr r28, r3
 /* 803729E4 0036E824  7C BD 2B 78 */	mr r29, r5
 /* 803729E8 0036E828  7C DE 33 78 */	mr r30, r6
@@ -102,7 +102,7 @@ __ct__Q53scn4step4hero12interference16StateKissReceiveFPQ43scn4step4hero4HeroQ33
 /* 80372B4C 0036E98C  4B F0 EA 7D */	bl setCanCapture__Q43scn4step5enemy15CaptureReceiverFb
 /* 80372B50 0036E990  7F 83 E3 78 */	mr r3, r28
 /* 80372B54 0036E994  39 61 00 30 */	addi r11, r1, 0x30
-/* 80372B58 0036E998  4B C9 48 35 */	bl lbl_8000738C
+/* 80372B58 0036E998  4B C9 48 35 */	bl _restgpr_28
 /* 80372B5C 0036E99C  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 80372B60 0036E9A0  7C 08 03 A6 */	mtlr r0
 /* 80372B64 0036E9A4  38 21 00 30 */	addi r1, r1, 0x30
@@ -114,7 +114,7 @@ __dt__Q53scn4step4hero12interference16StateKissReceiveFv:
 /* 80372B70 0036E9B0  7C 08 02 A6 */	mflr r0
 /* 80372B74 0036E9B4  90 01 00 24 */	stw r0, 0x24(r1)
 /* 80372B78 0036E9B8  39 61 00 20 */	addi r11, r1, 0x20
-/* 80372B7C 0036E9BC  4B C9 47 C9 */	bl lbl_80007344
+/* 80372B7C 0036E9BC  4B C9 47 C9 */	bl _savegpr_29
 /* 80372B80 0036E9C0  7C 7D 1B 78 */	mr r29, r3
 /* 80372B84 0036E9C4  7C 9E 23 78 */	mr r30, r4
 /* 80372B88 0036E9C8  2C 03 00 00 */	cmpwi r3, 0x0
@@ -190,7 +190,7 @@ lbl_80372C6C:
 lbl_80372C8C:
 /* 80372C8C 0036EACC  7F A3 EB 78 */	mr r3, r29
 /* 80372C90 0036EAD0  39 61 00 20 */	addi r11, r1, 0x20
-/* 80372C94 0036EAD4  4B C9 46 FD */	bl lbl_80007390
+/* 80372C94 0036EAD4  4B C9 46 FD */	bl _restgpr_29
 /* 80372C98 0036EAD8  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80372C9C 0036EADC  7C 08 03 A6 */	mtlr r0
 /* 80372CA0 0036EAE0  38 21 00 20 */	addi r1, r1, 0x20
@@ -204,7 +204,7 @@ procAnim__Q53scn4step4hero12interference16StateKissReceiveFv:
 /* 80372CB4 0036EAF4  DB E1 00 80 */	stfd f31, 0x80(r1)
 /* 80372CB8 0036EAF8  F3 E1 00 88 */	psq_st f31, 0x88(r1), 0, qr0
 /* 80372CBC 0036EAFC  39 61 00 80 */	addi r11, r1, 0x80
-/* 80372CC0 0036EB00  4B C9 46 85 */	bl lbl_80007344
+/* 80372CC0 0036EB00  4B C9 46 85 */	bl _savegpr_29
 /* 80372CC4 0036EB04  7C 7F 1B 78 */	mr r31, r3
 /* 80372CC8 0036EB08  3C 00 43 30 */	lis r0, 0x4330
 /* 80372CCC 0036EB0C  90 01 00 60 */	stw r0, 0x60(r1)
@@ -440,7 +440,7 @@ lbl_80373010:
 /* 80373014 0036EE54  13 E1 00 0C */	psq_lx f31, r1, r0, 0, qr0
 /* 80373018 0036EE58  CB E1 00 80 */	lfd f31, 0x80(r1)
 /* 8037301C 0036EE5C  39 61 00 80 */	addi r11, r1, 0x80
-/* 80373020 0036EE60  4B C9 43 71 */	bl lbl_80007390
+/* 80373020 0036EE60  4B C9 43 71 */	bl _restgpr_29
 /* 80373024 0036EE64  80 01 00 94 */	lwz r0, 0x94(r1)
 /* 80373028 0036EE68  7C 08 03 A6 */	mtlr r0
 /* 8037302C 0036EE6C  38 21 00 90 */	addi r1, r1, 0x90

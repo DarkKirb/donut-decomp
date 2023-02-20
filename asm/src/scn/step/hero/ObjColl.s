@@ -7,7 +7,7 @@ __ct__Q43scn4step4hero7ObjCollFRQ43scn4step4hero4HeroRQ23mem10IAllocator:
 /* 8034F470 0034B2B0  7C 08 02 A6 */	mflr r0
 /* 8034F474 0034B2B4  90 01 00 24 */	stw r0, 0x24(r1)
 /* 8034F478 0034B2B8  39 61 00 20 */	addi r11, r1, 0x20
-/* 8034F47C 0034B2BC  4B CB 7E C9 */	bl lbl_80007344
+/* 8034F47C 0034B2BC  4B CB 7E C9 */	bl _savegpr_29
 /* 8034F480 0034B2C0  7C 7D 1B 78 */	mr r29, r3
 /* 8034F484 0034B2C4  7C BE 2B 78 */	mr r30, r5
 /* 8034F488 0034B2C8  90 83 00 00 */	stw r4, 0x0(r3)
@@ -38,7 +38,7 @@ __ct__Q43scn4step4hero7ObjCollFRQ43scn4step4hero4HeroRQ23mem10IAllocator:
 /* 8034F4EC 0034B32C  98 1D 0E 78 */	stb r0, 0xe78(r29)
 /* 8034F4F0 0034B330  7F A3 EB 78 */	mr r3, r29
 /* 8034F4F4 0034B334  39 61 00 20 */	addi r11, r1, 0x20
-/* 8034F4F8 0034B338  4B CB 7E 99 */	bl lbl_80007390
+/* 8034F4F8 0034B338  4B CB 7E 99 */	bl _restgpr_29
 /* 8034F4FC 0034B33C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8034F500 0034B340  7C 08 03 A6 */	mtlr r0
 /* 8034F504 0034B344  38 21 00 20 */	addi r1, r1, 0x20

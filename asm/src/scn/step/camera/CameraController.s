@@ -7,7 +7,7 @@ __ct__Q43scn4step6camera16CameraControllerFRQ33scn4step9Component:
 /* 80263098 0025EED8  7C 08 02 A6 */	mflr r0
 /* 8026309C 0025EEDC  90 01 00 24 */	stw r0, 0x24(r1)
 /* 802630A0 0025EEE0  39 61 00 20 */	addi r11, r1, 0x20
-/* 802630A4 0025EEE4  4B DA 42 A1 */	bl lbl_80007344
+/* 802630A4 0025EEE4  4B DA 42 A1 */	bl _savegpr_29
 /* 802630A8 0025EEE8  7C 7D 1B 78 */	mr r29, r3
 /* 802630AC 0025EEEC  7C 9E 23 78 */	mr r30, r4
 /* 802630B0 0025EEF0  90 83 00 00 */	stw r4, 0x0(r3)
@@ -120,7 +120,7 @@ lbl_8026323C:
 /* 80263244 0025F084  48 00 30 39 */	bl Register__Q43scn4step6camera20MintCameraControllerFRQ43scn4step6camera16CameraController
 /* 80263248 0025F088  7F A3 EB 78 */	mr r3, r29
 /* 8026324C 0025F08C  39 61 00 20 */	addi r11, r1, 0x20
-/* 80263250 0025F090  4B DA 41 41 */	bl lbl_80007390
+/* 80263250 0025F090  4B DA 41 41 */	bl _restgpr_29
 /* 80263254 0025F094  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80263258 0025F098  7C 08 03 A6 */	mtlr r0
 /* 8026325C 0025F09C  38 21 00 20 */	addi r1, r1, 0x20
@@ -347,7 +347,7 @@ update__Q43scn4step6camera16CameraControllerFv:
 /* 80263558 0025F398  DB A1 00 40 */	stfd f29, 0x40(r1)
 /* 8026355C 0025F39C  F3 A1 00 48 */	psq_st f29, 0x48(r1), 0, qr0
 /* 80263560 0025F3A0  39 61 00 40 */	addi r11, r1, 0x40
-/* 80263564 0025F3A4  4B DA 3D E1 */	bl lbl_80007344
+/* 80263564 0025F3A4  4B DA 3D E1 */	bl _savegpr_29
 /* 80263568 0025F3A8  7C 7F 1B 78 */	mr r31, r3
 /* 8026356C 0025F3AC  88 03 08 BD */	lbz r0, 0x8bd(r3)
 /* 80263570 0025F3B0  2C 00 00 00 */	cmpwi r0, 0x0
@@ -772,7 +772,7 @@ lbl_80263AE0:
 /* 80263B14 0025F954  13 A1 00 0C */	psq_lx f29, r1, r0, 0, qr0
 /* 80263B18 0025F958  CB A1 00 40 */	lfd f29, 0x40(r1)
 /* 80263B1C 0025F95C  39 61 00 40 */	addi r11, r1, 0x40
-/* 80263B20 0025F960  4B DA 38 71 */	bl lbl_80007390
+/* 80263B20 0025F960  4B DA 38 71 */	bl _restgpr_29
 /* 80263B24 0025F964  80 01 00 74 */	lwz r0, 0x74(r1)
 /* 80263B28 0025F968  7C 08 03 A6 */	mtlr r0
 /* 80263B2C 0025F96C  38 21 00 70 */	addi r1, r1, 0x70
@@ -950,7 +950,7 @@ getDefaultWorldRect__Q43scn4step6camera16CameraControllerFv:
 /* 80263D44 0025FB84  DB E1 00 50 */	stfd f31, 0x50(r1)
 /* 80263D48 0025FB88  F3 E1 00 58 */	psq_st f31, 0x58(r1), 0, qr0
 /* 80263D4C 0025FB8C  39 61 00 50 */	addi r11, r1, 0x50
-/* 80263D50 0025FB90  4B DA 35 F5 */	bl lbl_80007344
+/* 80263D50 0025FB90  4B DA 35 F5 */	bl _savegpr_29
 /* 80263D54 0025FB94  7C 7D 1B 78 */	mr r29, r3
 /* 80263D58 0025FB98  7C 9E 23 78 */	mr r30, r4
 /* 80263D5C 0025FB9C  38 64 00 04 */	addi r3, r4, 0x4
@@ -1028,7 +1028,7 @@ lbl_80263E40:
 /* 80263E74 0025FCB4  13 E1 00 0C */	psq_lx f31, r1, r0, 0, qr0
 /* 80263E78 0025FCB8  CB E1 00 50 */	lfd f31, 0x50(r1)
 /* 80263E7C 0025FCBC  39 61 00 50 */	addi r11, r1, 0x50
-/* 80263E80 0025FCC0  4B DA 35 11 */	bl lbl_80007390
+/* 80263E80 0025FCC0  4B DA 35 11 */	bl _restgpr_29
 /* 80263E84 0025FCC4  80 01 00 64 */	lwz r0, 0x64(r1)
 /* 80263E88 0025FCC8  7C 08 03 A6 */	mtlr r0
 /* 80263E8C 0025FCCC  38 21 00 60 */	addi r1, r1, 0x60

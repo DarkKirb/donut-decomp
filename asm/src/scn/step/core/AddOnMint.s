@@ -117,7 +117,7 @@ Func__Q53scn4step4core9AddOnMint33Mint_Request_0$51904AddOnMint_cppFRQ26mintvm13
 /* 80273B64 0026F9A4  7C 08 02 A6 */	mflr r0
 /* 80273B68 0026F9A8  90 01 00 24 */	stw r0, 0x24(r1)
 /* 80273B6C 0026F9AC  39 61 00 20 */	addi r11, r1, 0x20
-/* 80273B70 0026F9B0  4B D9 37 D5 */	bl lbl_80007344
+/* 80273B70 0026F9B0  4B D9 37 D5 */	bl _savegpr_29
 /* 80273B74 0026F9B4  7C 7D 1B 78 */	mr r29, r3
 /* 80273B78 0026F9B8  38 80 00 02 */	li r4, 0x2
 /* 80273B7C 0026F9BC  4B F2 4A 79 */	bl internal_getArg_addr__Q26mintvm13MintFuncProxyCFUi
@@ -134,7 +134,7 @@ Func__Q53scn4step4core9AddOnMint33Mint_Request_0$51904AddOnMint_cppFRQ26mintvm13
 /* 80273BA8 0026F9E8  88 BE 00 00 */	lbz r5, 0x0(r30)
 /* 80273BAC 0026F9EC  48 00 3A 15 */	bl Request__Q43scn4step4core17MintBGMControllerFiib
 /* 80273BB0 0026F9F0  39 61 00 20 */	addi r11, r1, 0x20
-/* 80273BB4 0026F9F4  4B D9 37 DD */	bl lbl_80007390
+/* 80273BB4 0026F9F4  4B D9 37 DD */	bl _restgpr_29
 /* 80273BB8 0026F9F8  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80273BBC 0026F9FC  7C 08 03 A6 */	mtlr r0
 /* 80273BC0 0026FA00  38 21 00 20 */	addi r1, r1, 0x20

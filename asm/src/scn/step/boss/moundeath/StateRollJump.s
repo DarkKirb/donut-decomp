@@ -7,7 +7,7 @@ __ct__Q53scn4step4boss9moundeath13StateRollJumpFPQ43scn4step4boss4BossQ63scn4ste
 /* 80257A64 002538A4  7C 08 02 A6 */	mflr r0
 /* 80257A68 002538A8  90 01 00 44 */	stw r0, 0x44(r1)
 /* 80257A6C 002538AC  39 61 00 40 */	addi r11, r1, 0x40
-/* 80257A70 002538B0  4B DA F8 D5 */	bl lbl_80007344
+/* 80257A70 002538B0  4B DA F8 D5 */	bl _savegpr_29
 /* 80257A74 002538B4  7C 7D 1B 78 */	mr r29, r3
 /* 80257A78 002538B8  7C BE 2B 78 */	mr r30, r5
 /* 80257A7C 002538BC  4B FD CA 65 */	bl __ct__Q43scn4step4boss9StateBaseFPQ43scn4step4boss4Boss
@@ -124,7 +124,7 @@ lbl_80257BF4:
 lbl_80257BFC:
 /* 80257BFC 00253A3C  7F A3 EB 78 */	mr r3, r29
 /* 80257C00 00253A40  39 61 00 40 */	addi r11, r1, 0x40
-/* 80257C04 00253A44  4B DA F7 8D */	bl lbl_80007390
+/* 80257C04 00253A44  4B DA F7 8D */	bl _restgpr_29
 /* 80257C08 00253A48  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 80257C0C 00253A4C  7C 08 03 A6 */	mtlr r0
 /* 80257C10 00253A50  38 21 00 40 */	addi r1, r1, 0x40

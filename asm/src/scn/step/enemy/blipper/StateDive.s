@@ -154,7 +154,7 @@ procFixPos__Q53scn4step5enemy7blipper9StateDiveFv:
 /* 8029A324 00296164  7C 08 02 A6 */	mflr r0
 /* 8029A328 00296168  90 01 00 F4 */	stw r0, 0xf4(r1)
 /* 8029A32C 0029616C  39 61 00 F0 */	addi r11, r1, 0xf0
-/* 8029A330 00296170  4B D6 D0 15 */	bl lbl_80007344
+/* 8029A330 00296170  4B D6 D0 15 */	bl _savegpr_29
 /* 8029A334 00296174  7C 7D 1B 78 */	mr r29, r3
 /* 8029A338 00296178  4B E6 64 A9 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 8029A33C 0029617C  4B FE DD C1 */	bl mapColl__Q43scn4step5enemy5EnemyFv
@@ -304,7 +304,7 @@ lbl_8029A528:
 /* 8029A54C 0029638C  38 81 00 50 */	addi r4, r1, 0x50
 /* 8029A550 00296390  4B FD 6D C9 */	bl setCustomMtx__Q43scn4step5chara5ModelFRCQ33hel4math8Matrix34
 /* 8029A554 00296394  39 61 00 F0 */	addi r11, r1, 0xf0
-/* 8029A558 00296398  4B D6 CE 39 */	bl lbl_80007390
+/* 8029A558 00296398  4B D6 CE 39 */	bl _restgpr_29
 /* 8029A55C 0029639C  80 01 00 F4 */	lwz r0, 0xf4(r1)
 /* 8029A560 002963A0  7C 08 03 A6 */	mtlr r0
 /* 8029A564 002963A4  38 21 00 F0 */	addi r1, r1, 0xf0

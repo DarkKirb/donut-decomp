@@ -19,7 +19,7 @@ update__Q53scn4step4boss15challengemaster11EmotionCtrlFv:
 /* 8023C468 002382A8  7C 08 02 A6 */	mflr r0
 /* 8023C46C 002382AC  90 01 00 24 */	stw r0, 0x24(r1)
 /* 8023C470 002382B0  39 61 00 20 */	addi r11, r1, 0x20
-/* 8023C474 002382B4  4B DC AE D1 */	bl lbl_80007344
+/* 8023C474 002382B4  4B DC AE D1 */	bl _savegpr_29
 /* 8023C478 002382B8  7C 7D 1B 78 */	mr r29, r3
 /* 8023C47C 002382BC  80 63 00 00 */	lwz r3, 0x0(r3)
 /* 8023C480 002382C0  4B FF 0B 69 */	bl custom__Q43scn4step4boss4BossFv
@@ -78,7 +78,7 @@ lbl_8023C524:
 .global lbl_8023C534
 lbl_8023C534:
 /* 8023C534 00238374  39 61 00 20 */	addi r11, r1, 0x20
-/* 8023C538 00238378  4B DC AE 59 */	bl lbl_80007390
+/* 8023C538 00238378  4B DC AE 59 */	bl _restgpr_29
 /* 8023C53C 0023837C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8023C540 00238380  7C 08 03 A6 */	mtlr r0
 /* 8023C544 00238384  38 21 00 20 */	addi r1, r1, 0x20

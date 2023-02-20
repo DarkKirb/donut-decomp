@@ -7,7 +7,7 @@ __ct__Q43scn4step4hero12CameraTargetFRQ43scn4step4hero4HeroRCQ33hel4math7Vector2
 /* 80330828 0032C668  7C 08 02 A6 */	mflr r0
 /* 8033082C 0032C66C  90 01 00 34 */	stw r0, 0x34(r1)
 /* 80330830 0032C670  39 61 00 30 */	addi r11, r1, 0x30
-/* 80330834 0032C674  4B CD 6B 0D */	bl lbl_80007340
+/* 80330834 0032C674  4B CD 6B 0D */	bl _savegpr_28
 /* 80330838 0032C678  7C 7C 1B 78 */	mr r28, r3
 /* 8033083C 0032C67C  7C 9E 23 78 */	mr r30, r4
 /* 80330840 0032C680  7C BD 2B 78 */	mr r29, r5
@@ -88,7 +88,7 @@ __ct__Q43scn4step4hero12CameraTargetFRQ43scn4step4hero4HeroRCQ33hel4math7Vector2
 /* 8033096C 0032C7AC  4B E1 AF FD */	bl __as__Q34nw4r4math5_VEC2FRCQ34nw4r4math5_VEC2
 /* 80330970 0032C7B0  7F 83 E3 78 */	mr r3, r28
 /* 80330974 0032C7B4  39 61 00 30 */	addi r11, r1, 0x30
-/* 80330978 0032C7B8  4B CD 6A 15 */	bl lbl_8000738C
+/* 80330978 0032C7B8  4B CD 6A 15 */	bl _restgpr_28
 /* 8033097C 0032C7BC  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 80330980 0032C7C0  7C 08 03 A6 */	mtlr r0
 /* 80330984 0032C7C4  38 21 00 30 */	addi r1, r1, 0x30
@@ -670,7 +670,7 @@ updateFrontViewOffs__Q43scn4step4hero12CameraTargetFv:
 /* 80331144 0032CF84  DB C1 00 80 */	stfd f30, 0x80(r1)
 /* 80331148 0032CF88  F3 C1 00 88 */	psq_st f30, 0x88(r1), 0, qr0
 /* 8033114C 0032CF8C  39 61 00 80 */	addi r11, r1, 0x80
-/* 80331150 0032CF90  4B CD 61 F5 */	bl lbl_80007344
+/* 80331150 0032CF90  4B CD 61 F5 */	bl _savegpr_29
 /* 80331154 0032CF94  7C 7F 1B 78 */	mr r31, r3
 /* 80331158 0032CF98  80 63 00 04 */	lwz r3, 0x4(r3)
 /* 8033115C 0032CF9C  48 00 F1 A9 */	bl location__Q43scn4step4hero4HeroCFv
@@ -922,7 +922,7 @@ lbl_8033148C:
 /* 8033149C 0032D2DC  13 C1 00 0C */	psq_lx f30, r1, r0, 0, qr0
 /* 803314A0 0032D2E0  CB C1 00 80 */	lfd f30, 0x80(r1)
 /* 803314A4 0032D2E4  39 61 00 80 */	addi r11, r1, 0x80
-/* 803314A8 0032D2E8  4B CD 5E E9 */	bl lbl_80007390
+/* 803314A8 0032D2E8  4B CD 5E E9 */	bl _restgpr_29
 /* 803314AC 0032D2EC  80 01 00 A4 */	lwz r0, 0xa4(r1)
 /* 803314B0 0032D2F0  7C 08 03 A6 */	mtlr r0
 /* 803314B4 0032D2F4  38 21 00 A0 */	addi r1, r1, 0xa0

@@ -197,7 +197,7 @@ isPlayerInArea__Q53scn4step5enemy5bowby6CustomFv:
 /* 8029E628 0029A468  DB E1 00 20 */	stfd f31, 0x20(r1)
 /* 8029E62C 0029A46C  F3 E1 00 28 */	psq_st f31, 0x28(r1), 0, qr0
 /* 8029E630 0029A470  39 61 00 20 */	addi r11, r1, 0x20
-/* 8029E634 0029A474  4B D6 8D 11 */	bl lbl_80007344
+/* 8029E634 0029A474  4B D6 8D 11 */	bl _savegpr_29
 /* 8029E638 0029A478  7C 7D 1B 78 */	mr r29, r3
 /* 8029E63C 0029A47C  4B E6 21 A5 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 8029E640 0029A480  4B FE 9A 45 */	bl param__Q43scn4step5enemy5EnemyCFv
@@ -283,7 +283,7 @@ lbl_8029E758:
 /* 8029E760 0029A5A0  13 E1 00 0C */	psq_lx f31, r1, r0, 0, qr0
 /* 8029E764 0029A5A4  CB E1 00 20 */	lfd f31, 0x20(r1)
 /* 8029E768 0029A5A8  39 61 00 20 */	addi r11, r1, 0x20
-/* 8029E76C 0029A5AC  4B D6 8C 25 */	bl lbl_80007390
+/* 8029E76C 0029A5AC  4B D6 8C 25 */	bl _restgpr_29
 /* 8029E770 0029A5B0  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 8029E774 0029A5B4  7C 08 03 A6 */	mtlr r0
 /* 8029E778 0029A5B8  38 21 00 30 */	addi r1, r1, 0x30

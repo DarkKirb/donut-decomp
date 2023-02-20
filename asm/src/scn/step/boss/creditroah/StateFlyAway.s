@@ -7,7 +7,7 @@ TryToChangeState__Q53scn4step4boss10creditroah12StateFlyAwayFPQ43scn4step4boss4B
 /* 8024BA74 002478B4  7C 08 02 A6 */	mflr r0
 /* 8024BA78 002478B8  90 01 00 24 */	stw r0, 0x24(r1)
 /* 8024BA7C 002478BC  39 61 00 20 */	addi r11, r1, 0x20
-/* 8024BA80 002478C0  4B DB B8 C5 */	bl lbl_80007344
+/* 8024BA80 002478C0  4B DB B8 C5 */	bl _savegpr_29
 /* 8024BA84 002478C4  7C 7D 1B 78 */	mr r29, r3
 /* 8024BA88 002478C8  4B E2 9C A9 */	bl GKI_getfirst
 /* 8024BA8C 002478CC  4B FD 53 DD */	bl bossManager__Q33scn4step9ComponentFv
@@ -40,7 +40,7 @@ lbl_8024BAE4:
 .global lbl_8024BAE8
 lbl_8024BAE8:
 /* 8024BAE8 00247928  39 61 00 20 */	addi r11, r1, 0x20
-/* 8024BAEC 0024792C  4B DB B8 A5 */	bl lbl_80007390
+/* 8024BAEC 0024792C  4B DB B8 A5 */	bl _restgpr_29
 /* 8024BAF0 00247930  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8024BAF4 00247934  7C 08 03 A6 */	mtlr r0
 /* 8024BAF8 00247938  38 21 00 20 */	addi r1, r1, 0x20
@@ -232,7 +232,7 @@ procFixPos__Q53scn4step4boss10creditroah12StateFlyAwayFv:
 /* 8024BD98 00247BD8  DB E1 00 40 */	stfd f31, 0x40(r1)
 /* 8024BD9C 00247BDC  F3 E1 00 48 */	psq_st f31, 0x48(r1), 0, qr0
 /* 8024BDA0 00247BE0  39 61 00 40 */	addi r11, r1, 0x40
-/* 8024BDA4 00247BE4  4B DB B5 A1 */	bl lbl_80007344
+/* 8024BDA4 00247BE4  4B DB B5 A1 */	bl _savegpr_29
 /* 8024BDA8 00247BE8  7C 7D 1B 78 */	mr r29, r3
 /* 8024BDAC 00247BEC  4B EB 4A 35 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 8024BDB0 00247BF0  4B FE 11 61 */	bl param__Q43scn4step4boss4BossCFv
@@ -335,7 +335,7 @@ lbl_8024BF18:
 /* 8024BF1C 00247D5C  13 E1 00 0C */	psq_lx f31, r1, r0, 0, qr0
 /* 8024BF20 00247D60  CB E1 00 40 */	lfd f31, 0x40(r1)
 /* 8024BF24 00247D64  39 61 00 40 */	addi r11, r1, 0x40
-/* 8024BF28 00247D68  4B DB B4 69 */	bl lbl_80007390
+/* 8024BF28 00247D68  4B DB B4 69 */	bl _restgpr_29
 /* 8024BF2C 00247D6C  80 01 00 54 */	lwz r0, 0x54(r1)
 /* 8024BF30 00247D70  7C 08 03 A6 */	mtlr r0
 /* 8024BF34 00247D74  38 21 00 50 */	addi r1, r1, 0x50

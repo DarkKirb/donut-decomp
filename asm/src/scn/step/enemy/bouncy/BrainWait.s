@@ -25,7 +25,7 @@ onStart__Q53scn4step5enemy6bouncy9BrainWaitFv:
 /* 8029CF80 00298DC0  7C 08 02 A6 */	mflr r0
 /* 8029CF84 00298DC4  90 01 00 24 */	stw r0, 0x24(r1)
 /* 8029CF88 00298DC8  39 61 00 20 */	addi r11, r1, 0x20
-/* 8029CF8C 00298DCC  4B D6 A3 B9 */	bl lbl_80007344
+/* 8029CF8C 00298DCC  4B D6 A3 B9 */	bl _savegpr_29
 /* 8029CF90 00298DD0  7C 7D 1B 78 */	mr r29, r3
 /* 8029CF94 00298DD4  4B E6 38 4D */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 8029CF98 00298DD8  7C 7E 1B 78 */	mr r30, r3
@@ -55,7 +55,7 @@ lbl_8029CFE0:
 /* 8029CFF0 00298E30  4B EF E3 AD */	bl resetSpeedH__Q24gobj4MoveFv
 /* 8029CFF4 00298E34  38 60 00 01 */	li r3, 0x1
 /* 8029CFF8 00298E38  39 61 00 20 */	addi r11, r1, 0x20
-/* 8029CFFC 00298E3C  4B D6 A3 95 */	bl lbl_80007390
+/* 8029CFFC 00298E3C  4B D6 A3 95 */	bl _restgpr_29
 /* 8029D000 00298E40  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8029D004 00298E44  7C 08 03 A6 */	mtlr r0
 /* 8029D008 00298E48  38 21 00 20 */	addi r1, r1, 0x20

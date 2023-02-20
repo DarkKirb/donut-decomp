@@ -7,7 +7,7 @@ TryToChangeState__Q53scn4step4hero4wing15StateDiveAttackFPQ43scn4step4hero4Hero:
 /* 80398070 00393EB0  7C 08 02 A6 */	mflr r0
 /* 80398074 00393EB4  90 01 00 24 */	stw r0, 0x24(r1)
 /* 80398078 00393EB8  39 61 00 20 */	addi r11, r1, 0x20
-/* 8039807C 00393EBC  4B C6 F2 C9 */	bl lbl_80007344
+/* 8039807C 00393EBC  4B C6 F2 C9 */	bl _savegpr_29
 /* 80398080 00393EC0  7C 7D 1B 78 */	mr r29, r3
 /* 80398084 00393EC4  4B FA 82 79 */	bl footState__Q43scn4step4hero4HeroFv
 /* 80398088 00393EC8  4B E0 1E 31 */	bl isAir__Q24gobj9FootStateCFv
@@ -55,7 +55,7 @@ lbl_8039811C:
 .global lbl_80398120
 lbl_80398120:
 /* 80398120 00393F60  39 61 00 20 */	addi r11, r1, 0x20
-/* 80398124 00393F64  4B C6 F2 6D */	bl lbl_80007390
+/* 80398124 00393F64  4B C6 F2 6D */	bl _restgpr_29
 /* 80398128 00393F68  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8039812C 00393F6C  7C 08 03 A6 */	mtlr r0
 /* 80398130 00393F70  38 21 00 20 */	addi r1, r1, 0x20
@@ -328,7 +328,7 @@ procFixPos__Q53scn4step4hero4wing15StateDiveAttackFv:
 /* 803984DC 0039431C  7C 08 02 A6 */	mflr r0
 /* 803984E0 00394320  90 01 00 54 */	stw r0, 0x54(r1)
 /* 803984E4 00394324  39 61 00 50 */	addi r11, r1, 0x50
-/* 803984E8 00394328  4B C6 EE 59 */	bl lbl_80007340
+/* 803984E8 00394328  4B C6 EE 59 */	bl _savegpr_28
 /* 803984EC 0039432C  7C 7F 1B 78 */	mr r31, r3
 /* 803984F0 00394330  4B D6 82 F1 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 803984F4 00394334  4B FA 7E 49 */	bl mapColl__Q43scn4step4hero4HeroFv
@@ -406,7 +406,7 @@ lbl_803985EC:
 .global lbl_8039860C
 lbl_8039860C:
 /* 8039860C 0039444C  39 61 00 50 */	addi r11, r1, 0x50
-/* 80398610 00394450  4B C6 ED 7D */	bl lbl_8000738C
+/* 80398610 00394450  4B C6 ED 7D */	bl _restgpr_28
 /* 80398614 00394454  80 01 00 54 */	lwz r0, 0x54(r1)
 /* 80398618 00394458  7C 08 03 A6 */	mtlr r0
 /* 8039861C 0039445C  38 21 00 50 */	addi r1, r1, 0x50

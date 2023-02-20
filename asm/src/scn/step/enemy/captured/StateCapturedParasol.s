@@ -115,7 +115,7 @@ procAnim__Q53scn4step5enemy8captured20StateCapturedParasolFv:
 /* 802A47CC 002A060C  DB C1 00 80 */	stfd f30, 0x80(r1)
 /* 802A47D0 002A0610  F3 C1 00 88 */	psq_st f30, 0x88(r1), 0, qr0
 /* 802A47D4 002A0614  39 61 00 80 */	addi r11, r1, 0x80
-/* 802A47D8 002A0618  4B D6 2B 5D */	bl lbl_80007334
+/* 802A47D8 002A0618  4B D6 2B 5D */	bl _savegpr_25
 /* 802A47DC 002A061C  7C 79 1B 78 */	mr r25, r3
 /* 802A47E0 002A0620  4B E5 C0 01 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 802A47E4 002A0624  4B FE 39 69 */	bl captureReceiver__Q43scn4step5enemy5EnemyFv
@@ -322,7 +322,7 @@ lbl_802A4AB0:
 /* 802A4AC0 002A0900  13 C1 00 0C */	psq_lx f30, r1, r0, 0, qr0
 /* 802A4AC4 002A0904  CB C1 00 80 */	lfd f30, 0x80(r1)
 /* 802A4AC8 002A0908  39 61 00 80 */	addi r11, r1, 0x80
-/* 802A4ACC 002A090C  4B D6 28 B5 */	bl lbl_80007380
+/* 802A4ACC 002A090C  4B D6 28 B5 */	bl _restgpr_25
 /* 802A4AD0 002A0910  80 01 00 A4 */	lwz r0, 0xa4(r1)
 /* 802A4AD4 002A0914  7C 08 03 A6 */	mtlr r0
 /* 802A4AD8 002A0918  38 21 00 A0 */	addi r1, r1, 0xa0

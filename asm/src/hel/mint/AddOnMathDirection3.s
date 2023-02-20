@@ -230,7 +230,7 @@ Func__Q43hel4mint19AddOnMathDirection342Mint_Create_0$53880AddOnMathDirection3_c
 /* 801A1268 0019D0A8  7C 08 02 A6 */	mflr r0
 /* 801A126C 0019D0AC  90 01 00 44 */	stw r0, 0x44(r1)
 /* 801A1270 0019D0B0  39 61 00 40 */	addi r11, r1, 0x40
-/* 801A1274 0019D0B4  4B E6 60 CD */	bl lbl_80007340
+/* 801A1274 0019D0B4  4B E6 60 CD */	bl _savegpr_28
 /* 801A1278 0019D0B8  7C 7C 1B 78 */	mr r28, r3
 /* 801A127C 0019D0BC  4B FF 72 A9 */	bl useRetVal__Q26mintvm13MintFuncProxyFv
 /* 801A1280 0019D0C0  7F 83 E3 78 */	mr r3, r28
@@ -261,7 +261,7 @@ Func__Q43hel4mint19AddOnMathDirection342Mint_Create_0$53880AddOnMathDirection3_c
 .global lbl_801A12E4
 lbl_801A12E4:
 /* 801A12E4 0019D124  39 61 00 40 */	addi r11, r1, 0x40
-/* 801A12E8 0019D128  4B E6 60 A5 */	bl lbl_8000738C
+/* 801A12E8 0019D128  4B E6 60 A5 */	bl _restgpr_28
 /* 801A12EC 0019D12C  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 801A12F0 0019D130  7C 08 03 A6 */	mtlr r0
 /* 801A12F4 0019D134  38 21 00 40 */	addi r1, r1, 0x40
@@ -694,7 +694,7 @@ Func__Q43hel4mint19AddOnMathDirection338Mint_Ctor$53830AddOnMathDirection3_cppFR
 /* 801A1810 0019D650  7C 08 02 A6 */	mflr r0
 /* 801A1814 0019D654  90 01 00 24 */	stw r0, 0x24(r1)
 /* 801A1818 0019D658  39 61 00 20 */	addi r11, r1, 0x20
-/* 801A181C 0019D65C  4B E6 5B 25 */	bl lbl_80007340
+/* 801A181C 0019D65C  4B E6 5B 25 */	bl _savegpr_28
 /* 801A1820 0019D660  7C 7C 1B 78 */	mr r28, r3
 /* 801A1824 0019D664  4B FF 73 71 */	bl useThis__Q26mintvm13MintFuncProxyFv
 /* 801A1828 0019D668  7F 83 E3 78 */	mr r3, r28
@@ -722,7 +722,7 @@ Func__Q43hel4mint19AddOnMathDirection338Mint_Ctor$53830AddOnMathDirection3_cppFR
 .global lbl_801A1880
 lbl_801A1880:
 /* 801A1880 0019D6C0  39 61 00 20 */	addi r11, r1, 0x20
-/* 801A1884 0019D6C4  4B E6 5B 09 */	bl lbl_8000738C
+/* 801A1884 0019D6C4  4B E6 5B 09 */	bl _restgpr_28
 /* 801A1888 0019D6C8  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 801A188C 0019D6CC  7C 08 03 A6 */	mtlr r0
 /* 801A1890 0019D6D0  38 21 00 20 */	addi r1, r1, 0x20

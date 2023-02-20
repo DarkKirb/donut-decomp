@@ -7,7 +7,7 @@ __ct__Q43scn17challengetutorial4info8TutorialFRQ43scn17challengetutorial4info7Ma
 /* 801F9D2C 001F5B6C  7C 08 02 A6 */	mflr r0
 /* 801F9D30 001F5B70  90 01 03 34 */	stw r0, 0x334(r1)
 /* 801F9D34 001F5B74  39 61 03 30 */	addi r11, r1, 0x330
-/* 801F9D38 001F5B78  4B E0 D6 01 */	bl lbl_80007338
+/* 801F9D38 001F5B78  4B E0 D6 01 */	bl _savegpr_26
 /* 801F9D3C 001F5B7C  7C 7A 1B 78 */	mr r26, r3
 /* 801F9D40 001F5B80  7C 9B 23 78 */	mr r27, r4
 /* 801F9D44 001F5B84  7C BC 2B 78 */	mr r28, r5
@@ -199,7 +199,7 @@ __ct__Q43scn17challengetutorial4info8TutorialFRQ43scn17challengetutorial4info7Ma
 /* 801FA02C 001F5E6C  48 00 00 21 */	bl "data<Q43scn4step9challenge5Param>__Q25param13ParamAccessorCFv_RCQ43scn4step9challenge5Param"
 /* 801FA030 001F5E70  7F 43 D3 78 */	mr r3, r26
 /* 801FA034 001F5E74  39 61 03 30 */	addi r11, r1, 0x330
-/* 801FA038 001F5E78  4B E0 D3 4D */	bl lbl_80007384
+/* 801FA038 001F5E78  4B E0 D3 4D */	bl _restgpr_26
 /* 801FA03C 001F5E7C  80 01 03 34 */	lwz r0, 0x334(r1)
 /* 801FA040 001F5E80  7C 08 03 A6 */	mtlr r0
 /* 801FA044 001F5E84  38 21 03 30 */	addi r1, r1, 0x330
@@ -291,7 +291,7 @@ appear__Q43scn17challengetutorial4info8TutorialFRCQ53scn17challengetutorial4info
 /* 801FA154 001F5F94  7C 08 02 A6 */	mflr r0
 /* 801FA158 001F5F98  90 01 0D 54 */	stw r0, 0xd54(r1)
 /* 801FA15C 001F5F9C  39 61 0D 50 */	addi r11, r1, 0xd50
-/* 801FA160 001F5FA0  4B E0 D1 C9 */	bl lbl_80007328
+/* 801FA160 001F5FA0  4B E0 D1 C9 */	bl _savegpr_22
 /* 801FA164 001F5FA4  7C 7D 1B 78 */	mr r29, r3
 /* 801FA168 001F5FA8  7C 9E 23 78 */	mr r30, r4
 /* 801FA16C 001F5FAC  3C A0 80 46 */	lis r5, "@58272"@ha
@@ -1168,7 +1168,7 @@ lbl_801FADF8:
 /* 801FAE10 001F6C50  7F A3 EB 78 */	mr r3, r29
 /* 801FAE14 001F6C54  48 00 22 31 */	bl preLoadStage__Q43scn17challengetutorial4info8TutorialFv
 /* 801FAE18 001F6C58  39 61 0D 50 */	addi r11, r1, 0xd50
-/* 801FAE1C 001F6C5C  4B E0 C5 59 */	bl lbl_80007374
+/* 801FAE1C 001F6C5C  4B E0 C5 59 */	bl _restgpr_22
 /* 801FAE20 001F6C60  80 01 0D 54 */	lwz r0, 0xd54(r1)
 /* 801FAE24 001F6C64  7C 08 03 A6 */	mtlr r0
 /* 801FAE28 001F6C68  38 21 0D 50 */	addi r1, r1, 0xd50
@@ -1527,7 +1527,7 @@ initPageCount__Q43scn17challengetutorial4info8TutorialFb:
 /* 801FB1F8 001F7038  7C 08 02 A6 */	mflr r0
 /* 801FB1FC 001F703C  90 01 03 34 */	stw r0, 0x334(r1)
 /* 801FB200 001F7040  39 61 03 30 */	addi r11, r1, 0x330
-/* 801FB204 001F7044  4B E0 C1 31 */	bl lbl_80007334
+/* 801FB204 001F7044  4B E0 C1 31 */	bl _savegpr_25
 /* 801FB208 001F7048  7C 9B 23 78 */	mr r27, r4
 /* 801FB20C 001F704C  80 63 64 BC */	lwz r3, 0x64bc(r3)
 /* 801FB210 001F7050  48 02 1C 95 */	bl ChallengeName__Q33scn4step17ChallengeKindUtilFQ33scn4step13ChallengeKind
@@ -1574,7 +1574,7 @@ lbl_801FB290:
 lbl_801FB298:
 /* 801FB298 001F70D8  7F 23 CB 78 */	mr r3, r25
 /* 801FB29C 001F70DC  39 61 03 30 */	addi r11, r1, 0x330
-/* 801FB2A0 001F70E0  4B E0 C0 E1 */	bl lbl_80007380
+/* 801FB2A0 001F70E0  4B E0 C0 E1 */	bl _restgpr_25
 /* 801FB2A4 001F70E4  80 01 03 34 */	lwz r0, 0x334(r1)
 /* 801FB2A8 001F70E8  7C 08 03 A6 */	mtlr r0
 /* 801FB2AC 001F70EC  38 21 03 30 */	addi r1, r1, 0x330
@@ -1585,7 +1585,7 @@ hideAllIllust__Q43scn17challengetutorial4info8TutorialFv:
 /* 801FB2B8 001F70F8  7C 08 02 A6 */	mflr r0
 /* 801FB2BC 001F70FC  90 01 00 D4 */	stw r0, 0xd4(r1)
 /* 801FB2C0 001F7100  39 61 00 D0 */	addi r11, r1, 0xd0
-/* 801FB2C4 001F7104  4B E0 C0 79 */	bl lbl_8000733C
+/* 801FB2C4 001F7104  4B E0 C0 79 */	bl _savegpr_27
 /* 801FB2C8 001F7108  7C 7B 1B 78 */	mr r27, r3
 /* 801FB2CC 001F710C  80 63 64 BC */	lwz r3, 0x64bc(r3)
 /* 801FB2D0 001F7110  48 02 1C 2D */	bl ChallengeIllustName__Q33scn4step17ChallengeKindUtilFQ33scn4step13ChallengeKind
@@ -1669,7 +1669,7 @@ lbl_801FB38C:
 .global lbl_801FB3E0
 lbl_801FB3E0:
 /* 801FB3E0 001F7220  39 61 00 D0 */	addi r11, r1, 0xd0
-/* 801FB3E4 001F7224  4B E0 BF A5 */	bl lbl_80007388
+/* 801FB3E4 001F7224  4B E0 BF A5 */	bl _restgpr_27
 /* 801FB3E8 001F7228  80 01 00 D4 */	lwz r0, 0xd4(r1)
 /* 801FB3EC 001F722C  7C 08 03 A6 */	mtlr r0
 /* 801FB3F0 001F7230  38 21 00 D0 */	addi r1, r1, 0xd0
@@ -1680,7 +1680,7 @@ setupTutorialPage__Q43scn17challengetutorial4info8TutorialFi:
 /* 801FB3FC 001F723C  7C 08 02 A6 */	mflr r0
 /* 801FB400 001F7240  90 01 05 44 */	stw r0, 0x544(r1)
 /* 801FB404 001F7244  39 61 05 40 */	addi r11, r1, 0x540
-/* 801FB408 001F7248  4B E0 BF 39 */	bl lbl_80007340
+/* 801FB408 001F7248  4B E0 BF 39 */	bl _savegpr_28
 /* 801FB40C 001F724C  7C 7C 1B 78 */	mr r28, r3
 /* 801FB410 001F7250  7C 9D 23 78 */	mr r29, r4
 /* 801FB414 001F7254  3C 80 80 46 */	lis r4, "@58272"@ha
@@ -1770,7 +1770,7 @@ setupTutorialPage__Q43scn17challengetutorial4info8TutorialFi:
 /* 801FB564 001F73A4  38 80 FF FF */	li r4, -0x1
 /* 801FB568 001F73A8  4B F7 CC B9 */	bl __dt__Q23lyt12PaneAccessorFv
 /* 801FB56C 001F73AC  39 61 05 40 */	addi r11, r1, 0x540
-/* 801FB570 001F73B0  4B E0 BE 1D */	bl lbl_8000738C
+/* 801FB570 001F73B0  4B E0 BE 1D */	bl _restgpr_28
 /* 801FB574 001F73B4  80 01 05 44 */	lwz r0, 0x544(r1)
 /* 801FB578 001F73B8  7C 08 03 A6 */	mtlr r0
 /* 801FB57C 001F73BC  38 21 05 40 */	addi r1, r1, 0x540
@@ -1781,7 +1781,7 @@ setupHintPage__Q43scn17challengetutorial4info8TutorialFi:
 /* 801FB588 001F73C8  7C 08 02 A6 */	mflr r0
 /* 801FB58C 001F73CC  90 01 05 44 */	stw r0, 0x544(r1)
 /* 801FB590 001F73D0  39 61 05 40 */	addi r11, r1, 0x540
-/* 801FB594 001F73D4  4B E0 BD AD */	bl lbl_80007340
+/* 801FB594 001F73D4  4B E0 BD AD */	bl _savegpr_28
 /* 801FB598 001F73D8  7C 7C 1B 78 */	mr r28, r3
 /* 801FB59C 001F73DC  7C 9D 23 78 */	mr r29, r4
 /* 801FB5A0 001F73E0  3C 80 80 46 */	lis r4, "@58272"@ha
@@ -1871,7 +1871,7 @@ setupHintPage__Q43scn17challengetutorial4info8TutorialFi:
 /* 801FB6F0 001F7530  38 80 FF FF */	li r4, -0x1
 /* 801FB6F4 001F7534  4B F7 CB 2D */	bl __dt__Q23lyt12PaneAccessorFv
 /* 801FB6F8 001F7538  39 61 05 40 */	addi r11, r1, 0x540
-/* 801FB6FC 001F753C  4B E0 BC 91 */	bl lbl_8000738C
+/* 801FB6FC 001F753C  4B E0 BC 91 */	bl _restgpr_28
 /* 801FB700 001F7540  80 01 05 44 */	lwz r0, 0x544(r1)
 /* 801FB704 001F7544  7C 08 03 A6 */	mtlr r0
 /* 801FB708 001F7548  38 21 05 40 */	addi r1, r1, 0x540
@@ -2665,7 +2665,7 @@ stateWait__Q43scn17challengetutorial4info8TutorialFv:
 /* 801FC200 001F8040  7C 08 02 A6 */	mflr r0
 /* 801FC204 001F8044  90 01 00 64 */	stw r0, 0x64(r1)
 /* 801FC208 001F8048  39 61 00 60 */	addi r11, r1, 0x60
-/* 801FC20C 001F804C  4B E0 B1 35 */	bl lbl_80007340
+/* 801FC20C 001F804C  4B E0 B1 35 */	bl _savegpr_28
 /* 801FC210 001F8050  7C 7F 1B 78 */	mr r31, r3
 /* 801FC214 001F8054  80 6D ED 18 */	lwz r3, "object___Q33hel6common37ExplicitSingleton<Q23hid10HIDManager>"@sda21(r13)
 /* 801FC218 001F8058  38 80 00 00 */	li r4, 0x0
@@ -2889,7 +2889,7 @@ lbl_801FC4B0:
 .global lbl_801FC500
 lbl_801FC500:
 /* 801FC500 001F8340  39 61 00 60 */	addi r11, r1, 0x60
-/* 801FC504 001F8344  4B E0 AE 89 */	bl lbl_8000738C
+/* 801FC504 001F8344  4B E0 AE 89 */	bl _restgpr_28
 /* 801FC508 001F8348  80 01 00 64 */	lwz r0, 0x64(r1)
 /* 801FC50C 001F834C  7C 08 03 A6 */	mtlr r0
 /* 801FC510 001F8350  38 21 00 60 */	addi r1, r1, 0x60
@@ -3102,7 +3102,7 @@ stateTutorialHintWait__Q43scn17challengetutorial4info8TutorialFv:
 /* 801FC7E4 001F8624  7C 08 02 A6 */	mflr r0
 /* 801FC7E8 001F8628  90 01 00 54 */	stw r0, 0x54(r1)
 /* 801FC7EC 001F862C  39 61 00 50 */	addi r11, r1, 0x50
-/* 801FC7F0 001F8630  4B E0 AB 55 */	bl lbl_80007344
+/* 801FC7F0 001F8630  4B E0 AB 55 */	bl _savegpr_29
 /* 801FC7F4 001F8634  7C 7F 1B 78 */	mr r31, r3
 /* 801FC7F8 001F8638  80 6D ED 18 */	lwz r3, "object___Q33hel6common37ExplicitSingleton<Q23hid10HIDManager>"@sda21(r13)
 /* 801FC7FC 001F863C  38 80 00 00 */	li r4, 0x0
@@ -3243,7 +3243,7 @@ lbl_801FC9C8:
 .global lbl_801FC9D0
 lbl_801FC9D0:
 /* 801FC9D0 001F8810  39 61 00 50 */	addi r11, r1, 0x50
-/* 801FC9D4 001F8814  4B E0 A9 BD */	bl lbl_80007390
+/* 801FC9D4 001F8814  4B E0 A9 BD */	bl _restgpr_29
 /* 801FC9D8 001F8818  80 01 00 54 */	lwz r0, 0x54(r1)
 /* 801FC9DC 001F881C  7C 08 03 A6 */	mtlr r0
 /* 801FC9E0 001F8820  38 21 00 50 */	addi r1, r1, 0x50
@@ -3312,7 +3312,7 @@ stateTutorialHintClose__Q43scn17challengetutorial4info8TutorialFv:
 /* 801FCAB4 001F88F4  7C 08 02 A6 */	mflr r0
 /* 801FCAB8 001F88F8  90 01 00 74 */	stw r0, 0x74(r1)
 /* 801FCABC 001F88FC  39 61 00 70 */	addi r11, r1, 0x70
-/* 801FCAC0 001F8900  4B E0 A8 85 */	bl lbl_80007344
+/* 801FCAC0 001F8900  4B E0 A8 85 */	bl _savegpr_29
 /* 801FCAC4 001F8904  7C 7D 1B 78 */	mr r29, r3
 /* 801FCAC8 001F8908  3C 80 80 46 */	lis r4, "@58272"@ha
 /* 801FCACC 001F890C  3B C4 FC F8 */	addi r30, r4, "@58272"@l
@@ -3382,7 +3382,7 @@ stateTutorialHintClose__Q43scn17challengetutorial4info8TutorialFv:
 .global lbl_801FCBCC
 lbl_801FCBCC:
 /* 801FCBCC 001F8A0C  39 61 00 70 */	addi r11, r1, 0x70
-/* 801FCBD0 001F8A10  4B E0 A7 C1 */	bl lbl_80007390
+/* 801FCBD0 001F8A10  4B E0 A7 C1 */	bl _restgpr_29
 /* 801FCBD4 001F8A14  80 01 00 74 */	lwz r0, 0x74(r1)
 /* 801FCBD8 001F8A18  7C 08 03 A6 */	mtlr r0
 /* 801FCBDC 001F8A1C  38 21 00 70 */	addi r1, r1, 0x70

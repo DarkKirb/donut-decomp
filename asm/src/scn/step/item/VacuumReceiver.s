@@ -71,7 +71,7 @@ setStartVacuumed__Q43scn4step4item14VacuumReceiverFRQ43scn4step6vacuum8Attackerb
 /* 803C565C 003C149C  7C 08 02 A6 */	mflr r0
 /* 803C5660 003C14A0  90 01 00 44 */	stw r0, 0x44(r1)
 /* 803C5664 003C14A4  39 61 00 40 */	addi r11, r1, 0x40
-/* 803C5668 003C14A8  4B C4 1C D9 */	bl lbl_80007340
+/* 803C5668 003C14A8  4B C4 1C D9 */	bl _savegpr_28
 /* 803C566C 003C14AC  7C 7C 1B 78 */	mr r28, r3
 /* 803C5670 003C14B0  7C BD 2B 78 */	mr r29, r5
 /* 803C5674 003C14B4  38 61 00 18 */	addi r3, r1, 0x18
@@ -131,7 +131,7 @@ lbl_803C5734:
 /* 803C573C 003C157C  4B FF D6 15 */	bl stateChanger__Q43scn4step4item4ItemFv
 /* 803C5740 003C1580  48 04 06 39 */	bl changeStateIfPossible__Q24util16StateChangerBaseFv
 /* 803C5744 003C1584  39 61 00 40 */	addi r11, r1, 0x40
-/* 803C5748 003C1588  4B C4 1C 45 */	bl lbl_8000738C
+/* 803C5748 003C1588  4B C4 1C 45 */	bl _restgpr_28
 /* 803C574C 003C158C  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 803C5750 003C1590  7C 08 03 A6 */	mtlr r0
 /* 803C5754 003C1594  38 21 00 40 */	addi r1, r1, 0x40
@@ -142,7 +142,7 @@ setEndVacuumed__Q43scn4step4item14VacuumReceiverFv:
 /* 803C5760 003C15A0  7C 08 02 A6 */	mflr r0
 /* 803C5764 003C15A4  90 01 00 44 */	stw r0, 0x44(r1)
 /* 803C5768 003C15A8  39 61 00 40 */	addi r11, r1, 0x40
-/* 803C576C 003C15AC  4B C4 1B D9 */	bl lbl_80007344
+/* 803C576C 003C15AC  4B C4 1B D9 */	bl _savegpr_29
 /* 803C5770 003C15B0  7C 7D 1B 78 */	mr r29, r3
 /* 803C5774 003C15B4  38 63 00 20 */	addi r3, r3, 0x20
 /* 803C5778 003C15B8  4B DC 2F 51 */	bl wasSetParent__Q24file8FileTreeCFv
@@ -188,7 +188,7 @@ setEndVacuumed__Q43scn4step4item14VacuumReceiverFv:
 .global lbl_803C5818
 lbl_803C5818:
 /* 803C5818 003C1658  39 61 00 40 */	addi r11, r1, 0x40
-/* 803C581C 003C165C  4B C4 1B 75 */	bl lbl_80007390
+/* 803C581C 003C165C  4B C4 1B 75 */	bl _restgpr_29
 /* 803C5820 003C1660  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 803C5824 003C1664  7C 08 03 A6 */	mtlr r0
 /* 803C5828 003C1668  38 21 00 40 */	addi r1, r1, 0x40
@@ -200,7 +200,7 @@ chkVacuum__Q43scn4step4item14VacuumReceiverFRQ43scn4step6vacuum8AttackerRCQ33hel
 /* 803C5834 003C1674  7C 08 02 A6 */	mflr r0
 /* 803C5838 003C1678  90 01 00 24 */	stw r0, 0x24(r1)
 /* 803C583C 003C167C  39 61 00 20 */	addi r11, r1, 0x20
-/* 803C5840 003C1680  4B C4 1B 05 */	bl lbl_80007344
+/* 803C5840 003C1680  4B C4 1B 05 */	bl _savegpr_29
 /* 803C5844 003C1684  7C 7D 1B 78 */	mr r29, r3
 /* 803C5848 003C1688  7C 9E 23 78 */	mr r30, r4
 /* 803C584C 003C168C  7C FF 3B 78 */	mr r31, r7
@@ -218,7 +218,7 @@ chkVacuum__Q43scn4step4item14VacuumReceiverFRQ43scn4step6vacuum8AttackerRCQ33hel
 .global lbl_803C587C
 lbl_803C587C:
 /* 803C587C 003C16BC  39 61 00 20 */	addi r11, r1, 0x20
-/* 803C5880 003C16C0  4B C4 1B 11 */	bl lbl_80007390
+/* 803C5880 003C16C0  4B C4 1B 11 */	bl _restgpr_29
 /* 803C5884 003C16C4  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803C5888 003C16C8  7C 08 03 A6 */	mtlr r0
 /* 803C588C 003C16CC  38 21 00 20 */	addi r1, r1, 0x20

@@ -7,7 +7,7 @@ __ct__Q43scn4step6weapon6EffectFRQ43scn4step6weapon6Weapon:
 /* 803D6234 003D2074  7C 08 02 A6 */	mflr r0
 /* 803D6238 003D2078  90 01 00 24 */	stw r0, 0x24(r1)
 /* 803D623C 003D207C  39 61 00 20 */	addi r11, r1, 0x20
-/* 803D6240 003D2080  4B C3 11 05 */	bl lbl_80007344
+/* 803D6240 003D2080  4B C3 11 05 */	bl _savegpr_29
 /* 803D6244 003D2084  7C 7D 1B 78 */	mr r29, r3
 /* 803D6248 003D2088  7C 9E 23 78 */	mr r30, r4
 /* 803D624C 003D208C  90 83 00 00 */	stw r4, 0x0(r3)
@@ -40,7 +40,7 @@ __ct__Q43scn4step6weapon6EffectFRQ43scn4step6weapon6Weapon:
 /* 803D62B8 003D20F8  4B E9 80 81 */	bl changeLayer__Q43scn4step5chara6EffectFQ43scn4step4core13DrawLayerKind
 /* 803D62BC 003D20FC  7F A3 EB 78 */	mr r3, r29
 /* 803D62C0 003D2100  39 61 00 20 */	addi r11, r1, 0x20
-/* 803D62C4 003D2104  4B C3 10 CD */	bl lbl_80007390
+/* 803D62C4 003D2104  4B C3 10 CD */	bl _restgpr_29
 /* 803D62C8 003D2108  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803D62CC 003D210C  7C 08 03 A6 */	mtlr r0
 /* 803D62D0 003D2110  38 21 00 20 */	addi r1, r1, 0x20

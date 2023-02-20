@@ -7,7 +7,7 @@ __ct__Q43scn17challengetutorial4info12AbilityPanelFRCQ43scn17challengetutorial4i
 /* 801F7674 001F34B4  7C 08 02 A6 */	mflr r0
 /* 801F7678 001F34B8  90 01 01 A4 */	stw r0, 0x1a4(r1)
 /* 801F767C 001F34BC  39 61 01 A0 */	addi r11, r1, 0x1a0
-/* 801F7680 001F34C0  4B E0 FC C5 */	bl lbl_80007344
+/* 801F7680 001F34C0  4B E0 FC C5 */	bl _savegpr_29
 /* 801F7684 001F34C4  7C 7D 1B 78 */	mr r29, r3
 /* 801F7688 001F34C8  7C 9E 23 78 */	mr r30, r4
 /* 801F768C 001F34CC  3C 60 80 46 */	lis r3, "@51574_8045F9D8"@ha
@@ -87,7 +87,7 @@ __ct__Q43scn17challengetutorial4info12AbilityPanelFRCQ43scn17challengetutorial4i
 /* 801F77B4 001F35F4  4B FB 5B 6D */	bl updateMatrix__Q23lyt6LayoutFv
 /* 801F77B8 001F35F8  7F A3 EB 78 */	mr r3, r29
 /* 801F77BC 001F35FC  39 61 01 A0 */	addi r11, r1, 0x1a0
-/* 801F77C0 001F3600  4B E0 FB D1 */	bl lbl_80007390
+/* 801F77C0 001F3600  4B E0 FB D1 */	bl _restgpr_29
 /* 801F77C4 001F3604  80 01 01 A4 */	lwz r0, 0x1a4(r1)
 /* 801F77C8 001F3608  7C 08 03 A6 */	mtlr r0
 /* 801F77CC 001F360C  38 21 01 A0 */	addi r1, r1, 0x1a0
@@ -142,7 +142,7 @@ updatePanel__Q43scn17challengetutorial4info12AbilityPanelFv:
 /* 801F7858 001F3698  7C 08 02 A6 */	mflr r0
 /* 801F785C 001F369C  90 01 02 44 */	stw r0, 0x244(r1)
 /* 801F7860 001F36A0  39 61 02 40 */	addi r11, r1, 0x240
-/* 801F7864 001F36A4  4B E0 FA D9 */	bl lbl_8000733C
+/* 801F7864 001F36A4  4B E0 FA D9 */	bl _savegpr_27
 /* 801F7868 001F36A8  7C 7E 1B 78 */	mr r30, r3
 /* 801F786C 001F36AC  3C 80 80 46 */	lis r4, "@51574_8045F9D8"@ha
 /* 801F7870 001F36B0  3B E4 F9 D8 */	addi r31, r4, "@51574_8045F9D8"@l
@@ -466,7 +466,7 @@ lbl_801F7CD4:
 .global lbl_801F7CF8
 lbl_801F7CF8:
 /* 801F7CF8 001F3B38  39 61 02 40 */	addi r11, r1, 0x240
-/* 801F7CFC 001F3B3C  4B E0 F6 8D */	bl lbl_80007388
+/* 801F7CFC 001F3B3C  4B E0 F6 8D */	bl _restgpr_27
 /* 801F7D00 001F3B40  80 01 02 44 */	lwz r0, 0x244(r1)
 /* 801F7D04 001F3B44  7C 08 03 A6 */	mtlr r0
 /* 801F7D08 001F3B48  38 21 02 40 */	addi r1, r1, 0x240

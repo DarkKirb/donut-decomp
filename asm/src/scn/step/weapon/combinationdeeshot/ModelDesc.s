@@ -7,7 +7,7 @@ Create__Q53scn4step6weapon18combinationdeeshot9ModelDescFv:
 /* 803EBE34 003E7C74  7C 08 02 A6 */	mflr r0
 /* 803EBE38 003E7C78  90 01 00 54 */	stw r0, 0x54(r1)
 /* 803EBE3C 003E7C7C  39 61 00 50 */	addi r11, r1, 0x50
-/* 803EBE40 003E7C80  4B C1 B5 01 */	bl lbl_80007340
+/* 803EBE40 003E7C80  4B C1 B5 01 */	bl _savegpr_28
 /* 803EBE44 003E7C84  3C 60 80 49 */	lis r3, "T_NODE_NAMES__Q53scn4step6weapon18combinationdeeshot23@unnamed@ModelDesc_cpp@"@ha
 /* 803EBE48 003E7C88  3B C3 4D A8 */	addi r30, r3, "T_NODE_NAMES__Q53scn4step6weapon18combinationdeeshot23@unnamed@ModelDesc_cpp@"@l
 /* 803EBE4C 003E7C8C  3B 9E 00 0C */	addi r28, r30, 0xc
@@ -67,7 +67,7 @@ lbl_803EBEF8:
 /* 803EBF0C 003E7D4C  3C 60 80 55 */	lis r3, "@LOCAL@CreateTmpl<45>__Q43scn4step6weapon13ModelDescUtilFPCcPCcUlPPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc"@ha
 /* 803EBF10 003E7D50  38 63 5A 00 */	addi r3, r3, "@LOCAL@CreateTmpl<45>__Q43scn4step6weapon13ModelDescUtilFPCcPCcUlPPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc"@l
 /* 803EBF14 003E7D54  39 61 00 50 */	addi r11, r1, 0x50
-/* 803EBF18 003E7D58  4B C1 B4 75 */	bl lbl_8000738C
+/* 803EBF18 003E7D58  4B C1 B4 75 */	bl _restgpr_28
 /* 803EBF1C 003E7D5C  80 01 00 54 */	lwz r0, 0x54(r1)
 /* 803EBF20 003E7D60  7C 08 03 A6 */	mtlr r0
 /* 803EBF24 003E7D64  38 21 00 50 */	addi r1, r1, 0x50

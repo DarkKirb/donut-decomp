@@ -233,7 +233,7 @@ setupDrawOriginal__Q23sfx8MonotoneFv:
 /* 80401650 003FD490  7C 08 02 A6 */	mflr r0
 /* 80401654 003FD494  90 01 00 44 */	stw r0, 0x44(r1)
 /* 80401658 003FD498  39 61 00 40 */	addi r11, r1, 0x40
-/* 8040165C 003FD49C  4B C0 5C E9 */	bl lbl_80007344
+/* 8040165C 003FD49C  4B C0 5C E9 */	bl _savegpr_29
 /* 80401660 003FD4A0  7C 7D 1B 78 */	mr r29, r3
 /* 80401664 003FD4A4  80 63 00 00 */	lwz r3, 0x0(r3)
 /* 80401668 003FD4A8  4B D8 1A D1 */	bl block__Q23mem9DataBlockCFv
@@ -271,7 +271,7 @@ setupDrawOriginal__Q23sfx8MonotoneFv:
 /* 804016E8 003FD528  38 80 00 00 */	li r4, 0x0
 /* 804016EC 003FD52C  4B C3 57 45 */	bl GXLoadTexObj
 /* 804016F0 003FD530  39 61 00 40 */	addi r11, r1, 0x40
-/* 804016F4 003FD534  4B C0 5C 9D */	bl lbl_80007390
+/* 804016F4 003FD534  4B C0 5C 9D */	bl _restgpr_29
 /* 804016F8 003FD538  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 804016FC 003FD53C  7C 08 03 A6 */	mtlr r0
 /* 80401700 003FD540  38 21 00 40 */	addi r1, r1, 0x40

@@ -42,7 +42,7 @@ procAnim__Q53scn4step4boss6whispy12StateChewingFv:
 /* 8025CC88 00258AC8  7C 08 02 A6 */	mflr r0
 /* 8025CC8C 00258ACC  90 01 00 24 */	stw r0, 0x24(r1)
 /* 8025CC90 00258AD0  39 61 00 20 */	addi r11, r1, 0x20
-/* 8025CC94 00258AD4  4B DA A6 AD */	bl lbl_80007340
+/* 8025CC94 00258AD4  4B DA A6 AD */	bl _savegpr_28
 /* 8025CC98 00258AD8  7C 7C 1B 78 */	mr r28, r3
 /* 8025CC9C 00258ADC  4B EA 3B 45 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 8025CCA0 00258AE0  4B FD 02 71 */	bl param__Q43scn4step4boss4BossCFv
@@ -173,7 +173,7 @@ lbl_8025CE18:
 .global lbl_8025CE2C
 lbl_8025CE2C:
 /* 8025CE2C 00258C6C  39 61 00 20 */	addi r11, r1, 0x20
-/* 8025CE30 00258C70  4B DA A5 5D */	bl lbl_8000738C
+/* 8025CE30 00258C70  4B DA A5 5D */	bl _restgpr_28
 /* 8025CE34 00258C74  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8025CE38 00258C78  7C 08 03 A6 */	mtlr r0
 /* 8025CE3C 00258C7C  38 21 00 20 */	addi r1, r1, 0x20

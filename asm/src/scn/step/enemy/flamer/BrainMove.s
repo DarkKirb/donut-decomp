@@ -31,7 +31,7 @@ onStart__Q53scn4step5enemy6flamer9BrainMoveFv:
 /* 802B1E24 002ADC64  7C 08 02 A6 */	mflr r0
 /* 802B1E28 002ADC68  90 01 00 24 */	stw r0, 0x24(r1)
 /* 802B1E2C 002ADC6C  39 61 00 20 */	addi r11, r1, 0x20
-/* 802B1E30 002ADC70  4B D5 55 15 */	bl lbl_80007344
+/* 802B1E30 002ADC70  4B D5 55 15 */	bl _savegpr_29
 /* 802B1E34 002ADC74  7C 7D 1B 78 */	mr r29, r3
 /* 802B1E38 002ADC78  4B E4 E9 A9 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 802B1E3C 002ADC7C  4B E6 F0 25 */	bl GetSize__Q34nw4r2ut13DvdFileStreamCFv
@@ -86,7 +86,7 @@ lbl_802B1EE0:
 lbl_802B1EE4:
 /* 802B1EE4 002ADD24  38 60 00 01 */	li r3, 0x1
 /* 802B1EE8 002ADD28  39 61 00 20 */	addi r11, r1, 0x20
-/* 802B1EEC 002ADD2C  4B D5 54 A5 */	bl lbl_80007390
+/* 802B1EEC 002ADD2C  4B D5 54 A5 */	bl _restgpr_29
 /* 802B1EF0 002ADD30  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802B1EF4 002ADD34  7C 08 03 A6 */	mtlr r0
 /* 802B1EF8 002ADD38  38 21 00 20 */	addi r1, r1, 0x20

@@ -137,7 +137,7 @@ procAnim__Q53scn4step4hero6common15StateWaterFloatFv:
 /* 8036E8A0 0036A6E0  DB E1 00 20 */	stfd f31, 0x20(r1)
 /* 8036E8A4 0036A6E4  F3 E1 00 28 */	psq_st f31, 0x28(r1), 0, qr0
 /* 8036E8A8 0036A6E8  39 61 00 20 */	addi r11, r1, 0x20
-/* 8036E8AC 0036A6EC  4B C9 8A 99 */	bl lbl_80007344
+/* 8036E8AC 0036A6EC  4B C9 8A 99 */	bl _savegpr_29
 /* 8036E8B0 0036A6F0  7C 7D 1B 78 */	mr r29, r3
 /* 8036E8B4 0036A6F4  4B D9 1F 2D */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 8036E8B8 0036A6F8  4B FD 1A BD */	bl abilityManager__Q43scn4step4hero4HeroFv
@@ -343,7 +343,7 @@ lbl_8036EB7C:
 /* 8036EB80 0036A9C0  13 E1 00 0C */	psq_lx f31, r1, r0, 0, qr0
 /* 8036EB84 0036A9C4  CB E1 00 20 */	lfd f31, 0x20(r1)
 /* 8036EB88 0036A9C8  39 61 00 20 */	addi r11, r1, 0x20
-/* 8036EB8C 0036A9CC  4B C9 88 05 */	bl lbl_80007390
+/* 8036EB8C 0036A9CC  4B C9 88 05 */	bl _restgpr_29
 /* 8036EB90 0036A9D0  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 8036EB94 0036A9D4  7C 08 03 A6 */	mtlr r0
 /* 8036EB98 0036A9D8  38 21 00 30 */	addi r1, r1, 0x30
@@ -390,7 +390,7 @@ procFixPos__Q53scn4step4hero6common15StateWaterFloatFv:
 /* 8036EC1C 0036AA5C  7C 08 02 A6 */	mflr r0
 /* 8036EC20 0036AA60  90 01 00 24 */	stw r0, 0x24(r1)
 /* 8036EC24 0036AA64  39 61 00 20 */	addi r11, r1, 0x20
-/* 8036EC28 0036AA68  4B C9 87 1D */	bl lbl_80007344
+/* 8036EC28 0036AA68  4B C9 87 1D */	bl _savegpr_29
 /* 8036EC2C 0036AA6C  7C 7D 1B 78 */	mr r29, r3
 /* 8036EC30 0036AA70  4B D9 1B B1 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 8036EC34 0036AA74  4B FE 83 65 */	bl MapCollReactDefaultAction__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Hero
@@ -426,7 +426,7 @@ lbl_8036ECA0:
 .global lbl_8036ECA4
 lbl_8036ECA4:
 /* 8036ECA4 0036AAE4  39 61 00 20 */	addi r11, r1, 0x20
-/* 8036ECA8 0036AAE8  4B C9 86 E9 */	bl lbl_80007390
+/* 8036ECA8 0036AAE8  4B C9 86 E9 */	bl _restgpr_29
 /* 8036ECAC 0036AAEC  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8036ECB0 0036AAF0  7C 08 03 A6 */	mtlr r0
 /* 8036ECB4 0036AAF4  38 21 00 20 */	addi r1, r1, 0x20

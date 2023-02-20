@@ -7,7 +7,7 @@ TryToChangeState__Q53scn4step5enemy6common15StateSuperFirstFPQ43scn4step5enemy5E
 /* 80294B2C 0029096C  7C 08 02 A6 */	mflr r0
 /* 80294B30 00290970  90 01 00 24 */	stw r0, 0x24(r1)
 /* 80294B34 00290974  39 61 00 20 */	addi r11, r1, 0x20
-/* 80294B38 00290978  4B D7 28 09 */	bl lbl_80007340
+/* 80294B38 00290978  4B D7 28 09 */	bl _savegpr_28
 /* 80294B3C 0029097C  7C 7C 1B 78 */	mr r28, r3
 /* 80294B40 00290980  7C 9D 23 78 */	mr r29, r4
 /* 80294B44 00290984  4B DE 0B ED */	bl GKI_getfirst
@@ -42,7 +42,7 @@ lbl_80294BA0:
 .global lbl_80294BA8
 lbl_80294BA8:
 /* 80294BA8 002909E8  39 61 00 20 */	addi r11, r1, 0x20
-/* 80294BAC 002909EC  4B D7 27 E1 */	bl lbl_8000738C
+/* 80294BAC 002909EC  4B D7 27 E1 */	bl _restgpr_28
 /* 80294BB0 002909F0  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80294BB4 002909F4  7C 08 03 A6 */	mtlr r0
 /* 80294BB8 002909F8  38 21 00 20 */	addi r1, r1, 0x20
@@ -378,7 +378,7 @@ procAnim__Q53scn4step5enemy6common15StateSuperFirstFv:
 /* 80295060 00290EA0  DB E1 00 40 */	stfd f31, 0x40(r1)
 /* 80295064 00290EA4  F3 E1 00 48 */	psq_st f31, 0x48(r1), 0, qr0
 /* 80295068 00290EA8  39 61 00 40 */	addi r11, r1, 0x40
-/* 8029506C 00290EAC  4B D7 22 C9 */	bl lbl_80007334
+/* 8029506C 00290EAC  4B D7 22 C9 */	bl _savegpr_25
 /* 80295070 00290EB0  7C 79 1B 78 */	mr r25, r3
 /* 80295074 00290EB4  3B A0 00 00 */	li r29, 0x0
 /* 80295078 00290EB8  4B E6 B7 69 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
@@ -477,7 +477,7 @@ lbl_802951A0:
 /* 802951A4 00290FE4  13 E1 00 0C */	psq_lx f31, r1, r0, 0, qr0
 /* 802951A8 00290FE8  CB E1 00 40 */	lfd f31, 0x40(r1)
 /* 802951AC 00290FEC  39 61 00 40 */	addi r11, r1, 0x40
-/* 802951B0 00290FF0  4B D7 21 D1 */	bl lbl_80007380
+/* 802951B0 00290FF0  4B D7 21 D1 */	bl _restgpr_25
 /* 802951B4 00290FF4  80 01 00 54 */	lwz r0, 0x54(r1)
 /* 802951B8 00290FF8  7C 08 03 A6 */	mtlr r0
 /* 802951BC 00290FFC  38 21 00 50 */	addi r1, r1, 0x50
@@ -489,7 +489,7 @@ procMove__Q53scn4step5enemy6common15StateSuperFirstFv:
 /* 802951C8 00291008  7C 08 02 A6 */	mflr r0
 /* 802951CC 0029100C  90 01 00 24 */	stw r0, 0x24(r1)
 /* 802951D0 00291010  39 61 00 20 */	addi r11, r1, 0x20
-/* 802951D4 00291014  4B D7 21 71 */	bl lbl_80007344
+/* 802951D4 00291014  4B D7 21 71 */	bl _savegpr_29
 /* 802951D8 00291018  7C 7D 1B 78 */	mr r29, r3
 /* 802951DC 0029101C  4B E6 B6 05 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 802951E0 00291020  4B FF 2E D5 */	bl footState__Q43scn4step5enemy5EnemyFv
@@ -528,7 +528,7 @@ lbl_8029521C:
 .global lbl_8029525C
 lbl_8029525C:
 /* 8029525C 0029109C  39 61 00 20 */	addi r11, r1, 0x20
-/* 80295260 002910A0  4B D7 21 31 */	bl lbl_80007390
+/* 80295260 002910A0  4B D7 21 31 */	bl _restgpr_29
 /* 80295264 002910A4  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80295268 002910A8  7C 08 03 A6 */	mtlr r0
 /* 8029526C 002910AC  38 21 00 20 */	addi r1, r1, 0x20

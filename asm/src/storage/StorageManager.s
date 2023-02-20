@@ -376,7 +376,7 @@ onGhostUpdate__Q27storage14StorageManagerFi:
 /* 80404E24 00400C64  7C 08 02 A6 */	mflr r0
 /* 80404E28 00400C68  90 01 00 24 */	stw r0, 0x24(r1)
 /* 80404E2C 00400C6C  39 61 00 20 */	addi r11, r1, 0x20
-/* 80404E30 00400C70  4B C0 25 15 */	bl lbl_80007344
+/* 80404E30 00400C70  4B C0 25 15 */	bl _savegpr_29
 /* 80404E34 00400C74  7C 7D 1B 78 */	mr r29, r3
 /* 80404E38 00400C78  7C 9E 23 78 */	mr r30, r4
 /* 80404E3C 00400C7C  38 63 00 10 */	addi r3, r3, 0x10
@@ -391,7 +391,7 @@ onGhostUpdate__Q27storage14StorageManagerFi:
 /* 80404E60 00400CA0  7F E4 FB 78 */	mr r4, r31
 /* 80404E64 00400CA4  4B FF FF 6D */	bl __as__Q27storage9GhostDataFRCQ27storage9GhostData
 /* 80404E68 00400CA8  39 61 00 20 */	addi r11, r1, 0x20
-/* 80404E6C 00400CAC  4B C0 25 25 */	bl lbl_80007390
+/* 80404E6C 00400CAC  4B C0 25 25 */	bl _restgpr_29
 /* 80404E70 00400CB0  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80404E74 00400CB4  7C 08 03 A6 */	mtlr r0
 /* 80404E78 00400CB8  38 21 00 20 */	addi r1, r1, 0x20

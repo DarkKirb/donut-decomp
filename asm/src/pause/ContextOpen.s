@@ -7,7 +7,7 @@ Create__Q25pause11ContextOpenFUlRCQ25pause15PlayerEntryInfoQ25pause10ManualKindb
 /* 801DB31C 001D715C  7C 08 02 A6 */	mflr r0
 /* 801DB320 001D7160  90 01 00 24 */	stw r0, 0x24(r1)
 /* 801DB324 001D7164  39 61 00 20 */	addi r11, r1, 0x20
-/* 801DB328 001D7168  4B E2 C0 15 */	bl lbl_8000733C
+/* 801DB328 001D7168  4B E2 C0 15 */	bl _savegpr_27
 /* 801DB32C 001D716C  7C 7B 1B 78 */	mr r27, r3
 /* 801DB330 001D7170  7C 9C 23 78 */	mr r28, r4
 /* 801DB334 001D7174  7C BD 2B 78 */	mr r29, r5
@@ -20,7 +20,7 @@ Create__Q25pause11ContextOpenFUlRCQ25pause15PlayerEntryInfoQ25pause10ManualKindb
 /* 801DB350 001D7190  80 1D 00 00 */	lwz r0, 0x0(r29)
 /* 801DB354 001D7194  90 1B 00 0C */	stw r0, 0xc(r27)
 /* 801DB358 001D7198  39 61 00 20 */	addi r11, r1, 0x20
-/* 801DB35C 001D719C  4B E2 C0 2D */	bl lbl_80007388
+/* 801DB35C 001D719C  4B E2 C0 2D */	bl _restgpr_27
 /* 801DB360 001D71A0  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 801DB364 001D71A4  7C 08 03 A6 */	mtlr r0
 /* 801DB368 001D71A8  38 21 00 20 */	addi r1, r1, 0x20

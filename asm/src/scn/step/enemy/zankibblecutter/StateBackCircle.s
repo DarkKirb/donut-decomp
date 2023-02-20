@@ -174,7 +174,7 @@ procFixPos__Q53scn4step5enemy15zankibblecutter15StateBackCircleFv:
 /* 802F2868 002EE6A8  DB E1 00 D0 */	stfd f31, 0xd0(r1)
 /* 802F286C 002EE6AC  F3 E1 00 D8 */	psq_st f31, 0xd8(r1), 0, qr0
 /* 802F2870 002EE6B0  39 61 00 D0 */	addi r11, r1, 0xd0
-/* 802F2874 002EE6B4  4B D1 4A D1 */	bl lbl_80007344
+/* 802F2874 002EE6B4  4B D1 4A D1 */	bl _savegpr_29
 /* 802F2878 002EE6B8  7C 7F 1B 78 */	mr r31, r3
 /* 802F287C 002EE6BC  4B E0 DF 65 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 802F2880 002EE6C0  4B F9 58 05 */	bl param__Q43scn4step5enemy5EnemyCFv
@@ -371,7 +371,7 @@ lbl_802F2B28:
 /* 802F2B2C 002EE96C  13 E1 00 0C */	psq_lx f31, r1, r0, 0, qr0
 /* 802F2B30 002EE970  CB E1 00 D0 */	lfd f31, 0xd0(r1)
 /* 802F2B34 002EE974  39 61 00 D0 */	addi r11, r1, 0xd0
-/* 802F2B38 002EE978  4B D1 48 59 */	bl lbl_80007390
+/* 802F2B38 002EE978  4B D1 48 59 */	bl _restgpr_29
 /* 802F2B3C 002EE97C  80 01 00 E4 */	lwz r0, 0xe4(r1)
 /* 802F2B40 002EE980  7C 08 03 A6 */	mtlr r0
 /* 802F2B44 002EE984  38 21 00 E0 */	addi r1, r1, 0xe0

@@ -49,7 +49,7 @@ procAnim__Q53scn4step4hero7fighter10StateStampFv:
 /* 8039F540 0039B380  7C 08 02 A6 */	mflr r0
 /* 8039F544 0039B384  90 01 00 24 */	stw r0, 0x24(r1)
 /* 8039F548 0039B388  39 61 00 20 */	addi r11, r1, 0x20
-/* 8039F54C 0039B38C  4B C6 7D F9 */	bl lbl_80007344
+/* 8039F54C 0039B38C  4B C6 7D F9 */	bl _savegpr_29
 /* 8039F550 0039B390  7C 7D 1B 78 */	mr r29, r3
 /* 8039F554 0039B394  80 83 00 08 */	lwz r4, 0x8(r3)
 /* 8039F558 0039B398  38 04 00 01 */	addi r0, r4, 0x1
@@ -94,7 +94,7 @@ lbl_8039F5E8:
 .global lbl_8039F5EC
 lbl_8039F5EC:
 /* 8039F5EC 0039B42C  39 61 00 20 */	addi r11, r1, 0x20
-/* 8039F5F0 0039B430  4B C6 7D A1 */	bl lbl_80007390
+/* 8039F5F0 0039B430  4B C6 7D A1 */	bl _restgpr_29
 /* 8039F5F4 0039B434  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8039F5F8 0039B438  7C 08 03 A6 */	mtlr r0
 /* 8039F5FC 0039B43C  38 21 00 20 */	addi r1, r1, 0x20
@@ -114,7 +114,7 @@ procObjCollReact__Q53scn4step4hero7fighter10StateStampFv:
 /* 8039F610 0039B450  7C 08 02 A6 */	mflr r0
 /* 8039F614 0039B454  90 01 00 24 */	stw r0, 0x24(r1)
 /* 8039F618 0039B458  39 61 00 20 */	addi r11, r1, 0x20
-/* 8039F61C 0039B45C  4B C6 7D 29 */	bl lbl_80007344
+/* 8039F61C 0039B45C  4B C6 7D 29 */	bl _savegpr_29
 /* 8039F620 0039B460  7C 7D 1B 78 */	mr r29, r3
 /* 8039F624 0039B464  4B D6 11 BD */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 8039F628 0039B468  4B FA 0D 35 */	bl objColl__Q43scn4step4hero4HeroFv
@@ -151,7 +151,7 @@ lbl_8039F690:
 .global lbl_8039F694
 lbl_8039F694:
 /* 8039F694 0039B4D4  39 61 00 20 */	addi r11, r1, 0x20
-/* 8039F698 0039B4D8  4B C6 7C F9 */	bl lbl_80007390
+/* 8039F698 0039B4D8  4B C6 7C F9 */	bl _restgpr_29
 /* 8039F69C 0039B4DC  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8039F6A0 0039B4E0  7C 08 03 A6 */	mtlr r0
 /* 8039F6A4 0039B4E4  38 21 00 20 */	addi r1, r1, 0x20

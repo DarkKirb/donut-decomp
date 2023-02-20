@@ -7,7 +7,7 @@ __ct__Q43scn4step3sfx12ShadowSphereFRQ33scn4step9ComponentRQ23mem10IAllocator:
 /* 803CEDC4 003CAC04  7C 08 02 A6 */	mflr r0
 /* 803CEDC8 003CAC08  90 01 00 B4 */	stw r0, 0xb4(r1)
 /* 803CEDCC 003CAC0C  39 61 00 B0 */	addi r11, r1, 0xb0
-/* 803CEDD0 003CAC10  4B C3 85 71 */	bl lbl_80007340
+/* 803CEDD0 003CAC10  4B C3 85 71 */	bl _savegpr_28
 /* 803CEDD4 003CAC14  7C 7C 1B 78 */	mr r28, r3
 /* 803CEDD8 003CAC18  7C 9D 23 78 */	mr r29, r4
 /* 803CEDDC 003CAC1C  7C BE 2B 78 */	mr r30, r5
@@ -57,7 +57,7 @@ __ct__Q43scn4step3sfx12ShadowSphereFRQ33scn4step9ComponentRQ23mem10IAllocator:
 /* 803CEE8C 003CACCC  48 00 00 71 */	bl updateMaterial__Q43scn4step3sfx12ShadowSphereFv
 /* 803CEE90 003CACD0  7F 83 E3 78 */	mr r3, r28
 /* 803CEE94 003CACD4  39 61 00 B0 */	addi r11, r1, 0xb0
-/* 803CEE98 003CACD8  4B C3 84 F5 */	bl lbl_8000738C
+/* 803CEE98 003CACD8  4B C3 84 F5 */	bl _restgpr_28
 /* 803CEE9C 003CACDC  80 01 00 B4 */	lwz r0, 0xb4(r1)
 /* 803CEEA0 003CACE0  7C 08 03 A6 */	mtlr r0
 /* 803CEEA4 003CACE4  38 21 00 B0 */	addi r1, r1, 0xb0

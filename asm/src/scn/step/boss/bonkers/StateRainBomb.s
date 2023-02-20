@@ -7,7 +7,7 @@ __ct__Q53scn4step4boss7bonkers13StateRainBombFPQ43scn4step4boss4BossQ63scn4step4
 /* 802387F0 00234630  7C 08 02 A6 */	mflr r0
 /* 802387F4 00234634  90 01 00 24 */	stw r0, 0x24(r1)
 /* 802387F8 00234638  39 61 00 20 */	addi r11, r1, 0x20
-/* 802387FC 0023463C  4B DC EB 49 */	bl lbl_80007344
+/* 802387FC 0023463C  4B DC EB 49 */	bl _savegpr_29
 /* 80238800 00234640  7C 7D 1B 78 */	mr r29, r3
 /* 80238804 00234644  7C BE 2B 78 */	mr r30, r5
 /* 80238808 00234648  4B FF BC D9 */	bl __ct__Q43scn4step4boss9StateBaseFPQ43scn4step4boss4Boss
@@ -55,7 +55,7 @@ __ct__Q53scn4step4boss7bonkers13StateRainBombFPQ43scn4step4boss4BossQ63scn4step4
 lbl_802388AC:
 /* 802388AC 002346EC  7F A3 EB 78 */	mr r3, r29
 /* 802388B0 002346F0  39 61 00 20 */	addi r11, r1, 0x20
-/* 802388B4 002346F4  4B DC EA DD */	bl lbl_80007390
+/* 802388B4 002346F4  4B DC EA DD */	bl _restgpr_29
 /* 802388B8 002346F8  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802388BC 002346FC  7C 08 03 A6 */	mtlr r0
 /* 802388C0 00234700  38 21 00 20 */	addi r1, r1, 0x20
@@ -193,7 +193,7 @@ reqBomb__Q53scn4step4boss7bonkers13StateRainBombFv:
 /* 80238A60 002348A0  7C 08 02 A6 */	mflr r0
 /* 80238A64 002348A4  90 01 00 54 */	stw r0, 0x54(r1)
 /* 80238A68 002348A8  39 61 00 50 */	addi r11, r1, 0x50
-/* 80238A6C 002348AC  4B DC E8 D5 */	bl lbl_80007340
+/* 80238A6C 002348AC  4B DC E8 D5 */	bl _savegpr_28
 /* 80238A70 002348B0  7C 7C 1B 78 */	mr r28, r3
 /* 80238A74 002348B4  4B EC 7D 6D */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 80238A78 002348B8  4B FF 44 99 */	bl param__Q43scn4step4boss4BossCFv
@@ -323,7 +323,7 @@ lbl_80238BD8:
 /* 80238C00 00234A40  7F C6 F3 78 */	mr r6, r30
 /* 80238C04 00234A44  4B FF EE 59 */	bl reqBomb__Q53scn4step4boss7bonkers6CustomFQ33hel4math7Vector2Q33hel4math7Vector2Q43scn4step3map12BinEnemySize
 /* 80238C08 00234A48  39 61 00 50 */	addi r11, r1, 0x50
-/* 80238C0C 00234A4C  4B DC E7 81 */	bl lbl_8000738C
+/* 80238C0C 00234A4C  4B DC E7 81 */	bl _restgpr_28
 /* 80238C10 00234A50  80 01 00 54 */	lwz r0, 0x54(r1)
 /* 80238C14 00234A54  7C 08 03 A6 */	mtlr r0
 /* 80238C18 00234A58  38 21 00 50 */	addi r1, r1, 0x50

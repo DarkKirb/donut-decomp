@@ -44,7 +44,7 @@ procAnim__Q53scn4step4boss6whispy9StateGrowFv:
 /* 8025D9D8 00259818  DB C1 00 B0 */	stfd f30, 0xb0(r1)
 /* 8025D9DC 0025981C  F3 C1 00 B8 */	psq_st f30, 0xb8(r1), 0, qr0
 /* 8025D9E0 00259820  39 61 00 B0 */	addi r11, r1, 0xb0
-/* 8025D9E4 00259824  4B DA 99 59 */	bl lbl_8000733C
+/* 8025D9E4 00259824  4B DA 99 59 */	bl _savegpr_27
 /* 8025D9E8 00259828  7C 7F 1B 78 */	mr r31, r3
 /* 8025D9EC 0025982C  4B EA 2D F5 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 8025D9F0 00259830  4B FC F5 21 */	bl param__Q43scn4step4boss4BossCFv
@@ -254,7 +254,7 @@ lbl_8025DCC0:
 /* 8025DCD0 00259B10  13 C1 00 0C */	psq_lx f30, r1, r0, 0, qr0
 /* 8025DCD4 00259B14  CB C1 00 B0 */	lfd f30, 0xb0(r1)
 /* 8025DCD8 00259B18  39 61 00 B0 */	addi r11, r1, 0xb0
-/* 8025DCDC 00259B1C  4B DA 96 AD */	bl lbl_80007388
+/* 8025DCDC 00259B1C  4B DA 96 AD */	bl _restgpr_27
 /* 8025DCE0 00259B20  80 01 00 D4 */	lwz r0, 0xd4(r1)
 /* 8025DCE4 00259B24  7C 08 03 A6 */	mtlr r0
 /* 8025DCE8 00259B28  38 21 00 D0 */	addi r1, r1, 0xd0

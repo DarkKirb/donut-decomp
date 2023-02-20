@@ -7,7 +7,7 @@ Create__Q43scn4step6weapon22EffectLocatorModelDescFv:
 /* 803D6354 003D2194  7C 08 02 A6 */	mflr r0
 /* 803D6358 003D2198  90 01 00 34 */	stw r0, 0x34(r1)
 /* 803D635C 003D219C  39 61 00 30 */	addi r11, r1, 0x30
-/* 803D6360 003D21A0  4B C3 0F E5 */	bl lbl_80007344
+/* 803D6360 003D21A0  4B C3 0F E5 */	bl _savegpr_29
 /* 803D6364 003D21A4  3C 60 80 49 */	lis r3, "@50196_80493778"@ha
 /* 803D6368 003D21A8  3B A3 37 78 */	addi r29, r3, "@50196_80493778"@l
 /* 803D636C 003D21AC  3C 60 80 49 */	lis r3, "@50197_80493788"@ha
@@ -41,7 +41,7 @@ lbl_803D6398:
 /* 803D63D4 003D2214  48 00 16 91 */	bl Set__Q43scn4step6weapon13ModelDescUtilFRQ43scn4step5chara9ModelDescRQ24gobj8AnimDescRQ24gobj10ScriptDescPCcPCcUlPPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry
 /* 803D63D8 003D2218  38 7F 49 B8 */	addi r3, r31, 0x49b8
 /* 803D63DC 003D221C  39 61 00 30 */	addi r11, r1, 0x30
-/* 803D63E0 003D2220  4B C3 0F B1 */	bl lbl_80007390
+/* 803D63E0 003D2220  4B C3 0F B1 */	bl _restgpr_29
 /* 803D63E4 003D2224  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 803D63E8 003D2228  7C 08 03 A6 */	mtlr r0
 /* 803D63EC 003D222C  38 21 00 30 */	addi r1, r1, 0x30

@@ -7,7 +7,7 @@ __ct__Q53scn4step4boss6common12StateDashEndFPQ43scn4step4boss4BossRQ53scn4step4b
 /* 80245690 002414D0  7C 08 02 A6 */	mflr r0
 /* 80245694 002414D4  90 01 00 24 */	stw r0, 0x24(r1)
 /* 80245698 002414D8  39 61 00 20 */	addi r11, r1, 0x20
-/* 8024569C 002414DC  4B DC 1C A9 */	bl lbl_80007344
+/* 8024569C 002414DC  4B DC 1C A9 */	bl _savegpr_29
 /* 802456A0 002414E0  7C 7D 1B 78 */	mr r29, r3
 /* 802456A4 002414E4  7C BE 2B 78 */	mr r30, r5
 /* 802456A8 002414E8  7C DF 33 78 */	mr r31, r6
@@ -27,7 +27,7 @@ __ct__Q53scn4step4boss6common12StateDashEndFPQ43scn4step4boss4BossRQ53scn4step4b
 /* 802456E0 00241520  48 02 BB 9D */	bl reqScript__Q43scn4step5chara5ModelFUl
 /* 802456E4 00241524  7F A3 EB 78 */	mr r3, r29
 /* 802456E8 00241528  39 61 00 20 */	addi r11, r1, 0x20
-/* 802456EC 0024152C  4B DC 1C A5 */	bl lbl_80007390
+/* 802456EC 0024152C  4B DC 1C A5 */	bl _restgpr_29
 /* 802456F0 00241530  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802456F4 00241534  7C 08 03 A6 */	mtlr r0
 /* 802456F8 00241538  38 21 00 20 */	addi r1, r1, 0x20

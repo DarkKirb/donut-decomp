@@ -235,7 +235,7 @@ tryToChangeState__Q53scn4step4hero5smash5SmashFv:
 /* 803A0868 0039C6A8  7C 08 02 A6 */	mflr r0
 /* 803A086C 0039C6AC  90 01 00 24 */	stw r0, 0x24(r1)
 /* 803A0870 0039C6B0  39 61 00 20 */	addi r11, r1, 0x20
-/* 803A0874 0039C6B4  4B C6 6A D1 */	bl lbl_80007344
+/* 803A0874 0039C6B4  4B C6 6A D1 */	bl _savegpr_29
 /* 803A0878 0039C6B8  7C 7D 1B 78 */	mr r29, r3
 /* 803A087C 0039C6BC  80 63 00 08 */	lwz r3, 0x8(r3)
 /* 803A0880 0039C6C0  4B F9 FB 85 */	bl water__Q43scn4step4hero4HeroFv
@@ -329,7 +329,7 @@ lbl_803A09AC:
 .global lbl_803A09B0
 lbl_803A09B0:
 /* 803A09B0 0039C7F0  39 61 00 20 */	addi r11, r1, 0x20
-/* 803A09B4 0039C7F4  4B C6 69 DD */	bl lbl_80007390
+/* 803A09B4 0039C7F4  4B C6 69 DD */	bl _restgpr_29
 /* 803A09B8 0039C7F8  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803A09BC 0039C7FC  7C 08 03 A6 */	mtlr r0
 /* 803A09C0 0039C800  38 21 00 20 */	addi r1, r1, 0x20
@@ -412,7 +412,7 @@ stoneChangePrepare__Q53scn4step4hero5smash5SmashFv:
 /* 803A0AC8 0039C908  7C 08 02 A6 */	mflr r0
 /* 803A0ACC 0039C90C  90 01 00 44 */	stw r0, 0x44(r1)
 /* 803A0AD0 0039C910  39 61 00 40 */	addi r11, r1, 0x40
-/* 803A0AD4 0039C914  4B C6 68 71 */	bl lbl_80007344
+/* 803A0AD4 0039C914  4B C6 68 71 */	bl _savegpr_29
 /* 803A0AD8 0039C918  7C 7D 1B 78 */	mr r29, r3
 /* 803A0ADC 0039C91C  3C 80 80 42 */	lis r4, "STONEBODY_TABLE_0__Q53scn4step4hero5smash19@unnamed@Smash_cpp@"@ha
 /* 803A0AE0 0039C920  38 84 FD 18 */	addi r4, r4, "STONEBODY_TABLE_0__Q53scn4step4hero5smash19@unnamed@Smash_cpp@"@l
@@ -517,7 +517,7 @@ lbl_803A0BF8:
 /* 803A0C4C 0039CA8C  38 80 FF FF */	li r4, -0x1
 /* 803A0C50 0039CA90  4B DD 43 B5 */	bl "__dt__Q33hel6common31ExplicitSingleton<Q23app5Reset>Fv"
 /* 803A0C54 0039CA94  39 61 00 40 */	addi r11, r1, 0x40
-/* 803A0C58 0039CA98  4B C6 67 39 */	bl lbl_80007390
+/* 803A0C58 0039CA98  4B C6 67 39 */	bl _restgpr_29
 /* 803A0C5C 0039CA9C  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 803A0C60 0039CAA0  7C 08 03 A6 */	mtlr r0
 /* 803A0C64 0039CAA4  38 21 00 40 */	addi r1, r1, 0x40

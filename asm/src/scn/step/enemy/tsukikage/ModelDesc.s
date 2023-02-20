@@ -7,7 +7,7 @@ Create__Q53scn4step5enemy9tsukikage9ModelDescFv:
 /* 802EB000 002E6E40  7C 08 02 A6 */	mflr r0
 /* 802EB004 002E6E44  90 01 00 34 */	stw r0, 0x34(r1)
 /* 802EB008 002E6E48  39 61 00 30 */	addi r11, r1, 0x30
-/* 802EB00C 002E6E4C  4B D1 C3 39 */	bl lbl_80007344
+/* 802EB00C 002E6E4C  4B D1 C3 39 */	bl _savegpr_29
 /* 802EB010 002E6E50  3C 60 80 48 */	lis r3, "@50124_8047D780"@ha
 /* 802EB014 002E6E54  3B E3 D7 80 */	addi r31, r3, "@50124_8047D780"@l
 /* 802EB018 002E6E58  3B BF 01 A8 */	addi r29, r31, 0x1a8
@@ -44,7 +44,7 @@ lbl_802EB044:
 /* 802EB08C 002E6ECC  4B F9 FD 51 */	bl Set__Q43scn4step5enemy13ModelDescUtilFRQ43scn4step5chara9ModelDescRQ24gobj8AnimDescRQ24gobj10ScriptDescPCcPCcUlPPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry
 /* 802EB090 002E6ED0  38 7F 20 30 */	addi r3, r31, 0x2030
 /* 802EB094 002E6ED4  39 61 00 30 */	addi r11, r1, 0x30
-/* 802EB098 002E6ED8  4B D1 C2 F9 */	bl lbl_80007390
+/* 802EB098 002E6ED8  4B D1 C2 F9 */	bl _restgpr_29
 /* 802EB09C 002E6EDC  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 802EB0A0 002E6EE0  7C 08 03 A6 */	mtlr r0
 /* 802EB0A4 002E6EE4  38 21 00 30 */	addi r1, r1, 0x30

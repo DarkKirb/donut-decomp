@@ -9,7 +9,7 @@ __ct__Q53scn4step6weapon11starshotlv29StateMainFPQ43scn4step6weapon6Weapon:
 /* 803DCBD0 003D8A10  DB E1 00 70 */	stfd f31, 0x70(r1)
 /* 803DCBD4 003D8A14  F3 E1 00 78 */	psq_st f31, 0x78(r1), 0, qr0
 /* 803DCBD8 003D8A18  39 61 00 70 */	addi r11, r1, 0x70
-/* 803DCBDC 003D8A1C  4B C2 A7 61 */	bl lbl_8000733C
+/* 803DCBDC 003D8A1C  4B C2 A7 61 */	bl _savegpr_27
 /* 803DCBE0 003D8A20  7C 7B 1B 78 */	mr r27, r3
 /* 803DCBE4 003D8A24  4B FF BD 5D */	bl __ct__Q43scn4step6weapon9StateBaseFPQ43scn4step6weapon6Weapon
 /* 803DCBE8 003D8A28  3C 60 80 49 */	lis r3, __vt__Q53scn4step6weapon11starshotlv29StateMain@ha
@@ -137,7 +137,7 @@ lbl_803DCCB8:
 /* 803DCDB0 003D8BF0  13 E1 00 0C */	psq_lx f31, r1, r0, 0, qr0
 /* 803DCDB4 003D8BF4  CB E1 00 70 */	lfd f31, 0x70(r1)
 /* 803DCDB8 003D8BF8  39 61 00 70 */	addi r11, r1, 0x70
-/* 803DCDBC 003D8BFC  4B C2 A5 CD */	bl lbl_80007388
+/* 803DCDBC 003D8BFC  4B C2 A5 CD */	bl _restgpr_27
 /* 803DCDC0 003D8C00  80 01 00 84 */	lwz r0, 0x84(r1)
 /* 803DCDC4 003D8C04  7C 08 03 A6 */	mtlr r0
 /* 803DCDC8 003D8C08  38 21 00 80 */	addi r1, r1, 0x80
@@ -184,7 +184,7 @@ procAnim__Q53scn4step6weapon11starshotlv29StateMainFv:
 /* 803DCE4C 003D8C8C  7C 08 02 A6 */	mflr r0
 /* 803DCE50 003D8C90  90 01 00 84 */	stw r0, 0x84(r1)
 /* 803DCE54 003D8C94  39 61 00 80 */	addi r11, r1, 0x80
-/* 803DCE58 003D8C98  4B C2 A4 ED */	bl lbl_80007344
+/* 803DCE58 003D8C98  4B C2 A4 ED */	bl _savegpr_29
 /* 803DCE5C 003D8C9C  7C 7D 1B 78 */	mr r29, r3
 /* 803DCE60 003D8CA0  4B D2 39 81 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 803DCE64 003D8CA4  4B FF E3 25 */	bl custom__Q43scn4step6weapon6WeaponFv
@@ -334,7 +334,7 @@ lbl_803DD014:
 .global lbl_803DD03C
 lbl_803DD03C:
 /* 803DD03C 003D8E7C  39 61 00 80 */	addi r11, r1, 0x80
-/* 803DD040 003D8E80  4B C2 A3 51 */	bl lbl_80007390
+/* 803DD040 003D8E80  4B C2 A3 51 */	bl _restgpr_29
 /* 803DD044 003D8E84  80 01 00 84 */	lwz r0, 0x84(r1)
 /* 803DD048 003D8E88  7C 08 03 A6 */	mtlr r0
 /* 803DD04C 003D8E8C  38 21 00 80 */	addi r1, r1, 0x80

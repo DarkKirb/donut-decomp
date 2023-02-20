@@ -60,7 +60,7 @@ lbl_8017E710:
 /* 8017E730 0017A570  7C 08 02 A6 */	mflr r0
 /* 8017E734 0017A574  90 01 00 44 */	stw r0, 0x44(r1)
 /* 8017E738 0017A578  39 61 00 40 */	addi r11, r1, 0x40
-/* 8017E73C 0017A57C  4B E8 8B F9 */	bl lbl_80007334
+/* 8017E73C 0017A57C  4B E8 8B F9 */	bl _savegpr_25
 /* 8017E740 0017A580  7C 79 1B 78 */	mr r25, r3
 /* 8017E744 0017A584  3F 40 80 45 */	lis r26, "@STRING@GetBack__Q34nw4r2ut77LinkList<Q24util56ObjListNode<Q36effect6detail6Effect,Q26effect9Requestor>,0>Fv"@ha
 /* 8017E748 0017A588  3F 60 80 45 */	lis r27, "@STRING@GetBack__Q34nw4r2ut77LinkList<Q24util56ObjListNode<Q36effect6detail6Effect,Q26effect9Requestor>,0>Fv@0"@ha
@@ -113,7 +113,7 @@ lbl_8017E7E0:
 /* 8017E7E4 0017A624  2C 00 00 00 */	cmpwi r0, 0x0
 /* 8017E7E8 0017A628  40 82 FF 74 */	bne lbl_8017E75C
 /* 8017E7EC 0017A62C  39 61 00 40 */	addi r11, r1, 0x40
-/* 8017E7F0 0017A630  4B E8 8B 91 */	bl lbl_80007380
+/* 8017E7F0 0017A630  4B E8 8B 91 */	bl _restgpr_25
 /* 8017E7F4 0017A634  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 8017E7F8 0017A638  7C 08 03 A6 */	mtlr r0
 /* 8017E7FC 0017A63C  38 21 00 40 */	addi r1, r1, 0x40
@@ -223,7 +223,7 @@ autoRequestOnSetFrame__Q26effect9RequestorFRCQ23g3d13ModelAccessorRCQ23g3d17Mode
 /* 8017E954 0017A794  7C 08 02 A6 */	mflr r0
 /* 8017E958 0017A798  90 01 00 44 */	stw r0, 0x44(r1)
 /* 8017E95C 0017A79C  39 61 00 40 */	addi r11, r1, 0x40
-/* 8017E960 0017A7A0  4B E8 89 E5 */	bl lbl_80007344
+/* 8017E960 0017A7A0  4B E8 89 E5 */	bl _savegpr_29
 /* 8017E964 0017A7A4  7C 7D 1B 78 */	mr r29, r3
 /* 8017E968 0017A7A8  7C 9E 23 78 */	mr r30, r4
 /* 8017E96C 0017A7AC  7C BF 2B 78 */	mr r31, r5
@@ -248,7 +248,7 @@ autoRequestOnSetFrame__Q26effect9RequestorFRCQ23g3d13ModelAccessorRCQ23g3d17Mode
 .global lbl_8017E9B8
 lbl_8017E9B8:
 /* 8017E9B8 0017A7F8  39 61 00 40 */	addi r11, r1, 0x40
-/* 8017E9BC 0017A7FC  4B E8 89 D5 */	bl lbl_80007390
+/* 8017E9BC 0017A7FC  4B E8 89 D5 */	bl _restgpr_29
 /* 8017E9C0 0017A800  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 8017E9C4 0017A804  7C 08 03 A6 */	mtlr r0
 /* 8017E9C8 0017A808  38 21 00 40 */	addi r1, r1, 0x40
@@ -291,7 +291,7 @@ autoRequestOnUpdateFrame__Q26effect9RequestorFRCQ23g3d13ModelAccessorRCQ23g3d17M
 /* 8017EA40 0017A880  7C 08 02 A6 */	mflr r0
 /* 8017EA44 0017A884  90 01 00 44 */	stw r0, 0x44(r1)
 /* 8017EA48 0017A888  39 61 00 40 */	addi r11, r1, 0x40
-/* 8017EA4C 0017A88C  4B E8 88 F9 */	bl lbl_80007344
+/* 8017EA4C 0017A88C  4B E8 88 F9 */	bl _savegpr_29
 /* 8017EA50 0017A890  7C 7D 1B 78 */	mr r29, r3
 /* 8017EA54 0017A894  7C 9E 23 78 */	mr r30, r4
 /* 8017EA58 0017A898  7C BF 2B 78 */	mr r31, r5
@@ -316,7 +316,7 @@ autoRequestOnUpdateFrame__Q26effect9RequestorFRCQ23g3d13ModelAccessorRCQ23g3d17M
 .global lbl_8017EAA4
 lbl_8017EAA4:
 /* 8017EAA4 0017A8E4  39 61 00 40 */	addi r11, r1, 0x40
-/* 8017EAA8 0017A8E8  4B E8 88 E9 */	bl lbl_80007390
+/* 8017EAA8 0017A8E8  4B E8 88 E9 */	bl _restgpr_29
 /* 8017EAAC 0017A8EC  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 8017EAB0 0017A8F0  7C 08 03 A6 */	mtlr r0
 /* 8017EAB4 0017A8F4  38 21 00 40 */	addi r1, r1, 0x40

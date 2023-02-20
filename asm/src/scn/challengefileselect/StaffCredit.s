@@ -7,7 +7,7 @@ __ct__Q33scn19challengefileselect11StaffCreditFRQ23mem10IAllocatorRCQ23lyt12Pane
 /* 801E91F8 001E5038  7C 08 02 A6 */	mflr r0
 /* 801E91FC 001E503C  90 01 01 24 */	stw r0, 0x124(r1)
 /* 801E9200 001E5040  39 61 01 20 */	addi r11, r1, 0x120
-/* 801E9204 001E5044  4B E1 E1 3D */	bl lbl_80007340
+/* 801E9204 001E5044  4B E1 E1 3D */	bl _savegpr_28
 /* 801E9208 001E5048  7C 7C 1B 78 */	mr r28, r3
 /* 801E920C 001E504C  7C 9D 23 78 */	mr r29, r4
 /* 801E9210 001E5050  7C BE 2B 78 */	mr r30, r5
@@ -74,7 +74,7 @@ __ct__Q33scn19challengefileselect11StaffCreditFRQ23mem10IAllocatorRCQ23lyt12Pane
 /* 801E9304 001E5144  4B F8 EF 1D */	bl __dt__Q23lyt12PaneAccessorFv
 /* 801E9308 001E5148  7F 83 E3 78 */	mr r3, r28
 /* 801E930C 001E514C  39 61 01 20 */	addi r11, r1, 0x120
-/* 801E9310 001E5150  4B E1 E0 7D */	bl lbl_8000738C
+/* 801E9310 001E5150  4B E1 E0 7D */	bl _restgpr_28
 /* 801E9314 001E5154  80 01 01 24 */	lwz r0, 0x124(r1)
 /* 801E9318 001E5158  7C 08 03 A6 */	mtlr r0
 /* 801E931C 001E515C  38 21 01 20 */	addi r1, r1, 0x120

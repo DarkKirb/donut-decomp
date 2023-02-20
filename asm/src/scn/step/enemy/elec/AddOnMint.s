@@ -72,7 +72,7 @@
 /* 802AF260 002AB0A0  DB E1 00 20 */	stfd f31, 0x20(r1)
 /* 802AF264 002AB0A4  F3 E1 00 28 */	psq_st f31, 0x28(r1), 0, qr0
 /* 802AF268 002AB0A8  39 61 00 20 */	addi r11, r1, 0x20
-/* 802AF26C 002AB0AC  4B D5 80 D9 */	bl lbl_80007344
+/* 802AF26C 002AB0AC  4B D5 80 D9 */	bl _savegpr_29
 /* 802AF270 002AB0B0  4B FD BB 5D */	bl Obj__Q43scn4step5enemy9MintEnemyFv
 /* 802AF274 002AB0B4  4B FD 8E A9 */	bl objColl__Q43scn4step5enemy5EnemyFv
 /* 802AF278 002AB0B8  4B FC 2E 05 */	bl clearAttack__Q43scn4step5chara7ObjCollFv
@@ -111,7 +111,7 @@
 /* 802AF2FC 002AB13C  13 E1 00 0C */	psq_lx f31, r1, r0, 0, qr0
 /* 802AF300 002AB140  CB E1 00 20 */	lfd f31, 0x20(r1)
 /* 802AF304 002AB144  39 61 00 20 */	addi r11, r1, 0x20
-/* 802AF308 002AB148  4B D5 80 89 */	bl lbl_80007390
+/* 802AF308 002AB148  4B D5 80 89 */	bl _restgpr_29
 /* 802AF30C 002AB14C  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 802AF310 002AB150  7C 08 03 A6 */	mtlr r0
 /* 802AF314 002AB154  38 21 00 30 */	addi r1, r1, 0x30

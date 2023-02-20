@@ -7,7 +7,7 @@ __ct__Q33scn10grandtitle7BGModelFRQ33scn10grandtitle9Component:
 /* 80200A38 001FC878  7C 08 02 A6 */	mflr r0
 /* 80200A3C 001FC87C  90 01 00 B4 */	stw r0, 0xb4(r1)
 /* 80200A40 001FC880  39 61 00 B0 */	addi r11, r1, 0xb0
-/* 80200A44 001FC884  4B E0 68 F5 */	bl lbl_80007338
+/* 80200A44 001FC884  4B E0 68 F5 */	bl _savegpr_26
 /* 80200A48 001FC888  7C 7A 1B 78 */	mr r26, r3
 /* 80200A4C 001FC88C  7C 9B 23 78 */	mr r27, r4
 /* 80200A50 001FC890  7F 63 DB 78 */	mr r3, r27
@@ -66,7 +66,7 @@ __ct__Q33scn10grandtitle7BGModelFRQ33scn10grandtitle9Component:
 /* 80200B24 001FC964  4B F9 3F D1 */	bl registerToRoot__Q23g3d8StdModelFRQ23g3d4Root
 /* 80200B28 001FC968  7F 43 D3 78 */	mr r3, r26
 /* 80200B2C 001FC96C  39 61 00 B0 */	addi r11, r1, 0xb0
-/* 80200B30 001FC970  4B E0 68 55 */	bl lbl_80007384
+/* 80200B30 001FC970  4B E0 68 55 */	bl _restgpr_26
 /* 80200B34 001FC974  80 01 00 B4 */	lwz r0, 0xb4(r1)
 /* 80200B38 001FC978  7C 08 03 A6 */	mtlr r0
 /* 80200B3C 001FC97C  38 21 00 B0 */	addi r1, r1, 0xb0

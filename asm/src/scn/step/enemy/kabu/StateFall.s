@@ -47,7 +47,7 @@ procMove__Q53scn4step5enemy4kabu9StateFallFv:
 /* 802BCF40 002B8D80  7C 08 02 A6 */	mflr r0
 /* 802BCF44 002B8D84  90 01 00 34 */	stw r0, 0x34(r1)
 /* 802BCF48 002B8D88  39 61 00 30 */	addi r11, r1, 0x30
-/* 802BCF4C 002B8D8C  4B D4 A3 F9 */	bl lbl_80007344
+/* 802BCF4C 002B8D8C  4B D4 A3 F9 */	bl _savegpr_29
 /* 802BCF50 002B8D90  7C 7D 1B 78 */	mr r29, r3
 /* 802BCF54 002B8D94  4B E4 38 8D */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 802BCF58 002B8D98  4B FC B1 2D */	bl param__Q43scn4step5enemy5EnemyCFv
@@ -71,7 +71,7 @@ procMove__Q53scn4step5enemy4kabu9StateFallFv:
 /* 802BCFA0 002B8DE0  38 DE 00 04 */	addi r6, r30, 0x4
 /* 802BCFA4 002B8DE4  4B ED E5 39 */	bl airAccelFall__Q24gobj4MoveFbRCQ24gobj14MoveParamAccelRCQ24gobj13MoveParamFall
 /* 802BCFA8 002B8DE8  39 61 00 30 */	addi r11, r1, 0x30
-/* 802BCFAC 002B8DEC  4B D4 A3 E5 */	bl lbl_80007390
+/* 802BCFAC 002B8DEC  4B D4 A3 E5 */	bl _restgpr_29
 /* 802BCFB0 002B8DF0  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 802BCFB4 002B8DF4  7C 08 03 A6 */	mtlr r0
 /* 802BCFB8 002B8DF8  38 21 00 30 */	addi r1, r1, 0x30
@@ -83,7 +83,7 @@ procFixPos__Q53scn4step5enemy4kabu9StateFallFv:
 /* 802BCFC4 002B8E04  7C 08 02 A6 */	mflr r0
 /* 802BCFC8 002B8E08  90 01 00 74 */	stw r0, 0x74(r1)
 /* 802BCFCC 002B8E0C  39 61 00 70 */	addi r11, r1, 0x70
-/* 802BCFD0 002B8E10  4B D4 A3 75 */	bl lbl_80007344
+/* 802BCFD0 002B8E10  4B D4 A3 75 */	bl _savegpr_29
 /* 802BCFD4 002B8E14  7C 7D 1B 78 */	mr r29, r3
 /* 802BCFD8 002B8E18  4B E4 38 09 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 802BCFDC 002B8E1C  4B FC B1 21 */	bl mapColl__Q43scn4step5enemy5EnemyFv
@@ -152,7 +152,7 @@ lbl_802BD084:
 .global lbl_802BD0B8
 lbl_802BD0B8:
 /* 802BD0B8 002B8EF8  39 61 00 70 */	addi r11, r1, 0x70
-/* 802BD0BC 002B8EFC  4B D4 A2 D5 */	bl lbl_80007390
+/* 802BD0BC 002B8EFC  4B D4 A2 D5 */	bl _restgpr_29
 /* 802BD0C0 002B8F00  80 01 00 74 */	lwz r0, 0x74(r1)
 /* 802BD0C4 002B8F04  7C 08 03 A6 */	mtlr r0
 /* 802BD0C8 002B8F08  38 21 00 70 */	addi r1, r1, 0x70

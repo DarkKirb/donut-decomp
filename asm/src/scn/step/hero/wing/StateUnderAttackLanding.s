@@ -227,7 +227,7 @@ createWeapon__Q53scn4step4hero4wing23StateUnderAttackLandingFRCfRCb:
 /* 8039AE24 00396C64  7C 08 02 A6 */	mflr r0
 /* 8039AE28 00396C68  90 01 00 94 */	stw r0, 0x94(r1)
 /* 8039AE2C 00396C6C  39 61 00 90 */	addi r11, r1, 0x90
-/* 8039AE30 00396C70  4B C6 C5 11 */	bl lbl_80007340
+/* 8039AE30 00396C70  4B C6 C5 11 */	bl _savegpr_28
 /* 8039AE34 00396C74  7C 7C 1B 78 */	mr r28, r3
 /* 8039AE38 00396C78  7C 9D 23 78 */	mr r29, r4
 /* 8039AE3C 00396C7C  7C BE 2B 78 */	mr r30, r5
@@ -333,7 +333,7 @@ lbl_8039AF24:
 /* 8039AFB4 00396DF4  38 80 FF FF */	li r4, -0x1
 /* 8039AFB8 00396DF8  4B E9 F0 F9 */	bl "__dt__Q24util39ObjRefHandle<Q43scn4step6weapon6Weapon>Fv"
 /* 8039AFBC 00396DFC  39 61 00 90 */	addi r11, r1, 0x90
-/* 8039AFC0 00396E00  4B C6 C3 CD */	bl lbl_8000738C
+/* 8039AFC0 00396E00  4B C6 C3 CD */	bl _restgpr_28
 /* 8039AFC4 00396E04  80 01 00 94 */	lwz r0, 0x94(r1)
 /* 8039AFC8 00396E08  7C 08 03 A6 */	mtlr r0
 /* 8039AFCC 00396E0C  38 21 00 90 */	addi r1, r1, 0x90

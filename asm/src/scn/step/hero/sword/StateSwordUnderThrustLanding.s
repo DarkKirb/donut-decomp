@@ -57,7 +57,7 @@ procAnim__Q53scn4step4hero5sword28StateSwordUnderThrustLandingFv:
 /* 80389784 003855C4  7C 08 02 A6 */	mflr r0
 /* 80389788 003855C8  90 01 00 24 */	stw r0, 0x24(r1)
 /* 8038978C 003855CC  39 61 00 20 */	addi r11, r1, 0x20
-/* 80389790 003855D0  4B C7 DB B5 */	bl lbl_80007344
+/* 80389790 003855D0  4B C7 DB B5 */	bl _savegpr_29
 /* 80389794 003855D4  7C 7D 1B 78 */	mr r29, r3
 /* 80389798 003855D8  4B D7 70 49 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 8038979C 003855DC  4B FB 6B 81 */	bl model__Q43scn4step4hero4HeroFv
@@ -88,7 +88,7 @@ lbl_803897F4:
 .global lbl_803897F8
 lbl_803897F8:
 /* 803897F8 00385638  39 61 00 20 */	addi r11, r1, 0x20
-/* 803897FC 0038563C  4B C7 DB 95 */	bl lbl_80007390
+/* 803897FC 0038563C  4B C7 DB 95 */	bl _restgpr_29
 /* 80389800 00385640  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80389804 00385644  7C 08 03 A6 */	mtlr r0
 /* 80389808 00385648  38 21 00 20 */	addi r1, r1, 0x20

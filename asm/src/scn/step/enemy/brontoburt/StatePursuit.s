@@ -49,7 +49,7 @@ procMove__Q53scn4step5enemy10brontoburt12StatePursuitFv:
 /* 8029FB1C 0029B95C  DB A1 00 C0 */	stfd f29, 0xc0(r1)
 /* 8029FB20 0029B960  F3 A1 00 C8 */	psq_st f29, 0xc8(r1), 0, qr0
 /* 8029FB24 0029B964  39 61 00 C0 */	addi r11, r1, 0xc0
-/* 8029FB28 0029B968  4B D6 78 1D */	bl lbl_80007344
+/* 8029FB28 0029B968  4B D6 78 1D */	bl _savegpr_29
 /* 8029FB2C 0029B96C  7C 7D 1B 78 */	mr r29, r3
 /* 8029FB30 0029B970  4B E6 0C B1 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 8029FB34 0029B974  4B FE F2 1D */	bl IsPlayerExist__Q43scn4step5enemy7UtilityFRQ43scn4step5enemy5Enemy
@@ -295,7 +295,7 @@ lbl_8029FE0C:
 /* 8029FE9C 0029BCDC  13 A1 00 0C */	psq_lx f29, r1, r0, 0, qr0
 /* 8029FEA0 0029BCE0  CB A1 00 C0 */	lfd f29, 0xc0(r1)
 /* 8029FEA4 0029BCE4  39 61 00 C0 */	addi r11, r1, 0xc0
-/* 8029FEA8 0029BCE8  4B D6 74 E9 */	bl lbl_80007390
+/* 8029FEA8 0029BCE8  4B D6 74 E9 */	bl _restgpr_29
 /* 8029FEAC 0029BCEC  80 01 00 F4 */	lwz r0, 0xf4(r1)
 /* 8029FEB0 0029BCF0  7C 08 03 A6 */	mtlr r0
 /* 8029FEB4 0029BCF4  38 21 00 F0 */	addi r1, r1, 0xf0

@@ -7,7 +7,7 @@ __ct__Q43scn4step5enemy6NururiFRQ43scn4step5enemy5Enemy:
 /* 8028AEB8 00286CF8  7C 08 02 A6 */	mflr r0
 /* 8028AEBC 00286CFC  90 01 00 24 */	stw r0, 0x24(r1)
 /* 8028AEC0 00286D00  39 61 00 20 */	addi r11, r1, 0x20
-/* 8028AEC4 00286D04  4B D7 C4 81 */	bl lbl_80007344
+/* 8028AEC4 00286D04  4B D7 C4 81 */	bl _savegpr_29
 /* 8028AEC8 00286D08  7C 7D 1B 78 */	mr r29, r3
 /* 8028AECC 00286D0C  7C 9E 23 78 */	mr r30, r4
 /* 8028AED0 00286D10  90 83 00 00 */	stw r4, 0x0(r3)
@@ -58,7 +58,7 @@ __ct__Q43scn4step5enemy6NururiFRQ43scn4step5enemy5Enemy:
 /* 8028AF84 00286DC4  48 00 00 21 */	bl setupInfo__Q43scn4step5enemy6NururiFv
 /* 8028AF88 00286DC8  7F A3 EB 78 */	mr r3, r29
 /* 8028AF8C 00286DCC  39 61 00 20 */	addi r11, r1, 0x20
-/* 8028AF90 00286DD0  4B D7 C4 01 */	bl lbl_80007390
+/* 8028AF90 00286DD0  4B D7 C4 01 */	bl _restgpr_29
 /* 8028AF94 00286DD4  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8028AF98 00286DD8  7C 08 03 A6 */	mtlr r0
 /* 8028AF9C 00286DDC  38 21 00 20 */	addi r1, r1, 0x20

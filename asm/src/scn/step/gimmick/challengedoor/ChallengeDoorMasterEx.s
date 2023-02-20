@@ -249,7 +249,7 @@ modelMainSetWaitAnim__Q53scn4step7gimmick13challengedoor21ChallengeDoorMasterExF
 /* 80308D8C 00304BCC  7C 08 02 A6 */	mflr r0
 /* 80308D90 00304BD0  90 01 01 24 */	stw r0, 0x124(r1)
 /* 80308D94 00304BD4  39 61 01 20 */	addi r11, r1, 0x120
-/* 80308D98 00304BD8  4B CF E5 AD */	bl lbl_80007344
+/* 80308D98 00304BD8  4B CF E5 AD */	bl _savegpr_29
 /* 80308D9C 00304BDC  7C 7D 1B 78 */	mr r29, r3
 /* 80308DA0 00304BE0  3C 80 80 48 */	lis r4, "@56569_80480BE0"@ha
 /* 80308DA4 00304BE4  3B C4 0B E0 */	addi r30, r4, "@56569_80480BE0"@l
@@ -419,7 +419,7 @@ modelMainSetWaitAnim__Q53scn4step7gimmick13challengedoor21ChallengeDoorMasterExF
 .global lbl_80309034
 lbl_80309034:
 /* 80309034 00304E74  39 61 01 20 */	addi r11, r1, 0x120
-/* 80309038 00304E78  4B CF E3 59 */	bl lbl_80007390
+/* 80309038 00304E78  4B CF E3 59 */	bl _restgpr_29
 /* 8030903C 00304E7C  80 01 01 24 */	lwz r0, 0x124(r1)
 /* 80309040 00304E80  7C 08 03 A6 */	mtlr r0
 /* 80309044 00304E84  38 21 01 20 */	addi r1, r1, 0x120
@@ -442,7 +442,7 @@ mfCreateMoveLand__Q53scn4step7gimmick13challengedoor21ChallengeDoorMasterExFv:
 /* 8030905C 00304E9C  7C 08 02 A6 */	mflr r0
 /* 80309060 00304EA0  90 01 00 24 */	stw r0, 0x24(r1)
 /* 80309064 00304EA4  39 61 00 20 */	addi r11, r1, 0x20
-/* 80309068 00304EA8  4B CF E2 DD */	bl lbl_80007344
+/* 80309068 00304EA8  4B CF E2 DD */	bl _savegpr_29
 /* 8030906C 00304EAC  7C 7D 1B 78 */	mr r29, r3
 /* 80309070 00304EB0  C0 03 00 40 */	lfs f0, 0x40(r3)
 /* 80309074 00304EB4  D0 01 00 08 */	stfs f0, 0x8(r1)
@@ -462,7 +462,7 @@ mfCreateMoveLand__Q53scn4step7gimmick13challengedoor21ChallengeDoorMasterExFv:
 /* 803090AC 00304EEC  4B EA 94 39 */	bl mgAddGroupNewCreate__Q25mcoll11LandManagerFUlUlQ35mcoll6detail15MoveGridAddType
 /* 803090B0 00304EF0  90 7D 0C 84 */	stw r3, 0xc84(r29)
 /* 803090B4 00304EF4  39 61 00 20 */	addi r11, r1, 0x20
-/* 803090B8 00304EF8  4B CF E2 D9 */	bl lbl_80007390
+/* 803090B8 00304EF8  4B CF E2 D9 */	bl _restgpr_29
 /* 803090BC 00304EFC  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803090C0 00304F00  7C 08 03 A6 */	mtlr r0
 /* 803090C4 00304F04  38 21 00 20 */	addi r1, r1, 0x20

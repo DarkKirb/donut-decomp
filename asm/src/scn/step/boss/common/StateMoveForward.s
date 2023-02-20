@@ -7,7 +7,7 @@ __ct__Q53scn4step4boss6common16StateMoveForwardFPQ43scn4step4boss4BossQ53scn4ste
 /* 80247540 00243380  7C 08 02 A6 */	mflr r0
 /* 80247544 00243384  90 01 00 24 */	stw r0, 0x24(r1)
 /* 80247548 00243388  39 61 00 20 */	addi r11, r1, 0x20
-/* 8024754C 0024338C  4B DB FD F9 */	bl lbl_80007344
+/* 8024754C 0024338C  4B DB FD F9 */	bl _savegpr_29
 /* 80247550 00243390  7C 7D 1B 78 */	mr r29, r3
 /* 80247554 00243394  7C BE 2B 78 */	mr r30, r5
 /* 80247558 00243398  7C DF 33 78 */	mr r31, r6
@@ -36,7 +36,7 @@ __ct__Q53scn4step4boss6common16StateMoveForwardFPQ43scn4step4boss4BossQ53scn4ste
 /* 802475B4 002433F4  4B FE 5B 51 */	bl toValid__Q43scn4step4boss9BrainCtrlFv
 /* 802475B8 002433F8  7F A3 EB 78 */	mr r3, r29
 /* 802475BC 002433FC  39 61 00 20 */	addi r11, r1, 0x20
-/* 802475C0 00243400  4B DB FD D1 */	bl lbl_80007390
+/* 802475C0 00243400  4B DB FD D1 */	bl _restgpr_29
 /* 802475C4 00243404  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802475C8 00243408  7C 08 03 A6 */	mtlr r0
 /* 802475CC 0024340C  38 21 00 20 */	addi r1, r1, 0x20

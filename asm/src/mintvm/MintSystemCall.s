@@ -92,7 +92,7 @@ messageHandler__Q26mintvm14MintSystemCallFQ26mintvm11MintMsgKindPCcPCc:
 /* 801C60D4 001C1F14  7C 08 02 A6 */	mflr r0
 /* 801C60D8 001C1F18  90 01 00 24 */	stw r0, 0x24(r1)
 /* 801C60DC 001C1F1C  39 61 00 20 */	addi r11, r1, 0x20
-/* 801C60E0 001C1F20  4B E4 12 65 */	bl lbl_80007344
+/* 801C60E0 001C1F20  4B E4 12 65 */	bl _savegpr_29
 /* 801C60E4 001C1F24  7C 7D 1B 78 */	mr r29, r3
 /* 801C60E8 001C1F28  7C 9E 23 78 */	mr r30, r4
 /* 801C60EC 001C1F2C  7C BF 2B 78 */	mr r31, r5
@@ -110,7 +110,7 @@ messageHandler__Q26mintvm14MintSystemCallFQ26mintvm11MintMsgKindPCcPCc:
 .global lbl_801C611C
 lbl_801C611C:
 /* 801C611C 001C1F5C  39 61 00 20 */	addi r11, r1, 0x20
-/* 801C6120 001C1F60  4B E4 12 71 */	bl lbl_80007390
+/* 801C6120 001C1F60  4B E4 12 71 */	bl _restgpr_29
 /* 801C6124 001C1F64  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 801C6128 001C1F68  7C 08 03 A6 */	mtlr r0
 /* 801C612C 001C1F6C  38 21 00 20 */	addi r1, r1, 0x20

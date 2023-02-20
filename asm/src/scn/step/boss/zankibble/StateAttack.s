@@ -105,7 +105,7 @@ procAnim__Q53scn4step4boss9zankibble11StateAttackFv:
 /* 80260FA4 0025CDE4  DB E1 00 50 */	stfd f31, 0x50(r1)
 /* 80260FA8 0025CDE8  F3 E1 00 58 */	psq_st f31, 0x58(r1), 0, qr0
 /* 80260FAC 0025CDEC  39 61 00 50 */	addi r11, r1, 0x50
-/* 80260FB0 0025CDF0  4B DA 63 95 */	bl lbl_80007344
+/* 80260FB0 0025CDF0  4B DA 63 95 */	bl _savegpr_29
 /* 80260FB4 0025CDF4  7C 7F 1B 78 */	mr r31, r3
 /* 80260FB8 0025CDF8  4B E9 F8 29 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 80260FBC 0025CDFC  4B FC BF 55 */	bl param__Q43scn4step4boss4BossCFv
@@ -276,7 +276,7 @@ lbl_802611EC:
 /* 802611F0 0025D030  13 E1 00 0C */	psq_lx f31, r1, r0, 0, qr0
 /* 802611F4 0025D034  CB E1 00 50 */	lfd f31, 0x50(r1)
 /* 802611F8 0025D038  39 61 00 50 */	addi r11, r1, 0x50
-/* 802611FC 0025D03C  4B DA 61 95 */	bl lbl_80007390
+/* 802611FC 0025D03C  4B DA 61 95 */	bl _restgpr_29
 /* 80261200 0025D040  80 01 00 64 */	lwz r0, 0x64(r1)
 /* 80261204 0025D044  7C 08 03 A6 */	mtlr r0
 /* 80261208 0025D048  38 21 00 60 */	addi r1, r1, 0x60
@@ -435,7 +435,7 @@ reqCutterCircle__Q53scn4step4boss9zankibble11StateAttackFv:
 /* 8026140C 0025D24C  7C 08 02 A6 */	mflr r0
 /* 80261410 0025D250  90 01 00 64 */	stw r0, 0x64(r1)
 /* 80261414 0025D254  39 61 00 60 */	addi r11, r1, 0x60
-/* 80261418 0025D258  4B DA 5F 2D */	bl lbl_80007344
+/* 80261418 0025D258  4B DA 5F 2D */	bl _savegpr_29
 /* 8026141C 0025D25C  7C 7D 1B 78 */	mr r29, r3
 /* 80261420 0025D260  4B E9 F3 C1 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 80261424 0025D264  4B FC BA ED */	bl param__Q43scn4step4boss4BossCFv
@@ -495,7 +495,7 @@ reqCutterCircle__Q53scn4step4boss9zankibble11StateAttackFv:
 /* 802614FC 0025D33C  88 FD 00 14 */	lbz r7, 0x14(r29)
 /* 80261500 0025D340  4B FF F3 51 */	bl request__Q53scn4step4boss9zankibble9EnemyCtrlFQ63scn4step4boss9zankibble9EnemyCtrl10CutterKindQ33hel4math7Vector2Q33hel4math7Vector3b
 /* 80261504 0025D344  39 61 00 60 */	addi r11, r1, 0x60
-/* 80261508 0025D348  4B DA 5E 89 */	bl lbl_80007390
+/* 80261508 0025D348  4B DA 5E 89 */	bl _restgpr_29
 /* 8026150C 0025D34C  80 01 00 64 */	lwz r0, 0x64(r1)
 /* 80261510 0025D350  7C 08 03 A6 */	mtlr r0
 /* 80261514 0025D354  38 21 00 60 */	addi r1, r1, 0x60

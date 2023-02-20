@@ -91,7 +91,7 @@ __ct__Q33scn15challengeresult20SceneChallengeResultFRCQ43scn15challengeresult20S
 /* 801F066C 001EC4AC  7C 08 02 A6 */	mflr r0
 /* 801F0670 001EC4B0  90 01 07 64 */	stw r0, 0x764(r1)
 /* 801F0674 001EC4B4  39 61 07 60 */	addi r11, r1, 0x760
-/* 801F0678 001EC4B8  4B E1 6C C1 */	bl lbl_80007338
+/* 801F0678 001EC4B8  4B E1 6C C1 */	bl _savegpr_26
 /* 801F067C 001EC4BC  7C 7E 1B 78 */	mr r30, r3
 /* 801F0680 001EC4C0  7C 9F 23 78 */	mr r31, r4
 /* 801F0684 001EC4C4  3C 80 80 46 */	lis r4, __vt__Q33scn15challengeresult20SceneChallengeResult@ha
@@ -369,7 +369,7 @@ lbl_801F096C:
 /* 801F0A7C 001EC8BC  48 00 03 95 */	bl setupCamera__Q33scn15challengeresult20SceneChallengeResultFRQ23g3d4Root
 /* 801F0A80 001EC8C0  7F C3 F3 78 */	mr r3, r30
 /* 801F0A84 001EC8C4  39 61 07 60 */	addi r11, r1, 0x760
-/* 801F0A88 001EC8C8  4B E1 68 FD */	bl lbl_80007384
+/* 801F0A88 001EC8C8  4B E1 68 FD */	bl _restgpr_26
 /* 801F0A8C 001EC8CC  80 01 07 64 */	lwz r0, 0x764(r1)
 /* 801F0A90 001EC8D0  7C 08 03 A6 */	mtlr r0
 /* 801F0A94 001EC8D4  38 21 07 60 */	addi r1, r1, 0x760

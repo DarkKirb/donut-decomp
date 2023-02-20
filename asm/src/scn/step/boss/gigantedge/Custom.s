@@ -25,7 +25,7 @@ onInit__Q53scn4step4boss10gigantedge6CustomFv:
 /* 80251B84 0024D9C4  7C 08 02 A6 */	mflr r0
 /* 80251B88 0024D9C8  90 01 00 54 */	stw r0, 0x54(r1)
 /* 80251B8C 0024D9CC  39 61 00 50 */	addi r11, r1, 0x50
-/* 80251B90 0024D9D0  4B DB 57 AD */	bl lbl_8000733C
+/* 80251B90 0024D9D0  4B DB 57 AD */	bl _savegpr_27
 /* 80251B94 0024D9D4  7C 7F 1B 78 */	mr r31, r3
 /* 80251B98 0024D9D8  3C 80 80 46 */	lis r4, "@57877"@ha
 /* 80251B9C 0024D9DC  3B 64 7A 80 */	addi r27, r4, "@57877"@l
@@ -200,7 +200,7 @@ lbl_80251D4C:
 lbl_80251E14:
 /* 80251E14 0024DC54  93 7F 00 0C */	stw r27, 0xc(r31)
 /* 80251E18 0024DC58  39 61 00 50 */	addi r11, r1, 0x50
-/* 80251E1C 0024DC5C  4B DB 55 6D */	bl lbl_80007388
+/* 80251E1C 0024DC5C  4B DB 55 6D */	bl _restgpr_27
 /* 80251E20 0024DC60  80 01 00 54 */	lwz r0, 0x54(r1)
 /* 80251E24 0024DC64  7C 08 03 A6 */	mtlr r0
 /* 80251E28 0024DC68  38 21 00 50 */	addi r1, r1, 0x50
@@ -224,7 +224,7 @@ onDead__Q53scn4step4boss10gigantedge6CustomFv:
 /* 80251E40 0024DC80  7C 08 02 A6 */	mflr r0
 /* 80251E44 0024DC84  90 01 00 24 */	stw r0, 0x24(r1)
 /* 80251E48 0024DC88  39 61 00 20 */	addi r11, r1, 0x20
-/* 80251E4C 0024DC8C  4B DB 54 F9 */	bl lbl_80007344
+/* 80251E4C 0024DC8C  4B DB 54 F9 */	bl _savegpr_29
 /* 80251E50 0024DC90  7C 7D 1B 78 */	mr r29, r3
 /* 80251E54 0024DC94  4B EA E9 8D */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 80251E58 0024DC98  4B FD B0 E1 */	bl model__Q43scn4step4boss4BossFv
@@ -255,7 +255,7 @@ onDead__Q53scn4step4boss10gigantedge6CustomFv:
 lbl_80251EB8:
 /* 80251EB8 0024DCF8  93 BF 00 0C */	stw r29, 0xc(r31)
 /* 80251EBC 0024DCFC  39 61 00 20 */	addi r11, r1, 0x20
-/* 80251EC0 0024DD00  4B DB 54 D1 */	bl lbl_80007390
+/* 80251EC0 0024DD00  4B DB 54 D1 */	bl _restgpr_29
 /* 80251EC4 0024DD04  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80251EC8 0024DD08  7C 08 03 A6 */	mtlr r0
 /* 80251ECC 0024DD0C  38 21 00 20 */	addi r1, r1, 0x20
@@ -274,7 +274,7 @@ setBodyCollGuard__Q53scn4step4boss10gigantedge6CustomFv:
 /* 80251EE0 0024DD20  7C 08 02 A6 */	mflr r0
 /* 80251EE4 0024DD24  90 01 00 34 */	stw r0, 0x34(r1)
 /* 80251EE8 0024DD28  39 61 00 30 */	addi r11, r1, 0x30
-/* 80251EEC 0024DD2C  4B DB 54 55 */	bl lbl_80007340
+/* 80251EEC 0024DD2C  4B DB 54 55 */	bl _savegpr_28
 /* 80251EF0 0024DD30  7C 7C 1B 78 */	mr r28, r3
 /* 80251EF4 0024DD34  4B EA E8 ED */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 80251EF8 0024DD38  4B FD B0 91 */	bl objColl__Q43scn4step4boss4BossFv
@@ -333,7 +333,7 @@ setBodyCollGuard__Q53scn4step4boss10gigantedge6CustomFv:
 /* 80251FCC 0024DE0C  38 80 00 06 */	li r4, 0x6
 /* 80251FD0 0024DE10  48 01 B2 01 */	bl setResistLv__Q43scn4step5chara8BodyCollFQ43scn4step5ocoll11HitResistLv
 /* 80251FD4 0024DE14  39 61 00 30 */	addi r11, r1, 0x30
-/* 80251FD8 0024DE18  4B DB 53 B5 */	bl lbl_8000738C
+/* 80251FD8 0024DE18  4B DB 53 B5 */	bl _restgpr_28
 /* 80251FDC 0024DE1C  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 80251FE0 0024DE20  7C 08 03 A6 */	mtlr r0
 /* 80251FE4 0024DE24  38 21 00 30 */	addi r1, r1, 0x30
@@ -350,7 +350,7 @@ reqSwordShot__Q53scn4step4boss10gigantedge6CustomFb:
 /* 80252008 0024DE48  DB A1 00 F0 */	stfd f29, 0xf0(r1)
 /* 8025200C 0024DE4C  F3 A1 00 F8 */	psq_st f29, 0xf8(r1), 0, qr0
 /* 80252010 0024DE50  39 61 00 F0 */	addi r11, r1, 0xf0
-/* 80252014 0024DE54  4B DB 53 21 */	bl lbl_80007334
+/* 80252014 0024DE54  4B DB 53 21 */	bl _savegpr_25
 /* 80252018 0024DE58  7C 79 1B 78 */	mr r25, r3
 /* 8025201C 0024DE5C  7C 9A 23 78 */	mr r26, r4
 /* 80252020 0024DE60  4B EA E7 C1 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
@@ -518,7 +518,7 @@ lbl_802521CC:
 /* 80252288 0024E0C8  13 A1 00 0C */	psq_lx f29, r1, r0, 0, qr0
 /* 8025228C 0024E0CC  CB A1 00 F0 */	lfd f29, 0xf0(r1)
 /* 80252290 0024E0D0  39 61 00 F0 */	addi r11, r1, 0xf0
-/* 80252294 0024E0D4  4B DB 50 ED */	bl lbl_80007380
+/* 80252294 0024E0D4  4B DB 50 ED */	bl _restgpr_25
 /* 80252298 0024E0D8  80 01 01 24 */	lwz r0, 0x124(r1)
 /* 8025229C 0024E0DC  7C 08 03 A6 */	mtlr r0
 /* 802522A0 0024E0E0  38 21 01 20 */	addi r1, r1, 0x120

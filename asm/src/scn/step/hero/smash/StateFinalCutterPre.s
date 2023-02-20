@@ -7,7 +7,7 @@ TryToChangeState__Q53scn4step4hero5smash19StateFinalCutterPreFPQ43scn4step4hero4
 /* 803A1698 0039D4D8  7C 08 02 A6 */	mflr r0
 /* 803A169C 0039D4DC  90 01 00 24 */	stw r0, 0x24(r1)
 /* 803A16A0 0039D4E0  39 61 00 20 */	addi r11, r1, 0x20
-/* 803A16A4 0039D4E4  4B C6 5C A1 */	bl lbl_80007344
+/* 803A16A4 0039D4E4  4B C6 5C A1 */	bl _savegpr_29
 /* 803A16A8 0039D4E8  7C 7D 1B 78 */	mr r29, r3
 /* 803A16AC 0039D4EC  4B F9 EC A1 */	bl hid__Q43scn4step4hero4HeroFv
 /* 803A16B0 0039D4F0  38 80 00 08 */	li r4, 0x8
@@ -45,7 +45,7 @@ lbl_803A171C:
 .global lbl_803A1720
 lbl_803A1720:
 /* 803A1720 0039D560  39 61 00 20 */	addi r11, r1, 0x20
-/* 803A1724 0039D564  4B C6 5C 6D */	bl lbl_80007390
+/* 803A1724 0039D564  4B C6 5C 6D */	bl _restgpr_29
 /* 803A1728 0039D568  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803A172C 0039D56C  7C 08 03 A6 */	mtlr r0
 /* 803A1730 0039D570  38 21 00 20 */	addi r1, r1, 0x20
@@ -108,7 +108,7 @@ procAnim__Q53scn4step4hero5smash19StateFinalCutterPreFv:
 /* 803A17F4 0039D634  7C 08 02 A6 */	mflr r0
 /* 803A17F8 0039D638  90 01 00 24 */	stw r0, 0x24(r1)
 /* 803A17FC 0039D63C  39 61 00 20 */	addi r11, r1, 0x20
-/* 803A1800 0039D640  4B C6 5B 45 */	bl lbl_80007344
+/* 803A1800 0039D640  4B C6 5B 45 */	bl _savegpr_29
 /* 803A1804 0039D644  7C 7D 1B 78 */	mr r29, r3
 /* 803A1808 0039D648  4B D5 EF D9 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 803A180C 0039D64C  4B F9 EB 11 */	bl model__Q43scn4step4hero4HeroFv
@@ -139,7 +139,7 @@ lbl_803A1864:
 .global lbl_803A1868
 lbl_803A1868:
 /* 803A1868 0039D6A8  39 61 00 20 */	addi r11, r1, 0x20
-/* 803A186C 0039D6AC  4B C6 5B 25 */	bl lbl_80007390
+/* 803A186C 0039D6AC  4B C6 5B 25 */	bl _restgpr_29
 /* 803A1870 0039D6B0  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803A1874 0039D6B4  7C 08 03 A6 */	mtlr r0
 /* 803A1878 0039D6B8  38 21 00 20 */	addi r1, r1, 0x20

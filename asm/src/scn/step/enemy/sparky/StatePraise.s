@@ -7,7 +7,7 @@ __ct__Q53scn4step5enemy6sparky11StatePraiseFPQ43scn4step5enemy5Enemyb:
 /* 802E74B0 002E32F0  7C 08 02 A6 */	mflr r0
 /* 802E74B4 002E32F4  90 01 00 34 */	stw r0, 0x34(r1)
 /* 802E74B8 002E32F8  39 61 00 30 */	addi r11, r1, 0x30
-/* 802E74BC 002E32FC  4B D1 FE 85 */	bl lbl_80007340
+/* 802E74BC 002E32FC  4B D1 FE 85 */	bl _savegpr_28
 /* 802E74C0 002E3300  7C 7C 1B 78 */	mr r28, r3
 /* 802E74C4 002E3304  7C 9D 23 78 */	mr r29, r4
 /* 802E74C8 002E3308  7C BE 2B 78 */	mr r30, r5
@@ -56,7 +56,7 @@ __ct__Q53scn4step5enemy6sparky11StatePraiseFPQ43scn4step5enemy5Enemyb:
 /* 802E7574 002E33B4  4B F8 9D 09 */	bl reqScript__Q43scn4step5chara5ModelFUl
 /* 802E7578 002E33B8  7F 83 E3 78 */	mr r3, r28
 /* 802E757C 002E33BC  39 61 00 30 */	addi r11, r1, 0x30
-/* 802E7580 002E33C0  4B D1 FE 0D */	bl lbl_8000738C
+/* 802E7580 002E33C0  4B D1 FE 0D */	bl _restgpr_28
 /* 802E7584 002E33C4  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 802E7588 002E33C8  7C 08 03 A6 */	mtlr r0
 /* 802E758C 002E33CC  38 21 00 30 */	addi r1, r1, 0x30
@@ -165,7 +165,7 @@ procMove__Q53scn4step5enemy6sparky11StatePraiseFv:
 /* 802E76D4 002E3514  7C 08 02 A6 */	mflr r0
 /* 802E76D8 002E3518  90 01 00 34 */	stw r0, 0x34(r1)
 /* 802E76DC 002E351C  39 61 00 30 */	addi r11, r1, 0x30
-/* 802E76E0 002E3520  4B D1 FC 65 */	bl lbl_80007344
+/* 802E76E0 002E3520  4B D1 FC 65 */	bl _savegpr_29
 /* 802E76E4 002E3524  7C 7D 1B 78 */	mr r29, r3
 /* 802E76E8 002E3528  80 03 00 08 */	lwz r0, 0x8(r3)
 /* 802E76EC 002E352C  2C 00 00 01 */	cmpwi r0, 0x1
@@ -227,7 +227,7 @@ lbl_802E7730:
 .global lbl_802E77C4
 lbl_802E77C4:
 /* 802E77C4 002E3604  39 61 00 30 */	addi r11, r1, 0x30
-/* 802E77C8 002E3608  4B D1 FB C9 */	bl lbl_80007390
+/* 802E77C8 002E3608  4B D1 FB C9 */	bl _restgpr_29
 /* 802E77CC 002E360C  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 802E77D0 002E3610  7C 08 03 A6 */	mtlr r0
 /* 802E77D4 002E3614  38 21 00 30 */	addi r1, r1, 0x30

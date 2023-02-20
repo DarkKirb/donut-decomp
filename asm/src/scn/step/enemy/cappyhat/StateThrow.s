@@ -7,7 +7,7 @@ __ct__Q53scn4step5enemy8cappyhat10StateThrowFPQ43scn4step5enemy5EnemyUx:
 /* 802A3DFC 0029FC3C  7C 08 02 A6 */	mflr r0
 /* 802A3E00 0029FC40  90 01 00 24 */	stw r0, 0x24(r1)
 /* 802A3E04 0029FC44  39 61 00 20 */	addi r11, r1, 0x20
-/* 802A3E08 0029FC48  4B D6 35 3D */	bl lbl_80007344
+/* 802A3E08 0029FC48  4B D6 35 3D */	bl _savegpr_29
 /* 802A3E0C 0029FC4C  7C 7D 1B 78 */	mr r29, r3
 /* 802A3E10 0029FC50  7C BF 2B 78 */	mr r31, r5
 /* 802A3E14 0029FC54  7C DE 33 78 */	mr r30, r6
@@ -39,7 +39,7 @@ __ct__Q53scn4step5enemy8cappyhat10StateThrowFPQ43scn4step5enemy5EnemyUx:
 /* 802A3E7C 0029FCBC  4B FC 93 19 */	bl setAttackTypeOver__Q43scn4step5chara8BodyCollFQ43scn4step5ocoll10AttackType
 /* 802A3E80 0029FCC0  7F A3 EB 78 */	mr r3, r29
 /* 802A3E84 0029FCC4  39 61 00 20 */	addi r11, r1, 0x20
-/* 802A3E88 0029FCC8  4B D6 35 09 */	bl lbl_80007390
+/* 802A3E88 0029FCC8  4B D6 35 09 */	bl _restgpr_29
 /* 802A3E8C 0029FCCC  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802A3E90 0029FCD0  7C 08 03 A6 */	mtlr r0
 /* 802A3E94 0029FCD4  38 21 00 20 */	addi r1, r1, 0x20
@@ -134,7 +134,7 @@ procFixPos__Q53scn4step5enemy8cappyhat10StateThrowFv:
 /* 802A3FC4 0029FE04  DB E1 00 E0 */	stfd f31, 0xe0(r1)
 /* 802A3FC8 0029FE08  F3 E1 00 E8 */	psq_st f31, 0xe8(r1), 0, qr0
 /* 802A3FCC 0029FE0C  39 61 00 E0 */	addi r11, r1, 0xe0
-/* 802A3FD0 0029FE10  4B D6 33 75 */	bl lbl_80007344
+/* 802A3FD0 0029FE10  4B D6 33 75 */	bl _savegpr_29
 /* 802A3FD4 0029FE14  7C 7D 1B 78 */	mr r29, r3
 /* 802A3FD8 0029FE18  4B E5 C8 09 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 802A3FDC 0029FE1C  4B DD 17 55 */	bl GKI_getfirst
@@ -281,7 +281,7 @@ lbl_802A41F0:
 /* 802A4200 002A0040  13 E1 00 0C */	psq_lx f31, r1, r0, 0, qr0
 /* 802A4204 002A0044  CB E1 00 E0 */	lfd f31, 0xe0(r1)
 /* 802A4208 002A0048  39 61 00 E0 */	addi r11, r1, 0xe0
-/* 802A420C 002A004C  4B D6 31 85 */	bl lbl_80007390
+/* 802A420C 002A004C  4B D6 31 85 */	bl _restgpr_29
 /* 802A4210 002A0050  80 01 00 F4 */	lwz r0, 0xf4(r1)
 /* 802A4214 002A0054  7C 08 03 A6 */	mtlr r0
 /* 802A4218 002A0058  38 21 00 F0 */	addi r1, r1, 0xf0

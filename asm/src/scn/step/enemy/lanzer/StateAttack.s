@@ -7,7 +7,7 @@ __ct__Q53scn4step5enemy6lanzer11StateAttackFPQ43scn4step5enemy5Enemy:
 /* 802C226C 002BE0AC  7C 08 02 A6 */	mflr r0
 /* 802C2270 002BE0B0  90 01 00 24 */	stw r0, 0x24(r1)
 /* 802C2274 002BE0B4  39 61 00 20 */	addi r11, r1, 0x20
-/* 802C2278 002BE0B8  4B D4 50 CD */	bl lbl_80007344
+/* 802C2278 002BE0B8  4B D4 50 CD */	bl _savegpr_29
 /* 802C227C 002BE0BC  7C 7D 1B 78 */	mr r29, r3
 /* 802C2280 002BE0C0  4B FC BB 45 */	bl __ct__Q43scn4step5enemy9StateBaseFPQ43scn4step5enemy5Enemy
 /* 802C2284 002BE0C4  3C 60 80 48 */	lis r3, __vt__Q53scn4step5enemy6lanzer11StateAttack@ha
@@ -86,7 +86,7 @@ lbl_802C2374:
 /* 802C2378 002BE1B8  4B E4 44 39 */	bl DetachSoundActor__Q44nw4r3snd6detail10BasicSoundFPQ34nw4r3snd10SoundActor
 /* 802C237C 002BE1BC  7F A3 EB 78 */	mr r3, r29
 /* 802C2380 002BE1C0  39 61 00 20 */	addi r11, r1, 0x20
-/* 802C2384 002BE1C4  4B D4 50 0D */	bl lbl_80007390
+/* 802C2384 002BE1C4  4B D4 50 0D */	bl _restgpr_29
 /* 802C2388 002BE1C8  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802C238C 002BE1CC  7C 08 03 A6 */	mtlr r0
 /* 802C2390 002BE1D0  38 21 00 20 */	addi r1, r1, 0x20

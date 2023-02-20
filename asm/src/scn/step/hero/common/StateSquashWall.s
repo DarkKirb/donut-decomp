@@ -9,7 +9,7 @@ TryToChangeState__Q53scn4step4hero6common15StateSquashWallFPQ43scn4step4hero4Her
 /* 8036AFC4 00366E04  DB E1 00 80 */	stfd f31, 0x80(r1)
 /* 8036AFC8 00366E08  F3 E1 00 88 */	psq_st f31, 0x88(r1), 0, qr0
 /* 8036AFCC 00366E0C  39 61 00 80 */	addi r11, r1, 0x80
-/* 8036AFD0 00366E10  4B C9 C3 75 */	bl lbl_80007344
+/* 8036AFD0 00366E10  4B C9 C3 75 */	bl _savegpr_29
 /* 8036AFD4 00366E14  7C 7F 1B 78 */	mr r31, r3
 /* 8036AFD8 00366E18  4B FD 53 A5 */	bl stateChecker__Q43scn4step4hero4HeroFv
 /* 8036AFDC 00366E1C  38 80 00 00 */	li r4, 0x0
@@ -269,7 +269,7 @@ lbl_8036B350:
 /* 8036B354 00367194  13 E1 00 0C */	psq_lx f31, r1, r0, 0, qr0
 /* 8036B358 00367198  CB E1 00 80 */	lfd f31, 0x80(r1)
 /* 8036B35C 0036719C  39 61 00 80 */	addi r11, r1, 0x80
-/* 8036B360 003671A0  4B C9 C0 31 */	bl lbl_80007390
+/* 8036B360 003671A0  4B C9 C0 31 */	bl _restgpr_29
 /* 8036B364 003671A4  80 01 00 94 */	lwz r0, 0x94(r1)
 /* 8036B368 003671A8  7C 08 03 A6 */	mtlr r0
 /* 8036B36C 003671AC  38 21 00 90 */	addi r1, r1, 0x90

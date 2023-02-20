@@ -10,7 +10,7 @@ __ct__Q33scn14challengetitle13EffectManagerFRQ33scn14challengetitle9Component:
 /* 801ED0E4 001E8F24  7C 08 02 A6 */	mflr r0
 /* 801ED0E8 001E8F28  90 01 00 74 */	stw r0, 0x74(r1)
 /* 801ED0EC 001E8F2C  39 61 00 70 */	addi r11, r1, 0x70
-/* 801ED0F0 001E8F30  4B E1 A2 3D */	bl lbl_8000732C
+/* 801ED0F0 001E8F30  4B E1 A2 3D */	bl _savegpr_23
 /* 801ED0F4 001E8F34  7C 77 1B 78 */	mr r23, r3
 /* 801ED0F8 001E8F38  90 83 00 00 */	stw r4, 0x0(r3)
 /* 801ED0FC 001E8F3C  83 0D ED 00 */	lwz r24, "object___Q33hel6common32ExplicitSingleton<Q23mem6Memory>"@sda21(r13)
@@ -87,7 +87,7 @@ lbl_801ED1D0:
 /* 801ED208 001E9048  4B F9 14 59 */	bl setupPtclResIfResLoaded__Q26effect7ManagerFv
 /* 801ED20C 001E904C  7E E3 BB 78 */	mr r3, r23
 /* 801ED210 001E9050  39 61 00 70 */	addi r11, r1, 0x70
-/* 801ED214 001E9054  4B E1 A1 65 */	bl lbl_80007378
+/* 801ED214 001E9054  4B E1 A1 65 */	bl _restgpr_23
 /* 801ED218 001E9058  80 01 00 74 */	lwz r0, 0x74(r1)
 /* 801ED21C 001E905C  7C 08 03 A6 */	mtlr r0
 /* 801ED220 001E9060  38 21 00 70 */	addi r1, r1, 0x70

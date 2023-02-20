@@ -64,7 +64,7 @@ popReqData__Q53scn4step4boss13watergalboros10WeaponCtrlFv:
 /* 8025ADA0 00256BE0  7C 08 02 A6 */	mflr r0
 /* 8025ADA4 00256BE4  90 01 00 34 */	stw r0, 0x34(r1)
 /* 8025ADA8 00256BE8  39 61 00 30 */	addi r11, r1, 0x30
-/* 8025ADAC 00256BEC  4B DA C5 95 */	bl lbl_80007340
+/* 8025ADAC 00256BEC  4B DA C5 95 */	bl _savegpr_28
 /* 8025ADB0 00256BF0  7C 7C 1B 78 */	mr r28, r3
 /* 8025ADB4 00256BF4  7C 9D 23 78 */	mr r29, r4
 /* 8025ADB8 00256BF8  38 60 00 00 */	li r3, 0x0
@@ -113,7 +113,7 @@ lbl_8025AE3C:
 /* 8025AE4C 00256C8C  80 01 00 10 */	lwz r0, 0x10(r1)
 /* 8025AE50 00256C90  90 1C 00 08 */	stw r0, 0x8(r28)
 /* 8025AE54 00256C94  39 61 00 30 */	addi r11, r1, 0x30
-/* 8025AE58 00256C98  4B DA C5 35 */	bl lbl_8000738C
+/* 8025AE58 00256C98  4B DA C5 35 */	bl _restgpr_28
 /* 8025AE5C 00256C9C  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 8025AE60 00256CA0  7C 08 03 A6 */	mtlr r0
 /* 8025AE64 00256CA4  38 21 00 30 */	addi r1, r1, 0x30
@@ -124,7 +124,7 @@ request__Q53scn4step4boss13watergalboros10WeaponCtrlFv:
 /* 8025AE70 00256CB0  7C 08 02 A6 */	mflr r0
 /* 8025AE74 00256CB4  90 01 00 74 */	stw r0, 0x74(r1)
 /* 8025AE78 00256CB8  39 61 00 70 */	addi r11, r1, 0x70
-/* 8025AE7C 00256CBC  4B DA C4 C9 */	bl lbl_80007344
+/* 8025AE7C 00256CBC  4B DA C4 C9 */	bl _savegpr_29
 /* 8025AE80 00256CC0  7C 7D 1B 78 */	mr r29, r3
 /* 8025AE84 00256CC4  80 63 00 00 */	lwz r3, 0x0(r3)
 /* 8025AE88 00256CC8  4B FD 20 89 */	bl param__Q43scn4step4boss4BossCFv
@@ -227,7 +227,7 @@ lbl_8025AFE4:
 /* 8025AFEC 00256E2C  2C 03 00 00 */	cmpwi r3, 0x0
 /* 8025AFF0 00256E30  41 82 FE A8 */	beq lbl_8025AE98
 /* 8025AFF4 00256E34  39 61 00 70 */	addi r11, r1, 0x70
-/* 8025AFF8 00256E38  4B DA C3 99 */	bl lbl_80007390
+/* 8025AFF8 00256E38  4B DA C3 99 */	bl _restgpr_29
 /* 8025AFFC 00256E3C  80 01 00 74 */	lwz r0, 0x74(r1)
 /* 8025B000 00256E40  7C 08 03 A6 */	mtlr r0
 /* 8025B004 00256E44  38 21 00 70 */	addi r1, r1, 0x70
@@ -238,7 +238,7 @@ requestBase__Q53scn4step4boss13watergalboros10WeaponCtrlFQ43scn4step6weapon4Kind
 /* 8025B010 00256E50  7C 08 02 A6 */	mflr r0
 /* 8025B014 00256E54  90 01 00 74 */	stw r0, 0x74(r1)
 /* 8025B018 00256E58  39 61 00 70 */	addi r11, r1, 0x70
-/* 8025B01C 00256E5C  4B DA C3 21 */	bl lbl_8000733C
+/* 8025B01C 00256E5C  4B DA C3 21 */	bl _savegpr_27
 /* 8025B020 00256E60  7C 7B 1B 78 */	mr r27, r3
 /* 8025B024 00256E64  7C 9C 23 78 */	mr r28, r4
 /* 8025B028 00256E68  7C BD 2B 78 */	mr r29, r5
@@ -266,7 +266,7 @@ requestBase__Q53scn4step4boss13watergalboros10WeaponCtrlFQ43scn4step6weapon4Kind
 /* 8025B080 00256EC0  38 80 FF FF */	li r4, -0x1
 /* 8025B084 00256EC4  4B FD F0 2D */	bl "__dt__Q24util39ObjRefHandle<Q43scn4step6weapon6Weapon>Fv"
 /* 8025B088 00256EC8  39 61 00 70 */	addi r11, r1, 0x70
-/* 8025B08C 00256ECC  4B DA C2 FD */	bl lbl_80007388
+/* 8025B08C 00256ECC  4B DA C2 FD */	bl _restgpr_27
 /* 8025B090 00256ED0  80 01 00 74 */	lwz r0, 0x74(r1)
 /* 8025B094 00256ED4  7C 08 03 A6 */	mtlr r0
 /* 8025B098 00256ED8  38 21 00 70 */	addi r1, r1, 0x70

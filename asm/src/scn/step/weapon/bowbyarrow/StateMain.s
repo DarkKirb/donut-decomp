@@ -7,7 +7,7 @@ __ct__Q53scn4step6weapon10bowbyarrow9StateMainFPQ43scn4step6weapon6Weapon:
 /* 803E8978 003E47B8  7C 08 02 A6 */	mflr r0
 /* 803E897C 003E47BC  90 01 01 54 */	stw r0, 0x154(r1)
 /* 803E8980 003E47C0  39 61 01 50 */	addi r11, r1, 0x150
-/* 803E8984 003E47C4  4B C1 E9 C1 */	bl lbl_80007344
+/* 803E8984 003E47C4  4B C1 E9 C1 */	bl _savegpr_29
 /* 803E8988 003E47C8  7C 7F 1B 78 */	mr r31, r3
 /* 803E898C 003E47CC  4B FE FF B5 */	bl __ct__Q43scn4step6weapon9StateBaseFPQ43scn4step6weapon6Weapon
 /* 803E8990 003E47D0  3C 60 80 49 */	lis r3, __vt__Q53scn4step6weapon10bowbyarrow9StateMain@ha
@@ -377,7 +377,7 @@ lbl_803E8E38:
 /* 803E8E98 003E4CD8  4B D9 37 F9 */	bl __dt__Q23g3d12NodeAccessorFv
 /* 803E8E9C 003E4CDC  7F E3 FB 78 */	mr r3, r31
 /* 803E8EA0 003E4CE0  39 61 01 50 */	addi r11, r1, 0x150
-/* 803E8EA4 003E4CE4  4B C1 E4 ED */	bl lbl_80007390
+/* 803E8EA4 003E4CE4  4B C1 E4 ED */	bl _restgpr_29
 /* 803E8EA8 003E4CE8  80 01 01 54 */	lwz r0, 0x154(r1)
 /* 803E8EAC 003E4CEC  7C 08 03 A6 */	mtlr r0
 /* 803E8EB0 003E4CF0  38 21 01 50 */	addi r1, r1, 0x150
@@ -519,7 +519,7 @@ procMove__Q53scn4step6weapon10bowbyarrow9StateMainFv:
 /* 803E9078 003E4EB8  7C 08 02 A6 */	mflr r0
 /* 803E907C 003E4EBC  90 01 00 64 */	stw r0, 0x64(r1)
 /* 803E9080 003E4EC0  39 61 00 60 */	addi r11, r1, 0x60
-/* 803E9084 003E4EC4  4B C1 E2 BD */	bl lbl_80007340
+/* 803E9084 003E4EC4  4B C1 E2 BD */	bl _savegpr_28
 /* 803E9088 003E4EC8  7C 7C 1B 78 */	mr r28, r3
 /* 803E908C 003E4ECC  88 03 00 0C */	lbz r0, 0xc(r3)
 /* 803E9090 003E4ED0  2C 00 00 00 */	cmpwi r0, 0x0
@@ -629,7 +629,7 @@ lbl_803E91C0:
 .global lbl_803E91F0
 lbl_803E91F0:
 /* 803E91F0 003E5030  39 61 00 60 */	addi r11, r1, 0x60
-/* 803E91F4 003E5034  4B C1 E1 99 */	bl lbl_8000738C
+/* 803E91F4 003E5034  4B C1 E1 99 */	bl _restgpr_28
 /* 803E91F8 003E5038  80 01 00 64 */	lwz r0, 0x64(r1)
 /* 803E91FC 003E503C  7C 08 03 A6 */	mtlr r0
 /* 803E9200 003E5040  38 21 00 60 */	addi r1, r1, 0x60

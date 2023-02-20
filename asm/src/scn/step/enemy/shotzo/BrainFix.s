@@ -25,7 +25,7 @@ onStart__Q53scn4step5enemy6shotzo8BrainFixFv:
 /* 802DFDE0 002DBC20  7C 08 02 A6 */	mflr r0
 /* 802DFDE4 002DBC24  90 01 00 24 */	stw r0, 0x24(r1)
 /* 802DFDE8 002DBC28  39 61 00 20 */	addi r11, r1, 0x20
-/* 802DFDEC 002DBC2C  4B D2 75 59 */	bl lbl_80007344
+/* 802DFDEC 002DBC2C  4B D2 75 59 */	bl _savegpr_29
 /* 802DFDF0 002DBC30  7C 7D 1B 78 */	mr r29, r3
 /* 802DFDF4 002DBC34  4B E2 09 ED */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 802DFDF8 002DBC38  7C 7E 1B 78 */	mr r30, r3
@@ -94,7 +94,7 @@ lbl_802DFEAC:
 /* 802DFEBC 002DBCFC  48 00 04 CD */	bl setAimAngle__Q53scn4step5enemy6shotzo6CustomFf
 /* 802DFEC0 002DBD00  38 60 00 01 */	li r3, 0x1
 /* 802DFEC4 002DBD04  39 61 00 20 */	addi r11, r1, 0x20
-/* 802DFEC8 002DBD08  4B D2 74 C9 */	bl lbl_80007390
+/* 802DFEC8 002DBD08  4B D2 74 C9 */	bl _restgpr_29
 /* 802DFECC 002DBD0C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802DFED0 002DBD10  7C 08 03 A6 */	mtlr r0
 /* 802DFED4 002DBD14  38 21 00 20 */	addi r1, r1, 0x20

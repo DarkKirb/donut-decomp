@@ -7,7 +7,7 @@ __ct__Q53scn4step4hero6common30StateShipRepairDemoAfterFollowFPQ43scn4step4hero4
 /* 803694F4 00365334  7C 08 02 A6 */	mflr r0
 /* 803694F8 00365338  90 01 00 34 */	stw r0, 0x34(r1)
 /* 803694FC 0036533C  39 61 00 30 */	addi r11, r1, 0x30
-/* 80369500 00365340  4B C9 DE 41 */	bl lbl_80007340
+/* 80369500 00365340  4B C9 DE 41 */	bl _savegpr_28
 /* 80369504 00365344  7C 7F 1B 78 */	mr r31, r3
 /* 80369508 00365348  4B FE BF E9 */	bl __ct__Q43scn4step4hero9StateBaseFPQ43scn4step4hero4Hero
 /* 8036950C 0036534C  3C 60 80 49 */	lis r3, __vt__Q53scn4step4hero6common30StateShipRepairDemoAfterFollow@ha
@@ -238,7 +238,7 @@ lbl_803697E8:
 /* 80369820 00365660  4B FF 1D 09 */	bl setBack__Q43scn4step4hero8WearBackFv
 /* 80369824 00365664  7F E3 FB 78 */	mr r3, r31
 /* 80369828 00365668  39 61 00 30 */	addi r11, r1, 0x30
-/* 8036982C 0036566C  4B C9 DB 61 */	bl lbl_8000738C
+/* 8036982C 0036566C  4B C9 DB 61 */	bl _restgpr_28
 /* 80369830 00365670  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 80369834 00365674  7C 08 03 A6 */	mtlr r0
 /* 80369838 00365678  38 21 00 30 */	addi r1, r1, 0x30

@@ -151,7 +151,7 @@ procFixPos__Q53scn4step5enemy5rocky10StateSlopeFv:
 /* 802D504C 002D0E8C  DB E1 00 50 */	stfd f31, 0x50(r1)
 /* 802D5050 002D0E90  F3 E1 00 58 */	psq_st f31, 0x58(r1), 0, qr0
 /* 802D5054 002D0E94  39 61 00 50 */	addi r11, r1, 0x50
-/* 802D5058 002D0E98  4B D3 22 ED */	bl lbl_80007344
+/* 802D5058 002D0E98  4B D3 22 ED */	bl _savegpr_29
 /* 802D505C 002D0E9C  7C 7D 1B 78 */	mr r29, r3
 /* 802D5060 002D0EA0  4B E2 B7 81 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 802D5064 002D0EA4  4B FB 30 99 */	bl mapColl__Q43scn4step5enemy5EnemyFv
@@ -295,7 +295,7 @@ lbl_802D5228:
 /* 802D522C 002D106C  13 E1 00 0C */	psq_lx f31, r1, r0, 0, qr0
 /* 802D5230 002D1070  CB E1 00 50 */	lfd f31, 0x50(r1)
 /* 802D5234 002D1074  39 61 00 50 */	addi r11, r1, 0x50
-/* 802D5238 002D1078  4B D3 21 59 */	bl lbl_80007390
+/* 802D5238 002D1078  4B D3 21 59 */	bl _restgpr_29
 /* 802D523C 002D107C  80 01 00 64 */	lwz r0, 0x64(r1)
 /* 802D5240 002D1080  7C 08 03 A6 */	mtlr r0
 /* 802D5244 002D1084  38 21 00 60 */	addi r1, r1, 0x60

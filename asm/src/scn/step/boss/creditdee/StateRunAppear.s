@@ -7,7 +7,7 @@ TryToChangeState__Q53scn4step4boss9creditdee14StateRunAppearFPQ43scn4step4boss4B
 /* 80249880 002456C0  7C 08 02 A6 */	mflr r0
 /* 80249884 002456C4  90 01 00 24 */	stw r0, 0x24(r1)
 /* 80249888 002456C8  39 61 00 20 */	addi r11, r1, 0x20
-/* 8024988C 002456CC  4B DB DA B9 */	bl lbl_80007344
+/* 8024988C 002456CC  4B DB DA B9 */	bl _savegpr_29
 /* 80249890 002456D0  7C 7D 1B 78 */	mr r29, r3
 /* 80249894 002456D4  4B E2 BE 9D */	bl GKI_getfirst
 /* 80249898 002456D8  4B FD 75 D1 */	bl bossManager__Q33scn4step9ComponentFv
@@ -40,7 +40,7 @@ lbl_802498F0:
 .global lbl_802498F4
 lbl_802498F4:
 /* 802498F4 00245734  39 61 00 20 */	addi r11, r1, 0x20
-/* 802498F8 00245738  4B DB DA 99 */	bl lbl_80007390
+/* 802498F8 00245738  4B DB DA 99 */	bl _restgpr_29
 /* 802498FC 0024573C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80249900 00245740  7C 08 03 A6 */	mtlr r0
 /* 80249904 00245744  38 21 00 20 */	addi r1, r1, 0x20
@@ -141,7 +141,7 @@ procMove__Q53scn4step4boss9creditdee14StateRunAppearFv:
 /* 80249A54 00245894  7C 08 02 A6 */	mflr r0
 /* 80249A58 00245898  90 01 00 24 */	stw r0, 0x24(r1)
 /* 80249A5C 0024589C  39 61 00 20 */	addi r11, r1, 0x20
-/* 80249A60 002458A0  4B DB D8 E5 */	bl lbl_80007344
+/* 80249A60 002458A0  4B DB D8 E5 */	bl _savegpr_29
 /* 80249A64 002458A4  7C 7D 1B 78 */	mr r29, r3
 /* 80249A68 002458A8  4B EB 6D 79 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 80249A6C 002458AC  4B FE 34 A5 */	bl param__Q43scn4step4boss4BossCFv
@@ -159,7 +159,7 @@ procMove__Q53scn4step4boss9creditdee14StateRunAppearFv:
 /* 80249A9C 002458DC  38 BE 00 10 */	addi r5, r30, 0x10
 /* 80249AA0 002458E0  4B F5 19 D5 */	bl groundAccel__Q24gobj4MoveFbRCQ24gobj14MoveParamAccel
 /* 80249AA4 002458E4  39 61 00 20 */	addi r11, r1, 0x20
-/* 80249AA8 002458E8  4B DB D8 E9 */	bl lbl_80007390
+/* 80249AA8 002458E8  4B DB D8 E9 */	bl _restgpr_29
 /* 80249AAC 002458EC  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80249AB0 002458F0  7C 08 03 A6 */	mtlr r0
 /* 80249AB4 002458F4  38 21 00 20 */	addi r1, r1, 0x20
@@ -173,7 +173,7 @@ procFixPos__Q53scn4step4boss9creditdee14StateRunAppearFv:
 /* 80249AC8 00245908  DB E1 00 30 */	stfd f31, 0x30(r1)
 /* 80249ACC 0024590C  F3 E1 00 38 */	psq_st f31, 0x38(r1), 0, qr0
 /* 80249AD0 00245910  39 61 00 30 */	addi r11, r1, 0x30
-/* 80249AD4 00245914  4B DB D8 71 */	bl lbl_80007344
+/* 80249AD4 00245914  4B DB D8 71 */	bl _savegpr_29
 /* 80249AD8 00245918  7C 7D 1B 78 */	mr r29, r3
 /* 80249ADC 0024591C  4B EB 6D 05 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 80249AE0 00245920  4B FE 34 31 */	bl param__Q43scn4step4boss4BossCFv
@@ -231,7 +231,7 @@ lbl_80249B94:
 /* 80249B98 002459D8  13 E1 00 0C */	psq_lx f31, r1, r0, 0, qr0
 /* 80249B9C 002459DC  CB E1 00 30 */	lfd f31, 0x30(r1)
 /* 80249BA0 002459E0  39 61 00 30 */	addi r11, r1, 0x30
-/* 80249BA4 002459E4  4B DB D7 ED */	bl lbl_80007390
+/* 80249BA4 002459E4  4B DB D7 ED */	bl _restgpr_29
 /* 80249BA8 002459E8  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 80249BAC 002459EC  7C 08 03 A6 */	mtlr r0
 /* 80249BB0 002459F0  38 21 00 40 */	addi r1, r1, 0x40

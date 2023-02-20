@@ -192,7 +192,7 @@ __ct__Q53scn4step6weapon8metabeam9StateMainFPQ43scn4step6weapon6Weapon:
 /* 803EC168 003E7FA8  DB E1 00 70 */	stfd f31, 0x70(r1)
 /* 803EC16C 003E7FAC  F3 E1 00 78 */	psq_st f31, 0x78(r1), 0, qr0
 /* 803EC170 003E7FB0  39 61 00 70 */	addi r11, r1, 0x70
-/* 803EC174 003E7FB4  4B C1 B1 CD */	bl lbl_80007340
+/* 803EC174 003E7FB4  4B C1 B1 CD */	bl _savegpr_28
 /* 803EC178 003E7FB8  7C 7C 1B 78 */	mr r28, r3
 /* 803EC17C 003E7FBC  4B FE C7 C5 */	bl __ct__Q43scn4step6weapon9StateBaseFPQ43scn4step6weapon6Weapon
 /* 803EC180 003E7FC0  3C 60 80 49 */	lis r3, __vt__Q53scn4step6weapon8metabeam9StateMain@ha
@@ -341,7 +341,7 @@ lbl_803EC364:
 /* 803EC38C 003E81CC  13 E1 00 0C */	psq_lx f31, r1, r0, 0, qr0
 /* 803EC390 003E81D0  CB E1 00 70 */	lfd f31, 0x70(r1)
 /* 803EC394 003E81D4  39 61 00 70 */	addi r11, r1, 0x70
-/* 803EC398 003E81D8  4B C1 AF F5 */	bl lbl_8000738C
+/* 803EC398 003E81D8  4B C1 AF F5 */	bl _restgpr_28
 /* 803EC39C 003E81DC  80 01 00 84 */	lwz r0, 0x84(r1)
 /* 803EC3A0 003E81E0  7C 08 03 A6 */	mtlr r0
 /* 803EC3A4 003E81E4  38 21 00 80 */	addi r1, r1, 0x80

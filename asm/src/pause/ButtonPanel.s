@@ -7,7 +7,7 @@ __ct__Q25pause11ButtonPanelFRQ25pause9ComponentPCcRCQ23lyt12PaneAccessorPCwb:
 /* 801DA578 001D63B8  7C 08 02 A6 */	mflr r0
 /* 801DA57C 001D63BC  90 01 00 94 */	stw r0, 0x94(r1)
 /* 801DA580 001D63C0  39 61 00 90 */	addi r11, r1, 0x90
-/* 801DA584 001D63C4  4B E2 CD BD */	bl lbl_80007340
+/* 801DA584 001D63C4  4B E2 CD BD */	bl _savegpr_28
 /* 801DA588 001D63C8  7C 7C 1B 78 */	mr r28, r3
 /* 801DA58C 001D63CC  7C BD 2B 78 */	mr r29, r5
 /* 801DA590 001D63D0  7C DE 33 78 */	mr r30, r6
@@ -45,7 +45,7 @@ __ct__Q25pause11ButtonPanelFRQ25pause9ComponentPCcRCQ23lyt12PaneAccessorPCwb:
 /* 801DA610 001D6450  48 00 00 7D */	bl setNotSelected__Q25pause11ButtonPanelFv
 /* 801DA614 001D6454  7F 83 E3 78 */	mr r3, r28
 /* 801DA618 001D6458  39 61 00 90 */	addi r11, r1, 0x90
-/* 801DA61C 001D645C  4B E2 CD 71 */	bl lbl_8000738C
+/* 801DA61C 001D645C  4B E2 CD 71 */	bl _restgpr_28
 /* 801DA620 001D6460  80 01 00 94 */	lwz r0, 0x94(r1)
 /* 801DA624 001D6464  7C 08 03 A6 */	mtlr r0
 /* 801DA628 001D6468  38 21 00 90 */	addi r1, r1, 0x90

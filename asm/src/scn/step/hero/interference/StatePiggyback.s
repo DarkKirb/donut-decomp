@@ -63,7 +63,7 @@ __ct__Q53scn4step4hero12interference14StatePiggybackFPQ43scn4step4hero4Herob:
 /* 80373100 0036EF40  7C 08 02 A6 */	mflr r0
 /* 80373104 0036EF44  90 01 00 64 */	stw r0, 0x64(r1)
 /* 80373108 0036EF48  39 61 00 60 */	addi r11, r1, 0x60
-/* 8037310C 0036EF4C  4B C9 42 39 */	bl lbl_80007344
+/* 8037310C 0036EF4C  4B C9 42 39 */	bl _savegpr_29
 /* 80373110 0036EF50  7C 7D 1B 78 */	mr r29, r3
 /* 80373114 0036EF54  7C BE 2B 78 */	mr r30, r5
 /* 80373118 0036EF58  4B FE 23 D9 */	bl __ct__Q43scn4step4hero9StateBaseFPQ43scn4step4hero4Hero
@@ -187,7 +187,7 @@ lbl_803731AC:
 /* 803732E8 0036F128  4B FE 0C 1D */	bl setCanCharge__Q43scn4step4hero11PowerChargeFb
 /* 803732EC 0036F12C  7F A3 EB 78 */	mr r3, r29
 /* 803732F0 0036F130  39 61 00 60 */	addi r11, r1, 0x60
-/* 803732F4 0036F134  4B C9 40 9D */	bl lbl_80007390
+/* 803732F4 0036F134  4B C9 40 9D */	bl _restgpr_29
 /* 803732F8 0036F138  80 01 00 64 */	lwz r0, 0x64(r1)
 /* 803732FC 0036F13C  7C 08 03 A6 */	mtlr r0
 /* 80373300 0036F140  38 21 00 60 */	addi r1, r1, 0x60

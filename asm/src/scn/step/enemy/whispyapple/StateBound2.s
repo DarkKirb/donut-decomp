@@ -9,7 +9,7 @@ __ct__Q53scn4step5enemy11whispyapple11StateBound2FPQ43scn4step5enemy5EnemyUlb:
 /* 802F17D8 002ED618  DB E1 00 20 */	stfd f31, 0x20(r1)
 /* 802F17DC 002ED61C  F3 E1 00 28 */	psq_st f31, 0x28(r1), 0, qr0
 /* 802F17E0 002ED620  39 61 00 20 */	addi r11, r1, 0x20
-/* 802F17E4 002ED624  4B D1 5B 61 */	bl lbl_80007344
+/* 802F17E4 002ED624  4B D1 5B 61 */	bl _savegpr_29
 /* 802F17E8 002ED628  7C 7D 1B 78 */	mr r29, r3
 /* 802F17EC 002ED62C  7C BE 2B 78 */	mr r30, r5
 /* 802F17F0 002ED630  7C DF 33 78 */	mr r31, r6
@@ -57,7 +57,7 @@ __ct__Q53scn4step5enemy11whispyapple11StateBound2FPQ43scn4step5enemy5EnemyUlb:
 /* 802F1898 002ED6D8  13 E1 00 0C */	psq_lx f31, r1, r0, 0, qr0
 /* 802F189C 002ED6DC  CB E1 00 20 */	lfd f31, 0x20(r1)
 /* 802F18A0 002ED6E0  39 61 00 20 */	addi r11, r1, 0x20
-/* 802F18A4 002ED6E4  4B D1 5A ED */	bl lbl_80007390
+/* 802F18A4 002ED6E4  4B D1 5A ED */	bl _restgpr_29
 /* 802F18A8 002ED6E8  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 802F18AC 002ED6EC  7C 08 03 A6 */	mtlr r0
 /* 802F18B0 002ED6F0  38 21 00 30 */	addi r1, r1, 0x30

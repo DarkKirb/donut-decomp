@@ -7,7 +7,7 @@ TryToChangeState__Q53scn4step4hero8bossdemo17StateBossDemoWaitFPQ43scn4step4hero
 /* 803A2C28 0039EA68  7C 08 02 A6 */	mflr r0
 /* 803A2C2C 0039EA6C  90 01 00 24 */	stw r0, 0x24(r1)
 /* 803A2C30 0039EA70  39 61 00 20 */	addi r11, r1, 0x20
-/* 803A2C34 0039EA74  4B C6 47 11 */	bl lbl_80007344
+/* 803A2C34 0039EA74  4B C6 47 11 */	bl _savegpr_29
 /* 803A2C38 0039EA78  7C 7D 1B 78 */	mr r29, r3
 /* 803A2C3C 0039EA7C  4B CD 2A F5 */	bl GKI_getfirst
 /* 803A2C40 0039EA80  4B E7 E1 B9 */	bl heroManager__Q33scn4step9ComponentFv
@@ -41,7 +41,7 @@ lbl_803A2C9C:
 .global lbl_803A2CA0
 lbl_803A2CA0:
 /* 803A2CA0 0039EAE0  39 61 00 20 */	addi r11, r1, 0x20
-/* 803A2CA4 0039EAE4  4B C6 46 ED */	bl lbl_80007390
+/* 803A2CA4 0039EAE4  4B C6 46 ED */	bl _restgpr_29
 /* 803A2CA8 0039EAE8  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803A2CAC 0039EAEC  7C 08 03 A6 */	mtlr r0
 /* 803A2CB0 0039EAF0  38 21 00 20 */	addi r1, r1, 0x20
@@ -307,7 +307,7 @@ procAnim__Q53scn4step4hero8bossdemo17StateBossDemoWaitFv:
 /* 803A3060 0039EEA0  DB E1 00 30 */	stfd f31, 0x30(r1)
 /* 803A3064 0039EEA4  F3 E1 00 38 */	psq_st f31, 0x38(r1), 0, qr0
 /* 803A3068 0039EEA8  39 61 00 30 */	addi r11, r1, 0x30
-/* 803A306C 0039EEAC  4B C6 42 D9 */	bl lbl_80007344
+/* 803A306C 0039EEAC  4B C6 42 D9 */	bl _savegpr_29
 /* 803A3070 0039EEB0  7C 7F 1B 78 */	mr r31, r3
 /* 803A3074 0039EEB4  4B D5 D7 6D */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 803A3078 0039EEB8  4B CD 26 B9 */	bl GKI_getfirst
@@ -608,7 +608,7 @@ lbl_803A3418:
 /* 803A341C 0039F25C  13 E1 00 0C */	psq_lx f31, r1, r0, 0, qr0
 /* 803A3420 0039F260  CB E1 00 30 */	lfd f31, 0x30(r1)
 /* 803A3424 0039F264  39 61 00 30 */	addi r11, r1, 0x30
-/* 803A3428 0039F268  4B C6 3F 69 */	bl lbl_80007390
+/* 803A3428 0039F268  4B C6 3F 69 */	bl _restgpr_29
 /* 803A342C 0039F26C  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 803A3430 0039F270  7C 08 03 A6 */	mtlr r0
 /* 803A3434 0039F274  38 21 00 40 */	addi r1, r1, 0x40
@@ -622,7 +622,7 @@ procMove__Q53scn4step4hero8bossdemo17StateBossDemoWaitFv:
 /* 803A3448 0039F288  DB E1 00 80 */	stfd f31, 0x80(r1)
 /* 803A344C 0039F28C  F3 E1 00 88 */	psq_st f31, 0x88(r1), 0, qr0
 /* 803A3450 0039F290  39 61 00 80 */	addi r11, r1, 0x80
-/* 803A3454 0039F294  4B C6 3E ED */	bl lbl_80007340
+/* 803A3454 0039F294  4B C6 3E ED */	bl _savegpr_28
 /* 803A3458 0039F298  7C 7F 1B 78 */	mr r31, r3
 /* 803A345C 0039F29C  3C 00 43 30 */	lis r0, 0x4330
 /* 803A3460 0039F2A0  90 01 00 60 */	stw r0, 0x60(r1)
@@ -933,7 +933,7 @@ lbl_803A38A0:
 /* 803A38A4 0039F6E4  13 E1 00 0C */	psq_lx f31, r1, r0, 0, qr0
 /* 803A38A8 0039F6E8  CB E1 00 80 */	lfd f31, 0x80(r1)
 /* 803A38AC 0039F6EC  39 61 00 80 */	addi r11, r1, 0x80
-/* 803A38B0 0039F6F0  4B C6 3A DD */	bl lbl_8000738C
+/* 803A38B0 0039F6F0  4B C6 3A DD */	bl _restgpr_28
 /* 803A38B4 0039F6F4  80 01 00 94 */	lwz r0, 0x94(r1)
 /* 803A38B8 0039F6F8  7C 08 03 A6 */	mtlr r0
 /* 803A38BC 0039F6FC  38 21 00 90 */	addi r1, r1, 0x90
@@ -1083,7 +1083,7 @@ getPlayerCountInLeft__Q53scn4step4hero8bossdemo17StateBossDemoWaitFv:
 /* 803A3AC0 0039F900  DB E1 00 40 */	stfd f31, 0x40(r1)
 /* 803A3AC4 0039F904  F3 E1 00 48 */	psq_st f31, 0x48(r1), 0, qr0
 /* 803A3AC8 0039F908  39 61 00 40 */	addi r11, r1, 0x40
-/* 803A3ACC 0039F90C  4B C6 38 71 */	bl lbl_8000733C
+/* 803A3ACC 0039F90C  4B C6 38 71 */	bl _savegpr_27
 /* 803A3AD0 0039F910  7C 7B 1B 78 */	mr r27, r3
 /* 803A3AD4 0039F914  3B C0 00 00 */	li r30, 0x0
 /* 803A3AD8 0039F918  4B D5 CD 09 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
@@ -1134,7 +1134,7 @@ lbl_803A3B64:
 /* 803A3B74 0039F9B4  13 E1 00 0C */	psq_lx f31, r1, r0, 0, qr0
 /* 803A3B78 0039F9B8  CB E1 00 40 */	lfd f31, 0x40(r1)
 /* 803A3B7C 0039F9BC  39 61 00 40 */	addi r11, r1, 0x40
-/* 803A3B80 0039F9C0  4B C6 38 09 */	bl lbl_80007388
+/* 803A3B80 0039F9C0  4B C6 38 09 */	bl _restgpr_27
 /* 803A3B84 0039F9C4  80 01 00 54 */	lwz r0, 0x54(r1)
 /* 803A3B88 0039F9C8  7C 08 03 A6 */	mtlr r0
 /* 803A3B8C 0039F9CC  38 21 00 50 */	addi r1, r1, 0x50
@@ -1147,7 +1147,7 @@ getPlayerCountInRight__Q53scn4step4hero8bossdemo17StateBossDemoWaitFv:
 /* 803A3BA0 0039F9E0  DB E1 00 40 */	stfd f31, 0x40(r1)
 /* 803A3BA4 0039F9E4  F3 E1 00 48 */	psq_st f31, 0x48(r1), 0, qr0
 /* 803A3BA8 0039F9E8  39 61 00 40 */	addi r11, r1, 0x40
-/* 803A3BAC 0039F9EC  4B C6 37 91 */	bl lbl_8000733C
+/* 803A3BAC 0039F9EC  4B C6 37 91 */	bl _savegpr_27
 /* 803A3BB0 0039F9F0  7C 7B 1B 78 */	mr r27, r3
 /* 803A3BB4 0039F9F4  3B C0 00 00 */	li r30, 0x0
 /* 803A3BB8 0039F9F8  4B D5 CC 29 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
@@ -1198,7 +1198,7 @@ lbl_803A3C44:
 /* 803A3C54 0039FA94  13 E1 00 0C */	psq_lx f31, r1, r0, 0, qr0
 /* 803A3C58 0039FA98  CB E1 00 40 */	lfd f31, 0x40(r1)
 /* 803A3C5C 0039FA9C  39 61 00 40 */	addi r11, r1, 0x40
-/* 803A3C60 0039FAA0  4B C6 37 29 */	bl lbl_80007388
+/* 803A3C60 0039FAA0  4B C6 37 29 */	bl _restgpr_27
 /* 803A3C64 0039FAA4  80 01 00 54 */	lwz r0, 0x54(r1)
 /* 803A3C68 0039FAA8  7C 08 03 A6 */	mtlr r0
 /* 803A3C6C 0039FAAC  38 21 00 50 */	addi r1, r1, 0x50

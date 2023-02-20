@@ -7,7 +7,7 @@ TryToChangeState__Q53scn4step4hero7parasol17StateParasolSwingFPQ43scn4step4hero4
 /* 803948BC 003906FC  7C 08 02 A6 */	mflr r0
 /* 803948C0 00390700  90 01 00 24 */	stw r0, 0x24(r1)
 /* 803948C4 00390704  39 61 00 20 */	addi r11, r1, 0x20
-/* 803948C8 00390708  4B C7 2A 7D */	bl lbl_80007344
+/* 803948C8 00390708  4B C7 2A 7D */	bl _savegpr_29
 /* 803948CC 0039070C  7C 7D 1B 78 */	mr r29, r3
 /* 803948D0 00390710  4B FA BA 7D */	bl hid__Q43scn4step4hero4HeroFv
 /* 803948D4 00390714  38 80 00 20 */	li r4, 0x20
@@ -39,7 +39,7 @@ lbl_80394928:
 .global lbl_8039492C
 lbl_8039492C:
 /* 8039492C 0039076C  39 61 00 20 */	addi r11, r1, 0x20
-/* 80394930 00390770  4B C7 2A 61 */	bl lbl_80007390
+/* 80394930 00390770  4B C7 2A 61 */	bl _restgpr_29
 /* 80394934 00390774  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80394938 00390778  7C 08 03 A6 */	mtlr r0
 /* 8039493C 0039077C  38 21 00 20 */	addi r1, r1, 0x20
@@ -191,7 +191,7 @@ procAnim__Q53scn4step4hero7parasol17StateParasolSwingFv:
 /* 80394B44 00390984  7C 08 02 A6 */	mflr r0
 /* 80394B48 00390988  90 01 00 24 */	stw r0, 0x24(r1)
 /* 80394B4C 0039098C  39 61 00 20 */	addi r11, r1, 0x20
-/* 80394B50 00390990  4B C7 27 F5 */	bl lbl_80007344
+/* 80394B50 00390990  4B C7 27 F5 */	bl _savegpr_29
 /* 80394B54 00390994  7C 7F 1B 78 */	mr r31, r3
 /* 80394B58 00390998  80 83 00 08 */	lwz r4, 0x8(r3)
 /* 80394B5C 0039099C  38 04 00 01 */	addi r0, r4, 0x1
@@ -353,7 +353,7 @@ lbl_80394D44:
 .global lbl_80394D7C
 lbl_80394D7C:
 /* 80394D7C 00390BBC  39 61 00 20 */	addi r11, r1, 0x20
-/* 80394D80 00390BC0  4B C7 26 11 */	bl lbl_80007390
+/* 80394D80 00390BC0  4B C7 26 11 */	bl _restgpr_29
 /* 80394D84 00390BC4  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80394D88 00390BC8  7C 08 03 A6 */	mtlr r0
 /* 80394D8C 00390BCC  38 21 00 20 */	addi r1, r1, 0x20
@@ -373,7 +373,7 @@ procObjCollReact__Q53scn4step4hero7parasol17StateParasolSwingFv:
 /* 80394DA0 00390BE0  7C 08 02 A6 */	mflr r0
 /* 80394DA4 00390BE4  90 01 00 B4 */	stw r0, 0xb4(r1)
 /* 80394DA8 00390BE8  39 61 00 B0 */	addi r11, r1, 0xb0
-/* 80394DAC 00390BEC  4B C7 25 95 */	bl lbl_80007340
+/* 80394DAC 00390BEC  4B C7 25 95 */	bl _savegpr_28
 /* 80394DB0 00390BF0  7C 7C 1B 78 */	mr r28, r3
 /* 80394DB4 00390BF4  88 03 00 14 */	lbz r0, 0x14(r3)
 /* 80394DB8 00390BF8  2C 00 00 00 */	cmpwi r0, 0x0
@@ -557,7 +557,7 @@ lbl_80395054:
 .global lbl_80395058
 lbl_80395058:
 /* 80395058 00390E98  39 61 00 B0 */	addi r11, r1, 0xb0
-/* 8039505C 00390E9C  4B C7 23 31 */	bl lbl_8000738C
+/* 8039505C 00390E9C  4B C7 23 31 */	bl _restgpr_28
 /* 80395060 00390EA0  80 01 00 B4 */	lwz r0, 0xb4(r1)
 /* 80395064 00390EA4  7C 08 03 A6 */	mtlr r0
 /* 80395068 00390EA8  38 21 00 B0 */	addi r1, r1, 0xb0
@@ -568,7 +568,7 @@ addAttack__Q53scn4step4hero7parasol17StateParasolSwingFUlRCQ53scn4step4hero7para
 /* 80395074 00390EB4  7C 08 02 A6 */	mflr r0
 /* 80395078 00390EB8  90 01 00 34 */	stw r0, 0x34(r1)
 /* 8039507C 00390EBC  39 61 00 30 */	addi r11, r1, 0x30
-/* 80395080 00390EC0  4B C7 22 C1 */	bl lbl_80007340
+/* 80395080 00390EC0  4B C7 22 C1 */	bl _savegpr_28
 /* 80395084 00390EC4  7C 7C 1B 78 */	mr r28, r3
 /* 80395088 00390EC8  7C 9D 23 78 */	mr r29, r4
 /* 8039508C 00390ECC  7C BE 2B 78 */	mr r30, r5
@@ -610,7 +610,7 @@ addAttack__Q53scn4step4hero7parasol17StateParasolSwingFUlRCQ53scn4step4hero7para
 /* 8039511C 00390F5C  38 E1 00 08 */	addi r7, r1, 0x8
 /* 80395120 00390F60  4B ED CE 8D */	bl addAttack__Q43scn4step5chara7ObjCollFUlUlfRCQ33hel4math7Vector2RCQ33hel4math7Vector2
 /* 80395124 00390F64  39 61 00 30 */	addi r11, r1, 0x30
-/* 80395128 00390F68  4B C7 22 65 */	bl lbl_8000738C
+/* 80395128 00390F68  4B C7 22 65 */	bl _restgpr_28
 /* 8039512C 00390F6C  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 80395130 00390F70  7C 08 03 A6 */	mtlr r0
 /* 80395134 00390F74  38 21 00 30 */	addi r1, r1, 0x30

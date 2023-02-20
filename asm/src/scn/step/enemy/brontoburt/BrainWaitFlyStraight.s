@@ -25,7 +25,7 @@ onStart__Q53scn4step5enemy10brontoburt20BrainWaitFlyStraightFv:
 /* 8029F00C 0029AE4C  7C 08 02 A6 */	mflr r0
 /* 8029F010 0029AE50  90 01 00 24 */	stw r0, 0x24(r1)
 /* 8029F014 0029AE54  39 61 00 20 */	addi r11, r1, 0x20
-/* 8029F018 0029AE58  4B D6 83 2D */	bl lbl_80007344
+/* 8029F018 0029AE58  4B D6 83 2D */	bl _savegpr_29
 /* 8029F01C 0029AE5C  7C 7D 1B 78 */	mr r29, r3
 /* 8029F020 0029AE60  4B E6 17 C1 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 8029F024 0029AE64  7C 7E 1B 78 */	mr r30, r3
@@ -49,7 +49,7 @@ lbl_8029F064:
 /* 8029F064 0029AEA4  93 BF 00 0C */	stw r29, 0xc(r31)
 /* 8029F068 0029AEA8  38 60 00 01 */	li r3, 0x1
 /* 8029F06C 0029AEAC  39 61 00 20 */	addi r11, r1, 0x20
-/* 8029F070 0029AEB0  4B D6 83 21 */	bl lbl_80007390
+/* 8029F070 0029AEB0  4B D6 83 21 */	bl _restgpr_29
 /* 8029F074 0029AEB4  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8029F078 0029AEB8  7C 08 03 A6 */	mtlr r0
 /* 8029F07C 0029AEBC  38 21 00 20 */	addi r1, r1, 0x20
@@ -61,7 +61,7 @@ onRecover__Q53scn4step5enemy10brontoburt20BrainWaitFlyStraightFv:
 /* 8029F088 0029AEC8  7C 08 02 A6 */	mflr r0
 /* 8029F08C 0029AECC  90 01 00 24 */	stw r0, 0x24(r1)
 /* 8029F090 0029AED0  39 61 00 20 */	addi r11, r1, 0x20
-/* 8029F094 0029AED4  4B D6 82 B1 */	bl lbl_80007344
+/* 8029F094 0029AED4  4B D6 82 B1 */	bl _savegpr_29
 /* 8029F098 0029AED8  7C 7D 1B 78 */	mr r29, r3
 /* 8029F09C 0029AEDC  4B E6 17 45 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 8029F0A0 0029AEE0  7C 7E 1B 78 */	mr r30, r3
@@ -85,7 +85,7 @@ lbl_8029F0E0:
 /* 8029F0E0 0029AF20  93 BF 00 0C */	stw r29, 0xc(r31)
 /* 8029F0E4 0029AF24  38 60 00 01 */	li r3, 0x1
 /* 8029F0E8 0029AF28  39 61 00 20 */	addi r11, r1, 0x20
-/* 8029F0EC 0029AF2C  4B D6 82 A5 */	bl lbl_80007390
+/* 8029F0EC 0029AF2C  4B D6 82 A5 */	bl _restgpr_29
 /* 8029F0F0 0029AF30  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8029F0F4 0029AF34  7C 08 03 A6 */	mtlr r0
 /* 8029F0F8 0029AF38  38 21 00 20 */	addi r1, r1, 0x20

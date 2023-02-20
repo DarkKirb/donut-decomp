@@ -133,7 +133,7 @@ procAnim__Q53scn4step4hero5smash20StateFinalCutterRiseFv:
 /* 803A1AF4 0039D934  DB E1 00 20 */	stfd f31, 0x20(r1)
 /* 803A1AF8 0039D938  F3 E1 00 28 */	psq_st f31, 0x28(r1), 0, qr0
 /* 803A1AFC 0039D93C  39 61 00 20 */	addi r11, r1, 0x20
-/* 803A1B00 0039D940  4B C6 58 45 */	bl lbl_80007344
+/* 803A1B00 0039D940  4B C6 58 45 */	bl _savegpr_29
 /* 803A1B04 0039D944  7C 7D 1B 78 */	mr r29, r3
 /* 803A1B08 0039D948  80 83 00 08 */	lwz r4, 0x8(r3)
 /* 803A1B0C 0039D94C  38 04 00 01 */	addi r0, r4, 0x1
@@ -194,7 +194,7 @@ lbl_803A1BCC:
 /* 803A1BD0 0039DA10  13 E1 00 0C */	psq_lx f31, r1, r0, 0, qr0
 /* 803A1BD4 0039DA14  CB E1 00 20 */	lfd f31, 0x20(r1)
 /* 803A1BD8 0039DA18  39 61 00 20 */	addi r11, r1, 0x20
-/* 803A1BDC 0039DA1C  4B C6 57 B5 */	bl lbl_80007390
+/* 803A1BDC 0039DA1C  4B C6 57 B5 */	bl _restgpr_29
 /* 803A1BE0 0039DA20  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 803A1BE4 0039DA24  7C 08 03 A6 */	mtlr r0
 /* 803A1BE8 0039DA28  38 21 00 30 */	addi r1, r1, 0x30
@@ -206,7 +206,7 @@ procMove__Q53scn4step4hero5smash20StateFinalCutterRiseFv:
 /* 803A1BF4 0039DA34  7C 08 02 A6 */	mflr r0
 /* 803A1BF8 0039DA38  90 01 00 24 */	stw r0, 0x24(r1)
 /* 803A1BFC 0039DA3C  39 61 00 20 */	addi r11, r1, 0x20
-/* 803A1C00 0039DA40  4B C6 57 41 */	bl lbl_80007340
+/* 803A1C00 0039DA40  4B C6 57 41 */	bl _savegpr_28
 /* 803A1C04 0039DA44  7C 7C 1B 78 */	mr r28, r3
 /* 803A1C08 0039DA48  88 03 00 11 */	lbz r0, 0x11(r3)
 /* 803A1C0C 0039DA4C  2C 00 00 00 */	cmpwi r0, 0x0
@@ -241,7 +241,7 @@ lbl_803A1C38:
 /* 803A1C70 0039DAB0  38 DE 00 90 */	addi r6, r30, 0x90
 /* 803A1C74 0039DAB4  4B FB 51 3D */	bl MoveFromKeyState__Q43scn4step4hero7UtilityFRQ43scn4step4hero4HeroRCQ24gobj14MoveParamAccelRCQ24gobj14MoveParamDecelRCQ24gobj13MoveParamFall
 /* 803A1C78 0039DAB8  39 61 00 20 */	addi r11, r1, 0x20
-/* 803A1C7C 0039DABC  4B C6 57 11 */	bl lbl_8000738C
+/* 803A1C7C 0039DABC  4B C6 57 11 */	bl _restgpr_28
 /* 803A1C80 0039DAC0  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803A1C84 0039DAC4  7C 08 03 A6 */	mtlr r0
 /* 803A1C88 0039DAC8  38 21 00 20 */	addi r1, r1, 0x20

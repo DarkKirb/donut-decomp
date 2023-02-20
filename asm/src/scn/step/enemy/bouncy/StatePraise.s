@@ -7,7 +7,7 @@ __ct__Q53scn4step5enemy6bouncy11StatePraiseFPQ43scn4step5enemy5Enemyb:
 /* 8029DC50 00299A90  7C 08 02 A6 */	mflr r0
 /* 8029DC54 00299A94  90 01 00 34 */	stw r0, 0x34(r1)
 /* 8029DC58 00299A98  39 61 00 30 */	addi r11, r1, 0x30
-/* 8029DC5C 00299A9C  4B D6 96 E9 */	bl lbl_80007344
+/* 8029DC5C 00299A9C  4B D6 96 E9 */	bl _savegpr_29
 /* 8029DC60 00299AA0  7C 7D 1B 78 */	mr r29, r3
 /* 8029DC64 00299AA4  7C 9E 23 78 */	mr r30, r4
 /* 8029DC68 00299AA8  7C BF 2B 78 */	mr r31, r5
@@ -57,7 +57,7 @@ __ct__Q53scn4step5enemy6bouncy11StatePraiseFPQ43scn4step5enemy5Enemyb:
 /* 8029DD18 00299B58  4B FD 35 65 */	bl reqScript__Q43scn4step5chara5ModelFUl
 /* 8029DD1C 00299B5C  7F A3 EB 78 */	mr r3, r29
 /* 8029DD20 00299B60  39 61 00 30 */	addi r11, r1, 0x30
-/* 8029DD24 00299B64  4B D6 96 6D */	bl lbl_80007390
+/* 8029DD24 00299B64  4B D6 96 6D */	bl _restgpr_29
 /* 8029DD28 00299B68  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 8029DD2C 00299B6C  7C 08 03 A6 */	mtlr r0
 /* 8029DD30 00299B70  38 21 00 30 */	addi r1, r1, 0x30

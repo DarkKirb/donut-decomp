@@ -18,7 +18,7 @@ procItemCollReact__Q43scn4step4hero13ItemCollReactFv:
 /* 80342C98 0033EAD8  90 01 00 54 */	stw r0, 0x54(r1)
 /* 80342C9C 0033EADC  DB E1 00 48 */	stfd f31, 0x48(r1)
 /* 80342CA0 0033EAE0  39 61 00 48 */	addi r11, r1, 0x48
-/* 80342CA4 0033EAE4  4B CC 46 81 */	bl lbl_80007324
+/* 80342CA4 0033EAE4  4B CC 46 81 */	bl _savegpr_21
 /* 80342CA8 0033EAE8  7C 7B 1B 78 */	mr r27, r3
 /* 80342CAC 0033EAEC  3B A0 00 01 */	li r29, 0x1
 /* 80342CB0 0033EAF0  3C 60 80 48 */	lis r3, "__vt__Q24util94StateFactoryArg1<Q24util6IState,Q53scn4step4hero7gimmick12StateItemGet,PQ43scn4step4hero4Hero>"@ha
@@ -441,7 +441,7 @@ lbl_80343214:
 /* 8034321C 0033F05C  41 80 FF C8 */	blt lbl_803431E4
 /* 80343220 0033F060  CB E1 00 48 */	lfd f31, 0x48(r1)
 /* 80343224 0033F064  39 61 00 48 */	addi r11, r1, 0x48
-/* 80343228 0033F068  4B CC 41 49 */	bl lbl_80007370
+/* 80343228 0033F068  4B CC 41 49 */	bl _restgpr_21
 /* 8034322C 0033F06C  80 01 00 54 */	lwz r0, 0x54(r1)
 /* 80343230 0033F070  7C 08 03 A6 */	mtlr r0
 /* 80343234 0033F074  38 21 00 50 */	addi r1, r1, 0x50
@@ -452,7 +452,7 @@ oneupPerformance__Q43scn4step4hero13ItemCollReactFv:
 /* 80343240 0033F080  7C 08 02 A6 */	mflr r0
 /* 80343244 0033F084  90 01 00 34 */	stw r0, 0x34(r1)
 /* 80343248 0033F088  39 61 00 30 */	addi r11, r1, 0x30
-/* 8034324C 0033F08C  4B CC 40 F9 */	bl lbl_80007344
+/* 8034324C 0033F08C  4B CC 40 F9 */	bl _savegpr_29
 /* 80343250 0033F090  7C 7D 1B 78 */	mr r29, r3
 /* 80343254 0033F094  80 63 00 00 */	lwz r3, 0x0(r3)
 /* 80343258 0033F098  4B FF D1 4D */	bl soundSE__Q43scn4step4hero4HeroFv
@@ -512,7 +512,7 @@ lbl_803432EC:
 /* 80343318 0033F158  38 A0 00 02 */	li r5, 0x2
 /* 8034331C 0033F15C  4B F2 AC 5D */	bl requestN__Q43scn4step5chara6EffectFQ43scn4step6effect4KindUl
 /* 80343320 0033F160  39 61 00 30 */	addi r11, r1, 0x30
-/* 80343324 0033F164  4B CC 40 6D */	bl lbl_80007390
+/* 80343324 0033F164  4B CC 40 6D */	bl _restgpr_29
 /* 80343328 0033F168  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 8034332C 0033F16C  7C 08 03 A6 */	mtlr r0
 /* 80343330 0033F170  38 21 00 30 */	addi r1, r1, 0x30

@@ -9,7 +9,7 @@ __ct__Q53scn4step5enemy5cappy12StateSkinnedFPQ43scn4step5enemy5Enemy:
 /* 802A34AC 0029F2EC  DB E1 00 40 */	stfd f31, 0x40(r1)
 /* 802A34B0 0029F2F0  F3 E1 00 48 */	psq_st f31, 0x48(r1), 0, qr0
 /* 802A34B4 0029F2F4  39 61 00 40 */	addi r11, r1, 0x40
-/* 802A34B8 0029F2F8  4B D6 3E 8D */	bl lbl_80007344
+/* 802A34B8 0029F2F8  4B D6 3E 8D */	bl _savegpr_29
 /* 802A34BC 0029F2FC  7C 7D 1B 78 */	mr r29, r3
 /* 802A34C0 0029F300  4B FE A9 05 */	bl __ct__Q43scn4step5enemy9StateBaseFPQ43scn4step5enemy5Enemy
 /* 802A34C4 0029F304  3C 60 80 47 */	lis r3, __vt__Q53scn4step5enemy5cappy12StateSkinned@ha
@@ -139,7 +139,7 @@ lbl_802A3670:
 /* 802A3684 0029F4C4  13 E1 00 0C */	psq_lx f31, r1, r0, 0, qr0
 /* 802A3688 0029F4C8  CB E1 00 40 */	lfd f31, 0x40(r1)
 /* 802A368C 0029F4CC  39 61 00 40 */	addi r11, r1, 0x40
-/* 802A3690 0029F4D0  4B D6 3D 01 */	bl lbl_80007390
+/* 802A3690 0029F4D0  4B D6 3D 01 */	bl _restgpr_29
 /* 802A3694 0029F4D4  80 01 00 54 */	lwz r0, 0x54(r1)
 /* 802A3698 0029F4D8  7C 08 03 A6 */	mtlr r0
 /* 802A369C 0029F4DC  38 21 00 50 */	addi r1, r1, 0x50
@@ -211,7 +211,7 @@ procFixPos__Q53scn4step5enemy5cappy12StateSkinnedFv:
 /* 802A3778 0029F5B8  7C 08 02 A6 */	mflr r0
 /* 802A377C 0029F5BC  90 01 00 54 */	stw r0, 0x54(r1)
 /* 802A3780 0029F5C0  39 61 00 50 */	addi r11, r1, 0x50
-/* 802A3784 0029F5C4  4B D6 3B C1 */	bl lbl_80007344
+/* 802A3784 0029F5C4  4B D6 3B C1 */	bl _savegpr_29
 /* 802A3788 0029F5C8  7C 7D 1B 78 */	mr r29, r3
 /* 802A378C 0029F5CC  4B E5 D0 55 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 802A3790 0029F5D0  4B FE 49 6D */	bl mapColl__Q43scn4step5enemy5EnemyFv
@@ -323,7 +323,7 @@ lbl_802A38FC:
 .global lbl_802A3900
 lbl_802A3900:
 /* 802A3900 0029F740  39 61 00 50 */	addi r11, r1, 0x50
-/* 802A3904 0029F744  4B D6 3A 8D */	bl lbl_80007390
+/* 802A3904 0029F744  4B D6 3A 8D */	bl _restgpr_29
 /* 802A3908 0029F748  80 01 00 54 */	lwz r0, 0x54(r1)
 /* 802A390C 0029F74C  7C 08 03 A6 */	mtlr r0
 /* 802A3910 0029F750  38 21 00 50 */	addi r1, r1, 0x50

@@ -9,7 +9,7 @@ __ct__Q53scn4step5enemy4como9StateHangFPQ43scn4step5enemy5Enemy:
 /* 802A82F8 002A4138  DB E1 00 30 */	stfd f31, 0x30(r1)
 /* 802A82FC 002A413C  F3 E1 00 38 */	psq_st f31, 0x38(r1), 0, qr0
 /* 802A8300 002A4140  39 61 00 30 */	addi r11, r1, 0x30
-/* 802A8304 002A4144  4B D5 F0 41 */	bl lbl_80007344
+/* 802A8304 002A4144  4B D5 F0 41 */	bl _savegpr_29
 /* 802A8308 002A4148  7C 7D 1B 78 */	mr r29, r3
 /* 802A830C 002A414C  4B FE 5A B9 */	bl __ct__Q43scn4step5enemy9StateBaseFPQ43scn4step5enemy5Enemy
 /* 802A8310 002A4150  3C 60 80 47 */	lis r3, __vt__Q53scn4step5enemy4como9StateHang@ha
@@ -75,7 +75,7 @@ __ct__Q53scn4step5enemy4como9StateHangFPQ43scn4step5enemy5Enemy:
 /* 802A8400 002A4240  13 E1 00 0C */	psq_lx f31, r1, r0, 0, qr0
 /* 802A8404 002A4244  CB E1 00 30 */	lfd f31, 0x30(r1)
 /* 802A8408 002A4248  39 61 00 30 */	addi r11, r1, 0x30
-/* 802A840C 002A424C  4B D5 EF 85 */	bl lbl_80007390
+/* 802A840C 002A424C  4B D5 EF 85 */	bl _restgpr_29
 /* 802A8410 002A4250  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 802A8414 002A4254  7C 08 03 A6 */	mtlr r0
 /* 802A8418 002A4258  38 21 00 40 */	addi r1, r1, 0x40
@@ -114,7 +114,7 @@ procFixPos__Q53scn4step5enemy4como9StateHangFv:
 /* 802A8484 002A42C4  DB E1 00 30 */	stfd f31, 0x30(r1)
 /* 802A8488 002A42C8  F3 E1 00 38 */	psq_st f31, 0x38(r1), 0, qr0
 /* 802A848C 002A42CC  39 61 00 30 */	addi r11, r1, 0x30
-/* 802A8490 002A42D0  4B D5 EE B5 */	bl lbl_80007344
+/* 802A8490 002A42D0  4B D5 EE B5 */	bl _savegpr_29
 /* 802A8494 002A42D4  7C 7D 1B 78 */	mr r29, r3
 /* 802A8498 002A42D8  4B E5 83 49 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 802A849C 002A42DC  4B FD FC F9 */	bl custom__Q43scn4step5enemy5EnemyFv
@@ -158,7 +158,7 @@ procFixPos__Q53scn4step5enemy4como9StateHangFv:
 /* 802A8534 002A4374  13 E1 00 0C */	psq_lx f31, r1, r0, 0, qr0
 /* 802A8538 002A4378  CB E1 00 30 */	lfd f31, 0x30(r1)
 /* 802A853C 002A437C  39 61 00 30 */	addi r11, r1, 0x30
-/* 802A8540 002A4380  4B D5 EE 51 */	bl lbl_80007390
+/* 802A8540 002A4380  4B D5 EE 51 */	bl _restgpr_29
 /* 802A8544 002A4384  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 802A8548 002A4388  7C 08 03 A6 */	mtlr r0
 /* 802A854C 002A438C  38 21 00 40 */	addi r1, r1, 0x40

@@ -7,7 +7,7 @@ __ct__Q43scn7history6detail4YearFRQ23mem10IAllocatorQ23lyt12PaneAccessori:
 /* 8021B2E4 00217124  7C 08 02 A6 */	mflr r0
 /* 8021B2E8 00217128  90 01 06 E4 */	stw r0, 0x6e4(r1)
 /* 8021B2EC 0021712C  39 61 06 E0 */	addi r11, r1, 0x6e0
-/* 8021B2F0 00217130  4B DE C0 4D */	bl lbl_8000733C
+/* 8021B2F0 00217130  4B DE C0 4D */	bl _savegpr_27
 /* 8021B2F4 00217134  7C 7D 1B 78 */	mr r29, r3
 /* 8021B2F8 00217138  7C 9E 23 78 */	mr r30, r4
 /* 8021B2FC 0021713C  7C BC 2B 78 */	mr r28, r5
@@ -116,7 +116,7 @@ __ct__Q43scn7history6detail4YearFRQ23mem10IAllocatorQ23lyt12PaneAccessori:
 /* 8021B498 002172D8  4B F5 CD 89 */	bl __dt__Q23lyt12PaneAccessorFv
 /* 8021B49C 002172DC  7F A3 EB 78 */	mr r3, r29
 /* 8021B4A0 002172E0  39 61 06 E0 */	addi r11, r1, 0x6e0
-/* 8021B4A4 002172E4  4B DE BE E5 */	bl lbl_80007388
+/* 8021B4A4 002172E4  4B DE BE E5 */	bl _restgpr_27
 /* 8021B4A8 002172E8  80 01 06 E4 */	lwz r0, 0x6e4(r1)
 /* 8021B4AC 002172EC  7C 08 03 A6 */	mtlr r0
 /* 8021B4B0 002172F0  38 21 06 E0 */	addi r1, r1, 0x6e0
@@ -178,7 +178,7 @@ createNumber__Q43scn7history6detail4YearFRQ23mem10IAllocatorQ23lyt12PaneAccessor
 /* 8021B568 002173A8  7C 08 02 A6 */	mflr r0
 /* 8021B56C 002173AC  90 01 03 84 */	stw r0, 0x384(r1)
 /* 8021B570 002173B0  39 61 03 80 */	addi r11, r1, 0x380
-/* 8021B574 002173B4  4B DE BD CD */	bl lbl_80007340
+/* 8021B574 002173B4  4B DE BD CD */	bl _savegpr_28
 /* 8021B578 002173B8  7C 7C 1B 78 */	mr r28, r3
 /* 8021B57C 002173BC  7C 9E 23 78 */	mr r30, r4
 /* 8021B580 002173C0  7C BD 2B 78 */	mr r29, r5
@@ -230,7 +230,7 @@ lbl_8021B600:
 /* 8021B628 00217468  7F A4 EB 78 */	mr r4, r29
 /* 8021B62C 0021746C  4B F9 1B 0D */	bl setParent__Q23lyt6LayoutFRCQ23lyt12PaneAccessor
 /* 8021B630 00217470  39 61 03 80 */	addi r11, r1, 0x380
-/* 8021B634 00217474  4B DE BD 59 */	bl lbl_8000738C
+/* 8021B634 00217474  4B DE BD 59 */	bl _restgpr_28
 /* 8021B638 00217478  80 01 03 84 */	lwz r0, 0x384(r1)
 /* 8021B63C 0021747C  7C 08 03 A6 */	mtlr r0
 /* 8021B640 00217480  38 21 03 80 */	addi r1, r1, 0x380

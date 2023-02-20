@@ -7,7 +7,7 @@ TryToChangeState__Q53scn4step4boss12creditdedede13StateHoverFarFPQ43scn4step4bos
 /* 80247EA8 00243CE8  7C 08 02 A6 */	mflr r0
 /* 80247EAC 00243CEC  90 01 00 24 */	stw r0, 0x24(r1)
 /* 80247EB0 00243CF0  39 61 00 20 */	addi r11, r1, 0x20
-/* 80247EB4 00243CF4  4B DB F4 91 */	bl lbl_80007344
+/* 80247EB4 00243CF4  4B DB F4 91 */	bl _savegpr_29
 /* 80247EB8 00243CF8  7C 7D 1B 78 */	mr r29, r3
 /* 80247EBC 00243CFC  4B E2 D8 75 */	bl GKI_getfirst
 /* 80247EC0 00243D00  4B FD 8F A9 */	bl bossManager__Q33scn4step9ComponentFv
@@ -40,7 +40,7 @@ lbl_80247F18:
 .global lbl_80247F1C
 lbl_80247F1C:
 /* 80247F1C 00243D5C  39 61 00 20 */	addi r11, r1, 0x20
-/* 80247F20 00243D60  4B DB F4 71 */	bl lbl_80007390
+/* 80247F20 00243D60  4B DB F4 71 */	bl _restgpr_29
 /* 80247F24 00243D64  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80247F28 00243D68  7C 08 03 A6 */	mtlr r0
 /* 80247F2C 00243D6C  38 21 00 20 */	addi r1, r1, 0x20
@@ -136,7 +136,7 @@ procMove__Q53scn4step4boss12creditdedede13StateHoverFarFv:
 /* 80248068 00243EA8  7C 08 02 A6 */	mflr r0
 /* 8024806C 00243EAC  90 01 00 24 */	stw r0, 0x24(r1)
 /* 80248070 00243EB0  39 61 00 20 */	addi r11, r1, 0x20
-/* 80248074 00243EB4  4B DB F2 D1 */	bl lbl_80007344
+/* 80248074 00243EB4  4B DB F2 D1 */	bl _savegpr_29
 /* 80248078 00243EB8  7C 7D 1B 78 */	mr r29, r3
 /* 8024807C 00243EBC  4B EB 87 65 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 80248080 00243EC0  4B FE 4E 91 */	bl param__Q43scn4step4boss4BossCFv
@@ -166,7 +166,7 @@ lbl_802480B0:
 /* 802480D8 00243F18  38 DE 00 30 */	addi r6, r30, 0x30
 /* 802480DC 00243F1C  4B F5 34 01 */	bl airAccelFall__Q24gobj4MoveFbRCQ24gobj14MoveParamAccelRCQ24gobj13MoveParamFall
 /* 802480E0 00243F20  39 61 00 20 */	addi r11, r1, 0x20
-/* 802480E4 00243F24  4B DB F2 AD */	bl lbl_80007390
+/* 802480E4 00243F24  4B DB F2 AD */	bl _restgpr_29
 /* 802480E8 00243F28  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802480EC 00243F2C  7C 08 03 A6 */	mtlr r0
 /* 802480F0 00243F30  38 21 00 20 */	addi r1, r1, 0x20
@@ -180,7 +180,7 @@ procFixPos__Q53scn4step4boss12creditdedede13StateHoverFarFv:
 /* 80248104 00243F44  DB E1 00 20 */	stfd f31, 0x20(r1)
 /* 80248108 00243F48  F3 E1 00 28 */	psq_st f31, 0x28(r1), 0, qr0
 /* 8024810C 00243F4C  39 61 00 20 */	addi r11, r1, 0x20
-/* 80248110 00243F50  4B DB F2 35 */	bl lbl_80007344
+/* 80248110 00243F50  4B DB F2 35 */	bl _savegpr_29
 /* 80248114 00243F54  7C 7D 1B 78 */	mr r29, r3
 /* 80248118 00243F58  4B EB 86 C9 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 8024811C 00243F5C  4B FE 4D F5 */	bl param__Q43scn4step4boss4BossCFv
@@ -237,7 +237,7 @@ lbl_802481C4:
 /* 802481C8 00244008  13 E1 00 0C */	psq_lx f31, r1, r0, 0, qr0
 /* 802481CC 0024400C  CB E1 00 20 */	lfd f31, 0x20(r1)
 /* 802481D0 00244010  39 61 00 20 */	addi r11, r1, 0x20
-/* 802481D4 00244014  4B DB F1 BD */	bl lbl_80007390
+/* 802481D4 00244014  4B DB F1 BD */	bl _restgpr_29
 /* 802481D8 00244018  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 802481DC 0024401C  7C 08 03 A6 */	mtlr r0
 /* 802481E0 00244020  38 21 00 30 */	addi r1, r1, 0x30

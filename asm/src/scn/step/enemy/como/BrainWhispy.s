@@ -25,7 +25,7 @@ onStart__Q53scn4step5enemy4como11BrainWhispyFv:
 /* 802A7108 002A2F48  7C 08 02 A6 */	mflr r0
 /* 802A710C 002A2F4C  90 01 00 24 */	stw r0, 0x24(r1)
 /* 802A7110 002A2F50  39 61 00 20 */	addi r11, r1, 0x20
-/* 802A7114 002A2F54  4B D6 02 31 */	bl lbl_80007344
+/* 802A7114 002A2F54  4B D6 02 31 */	bl _savegpr_29
 /* 802A7118 002A2F58  7C 7D 1B 78 */	mr r29, r3
 /* 802A711C 002A2F5C  4B E5 96 C5 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 802A7120 002A2F60  4B FE 0F FD */	bl objColl__Q43scn4step5enemy5EnemyFv
@@ -55,7 +55,7 @@ lbl_802A7178:
 /* 802A7178 002A2FB8  93 BF 00 0C */	stw r29, 0xc(r31)
 /* 802A717C 002A2FBC  38 60 00 01 */	li r3, 0x1
 /* 802A7180 002A2FC0  39 61 00 20 */	addi r11, r1, 0x20
-/* 802A7184 002A2FC4  4B D6 02 0D */	bl lbl_80007390
+/* 802A7184 002A2FC4  4B D6 02 0D */	bl _restgpr_29
 /* 802A7188 002A2FC8  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802A718C 002A2FCC  7C 08 03 A6 */	mtlr r0
 /* 802A7190 002A2FD0  38 21 00 20 */	addi r1, r1, 0x20
@@ -67,7 +67,7 @@ onRecover__Q53scn4step5enemy4como11BrainWhispyFv:
 /* 802A719C 002A2FDC  7C 08 02 A6 */	mflr r0
 /* 802A71A0 002A2FE0  90 01 00 24 */	stw r0, 0x24(r1)
 /* 802A71A4 002A2FE4  39 61 00 20 */	addi r11, r1, 0x20
-/* 802A71A8 002A2FE8  4B D6 01 9D */	bl lbl_80007344
+/* 802A71A8 002A2FE8  4B D6 01 9D */	bl _savegpr_29
 /* 802A71AC 002A2FEC  7C 7D 1B 78 */	mr r29, r3
 /* 802A71B0 002A2FF0  4B E5 96 31 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 802A71B4 002A2FF4  7C 7E 1B 78 */	mr r30, r3
@@ -91,7 +91,7 @@ lbl_802A71F4:
 /* 802A71F4 002A3034  93 BF 00 0C */	stw r29, 0xc(r31)
 /* 802A71F8 002A3038  38 60 00 01 */	li r3, 0x1
 /* 802A71FC 002A303C  39 61 00 20 */	addi r11, r1, 0x20
-/* 802A7200 002A3040  4B D6 01 91 */	bl lbl_80007390
+/* 802A7200 002A3040  4B D6 01 91 */	bl _restgpr_29
 /* 802A7204 002A3044  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802A7208 002A3048  7C 08 03 A6 */	mtlr r0
 /* 802A720C 002A304C  38 21 00 20 */	addi r1, r1, 0x20

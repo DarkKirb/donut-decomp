@@ -185,7 +185,7 @@ procConstraint__Q53scn4step6weapon10spearspear9StateMainFv:
 /* 803E431C 003E015C  90 01 00 44 */	stw r0, 0x44(r1)
 /* 803E4320 003E0160  DB E1 00 38 */	stfd f31, 0x38(r1)
 /* 803E4324 003E0164  39 61 00 38 */	addi r11, r1, 0x38
-/* 803E4328 003E0168  4B C2 30 1D */	bl lbl_80007344
+/* 803E4328 003E0168  4B C2 30 1D */	bl _savegpr_29
 /* 803E432C 003E016C  7C 7D 1B 78 */	mr r29, r3
 /* 803E4330 003E0170  80 03 00 08 */	lwz r0, 0x8(r3)
 /* 803E4334 003E0174  28 00 00 01 */	cmplwi r0, 0x1
@@ -270,7 +270,7 @@ lbl_803E4450:
 lbl_803E4454:
 /* 803E4454 003E0294  CB E1 00 38 */	lfd f31, 0x38(r1)
 /* 803E4458 003E0298  39 61 00 38 */	addi r11, r1, 0x38
-/* 803E445C 003E029C  4B C2 2F 35 */	bl lbl_80007390
+/* 803E445C 003E029C  4B C2 2F 35 */	bl _restgpr_29
 /* 803E4460 003E02A0  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 803E4464 003E02A4  7C 08 03 A6 */	mtlr r0
 /* 803E4468 003E02A8  38 21 00 40 */	addi r1, r1, 0x40
@@ -283,7 +283,7 @@ procFixPos__Q53scn4step6weapon10spearspear9StateMainFv:
 /* 803E4478 003E02B8  90 01 00 24 */	stw r0, 0x24(r1)
 /* 803E447C 003E02BC  DB E1 00 18 */	stfd f31, 0x18(r1)
 /* 803E4480 003E02C0  39 61 00 18 */	addi r11, r1, 0x18
-/* 803E4484 003E02C4  4B C2 2E C1 */	bl lbl_80007344
+/* 803E4484 003E02C4  4B C2 2E C1 */	bl _savegpr_29
 /* 803E4488 003E02C8  7C 7D 1B 78 */	mr r29, r3
 /* 803E448C 003E02CC  4B D1 C3 55 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 803E4490 003E02D0  4B FF 6C A1 */	bl objColl__Q43scn4step6weapon6WeaponFv
@@ -361,7 +361,7 @@ lbl_803E4590:
 lbl_803E4594:
 /* 803E4594 003E03D4  CB E1 00 18 */	lfd f31, 0x18(r1)
 /* 803E4598 003E03D8  39 61 00 18 */	addi r11, r1, 0x18
-/* 803E459C 003E03DC  4B C2 2D F5 */	bl lbl_80007390
+/* 803E459C 003E03DC  4B C2 2D F5 */	bl _restgpr_29
 /* 803E45A0 003E03E0  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803E45A4 003E03E4  7C 08 03 A6 */	mtlr r0
 /* 803E45A8 003E03E8  38 21 00 20 */	addi r1, r1, 0x20

@@ -153,7 +153,7 @@ mfCreateMoveLand__Q53scn4step7gimmick9otachidai9OtachidaiFv:
 /* 8031A61C 0031645C  7C 08 02 A6 */	mflr r0
 /* 8031A620 00316460  90 01 00 24 */	stw r0, 0x24(r1)
 /* 8031A624 00316464  39 61 00 20 */	addi r11, r1, 0x20
-/* 8031A628 00316468  4B CE CD 1D */	bl lbl_80007344
+/* 8031A628 00316468  4B CE CD 1D */	bl _savegpr_29
 /* 8031A62C 0031646C  7C 7D 1B 78 */	mr r29, r3
 /* 8031A630 00316470  C0 23 00 08 */	lfs f1, 0x8(r3)
 /* 8031A634 00316474  C0 02 CA 5C */	lfs f0, "@53444"@sda21(r2)
@@ -184,7 +184,7 @@ mfCreateMoveLand__Q53scn4step7gimmick9otachidai9OtachidaiFv:
 /* 8031A698 003164D8  38 A1 00 08 */	addi r5, r1, 0x8
 /* 8031A69C 003164DC  4B E9 7D C1 */	bl mgSetOffset__Q25mcoll11LandManagerFRCQ35mcoll6detail15MoveGridGroupIdRCQ33hel4math7Vector2
 /* 8031A6A0 003164E0  39 61 00 20 */	addi r11, r1, 0x20
-/* 8031A6A4 003164E4  4B CE CC ED */	bl lbl_80007390
+/* 8031A6A4 003164E4  4B CE CC ED */	bl _restgpr_29
 /* 8031A6A8 003164E8  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8031A6AC 003164EC  7C 08 03 A6 */	mtlr r0
 /* 8031A6B0 003164F0  38 21 00 20 */	addi r1, r1, 0x20

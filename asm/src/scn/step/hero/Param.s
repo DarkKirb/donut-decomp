@@ -138,7 +138,7 @@ replaceCommonParam__Q43scn4step4hero5ParamFQ43scn4step4hero13ParamReplKind:
 /* 80350F9C 0034CDDC  7C 08 02 A6 */	mflr r0
 /* 80350FA0 0034CDE0  90 01 00 24 */	stw r0, 0x24(r1)
 /* 80350FA4 0034CDE4  39 61 00 20 */	addi r11, r1, 0x20
-/* 80350FA8 0034CDE8  4B CB 63 9D */	bl lbl_80007344
+/* 80350FA8 0034CDE8  4B CB 63 9D */	bl _savegpr_29
 /* 80350FAC 0034CDEC  7C 7D 1B 78 */	mr r29, r3
 /* 80350FB0 0034CDF0  7C 9E 23 78 */	mr r30, r4
 /* 80350FB4 0034CDF4  38 63 07 3C */	addi r3, r3, 0x73c
@@ -156,7 +156,7 @@ replaceCommonParam__Q43scn4step4hero5ParamFQ43scn4step4hero13ParamReplKind:
 .global lbl_80350FE4
 lbl_80350FE4:
 /* 80350FE4 0034CE24  39 61 00 20 */	addi r11, r1, 0x20
-/* 80350FE8 0034CE28  4B CB 63 A9 */	bl lbl_80007390
+/* 80350FE8 0034CE28  4B CB 63 A9 */	bl _restgpr_29
 /* 80350FEC 0034CE2C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80350FF0 0034CE30  7C 08 03 A6 */	mtlr r0
 /* 80350FF4 0034CE34  38 21 00 20 */	addi r1, r1, 0x20
@@ -167,7 +167,7 @@ restoreCommonParam__Q43scn4step4hero5ParamFQ43scn4step4hero13ParamReplKind:
 /* 80351000 0034CE40  7C 08 02 A6 */	mflr r0
 /* 80351004 0034CE44  90 01 00 24 */	stw r0, 0x24(r1)
 /* 80351008 0034CE48  39 61 00 20 */	addi r11, r1, 0x20
-/* 8035100C 0034CE4C  4B CB 63 39 */	bl lbl_80007344
+/* 8035100C 0034CE4C  4B CB 63 39 */	bl _savegpr_29
 /* 80351010 0034CE50  7C 7D 1B 78 */	mr r29, r3
 /* 80351014 0034CE54  7C 9E 23 78 */	mr r30, r4
 /* 80351018 0034CE58  38 63 07 3C */	addi r3, r3, 0x73c
@@ -185,7 +185,7 @@ restoreCommonParam__Q43scn4step4hero5ParamFQ43scn4step4hero13ParamReplKind:
 .global lbl_80351048
 lbl_80351048:
 /* 80351048 0034CE88  39 61 00 20 */	addi r11, r1, 0x20
-/* 8035104C 0034CE8C  4B CB 63 45 */	bl lbl_80007390
+/* 8035104C 0034CE8C  4B CB 63 45 */	bl _restgpr_29
 /* 80351050 0034CE90  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80351054 0034CE94  7C 08 03 A6 */	mtlr r0
 /* 80351058 0034CE98  38 21 00 20 */	addi r1, r1, 0x20

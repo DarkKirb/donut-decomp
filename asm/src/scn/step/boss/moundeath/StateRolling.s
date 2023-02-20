@@ -237,7 +237,7 @@ procMove__Q53scn4step4boss9moundeath12StateRollingFv:
 /* 8025728C 002530CC  7C 08 02 A6 */	mflr r0
 /* 80257290 002530D0  90 01 00 64 */	stw r0, 0x64(r1)
 /* 80257294 002530D4  39 61 00 60 */	addi r11, r1, 0x60
-/* 80257298 002530D8  4B DB 00 AD */	bl lbl_80007344
+/* 80257298 002530D8  4B DB 00 AD */	bl _savegpr_29
 /* 8025729C 002530DC  7C 7D 1B 78 */	mr r29, r3
 /* 802572A0 002530E0  4B EA 95 41 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 802572A4 002530E4  4B FD 5C 6D */	bl param__Q43scn4step4boss4BossCFv
@@ -343,7 +343,7 @@ lbl_80257400:
 .global lbl_80257414
 lbl_80257414:
 /* 80257414 00253254  39 61 00 60 */	addi r11, r1, 0x60
-/* 80257418 00253258  4B DA FF 79 */	bl lbl_80007390
+/* 80257418 00253258  4B DA FF 79 */	bl _restgpr_29
 /* 8025741C 0025325C  80 01 00 64 */	lwz r0, 0x64(r1)
 /* 80257420 00253260  7C 08 03 A6 */	mtlr r0
 /* 80257424 00253264  38 21 00 60 */	addi r1, r1, 0x60

@@ -122,7 +122,7 @@ procAnim__Q53scn4step4boss7bonkers10StateSwingFv:
 /* 80239174 00234FB4  7C 08 02 A6 */	mflr r0
 /* 80239178 00234FB8  90 01 00 24 */	stw r0, 0x24(r1)
 /* 8023917C 00234FBC  39 61 00 20 */	addi r11, r1, 0x20
-/* 80239180 00234FC0  4B DC E1 C5 */	bl lbl_80007344
+/* 80239180 00234FC0  4B DC E1 C5 */	bl _savegpr_29
 /* 80239184 00234FC4  7C 7D 1B 78 */	mr r29, r3
 /* 80239188 00234FC8  4B EC 76 59 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 8023918C 00234FCC  4B FF 3D 85 */	bl param__Q43scn4step4boss4BossCFv
@@ -184,7 +184,7 @@ lbl_8023921C:
 .global lbl_80239254
 lbl_80239254:
 /* 80239254 00235094  39 61 00 20 */	addi r11, r1, 0x20
-/* 80239258 00235098  4B DC E1 39 */	bl lbl_80007390
+/* 80239258 00235098  4B DC E1 39 */	bl _restgpr_29
 /* 8023925C 0023509C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80239260 002350A0  7C 08 03 A6 */	mtlr r0
 /* 80239264 002350A4  38 21 00 20 */	addi r1, r1, 0x20
@@ -224,7 +224,7 @@ procMove__Q53scn4step4boss7bonkers10StateSwingFv:
 /* 802392D0 00235110  7C 08 02 A6 */	mflr r0
 /* 802392D4 00235114  90 01 00 24 */	stw r0, 0x24(r1)
 /* 802392D8 00235118  39 61 00 20 */	addi r11, r1, 0x20
-/* 802392DC 0023511C  4B DC E0 69 */	bl lbl_80007344
+/* 802392DC 0023511C  4B DC E0 69 */	bl _savegpr_29
 /* 802392E0 00235120  7C 7D 1B 78 */	mr r29, r3
 /* 802392E4 00235124  4B EC 74 FD */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 802392E8 00235128  4B FF 3C 29 */	bl param__Q43scn4step4boss4BossCFv
@@ -255,7 +255,7 @@ lbl_80239330:
 .global lbl_80239344
 lbl_80239344:
 /* 80239344 00235184  39 61 00 20 */	addi r11, r1, 0x20
-/* 80239348 00235188  4B DC E0 49 */	bl lbl_80007390
+/* 80239348 00235188  4B DC E0 49 */	bl _restgpr_29
 /* 8023934C 0023518C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80239350 00235190  7C 08 03 A6 */	mtlr r0
 /* 80239354 00235194  38 21 00 20 */	addi r1, r1, 0x20

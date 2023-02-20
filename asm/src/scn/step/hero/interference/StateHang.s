@@ -61,7 +61,7 @@ __ct__Q53scn4step4hero12interference9StateHangFPQ43scn4step4hero4Hero:
 /* 80371734 0036D574  7C 08 02 A6 */	mflr r0
 /* 80371738 0036D578  90 01 00 94 */	stw r0, 0x94(r1)
 /* 8037173C 0036D57C  39 61 00 90 */	addi r11, r1, 0x90
-/* 80371740 0036D580  4B C9 5C 05 */	bl lbl_80007344
+/* 80371740 0036D580  4B C9 5C 05 */	bl _savegpr_29
 /* 80371744 0036D584  7C 7D 1B 78 */	mr r29, r3
 /* 80371748 0036D588  4B FE 3D A9 */	bl __ct__Q43scn4step4hero9StateBaseFPQ43scn4step4hero4Hero
 /* 8037174C 0036D58C  3C 60 80 49 */	lis r3, __vt__Q53scn4step4hero12interference9StateHang@ha
@@ -189,7 +189,7 @@ __ct__Q53scn4step4hero12interference9StateHangFPQ43scn4step4hero4Hero:
 /* 80371934 0036D774  4B E0 AC 19 */	bl __as__Q33hel4math7Vector3FRCQ33hel4math7Vector3
 /* 80371938 0036D778  7F A3 EB 78 */	mr r3, r29
 /* 8037193C 0036D77C  39 61 00 90 */	addi r11, r1, 0x90
-/* 80371940 0036D780  4B C9 5A 51 */	bl lbl_80007390
+/* 80371940 0036D780  4B C9 5A 51 */	bl _restgpr_29
 /* 80371944 0036D784  80 01 00 94 */	lwz r0, 0x94(r1)
 /* 80371948 0036D788  7C 08 03 A6 */	mtlr r0
 /* 8037194C 0036D78C  38 21 00 90 */	addi r1, r1, 0x90

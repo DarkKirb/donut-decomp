@@ -7,7 +7,7 @@ __ct__Q43scn4step4info9HeroPanelFRQ23mem10IAllocatorRCQ23lyt12PaneAccessorRCQ23l
 /* 803A8080 003A3EC0  7C 08 02 A6 */	mflr r0
 /* 803A8084 003A3EC4  90 01 00 34 */	stw r0, 0x34(r1)
 /* 803A8088 003A3EC8  39 61 00 30 */	addi r11, r1, 0x30
-/* 803A808C 003A3ECC  4B C5 F2 A5 */	bl lbl_80007330
+/* 803A808C 003A3ECC  4B C5 F2 A5 */	bl _savegpr_24
 /* 803A8090 003A3ED0  7C 78 1B 78 */	mr r24, r3
 /* 803A8094 003A3ED4  7C 99 23 78 */	mr r25, r4
 /* 803A8098 003A3ED8  7C BA 2B 78 */	mr r26, r5
@@ -52,7 +52,7 @@ __ct__Q43scn4step4info9HeroPanelFRQ23mem10IAllocatorRCQ23lyt12PaneAccessorRCQ23l
 /* 803A8134 003A3F74  4B E0 1D 1D */	bl setParent__Q34info6common10LowBatteryFRCQ23lyt12PaneAccessor
 /* 803A8138 003A3F78  7F 03 C3 78 */	mr r3, r24
 /* 803A813C 003A3F7C  39 61 00 30 */	addi r11, r1, 0x30
-/* 803A8140 003A3F80  4B C5 F2 3D */	bl lbl_8000737C
+/* 803A8140 003A3F80  4B C5 F2 3D */	bl _restgpr_24
 /* 803A8144 003A3F84  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 803A8148 003A3F88  7C 08 03 A6 */	mtlr r0
 /* 803A814C 003A3F8C  38 21 00 30 */	addi r1, r1, 0x30
@@ -253,7 +253,7 @@ updateFrame__Q43scn4step4info9HeroPanelFv:
 /* 803A8400 003A4240  7C 08 02 A6 */	mflr r0
 /* 803A8404 003A4244  90 01 00 34 */	stw r0, 0x34(r1)
 /* 803A8408 003A4248  39 61 00 30 */	addi r11, r1, 0x30
-/* 803A840C 003A424C  4B C5 EF 35 */	bl lbl_80007340
+/* 803A840C 003A424C  4B C5 EF 35 */	bl _savegpr_28
 /* 803A8410 003A4250  7C 7C 1B 78 */	mr r28, r3
 /* 803A8414 003A4254  88 03 02 94 */	lbz r0, 0x294(r3)
 /* 803A8418 003A4258  2C 00 00 00 */	cmpwi r0, 0x0
@@ -358,7 +358,7 @@ lbl_803A854C:
 .global lbl_803A8584
 lbl_803A8584:
 /* 803A8584 003A43C4  39 61 00 30 */	addi r11, r1, 0x30
-/* 803A8588 003A43C8  4B C5 EE 05 */	bl lbl_8000738C
+/* 803A8588 003A43C8  4B C5 EE 05 */	bl _restgpr_28
 /* 803A858C 003A43CC  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 803A8590 003A43D0  7C 08 03 A6 */	mtlr r0
 /* 803A8594 003A43D4  38 21 00 30 */	addi r1, r1, 0x30
@@ -426,7 +426,7 @@ hitTest__Q43scn4step4info9HeroPanelFRCQ33hel4math7Vector2RCQ33hel4math7Vector2:
 /* 803A866C 003A44AC  7C 08 02 A6 */	mflr r0
 /* 803A8670 003A44B0  90 01 00 24 */	stw r0, 0x24(r1)
 /* 803A8674 003A44B4  39 61 00 20 */	addi r11, r1, 0x20
-/* 803A8678 003A44B8  4B C5 EC CD */	bl lbl_80007344
+/* 803A8678 003A44B8  4B C5 EC CD */	bl _savegpr_29
 /* 803A867C 003A44BC  7C 7D 1B 78 */	mr r29, r3
 /* 803A8680 003A44C0  7C 9E 23 78 */	mr r30, r4
 /* 803A8684 003A44C4  7C BF 2B 78 */	mr r31, r5
@@ -446,7 +446,7 @@ lbl_803A86B0:
 .global lbl_803A86B4
 lbl_803A86B4:
 /* 803A86B4 003A44F4  39 61 00 20 */	addi r11, r1, 0x20
-/* 803A86B8 003A44F8  4B C5 EC D9 */	bl lbl_80007390
+/* 803A86B8 003A44F8  4B C5 EC D9 */	bl _restgpr_29
 /* 803A86BC 003A44FC  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803A86C0 003A4500  7C 08 03 A6 */	mtlr r0
 /* 803A86C4 003A4504  38 21 00 20 */	addi r1, r1, 0x20
@@ -536,7 +536,7 @@ appear__Q43scn4step4info9HeroPanelFQ43scn4step4hero4KindQ43scn4step4hero11Abilit
 /* 803A87B4 003A45F4  7C 08 02 A6 */	mflr r0
 /* 803A87B8 003A45F8  90 01 00 54 */	stw r0, 0x54(r1)
 /* 803A87BC 003A45FC  39 61 00 50 */	addi r11, r1, 0x50
-/* 803A87C0 003A4600  4B C5 EB 81 */	bl lbl_80007340
+/* 803A87C0 003A4600  4B C5 EB 81 */	bl _savegpr_28
 /* 803A87C4 003A4604  7C 7C 1B 78 */	mr r28, r3
 /* 803A87C8 003A4608  7C 9D 23 78 */	mr r29, r4
 /* 803A87CC 003A460C  7C BE 2B 78 */	mr r30, r5
@@ -578,7 +578,7 @@ appear__Q43scn4step4info9HeroPanelFQ43scn4step4hero4KindQ43scn4step4hero11Abilit
 /* 803A885C 003A469C  38 9C 00 74 */	addi r4, r28, 0x74
 /* 803A8860 003A46A0  4B E0 15 F1 */	bl setParent__Q34info6common10LowBatteryFRCQ23lyt12PaneAccessor
 /* 803A8864 003A46A4  39 61 00 50 */	addi r11, r1, 0x50
-/* 803A8868 003A46A8  4B C5 EB 25 */	bl lbl_8000738C
+/* 803A8868 003A46A8  4B C5 EB 25 */	bl _restgpr_28
 /* 803A886C 003A46AC  80 01 00 54 */	lwz r0, 0x54(r1)
 /* 803A8870 003A46B0  7C 08 03 A6 */	mtlr r0
 /* 803A8874 003A46B4  38 21 00 50 */	addi r1, r1, 0x50
@@ -589,7 +589,7 @@ appear__Q43scn4step4info9HeroPanelFQ43scn4step4hero4KindQ43scn4step4hero11Abilit
 /* 803A8880 003A46C0  7C 08 02 A6 */	mflr r0
 /* 803A8884 003A46C4  90 01 00 44 */	stw r0, 0x44(r1)
 /* 803A8888 003A46C8  39 61 00 40 */	addi r11, r1, 0x40
-/* 803A888C 003A46CC  4B C5 EA 95 */	bl lbl_80007320
+/* 803A888C 003A46CC  4B C5 EA 95 */	bl _savegpr_20
 /* 803A8890 003A46D0  7C 74 1B 78 */	mr r20, r3
 /* 803A8894 003A46D4  7C 9C 23 78 */	mr r28, r4
 /* 803A8898 003A46D8  7C B5 2B 78 */	mr r21, r5
@@ -655,7 +655,7 @@ appear__Q43scn4step4info9HeroPanelFQ43scn4step4hero4KindQ43scn4step4hero11Abilit
 lbl_803A8984:
 /* 803A8984 003A47C4  93 B4 00 04 */	stw r29, 0x4(r20)
 /* 803A8988 003A47C8  39 61 00 40 */	addi r11, r1, 0x40
-/* 803A898C 003A47CC  4B C5 E9 E1 */	bl lbl_8000736C
+/* 803A898C 003A47CC  4B C5 E9 E1 */	bl _restgpr_20
 /* 803A8990 003A47D0  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 803A8994 003A47D4  7C 08 03 A6 */	mtlr r0
 /* 803A8998 003A47D8  38 21 00 40 */	addi r1, r1, 0x40
@@ -800,7 +800,7 @@ lifeSetIsPinch__Q43scn4step4info9HeroPanelFb:
 /* 803A8B64 003A49A4  7C 08 02 A6 */	mflr r0
 /* 803A8B68 003A49A8  90 01 00 24 */	stw r0, 0x24(r1)
 /* 803A8B6C 003A49AC  39 61 00 20 */	addi r11, r1, 0x20
-/* 803A8B70 003A49B0  4B C5 E7 D5 */	bl lbl_80007344
+/* 803A8B70 003A49B0  4B C5 E7 D5 */	bl _savegpr_29
 /* 803A8B74 003A49B4  7C 7D 1B 78 */	mr r29, r3
 /* 803A8B78 003A49B8  7C 9E 23 78 */	mr r30, r4
 /* 803A8B7C 003A49BC  80 63 00 B0 */	lwz r3, 0xb0(r3)
@@ -813,7 +813,7 @@ lifeSetIsPinch__Q43scn4step4info9HeroPanelFb:
 /* 803A8B98 003A49D8  7F E5 FB 78 */	mr r5, r31
 /* 803A8B9C 003A49DC  48 00 0E E9 */	bl lifeSetIsPinch__Q43scn4step4info10HeroStatusFbb
 /* 803A8BA0 003A49E0  39 61 00 20 */	addi r11, r1, 0x20
-/* 803A8BA4 003A49E4  4B C5 E7 ED */	bl lbl_80007390
+/* 803A8BA4 003A49E4  4B C5 E7 ED */	bl _restgpr_29
 /* 803A8BA8 003A49E8  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803A8BAC 003A49EC  7C 08 03 A6 */	mtlr r0
 /* 803A8BB0 003A49F0  38 21 00 20 */	addi r1, r1, 0x20

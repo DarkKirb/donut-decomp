@@ -261,7 +261,7 @@ EmDamageUtility_ReflectWall__Q53scn4step5enemy6damage7UtilityFPQ43scn4step5enemy
 /* 802AC60C 002A844C  DB E1 00 90 */	stfd f31, 0x90(r1)
 /* 802AC610 002A8450  F3 E1 00 98 */	psq_st f31, 0x98(r1), 0, qr0
 /* 802AC614 002A8454  39 61 00 90 */	addi r11, r1, 0x90
-/* 802AC618 002A8458  4B D5 AD 25 */	bl lbl_8000733C
+/* 802AC618 002A8458  4B D5 AD 25 */	bl _savegpr_27
 /* 802AC61C 002A845C  7C 7B 1B 78 */	mr r27, r3
 /* 802AC620 002A8460  4B FD BA DD */	bl mapColl__Q43scn4step5enemy5EnemyFv
 /* 802AC624 002A8464  7C 64 1B 78 */	mr r4, r3
@@ -436,7 +436,7 @@ lbl_802AC83C:
 /* 802AC860 002A86A0  13 E1 00 0C */	psq_lx f31, r1, r0, 0, qr0
 /* 802AC864 002A86A4  CB E1 00 90 */	lfd f31, 0x90(r1)
 /* 802AC868 002A86A8  39 61 00 90 */	addi r11, r1, 0x90
-/* 802AC86C 002A86AC  4B D5 AB 1D */	bl lbl_80007388
+/* 802AC86C 002A86AC  4B D5 AB 1D */	bl _restgpr_27
 /* 802AC870 002A86B0  80 01 00 A4 */	lwz r0, 0xa4(r1)
 /* 802AC874 002A86B4  7C 08 03 A6 */	mtlr r0
 /* 802AC878 002A86B8  38 21 00 A0 */	addi r1, r1, 0xa0
@@ -447,7 +447,7 @@ EmDamageUtility_ReqEffectHP0__Q53scn4step5enemy6damage7UtilityFPQ43scn4step5enem
 /* 802AC884 002A86C4  7C 08 02 A6 */	mflr r0
 /* 802AC888 002A86C8  90 01 00 74 */	stw r0, 0x74(r1)
 /* 802AC88C 002A86CC  39 61 00 70 */	addi r11, r1, 0x70
-/* 802AC890 002A86D0  4B D5 AA B1 */	bl lbl_80007340
+/* 802AC890 002A86D0  4B D5 AA B1 */	bl _savegpr_28
 /* 802AC894 002A86D4  7C 7C 1B 78 */	mr r28, r3
 /* 802AC898 002A86D8  4B FD B7 DD */	bl charaParam__Q43scn4step5enemy5EnemyCFv
 /* 802AC89C 002A86DC  C0 03 00 04 */	lfs f0, 0x4(r3)
@@ -524,7 +524,7 @@ lbl_802AC988:
 .global lbl_802AC9B0
 lbl_802AC9B0:
 /* 802AC9B0 002A87F0  39 61 00 70 */	addi r11, r1, 0x70
-/* 802AC9B4 002A87F4  4B D5 A9 D9 */	bl lbl_8000738C
+/* 802AC9B4 002A87F4  4B D5 A9 D9 */	bl _restgpr_28
 /* 802AC9B8 002A87F8  80 01 00 74 */	lwz r0, 0x74(r1)
 /* 802AC9BC 002A87FC  7C 08 03 A6 */	mtlr r0
 /* 802AC9C0 002A8800  38 21 00 70 */	addi r1, r1, 0x70

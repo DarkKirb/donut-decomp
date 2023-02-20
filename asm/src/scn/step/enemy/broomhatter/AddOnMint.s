@@ -49,7 +49,7 @@ Func__Q63scn4step5enemy11broomhatter9AddOnMint38Mint_CreditPraise_0$55314AddOnMi
 /* 802A09A8 0029C7E8  7C 08 02 A6 */	mflr r0
 /* 802A09AC 0029C7EC  90 01 00 24 */	stw r0, 0x24(r1)
 /* 802A09B0 0029C7F0  39 61 00 20 */	addi r11, r1, 0x20
-/* 802A09B4 0029C7F4  4B D6 69 91 */	bl lbl_80007344
+/* 802A09B4 0029C7F4  4B D6 69 91 */	bl _savegpr_29
 /* 802A09B8 0029C7F8  4B FE A4 15 */	bl Obj__Q43scn4step5enemy9MintEnemyFv
 /* 802A09BC 0029C7FC  7C 7E 1B 78 */	mr r30, r3
 /* 802A09C0 0029C800  4B FE A4 0D */	bl Obj__Q43scn4step5enemy9MintEnemyFv
@@ -70,7 +70,7 @@ Func__Q63scn4step5enemy11broomhatter9AddOnMint38Mint_CreditPraise_0$55314AddOnMi
 lbl_802A09F8:
 /* 802A09F8 0029C838  93 BF 00 0C */	stw r29, 0xc(r31)
 /* 802A09FC 0029C83C  39 61 00 20 */	addi r11, r1, 0x20
-/* 802A0A00 0029C840  4B D6 69 91 */	bl lbl_80007390
+/* 802A0A00 0029C840  4B D6 69 91 */	bl _restgpr_29
 /* 802A0A04 0029C844  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802A0A08 0029C848  7C 08 03 A6 */	mtlr r0
 /* 802A0A0C 0029C84C  38 21 00 20 */	addi r1, r1, 0x20
@@ -84,7 +84,7 @@ Func__Q63scn4step5enemy11broomhatter9AddOnMint36Mint_CreditWalk_0$55312AddOnMint
 /* 802A0A1C 0029C85C  7C 08 02 A6 */	mflr r0
 /* 802A0A20 0029C860  90 01 00 24 */	stw r0, 0x24(r1)
 /* 802A0A24 0029C864  39 61 00 20 */	addi r11, r1, 0x20
-/* 802A0A28 0029C868  4B D6 69 1D */	bl lbl_80007344
+/* 802A0A28 0029C868  4B D6 69 1D */	bl _savegpr_29
 /* 802A0A2C 0029C86C  4B FE A3 A1 */	bl Obj__Q43scn4step5enemy9MintEnemyFv
 /* 802A0A30 0029C870  7C 7E 1B 78 */	mr r30, r3
 /* 802A0A34 0029C874  4B FE A3 99 */	bl Obj__Q43scn4step5enemy9MintEnemyFv
@@ -105,7 +105,7 @@ Func__Q63scn4step5enemy11broomhatter9AddOnMint36Mint_CreditWalk_0$55312AddOnMint
 lbl_802A0A6C:
 /* 802A0A6C 0029C8AC  93 BF 00 0C */	stw r29, 0xc(r31)
 /* 802A0A70 0029C8B0  39 61 00 20 */	addi r11, r1, 0x20
-/* 802A0A74 0029C8B4  4B D6 69 1D */	bl lbl_80007390
+/* 802A0A74 0029C8B4  4B D6 69 1D */	bl _restgpr_29
 /* 802A0A78 0029C8B8  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802A0A7C 0029C8BC  7C 08 03 A6 */	mtlr r0
 /* 802A0A80 0029C8C0  38 21 00 20 */	addi r1, r1, 0x20
@@ -119,7 +119,7 @@ Func__Q63scn4step5enemy11broomhatter9AddOnMint43Mint_GrandLowperEscape_0$55310Ad
 /* 802A0A90 0029C8D0  7C 08 02 A6 */	mflr r0
 /* 802A0A94 0029C8D4  90 01 00 24 */	stw r0, 0x24(r1)
 /* 802A0A98 0029C8D8  39 61 00 20 */	addi r11, r1, 0x20
-/* 802A0A9C 0029C8DC  4B D6 68 A9 */	bl lbl_80007344
+/* 802A0A9C 0029C8DC  4B D6 68 A9 */	bl _savegpr_29
 /* 802A0AA0 0029C8E0  4B FE A3 2D */	bl Obj__Q43scn4step5enemy9MintEnemyFv
 /* 802A0AA4 0029C8E4  7C 7E 1B 78 */	mr r30, r3
 /* 802A0AA8 0029C8E8  4B FE A3 25 */	bl Obj__Q43scn4step5enemy9MintEnemyFv
@@ -140,7 +140,7 @@ Func__Q63scn4step5enemy11broomhatter9AddOnMint43Mint_GrandLowperEscape_0$55310Ad
 lbl_802A0AE0:
 /* 802A0AE0 0029C920  93 BF 00 0C */	stw r29, 0xc(r31)
 /* 802A0AE4 0029C924  39 61 00 20 */	addi r11, r1, 0x20
-/* 802A0AE8 0029C928  4B D6 68 A9 */	bl lbl_80007390
+/* 802A0AE8 0029C928  4B D6 68 A9 */	bl _restgpr_29
 /* 802A0AEC 0029C92C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802A0AF0 0029C930  7C 08 03 A6 */	mtlr r0
 /* 802A0AF4 0029C934  38 21 00 20 */	addi r1, r1, 0x20
@@ -154,7 +154,7 @@ Func__Q63scn4step5enemy11broomhatter9AddOnMint30Mint_Walk_0$55308AddOnMint_cppFR
 /* 802A0B04 0029C944  7C 08 02 A6 */	mflr r0
 /* 802A0B08 0029C948  90 01 00 24 */	stw r0, 0x24(r1)
 /* 802A0B0C 0029C94C  39 61 00 20 */	addi r11, r1, 0x20
-/* 802A0B10 0029C950  4B D6 68 35 */	bl lbl_80007344
+/* 802A0B10 0029C950  4B D6 68 35 */	bl _savegpr_29
 /* 802A0B14 0029C954  4B FE A2 B9 */	bl Obj__Q43scn4step5enemy9MintEnemyFv
 /* 802A0B18 0029C958  7C 7E 1B 78 */	mr r30, r3
 /* 802A0B1C 0029C95C  4B FE A2 B1 */	bl Obj__Q43scn4step5enemy9MintEnemyFv
@@ -175,7 +175,7 @@ Func__Q63scn4step5enemy11broomhatter9AddOnMint30Mint_Walk_0$55308AddOnMint_cppFR
 lbl_802A0B54:
 /* 802A0B54 0029C994  93 BF 00 0C */	stw r29, 0xc(r31)
 /* 802A0B58 0029C998  39 61 00 20 */	addi r11, r1, 0x20
-/* 802A0B5C 0029C99C  4B D6 68 35 */	bl lbl_80007390
+/* 802A0B5C 0029C99C  4B D6 68 35 */	bl _restgpr_29
 /* 802A0B60 0029C9A0  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802A0B64 0029C9A4  7C 08 03 A6 */	mtlr r0
 /* 802A0B68 0029C9A8  38 21 00 20 */	addi r1, r1, 0x20

@@ -7,7 +7,7 @@ __ct__Q43scn4step4boss6EffectFRQ43scn4step4boss4Boss:
 /* 8022F4E0 0022B320  7C 08 02 A6 */	mflr r0
 /* 8022F4E4 0022B324  90 01 00 24 */	stw r0, 0x24(r1)
 /* 8022F4E8 0022B328  39 61 00 20 */	addi r11, r1, 0x20
-/* 8022F4EC 0022B32C  4B DD 7E 59 */	bl lbl_80007344
+/* 8022F4EC 0022B32C  4B DD 7E 59 */	bl _savegpr_29
 /* 8022F4F0 0022B330  7C 7D 1B 78 */	mr r29, r3
 /* 8022F4F4 0022B334  7C 9E 23 78 */	mr r30, r4
 /* 8022F4F8 0022B338  90 83 00 00 */	stw r4, 0x0(r3)
@@ -124,7 +124,7 @@ __ct__Q43scn4step4boss6EffectFRQ43scn4step4boss4Boss:
 /* 8022F6B4 0022B4F4  48 03 EC 85 */	bl changeLayer__Q43scn4step5chara6EffectFQ43scn4step4core13DrawLayerKind
 /* 8022F6B8 0022B4F8  7F A3 EB 78 */	mr r3, r29
 /* 8022F6BC 0022B4FC  39 61 00 20 */	addi r11, r1, 0x20
-/* 8022F6C0 0022B500  4B DD 7C D1 */	bl lbl_80007390
+/* 8022F6C0 0022B500  4B DD 7C D1 */	bl _restgpr_29
 /* 8022F6C4 0022B504  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8022F6C8 0022B508  7C 08 03 A6 */	mtlr r0
 /* 8022F6CC 0022B50C  38 21 00 20 */	addi r1, r1, 0x20

@@ -355,7 +355,7 @@ __ct__Q53scn4step6weapon16kingsdoowaveshot9StateMainFPQ43scn4step6weapon6Weapon:
 /* 803DF64C 003DB48C  7C 08 02 A6 */	mflr r0
 /* 803DF650 003DB490  90 01 00 64 */	stw r0, 0x64(r1)
 /* 803DF654 003DB494  39 61 00 60 */	addi r11, r1, 0x60
-/* 803DF658 003DB498  4B C2 7C ED */	bl lbl_80007344
+/* 803DF658 003DB498  4B C2 7C ED */	bl _savegpr_29
 /* 803DF65C 003DB49C  7C 7D 1B 78 */	mr r29, r3
 /* 803DF660 003DB4A0  4B FF 92 E1 */	bl __ct__Q43scn4step6weapon9StateBaseFPQ43scn4step6weapon6Weapon
 /* 803DF664 003DB4A4  3C 60 80 49 */	lis r3, __vt__Q53scn4step6weapon16kingsdoowaveshot9StateMain@ha
@@ -486,7 +486,7 @@ lbl_803DF820:
 /* 803DF830 003DB670  4B DB BB 49 */	bl setVelocity__Q24gobj4MoveFRCQ33hel4math7Vector3
 /* 803DF834 003DB674  7F A3 EB 78 */	mr r3, r29
 /* 803DF838 003DB678  39 61 00 60 */	addi r11, r1, 0x60
-/* 803DF83C 003DB67C  4B C2 7B 55 */	bl lbl_80007390
+/* 803DF83C 003DB67C  4B C2 7B 55 */	bl _restgpr_29
 /* 803DF840 003DB680  80 01 00 64 */	lwz r0, 0x64(r1)
 /* 803DF844 003DB684  7C 08 03 A6 */	mtlr r0
 /* 803DF848 003DB688  38 21 00 60 */	addi r1, r1, 0x60
@@ -545,7 +545,7 @@ procFixPos__Q53scn4step6weapon16kingsdoowaveshot9StateMainFv:
 /* 803DF8F0 003DB730  7C 08 02 A6 */	mflr r0
 /* 803DF8F4 003DB734  90 01 00 D4 */	stw r0, 0xd4(r1)
 /* 803DF8F8 003DB738  39 61 00 D0 */	addi r11, r1, 0xd0
-/* 803DF8FC 003DB73C  4B C2 7A 49 */	bl lbl_80007344
+/* 803DF8FC 003DB73C  4B C2 7A 49 */	bl _savegpr_29
 /* 803DF900 003DB740  7C 7D 1B 78 */	mr r29, r3
 /* 803DF904 003DB744  4B D2 0E DD */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 803DF908 003DB748  4B FF B7 D1 */	bl param__Q43scn4step6weapon6WeaponCFv
@@ -758,7 +758,7 @@ lbl_803DFBF0:
 .global lbl_803DFBFC
 lbl_803DFBFC:
 /* 803DFBFC 003DBA3C  39 61 00 D0 */	addi r11, r1, 0xd0
-/* 803DFC00 003DBA40  4B C2 77 91 */	bl lbl_80007390
+/* 803DFC00 003DBA40  4B C2 77 91 */	bl _restgpr_29
 /* 803DFC04 003DBA44  80 01 00 D4 */	lwz r0, 0xd4(r1)
 /* 803DFC08 003DBA48  7C 08 03 A6 */	mtlr r0
 /* 803DFC0C 003DBA4C  38 21 00 D0 */	addi r1, r1, 0xd0
@@ -775,7 +775,7 @@ __ct__Q53scn4step6weapon14gigantedgeshot9StateMainFPQ43scn4step6weapon6Weapon:
 /* 803DFC24 003DBA64  DB E1 00 90 */	stfd f31, 0x90(r1)
 /* 803DFC28 003DBA68  F3 E1 00 98 */	psq_st f31, 0x98(r1), 0, qr0
 /* 803DFC2C 003DBA6C  39 61 00 90 */	addi r11, r1, 0x90
-/* 803DFC30 003DBA70  4B C2 77 15 */	bl lbl_80007344
+/* 803DFC30 003DBA70  4B C2 77 15 */	bl _savegpr_29
 /* 803DFC34 003DBA74  7C 7D 1B 78 */	mr r29, r3
 /* 803DFC38 003DBA78  4B FF 8D 09 */	bl __ct__Q43scn4step6weapon9StateBaseFPQ43scn4step6weapon6Weapon
 /* 803DFC3C 003DBA7C  3C 60 80 49 */	lis r3, __vt__Q53scn4step6weapon14gigantedgeshot9StateMain@ha
@@ -940,7 +940,7 @@ lbl_803DFE3C:
 /* 803DFEA8 003DBCE8  13 E1 00 0C */	psq_lx f31, r1, r0, 0, qr0
 /* 803DFEAC 003DBCEC  CB E1 00 90 */	lfd f31, 0x90(r1)
 /* 803DFEB0 003DBCF0  39 61 00 90 */	addi r11, r1, 0x90
-/* 803DFEB4 003DBCF4  4B C2 74 DD */	bl lbl_80007390
+/* 803DFEB4 003DBCF4  4B C2 74 DD */	bl _restgpr_29
 /* 803DFEB8 003DBCF8  80 01 00 A4 */	lwz r0, 0xa4(r1)
 /* 803DFEBC 003DBCFC  7C 08 03 A6 */	mtlr r0
 /* 803DFEC0 003DBD00  38 21 00 A0 */	addi r1, r1, 0xa0

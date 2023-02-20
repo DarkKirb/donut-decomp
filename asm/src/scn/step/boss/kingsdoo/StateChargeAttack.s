@@ -128,7 +128,7 @@ reqWaveShot__Q53scn4step4boss8kingsdoo17StateChargeAttackFv:
 /* 80253AF0 0024F930  DB E1 00 E0 */	stfd f31, 0xe0(r1)
 /* 80253AF4 0024F934  F3 E1 00 E8 */	psq_st f31, 0xe8(r1), 0, qr0
 /* 80253AF8 0024F938  39 61 00 E0 */	addi r11, r1, 0xe0
-/* 80253AFC 0024F93C  4B DB 38 49 */	bl lbl_80007344
+/* 80253AFC 0024F93C  4B DB 38 49 */	bl _savegpr_29
 /* 80253B00 0024F940  7C 7D 1B 78 */	mr r29, r3
 /* 80253B04 0024F944  4B EA CC DD */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 80253B08 0024F948  4B FD 94 09 */	bl param__Q43scn4step4boss4BossCFv
@@ -330,7 +330,7 @@ lbl_80253D54:
 /* 80253DF0 0024FC30  13 E1 00 0C */	psq_lx f31, r1, r0, 0, qr0
 /* 80253DF4 0024FC34  CB E1 00 E0 */	lfd f31, 0xe0(r1)
 /* 80253DF8 0024FC38  39 61 00 E0 */	addi r11, r1, 0xe0
-/* 80253DFC 0024FC3C  4B DB 35 95 */	bl lbl_80007390
+/* 80253DFC 0024FC3C  4B DB 35 95 */	bl _restgpr_29
 /* 80253E00 0024FC40  80 01 00 F4 */	lwz r0, 0xf4(r1)
 /* 80253E04 0024FC44  7C 08 03 A6 */	mtlr r0
 /* 80253E08 0024FC48  38 21 00 F0 */	addi r1, r1, 0xf0

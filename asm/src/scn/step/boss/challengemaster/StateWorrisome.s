@@ -9,7 +9,7 @@ TryToChangeState__Q53scn4step4boss15challengemaster14StateWorrisomeFPQ43scn4step
 /* 80243B7C 0023F9BC  DB E1 00 40 */	stfd f31, 0x40(r1)
 /* 80243B80 0023F9C0  F3 E1 00 48 */	psq_st f31, 0x48(r1), 0, qr0
 /* 80243B84 0023F9C4  39 61 00 40 */	addi r11, r1, 0x40
-/* 80243B88 0023F9C8  4B DC 37 BD */	bl lbl_80007344
+/* 80243B88 0023F9C8  4B DC 37 BD */	bl _savegpr_29
 /* 80243B8C 0023F9CC  7C 7D 1B 78 */	mr r29, r3
 /* 80243B90 0023F9D0  4B FE 93 81 */	bl param__Q43scn4step4boss4BossCFv
 /* 80243B94 0023F9D4  4B FE FF 8D */	bl challengemaster__Q43scn4step4boss5ParamCFv
@@ -78,7 +78,7 @@ lbl_80243C74:
 /* 80243C78 0023FAB8  13 E1 00 0C */	psq_lx f31, r1, r0, 0, qr0
 /* 80243C7C 0023FABC  CB E1 00 40 */	lfd f31, 0x40(r1)
 /* 80243C80 0023FAC0  39 61 00 40 */	addi r11, r1, 0x40
-/* 80243C84 0023FAC4  4B DC 37 0D */	bl lbl_80007390
+/* 80243C84 0023FAC4  4B DC 37 0D */	bl _restgpr_29
 /* 80243C88 0023FAC8  80 01 00 54 */	lwz r0, 0x54(r1)
 /* 80243C8C 0023FACC  7C 08 03 A6 */	mtlr r0
 /* 80243C90 0023FAD0  38 21 00 50 */	addi r1, r1, 0x50
@@ -207,7 +207,7 @@ procAnim__Q53scn4step4boss15challengemaster14StateWorrisomeFv:
 /* 80243E3C 0023FC7C  7C 08 02 A6 */	mflr r0
 /* 80243E40 0023FC80  90 01 00 24 */	stw r0, 0x24(r1)
 /* 80243E44 0023FC84  39 61 00 20 */	addi r11, r1, 0x20
-/* 80243E48 0023FC88  4B DC 34 F5 */	bl lbl_8000733C
+/* 80243E48 0023FC88  4B DC 34 F5 */	bl _savegpr_27
 /* 80243E4C 0023FC8C  7C 7B 1B 78 */	mr r27, r3
 /* 80243E50 0023FC90  4B EB C9 91 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 80243E54 0023FC94  4B FE 91 95 */	bl custom__Q43scn4step4boss4BossFv
@@ -309,7 +309,7 @@ lbl_80243F94:
 .global lbl_80243F9C
 lbl_80243F9C:
 /* 80243F9C 0023FDDC  39 61 00 20 */	addi r11, r1, 0x20
-/* 80243FA0 0023FDE0  4B DC 33 E9 */	bl lbl_80007388
+/* 80243FA0 0023FDE0  4B DC 33 E9 */	bl _restgpr_27
 /* 80243FA4 0023FDE4  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80243FA8 0023FDE8  7C 08 03 A6 */	mtlr r0
 /* 80243FAC 0023FDEC  38 21 00 20 */	addi r1, r1, 0x20

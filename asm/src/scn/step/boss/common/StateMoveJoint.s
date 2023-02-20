@@ -7,7 +7,7 @@ __ct__Q53scn4step4boss6common14StateMoveJointFPQ43scn4step4boss4BossQ53scn4step4
 /* 8024763C 0024347C  7C 08 02 A6 */	mflr r0
 /* 80247640 00243480  90 01 00 24 */	stw r0, 0x24(r1)
 /* 80247644 00243484  39 61 00 20 */	addi r11, r1, 0x20
-/* 80247648 00243488  4B DB FC FD */	bl lbl_80007344
+/* 80247648 00243488  4B DB FC FD */	bl _savegpr_29
 /* 8024764C 0024348C  7C 7D 1B 78 */	mr r29, r3
 /* 80247650 00243490  7C BE 2B 78 */	mr r30, r5
 /* 80247654 00243494  7C DF 33 78 */	mr r31, r6
@@ -28,7 +28,7 @@ __ct__Q53scn4step4boss6common14StateMoveJointFPQ43scn4step4boss4BossQ53scn4step4
 /* 80247690 002434D0  48 02 9B ED */	bl reqScript__Q43scn4step5chara5ModelFUl
 /* 80247694 002434D4  7F A3 EB 78 */	mr r3, r29
 /* 80247698 002434D8  39 61 00 20 */	addi r11, r1, 0x20
-/* 8024769C 002434DC  4B DB FC F5 */	bl lbl_80007390
+/* 8024769C 002434DC  4B DB FC F5 */	bl _restgpr_29
 /* 802476A0 002434E0  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802476A4 002434E4  7C 08 03 A6 */	mtlr r0
 /* 802476A8 002434E8  38 21 00 20 */	addi r1, r1, 0x20

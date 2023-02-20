@@ -87,7 +87,7 @@ Func__Q53scn4step5ocoll9AddOnMint34Mint_Register_0$52049AddOnMint_cppFRQ26mintvm
 /* 803CA9CC 003C680C  7C 08 02 A6 */	mflr r0
 /* 803CA9D0 003C6810  90 01 00 44 */	stw r0, 0x44(r1)
 /* 803CA9D4 003C6814  39 61 00 40 */	addi r11, r1, 0x40
-/* 803CA9D8 003C6818  4B C3 C9 49 */	bl lbl_80007320
+/* 803CA9D8 003C6818  4B C3 C9 49 */	bl _savegpr_20
 /* 803CA9DC 003C681C  7C 74 1B 78 */	mr r20, r3
 /* 803CA9E0 003C6820  38 80 00 0B */	li r4, 0xb
 /* 803CA9E4 003C6824  4B DC DC 11 */	bl internal_getArg_addr__Q26mintvm13MintFuncProxyCFUi
@@ -149,7 +149,7 @@ Func__Q53scn4step5ocoll9AddOnMint34Mint_Register_0$52049AddOnMint_cppFRQ26mintvm
 /* 803CAAC4 003C6904  81 55 00 00 */	lwz r10, 0x0(r21)
 /* 803CAAC8 003C6908  4B FF FD D1 */	bl "t_AttackData_Register__Q43scn4step5ocoll23@unnamed@AddOnMint_cpp@Fiiiiiffffiii"
 /* 803CAACC 003C690C  39 61 00 40 */	addi r11, r1, 0x40
-/* 803CAAD0 003C6910  4B C3 C8 9D */	bl lbl_8000736C
+/* 803CAAD0 003C6910  4B C3 C8 9D */	bl _restgpr_20
 /* 803CAAD4 003C6914  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 803CAAD8 003C6918  7C 08 03 A6 */	mtlr r0
 /* 803CAADC 003C691C  38 21 00 40 */	addi r1, r1, 0x40

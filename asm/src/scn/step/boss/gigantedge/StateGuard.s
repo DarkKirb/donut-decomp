@@ -49,7 +49,7 @@ __dt__Q53scn4step4boss10gigantedge10StateGuardFv:
 /* 80252428 0024E268  7C 08 02 A6 */	mflr r0
 /* 8025242C 0024E26C  90 01 00 24 */	stw r0, 0x24(r1)
 /* 80252430 0024E270  39 61 00 20 */	addi r11, r1, 0x20
-/* 80252434 0024E274  4B DB 4F 11 */	bl lbl_80007344
+/* 80252434 0024E274  4B DB 4F 11 */	bl _savegpr_29
 /* 80252438 0024E278  7C 7D 1B 78 */	mr r29, r3
 /* 8025243C 0024E27C  7C 9E 23 78 */	mr r30, r4
 /* 80252440 0024E280  2C 03 00 00 */	cmpwi r3, 0x0
@@ -83,7 +83,7 @@ __dt__Q53scn4step4boss10gigantedge10StateGuardFv:
 lbl_802524AC:
 /* 802524AC 0024E2EC  7F A3 EB 78 */	mr r3, r29
 /* 802524B0 0024E2F0  39 61 00 20 */	addi r11, r1, 0x20
-/* 802524B4 0024E2F4  4B DB 4E DD */	bl lbl_80007390
+/* 802524B4 0024E2F4  4B DB 4E DD */	bl _restgpr_29
 /* 802524B8 0024E2F8  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802524BC 0024E2FC  7C 08 03 A6 */	mtlr r0
 /* 802524C0 0024E300  38 21 00 20 */	addi r1, r1, 0x20
@@ -95,7 +95,7 @@ procAnim__Q53scn4step4boss10gigantedge10StateGuardFv:
 /* 802524CC 0024E30C  7C 08 02 A6 */	mflr r0
 /* 802524D0 0024E310  90 01 00 24 */	stw r0, 0x24(r1)
 /* 802524D4 0024E314  39 61 00 20 */	addi r11, r1, 0x20
-/* 802524D8 0024E318  4B DB 4E 6D */	bl lbl_80007344
+/* 802524D8 0024E318  4B DB 4E 6D */	bl _savegpr_29
 /* 802524DC 0024E31C  7C 7D 1B 78 */	mr r29, r3
 /* 802524E0 0024E320  4B EA E3 01 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 802524E4 0024E324  4B FD AB 05 */	bl custom__Q43scn4step4boss4BossFv
@@ -140,7 +140,7 @@ lbl_80252544:
 /* 80252550 0024E390  4B EA E2 91 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 80252554 0024E394  4B FE 24 6D */	bl TurnHatedHero__Q43scn4step4boss7UtilityFRQ43scn4step4boss4Boss
 /* 80252558 0024E398  39 61 00 20 */	addi r11, r1, 0x20
-/* 8025255C 0024E39C  4B DB 4E 35 */	bl lbl_80007390
+/* 8025255C 0024E39C  4B DB 4E 35 */	bl _restgpr_29
 /* 80252560 0024E3A0  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80252564 0024E3A4  7C 08 03 A6 */	mtlr r0
 /* 80252568 0024E3A8  38 21 00 20 */	addi r1, r1, 0x20

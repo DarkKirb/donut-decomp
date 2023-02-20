@@ -7,7 +7,7 @@ Create__Q53scn4step4boss10gigantedge9ModelDescFUlb:
 /* 802522BC 0024E0FC  7C 08 02 A6 */	mflr r0
 /* 802522C0 0024E100  90 01 00 34 */	stw r0, 0x34(r1)
 /* 802522C4 0024E104  39 61 00 30 */	addi r11, r1, 0x30
-/* 802522C8 0024E108  4B DB 50 79 */	bl lbl_80007340
+/* 802522C8 0024E108  4B DB 50 79 */	bl _savegpr_28
 /* 802522CC 0024E10C  7C 9F 23 78 */	mr r31, r4
 /* 802522D0 0024E110  3C 60 80 46 */	lis r3, "@50133_80467C58"@ha
 /* 802522D4 0024E114  3B C3 7C 58 */	addi r30, r3, "@50133_80467C58"@l
@@ -54,7 +54,7 @@ lbl_80252354:
 /* 80252368 0024E1A8  3C 60 80 54 */	lis r3, "@LOCAL@CreateTmpl<2,0,0>__Q43scn4step4boss9ModelDescFPCcPCcPCcUlPPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc"@ha
 /* 8025236C 0024E1AC  38 63 72 80 */	addi r3, r3, "@LOCAL@CreateTmpl<2,0,0>__Q43scn4step4boss9ModelDescFPCcPCcPCcUlPPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc"@l
 /* 80252370 0024E1B0  39 61 00 30 */	addi r11, r1, 0x30
-/* 80252374 0024E1B4  4B DB 50 19 */	bl lbl_8000738C
+/* 80252374 0024E1B4  4B DB 50 19 */	bl _restgpr_28
 /* 80252378 0024E1B8  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 8025237C 0024E1BC  7C 08 03 A6 */	mtlr r0
 /* 80252380 0024E1C0  38 21 00 30 */	addi r1, r1, 0x30

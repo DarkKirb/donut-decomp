@@ -208,7 +208,7 @@ procMove__Q53scn4step4boss9moundeath17StateRollingStartFv:
 /* 802579D0 00253810  7C 08 02 A6 */	mflr r0
 /* 802579D4 00253814  90 01 00 24 */	stw r0, 0x24(r1)
 /* 802579D8 00253818  39 61 00 20 */	addi r11, r1, 0x20
-/* 802579DC 0025381C  4B DA F9 69 */	bl lbl_80007344
+/* 802579DC 0025381C  4B DA F9 69 */	bl _savegpr_29
 /* 802579E0 00253820  7C 7D 1B 78 */	mr r29, r3
 /* 802579E4 00253824  4B EA 8D FD */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 802579E8 00253828  4B FD 55 29 */	bl param__Q43scn4step4boss4BossCFv
@@ -227,7 +227,7 @@ procMove__Q53scn4step4boss9moundeath17StateRollingStartFv:
 /* 80257A1C 0025385C  38 BE 01 04 */	addi r5, r30, 0x104
 /* 80257A20 00253860  4B F4 3A 55 */	bl groundAccel__Q24gobj4MoveFbRCQ24gobj14MoveParamAccel
 /* 80257A24 00253864  39 61 00 20 */	addi r11, r1, 0x20
-/* 80257A28 00253868  4B DA F9 69 */	bl lbl_80007390
+/* 80257A28 00253868  4B DA F9 69 */	bl _restgpr_29
 /* 80257A2C 0025386C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80257A30 00253870  7C 08 03 A6 */	mtlr r0
 /* 80257A34 00253874  38 21 00 20 */	addi r1, r1, 0x20

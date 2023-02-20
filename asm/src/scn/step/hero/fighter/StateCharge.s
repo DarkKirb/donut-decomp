@@ -7,7 +7,7 @@ TryToChangeState__Q53scn4step4hero7fighter11StateChargeFPQ43scn4step4hero4Hero:
 /* 8039BF0C 00397D4C  7C 08 02 A6 */	mflr r0
 /* 8039BF10 00397D50  90 01 00 24 */	stw r0, 0x24(r1)
 /* 8039BF14 00397D54  39 61 00 20 */	addi r11, r1, 0x20
-/* 8039BF18 00397D58  4B C6 B4 2D */	bl lbl_80007344
+/* 8039BF18 00397D58  4B C6 B4 2D */	bl _savegpr_29
 /* 8039BF1C 00397D5C  7C 7D 1B 78 */	mr r29, r3
 /* 8039BF20 00397D60  4B FA 45 6D */	bl commandManager__Q43scn4step4hero4HeroFv
 /* 8039BF24 00397D64  38 80 00 20 */	li r4, 0x20
@@ -53,7 +53,7 @@ lbl_8039BFB0:
 .global lbl_8039BFB4
 lbl_8039BFB4:
 /* 8039BFB4 00397DF4  39 61 00 20 */	addi r11, r1, 0x20
-/* 8039BFB8 00397DF8  4B C6 B3 D9 */	bl lbl_80007390
+/* 8039BFB8 00397DF8  4B C6 B3 D9 */	bl _restgpr_29
 /* 8039BFBC 00397DFC  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8039BFC0 00397E00  7C 08 03 A6 */	mtlr r0
 /* 8039BFC4 00397E04  38 21 00 20 */	addi r1, r1, 0x20
@@ -146,7 +146,7 @@ procAnim__Q53scn4step4hero7fighter11StateChargeFv:
 /* 8039C0F8 00397F38  7C 08 02 A6 */	mflr r0
 /* 8039C0FC 00397F3C  90 01 00 24 */	stw r0, 0x24(r1)
 /* 8039C100 00397F40  39 61 00 20 */	addi r11, r1, 0x20
-/* 8039C104 00397F44  4B C6 B2 3D */	bl lbl_80007340
+/* 8039C104 00397F44  4B C6 B2 3D */	bl _savegpr_28
 /* 8039C108 00397F48  7C 7C 1B 78 */	mr r28, r3
 /* 8039C10C 00397F4C  80 83 00 08 */	lwz r4, 0x8(r3)
 /* 8039C110 00397F50  38 04 00 01 */	addi r0, r4, 0x1
@@ -246,7 +246,7 @@ lbl_8039C25C:
 .global lbl_8039C260
 lbl_8039C260:
 /* 8039C260 003980A0  39 61 00 20 */	addi r11, r1, 0x20
-/* 8039C264 003980A4  4B C6 B1 29 */	bl lbl_8000738C
+/* 8039C264 003980A4  4B C6 B1 29 */	bl _restgpr_28
 /* 8039C268 003980A8  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8039C26C 003980AC  7C 08 03 A6 */	mtlr r0
 /* 8039C270 003980B0  38 21 00 20 */	addi r1, r1, 0x20
@@ -280,7 +280,7 @@ procObjCollReact__Q53scn4step4hero7fighter11StateChargeFv:
 /* 8039C2BC 003980FC  7C 08 02 A6 */	mflr r0
 /* 8039C2C0 00398100  90 01 00 34 */	stw r0, 0x34(r1)
 /* 8039C2C4 00398104  39 61 00 30 */	addi r11, r1, 0x30
-/* 8039C2C8 00398108  4B C6 B0 79 */	bl lbl_80007340
+/* 8039C2C8 00398108  4B C6 B0 79 */	bl _savegpr_28
 /* 8039C2CC 0039810C  7C 7C 1B 78 */	mr r28, r3
 /* 8039C2D0 00398110  88 03 00 10 */	lbz r0, 0x10(r3)
 /* 8039C2D4 00398114  2C 00 00 00 */	cmpwi r0, 0x0
@@ -352,7 +352,7 @@ lbl_8039C3B8:
 .global lbl_8039C3BC
 lbl_8039C3BC:
 /* 8039C3BC 003981FC  39 61 00 30 */	addi r11, r1, 0x30
-/* 8039C3C0 00398200  4B C6 AF CD */	bl lbl_8000738C
+/* 8039C3C0 00398200  4B C6 AF CD */	bl _restgpr_28
 /* 8039C3C4 00398204  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 8039C3C8 00398208  7C 08 03 A6 */	mtlr r0
 /* 8039C3CC 0039820C  38 21 00 30 */	addi r1, r1, 0x30
@@ -363,7 +363,7 @@ changeStateAttackAction__Q53scn4step4hero7fighter11StateChargeFv:
 /* 8039C3D8 00398218  7C 08 02 A6 */	mflr r0
 /* 8039C3DC 0039821C  90 01 00 24 */	stw r0, 0x24(r1)
 /* 8039C3E0 00398220  39 61 00 20 */	addi r11, r1, 0x20
-/* 8039C3E4 00398224  4B C6 AF 61 */	bl lbl_80007344
+/* 8039C3E4 00398224  4B C6 AF 61 */	bl _savegpr_29
 /* 8039C3E8 00398228  7C 7D 1B 78 */	mr r29, r3
 /* 8039C3EC 0039822C  4B D6 43 F5 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 8039C3F0 00398230  4B FA 3F 0D */	bl footState__Q43scn4step4hero4HeroFv
@@ -485,7 +485,7 @@ lbl_8039C584:
 .global lbl_8039C588
 lbl_8039C588:
 /* 8039C588 003983C8  39 61 00 20 */	addi r11, r1, 0x20
-/* 8039C58C 003983CC  4B C6 AE 05 */	bl lbl_80007390
+/* 8039C58C 003983CC  4B C6 AE 05 */	bl _restgpr_29
 /* 8039C590 003983D0  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8039C594 003983D4  7C 08 03 A6 */	mtlr r0
 /* 8039C598 003983D8  38 21 00 20 */	addi r1, r1, 0x20

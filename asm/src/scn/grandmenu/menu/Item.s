@@ -16,7 +16,7 @@ __ct__Q43scn9grandmenu4menu4ItemFRQ33scn9grandmenu9ComponentRQ23mem10IAllocatorR
 /* 803F5B44 003F1984  7C 08 02 A6 */	mflr r0
 /* 803F5B48 003F1988  90 01 00 94 */	stw r0, 0x94(r1)
 /* 803F5B4C 003F198C  39 61 00 90 */	addi r11, r1, 0x90
-/* 803F5B50 003F1990  4B C1 17 F1 */	bl lbl_80007340
+/* 803F5B50 003F1990  4B C1 17 F1 */	bl _savegpr_28
 /* 803F5B54 003F1994  7C 7C 1B 78 */	mr r28, r3
 /* 803F5B58 003F1998  7C 9D 23 78 */	mr r29, r4
 /* 803F5B5C 003F199C  7C A8 2B 78 */	mr r8, r5
@@ -70,7 +70,7 @@ __ct__Q43scn9grandmenu4menu4ItemFRQ33scn9grandmenu9ComponentRQ23mem10IAllocatorR
 /* 803F5C1C 003F1A5C  4B D8 8E A1 */	bl changeGroup__Q26effect9RequestorFRQ26effect5Group
 /* 803F5C20 003F1A60  7F 83 E3 78 */	mr r3, r28
 /* 803F5C24 003F1A64  39 61 00 90 */	addi r11, r1, 0x90
-/* 803F5C28 003F1A68  4B C1 17 65 */	bl lbl_8000738C
+/* 803F5C28 003F1A68  4B C1 17 65 */	bl _restgpr_28
 /* 803F5C2C 003F1A6C  80 01 00 94 */	lwz r0, 0x94(r1)
 /* 803F5C30 003F1A70  7C 08 03 A6 */	mtlr r0
 /* 803F5C34 003F1A74  38 21 00 90 */	addi r1, r1, 0x90

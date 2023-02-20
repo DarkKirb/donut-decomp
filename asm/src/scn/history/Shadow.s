@@ -7,7 +7,7 @@ __ct__Q33scn7history6ShadowFRQ33scn7history9Component:
 /* 8020F2F4 0020B134  7C 08 02 A6 */	mflr r0
 /* 8020F2F8 0020B138  90 01 00 E4 */	stw r0, 0xe4(r1)
 /* 8020F2FC 0020B13C  39 61 00 E0 */	addi r11, r1, 0xe0
-/* 8020F300 0020B140  4B DF 80 39 */	bl lbl_80007338
+/* 8020F300 0020B140  4B DF 80 39 */	bl _savegpr_26
 /* 8020F304 0020B144  7C 7A 1B 78 */	mr r26, r3
 /* 8020F308 0020B148  7C 9B 23 78 */	mr r27, r4
 /* 8020F30C 0020B14C  7F 63 DB 78 */	mr r3, r27
@@ -91,7 +91,7 @@ __ct__Q33scn7history6ShadowFRQ33scn7history9Component:
 /* 8020F444 0020B284  48 00 01 D5 */	bl update__Q33scn7history6ShadowFRCQ33hel4math7Vector3
 /* 8020F448 0020B288  7F 43 D3 78 */	mr r3, r26
 /* 8020F44C 0020B28C  39 61 00 E0 */	addi r11, r1, 0xe0
-/* 8020F450 0020B290  4B DF 7F 35 */	bl lbl_80007384
+/* 8020F450 0020B290  4B DF 7F 35 */	bl _restgpr_26
 /* 8020F454 0020B294  80 01 00 E4 */	lwz r0, 0xe4(r1)
 /* 8020F458 0020B298  7C 08 03 A6 */	mtlr r0
 /* 8020F45C 0020B29C  38 21 00 E0 */	addi r1, r1, 0xe0

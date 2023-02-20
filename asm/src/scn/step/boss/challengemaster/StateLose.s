@@ -7,7 +7,7 @@ __ct__Q53scn4step4boss15challengemaster9StateLoseFPQ43scn4step4boss4Boss:
 /* 80240F50 0023CD90  7C 08 02 A6 */	mflr r0
 /* 80240F54 0023CD94  90 01 00 24 */	stw r0, 0x24(r1)
 /* 80240F58 0023CD98  39 61 00 20 */	addi r11, r1, 0x20
-/* 80240F5C 0023CD9C  4B DC 63 E9 */	bl lbl_80007344
+/* 80240F5C 0023CD9C  4B DC 63 E9 */	bl _savegpr_29
 /* 80240F60 0023CDA0  7C 7D 1B 78 */	mr r29, r3
 /* 80240F64 0023CDA4  4B FF 35 7D */	bl __ct__Q43scn4step4boss9StateBaseFPQ43scn4step4boss4Boss
 /* 80240F68 0023CDA8  3C 60 80 46 */	lis r3, __vt__Q53scn4step4boss15challengemaster9StateLose@ha
@@ -67,7 +67,7 @@ lbl_80240FEC:
 /* 80241010 0023CE50  4B FF B2 55 */	bl endExAuraEffect__Q53scn4step4boss15challengemaster6CustomFv
 /* 80241014 0023CE54  7F A3 EB 78 */	mr r3, r29
 /* 80241018 0023CE58  39 61 00 20 */	addi r11, r1, 0x20
-/* 8024101C 0023CE5C  4B DC 63 75 */	bl lbl_80007390
+/* 8024101C 0023CE5C  4B DC 63 75 */	bl _restgpr_29
 /* 80241020 0023CE60  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80241024 0023CE64  7C 08 03 A6 */	mtlr r0
 /* 80241028 0023CE68  38 21 00 20 */	addi r1, r1, 0x20

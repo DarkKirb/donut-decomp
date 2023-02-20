@@ -59,7 +59,7 @@ onInit__Q53scn4step4boss9zankibble6CustomFv:
 /* 80260440 0025C280  7C 08 02 A6 */	mflr r0
 /* 80260444 0025C284  90 01 00 54 */	stw r0, 0x54(r1)
 /* 80260448 0025C288  39 61 00 50 */	addi r11, r1, 0x50
-/* 8026044C 0025C28C  4B DA 6E F1 */	bl lbl_8000733C
+/* 8026044C 0025C28C  4B DA 6E F1 */	bl _savegpr_27
 /* 80260450 0025C290  7C 7F 1B 78 */	mr r31, r3
 /* 80260454 0025C294  3C 80 80 47 */	lis r4, "@56693_8046A9A8"@ha
 /* 80260458 0025C298  3B 64 A9 A8 */	addi r27, r4, "@56693_8046A9A8"@l
@@ -234,7 +234,7 @@ lbl_80260608:
 lbl_802606D0:
 /* 802606D0 0025C510  93 7F 00 0C */	stw r27, 0xc(r31)
 /* 802606D4 0025C514  39 61 00 50 */	addi r11, r1, 0x50
-/* 802606D8 0025C518  4B DA 6C B1 */	bl lbl_80007388
+/* 802606D8 0025C518  4B DA 6C B1 */	bl _restgpr_27
 /* 802606DC 0025C51C  80 01 00 54 */	lwz r0, 0x54(r1)
 /* 802606E0 0025C520  7C 08 03 A6 */	mtlr r0
 /* 802606E4 0025C524  38 21 00 50 */	addi r1, r1, 0x50
@@ -258,7 +258,7 @@ onDead__Q53scn4step4boss9zankibble6CustomFv:
 /* 802606FC 0025C53C  7C 08 02 A6 */	mflr r0
 /* 80260700 0025C540  90 01 00 24 */	stw r0, 0x24(r1)
 /* 80260704 0025C544  39 61 00 20 */	addi r11, r1, 0x20
-/* 80260708 0025C548  4B DA 6C 3D */	bl lbl_80007344
+/* 80260708 0025C548  4B DA 6C 3D */	bl _savegpr_29
 /* 8026070C 0025C54C  7C 7D 1B 78 */	mr r29, r3
 /* 80260710 0025C550  4B EA 00 D1 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 80260714 0025C554  4B FC C8 25 */	bl model__Q43scn4step4boss4BossFv
@@ -289,7 +289,7 @@ onDead__Q53scn4step4boss9zankibble6CustomFv:
 lbl_80260774:
 /* 80260774 0025C5B4  93 BF 00 0C */	stw r29, 0xc(r31)
 /* 80260778 0025C5B8  39 61 00 20 */	addi r11, r1, 0x20
-/* 8026077C 0025C5BC  4B DA 6C 15 */	bl lbl_80007390
+/* 8026077C 0025C5BC  4B DA 6C 15 */	bl _restgpr_29
 /* 80260780 0025C5C0  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80260784 0025C5C4  7C 08 03 A6 */	mtlr r0
 /* 80260788 0025C5C8  38 21 00 20 */	addi r1, r1, 0x20

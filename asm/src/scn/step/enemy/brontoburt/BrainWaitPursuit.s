@@ -29,7 +29,7 @@ onRecover__Q53scn4step5enemy10brontoburt16BrainWaitPursuitFv:
 /* 8029F168 0029AFA8  7C 08 02 A6 */	mflr r0
 /* 8029F16C 0029AFAC  90 01 00 24 */	stw r0, 0x24(r1)
 /* 8029F170 0029AFB0  39 61 00 20 */	addi r11, r1, 0x20
-/* 8029F174 0029AFB4  4B D6 81 D1 */	bl lbl_80007344
+/* 8029F174 0029AFB4  4B D6 81 D1 */	bl _savegpr_29
 /* 8029F178 0029AFB8  7C 7D 1B 78 */	mr r29, r3
 /* 8029F17C 0029AFBC  4B E6 16 65 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 8029F180 0029AFC0  7C 7E 1B 78 */	mr r30, r3
@@ -53,7 +53,7 @@ lbl_8029F1C0:
 /* 8029F1C0 0029B000  93 BF 00 0C */	stw r29, 0xc(r31)
 /* 8029F1C4 0029B004  38 60 00 01 */	li r3, 0x1
 /* 8029F1C8 0029B008  39 61 00 20 */	addi r11, r1, 0x20
-/* 8029F1CC 0029B00C  4B D6 81 C5 */	bl lbl_80007390
+/* 8029F1CC 0029B00C  4B D6 81 C5 */	bl _restgpr_29
 /* 8029F1D0 0029B010  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8029F1D4 0029B014  7C 08 03 A6 */	mtlr r0
 /* 8029F1D8 0029B018  38 21 00 20 */	addi r1, r1, 0x20

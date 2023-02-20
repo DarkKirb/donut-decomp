@@ -7,7 +7,7 @@ TryToChangeState__Q53scn4step4hero7parasol22StateParasolWaterDrillFPQ43scn4step4
 /* 80395E14 00391C54  7C 08 02 A6 */	mflr r0
 /* 80395E18 00391C58  90 01 00 24 */	stw r0, 0x24(r1)
 /* 80395E1C 00391C5C  39 61 00 20 */	addi r11, r1, 0x20
-/* 80395E20 00391C60  4B C7 15 25 */	bl lbl_80007344
+/* 80395E20 00391C60  4B C7 15 25 */	bl _savegpr_29
 /* 80395E24 00391C64  7C 7D 1B 78 */	mr r29, r3
 /* 80395E28 00391C68  4B FA A5 DD */	bl water__Q43scn4step4hero4HeroFv
 /* 80395E2C 00391C6C  4B E4 48 05 */	bl isEnable__Q25pause11ButtonPanelCFv
@@ -51,7 +51,7 @@ lbl_80395EA8:
 .global lbl_80395EAC
 lbl_80395EAC:
 /* 80395EAC 00391CEC  39 61 00 20 */	addi r11, r1, 0x20
-/* 80395EB0 00391CF0  4B C7 14 E1 */	bl lbl_80007390
+/* 80395EB0 00391CF0  4B C7 14 E1 */	bl _restgpr_29
 /* 80395EB4 00391CF4  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80395EB8 00391CF8  7C 08 03 A6 */	mtlr r0
 /* 80395EBC 00391CFC  38 21 00 20 */	addi r1, r1, 0x20
@@ -226,7 +226,7 @@ procAnim__Q53scn4step4hero7parasol22StateParasolWaterDrillFv:
 /* 80396120 00391F60  DB E1 00 60 */	stfd f31, 0x60(r1)
 /* 80396124 00391F64  F3 E1 00 68 */	psq_st f31, 0x68(r1), 0, qr0
 /* 80396128 00391F68  39 61 00 60 */	addi r11, r1, 0x60
-/* 8039612C 00391F6C  4B C7 12 15 */	bl lbl_80007340
+/* 8039612C 00391F6C  4B C7 12 15 */	bl _savegpr_28
 /* 80396130 00391F70  7C 7C 1B 78 */	mr r28, r3
 /* 80396134 00391F74  80 83 00 08 */	lwz r4, 0x8(r3)
 /* 80396138 00391F78  38 04 00 01 */	addi r0, r4, 0x1
@@ -351,7 +351,7 @@ lbl_803962E8:
 /* 803962EC 0039212C  13 E1 00 0C */	psq_lx f31, r1, r0, 0, qr0
 /* 803962F0 00392130  CB E1 00 60 */	lfd f31, 0x60(r1)
 /* 803962F4 00392134  39 61 00 60 */	addi r11, r1, 0x60
-/* 803962F8 00392138  4B C7 10 95 */	bl lbl_8000738C
+/* 803962F8 00392138  4B C7 10 95 */	bl _restgpr_28
 /* 803962FC 0039213C  80 01 00 74 */	lwz r0, 0x74(r1)
 /* 80396300 00392140  7C 08 03 A6 */	mtlr r0
 /* 80396304 00392144  38 21 00 70 */	addi r1, r1, 0x70
@@ -363,7 +363,7 @@ procMove__Q53scn4step4hero7parasol22StateParasolWaterDrillFv:
 /* 80396310 00392150  7C 08 02 A6 */	mflr r0
 /* 80396314 00392154  90 01 00 34 */	stw r0, 0x34(r1)
 /* 80396318 00392158  39 61 00 30 */	addi r11, r1, 0x30
-/* 8039631C 0039215C  4B C7 10 29 */	bl lbl_80007344
+/* 8039631C 0039215C  4B C7 10 29 */	bl _savegpr_29
 /* 80396320 00392160  7C 7D 1B 78 */	mr r29, r3
 /* 80396324 00392164  4B D6 A4 BD */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 80396328 00392168  4B FA A0 DD */	bl water__Q43scn4step4hero4HeroFv
@@ -405,7 +405,7 @@ lbl_80396370:
 .global lbl_803963B0
 lbl_803963B0:
 /* 803963B0 003921F0  39 61 00 30 */	addi r11, r1, 0x30
-/* 803963B4 003921F4  4B C7 0F DD */	bl lbl_80007390
+/* 803963B4 003921F4  4B C7 0F DD */	bl _restgpr_29
 /* 803963B8 003921F8  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 803963BC 003921FC  7C 08 03 A6 */	mtlr r0
 /* 803963C0 00392200  38 21 00 30 */	addi r1, r1, 0x30

@@ -7,7 +7,7 @@ __ct__Q53scn4step5enemy10parasoldoo17StateWalkStraightFPQ43scn4step5enemy5Enemy:
 /* 802CF28C 002CB0CC  7C 08 02 A6 */	mflr r0
 /* 802CF290 002CB0D0  90 01 00 24 */	stw r0, 0x24(r1)
 /* 802CF294 002CB0D4  39 61 00 20 */	addi r11, r1, 0x20
-/* 802CF298 002CB0D8  4B D3 80 AD */	bl lbl_80007344
+/* 802CF298 002CB0D8  4B D3 80 AD */	bl _savegpr_29
 /* 802CF29C 002CB0DC  7C 7D 1B 78 */	mr r29, r3
 /* 802CF2A0 002CB0E0  7C 9E 23 78 */	mr r30, r4
 /* 802CF2A4 002CB0E4  4B FB EB 21 */	bl __ct__Q43scn4step5enemy9StateBaseFPQ43scn4step5enemy5Enemy
@@ -103,7 +103,7 @@ lbl_802CF3D0:
 /* 802CF3DC 002CB21C  4B FA FC 65 */	bl toValid__Q43scn4step5enemy9BrainCtrlFv
 /* 802CF3E0 002CB220  7F A3 EB 78 */	mr r3, r29
 /* 802CF3E4 002CB224  39 61 00 20 */	addi r11, r1, 0x20
-/* 802CF3E8 002CB228  4B D3 7F A9 */	bl lbl_80007390
+/* 802CF3E8 002CB228  4B D3 7F A9 */	bl _restgpr_29
 /* 802CF3EC 002CB22C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802CF3F0 002CB230  7C 08 03 A6 */	mtlr r0
 /* 802CF3F4 002CB234  38 21 00 20 */	addi r1, r1, 0x20
@@ -139,7 +139,7 @@ procFixPos__Q53scn4step5enemy10parasoldoo17StateWalkStraightFv:
 /* 802CF43C 002CB27C  DB E1 00 50 */	stfd f31, 0x50(r1)
 /* 802CF440 002CB280  F3 E1 00 58 */	psq_st f31, 0x58(r1), 0, qr0
 /* 802CF444 002CB284  39 61 00 50 */	addi r11, r1, 0x50
-/* 802CF448 002CB288  4B D3 7E F9 */	bl lbl_80007340
+/* 802CF448 002CB288  4B D3 7E F9 */	bl _savegpr_28
 /* 802CF44C 002CB28C  7C 7C 1B 78 */	mr r28, r3
 /* 802CF450 002CB290  4B E3 13 91 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 802CF454 002CB294  4B FB 8D 41 */	bl custom__Q43scn4step5enemy5EnemyFv
@@ -275,7 +275,7 @@ lbl_802CF618:
 /* 802CF61C 002CB45C  13 E1 00 0C */	psq_lx f31, r1, r0, 0, qr0
 /* 802CF620 002CB460  CB E1 00 50 */	lfd f31, 0x50(r1)
 /* 802CF624 002CB464  39 61 00 50 */	addi r11, r1, 0x50
-/* 802CF628 002CB468  4B D3 7D 65 */	bl lbl_8000738C
+/* 802CF628 002CB468  4B D3 7D 65 */	bl _restgpr_28
 /* 802CF62C 002CB46C  80 01 00 64 */	lwz r0, 0x64(r1)
 /* 802CF630 002CB470  7C 08 03 A6 */	mtlr r0
 /* 802CF634 002CB474  38 21 00 60 */	addi r1, r1, 0x60

@@ -92,7 +92,7 @@ detect__Q25mcoll5ActorFRCQ35mcoll6detail9DetectArg:
 /* 801B14D4 001AD314  7C 08 02 A6 */	mflr r0
 /* 801B14D8 001AD318  90 01 05 F4 */	stw r0, 0x5f4(r1)
 /* 801B14DC 001AD31C  39 61 05 F0 */	addi r11, r1, 0x5f0
-/* 801B14E0 001AD320  4B E5 5E 61 */	bl lbl_80007340
+/* 801B14E0 001AD320  4B E5 5E 61 */	bl _savegpr_28
 /* 801B14E4 001AD324  7C 7C 1B 78 */	mr r28, r3
 /* 801B14E8 001AD328  7C 9D 23 78 */	mr r29, r4
 /* 801B14EC 001AD32C  7C BE 2B 78 */	mr r30, r5
@@ -124,7 +124,7 @@ detect__Q25mcoll5ActorFRCQ35mcoll6detail9DetectArg:
 /* 801B1554 001AD394  38 80 FF FF */	li r4, -0x1
 /* 801B1558 001AD398  48 00 00 1D */	bl __dt__Q35mcoll6detail12StdResponderFv
 /* 801B155C 001AD39C  39 61 05 F0 */	addi r11, r1, 0x5f0
-/* 801B1560 001AD3A0  4B E5 5E 2D */	bl lbl_8000738C
+/* 801B1560 001AD3A0  4B E5 5E 2D */	bl _restgpr_28
 /* 801B1564 001AD3A4  80 01 05 F4 */	lwz r0, 0x5f4(r1)
 /* 801B1568 001AD3A8  7C 08 03 A6 */	mtlr r0
 /* 801B156C 001AD3AC  38 21 05 F0 */	addi r1, r1, 0x5f0

@@ -7,7 +7,7 @@ TryToChangeState__Q53scn4step4hero6common16StateWaterPistolFPQ43scn4step4hero4He
 /* 8036ED10 0036AB50  7C 08 02 A6 */	mflr r0
 /* 8036ED14 0036AB54  90 01 00 34 */	stw r0, 0x34(r1)
 /* 8036ED18 0036AB58  39 61 00 30 */	addi r11, r1, 0x30
-/* 8036ED1C 0036AB5C  4B C9 86 29 */	bl lbl_80007344
+/* 8036ED1C 0036AB5C  4B C9 86 29 */	bl _savegpr_29
 /* 8036ED20 0036AB60  7C 7D 1B 78 */	mr r29, r3
 /* 8036ED24 0036AB64  7C 9E 23 78 */	mr r30, r4
 /* 8036ED28 0036AB68  4B E4 7B 89 */	bl collideTargetIndex__Q35mcoll6detail21CollidedDetectionInfoCFv
@@ -74,7 +74,7 @@ lbl_8036EDF8:
 .global lbl_8036EDFC
 lbl_8036EDFC:
 /* 8036EDFC 0036AC3C  39 61 00 30 */	addi r11, r1, 0x30
-/* 8036EE00 0036AC40  4B C9 85 91 */	bl lbl_80007390
+/* 8036EE00 0036AC40  4B C9 85 91 */	bl _restgpr_29
 /* 8036EE04 0036AC44  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 8036EE08 0036AC48  7C 08 03 A6 */	mtlr r0
 /* 8036EE0C 0036AC4C  38 21 00 30 */	addi r1, r1, 0x30

@@ -63,7 +63,7 @@ procAnim__Q53scn4step4boss9moundeath19StatePressJumpStartFv:
 /* 80256DE8 00252C28  7C 08 02 A6 */	mflr r0
 /* 80256DEC 00252C2C  90 01 00 24 */	stw r0, 0x24(r1)
 /* 80256DF0 00252C30  39 61 00 20 */	addi r11, r1, 0x20
-/* 80256DF4 00252C34  4B DB 05 4D */	bl lbl_80007340
+/* 80256DF4 00252C34  4B DB 05 4D */	bl _savegpr_28
 /* 80256DF8 00252C38  7C 7D 1B 78 */	mr r29, r3
 /* 80256DFC 00252C3C  4B EA 99 E5 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 80256E00 00252C40  4B FD 61 39 */	bl model__Q43scn4step4boss4BossFv
@@ -129,7 +129,7 @@ lbl_80256ECC:
 .global lbl_80256ED0
 lbl_80256ED0:
 /* 80256ED0 00252D10  39 61 00 20 */	addi r11, r1, 0x20
-/* 80256ED4 00252D14  4B DB 04 B9 */	bl lbl_8000738C
+/* 80256ED4 00252D14  4B DB 04 B9 */	bl _restgpr_28
 /* 80256ED8 00252D18  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80256EDC 00252D1C  7C 08 03 A6 */	mtlr r0
 /* 80256EE0 00252D20  38 21 00 20 */	addi r1, r1, 0x20

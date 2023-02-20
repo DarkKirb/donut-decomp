@@ -120,7 +120,7 @@ onInit__Q53scn4step4boss6dubior6CustomFv:
 /* 8024CB18 00248958  7C 08 02 A6 */	mflr r0
 /* 8024CB1C 0024895C  90 01 00 44 */	stw r0, 0x44(r1)
 /* 8024CB20 00248960  39 61 00 40 */	addi r11, r1, 0x40
-/* 8024CB24 00248964  4B DB A8 19 */	bl lbl_8000733C
+/* 8024CB24 00248964  4B DB A8 19 */	bl _savegpr_27
 /* 8024CB28 00248968  7C 7F 1B 78 */	mr r31, r3
 /* 8024CB2C 0024896C  3C 80 80 46 */	lis r4, "@58559"@ha
 /* 8024CB30 00248970  3B 64 73 B8 */	addi r27, r4, "@58559"@l
@@ -287,7 +287,7 @@ lbl_8024CCE0:
 lbl_8024CD88:
 /* 8024CD88 00248BC8  93 7F 00 0C */	stw r27, 0xc(r31)
 /* 8024CD8C 00248BCC  39 61 00 40 */	addi r11, r1, 0x40
-/* 8024CD90 00248BD0  4B DB A5 F9 */	bl lbl_80007388
+/* 8024CD90 00248BD0  4B DB A5 F9 */	bl _restgpr_27
 /* 8024CD94 00248BD4  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 8024CD98 00248BD8  7C 08 03 A6 */	mtlr r0
 /* 8024CD9C 00248BDC  38 21 00 40 */	addi r1, r1, 0x40
@@ -313,7 +313,7 @@ onStart__Q53scn4step4boss6dubior6CustomFv:
 /* 8024CDD4 00248C14  7C 08 02 A6 */	mflr r0
 /* 8024CDD8 00248C18  90 01 00 24 */	stw r0, 0x24(r1)
 /* 8024CDDC 00248C1C  39 61 00 20 */	addi r11, r1, 0x20
-/* 8024CDE0 00248C20  4B DB A5 65 */	bl lbl_80007344
+/* 8024CDE0 00248C20  4B DB A5 65 */	bl _savegpr_29
 /* 8024CDE4 00248C24  7C 7D 1B 78 */	mr r29, r3
 /* 8024CDE8 00248C28  4B EB 39 F9 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 8024CDEC 00248C2C  4B FE 01 BD */	bl worldCage__Q43scn4step4boss4BossFv
@@ -341,7 +341,7 @@ onStart__Q53scn4step4boss6dubior6CustomFv:
 lbl_8024CE40:
 /* 8024CE40 00248C80  93 BF 00 0C */	stw r29, 0xc(r31)
 /* 8024CE44 00248C84  39 61 00 20 */	addi r11, r1, 0x20
-/* 8024CE48 00248C88  4B DB A5 49 */	bl lbl_80007390
+/* 8024CE48 00248C88  4B DB A5 49 */	bl _restgpr_29
 /* 8024CE4C 00248C8C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8024CE50 00248C90  7C 08 03 A6 */	mtlr r0
 /* 8024CE54 00248C94  38 21 00 20 */	addi r1, r1, 0x20
@@ -357,7 +357,7 @@ onDead__Q53scn4step4boss6dubior6CustomFv:
 /* 8024CE64 00248CA4  7C 08 02 A6 */	mflr r0
 /* 8024CE68 00248CA8  90 01 00 24 */	stw r0, 0x24(r1)
 /* 8024CE6C 00248CAC  39 61 00 20 */	addi r11, r1, 0x20
-/* 8024CE70 00248CB0  4B DB A4 D5 */	bl lbl_80007344
+/* 8024CE70 00248CB0  4B DB A4 D5 */	bl _savegpr_29
 /* 8024CE74 00248CB4  7C 7D 1B 78 */	mr r29, r3
 /* 8024CE78 00248CB8  4B EB 39 69 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 8024CE7C 00248CBC  4B FE 00 BD */	bl model__Q43scn4step4boss4BossFv
@@ -388,7 +388,7 @@ onDead__Q53scn4step4boss6dubior6CustomFv:
 lbl_8024CEDC:
 /* 8024CEDC 00248D1C  93 BF 00 0C */	stw r29, 0xc(r31)
 /* 8024CEE0 00248D20  39 61 00 20 */	addi r11, r1, 0x20
-/* 8024CEE4 00248D24  4B DB A4 AD */	bl lbl_80007390
+/* 8024CEE4 00248D24  4B DB A4 AD */	bl _restgpr_29
 /* 8024CEE8 00248D28  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8024CEEC 00248D2C  7C 08 03 A6 */	mtlr r0
 /* 8024CEF0 00248D30  38 21 00 20 */	addi r1, r1, 0x20
@@ -429,7 +429,7 @@ setBodyCollDefault__Q53scn4step4boss6dubior6CustomFv:
 /* 8024CF50 00248D90  7C 08 02 A6 */	mflr r0
 /* 8024CF54 00248D94  90 01 00 34 */	stw r0, 0x34(r1)
 /* 8024CF58 00248D98  39 61 00 30 */	addi r11, r1, 0x30
-/* 8024CF5C 00248D9C  4B DB A3 E5 */	bl lbl_80007340
+/* 8024CF5C 00248D9C  4B DB A3 E5 */	bl _savegpr_28
 /* 8024CF60 00248DA0  7C 7C 1B 78 */	mr r28, r3
 /* 8024CF64 00248DA4  4B EB 38 7D */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 8024CF68 00248DA8  4B FD FF A9 */	bl param__Q43scn4step4boss4BossCFv
@@ -451,7 +451,7 @@ setBodyCollDefault__Q53scn4step4boss6dubior6CustomFv:
 /* 8024CFA8 00248DE8  7F C6 F3 78 */	mr r6, r30
 /* 8024CFAC 00248DEC  4B FF 73 D1 */	bl SetBodyCollDefault__Q53scn4step4boss6common8CollUtilFRQ43scn4step4boss4BossUlfQ33hel4math7Vector2Q33hel4math7Vector2
 /* 8024CFB0 00248DF0  39 61 00 30 */	addi r11, r1, 0x30
-/* 8024CFB4 00248DF4  4B DB A3 D9 */	bl lbl_8000738C
+/* 8024CFB4 00248DF4  4B DB A3 D9 */	bl _restgpr_28
 /* 8024CFB8 00248DF8  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 8024CFBC 00248DFC  7C 08 03 A6 */	mtlr r0
 /* 8024CFC0 00248E00  38 21 00 30 */	addi r1, r1, 0x30
@@ -462,7 +462,7 @@ setBodyCollFastMove__Q53scn4step4boss6dubior6CustomFv:
 /* 8024CFCC 00248E0C  7C 08 02 A6 */	mflr r0
 /* 8024CFD0 00248E10  90 01 00 24 */	stw r0, 0x24(r1)
 /* 8024CFD4 00248E14  39 61 00 20 */	addi r11, r1, 0x20
-/* 8024CFD8 00248E18  4B DB A3 69 */	bl lbl_80007340
+/* 8024CFD8 00248E18  4B DB A3 69 */	bl _savegpr_28
 /* 8024CFDC 00248E1C  7C 7C 1B 78 */	mr r28, r3
 /* 8024CFE0 00248E20  4B EB 38 01 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 8024CFE4 00248E24  4B FD FF 2D */	bl param__Q43scn4step4boss4BossCFv
@@ -492,7 +492,7 @@ setBodyCollFastMove__Q53scn4step4boss6dubior6CustomFv:
 /* 8024D044 00248E84  38 80 00 02 */	li r4, 0x2
 /* 8024D048 00248E88  48 02 01 89 */	bl setResistLv__Q43scn4step5chara8BodyCollFQ43scn4step5ocoll11HitResistLv
 /* 8024D04C 00248E8C  39 61 00 20 */	addi r11, r1, 0x20
-/* 8024D050 00248E90  4B DB A3 3D */	bl lbl_8000738C
+/* 8024D050 00248E90  4B DB A3 3D */	bl _restgpr_28
 /* 8024D054 00248E94  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8024D058 00248E98  7C 08 03 A6 */	mtlr r0
 /* 8024D05C 00248E9C  38 21 00 20 */	addi r1, r1, 0x20
@@ -503,7 +503,7 @@ setBodyCollDash__Q53scn4step4boss6dubior6CustomFv:
 /* 8024D068 00248EA8  7C 08 02 A6 */	mflr r0
 /* 8024D06C 00248EAC  90 01 00 34 */	stw r0, 0x34(r1)
 /* 8024D070 00248EB0  39 61 00 30 */	addi r11, r1, 0x30
-/* 8024D074 00248EB4  4B DB A2 C9 */	bl lbl_8000733C
+/* 8024D074 00248EB4  4B DB A2 C9 */	bl _savegpr_27
 /* 8024D078 00248EB8  7C 7B 1B 78 */	mr r27, r3
 /* 8024D07C 00248EBC  4B EB 37 65 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 8024D080 00248EC0  4B FD FE 91 */	bl param__Q43scn4step4boss4BossCFv
@@ -538,7 +538,7 @@ setBodyCollDash__Q53scn4step4boss6dubior6CustomFv:
 /* 8024D0F4 00248F34  38 80 00 02 */	li r4, 0x2
 /* 8024D0F8 00248F38  48 02 00 D9 */	bl setResistLv__Q43scn4step5chara8BodyCollFQ43scn4step5ocoll11HitResistLv
 /* 8024D0FC 00248F3C  39 61 00 30 */	addi r11, r1, 0x30
-/* 8024D100 00248F40  4B DB A2 89 */	bl lbl_80007388
+/* 8024D100 00248F40  4B DB A2 89 */	bl _restgpr_27
 /* 8024D104 00248F44  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 8024D108 00248F48  7C 08 03 A6 */	mtlr r0
 /* 8024D10C 00248F4C  38 21 00 30 */	addi r1, r1, 0x30
@@ -549,7 +549,7 @@ reqThunderGroundEffect__Q53scn4step4boss6dubior6CustomFv:
 /* 8024D118 00248F58  7C 08 02 A6 */	mflr r0
 /* 8024D11C 00248F5C  90 01 07 84 */	stw r0, 0x784(r1)
 /* 8024D120 00248F60  39 61 07 80 */	addi r11, r1, 0x780
-/* 8024D124 00248F64  4B DB A2 1D */	bl lbl_80007340
+/* 8024D124 00248F64  4B DB A2 1D */	bl _savegpr_28
 /* 8024D128 00248F68  7C 7C 1B 78 */	mr r28, r3
 /* 8024D12C 00248F6C  4B EB 36 B5 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 8024D130 00248F70  4B FD FD F9 */	bl location__Q43scn4step4boss4BossCFv
@@ -682,7 +682,7 @@ lbl_8024D2E8:
 .global lbl_8024D2F4
 lbl_8024D2F4:
 /* 8024D2F4 00249134  39 61 07 80 */	addi r11, r1, 0x780
-/* 8024D2F8 00249138  4B DB A0 95 */	bl lbl_8000738C
+/* 8024D2F8 00249138  4B DB A0 95 */	bl _restgpr_28
 /* 8024D2FC 0024913C  80 01 07 84 */	lwz r0, 0x784(r1)
 /* 8024D300 00249140  7C 08 03 A6 */	mtlr r0
 /* 8024D304 00249144  38 21 07 80 */	addi r1, r1, 0x780
@@ -693,7 +693,7 @@ detect__Q53scn4step4boss6dubior6CustomFRCQ33hel4math7Vector2RCQ33hel4math7Vector
 /* 8024D310 00249150  7C 08 02 A6 */	mflr r0
 /* 8024D314 00249154  90 01 00 34 */	stw r0, 0x34(r1)
 /* 8024D318 00249158  39 61 00 30 */	addi r11, r1, 0x30
-/* 8024D31C 0024915C  4B DB A0 25 */	bl lbl_80007340
+/* 8024D31C 0024915C  4B DB A0 25 */	bl _savegpr_28
 /* 8024D320 00249160  7C 7C 1B 78 */	mr r28, r3
 /* 8024D324 00249164  7C 9D 23 78 */	mr r29, r4
 /* 8024D328 00249168  7C BE 2B 78 */	mr r30, r5
@@ -714,7 +714,7 @@ detect__Q53scn4step4boss6dubior6CustomFRCQ33hel4math7Vector2RCQ33hel4math7Vector
 /* 8024D364 002491A4  38 C1 00 08 */	addi r6, r1, 0x8
 /* 8024D368 002491A8  4B F6 50 65 */	bl rayCheck__Q25mcoll11LandManagerCFRCQ33hel4math7Vector2RCQ35mcoll6detail9DetectArg
 /* 8024D36C 002491AC  39 61 00 30 */	addi r11, r1, 0x30
-/* 8024D370 002491B0  4B DB A0 1D */	bl lbl_8000738C
+/* 8024D370 002491B0  4B DB A0 1D */	bl _restgpr_28
 /* 8024D374 002491B4  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 8024D378 002491B8  7C 08 03 A6 */	mtlr r0
 /* 8024D37C 002491BC  38 21 00 30 */	addi r1, r1, 0x30

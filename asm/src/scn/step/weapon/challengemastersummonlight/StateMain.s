@@ -7,7 +7,7 @@ __ct__Q53scn4step6weapon26challengemastersummonlight9StateMainFPQ43scn4step6weap
 /* 803EFA80 003EB8C0  7C 08 02 A6 */	mflr r0
 /* 803EFA84 003EB8C4  90 01 00 34 */	stw r0, 0x34(r1)
 /* 803EFA88 003EB8C8  39 61 00 30 */	addi r11, r1, 0x30
-/* 803EFA8C 003EB8CC  4B C1 78 B9 */	bl lbl_80007344
+/* 803EFA8C 003EB8CC  4B C1 78 B9 */	bl _savegpr_29
 /* 803EFA90 003EB8D0  7C 7D 1B 78 */	mr r29, r3
 /* 803EFA94 003EB8D4  4B FE 8E AD */	bl __ct__Q43scn4step6weapon9StateBaseFPQ43scn4step6weapon6Weapon
 /* 803EFA98 003EB8D8  3C 60 80 49 */	lis r3, __vt__Q53scn4step6weapon26challengemastersummonlight9StateMain@ha
@@ -90,7 +90,7 @@ lbl_803EFB94:
 /* 803EFBC4 003EBA04  48 01 31 11 */	bl start__Q23snd11SERequestorFUl
 /* 803EFBC8 003EBA08  7F A3 EB 78 */	mr r3, r29
 /* 803EFBCC 003EBA0C  39 61 00 30 */	addi r11, r1, 0x30
-/* 803EFBD0 003EBA10  4B C1 77 C1 */	bl lbl_80007390
+/* 803EFBD0 003EBA10  4B C1 77 C1 */	bl _restgpr_29
 /* 803EFBD4 003EBA14  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 803EFBD8 003EBA18  7C 08 03 A6 */	mtlr r0
 /* 803EFBDC 003EBA1C  38 21 00 30 */	addi r1, r1, 0x30
@@ -102,7 +102,7 @@ procAnim__Q53scn4step6weapon26challengemastersummonlight9StateMainFv:
 /* 803EFBE8 003EBA28  7C 08 02 A6 */	mflr r0
 /* 803EFBEC 003EBA2C  90 01 00 24 */	stw r0, 0x24(r1)
 /* 803EFBF0 003EBA30  39 61 00 20 */	addi r11, r1, 0x20
-/* 803EFBF4 003EBA34  4B C1 77 4D */	bl lbl_80007340
+/* 803EFBF4 003EBA34  4B C1 77 4D */	bl _savegpr_28
 /* 803EFBF8 003EBA38  7C 7C 1B 78 */	mr r28, r3
 /* 803EFBFC 003EBA3C  88 03 00 0C */	lbz r0, 0xc(r3)
 /* 803EFC00 003EBA40  2C 00 00 00 */	cmpwi r0, 0x0
@@ -177,7 +177,7 @@ lbl_803EFCC0:
 .global lbl_803EFCCC
 lbl_803EFCCC:
 /* 803EFCCC 003EBB0C  39 61 00 20 */	addi r11, r1, 0x20
-/* 803EFCD0 003EBB10  4B C1 76 BD */	bl lbl_8000738C
+/* 803EFCD0 003EBB10  4B C1 76 BD */	bl _restgpr_28
 /* 803EFCD4 003EBB14  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803EFCD8 003EBB18  7C 08 03 A6 */	mtlr r0
 /* 803EFCDC 003EBB1C  38 21 00 20 */	addi r1, r1, 0x20

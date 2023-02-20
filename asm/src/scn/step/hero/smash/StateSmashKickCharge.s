@@ -7,7 +7,7 @@ TryToChangeState__Q53scn4step4hero5smash20StateSmashKickChargeFPQ43scn4step4hero
 /* 803A25C8 0039E408  7C 08 02 A6 */	mflr r0
 /* 803A25CC 0039E40C  90 01 00 24 */	stw r0, 0x24(r1)
 /* 803A25D0 0039E410  39 61 00 20 */	addi r11, r1, 0x20
-/* 803A25D4 0039E414  4B C6 4D 71 */	bl lbl_80007344
+/* 803A25D4 0039E414  4B C6 4D 71 */	bl _savegpr_29
 /* 803A25D8 0039E418  7C 7D 1B 78 */	mr r29, r3
 /* 803A25DC 0039E41C  4B F9 DD 21 */	bl footState__Q43scn4step4hero4HeroFv
 /* 803A25E0 0039E420  4B DD F0 F5 */	bl dataType__Q36effect6detail10GenContextCFv
@@ -49,7 +49,7 @@ lbl_803A265C:
 .global lbl_803A2660
 lbl_803A2660:
 /* 803A2660 0039E4A0  39 61 00 20 */	addi r11, r1, 0x20
-/* 803A2664 0039E4A4  4B C6 4D 2D */	bl lbl_80007390
+/* 803A2664 0039E4A4  4B C6 4D 2D */	bl _restgpr_29
 /* 803A2668 0039E4A8  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803A266C 0039E4AC  7C 08 03 A6 */	mtlr r0
 /* 803A2670 0039E4B0  38 21 00 20 */	addi r1, r1, 0x20
@@ -146,7 +146,7 @@ procAnim__Q53scn4step4hero5smash20StateSmashKickChargeFv:
 /* 803A27B4 0039E5F4  7C 08 02 A6 */	mflr r0
 /* 803A27B8 0039E5F8  90 01 00 24 */	stw r0, 0x24(r1)
 /* 803A27BC 0039E5FC  39 61 00 20 */	addi r11, r1, 0x20
-/* 803A27C0 0039E600  4B C6 4B 81 */	bl lbl_80007340
+/* 803A27C0 0039E600  4B C6 4B 81 */	bl _savegpr_28
 /* 803A27C4 0039E604  7C 7C 1B 78 */	mr r28, r3
 /* 803A27C8 0039E608  80 83 00 08 */	lwz r4, 0x8(r3)
 /* 803A27CC 0039E60C  38 04 00 01 */	addi r0, r4, 0x1
@@ -210,7 +210,7 @@ lbl_803A2898:
 .global lbl_803A289C
 lbl_803A289C:
 /* 803A289C 0039E6DC  39 61 00 20 */	addi r11, r1, 0x20
-/* 803A28A0 0039E6E0  4B C6 4A ED */	bl lbl_8000738C
+/* 803A28A0 0039E6E0  4B C6 4A ED */	bl _restgpr_28
 /* 803A28A4 0039E6E4  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803A28A8 0039E6E8  7C 08 03 A6 */	mtlr r0
 /* 803A28AC 0039E6EC  38 21 00 20 */	addi r1, r1, 0x20

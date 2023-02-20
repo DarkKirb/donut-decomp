@@ -7,7 +7,7 @@ __ct__Q33scn7history13EffectManagerFRQ33scn7history9Component:
 /* 80207AB4 002038F4  7C 08 02 A6 */	mflr r0
 /* 80207AB8 002038F8  90 01 00 74 */	stw r0, 0x74(r1)
 /* 80207ABC 002038FC  39 61 00 70 */	addi r11, r1, 0x70
-/* 80207AC0 00203900  4B DF F8 6D */	bl lbl_8000732C
+/* 80207AC0 00203900  4B DF F8 6D */	bl _savegpr_23
 /* 80207AC4 00203904  7C 77 1B 78 */	mr r23, r3
 /* 80207AC8 00203908  90 83 00 00 */	stw r4, 0x0(r3)
 /* 80207ACC 0020390C  83 0D ED 00 */	lwz r24, "object___Q33hel6common32ExplicitSingleton<Q23mem6Memory>"@sda21(r13)
@@ -99,7 +99,7 @@ lbl_80207BE4:
 /* 80207C0C 00203A4C  4B F7 6A 55 */	bl setupPtclResIfResLoaded__Q26effect7ManagerFv
 /* 80207C10 00203A50  7E E3 BB 78 */	mr r3, r23
 /* 80207C14 00203A54  39 61 00 70 */	addi r11, r1, 0x70
-/* 80207C18 00203A58  4B DF F7 61 */	bl lbl_80007378
+/* 80207C18 00203A58  4B DF F7 61 */	bl _restgpr_23
 /* 80207C1C 00203A5C  80 01 00 74 */	lwz r0, 0x74(r1)
 /* 80207C20 00203A60  7C 08 03 A6 */	mtlr r0
 /* 80207C24 00203A64  38 21 00 70 */	addi r1, r1, 0x70

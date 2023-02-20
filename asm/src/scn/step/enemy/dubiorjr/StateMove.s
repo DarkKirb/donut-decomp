@@ -13,7 +13,7 @@ __ct__Q53scn4step5enemy8dubiorjr9StateMoveFPQ43scn4step5enemy5Enemyff:
 /* 802AE714 002AA554  DB A1 00 70 */	stfd f29, 0x70(r1)
 /* 802AE718 002AA558  F3 A1 00 78 */	psq_st f29, 0x78(r1), 0, qr0
 /* 802AE71C 002AA55C  39 61 00 70 */	addi r11, r1, 0x70
-/* 802AE720 002AA560  4B D5 8C 25 */	bl lbl_80007344
+/* 802AE720 002AA560  4B D5 8C 25 */	bl _savegpr_29
 /* 802AE724 002AA564  7C 7D 1B 78 */	mr r29, r3
 /* 802AE728 002AA568  FF A0 08 90 */	fmr f29, f1
 /* 802AE72C 002AA56C  FF C0 10 90 */	fmr f30, f2
@@ -170,7 +170,7 @@ lbl_802AE894:
 /* 802AE960 002AA7A0  13 A1 00 0C */	psq_lx f29, r1, r0, 0, qr0
 /* 802AE964 002AA7A4  CB A1 00 70 */	lfd f29, 0x70(r1)
 /* 802AE968 002AA7A8  39 61 00 70 */	addi r11, r1, 0x70
-/* 802AE96C 002AA7AC  4B D5 8A 25 */	bl lbl_80007390
+/* 802AE96C 002AA7AC  4B D5 8A 25 */	bl _restgpr_29
 /* 802AE970 002AA7B0  80 01 00 A4 */	lwz r0, 0xa4(r1)
 /* 802AE974 002AA7B4  7C 08 03 A6 */	mtlr r0
 /* 802AE978 002AA7B8  38 21 00 A0 */	addi r1, r1, 0xa0

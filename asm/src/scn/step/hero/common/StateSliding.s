@@ -7,7 +7,7 @@ TryToChangeState__Q53scn4step4hero6common12StateSlidingFPQ43scn4step4hero4Hero:
 /* 8036A334 00366174  7C 08 02 A6 */	mflr r0
 /* 8036A338 00366178  90 01 00 54 */	stw r0, 0x54(r1)
 /* 8036A33C 0036617C  39 61 00 50 */	addi r11, r1, 0x50
-/* 8036A340 00366180  4B C9 D0 05 */	bl lbl_80007344
+/* 8036A340 00366180  4B C9 D0 05 */	bl _savegpr_29
 /* 8036A344 00366184  7C 7D 1B 78 */	mr r29, r3
 /* 8036A348 00366188  4B FD 60 35 */	bl stateChecker__Q43scn4step4hero4HeroFv
 /* 8036A34C 0036618C  38 80 00 00 */	li r4, 0x0
@@ -82,7 +82,7 @@ lbl_8036A42C:
 .global lbl_8036A430
 lbl_8036A430:
 /* 8036A430 00366270  39 61 00 50 */	addi r11, r1, 0x50
-/* 8036A434 00366274  4B C9 CF 5D */	bl lbl_80007390
+/* 8036A434 00366274  4B C9 CF 5D */	bl _restgpr_29
 /* 8036A438 00366278  80 01 00 54 */	lwz r0, 0x54(r1)
 /* 8036A43C 0036627C  7C 08 03 A6 */	mtlr r0
 /* 8036A440 00366280  38 21 00 50 */	addi r1, r1, 0x50
@@ -166,7 +166,7 @@ procAnim__Q53scn4step4hero6common12StateSlidingFv:
 /* 8036A550 00366390  DB E1 00 30 */	stfd f31, 0x30(r1)
 /* 8036A554 00366394  F3 E1 00 38 */	psq_st f31, 0x38(r1), 0, qr0
 /* 8036A558 00366398  39 61 00 30 */	addi r11, r1, 0x30
-/* 8036A55C 0036639C  4B C9 CD E9 */	bl lbl_80007344
+/* 8036A55C 0036639C  4B C9 CD E9 */	bl _savegpr_29
 /* 8036A560 003663A0  7C 7D 1B 78 */	mr r29, r3
 /* 8036A564 003663A4  80 83 00 08 */	lwz r4, 0x8(r3)
 /* 8036A568 003663A8  38 04 00 01 */	addi r0, r4, 0x1
@@ -246,7 +246,7 @@ lbl_8036A674:
 /* 8036A678 003664B8  13 E1 00 0C */	psq_lx f31, r1, r0, 0, qr0
 /* 8036A67C 003664BC  CB E1 00 30 */	lfd f31, 0x30(r1)
 /* 8036A680 003664C0  39 61 00 30 */	addi r11, r1, 0x30
-/* 8036A684 003664C4  4B C9 CD 0D */	bl lbl_80007390
+/* 8036A684 003664C4  4B C9 CD 0D */	bl _restgpr_29
 /* 8036A688 003664C8  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 8036A68C 003664CC  7C 08 03 A6 */	mtlr r0
 /* 8036A690 003664D0  38 21 00 40 */	addi r1, r1, 0x40
@@ -317,7 +317,7 @@ procFixPos__Q53scn4step4hero6common12StateSlidingFv:
 /* 8036A764 003665A4  DB E1 00 60 */	stfd f31, 0x60(r1)
 /* 8036A768 003665A8  F3 E1 00 68 */	psq_st f31, 0x68(r1), 0, qr0
 /* 8036A76C 003665AC  39 61 00 60 */	addi r11, r1, 0x60
-/* 8036A770 003665B0  4B C9 CB D5 */	bl lbl_80007344
+/* 8036A770 003665B0  4B C9 CB D5 */	bl _savegpr_29
 /* 8036A774 003665B4  7C 7D 1B 78 */	mr r29, r3
 /* 8036A778 003665B8  4B D9 60 69 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 8036A77C 003665BC  4B FD 5B C1 */	bl mapColl__Q43scn4step4hero4HeroFv
@@ -417,7 +417,7 @@ lbl_8036A8B0:
 /* 8036A8B4 003666F4  13 E1 00 0C */	psq_lx f31, r1, r0, 0, qr0
 /* 8036A8B8 003666F8  CB E1 00 60 */	lfd f31, 0x60(r1)
 /* 8036A8BC 003666FC  39 61 00 60 */	addi r11, r1, 0x60
-/* 8036A8C0 00366700  4B C9 CA D1 */	bl lbl_80007390
+/* 8036A8C0 00366700  4B C9 CA D1 */	bl _restgpr_29
 /* 8036A8C4 00366704  80 01 00 74 */	lwz r0, 0x74(r1)
 /* 8036A8C8 00366708  7C 08 03 A6 */	mtlr r0
 /* 8036A8CC 0036670C  38 21 00 70 */	addi r1, r1, 0x70
@@ -429,7 +429,7 @@ procObjCollReact__Q53scn4step4hero6common12StateSlidingFv:
 /* 8036A8D8 00366718  7C 08 02 A6 */	mflr r0
 /* 8036A8DC 0036671C  90 01 00 24 */	stw r0, 0x24(r1)
 /* 8036A8E0 00366720  39 61 00 20 */	addi r11, r1, 0x20
-/* 8036A8E4 00366724  4B C9 CA 61 */	bl lbl_80007344
+/* 8036A8E4 00366724  4B C9 CA 61 */	bl _savegpr_29
 /* 8036A8E8 00366728  7C 7D 1B 78 */	mr r29, r3
 /* 8036A8EC 0036672C  4B D9 5E F5 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 8036A8F0 00366730  4B FD 5A 6D */	bl objColl__Q43scn4step4hero4HeroFv
@@ -471,7 +471,7 @@ lbl_8036A96C:
 .global lbl_8036A970
 lbl_8036A970:
 /* 8036A970 003667B0  39 61 00 20 */	addi r11, r1, 0x20
-/* 8036A974 003667B4  4B C9 CA 1D */	bl lbl_80007390
+/* 8036A974 003667B4  4B C9 CA 1D */	bl _restgpr_29
 /* 8036A978 003667B8  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8036A97C 003667BC  7C 08 03 A6 */	mtlr r0
 /* 8036A980 003667C0  38 21 00 20 */	addi r1, r1, 0x20

@@ -165,7 +165,7 @@ setGearParentBack__Q43scn4step4hero8WearBackFRQ43scn4step4hero4GearUlUl:
 /* 8035B734 00357574  7C 08 02 A6 */	mflr r0
 /* 8035B738 00357578  90 01 00 24 */	stw r0, 0x24(r1)
 /* 8035B73C 0035757C  39 61 00 20 */	addi r11, r1, 0x20
-/* 8035B740 00357580  4B CA BC 01 */	bl lbl_80007340
+/* 8035B740 00357580  4B CA BC 01 */	bl _savegpr_28
 /* 8035B744 00357584  7C 7C 1B 78 */	mr r28, r3
 /* 8035B748 00357588  7C 9D 23 78 */	mr r29, r4
 /* 8035B74C 0035758C  7C BE 2B 78 */	mr r30, r5
@@ -196,7 +196,7 @@ setGearParentBack__Q43scn4step4hero8WearBackFRQ43scn4step4hero4GearUlUl:
 .global lbl_8035B7B0
 lbl_8035B7B0:
 /* 8035B7B0 003575F0  39 61 00 20 */	addi r11, r1, 0x20
-/* 8035B7B4 003575F4  4B CA BB D9 */	bl lbl_8000738C
+/* 8035B7B4 003575F4  4B CA BB D9 */	bl _restgpr_28
 /* 8035B7B8 003575F8  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8035B7BC 003575FC  7C 08 03 A6 */	mtlr r0
 /* 8035B7C0 00357600  38 21 00 20 */	addi r1, r1, 0x20
@@ -207,7 +207,7 @@ unsetGearParentBack__Q43scn4step4hero8WearBackFRQ43scn4step4hero4Gear:
 /* 8035B7CC 0035760C  7C 08 02 A6 */	mflr r0
 /* 8035B7D0 00357610  90 01 00 24 */	stw r0, 0x24(r1)
 /* 8035B7D4 00357614  39 61 00 20 */	addi r11, r1, 0x20
-/* 8035B7D8 00357618  4B CA BB 6D */	bl lbl_80007344
+/* 8035B7D8 00357618  4B CA BB 6D */	bl _savegpr_29
 /* 8035B7DC 0035761C  7C 7D 1B 78 */	mr r29, r3
 /* 8035B7E0 00357620  7C 9E 23 78 */	mr r30, r4
 /* 8035B7E4 00357624  80 63 00 00 */	lwz r3, 0x0(r3)
@@ -236,7 +236,7 @@ unsetGearParentBack__Q43scn4step4hero8WearBackFRQ43scn4step4hero4Gear:
 .global lbl_8035B840
 lbl_8035B840:
 /* 8035B840 00357680  39 61 00 20 */	addi r11, r1, 0x20
-/* 8035B844 00357684  4B CA BB 4D */	bl lbl_80007390
+/* 8035B844 00357684  4B CA BB 4D */	bl _restgpr_29
 /* 8035B848 00357688  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8035B84C 0035768C  7C 08 03 A6 */	mtlr r0
 /* 8035B850 00357690  38 21 00 20 */	addi r1, r1, 0x20

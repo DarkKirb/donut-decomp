@@ -7,7 +7,7 @@ __ct__Q53scn4step4boss13watergalboros11CaptureCtrlFRQ43scn4step4boss4Boss:
 /* 80259638 00255478  7C 08 02 A6 */	mflr r0
 /* 8025963C 0025547C  90 01 00 24 */	stw r0, 0x24(r1)
 /* 80259640 00255480  39 61 00 20 */	addi r11, r1, 0x20
-/* 80259644 00255484  4B DA DD 01 */	bl lbl_80007344
+/* 80259644 00255484  4B DA DD 01 */	bl _savegpr_29
 /* 80259648 00255488  7C 7D 1B 78 */	mr r29, r3
 /* 8025964C 0025548C  7C 9E 23 78 */	mr r30, r4
 /* 80259650 00255490  90 83 00 00 */	stw r4, 0x0(r3)
@@ -23,7 +23,7 @@ __ct__Q53scn4step4boss13watergalboros11CaptureCtrlFRQ43scn4step4boss4Boss:
 /* 80259678 002554B8  48 0D 8C 91 */	bl __ct__Q43scn4step4hero19CaptureHeroAttackerFRQ33scn4step9ComponentRQ25ocoll9SearchHit
 /* 8025967C 002554BC  7F A3 EB 78 */	mr r3, r29
 /* 80259680 002554C0  39 61 00 20 */	addi r11, r1, 0x20
-/* 80259684 002554C4  4B DA DD 0D */	bl lbl_80007390
+/* 80259684 002554C4  4B DA DD 0D */	bl _restgpr_29
 /* 80259688 002554C8  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8025968C 002554CC  7C 08 03 A6 */	mtlr r0
 /* 80259690 002554D0  38 21 00 20 */	addi r1, r1, 0x20

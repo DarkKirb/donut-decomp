@@ -475,7 +475,7 @@ Bind__Q34nw4r3g3d7ResFileFQ34nw4r3g3d7ResFile:
 /* 800C9574 000C53B4  7C 08 02 A6 */	mflr r0
 /* 800C9578 000C53B8  90 01 00 64 */	stw r0, 0x64(r1)
 /* 800C957C 000C53BC  39 61 00 60 */	addi r11, r1, 0x60
-/* 800C9580 000C53C0  4B F3 DD B5 */	bl lbl_80007334
+/* 800C9580 000C53C0  4B F3 DD B5 */	bl _savegpr_25
 /* 800C9584 000C53C4  3C A0 80 44 */	lis r5, "ResNameData_Models__Q34nw4r3g3d25@unnamed@g3d_resfile_cpp@"@ha
 /* 800C9588 000C53C8  7C 9D 23 78 */	mr r29, r4
 /* 800C958C 000C53CC  38 A5 04 E0 */	addi r5, r5, "ResNameData_Models__Q34nw4r3g3d25@unnamed@g3d_resfile_cpp@"@l
@@ -645,7 +645,7 @@ lbl_800C9780:
 /* 800C9784 000C55C4  41 80 FF 74 */	blt lbl_800C96F8
 /* 800C9788 000C55C8  39 61 00 60 */	addi r11, r1, 0x60
 /* 800C978C 000C55CC  7F C3 F3 78 */	mr r3, r30
-/* 800C9790 000C55D0  4B F3 DB F1 */	bl lbl_80007380
+/* 800C9790 000C55D0  4B F3 DB F1 */	bl _restgpr_25
 /* 800C9794 000C55D4  80 01 00 64 */	lwz r0, 0x64(r1)
 /* 800C9798 000C55D8  7C 08 03 A6 */	mtlr r0
 /* 800C979C 000C55DC  38 21 00 60 */	addi r1, r1, 0x60
@@ -825,7 +825,7 @@ Init__Q34nw4r3g3d7ResFileFv:
 /* 800C99B4 000C57F4  7C 08 02 A6 */	mflr r0
 /* 800C99B8 000C57F8  90 01 00 64 */	stw r0, 0x64(r1)
 /* 800C99BC 000C57FC  39 61 00 60 */	addi r11, r1, 0x60
-/* 800C99C0 000C5800  4B F3 D9 7D */	bl lbl_8000733C
+/* 800C99C0 000C5800  4B F3 D9 7D */	bl _savegpr_27
 /* 800C99C4 000C5804  3F E0 80 44 */	lis r31, "ResNameData_Models__Q34nw4r3g3d25@unnamed@g3d_resfile_cpp@"@ha
 /* 800C99C8 000C5808  7C 7D 1B 78 */	mr r29, r3
 /* 800C99CC 000C580C  3B FF 04 E0 */	addi r31, r31, "ResNameData_Models__Q34nw4r3g3d25@unnamed@g3d_resfile_cpp@"@l
@@ -1047,7 +1047,7 @@ lbl_800C9C54:
 /* 800C9C54 000C5A94  7C 1E D8 40 */	cmplw r30, r27
 /* 800C9C58 000C5A98  41 80 FF 80 */	blt lbl_800C9BD8
 /* 800C9C5C 000C5A9C  39 61 00 60 */	addi r11, r1, 0x60
-/* 800C9C60 000C5AA0  4B F3 D7 29 */	bl lbl_80007388
+/* 800C9C60 000C5AA0  4B F3 D7 29 */	bl _restgpr_27
 /* 800C9C64 000C5AA4  80 01 00 64 */	lwz r0, 0x64(r1)
 /* 800C9C68 000C5AA8  7C 08 03 A6 */	mtlr r0
 /* 800C9C6C 000C5AAC  38 21 00 60 */	addi r1, r1, 0x60
@@ -1153,7 +1153,7 @@ CheckRevision__Q34nw4r3g3d7ResFileCFv:
 /* 800C9DA4 000C5BE4  7C 08 02 A6 */	mflr r0
 /* 800C9DA8 000C5BE8  90 01 00 D4 */	stw r0, 0xd4(r1)
 /* 800C9DAC 000C5BEC  39 61 00 D0 */	addi r11, r1, 0xd0
-/* 800C9DB0 000C5BF0  4B F3 D5 8D */	bl lbl_8000733C
+/* 800C9DB0 000C5BF0  4B F3 D5 8D */	bl _savegpr_27
 /* 800C9DB4 000C5BF4  80 83 00 00 */	lwz r4, 0x0(r3)
 /* 800C9DB8 000C5BF8  3F E0 80 44 */	lis r31, "ResNameData_Models__Q34nw4r3g3d25@unnamed@g3d_resfile_cpp@"@ha
 /* 800C9DBC 000C5BFC  3B FF 04 E0 */	addi r31, r31, "ResNameData_Models__Q34nw4r3g3d25@unnamed@g3d_resfile_cpp@"@l
@@ -1941,7 +1941,7 @@ lbl_800CA6C8:
 .global lbl_800CA6D4
 lbl_800CA6D4:
 /* 800CA6D4 000C6514  39 61 00 D0 */	addi r11, r1, 0xd0
-/* 800CA6D8 000C6518  4B F3 CC B1 */	bl lbl_80007388
+/* 800CA6D8 000C6518  4B F3 CC B1 */	bl _restgpr_27
 /* 800CA6DC 000C651C  80 01 00 D4 */	lwz r0, 0xd4(r1)
 /* 800CA6E0 000C6520  7C 08 03 A6 */	mtlr r0
 /* 800CA6E4 000C6524  38 21 00 D0 */	addi r1, r1, 0xd0

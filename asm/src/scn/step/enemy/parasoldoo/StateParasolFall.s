@@ -146,7 +146,7 @@ procMove__Q53scn4step5enemy10parasoldoo16StateParasolFallFv:
 /* 802CF130 002CAF70  7C 08 02 A6 */	mflr r0
 /* 802CF134 002CAF74  90 01 00 24 */	stw r0, 0x24(r1)
 /* 802CF138 002CAF78  39 61 00 20 */	addi r11, r1, 0x20
-/* 802CF13C 002CAF7C  4B D3 82 09 */	bl lbl_80007344
+/* 802CF13C 002CAF7C  4B D3 82 09 */	bl _savegpr_29
 /* 802CF140 002CAF80  7C 7D 1B 78 */	mr r29, r3
 /* 802CF144 002CAF84  4B E3 16 9D */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 802CF148 002CAF88  4B FB 8F 3D */	bl param__Q43scn4step5enemy5EnemyCFv
@@ -164,7 +164,7 @@ procMove__Q53scn4step5enemy10parasoldoo16StateParasolFallFv:
 /* 802CF178 002CAFB8  38 BE 00 04 */	addi r5, r30, 0x4
 /* 802CF17C 002CAFBC  4B EC C3 AD */	bl airDecelFall__Q24gobj4MoveFRCQ24gobj14MoveParamDecelRCQ24gobj13MoveParamFall
 /* 802CF180 002CAFC0  39 61 00 20 */	addi r11, r1, 0x20
-/* 802CF184 002CAFC4  4B D3 82 0D */	bl lbl_80007390
+/* 802CF184 002CAFC4  4B D3 82 0D */	bl _restgpr_29
 /* 802CF188 002CAFC8  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802CF18C 002CAFCC  7C 08 03 A6 */	mtlr r0
 /* 802CF190 002CAFD0  38 21 00 20 */	addi r1, r1, 0x20
@@ -176,7 +176,7 @@ procFixPos__Q53scn4step5enemy10parasoldoo16StateParasolFallFv:
 /* 802CF19C 002CAFDC  7C 08 02 A6 */	mflr r0
 /* 802CF1A0 002CAFE0  90 01 00 54 */	stw r0, 0x54(r1)
 /* 802CF1A4 002CAFE4  39 61 00 50 */	addi r11, r1, 0x50
-/* 802CF1A8 002CAFE8  4B D3 81 9D */	bl lbl_80007344
+/* 802CF1A8 002CAFE8  4B D3 81 9D */	bl _savegpr_29
 /* 802CF1AC 002CAFEC  7C 7F 1B 78 */	mr r31, r3
 /* 802CF1B0 002CAFF0  4B E3 16 31 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 802CF1B4 002CAFF4  4B FB 8F 49 */	bl mapColl__Q43scn4step5enemy5EnemyFv
@@ -232,7 +232,7 @@ lbl_802CF264:
 .global lbl_802CF26C
 lbl_802CF26C:
 /* 802CF26C 002CB0AC  39 61 00 50 */	addi r11, r1, 0x50
-/* 802CF270 002CB0B0  4B D3 81 21 */	bl lbl_80007390
+/* 802CF270 002CB0B0  4B D3 81 21 */	bl _restgpr_29
 /* 802CF274 002CB0B4  80 01 00 54 */	lwz r0, 0x54(r1)
 /* 802CF278 002CB0B8  7C 08 03 A6 */	mtlr r0
 /* 802CF27C 002CB0BC  38 21 00 50 */	addi r1, r1, 0x50

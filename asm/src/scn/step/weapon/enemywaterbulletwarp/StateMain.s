@@ -38,7 +38,7 @@ __ct__Q53scn4step6weapon15cutterfinalwave9StateMainFPQ43scn4step6weapon6Weapon:
 /* 803E37F0 003DF630  7C 08 02 A6 */	mflr r0
 /* 803E37F4 003DF634  90 01 00 54 */	stw r0, 0x54(r1)
 /* 803E37F8 003DF638  39 61 00 50 */	addi r11, r1, 0x50
-/* 803E37FC 003DF63C  4B C2 3B 45 */	bl lbl_80007340
+/* 803E37FC 003DF63C  4B C2 3B 45 */	bl _savegpr_28
 /* 803E3800 003DF640  7C 7C 1B 78 */	mr r28, r3
 /* 803E3804 003DF644  4B FF 51 3D */	bl __ct__Q43scn4step6weapon9StateBaseFPQ43scn4step6weapon6Weapon
 /* 803E3808 003DF648  3C 60 80 49 */	lis r3, __vt__Q53scn4step6weapon15cutterfinalwave9StateMain@ha
@@ -105,7 +105,7 @@ lbl_803E3870:
 /* 803E38EC 003DF72C  4B E8 A8 4D */	bl requestND__Q43scn4step5chara6EffectFQ43scn4step6effect4KindUlRCQ33hel4math10Direction3
 /* 803E38F0 003DF730  7F 83 E3 78 */	mr r3, r28
 /* 803E38F4 003DF734  39 61 00 50 */	addi r11, r1, 0x50
-/* 803E38F8 003DF738  4B C2 3A 95 */	bl lbl_8000738C
+/* 803E38F8 003DF738  4B C2 3A 95 */	bl _restgpr_28
 /* 803E38FC 003DF73C  80 01 00 54 */	lwz r0, 0x54(r1)
 /* 803E3900 003DF740  7C 08 03 A6 */	mtlr r0
 /* 803E3904 003DF744  38 21 00 50 */	addi r1, r1, 0x50

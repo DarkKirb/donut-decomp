@@ -169,7 +169,7 @@ reqScriptFly__Q53scn4step4boss15challengemaster8StateFlyFb:
 /* 802400AC 0023BEEC  7C 08 02 A6 */	mflr r0
 /* 802400B0 0023BEF0  90 01 00 24 */	stw r0, 0x24(r1)
 /* 802400B4 0023BEF4  39 61 00 20 */	addi r11, r1, 0x20
-/* 802400B8 0023BEF8  4B DC 72 89 */	bl lbl_80007340
+/* 802400B8 0023BEF8  4B DC 72 89 */	bl _savegpr_28
 /* 802400BC 0023BEFC  7C 7C 1B 78 */	mr r28, r3
 /* 802400C0 0023BF00  7C 9D 23 78 */	mr r29, r4
 /* 802400C4 0023BF04  4B EC 07 1D */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
@@ -257,7 +257,7 @@ lbl_802401D0:
 .global lbl_802401D4
 lbl_802401D4:
 /* 802401D4 0023C014  39 61 00 20 */	addi r11, r1, 0x20
-/* 802401D8 0023C018  4B DC 71 B5 */	bl lbl_8000738C
+/* 802401D8 0023C018  4B DC 71 B5 */	bl _restgpr_28
 /* 802401DC 0023C01C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802401E0 0023C020  7C 08 03 A6 */	mtlr r0
 /* 802401E4 0023C024  38 21 00 20 */	addi r1, r1, 0x20

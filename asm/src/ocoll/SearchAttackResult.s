@@ -27,7 +27,7 @@ add__Q25ocoll18SearchAttackResultFRCQ35ocoll18SearchAttackResult5Datum:
 /* 801D8CE8 001D4B28  7C 08 02 A6 */	mflr r0
 /* 801D8CEC 001D4B2C  90 01 00 24 */	stw r0, 0x24(r1)
 /* 801D8CF0 001D4B30  39 61 00 20 */	addi r11, r1, 0x20
-/* 801D8CF4 001D4B34  4B E2 E6 51 */	bl lbl_80007344
+/* 801D8CF4 001D4B34  4B E2 E6 51 */	bl _savegpr_29
 /* 801D8CF8 001D4B38  7C 7D 1B 78 */	mr r29, r3
 /* 801D8CFC 001D4B3C  7C 9E 23 78 */	mr r30, r4
 /* 801D8D00 001D4B40  80 03 00 00 */	lwz r0, 0x0(r3)
@@ -59,7 +59,7 @@ add__Q25ocoll18SearchAttackResultFRCQ35ocoll18SearchAttackResult5Datum:
 .global lbl_801D8D68
 lbl_801D8D68:
 /* 801D8D68 001D4BA8  39 61 00 20 */	addi r11, r1, 0x20
-/* 801D8D6C 001D4BAC  4B E2 E6 25 */	bl lbl_80007390
+/* 801D8D6C 001D4BAC  4B E2 E6 25 */	bl _restgpr_29
 /* 801D8D70 001D4BB0  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 801D8D74 001D4BB4  7C 08 03 A6 */	mtlr r0
 /* 801D8D78 001D4BB8  38 21 00 20 */	addi r1, r1, 0x20

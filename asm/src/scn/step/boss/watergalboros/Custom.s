@@ -90,7 +90,7 @@ onInit__Q53scn4step4boss13watergalboros6CustomFv:
 /* 802599C0 00255800  7C 08 02 A6 */	mflr r0
 /* 802599C4 00255804  90 01 00 54 */	stw r0, 0x54(r1)
 /* 802599C8 00255808  39 61 00 50 */	addi r11, r1, 0x50
-/* 802599CC 0025580C  4B DA D9 71 */	bl lbl_8000733C
+/* 802599CC 0025580C  4B DA D9 71 */	bl _savegpr_27
 /* 802599D0 00255810  7C 7F 1B 78 */	mr r31, r3
 /* 802599D4 00255814  3C 80 80 47 */	lis r4, "@56473_80469438"@ha
 /* 802599D8 00255818  3B 64 94 38 */	addi r27, r4, "@56473_80469438"@l
@@ -271,7 +271,7 @@ lbl_80259B88:
 lbl_80259C68:
 /* 80259C68 00255AA8  93 7F 00 0C */	stw r27, 0xc(r31)
 /* 80259C6C 00255AAC  39 61 00 50 */	addi r11, r1, 0x50
-/* 80259C70 00255AB0  4B DA D7 19 */	bl lbl_80007388
+/* 80259C70 00255AB0  4B DA D7 19 */	bl _restgpr_27
 /* 80259C74 00255AB4  80 01 00 54 */	lwz r0, 0x54(r1)
 /* 80259C78 00255AB8  7C 08 03 A6 */	mtlr r0
 /* 80259C7C 00255ABC  38 21 00 50 */	addi r1, r1, 0x50
@@ -295,7 +295,7 @@ onDead__Q53scn4step4boss13watergalboros6CustomFv:
 /* 80259C94 00255AD4  7C 08 02 A6 */	mflr r0
 /* 80259C98 00255AD8  90 01 00 24 */	stw r0, 0x24(r1)
 /* 80259C9C 00255ADC  39 61 00 20 */	addi r11, r1, 0x20
-/* 80259CA0 00255AE0  4B DA D6 A5 */	bl lbl_80007344
+/* 80259CA0 00255AE0  4B DA D6 A5 */	bl _savegpr_29
 /* 80259CA4 00255AE4  7C 7D 1B 78 */	mr r29, r3
 /* 80259CA8 00255AE8  38 63 00 88 */	addi r3, r3, 0x88
 /* 80259CAC 00255AEC  4B FF FB 41 */	bl vomit__Q53scn4step4boss13watergalboros11CaptureCtrlFv
@@ -335,7 +335,7 @@ onDead__Q53scn4step4boss13watergalboros6CustomFv:
 lbl_80259D30:
 /* 80259D30 00255B70  93 BF 00 0C */	stw r29, 0xc(r31)
 /* 80259D34 00255B74  39 61 00 20 */	addi r11, r1, 0x20
-/* 80259D38 00255B78  4B DA D6 59 */	bl lbl_80007390
+/* 80259D38 00255B78  4B DA D6 59 */	bl _restgpr_29
 /* 80259D3C 00255B7C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80259D40 00255B80  7C 08 03 A6 */	mtlr r0
 /* 80259D44 00255B84  38 21 00 20 */	addi r1, r1, 0x20

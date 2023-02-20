@@ -89,7 +89,7 @@ ChangeStateWaitOrFall__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Hero:
 /* 803562C8 00352108  7C 08 02 A6 */	mflr r0
 /* 803562CC 0035210C  90 01 00 24 */	stw r0, 0x24(r1)
 /* 803562D0 00352110  39 61 00 20 */	addi r11, r1, 0x20
-/* 803562D4 00352114  4B CB 10 71 */	bl lbl_80007344
+/* 803562D4 00352114  4B CB 10 71 */	bl _savegpr_29
 /* 803562D8 00352118  7C 7D 1B 78 */	mr r29, r3
 /* 803562DC 0035211C  4B FE A1 29 */	bl water__Q43scn4step4hero4HeroFv
 /* 803562E0 00352120  4B E8 43 51 */	bl isEnable__Q25pause11ButtonPanelCFv
@@ -172,7 +172,7 @@ lbl_803563D4:
 .global lbl_803563E4
 lbl_803563E4:
 /* 803563E4 00352224  39 61 00 20 */	addi r11, r1, 0x20
-/* 803563E8 00352228  4B CB 0F A9 */	bl lbl_80007390
+/* 803563E8 00352228  4B CB 0F A9 */	bl _restgpr_29
 /* 803563EC 0035222C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803563F0 00352230  7C 08 03 A6 */	mtlr r0
 /* 803563F4 00352234  38 21 00 20 */	addi r1, r1, 0x20
@@ -183,7 +183,7 @@ lbl_803563E4:
 /* 80356400 00352240  7C 08 02 A6 */	mflr r0
 /* 80356404 00352244  90 01 00 24 */	stw r0, 0x24(r1)
 /* 80356408 00352248  39 61 00 20 */	addi r11, r1, 0x20
-/* 8035640C 0035224C  4B CB 0F 39 */	bl lbl_80007344
+/* 8035640C 0035224C  4B CB 0F 39 */	bl _savegpr_29
 /* 80356410 00352250  7C 7D 1B 78 */	mr r29, r3
 /* 80356414 00352254  7C 9E 23 78 */	mr r30, r4
 /* 80356418 00352258  48 0A FA E9 */	bl onSetNextStateFactory__Q24util16StateChangerBaseFv
@@ -201,7 +201,7 @@ lbl_803563E4:
 lbl_80356444:
 /* 80356444 00352284  93 FD 00 0C */	stw r31, 0xc(r29)
 /* 80356448 00352288  39 61 00 20 */	addi r11, r1, 0x20
-/* 8035644C 0035228C  4B CB 0F 45 */	bl lbl_80007390
+/* 8035644C 0035228C  4B CB 0F 45 */	bl _restgpr_29
 /* 80356450 00352290  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80356454 00352294  7C 08 03 A6 */	mtlr r0
 /* 80356458 00352298  38 21 00 20 */	addi r1, r1, 0x20
@@ -289,7 +289,7 @@ MoveDefaultBrakeInWater__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Hero:
 /* 80356550 00352390  7C 08 02 A6 */	mflr r0
 /* 80356554 00352394  90 01 00 24 */	stw r0, 0x24(r1)
 /* 80356558 00352398  39 61 00 20 */	addi r11, r1, 0x20
-/* 8035655C 0035239C  4B CB 0D E9 */	bl lbl_80007344
+/* 8035655C 0035239C  4B CB 0D E9 */	bl _savegpr_29
 /* 80356560 003523A0  7C 7D 1B 78 */	mr r29, r3
 /* 80356564 003523A4  4B FE 9D 99 */	bl footState__Q43scn4step4hero4HeroFv
 /* 80356568 003523A8  4B E2 B1 6D */	bl dataType__Q36effect6detail10GenContextCFv
@@ -322,7 +322,7 @@ lbl_80356598:
 .global lbl_803565CC
 lbl_803565CC:
 /* 803565CC 0035240C  39 61 00 20 */	addi r11, r1, 0x20
-/* 803565D0 00352410  4B CB 0D C1 */	bl lbl_80007390
+/* 803565D0 00352410  4B CB 0D C1 */	bl _restgpr_29
 /* 803565D4 00352414  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803565D8 00352418  7C 08 03 A6 */	mtlr r0
 /* 803565DC 0035241C  38 21 00 20 */	addi r1, r1, 0x20
@@ -333,7 +333,7 @@ MoveDefaultBrakeOutWater__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Herob:
 /* 803565E8 00352428  7C 08 02 A6 */	mflr r0
 /* 803565EC 0035242C  90 01 00 54 */	stw r0, 0x54(r1)
 /* 803565F0 00352430  39 61 00 50 */	addi r11, r1, 0x50
-/* 803565F4 00352434  4B CB 0D 51 */	bl lbl_80007344
+/* 803565F4 00352434  4B CB 0D 51 */	bl _savegpr_29
 /* 803565F8 00352438  7C 7D 1B 78 */	mr r29, r3
 /* 803565FC 0035243C  7C 9F 23 78 */	mr r31, r4
 /* 80356600 00352440  4B FE 9C FD */	bl footState__Q43scn4step4hero4HeroFv
@@ -404,7 +404,7 @@ lbl_803566B8:
 .global lbl_803566EC
 lbl_803566EC:
 /* 803566EC 0035252C  39 61 00 50 */	addi r11, r1, 0x50
-/* 803566F0 00352530  4B CB 0C A1 */	bl lbl_80007390
+/* 803566F0 00352530  4B CB 0C A1 */	bl _restgpr_29
 /* 803566F4 00352534  80 01 00 54 */	lwz r0, 0x54(r1)
 /* 803566F8 00352538  7C 08 03 A6 */	mtlr r0
 /* 803566FC 0035253C  38 21 00 50 */	addi r1, r1, 0x50
@@ -457,7 +457,7 @@ MoveDefaultAccelInWater__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Hero:
 /* 80356780 003525C0  7C 08 02 A6 */	mflr r0
 /* 80356784 003525C4  90 01 00 24 */	stw r0, 0x24(r1)
 /* 80356788 003525C8  39 61 00 20 */	addi r11, r1, 0x20
-/* 8035678C 003525CC  4B CB 0B B5 */	bl lbl_80007340
+/* 8035678C 003525CC  4B CB 0B B5 */	bl _savegpr_28
 /* 80356790 003525D0  7C 7C 1B 78 */	mr r28, r3
 /* 80356794 003525D4  4B FE 9B 69 */	bl footState__Q43scn4step4hero4HeroFv
 /* 80356798 003525D8  4B E2 AF 3D */	bl dataType__Q36effect6detail10GenContextCFv
@@ -500,7 +500,7 @@ lbl_803567DC:
 .global lbl_80356824
 lbl_80356824:
 /* 80356824 00352664  39 61 00 20 */	addi r11, r1, 0x20
-/* 80356828 00352668  4B CB 0B 65 */	bl lbl_8000738C
+/* 80356828 00352668  4B CB 0B 65 */	bl _restgpr_28
 /* 8035682C 0035266C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80356830 00352670  7C 08 03 A6 */	mtlr r0
 /* 80356834 00352674  38 21 00 20 */	addi r1, r1, 0x20
@@ -511,7 +511,7 @@ MoveDefaultAccelOutWater__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Herob:
 /* 80356840 00352680  7C 08 02 A6 */	mflr r0
 /* 80356844 00352684  90 01 00 54 */	stw r0, 0x54(r1)
 /* 80356848 00352688  39 61 00 50 */	addi r11, r1, 0x50
-/* 8035684C 0035268C  4B CB 0A F5 */	bl lbl_80007340
+/* 8035684C 0035268C  4B CB 0A F5 */	bl _savegpr_28
 /* 80356850 00352690  7C 7C 1B 78 */	mr r28, r3
 /* 80356854 00352694  7C 9E 23 78 */	mr r30, r4
 /* 80356858 00352698  4B FE 9A A5 */	bl footState__Q43scn4step4hero4HeroFv
@@ -639,7 +639,7 @@ lbl_803569C0:
 .global lbl_803569F8
 lbl_803569F8:
 /* 803569F8 00352838  39 61 00 50 */	addi r11, r1, 0x50
-/* 803569FC 0035283C  4B CB 09 91 */	bl lbl_8000738C
+/* 803569FC 0035283C  4B CB 09 91 */	bl _restgpr_28
 /* 80356A00 00352840  80 01 00 54 */	lwz r0, 0x54(r1)
 /* 80356A04 00352844  7C 08 03 A6 */	mtlr r0
 /* 80356A08 00352848  38 21 00 50 */	addi r1, r1, 0x50
@@ -932,7 +932,7 @@ MoveFromKeyState__Q43scn4step4hero7UtilityFRQ43scn4step4hero4HeroRCQ24gobj14Move
 /* 80356DB4 00352BF4  7C 08 02 A6 */	mflr r0
 /* 80356DB8 00352BF8  90 01 00 24 */	stw r0, 0x24(r1)
 /* 80356DBC 00352BFC  39 61 00 20 */	addi r11, r1, 0x20
-/* 80356DC0 00352C00  4B CB 05 81 */	bl lbl_80007340
+/* 80356DC0 00352C00  4B CB 05 81 */	bl _savegpr_28
 /* 80356DC4 00352C04  7C 7C 1B 78 */	mr r28, r3
 /* 80356DC8 00352C08  7C 9D 23 78 */	mr r29, r4
 /* 80356DCC 00352C0C  7C BF 2B 78 */	mr r31, r5
@@ -992,7 +992,7 @@ lbl_80356E78:
 .global lbl_80356E8C
 lbl_80356E8C:
 /* 80356E8C 00352CCC  39 61 00 20 */	addi r11, r1, 0x20
-/* 80356E90 00352CD0  4B CB 04 FD */	bl lbl_8000738C
+/* 80356E90 00352CD0  4B CB 04 FD */	bl _restgpr_28
 /* 80356E94 00352CD4  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80356E98 00352CD8  7C 08 03 A6 */	mtlr r0
 /* 80356E9C 00352CDC  38 21 00 20 */	addi r1, r1, 0x20
@@ -1273,7 +1273,7 @@ CreateAirBall__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Herob:
 /* 80357268 003530A8  DB A1 00 A0 */	stfd f29, 0xa0(r1)
 /* 8035726C 003530AC  F3 A1 00 A8 */	psq_st f29, 0xa8(r1), 0, qr0
 /* 80357270 003530B0  39 61 00 A0 */	addi r11, r1, 0xa0
-/* 80357274 003530B4  4B CB 00 D1 */	bl lbl_80007344
+/* 80357274 003530B4  4B CB 00 D1 */	bl _savegpr_29
 /* 80357278 003530B8  7C 7D 1B 78 */	mr r29, r3
 /* 8035727C 003530BC  7C 9E 23 78 */	mr r30, r4
 /* 80357280 003530C0  4B FE 91 85 */	bl water__Q43scn4step4hero4HeroFv
@@ -1410,7 +1410,7 @@ lbl_80357428:
 /* 80357444 00353284  13 A1 00 0C */	psq_lx f29, r1, r0, 0, qr0
 /* 80357448 00353288  CB A1 00 A0 */	lfd f29, 0xa0(r1)
 /* 8035744C 0035328C  39 61 00 A0 */	addi r11, r1, 0xa0
-/* 80357450 00353290  4B CA FF 41 */	bl lbl_80007390
+/* 80357450 00353290  4B CA FF 41 */	bl _restgpr_29
 /* 80357454 00353294  80 01 00 D4 */	lwz r0, 0xd4(r1)
 /* 80357458 00353298  7C 08 03 A6 */	mtlr r0
 /* 8035745C 0035329C  38 21 00 D0 */	addi r1, r1, 0xd0
@@ -1427,7 +1427,7 @@ CreateWaterPistol__Q43scn4step4hero7UtilityFRQ43scn4step4hero4HeroRCQ33hel4math7
 /* 80357480 003532C0  DB A1 00 C0 */	stfd f29, 0xc0(r1)
 /* 80357484 003532C4  F3 A1 00 C8 */	psq_st f29, 0xc8(r1), 0, qr0
 /* 80357488 003532C8  39 61 00 C0 */	addi r11, r1, 0xc0
-/* 8035748C 003532CC  4B CA FE A9 */	bl lbl_80007334
+/* 8035748C 003532CC  4B CA FE A9 */	bl _savegpr_25
 /* 80357490 003532D0  7C 79 1B 78 */	mr r25, r3
 /* 80357494 003532D4  7C 9B 23 78 */	mr r27, r4
 /* 80357498 003532D8  7C BA 2B 78 */	mr r26, r5
@@ -1573,7 +1573,7 @@ lbl_80357664:
 /* 80357688 003534C8  13 A1 00 0C */	psq_lx f29, r1, r0, 0, qr0
 /* 8035768C 003534CC  CB A1 00 C0 */	lfd f29, 0xc0(r1)
 /* 80357690 003534D0  39 61 00 C0 */	addi r11, r1, 0xc0
-/* 80357694 003534D4  4B CA FC ED */	bl lbl_80007380
+/* 80357694 003534D4  4B CA FC ED */	bl _restgpr_25
 /* 80357698 003534D8  80 01 00 F4 */	lwz r0, 0xf4(r1)
 /* 8035769C 003534DC  7C 08 03 A6 */	mtlr r0
 /* 803576A0 003534E0  38 21 00 F0 */	addi r1, r1, 0xf0
@@ -1586,7 +1586,7 @@ CreateStarShot__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Hero:
 /* 803576B4 003534F4  DB E1 00 A0 */	stfd f31, 0xa0(r1)
 /* 803576B8 003534F8  F3 E1 00 A8 */	psq_st f31, 0xa8(r1), 0, qr0
 /* 803576BC 003534FC  39 61 00 A0 */	addi r11, r1, 0xa0
-/* 803576C0 00353500  4B CA FC 79 */	bl lbl_80007338
+/* 803576C0 00353500  4B CA FC 79 */	bl _savegpr_26
 /* 803576C4 00353504  7C 7A 1B 78 */	mr r26, r3
 /* 803576C8 00353508  7C 9B 23 78 */	mr r27, r4
 /* 803576CC 0035350C  7F 63 DB 78 */	mr r3, r27
@@ -1863,7 +1863,7 @@ lbl_80357950:
 /* 80357A30 00353870  13 E1 00 0C */	psq_lx f31, r1, r0, 0, qr0
 /* 80357A34 00353874  CB E1 00 A0 */	lfd f31, 0xa0(r1)
 /* 80357A38 00353878  39 61 00 A0 */	addi r11, r1, 0xa0
-/* 80357A3C 0035387C  4B CA F9 49 */	bl lbl_80007384
+/* 80357A3C 0035387C  4B CA F9 49 */	bl _restgpr_26
 /* 80357A40 00353880  80 01 00 B4 */	lwz r0, 0xb4(r1)
 /* 80357A44 00353884  7C 08 03 A6 */	mtlr r0
 /* 80357A48 00353888  38 21 00 B0 */	addi r1, r1, 0xb0
@@ -1874,7 +1874,7 @@ Vomit__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Herob:
 /* 80357A54 00353894  7C 08 02 A6 */	mflr r0
 /* 80357A58 00353898  90 01 00 54 */	stw r0, 0x54(r1)
 /* 80357A5C 0035389C  39 61 00 50 */	addi r11, r1, 0x50
-/* 80357A60 003538A0  4B CA F8 E5 */	bl lbl_80007344
+/* 80357A60 003538A0  4B CA F8 E5 */	bl _savegpr_29
 /* 80357A64 003538A4  7C 7D 1B 78 */	mr r29, r3
 /* 80357A68 003538A8  7C 9E 23 78 */	mr r30, r4
 /* 80357A6C 003538AC  4B FE 89 01 */	bl vacuumAttacker__Q43scn4step4hero4HeroFv
@@ -2001,7 +2001,7 @@ lbl_80357BE4:
 .global lbl_80357C08
 lbl_80357C08:
 /* 80357C08 00353A48  39 61 00 50 */	addi r11, r1, 0x50
-/* 80357C0C 00353A4C  4B CA F7 85 */	bl lbl_80007390
+/* 80357C0C 00353A4C  4B CA F7 85 */	bl _restgpr_29
 /* 80357C10 00353A50  80 01 00 54 */	lwz r0, 0x54(r1)
 /* 80357C14 00353A54  7C 08 03 A6 */	mtlr r0
 /* 80357C18 00353A58  38 21 00 50 */	addi r1, r1, 0x50
@@ -2315,7 +2315,7 @@ CreateEffectLocator__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Hero:
 /* 80358028 00353E68  7C 08 02 A6 */	mflr r0
 /* 8035802C 00353E6C  90 01 00 74 */	stw r0, 0x74(r1)
 /* 80358030 00353E70  39 61 00 70 */	addi r11, r1, 0x70
-/* 80358034 00353E74  4B CA F3 11 */	bl lbl_80007344
+/* 80358034 00353E74  4B CA F3 11 */	bl _savegpr_29
 /* 80358038 00353E78  7C 7D 1B 78 */	mr r29, r3
 /* 8035803C 00353E7C  7C 9E 23 78 */	mr r30, r4
 /* 80358040 00353E80  7F C3 F3 78 */	mr r3, r30
@@ -2347,7 +2347,7 @@ CreateEffectLocator__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Hero:
 /* 803580A8 00353EE8  38 A1 00 20 */	addi r5, r1, 0x20
 /* 803580AC 00353EEC  48 07 E9 D9 */	bl request__Q43scn4step6weapon7ManagerFRCQ43scn4step6weapon4Desc
 /* 803580B0 00353EF0  39 61 00 70 */	addi r11, r1, 0x70
-/* 803580B4 00353EF4  4B CA F2 DD */	bl lbl_80007390
+/* 803580B4 00353EF4  4B CA F2 DD */	bl _restgpr_29
 /* 803580B8 00353EF8  80 01 00 74 */	lwz r0, 0x74(r1)
 /* 803580BC 00353EFC  7C 08 03 A6 */	mtlr r0
 /* 803580C0 00353F00  38 21 00 70 */	addi r1, r1, 0x70
@@ -2430,7 +2430,7 @@ IsSearchCollideNoStarEffect__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Hero:
 /* 803581B4 00353FF4  7C 08 02 A6 */	mflr r0
 /* 803581B8 00353FF8  90 01 00 44 */	stw r0, 0x44(r1)
 /* 803581BC 00353FFC  39 61 00 40 */	addi r11, r1, 0x40
-/* 803581C0 00354000  4B CA F1 79 */	bl lbl_80007338
+/* 803581C0 00354000  4B CA F1 79 */	bl _savegpr_26
 /* 803581C4 00354004  7C 7A 1B 78 */	mr r26, r3
 /* 803581C8 00354008  4B FE 81 95 */	bl objColl__Q43scn4step4hero4HeroFv
 /* 803581CC 0035400C  38 63 00 08 */	addi r3, r3, 0x8
@@ -2519,7 +2519,7 @@ lbl_803582C4:
 .global lbl_803582D8
 lbl_803582D8:
 /* 803582D8 00354118  39 61 00 40 */	addi r11, r1, 0x40
-/* 803582DC 0035411C  4B CA F0 A9 */	bl lbl_80007384
+/* 803582DC 0035411C  4B CA F0 A9 */	bl _restgpr_26
 /* 803582E0 00354120  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 803582E4 00354124  7C 08 03 A6 */	mtlr r0
 /* 803582E8 00354128  38 21 00 40 */	addi r1, r1, 0x40
@@ -2737,7 +2737,7 @@ CanBoundByCheapAttack__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Hero:
 /* 803585C8 00354408  DB E1 00 40 */	stfd f31, 0x40(r1)
 /* 803585CC 0035440C  F3 E1 00 48 */	psq_st f31, 0x48(r1), 0, qr0
 /* 803585D0 00354410  39 61 00 40 */	addi r11, r1, 0x40
-/* 803585D4 00354414  4B CA ED 71 */	bl lbl_80007344
+/* 803585D4 00354414  4B CA ED 71 */	bl _savegpr_29
 /* 803585D8 00354418  7C 7D 1B 78 */	mr r29, r3
 /* 803585DC 0035441C  4B FE 7D 81 */	bl objColl__Q43scn4step4hero4HeroFv
 /* 803585E0 00354420  38 63 00 08 */	addi r3, r3, 0x8
@@ -2806,7 +2806,7 @@ lbl_803586C0:
 /* 803586C4 00354504  13 E1 00 0C */	psq_lx f31, r1, r0, 0, qr0
 /* 803586C8 00354508  CB E1 00 40 */	lfd f31, 0x40(r1)
 /* 803586CC 0035450C  39 61 00 40 */	addi r11, r1, 0x40
-/* 803586D0 00354510  4B CA EC C1 */	bl lbl_80007390
+/* 803586D0 00354510  4B CA EC C1 */	bl _restgpr_29
 /* 803586D4 00354514  80 01 00 54 */	lwz r0, 0x54(r1)
 /* 803586D8 00354518  7C 08 03 A6 */	mtlr r0
 /* 803586DC 0035451C  38 21 00 50 */	addi r1, r1, 0x50

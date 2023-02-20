@@ -258,7 +258,7 @@ setupLandManager__Q43scn4step3map12DataAccessorCFRQ25mcoll11LandManager:
 /* 803C93B8 003C51F8  7C 08 02 A6 */	mflr r0
 /* 803C93BC 003C51FC  90 01 02 C4 */	stw r0, 0x2c4(r1)
 /* 803C93C0 003C5200  39 61 02 C0 */	addi r11, r1, 0x2c0
-/* 803C93C4 003C5204  4B C3 DF 6D */	bl lbl_80007330
+/* 803C93C4 003C5204  4B C3 DF 6D */	bl _savegpr_24
 /* 803C93C8 003C5208  7C 7A 1B 78 */	mr r26, r3
 /* 803C93CC 003C520C  7C 9B 23 78 */	mr r27, r4
 /* 803C93D0 003C5210  38 81 01 84 */	addi r4, r1, 0x184
@@ -340,7 +340,7 @@ lbl_803C94CC:
 /* 803C94E8 003C5328  38 81 01 88 */	addi r4, r1, 0x188
 /* 803C94EC 003C532C  4B DF 06 3D */	bl initialize__Q35mcoll6detail7LandSetFRCQ35mcoll6detail11LandSetDesc
 /* 803C94F0 003C5330  39 61 02 C0 */	addi r11, r1, 0x2c0
-/* 803C94F4 003C5334  4B C3 DE 89 */	bl lbl_8000737C
+/* 803C94F4 003C5334  4B C3 DE 89 */	bl _restgpr_24
 /* 803C94F8 003C5338  80 01 02 C4 */	lwz r0, 0x2c4(r1)
 /* 803C94FC 003C533C  7C 08 03 A6 */	mtlr r0
 /* 803C9500 003C5340  38 21 02 C0 */	addi r1, r1, 0x2c0

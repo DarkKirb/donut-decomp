@@ -7,7 +7,7 @@ Setup__Q44nw4r3snd6detail14StrmBufferPoolFPvUli:
 /* 801153E4 00111224  7C 08 02 A6 */	mflr r0
 /* 801153E8 00111228  90 01 00 24 */	stw r0, 0x24(r1)
 /* 801153EC 0011122C  39 61 00 20 */	addi r11, r1, 0x20
-/* 801153F0 00111230  4B EF 1F 4D */	bl lbl_8000733C
+/* 801153F0 00111230  4B EF 1F 4D */	bl _savegpr_27
 /* 801153F4 00111234  2C 06 00 00 */	cmpwi r6, 0x0
 /* 801153F8 00111238  7C 7B 1B 78 */	mr r27, r3
 /* 801153FC 0011123C  7C 9C 23 78 */	mr r28, r4
@@ -32,7 +32,7 @@ Setup__Q44nw4r3snd6detail14StrmBufferPoolFPvUli:
 .global lbl_80115448
 lbl_80115448:
 /* 80115448 00111288  39 61 00 20 */	addi r11, r1, 0x20
-/* 8011544C 0011128C  4B EF 1F 3D */	bl lbl_80007388
+/* 8011544C 0011128C  4B EF 1F 3D */	bl _restgpr_27
 /* 80115450 00111290  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80115454 00111294  7C 08 03 A6 */	mtlr r0
 /* 80115458 00111298  38 21 00 20 */	addi r1, r1, 0x20

@@ -19,7 +19,7 @@ __ct__Q53scn4step4boss6dubior20StateMoveToOtherSideFPQ43scn4step4boss4Boss:
 /* 8024FD70 0024BBB0  DB 41 00 A0 */	stfd f26, 0xa0(r1)
 /* 8024FD74 0024BBB4  F3 41 00 A8 */	psq_st f26, 0xa8(r1), 0, qr0
 /* 8024FD78 0024BBB8  39 61 00 A0 */	addi r11, r1, 0xa0
-/* 8024FD7C 0024BBBC  4B DB 75 BD */	bl lbl_80007338
+/* 8024FD7C 0024BBBC  4B DB 75 BD */	bl _savegpr_26
 /* 8024FD80 0024BBC0  7C 7A 1B 78 */	mr r26, r3
 /* 8024FD84 0024BBC4  4B FE 47 5D */	bl __ct__Q43scn4step4boss9StateBaseFPQ43scn4step4boss4Boss
 /* 8024FD88 0024BBC8  3C 60 80 46 */	lis r3, __vt__Q53scn4step4boss6dubior20StateMoveToOtherSide@ha
@@ -229,7 +229,7 @@ lbl_8024FFD0:
 /* 80250078 0024BEB8  13 41 00 0C */	psq_lx f26, r1, r0, 0, qr0
 /* 8025007C 0024BEBC  CB 41 00 A0 */	lfd f26, 0xa0(r1)
 /* 80250080 0024BEC0  39 61 00 A0 */	addi r11, r1, 0xa0
-/* 80250084 0024BEC4  4B DB 73 01 */	bl lbl_80007384
+/* 80250084 0024BEC4  4B DB 73 01 */	bl _restgpr_26
 /* 80250088 0024BEC8  80 01 01 04 */	lwz r0, 0x104(r1)
 /* 8025008C 0024BECC  7C 08 03 A6 */	mtlr r0
 /* 80250090 0024BED0  38 21 01 00 */	addi r1, r1, 0x100

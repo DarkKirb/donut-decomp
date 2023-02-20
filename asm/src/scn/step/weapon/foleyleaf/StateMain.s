@@ -86,7 +86,7 @@ procMove__Q53scn4step6weapon9foleyleaf9StateMainFv:
 /* 803E8700 003E4540  7C 08 02 A6 */	mflr r0
 /* 803E8704 003E4544  90 01 00 34 */	stw r0, 0x34(r1)
 /* 803E8708 003E4548  39 61 00 30 */	addi r11, r1, 0x30
-/* 803E870C 003E454C  4B C1 EC 39 */	bl lbl_80007344
+/* 803E870C 003E454C  4B C1 EC 39 */	bl _savegpr_29
 /* 803E8710 003E4550  7C 7D 1B 78 */	mr r29, r3
 /* 803E8714 003E4554  4B D1 80 CD */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 803E8718 003E4558  4B C4 E4 49 */	bl GXGetTexObjUserData
@@ -107,7 +107,7 @@ procMove__Q53scn4step6weapon9foleyleaf9StateMainFv:
 /* 803E8754 003E4594  38 C1 00 08 */	addi r6, r1, 0x8
 /* 803E8758 003E4598  4B DB 2D 85 */	bl airAccelFall__Q24gobj4MoveFbRCQ24gobj14MoveParamAccelRCQ24gobj13MoveParamFall
 /* 803E875C 003E459C  39 61 00 30 */	addi r11, r1, 0x30
-/* 803E8760 003E45A0  4B C1 EC 31 */	bl lbl_80007390
+/* 803E8760 003E45A0  4B C1 EC 31 */	bl _restgpr_29
 /* 803E8764 003E45A4  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 803E8768 003E45A8  7C 08 03 A6 */	mtlr r0
 /* 803E876C 003E45AC  38 21 00 30 */	addi r1, r1, 0x30

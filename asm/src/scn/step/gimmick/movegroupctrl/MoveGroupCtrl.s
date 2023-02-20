@@ -44,7 +44,7 @@ __ct__Q53scn4step7gimmick13movegroupctrl13MoveGroupCtrlFUlRQ33scn4step9Component
 /* 80317650 00313490  7C 08 02 A6 */	mflr r0
 /* 80317654 00313494  90 01 00 34 */	stw r0, 0x34(r1)
 /* 80317658 00313498  39 61 00 30 */	addi r11, r1, 0x30
-/* 8031765C 0031349C  4B CE FC E9 */	bl lbl_80007344
+/* 8031765C 0031349C  4B CE FC E9 */	bl _savegpr_29
 /* 80317660 003134A0  7C 7D 1B 78 */	mr r29, r3
 /* 80317664 003134A4  7C BE 2B 78 */	mr r30, r5
 /* 80317668 003134A8  4B FE 05 B1 */	bl __ct__Q43scn4step7gimmick14SwitchReceiverFUlRQ33scn4step9ComponentRQ43scn4step7gimmick21SwitchReceiverManagerb
@@ -105,7 +105,7 @@ lbl_80317720:
 /* 8031773C 0031357C  4B FD FD A1 */	bl add__Q43scn4step7gimmick4StopFRQ23snd11SERequestor
 /* 80317740 00313580  7F A3 EB 78 */	mr r3, r29
 /* 80317744 00313584  39 61 00 30 */	addi r11, r1, 0x30
-/* 80317748 00313588  4B CE FC 49 */	bl lbl_80007390
+/* 80317748 00313588  4B CE FC 49 */	bl _restgpr_29
 /* 8031774C 0031358C  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 80317750 00313590  7C 08 03 A6 */	mtlr r0
 /* 80317754 00313594  38 21 00 30 */	addi r1, r1, 0x30
@@ -157,7 +157,7 @@ initialize__Q53scn4step7gimmick13movegroupctrl13MoveGroupCtrlFRCQ53scn4step7gimm
 /* 803177F0 00313630  7C 08 02 A6 */	mflr r0
 /* 803177F4 00313634  90 01 00 44 */	stw r0, 0x44(r1)
 /* 803177F8 00313638  39 61 00 40 */	addi r11, r1, 0x40
-/* 803177FC 0031363C  4B CE FB 41 */	bl lbl_8000733C
+/* 803177FC 0031363C  4B CE FB 41 */	bl _savegpr_27
 /* 80317800 00313640  7C 7B 1B 78 */	mr r27, r3
 /* 80317804 00313644  7C 9C 23 78 */	mr r28, r4
 /* 80317808 00313648  88 04 00 03 */	lbz r0, 0x3(r4)
@@ -207,7 +207,7 @@ lbl_8031788C:
 /* 803178A8 003136E8  7F 63 DB 78 */	mr r3, r27
 /* 803178AC 003136EC  48 00 0C 79 */	bl mfSetMoveCtrl__Q53scn4step7gimmick13movegroupctrl13MoveGroupCtrlFv
 /* 803178B0 003136F0  39 61 00 40 */	addi r11, r1, 0x40
-/* 803178B4 003136F4  4B CE FA D5 */	bl lbl_80007388
+/* 803178B4 003136F4  4B CE FA D5 */	bl _restgpr_27
 /* 803178B8 003136F8  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 803178BC 003136FC  7C 08 03 A6 */	mtlr r0
 /* 803178C0 00313700  38 21 00 40 */	addi r1, r1, 0x40
@@ -284,7 +284,7 @@ initialize__Q53scn4step7gimmick13movegroupctrl13MoveGroupCtrlFRCQ53scn4step7gimm
 /* 803179AC 003137EC  7C 08 02 A6 */	mflr r0
 /* 803179B0 003137F0  90 01 00 44 */	stw r0, 0x44(r1)
 /* 803179B4 003137F4  39 61 00 40 */	addi r11, r1, 0x40
-/* 803179B8 003137F8  4B CE F9 85 */	bl lbl_8000733C
+/* 803179B8 003137F8  4B CE F9 85 */	bl _savegpr_27
 /* 803179BC 003137FC  7C 7B 1B 78 */	mr r27, r3
 /* 803179C0 00313800  7C 9C 23 78 */	mr r28, r4
 /* 803179C4 00313804  7C BE 2B 78 */	mr r30, r5
@@ -349,7 +349,7 @@ lbl_80317A98:
 /* 80317A98 003138D8  7F 63 DB 78 */	mr r3, r27
 /* 80317A9C 003138DC  48 00 0A 89 */	bl mfSetMoveCtrl__Q53scn4step7gimmick13movegroupctrl13MoveGroupCtrlFv
 /* 80317AA0 003138E0  39 61 00 40 */	addi r11, r1, 0x40
-/* 80317AA4 003138E4  4B CE F8 E5 */	bl lbl_80007388
+/* 80317AA4 003138E4  4B CE F8 E5 */	bl _restgpr_27
 /* 80317AA8 003138E8  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 80317AAC 003138EC  7C 08 03 A6 */	mtlr r0
 /* 80317AB0 003138F0  38 21 00 40 */	addi r1, r1, 0x40
@@ -397,7 +397,7 @@ calcPlayerDistance__Q53scn4step7gimmick13movegroupctrl13MoveGroupCtrlFRCQ35mcoll
 /* 80317B30 00313970  7C 08 02 A6 */	mflr r0
 /* 80317B34 00313974  90 01 00 54 */	stw r0, 0x54(r1)
 /* 80317B38 00313978  39 61 00 50 */	addi r11, r1, 0x50
-/* 80317B3C 0031397C  4B CE F8 09 */	bl lbl_80007344
+/* 80317B3C 0031397C  4B CE F8 09 */	bl _savegpr_29
 /* 80317B40 00313980  7C 7D 1B 78 */	mr r29, r3
 /* 80317B44 00313984  7C 9E 23 78 */	mr r30, r4
 /* 80317B48 00313988  80 03 00 24 */	lwz r0, 0x24(r3)
@@ -455,7 +455,7 @@ lbl_80317C08:
 /* 80317C10 00313A50  38 A0 00 01 */	li r5, 0x1
 /* 80317C14 00313A54  4B E9 B0 99 */	bl "set__Q33hel6common11BitFlag<Ul>FUlb"
 /* 80317C18 00313A58  39 61 00 50 */	addi r11, r1, 0x50
-/* 80317C1C 00313A5C  4B CE F7 75 */	bl lbl_80007390
+/* 80317C1C 00313A5C  4B CE F7 75 */	bl _restgpr_29
 /* 80317C20 00313A60  80 01 00 54 */	lwz r0, 0x54(r1)
 /* 80317C24 00313A64  7C 08 03 A6 */	mtlr r0
 /* 80317C28 00313A68  38 21 00 50 */	addi r1, r1, 0x50
@@ -468,7 +468,7 @@ exec__Q53scn4step7gimmick13movegroupctrl13MoveGroupCtrlFv:
 /* 80317C3C 00313A7C  DB E1 00 70 */	stfd f31, 0x70(r1)
 /* 80317C40 00313A80  F3 E1 00 78 */	psq_st f31, 0x78(r1), 0, qr0
 /* 80317C44 00313A84  39 61 00 70 */	addi r11, r1, 0x70
-/* 80317C48 00313A88  4B CE F6 FD */	bl lbl_80007344
+/* 80317C48 00313A88  4B CE F6 FD */	bl _savegpr_29
 /* 80317C4C 00313A8C  7C 7D 1B 78 */	mr r29, r3
 /* 80317C50 00313A90  7C 9E 23 78 */	mr r30, r4
 /* 80317C54 00313A94  38 8D EE 28 */	addi r4, r13, ZERO__Q33hel4math7Vector2@sda21
@@ -569,7 +569,7 @@ lbl_80317DA4:
 /* 80317DA8 00313BE8  13 E1 00 0C */	psq_lx f31, r1, r0, 0, qr0
 /* 80317DAC 00313BEC  CB E1 00 70 */	lfd f31, 0x70(r1)
 /* 80317DB0 00313BF0  39 61 00 70 */	addi r11, r1, 0x70
-/* 80317DB4 00313BF4  4B CE F5 DD */	bl lbl_80007390
+/* 80317DB4 00313BF4  4B CE F5 DD */	bl _restgpr_29
 /* 80317DB8 00313BF8  80 01 00 84 */	lwz r0, 0x84(r1)
 /* 80317DBC 00313BFC  7C 08 03 A6 */	mtlr r0
 /* 80317DC0 00313C00  38 21 00 80 */	addi r1, r1, 0x80
@@ -653,7 +653,7 @@ mfCurOrderEnd__Q53scn4step7gimmick13movegroupctrl13MoveGroupCtrlFv:
 /* 80317EE0 00313D20  DB E1 00 E0 */	stfd f31, 0xe0(r1)
 /* 80317EE4 00313D24  F3 E1 00 E8 */	psq_st f31, 0xe8(r1), 0, qr0
 /* 80317EE8 00313D28  39 61 00 E0 */	addi r11, r1, 0xe0
-/* 80317EEC 00313D2C  4B CE F4 59 */	bl lbl_80007344
+/* 80317EEC 00313D2C  4B CE F4 59 */	bl _savegpr_29
 /* 80317EF0 00313D30  7C 7D 1B 78 */	mr r29, r3
 /* 80317EF4 00313D34  7C 9E 23 78 */	mr r30, r4
 /* 80317EF8 00313D38  38 8D EE 28 */	addi r4, r13, ZERO__Q33hel4math7Vector2@sda21
@@ -775,7 +775,7 @@ lbl_80317FDC:
 /* 803180B0 00313EF0  13 E1 00 0C */	psq_lx f31, r1, r0, 0, qr0
 /* 803180B4 00313EF4  CB E1 00 E0 */	lfd f31, 0xe0(r1)
 /* 803180B8 00313EF8  39 61 00 E0 */	addi r11, r1, 0xe0
-/* 803180BC 00313EFC  4B CE F2 D5 */	bl lbl_80007390
+/* 803180BC 00313EFC  4B CE F2 D5 */	bl _restgpr_29
 /* 803180C0 00313F00  80 01 00 F4 */	lwz r0, 0xf4(r1)
 /* 803180C4 00313F04  7C 08 03 A6 */	mtlr r0
 /* 803180C8 00313F08  38 21 00 F0 */	addi r1, r1, 0xf0
@@ -1036,7 +1036,7 @@ toSaveData__Q53scn4step7gimmick13movegroupctrl13MoveGroupCtrlFl:
 /* 8031842C 0031426C  7C 08 02 A6 */	mflr r0
 /* 80318430 00314270  90 01 00 34 */	stw r0, 0x34(r1)
 /* 80318434 00314274  39 61 00 30 */	addi r11, r1, 0x30
-/* 80318438 00314278  4B CE EF 05 */	bl lbl_8000733C
+/* 80318438 00314278  4B CE EF 05 */	bl _savegpr_27
 /* 8031843C 0031427C  7C 7B 1B 78 */	mr r27, r3
 /* 80318440 00314280  7C 9C 23 78 */	mr r28, r4
 /* 80318444 00314284  7C BD 2B 78 */	mr r29, r5
@@ -1068,7 +1068,7 @@ toSaveData__Q53scn4step7gimmick13movegroupctrl13MoveGroupCtrlFl:
 /* 803184AC 003142EC  38 81 00 08 */	addi r4, r1, 0x8
 /* 803184B0 003142F0  4B E3 34 B9 */	bl __as__Q34nw4r4math5_VEC2FRCQ34nw4r4math5_VEC2
 /* 803184B4 003142F4  39 61 00 30 */	addi r11, r1, 0x30
-/* 803184B8 003142F8  4B CE EE D1 */	bl lbl_80007388
+/* 803184B8 003142F8  4B CE EE D1 */	bl _restgpr_27
 /* 803184BC 003142FC  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 803184C0 00314300  7C 08 03 A6 */	mtlr r0
 /* 803184C4 00314304  38 21 00 30 */	addi r1, r1, 0x30
@@ -1379,7 +1379,7 @@ mfRequester__Q53scn4step7gimmick13movegroupctrl13MoveGroupCtrlFQ63scn4step7gimmi
 /* 80318910 00314750  7C 08 02 A6 */	mflr r0
 /* 80318914 00314754  90 01 00 24 */	stw r0, 0x24(r1)
 /* 80318918 00314758  39 61 00 20 */	addi r11, r1, 0x20
-/* 8031891C 0031475C  4B CE EA 29 */	bl lbl_80007344
+/* 8031891C 0031475C  4B CE EA 29 */	bl _savegpr_29
 /* 80318920 00314760  7C 7D 1B 78 */	mr r29, r3
 /* 80318924 00314764  7C 9E 23 78 */	mr r30, r4
 /* 80318928 00314768  7C BF 2B 78 */	mr r31, r5
@@ -1402,7 +1402,7 @@ lbl_8031895C:
 /* 80318964 003147A4  38 A0 00 00 */	li r5, 0x0
 /* 80318968 003147A8  4B E9 A3 45 */	bl "set__Q33hel6common11BitFlag<Ul>FUlb"
 /* 8031896C 003147AC  39 61 00 20 */	addi r11, r1, 0x20
-/* 80318970 003147B0  4B CE EA 21 */	bl lbl_80007390
+/* 80318970 003147B0  4B CE EA 21 */	bl _restgpr_29
 /* 80318974 003147B4  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80318978 003147B8  7C 08 03 A6 */	mtlr r0
 /* 8031897C 003147BC  38 21 00 20 */	addi r1, r1, 0x20

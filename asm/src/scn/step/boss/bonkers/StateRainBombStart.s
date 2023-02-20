@@ -98,7 +98,7 @@ procAnim__Q53scn4step4boss7bonkers18StateRainBombStartFv:
 /* 80238D98 00234BD8  7C 08 02 A6 */	mflr r0
 /* 80238D9C 00234BDC  90 01 00 24 */	stw r0, 0x24(r1)
 /* 80238DA0 00234BE0  39 61 00 20 */	addi r11, r1, 0x20
-/* 80238DA4 00234BE4  4B DC E5 A1 */	bl lbl_80007344
+/* 80238DA4 00234BE4  4B DC E5 A1 */	bl _savegpr_29
 /* 80238DA8 00234BE8  7C 7E 1B 78 */	mr r30, r3
 /* 80238DAC 00234BEC  4B EC 7A 35 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 80238DB0 00234BF0  4B FF 41 61 */	bl param__Q43scn4step4boss4BossCFv
@@ -155,7 +155,7 @@ lbl_80238E40:
 .global lbl_80238E64
 lbl_80238E64:
 /* 80238E64 00234CA4  39 61 00 20 */	addi r11, r1, 0x20
-/* 80238E68 00234CA8  4B DC E5 29 */	bl lbl_80007390
+/* 80238E68 00234CA8  4B DC E5 29 */	bl _restgpr_29
 /* 80238E6C 00234CAC  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80238E70 00234CB0  7C 08 03 A6 */	mtlr r0
 /* 80238E74 00234CB4  38 21 00 20 */	addi r1, r1, 0x20

@@ -7,7 +7,7 @@ __ct__Q23app12ResidentFileFv:
 /* 8017B1FC 0017703C  7C 08 02 A6 */	mflr r0
 /* 8017B200 00177040  90 01 00 24 */	stw r0, 0x24(r1)
 /* 8017B204 00177044  39 61 00 20 */	addi r11, r1, 0x20
-/* 8017B208 00177048  4B E8 C1 3D */	bl lbl_80007344
+/* 8017B208 00177048  4B E8 C1 3D */	bl _savegpr_29
 /* 8017B20C 0017704C  7C 7D 1B 78 */	mr r29, r3
 /* 8017B210 00177050  83 CD ED 00 */	lwz r30, "object___Q33hel6common32ExplicitSingleton<Q23mem6Memory>"@sda21(r13)
 /* 8017B214 00177054  7F C3 F3 78 */	mr r3, r30
@@ -35,7 +35,7 @@ __ct__Q23app12ResidentFileFv:
 /* 8017B26C 001770AC  90 1D 03 CC */	stw r0, 0x3cc(r29)
 /* 8017B270 001770B0  7F A3 EB 78 */	mr r3, r29
 /* 8017B274 001770B4  39 61 00 20 */	addi r11, r1, 0x20
-/* 8017B278 001770B8  4B E8 C1 19 */	bl lbl_80007390
+/* 8017B278 001770B8  4B E8 C1 19 */	bl _restgpr_29
 /* 8017B27C 001770BC  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8017B280 001770C0  7C 08 03 A6 */	mtlr r0
 /* 8017B284 001770C4  38 21 00 20 */	addi r1, r1, 0x20
@@ -128,7 +128,7 @@ waitToFinish__Q23app12ResidentFileFv:
 /* 8017B3A8 001771E8  7C 08 02 A6 */	mflr r0
 /* 8017B3AC 001771EC  90 01 00 24 */	stw r0, 0x24(r1)
 /* 8017B3B0 001771F0  39 61 00 20 */	addi r11, r1, 0x20
-/* 8017B3B4 001771F4  4B E8 BF 91 */	bl lbl_80007344
+/* 8017B3B4 001771F4  4B E8 BF 91 */	bl _savegpr_29
 /* 8017B3B8 001771F8  7C 7D 1B 78 */	mr r29, r3
 /* 8017B3BC 001771FC  80 03 03 CC */	lwz r0, 0x3cc(r3)
 /* 8017B3C0 00177200  2C 00 00 00 */	cmpwi r0, 0x0
@@ -171,7 +171,7 @@ lbl_8017B3F8:
 .global lbl_8017B43C
 lbl_8017B43C:
 /* 8017B43C 0017727C  39 61 00 20 */	addi r11, r1, 0x20
-/* 8017B440 00177280  4B E8 BF 51 */	bl lbl_80007390
+/* 8017B440 00177280  4B E8 BF 51 */	bl _restgpr_29
 /* 8017B444 00177284  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8017B448 00177288  7C 08 03 A6 */	mtlr r0
 /* 8017B44C 0017728C  38 21 00 20 */	addi r1, r1, 0x20
@@ -193,7 +193,7 @@ threadMain__Q23app12ResidentFileFv:
 /* 8017B47C 001772BC  7C 08 02 A6 */	mflr r0
 /* 8017B480 001772C0  90 01 00 C4 */	stw r0, 0xc4(r1)
 /* 8017B484 001772C4  39 61 00 C0 */	addi r11, r1, 0xc0
-/* 8017B488 001772C8  4B E8 BE BD */	bl lbl_80007344
+/* 8017B488 001772C8  4B E8 BE BD */	bl _savegpr_29
 /* 8017B48C 001772CC  7C 7D 1B 78 */	mr r29, r3
 /* 8017B490 001772D0  80 6D ED 34 */	lwz r3, "object___Q33hel6common41ExplicitSingleton<Q23hbm14HomeButtonMenu>"@sda21(r13)
 /* 8017B494 001772D4  48 02 16 79 */	bl loadAndSetupMenu__Q23hbm14HomeButtonMenuFv
@@ -238,7 +238,7 @@ lbl_8017B500:
 /* 8017B528 00177368  38 00 00 02 */	li r0, 0x2
 /* 8017B52C 0017736C  90 1D 03 CC */	stw r0, 0x3cc(r29)
 /* 8017B530 00177370  39 61 00 C0 */	addi r11, r1, 0xc0
-/* 8017B534 00177374  4B E8 BE 5D */	bl lbl_80007390
+/* 8017B534 00177374  4B E8 BE 5D */	bl _restgpr_29
 /* 8017B538 00177378  80 01 00 C4 */	lwz r0, 0xc4(r1)
 /* 8017B53C 0017737C  7C 08 03 A6 */	mtlr r0
 /* 8017B540 00177380  38 21 00 C0 */	addi r1, r1, 0xc0

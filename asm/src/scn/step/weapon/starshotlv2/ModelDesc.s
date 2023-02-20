@@ -7,7 +7,7 @@ Create__Q53scn4step6weapon11starshotlv29ModelDescFv:
 /* 803DCAAC 003D88EC  7C 08 02 A6 */	mflr r0
 /* 803DCAB0 003D88F0  90 01 00 54 */	stw r0, 0x54(r1)
 /* 803DCAB4 003D88F4  39 61 00 50 */	addi r11, r1, 0x50
-/* 803DCAB8 003D88F8  4B C2 A8 8D */	bl lbl_80007344
+/* 803DCAB8 003D88F8  4B C2 A8 8D */	bl _savegpr_29
 /* 803DCABC 003D88FC  3C 60 80 49 */	lis r3, "@50123_80493FB8"@ha
 /* 803DCAC0 003D8900  3B E3 3F B8 */	addi r31, r3, "@50123_80493FB8"@l
 /* 803DCAC4 003D8904  3B BF 00 28 */	addi r29, r31, 0x28
@@ -71,7 +71,7 @@ lbl_803DCB80:
 /* 803DCB94 003D89D4  3C 60 80 55 */	lis r3, "@LOCAL@CreateTmpl<1>__Q43scn4step6weapon13ModelDescUtilFPCcPCcUlPPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc"@ha
 /* 803DCB98 003D89D8  38 63 4B B0 */	addi r3, r3, "@LOCAL@CreateTmpl<1>__Q43scn4step6weapon13ModelDescUtilFPCcPCcUlPPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc"@l
 /* 803DCB9C 003D89DC  39 61 00 50 */	addi r11, r1, 0x50
-/* 803DCBA0 003D89E0  4B C2 A7 F1 */	bl lbl_80007390
+/* 803DCBA0 003D89E0  4B C2 A7 F1 */	bl _restgpr_29
 /* 803DCBA4 003D89E4  80 01 00 54 */	lwz r0, 0x54(r1)
 /* 803DCBA8 003D89E8  7C 08 03 A6 */	mtlr r0
 /* 803DCBAC 003D89EC  38 21 00 50 */	addi r1, r1, 0x50

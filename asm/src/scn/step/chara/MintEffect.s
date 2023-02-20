@@ -132,7 +132,7 @@ RequestNO__Q43scn4step5chara10MintEffectFUlUl:
 /* 8026FA10 0026B850  7C 08 02 A6 */	mflr r0
 /* 8026FA14 0026B854  90 01 00 34 */	stw r0, 0x34(r1)
 /* 8026FA18 0026B858  39 61 00 30 */	addi r11, r1, 0x30
-/* 8026FA1C 0026B85C  4B D9 79 29 */	bl lbl_80007344
+/* 8026FA1C 0026B85C  4B D9 79 29 */	bl _savegpr_29
 /* 8026FA20 0026B860  7C 7D 1B 78 */	mr r29, r3
 /* 8026FA24 0026B864  7C 9E 23 78 */	mr r30, r4
 /* 8026FA28 0026B868  83 ED F1 B8 */	lwz r31, "t_obj__Q43scn4step5chara24@unnamed@MintEffect_cpp@"@sda21(r13)
@@ -144,7 +144,7 @@ RequestNO__Q43scn4step5chara10MintEffectFUlUl:
 /* 8026FA40 0026B880  38 C1 00 08 */	addi r6, r1, 0x8
 /* 8026FA44 0026B884  4B FF E5 FD */	bl requestN__Q43scn4step5chara6EffectFQ43scn4step6effect4KindUlRCQ33hel4math7Vector3
 /* 8026FA48 0026B888  39 61 00 30 */	addi r11, r1, 0x30
-/* 8026FA4C 0026B88C  4B D9 79 45 */	bl lbl_80007390
+/* 8026FA4C 0026B88C  4B D9 79 45 */	bl _restgpr_29
 /* 8026FA50 0026B890  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 8026FA54 0026B894  7C 08 03 A6 */	mtlr r0
 /* 8026FA58 0026B898  38 21 00 30 */	addi r1, r1, 0x30
@@ -156,7 +156,7 @@ RequestNOS__Q43scn4step5chara10MintEffectFUlUlf:
 /* 8026FA68 0026B8A8  90 01 00 34 */	stw r0, 0x34(r1)
 /* 8026FA6C 0026B8AC  DB E1 00 28 */	stfd f31, 0x28(r1)
 /* 8026FA70 0026B8B0  39 61 00 28 */	addi r11, r1, 0x28
-/* 8026FA74 0026B8B4  4B D9 78 D1 */	bl lbl_80007344
+/* 8026FA74 0026B8B4  4B D9 78 D1 */	bl _savegpr_29
 /* 8026FA78 0026B8B8  7C 7D 1B 78 */	mr r29, r3
 /* 8026FA7C 0026B8BC  7C 9E 23 78 */	mr r30, r4
 /* 8026FA80 0026B8C0  FF E0 08 90 */	fmr f31, f1
@@ -171,7 +171,7 @@ RequestNOS__Q43scn4step5chara10MintEffectFUlUlf:
 /* 8026FAA4 0026B8E4  4B FF E6 01 */	bl requestN__Q43scn4step5chara6EffectFQ43scn4step6effect4KindUlRCQ33hel4math7Vector3f
 /* 8026FAA8 0026B8E8  CB E1 00 28 */	lfd f31, 0x28(r1)
 /* 8026FAAC 0026B8EC  39 61 00 28 */	addi r11, r1, 0x28
-/* 8026FAB0 0026B8F0  4B D9 78 E1 */	bl lbl_80007390
+/* 8026FAB0 0026B8F0  4B D9 78 E1 */	bl _restgpr_29
 /* 8026FAB4 0026B8F4  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 8026FAB8 0026B8F8  7C 08 03 A6 */	mtlr r0
 /* 8026FABC 0026B8FC  38 21 00 30 */	addi r1, r1, 0x30
@@ -182,7 +182,7 @@ RequestND__Q43scn4step5chara10MintEffectFUlUl:
 /* 8026FAC8 0026B908  7C 08 02 A6 */	mflr r0
 /* 8026FACC 0026B90C  90 01 00 44 */	stw r0, 0x44(r1)
 /* 8026FAD0 0026B910  39 61 00 40 */	addi r11, r1, 0x40
-/* 8026FAD4 0026B914  4B D9 78 71 */	bl lbl_80007344
+/* 8026FAD4 0026B914  4B D9 78 71 */	bl _savegpr_29
 /* 8026FAD8 0026B918  7C 7D 1B 78 */	mr r29, r3
 /* 8026FADC 0026B91C  7C 9E 23 78 */	mr r30, r4
 /* 8026FAE0 0026B920  83 ED F1 B8 */	lwz r31, "t_obj__Q43scn4step5chara24@unnamed@MintEffect_cpp@"@sda21(r13)
@@ -194,7 +194,7 @@ RequestND__Q43scn4step5chara10MintEffectFUlUl:
 /* 8026FAF8 0026B938  38 C1 00 08 */	addi r6, r1, 0x8
 /* 8026FAFC 0026B93C  4B FF E6 3D */	bl requestND__Q43scn4step5chara6EffectFQ43scn4step6effect4KindUlRCQ33hel4math10Direction3
 /* 8026FB00 0026B940  39 61 00 40 */	addi r11, r1, 0x40
-/* 8026FB04 0026B944  4B D9 78 8D */	bl lbl_80007390
+/* 8026FB04 0026B944  4B D9 78 8D */	bl _restgpr_29
 /* 8026FB08 0026B948  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 8026FB0C 0026B94C  7C 08 03 A6 */	mtlr r0
 /* 8026FB10 0026B950  38 21 00 40 */	addi r1, r1, 0x40
@@ -206,7 +206,7 @@ RequestNDS__Q43scn4step5chara10MintEffectFUlUlf:
 /* 8026FB20 0026B960  90 01 00 54 */	stw r0, 0x54(r1)
 /* 8026FB24 0026B964  DB E1 00 48 */	stfd f31, 0x48(r1)
 /* 8026FB28 0026B968  39 61 00 48 */	addi r11, r1, 0x48
-/* 8026FB2C 0026B96C  4B D9 78 19 */	bl lbl_80007344
+/* 8026FB2C 0026B96C  4B D9 78 19 */	bl _savegpr_29
 /* 8026FB30 0026B970  7C 7D 1B 78 */	mr r29, r3
 /* 8026FB34 0026B974  7C 9E 23 78 */	mr r30, r4
 /* 8026FB38 0026B978  FF E0 08 90 */	fmr f31, f1
@@ -221,7 +221,7 @@ RequestNDS__Q43scn4step5chara10MintEffectFUlUlf:
 /* 8026FB5C 0026B99C  4B FF E6 41 */	bl requestND__Q43scn4step5chara6EffectFQ43scn4step6effect4KindUlRCQ33hel4math10Direction3f
 /* 8026FB60 0026B9A0  CB E1 00 48 */	lfd f31, 0x48(r1)
 /* 8026FB64 0026B9A4  39 61 00 48 */	addi r11, r1, 0x48
-/* 8026FB68 0026B9A8  4B D9 78 29 */	bl lbl_80007390
+/* 8026FB68 0026B9A8  4B D9 78 29 */	bl _restgpr_29
 /* 8026FB6C 0026B9AC  80 01 00 54 */	lwz r0, 0x54(r1)
 /* 8026FB70 0026B9B0  7C 08 03 A6 */	mtlr r0
 /* 8026FB74 0026B9B4  38 21 00 50 */	addi r1, r1, 0x50
@@ -232,7 +232,7 @@ RequestNDO__Q43scn4step5chara10MintEffectFUlUl:
 /* 8026FB80 0026B9C0  7C 08 02 A6 */	mflr r0
 /* 8026FB84 0026B9C4  90 01 00 54 */	stw r0, 0x54(r1)
 /* 8026FB88 0026B9C8  39 61 00 50 */	addi r11, r1, 0x50
-/* 8026FB8C 0026B9CC  4B D9 77 B9 */	bl lbl_80007344
+/* 8026FB8C 0026B9CC  4B D9 77 B9 */	bl _savegpr_29
 /* 8026FB90 0026B9D0  7C 7D 1B 78 */	mr r29, r3
 /* 8026FB94 0026B9D4  7C 9E 23 78 */	mr r30, r4
 /* 8026FB98 0026B9D8  83 ED F1 B8 */	lwz r31, "t_obj__Q43scn4step5chara24@unnamed@MintEffect_cpp@"@sda21(r13)
@@ -247,7 +247,7 @@ RequestNDO__Q43scn4step5chara10MintEffectFUlUl:
 /* 8026FBBC 0026B9FC  38 E1 00 08 */	addi r7, r1, 0x8
 /* 8026FBC0 0026BA00  4B FF E6 51 */	bl requestND__Q43scn4step5chara6EffectFQ43scn4step6effect4KindUlRCQ33hel4math10Direction3RCQ33hel4math7Vector3
 /* 8026FBC4 0026BA04  39 61 00 50 */	addi r11, r1, 0x50
-/* 8026FBC8 0026BA08  4B D9 77 C9 */	bl lbl_80007390
+/* 8026FBC8 0026BA08  4B D9 77 C9 */	bl _restgpr_29
 /* 8026FBCC 0026BA0C  80 01 00 54 */	lwz r0, 0x54(r1)
 /* 8026FBD0 0026BA10  7C 08 03 A6 */	mtlr r0
 /* 8026FBD4 0026BA14  38 21 00 50 */	addi r1, r1, 0x50
@@ -259,7 +259,7 @@ RequestNDOS__Q43scn4step5chara10MintEffectFUlUlf:
 /* 8026FBE4 0026BA24  90 01 00 54 */	stw r0, 0x54(r1)
 /* 8026FBE8 0026BA28  DB E1 00 48 */	stfd f31, 0x48(r1)
 /* 8026FBEC 0026BA2C  39 61 00 48 */	addi r11, r1, 0x48
-/* 8026FBF0 0026BA30  4B D9 77 55 */	bl lbl_80007344
+/* 8026FBF0 0026BA30  4B D9 77 55 */	bl _savegpr_29
 /* 8026FBF4 0026BA34  7C 7D 1B 78 */	mr r29, r3
 /* 8026FBF8 0026BA38  7C 9E 23 78 */	mr r30, r4
 /* 8026FBFC 0026BA3C  FF E0 08 90 */	fmr f31, f1
@@ -277,7 +277,7 @@ RequestNDOS__Q43scn4step5chara10MintEffectFUlUlf:
 /* 8026FC2C 0026BA6C  4B FF E6 51 */	bl requestND__Q43scn4step5chara6EffectFQ43scn4step6effect4KindUlRCQ33hel4math10Direction3RCQ33hel4math7Vector3f
 /* 8026FC30 0026BA70  CB E1 00 48 */	lfd f31, 0x48(r1)
 /* 8026FC34 0026BA74  39 61 00 48 */	addi r11, r1, 0x48
-/* 8026FC38 0026BA78  4B D9 77 59 */	bl lbl_80007390
+/* 8026FC38 0026BA78  4B D9 77 59 */	bl _restgpr_29
 /* 8026FC3C 0026BA7C  80 01 00 54 */	lwz r0, 0x54(r1)
 /* 8026FC40 0026BA80  7C 08 03 A6 */	mtlr r0
 /* 8026FC44 0026BA84  38 21 00 50 */	addi r1, r1, 0x50

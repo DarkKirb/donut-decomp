@@ -7,7 +7,7 @@ __ct__Q33scn14challengetitle7BGModelFRQ33scn14challengetitle9Component:
 /* 801EA5A0 001E63E0  7C 08 02 A6 */	mflr r0
 /* 801EA5A4 001E63E4  90 01 00 B4 */	stw r0, 0xb4(r1)
 /* 801EA5A8 001E63E8  39 61 00 B0 */	addi r11, r1, 0xb0
-/* 801EA5AC 001E63EC  4B E1 CD 8D */	bl lbl_80007338
+/* 801EA5AC 001E63EC  4B E1 CD 8D */	bl _savegpr_26
 /* 801EA5B0 001E63F0  7C 7A 1B 78 */	mr r26, r3
 /* 801EA5B4 001E63F4  7C 9B 23 78 */	mr r27, r4
 /* 801EA5B8 001E63F8  80 64 00 04 */	lwz r3, 0x4(r4)
@@ -52,7 +52,7 @@ __ct__Q33scn14challengetitle7BGModelFRQ33scn14challengetitle9Component:
 /* 801EA654 001E6494  4B FA A4 A1 */	bl registerToRoot__Q23g3d8StdModelFRQ23g3d4Root
 /* 801EA658 001E6498  7F 43 D3 78 */	mr r3, r26
 /* 801EA65C 001E649C  39 61 00 B0 */	addi r11, r1, 0xb0
-/* 801EA660 001E64A0  4B E1 CD 25 */	bl lbl_80007384
+/* 801EA660 001E64A0  4B E1 CD 25 */	bl _restgpr_26
 /* 801EA664 001E64A4  80 01 00 B4 */	lwz r0, 0xb4(r1)
 /* 801EA668 001E64A8  7C 08 03 A6 */	mtlr r0
 /* 801EA66C 001E64AC  38 21 00 B0 */	addi r1, r1, 0xb0

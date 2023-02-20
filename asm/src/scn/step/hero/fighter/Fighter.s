@@ -69,7 +69,7 @@ setup__Q53scn4step4hero7fighter7FighterFv:
 /* 8039B598 003973D8  7C 08 02 A6 */	mflr r0
 /* 8039B59C 003973DC  90 01 00 24 */	stw r0, 0x24(r1)
 /* 8039B5A0 003973E0  39 61 00 20 */	addi r11, r1, 0x20
-/* 8039B5A4 003973E4  4B C6 BD A1 */	bl lbl_80007344
+/* 8039B5A4 003973E4  4B C6 BD A1 */	bl _savegpr_29
 /* 8039B5A8 003973E8  7C 7D 1B 78 */	mr r29, r3
 /* 8039B5AC 003973EC  80 63 00 04 */	lwz r3, 0x4(r3)
 /* 8039B5B0 003973F0  4B E7 0C 89 */	bl sfxManager__Q33scn7history9ComponentFv
@@ -125,7 +125,7 @@ setup__Q53scn4step4hero7fighter7FighterFv:
 /* 8039B678 003974B8  38 00 00 01 */	li r0, 0x1
 /* 8039B67C 003974BC  98 1D 00 0C */	stb r0, 0xc(r29)
 /* 8039B680 003974C0  39 61 00 20 */	addi r11, r1, 0x20
-/* 8039B684 003974C4  4B C6 BD 0D */	bl lbl_80007390
+/* 8039B684 003974C4  4B C6 BD 0D */	bl _restgpr_29
 /* 8039B688 003974C8  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8039B68C 003974CC  7C 08 03 A6 */	mtlr r0
 /* 8039B690 003974D0  38 21 00 20 */	addi r1, r1, 0x20

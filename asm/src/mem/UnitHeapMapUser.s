@@ -135,7 +135,7 @@ drawUsedBlocks__Q23mem15UnitHeapMapUserCFRCQ44nrel6devkit7heapmap7HeapMapRQ44nre
 /* 801BF950 001BB790  7C 08 02 A6 */	mflr r0
 /* 801BF954 001BB794  90 01 00 44 */	stw r0, 0x44(r1)
 /* 801BF958 001BB798  39 61 00 40 */	addi r11, r1, 0x40
-/* 801BF95C 001BB79C  4B E4 79 E1 */	bl lbl_8000733C
+/* 801BF95C 001BB79C  4B E4 79 E1 */	bl _savegpr_27
 /* 801BF960 001BB7A0  7C 7B 1B 78 */	mr r27, r3
 /* 801BF964 001BB7A4  7C 9C 23 78 */	mr r28, r4
 /* 801BF968 001BB7A8  7C BD 2B 78 */	mr r29, r5
@@ -182,7 +182,7 @@ drawUsedBlocks__Q23mem15UnitHeapMapUserCFRCQ44nrel6devkit7heapmap7HeapMapRQ44nre
 /* 801BFA0C 001BB84C  38 80 FF FF */	li r4, -0x1
 /* 801BFA10 001BB850  4B FB 61 59 */	bl __dt__Q23scn6ISceneFv
 /* 801BFA14 001BB854  39 61 00 40 */	addi r11, r1, 0x40
-/* 801BFA18 001BB858  4B E4 79 71 */	bl lbl_80007388
+/* 801BFA18 001BB858  4B E4 79 71 */	bl _restgpr_27
 /* 801BFA1C 001BB85C  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 801BFA20 001BB860  7C 08 03 A6 */	mtlr r0
 /* 801BFA24 001BB864  38 21 00 40 */	addi r1, r1, 0x40

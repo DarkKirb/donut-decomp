@@ -166,7 +166,7 @@ modelMainSetWaitAnim__Q53scn4step7gimmick13challengedoor20ChallengeDoorMusouExFv
 /* 8030960C 0030544C  7C 08 02 A6 */	mflr r0
 /* 80309610 00305450  90 01 01 24 */	stw r0, 0x124(r1)
 /* 80309614 00305454  39 61 01 20 */	addi r11, r1, 0x120
-/* 80309618 00305458  4B CF DD 2D */	bl lbl_80007344
+/* 80309618 00305458  4B CF DD 2D */	bl _savegpr_29
 /* 8030961C 0030545C  7C 7D 1B 78 */	mr r29, r3
 /* 80309620 00305460  3C 80 80 48 */	lis r4, "@56569_80480E80"@ha
 /* 80309624 00305464  3B C4 0E 80 */	addi r30, r4, "@56569_80480E80"@l
@@ -336,7 +336,7 @@ modelMainSetWaitAnim__Q53scn4step7gimmick13challengedoor20ChallengeDoorMusouExFv
 .global lbl_803098B4
 lbl_803098B4:
 /* 803098B4 003056F4  39 61 01 20 */	addi r11, r1, 0x120
-/* 803098B8 003056F8  4B CF DA D9 */	bl lbl_80007390
+/* 803098B8 003056F8  4B CF DA D9 */	bl _restgpr_29
 /* 803098BC 003056FC  80 01 01 24 */	lwz r0, 0x124(r1)
 /* 803098C0 00305700  7C 08 03 A6 */	mtlr r0
 /* 803098C4 00305704  38 21 01 20 */	addi r1, r1, 0x120

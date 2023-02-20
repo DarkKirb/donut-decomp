@@ -7,7 +7,7 @@ TryToChangeState__Q53scn4step4hero5sword16StateSwordMeteorFPQ43scn4step4hero4Her
 /* 80387F98 00383DD8  7C 08 02 A6 */	mflr r0
 /* 80387F9C 00383DDC  90 01 00 24 */	stw r0, 0x24(r1)
 /* 80387FA0 00383DE0  39 61 00 20 */	addi r11, r1, 0x20
-/* 80387FA4 00383DE4  4B C7 F3 A1 */	bl lbl_80007344
+/* 80387FA4 00383DE4  4B C7 F3 A1 */	bl _savegpr_29
 /* 80387FA8 00383DE8  7C 7D 1B 78 */	mr r29, r3
 /* 80387FAC 00383DEC  4B FB 83 51 */	bl footState__Q43scn4step4hero4HeroFv
 /* 80387FB0 00383DF0  4B E1 1F 09 */	bl isAir__Q24gobj9FootStateCFv
@@ -50,7 +50,7 @@ lbl_80388030:
 .global lbl_80388034
 lbl_80388034:
 /* 80388034 00383E74  39 61 00 20 */	addi r11, r1, 0x20
-/* 80388038 00383E78  4B C7 F3 59 */	bl lbl_80007390
+/* 80388038 00383E78  4B C7 F3 59 */	bl _restgpr_29
 /* 8038803C 00383E7C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80388040 00383E80  7C 08 03 A6 */	mtlr r0
 /* 80388044 00383E84  38 21 00 20 */	addi r1, r1, 0x20
@@ -199,7 +199,7 @@ procFixPos__Q53scn4step4hero5sword16StateSwordMeteorFv:
 /* 80388238 00384078  7C 08 02 A6 */	mflr r0
 /* 8038823C 0038407C  90 01 00 54 */	stw r0, 0x54(r1)
 /* 80388240 00384080  39 61 00 50 */	addi r11, r1, 0x50
-/* 80388244 00384084  4B C7 F1 01 */	bl lbl_80007344
+/* 80388244 00384084  4B C7 F1 01 */	bl _savegpr_29
 /* 80388248 00384088  7C 7D 1B 78 */	mr r29, r3
 /* 8038824C 0038408C  4B D7 85 95 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 80388250 00384090  4B FB 80 ED */	bl mapColl__Q43scn4step4hero4HeroFv
@@ -268,7 +268,7 @@ lbl_80388340:
 .global lbl_80388344
 lbl_80388344:
 /* 80388344 00384184  39 61 00 50 */	addi r11, r1, 0x50
-/* 80388348 00384188  4B C7 F0 49 */	bl lbl_80007390
+/* 80388348 00384188  4B C7 F0 49 */	bl _restgpr_29
 /* 8038834C 0038418C  80 01 00 54 */	lwz r0, 0x54(r1)
 /* 80388350 00384190  7C 08 03 A6 */	mtlr r0
 /* 80388354 00384194  38 21 00 50 */	addi r1, r1, 0x50

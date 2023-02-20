@@ -29,7 +29,7 @@ InitSoundSystem__Q34nw4r3snd11SoundSystemFRCQ44nw4r3snd11SoundSystem16SoundSyste
 /* 801149D4 00110814  7C 08 02 A6 */	mflr r0
 /* 801149D8 00110818  90 01 00 24 */	stw r0, 0x24(r1)
 /* 801149DC 0011081C  39 61 00 20 */	addi r11, r1, 0x20
-/* 801149E0 00110820  4B EF 29 59 */	bl lbl_80007338
+/* 801149E0 00110820  4B EF 29 59 */	bl _savegpr_26
 /* 801149E4 00110824  88 0D EC 10 */	lbz r0, "sInitialized__Q34nw4r3snd29@unnamed@snd_SoundSystem_cpp@"@sda21(r13)
 /* 801149E8 00110828  7C 7A 1B 78 */	mr r26, r3
 /* 801149EC 0011082C  7C 9B 23 78 */	mr r27, r4
@@ -141,7 +141,7 @@ lbl_80114A7C:
 .global lbl_80114B64
 lbl_80114B64:
 /* 80114B64 001109A4  39 61 00 20 */	addi r11, r1, 0x20
-/* 80114B68 001109A8  4B EF 28 1D */	bl lbl_80007384
+/* 80114B68 001109A8  4B EF 28 1D */	bl _restgpr_26
 /* 80114B6C 001109AC  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80114B70 001109B0  7C 08 03 A6 */	mtlr r0
 /* 80114B74 001109B4  38 21 00 20 */	addi r1, r1, 0x20

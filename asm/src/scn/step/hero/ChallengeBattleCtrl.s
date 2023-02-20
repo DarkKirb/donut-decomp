@@ -111,7 +111,7 @@ changeStateWin__Q43scn4step4hero19ChallengeBattleCtrlFv:
 /* 80333C8C 0032FACC  7C 08 02 A6 */	mflr r0
 /* 80333C90 0032FAD0  90 01 00 24 */	stw r0, 0x24(r1)
 /* 80333C94 0032FAD4  39 61 00 20 */	addi r11, r1, 0x20
-/* 80333C98 0032FAD8  4B CD 36 AD */	bl lbl_80007344
+/* 80333C98 0032FAD8  4B CD 36 AD */	bl _savegpr_29
 /* 80333C9C 0032FADC  7C 7D 1B 78 */	mr r29, r3
 /* 80333CA0 0032FAE0  38 00 00 00 */	li r0, 0x0
 /* 80333CA4 0032FAE4  98 03 00 04 */	stb r0, 0x4(r3)
@@ -150,7 +150,7 @@ lbl_80333D1C:
 .global lbl_80333D20
 lbl_80333D20:
 /* 80333D20 0032FB60  39 61 00 20 */	addi r11, r1, 0x20
-/* 80333D24 0032FB64  4B CD 36 6D */	bl lbl_80007390
+/* 80333D24 0032FB64  4B CD 36 6D */	bl _restgpr_29
 /* 80333D28 0032FB68  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80333D2C 0032FB6C  7C 08 03 A6 */	mtlr r0
 /* 80333D30 0032FB70  38 21 00 20 */	addi r1, r1, 0x20
@@ -161,7 +161,7 @@ changeStateLose__Q43scn4step4hero19ChallengeBattleCtrlFv:
 /* 80333D3C 0032FB7C  7C 08 02 A6 */	mflr r0
 /* 80333D40 0032FB80  90 01 00 24 */	stw r0, 0x24(r1)
 /* 80333D44 0032FB84  39 61 00 20 */	addi r11, r1, 0x20
-/* 80333D48 0032FB88  4B CD 35 FD */	bl lbl_80007344
+/* 80333D48 0032FB88  4B CD 35 FD */	bl _savegpr_29
 /* 80333D4C 0032FB8C  7C 7D 1B 78 */	mr r29, r3
 /* 80333D50 0032FB90  38 00 00 00 */	li r0, 0x0
 /* 80333D54 0032FB94  98 03 00 04 */	stb r0, 0x4(r3)
@@ -188,7 +188,7 @@ changeStateLose__Q43scn4step4hero19ChallengeBattleCtrlFv:
 lbl_80333DA4:
 /* 80333DA4 0032FBE4  93 DF 00 0C */	stw r30, 0xc(r31)
 /* 80333DA8 0032FBE8  39 61 00 20 */	addi r11, r1, 0x20
-/* 80333DAC 0032FBEC  4B CD 35 E5 */	bl lbl_80007390
+/* 80333DAC 0032FBEC  4B CD 35 E5 */	bl _restgpr_29
 /* 80333DB0 0032FBF0  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80333DB4 0032FBF4  7C 08 03 A6 */	mtlr r0
 /* 80333DB8 0032FBF8  38 21 00 20 */	addi r1, r1, 0x20

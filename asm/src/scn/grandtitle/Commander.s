@@ -488,7 +488,7 @@ __ct__Q33scn10grandtitle9CommanderFRQ33scn10grandtitle9Component:
 /* 80203594 001FF3D4  7C 08 02 A6 */	mflr r0
 /* 80203598 001FF3D8  90 01 00 24 */	stw r0, 0x24(r1)
 /* 8020359C 001FF3DC  39 61 00 20 */	addi r11, r1, 0x20
-/* 802035A0 001FF3E0  4B E0 3D A5 */	bl lbl_80007344
+/* 802035A0 001FF3E0  4B E0 3D A5 */	bl _savegpr_29
 /* 802035A4 001FF3E4  7C 7D 1B 78 */	mr r29, r3
 /* 802035A8 001FF3E8  7C 9E 23 78 */	mr r30, r4
 /* 802035AC 001FF3EC  90 83 00 00 */	stw r4, 0x0(r3)
@@ -509,7 +509,7 @@ __ct__Q33scn10grandtitle9CommanderFRQ33scn10grandtitle9Component:
 /* 802035E8 001FF428  98 1D 00 CA */	stb r0, 0xca(r29)
 /* 802035EC 001FF42C  7F A3 EB 78 */	mr r3, r29
 /* 802035F0 001FF430  39 61 00 20 */	addi r11, r1, 0x20
-/* 802035F4 001FF434  4B E0 3D 9D */	bl lbl_80007390
+/* 802035F4 001FF434  4B E0 3D 9D */	bl _restgpr_29
 /* 802035F8 001FF438  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802035FC 001FF43C  7C 08 03 A6 */	mtlr r0
 /* 80203600 001FF440  38 21 00 20 */	addi r1, r1, 0x20
@@ -520,7 +520,7 @@ start__Q33scn10grandtitle9CommanderFv:
 /* 8020360C 001FF44C  7C 08 02 A6 */	mflr r0
 /* 80203610 001FF450  90 01 00 24 */	stw r0, 0x24(r1)
 /* 80203614 001FF454  39 61 00 20 */	addi r11, r1, 0x20
-/* 80203618 001FF458  4B E0 3D 2D */	bl lbl_80007344
+/* 80203618 001FF458  4B E0 3D 2D */	bl _savegpr_29
 /* 8020361C 001FF45C  7C 7D 1B 78 */	mr r29, r3
 /* 80203620 001FF460  3C 80 80 46 */	lis r4, "@55960_80460900"@ha
 /* 80203624 001FF464  3B E4 09 00 */	addi r31, r4, "@55960_80460900"@l
@@ -547,7 +547,7 @@ start__Q33scn10grandtitle9CommanderFv:
 /* 80203678 001FF4B8  7F A3 EB 78 */	mr r3, r29
 /* 8020367C 001FF4BC  48 00 01 71 */	bl execScript__Q33scn10grandtitle9CommanderFv
 /* 80203680 001FF4C0  39 61 00 20 */	addi r11, r1, 0x20
-/* 80203684 001FF4C4  4B E0 3D 0D */	bl lbl_80007390
+/* 80203684 001FF4C4  4B E0 3D 0D */	bl _restgpr_29
 /* 80203688 001FF4C8  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8020368C 001FF4CC  7C 08 03 A6 */	mtlr r0
 /* 80203690 001FF4D0  38 21 00 20 */	addi r1, r1, 0x20

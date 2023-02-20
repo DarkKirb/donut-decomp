@@ -234,7 +234,7 @@ procMove__Q53scn4step5enemy9waddledee12StateSmashedFv:
 /* 802EE404 002EA244  7C 08 02 A6 */	mflr r0
 /* 802EE408 002EA248  90 01 00 24 */	stw r0, 0x24(r1)
 /* 802EE40C 002EA24C  39 61 00 20 */	addi r11, r1, 0x20
-/* 802EE410 002EA250  4B D1 8F 35 */	bl lbl_80007344
+/* 802EE410 002EA250  4B D1 8F 35 */	bl _savegpr_29
 /* 802EE414 002EA254  7C 7D 1B 78 */	mr r29, r3
 /* 802EE418 002EA258  4B E1 23 C9 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 802EE41C 002EA25C  4B F9 9C 69 */	bl param__Q43scn4step5enemy5EnemyCFv
@@ -252,7 +252,7 @@ procMove__Q53scn4step5enemy9waddledee12StateSmashedFv:
 /* 802EE44C 002EA28C  38 BE 00 20 */	addi r5, r30, 0x20
 /* 802EE450 002EA290  4B EA D0 D9 */	bl airDecelFall__Q24gobj4MoveFRCQ24gobj14MoveParamDecelRCQ24gobj13MoveParamFall
 /* 802EE454 002EA294  39 61 00 20 */	addi r11, r1, 0x20
-/* 802EE458 002EA298  4B D1 8F 39 */	bl lbl_80007390
+/* 802EE458 002EA298  4B D1 8F 39 */	bl _restgpr_29
 /* 802EE45C 002EA29C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802EE460 002EA2A0  7C 08 03 A6 */	mtlr r0
 /* 802EE464 002EA2A4  38 21 00 20 */	addi r1, r1, 0x20
@@ -266,7 +266,7 @@ procFixPos__Q53scn4step5enemy9waddledee12StateSmashedFv:
 /* 802EE478 002EA2B8  DB E1 00 70 */	stfd f31, 0x70(r1)
 /* 802EE47C 002EA2BC  F3 E1 00 78 */	psq_st f31, 0x78(r1), 0, qr0
 /* 802EE480 002EA2C0  39 61 00 70 */	addi r11, r1, 0x70
-/* 802EE484 002EA2C4  4B D1 8E C1 */	bl lbl_80007344
+/* 802EE484 002EA2C4  4B D1 8E C1 */	bl _savegpr_29
 /* 802EE488 002EA2C8  7C 7F 1B 78 */	mr r31, r3
 /* 802EE48C 002EA2CC  4B E1 23 55 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 802EE490 002EA2D0  4B F9 9C 35 */	bl move__Q43scn4step5enemy5EnemyFv
@@ -420,7 +420,7 @@ lbl_802EE684:
 /* 802EE688 002EA4C8  13 E1 00 0C */	psq_lx f31, r1, r0, 0, qr0
 /* 802EE68C 002EA4CC  CB E1 00 70 */	lfd f31, 0x70(r1)
 /* 802EE690 002EA4D0  39 61 00 70 */	addi r11, r1, 0x70
-/* 802EE694 002EA4D4  4B D1 8C FD */	bl lbl_80007390
+/* 802EE694 002EA4D4  4B D1 8C FD */	bl _restgpr_29
 /* 802EE698 002EA4D8  80 01 00 84 */	lwz r0, 0x84(r1)
 /* 802EE69C 002EA4DC  7C 08 03 A6 */	mtlr r0
 /* 802EE6A0 002EA4E0  38 21 00 80 */	addi r1, r1, 0x80

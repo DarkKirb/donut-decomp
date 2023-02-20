@@ -7,7 +7,7 @@ __ct__Q33scn19challengefileselect13DeleteConfirmFRQ23mem10IAllocatorRCQ23lyt12Pa
 /* 801E336C 001DF1AC  7C 08 02 A6 */	mflr r0
 /* 801E3370 001DF1B0  90 01 00 C4 */	stw r0, 0xc4(r1)
 /* 801E3374 001DF1B4  39 61 00 C0 */	addi r11, r1, 0xc0
-/* 801E3378 001DF1B8  4B E2 3F C5 */	bl lbl_8000733C
+/* 801E3378 001DF1B8  4B E2 3F C5 */	bl _savegpr_27
 /* 801E337C 001DF1BC  7C 7B 1B 78 */	mr r27, r3
 /* 801E3380 001DF1C0  7C 9C 23 78 */	mr r28, r4
 /* 801E3384 001DF1C4  7C BD 2B 78 */	mr r29, r5
@@ -68,7 +68,7 @@ __ct__Q33scn19challengefileselect13DeleteConfirmFRQ23mem10IAllocatorRCQ23lyt12Pa
 /* 801E3460 001DF2A0  4B F9 4D C1 */	bl __dt__Q23lyt12PaneAccessorFv
 /* 801E3464 001DF2A4  7F 63 DB 78 */	mr r3, r27
 /* 801E3468 001DF2A8  39 61 00 C0 */	addi r11, r1, 0xc0
-/* 801E346C 001DF2AC  4B E2 3F 1D */	bl lbl_80007388
+/* 801E346C 001DF2AC  4B E2 3F 1D */	bl _restgpr_27
 /* 801E3470 001DF2B0  80 01 00 C4 */	lwz r0, 0xc4(r1)
 /* 801E3474 001DF2B4  7C 08 03 A6 */	mtlr r0
 /* 801E3478 001DF2B8  38 21 00 C0 */	addi r1, r1, 0xc0
@@ -235,7 +235,7 @@ firstPage__Q33scn19challengefileselect13DeleteConfirmFUl:
 /* 801E3694 001DF4D4  7C 08 02 A6 */	mflr r0
 /* 801E3698 001DF4D8  90 01 03 44 */	stw r0, 0x344(r1)
 /* 801E369C 001DF4DC  39 61 03 40 */	addi r11, r1, 0x340
-/* 801E36A0 001DF4E0  4B E2 3C A5 */	bl lbl_80007344
+/* 801E36A0 001DF4E0  4B E2 3C A5 */	bl _savegpr_29
 /* 801E36A4 001DF4E4  7C 7D 1B 78 */	mr r29, r3
 /* 801E36A8 001DF4E8  7C 9E 23 78 */	mr r30, r4
 /* 801E36AC 001DF4EC  3C 60 80 46 */	lis r3, "@52625_8045DFC8"@ha
@@ -278,7 +278,7 @@ firstPage__Q33scn19challengefileselect13DeleteConfirmFUl:
 /* 801E3740 001DF580  38 00 00 00 */	li r0, 0x0
 /* 801E3744 001DF584  98 1D 06 04 */	stb r0, 0x604(r29)
 /* 801E3748 001DF588  39 61 03 40 */	addi r11, r1, 0x340
-/* 801E374C 001DF58C  4B E2 3C 45 */	bl lbl_80007390
+/* 801E374C 001DF58C  4B E2 3C 45 */	bl _restgpr_29
 /* 801E3750 001DF590  80 01 03 44 */	lwz r0, 0x344(r1)
 /* 801E3754 001DF594  7C 08 03 A6 */	mtlr r0
 /* 801E3758 001DF598  38 21 03 40 */	addi r1, r1, 0x340

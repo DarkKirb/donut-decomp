@@ -25,7 +25,7 @@ onInit__Q53scn4step4boss9moundeath6CustomFv:
 /* 8025567C 002514BC  7C 08 02 A6 */	mflr r0
 /* 80255680 002514C0  90 01 00 44 */	stw r0, 0x44(r1)
 /* 80255684 002514C4  39 61 00 40 */	addi r11, r1, 0x40
-/* 80255688 002514C8  4B DB 1C B5 */	bl lbl_8000733C
+/* 80255688 002514C8  4B DB 1C B5 */	bl _savegpr_27
 /* 8025568C 002514CC  7C 7F 1B 78 */	mr r31, r3
 /* 80255690 002514D0  3C 80 80 47 */	lis r4, "@57220_804689D0"@ha
 /* 80255694 002514D4  3B 64 89 D0 */	addi r27, r4, "@57220_804689D0"@l
@@ -192,7 +192,7 @@ lbl_80255844:
 lbl_802558EC:
 /* 802558EC 0025172C  93 7F 00 0C */	stw r27, 0xc(r31)
 /* 802558F0 00251730  39 61 00 40 */	addi r11, r1, 0x40
-/* 802558F4 00251734  4B DB 1A 95 */	bl lbl_80007388
+/* 802558F4 00251734  4B DB 1A 95 */	bl _restgpr_27
 /* 802558F8 00251738  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 802558FC 0025173C  7C 08 03 A6 */	mtlr r0
 /* 80255900 00251740  38 21 00 40 */	addi r1, r1, 0x40
@@ -216,7 +216,7 @@ onDead__Q53scn4step4boss9moundeath6CustomFv:
 /* 80255918 00251758  7C 08 02 A6 */	mflr r0
 /* 8025591C 0025175C  90 01 00 24 */	stw r0, 0x24(r1)
 /* 80255920 00251760  39 61 00 20 */	addi r11, r1, 0x20
-/* 80255924 00251764  4B DB 1A 21 */	bl lbl_80007344
+/* 80255924 00251764  4B DB 1A 21 */	bl _savegpr_29
 /* 80255928 00251768  7C 7D 1B 78 */	mr r29, r3
 /* 8025592C 0025176C  4B EA AE B5 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 80255930 00251770  4B FD 76 09 */	bl model__Q43scn4step4boss4BossFv
@@ -247,7 +247,7 @@ onDead__Q53scn4step4boss9moundeath6CustomFv:
 lbl_80255990:
 /* 80255990 002517D0  93 BF 00 0C */	stw r29, 0xc(r31)
 /* 80255994 002517D4  39 61 00 20 */	addi r11, r1, 0x20
-/* 80255998 002517D8  4B DB 19 F9 */	bl lbl_80007390
+/* 80255998 002517D8  4B DB 19 F9 */	bl _restgpr_29
 /* 8025599C 002517DC  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802559A0 002517E0  7C 08 03 A6 */	mtlr r0
 /* 802559A4 002517E4  38 21 00 20 */	addi r1, r1, 0x20
@@ -266,7 +266,7 @@ setBodyCollDefault__Q53scn4step4boss9moundeath6CustomFv:
 /* 802559B8 002517F8  7C 08 02 A6 */	mflr r0
 /* 802559BC 002517FC  90 01 00 24 */	stw r0, 0x24(r1)
 /* 802559C0 00251800  39 61 00 20 */	addi r11, r1, 0x20
-/* 802559C4 00251804  4B DB 19 81 */	bl lbl_80007344
+/* 802559C4 00251804  4B DB 19 81 */	bl _savegpr_29
 /* 802559C8 00251808  7C 7D 1B 78 */	mr r29, r3
 /* 802559CC 0025180C  4B EA AE 15 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 802559D0 00251810  4B FD 75 41 */	bl param__Q43scn4step4boss4BossCFv
@@ -283,7 +283,7 @@ setBodyCollDefault__Q53scn4step4boss9moundeath6CustomFv:
 /* 802559FC 0025183C  7F E5 FB 78 */	mr r5, r31
 /* 80255A00 00251840  4B FE E8 F9 */	bl SetBodyCollDefault__Q53scn4step4boss6common8CollUtilFRQ43scn4step4boss4BossUlfQ33hel4math7Vector2
 /* 80255A04 00251844  39 61 00 20 */	addi r11, r1, 0x20
-/* 80255A08 00251848  4B DB 19 89 */	bl lbl_80007390
+/* 80255A08 00251848  4B DB 19 89 */	bl _restgpr_29
 /* 80255A0C 0025184C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80255A10 00251850  7C 08 03 A6 */	mtlr r0
 /* 80255A14 00251854  38 21 00 20 */	addi r1, r1, 0x20
@@ -294,7 +294,7 @@ setBodyCollRolling__Q53scn4step4boss9moundeath6CustomFv:
 /* 80255A20 00251860  7C 08 02 A6 */	mflr r0
 /* 80255A24 00251864  90 01 00 24 */	stw r0, 0x24(r1)
 /* 80255A28 00251868  39 61 00 20 */	addi r11, r1, 0x20
-/* 80255A2C 0025186C  4B DB 19 15 */	bl lbl_80007340
+/* 80255A2C 0025186C  4B DB 19 15 */	bl _savegpr_28
 /* 80255A30 00251870  7C 7C 1B 78 */	mr r28, r3
 /* 80255A34 00251874  4B EA AD AD */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 80255A38 00251878  4B FD 74 D9 */	bl param__Q43scn4step4boss4BossCFv
@@ -324,7 +324,7 @@ setBodyCollRolling__Q53scn4step4boss9moundeath6CustomFv:
 /* 80255A98 002518D8  38 80 00 06 */	li r4, 0x6
 /* 80255A9C 002518DC  48 01 77 35 */	bl setResistLv__Q43scn4step5chara8BodyCollFQ43scn4step5ocoll11HitResistLv
 /* 80255AA0 002518E0  39 61 00 20 */	addi r11, r1, 0x20
-/* 80255AA4 002518E4  4B DB 18 E9 */	bl lbl_8000738C
+/* 80255AA4 002518E4  4B DB 18 E9 */	bl _restgpr_28
 /* 80255AA8 002518E8  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80255AAC 002518EC  7C 08 03 A6 */	mtlr r0
 /* 80255AB0 002518F0  38 21 00 20 */	addi r1, r1, 0x20

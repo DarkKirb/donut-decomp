@@ -25,7 +25,7 @@ onLanding__Q53scn4step5enemy5sheld10BrainChaseFv:
 /* 802DC87C 002D86BC  7C 08 02 A6 */	mflr r0
 /* 802DC880 002D86C0  90 01 00 24 */	stw r0, 0x24(r1)
 /* 802DC884 002D86C4  39 61 00 20 */	addi r11, r1, 0x20
-/* 802DC888 002D86C8  4B D2 AA B9 */	bl lbl_80007340
+/* 802DC888 002D86C8  4B D2 AA B9 */	bl _savegpr_28
 /* 802DC88C 002D86CC  7C 7C 1B 78 */	mr r28, r3
 /* 802DC890 002D86D0  4B E2 3F 51 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 802DC894 002D86D4  4B FA B9 01 */	bl custom__Q43scn4step5enemy5EnemyFv
@@ -87,7 +87,7 @@ lbl_802DC944:
 /* 802DC954 002D8794  48 00 0F 71 */	bl resetNuru__Q53scn4step5enemy5sheld6CustomFv
 /* 802DC958 002D8798  38 60 00 01 */	li r3, 0x1
 /* 802DC95C 002D879C  39 61 00 20 */	addi r11, r1, 0x20
-/* 802DC960 002D87A0  4B D2 AA 2D */	bl lbl_8000738C
+/* 802DC960 002D87A0  4B D2 AA 2D */	bl _restgpr_28
 /* 802DC964 002D87A4  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802DC968 002D87A8  7C 08 03 A6 */	mtlr r0
 /* 802DC96C 002D87AC  38 21 00 20 */	addi r1, r1, 0x20

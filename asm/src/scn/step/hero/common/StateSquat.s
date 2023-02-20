@@ -7,7 +7,7 @@ TryToChangeState__Q53scn4step4hero6common10StateSquatFPQ43scn4step4hero4Hero:
 /* 8036B5E4 00367424  7C 08 02 A6 */	mflr r0
 /* 8036B5E8 00367428  90 01 00 54 */	stw r0, 0x54(r1)
 /* 8036B5EC 0036742C  39 61 00 50 */	addi r11, r1, 0x50
-/* 8036B5F0 00367430  4B C9 BD 55 */	bl lbl_80007344
+/* 8036B5F0 00367430  4B C9 BD 55 */	bl _savegpr_29
 /* 8036B5F4 00367434  7C 7D 1B 78 */	mr r29, r3
 /* 8036B5F8 00367438  4B FD 4D 85 */	bl stateChecker__Q43scn4step4hero4HeroFv
 /* 8036B5FC 0036743C  4B FF 7C 9D */	bl isBombDanger__Q43scn4step4hero12StateCheckerCFv
@@ -56,7 +56,7 @@ lbl_8036B68C:
 .global lbl_8036B690
 lbl_8036B690:
 /* 8036B690 003674D0  39 61 00 50 */	addi r11, r1, 0x50
-/* 8036B694 003674D4  4B C9 BC FD */	bl lbl_80007390
+/* 8036B694 003674D4  4B C9 BC FD */	bl _restgpr_29
 /* 8036B698 003674D8  80 01 00 54 */	lwz r0, 0x54(r1)
 /* 8036B69C 003674DC  7C 08 03 A6 */	mtlr r0
 /* 8036B6A0 003674E0  38 21 00 50 */	addi r1, r1, 0x50
@@ -140,7 +140,7 @@ procAnim__Q53scn4step4hero6common10StateSquatFv:
 /* 8036B7B0 003675F0  DB E1 00 70 */	stfd f31, 0x70(r1)
 /* 8036B7B4 003675F4  F3 E1 00 78 */	psq_st f31, 0x78(r1), 0, qr0
 /* 8036B7B8 003675F8  39 61 00 70 */	addi r11, r1, 0x70
-/* 8036B7BC 003675FC  4B C9 BB 89 */	bl lbl_80007344
+/* 8036B7BC 003675FC  4B C9 BB 89 */	bl _savegpr_29
 /* 8036B7C0 00367600  7C 7D 1B 78 */	mr r29, r3
 /* 8036B7C4 00367604  4B D9 50 1D */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 8036B7C8 00367608  4B FD 4B AD */	bl abilityManager__Q43scn4step4hero4HeroFv
@@ -305,7 +305,7 @@ lbl_8036BA08:
 /* 8036BA0C 0036784C  13 E1 00 0C */	psq_lx f31, r1, r0, 0, qr0
 /* 8036BA10 00367850  CB E1 00 70 */	lfd f31, 0x70(r1)
 /* 8036BA14 00367854  39 61 00 70 */	addi r11, r1, 0x70
-/* 8036BA18 00367858  4B C9 B9 79 */	bl lbl_80007390
+/* 8036BA18 00367858  4B C9 B9 79 */	bl _restgpr_29
 /* 8036BA1C 0036785C  80 01 00 84 */	lwz r0, 0x84(r1)
 /* 8036BA20 00367860  7C 08 03 A6 */	mtlr r0
 /* 8036BA24 00367864  38 21 00 80 */	addi r1, r1, 0x80

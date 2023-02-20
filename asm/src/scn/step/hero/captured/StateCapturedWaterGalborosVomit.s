@@ -112,7 +112,7 @@ __dt__Q53scn4step4hero8captured31StateCapturedWaterGalborosVomitFv:
 /* 803842C4 00380104  7C 08 02 A6 */	mflr r0
 /* 803842C8 00380108  90 01 00 24 */	stw r0, 0x24(r1)
 /* 803842CC 0038010C  39 61 00 20 */	addi r11, r1, 0x20
-/* 803842D0 00380110  4B C8 30 75 */	bl lbl_80007344
+/* 803842D0 00380110  4B C8 30 75 */	bl _savegpr_29
 /* 803842D4 00380114  7C 7D 1B 78 */	mr r29, r3
 /* 803842D8 00380118  7C 9E 23 78 */	mr r30, r4
 /* 803842DC 0038011C  2C 03 00 00 */	cmpwi r3, 0x0
@@ -161,7 +161,7 @@ __dt__Q53scn4step4hero8captured31StateCapturedWaterGalborosVomitFv:
 lbl_80384384:
 /* 80384384 003801C4  7F A3 EB 78 */	mr r3, r29
 /* 80384388 003801C8  39 61 00 20 */	addi r11, r1, 0x20
-/* 8038438C 003801CC  4B C8 30 05 */	bl lbl_80007390
+/* 8038438C 003801CC  4B C8 30 05 */	bl _restgpr_29
 /* 80384390 003801D0  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80384394 003801D4  7C 08 03 A6 */	mtlr r0
 /* 80384398 003801D8  38 21 00 20 */	addi r1, r1, 0x20
@@ -232,7 +232,7 @@ procFixPos__Q53scn4step4hero8captured31StateCapturedWaterGalborosVomitFv:
 /* 80384470 003802B0  7C 08 02 A6 */	mflr r0
 /* 80384474 003802B4  90 01 00 54 */	stw r0, 0x54(r1)
 /* 80384478 003802B8  39 61 00 50 */	addi r11, r1, 0x50
-/* 8038447C 003802BC  4B C8 2E C5 */	bl lbl_80007340
+/* 8038447C 003802BC  4B C8 2E C5 */	bl _savegpr_28
 /* 80384480 003802C0  7C 7C 1B 78 */	mr r28, r3
 /* 80384484 003802C4  4B D7 C3 5D */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 80384488 003802C8  4B FB BE 55 */	bl param__Q43scn4step4hero4HeroFv
@@ -310,7 +310,7 @@ lbl_8038459C:
 .global lbl_803845A0
 lbl_803845A0:
 /* 803845A0 003803E0  39 61 00 50 */	addi r11, r1, 0x50
-/* 803845A4 003803E4  4B C8 2D E9 */	bl lbl_8000738C
+/* 803845A4 003803E4  4B C8 2D E9 */	bl _restgpr_28
 /* 803845A8 003803E8  80 01 00 54 */	lwz r0, 0x54(r1)
 /* 803845AC 003803EC  7C 08 03 A6 */	mtlr r0
 /* 803845B0 003803F0  38 21 00 50 */	addi r1, r1, 0x50

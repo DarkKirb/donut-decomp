@@ -55,7 +55,7 @@ __ct__Q53scn4step4boss15challengemaster14StateSCPursuitFPQ43scn4step4boss4Bossb:
 /* 80242B20 0023E960  7C 08 02 A6 */	mflr r0
 /* 80242B24 0023E964  90 01 00 44 */	stw r0, 0x44(r1)
 /* 80242B28 0023E968  39 61 00 40 */	addi r11, r1, 0x40
-/* 80242B2C 0023E96C  4B DC 48 15 */	bl lbl_80007340
+/* 80242B2C 0023E96C  4B DC 48 15 */	bl _savegpr_28
 /* 80242B30 0023E970  7C 7C 1B 78 */	mr r28, r3
 /* 80242B34 0023E974  7C BD 2B 78 */	mr r29, r5
 /* 80242B38 0023E978  4B FF 19 A9 */	bl __ct__Q43scn4step4boss9StateBaseFPQ43scn4step4boss4Boss
@@ -129,7 +129,7 @@ lbl_80242BF4:
 /* 80242C40 0023EA80  90 03 00 04 */	stw r0, 0x4(r3)
 /* 80242C44 0023EA84  7F 83 E3 78 */	mr r3, r28
 /* 80242C48 0023EA88  39 61 00 40 */	addi r11, r1, 0x40
-/* 80242C4C 0023EA8C  4B DC 47 41 */	bl lbl_8000738C
+/* 80242C4C 0023EA8C  4B DC 47 41 */	bl _restgpr_28
 /* 80242C50 0023EA90  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 80242C54 0023EA94  7C 08 03 A6 */	mtlr r0
 /* 80242C58 0023EA98  38 21 00 40 */	addi r1, r1, 0x40
@@ -170,7 +170,7 @@ procMove__Q53scn4step4boss15challengemaster14StateSCPursuitFv:
 /* 80242CB8 0023EAF8  DB E1 00 A0 */	stfd f31, 0xa0(r1)
 /* 80242CBC 0023EAFC  F3 E1 00 A8 */	psq_st f31, 0xa8(r1), 0, qr0
 /* 80242CC0 0023EB00  39 61 00 A0 */	addi r11, r1, 0xa0
-/* 80242CC4 0023EB04  4B DC 46 7D */	bl lbl_80007340
+/* 80242CC4 0023EB04  4B DC 46 7D */	bl _savegpr_28
 /* 80242CC8 0023EB08  7C 7C 1B 78 */	mr r28, r3
 /* 80242CCC 0023EB0C  4B EB DB 15 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 80242CD0 0023EB10  4B FE A3 19 */	bl custom__Q43scn4step4boss4BossFv
@@ -301,7 +301,7 @@ lbl_80242E50:
 /* 80242EAC 0023ECEC  13 E1 00 0C */	psq_lx f31, r1, r0, 0, qr0
 /* 80242EB0 0023ECF0  CB E1 00 A0 */	lfd f31, 0xa0(r1)
 /* 80242EB4 0023ECF4  39 61 00 A0 */	addi r11, r1, 0xa0
-/* 80242EB8 0023ECF8  4B DC 44 D5 */	bl lbl_8000738C
+/* 80242EB8 0023ECF8  4B DC 44 D5 */	bl _restgpr_28
 /* 80242EBC 0023ECFC  80 01 00 B4 */	lwz r0, 0xb4(r1)
 /* 80242EC0 0023ED00  7C 08 03 A6 */	mtlr r0
 /* 80242EC4 0023ED04  38 21 00 B0 */	addi r1, r1, 0xb0

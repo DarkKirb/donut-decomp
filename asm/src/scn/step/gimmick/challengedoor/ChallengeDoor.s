@@ -7,7 +7,7 @@ __ct__Q53scn4step7gimmick13challengedoor13ChallengeDoorFRCQ43scn4step3map18BinGm
 /* 8030647C 003022BC  7C 08 02 A6 */	mflr r0
 /* 80306480 003022C0  90 01 00 64 */	stw r0, 0x64(r1)
 /* 80306484 003022C4  39 61 00 60 */	addi r11, r1, 0x60
-/* 80306488 003022C8  4B D0 0E B1 */	bl lbl_80007338
+/* 80306488 003022C8  4B D0 0E B1 */	bl _savegpr_26
 /* 8030648C 003022CC  7C 7C 1B 78 */	mr r28, r3
 /* 80306490 003022D0  7C 9D 23 78 */	mr r29, r4
 /* 80306494 003022D4  7C BE 2B 78 */	mr r30, r5
@@ -142,7 +142,7 @@ __ct__Q53scn4step7gimmick13challengedoor13ChallengeDoorFRCQ43scn4step3map18BinGm
 /* 80306698 003024D8  4B FF 0D BD */	bl add__Q43scn4step7gimmick4StopFRQ43scn4step7gimmick6Effect
 /* 8030669C 003024DC  7F 83 E3 78 */	mr r3, r28
 /* 803066A0 003024E0  39 61 00 60 */	addi r11, r1, 0x60
-/* 803066A4 003024E4  4B D0 0C E1 */	bl lbl_80007384
+/* 803066A4 003024E4  4B D0 0C E1 */	bl _restgpr_26
 /* 803066A8 003024E8  80 01 00 64 */	lwz r0, 0x64(r1)
 /* 803066AC 003024EC  7C 08 03 A6 */	mtlr r0
 /* 803066B0 003024F0  38 21 00 60 */	addi r1, r1, 0x60
@@ -153,7 +153,7 @@ __ct__Q53scn4step7gimmick13challengedoor13ChallengeDoorFRCQ43scn4step3map18BinGm
 /* 803066BC 003024FC  7C 08 02 A6 */	mflr r0
 /* 803066C0 00302500  90 01 00 24 */	stw r0, 0x24(r1)
 /* 803066C4 00302504  39 61 00 20 */	addi r11, r1, 0x20
-/* 803066C8 00302508  4B D0 0C 7D */	bl lbl_80007344
+/* 803066C8 00302508  4B D0 0C 7D */	bl _savegpr_29
 /* 803066CC 0030250C  7C 7D 1B 78 */	mr r29, r3
 /* 803066D0 00302510  7C 9E 23 78 */	mr r30, r4
 /* 803066D4 00302514  2C 03 00 00 */	cmpwi r3, 0x0
@@ -182,7 +182,7 @@ lbl_80306704:
 lbl_80306724:
 /* 80306724 00302564  7F A3 EB 78 */	mr r3, r29
 /* 80306728 00302568  39 61 00 20 */	addi r11, r1, 0x20
-/* 8030672C 0030256C  4B D0 0C 65 */	bl lbl_80007390
+/* 8030672C 0030256C  4B D0 0C 65 */	bl _restgpr_29
 /* 80306730 00302570  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80306734 00302574  7C 08 03 A6 */	mtlr r0
 /* 80306738 00302578  38 21 00 20 */	addi r1, r1, 0x20
@@ -267,7 +267,7 @@ init__Q53scn4step7gimmick13challengedoor13ChallengeDoorFv:
 /* 80306854 00302694  DB E1 01 90 */	stfd f31, 0x190(r1)
 /* 80306858 00302698  F3 E1 01 98 */	psq_st f31, 0x198(r1), 0, qr0
 /* 8030685C 0030269C  39 61 01 90 */	addi r11, r1, 0x190
-/* 80306860 003026A0  4B D0 0A DD */	bl lbl_8000733C
+/* 80306860 003026A0  4B D0 0A DD */	bl _savegpr_27
 /* 80306864 003026A4  7C 7F 1B 78 */	mr r31, r3
 /* 80306868 003026A8  38 63 01 88 */	addi r3, r3, 0x188
 /* 8030686C 003026AC  38 80 00 05 */	li r4, 0x5
@@ -496,7 +496,7 @@ lbl_80306BA4:
 /* 80306BA8 003029E8  13 E1 00 0C */	psq_lx f31, r1, r0, 0, qr0
 /* 80306BAC 003029EC  CB E1 01 90 */	lfd f31, 0x190(r1)
 /* 80306BB0 003029F0  39 61 01 90 */	addi r11, r1, 0x190
-/* 80306BB4 003029F4  4B D0 07 D5 */	bl lbl_80007388
+/* 80306BB4 003029F4  4B D0 07 D5 */	bl _restgpr_27
 /* 80306BB8 003029F8  80 01 01 A4 */	lwz r0, 0x1a4(r1)
 /* 80306BBC 003029FC  7C 08 03 A6 */	mtlr r0
 /* 80306BC0 00302A00  38 21 01 A0 */	addi r1, r1, 0x1a0
@@ -639,7 +639,7 @@ procAnim__Q53scn4step7gimmick13challengedoor13ChallengeDoorFv:
 /* 80306D7C 00302BBC  7C 08 02 A6 */	mflr r0
 /* 80306D80 00302BC0  90 01 00 54 */	stw r0, 0x54(r1)
 /* 80306D84 00302BC4  39 61 00 50 */	addi r11, r1, 0x50
-/* 80306D88 00302BC8  4B D0 05 B5 */	bl lbl_8000733C
+/* 80306D88 00302BC8  4B D0 05 B5 */	bl _savegpr_27
 /* 80306D8C 00302BCC  7C 7F 1B 78 */	mr r31, r3
 /* 80306D90 00302BD0  80 63 00 04 */	lwz r3, 0x4(r3)
 /* 80306D94 00302BD4  4B F1 A0 65 */	bl heroManager__Q33scn4step9ComponentFv
@@ -987,7 +987,7 @@ lbl_80307244:
 /* 80307254 00303094  7F E3 FB 78 */	mr r3, r31
 /* 80307258 00303098  48 00 3D FD */	bl Unregister__Q53scn4step7gimmick13challengedoor17MintChallengeDoorFRQ53scn4step7gimmick13challengedoor13ChallengeDoor
 /* 8030725C 0030309C  39 61 00 50 */	addi r11, r1, 0x50
-/* 80307260 003030A0  4B D0 01 29 */	bl lbl_80007388
+/* 80307260 003030A0  4B D0 01 29 */	bl _restgpr_27
 /* 80307264 003030A4  80 01 00 54 */	lwz r0, 0x54(r1)
 /* 80307268 003030A8  7C 08 03 A6 */	mtlr r0
 /* 8030726C 003030AC  38 21 00 50 */	addi r1, r1, 0x50
@@ -1118,7 +1118,7 @@ check__Q53scn4step7gimmick13challengedoor13ChallengeDoorCFRCQ33hel4math7Vector2:
 /* 80307408 00303248  7C 08 02 A6 */	mflr r0
 /* 8030740C 0030324C  90 01 00 24 */	stw r0, 0x24(r1)
 /* 80307410 00303250  39 61 00 20 */	addi r11, r1, 0x20
-/* 80307414 00303254  4B CF FF 31 */	bl lbl_80007344
+/* 80307414 00303254  4B CF FF 31 */	bl _savegpr_29
 /* 80307418 00303258  7C 7D 1B 78 */	mr r29, r3
 /* 8030741C 0030325C  7C 9E 23 78 */	mr r30, r4
 /* 80307420 00303260  7C BF 2B 78 */	mr r31, r5
@@ -1146,7 +1146,7 @@ check__Q53scn4step7gimmick13challengedoor13ChallengeDoorCFRCQ33hel4math7Vector2:
 .global lbl_80307478
 lbl_80307478:
 /* 80307478 003032B8  39 61 00 20 */	addi r11, r1, 0x20
-/* 8030747C 003032BC  4B CF FF 15 */	bl lbl_80007390
+/* 8030747C 003032BC  4B CF FF 15 */	bl _restgpr_29
 /* 80307480 003032C0  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80307484 003032C4  7C 08 03 A6 */	mtlr r0
 /* 80307488 003032C8  38 21 00 20 */	addi r1, r1, 0x20
@@ -1841,7 +1841,7 @@ mfSetBoardAnim__Q53scn4step7gimmick13challengedoor13ChallengeDoorFQ33scn4step18C
 /* 80307DB4 00303BF4  7C 08 02 A6 */	mflr r0
 /* 80307DB8 00303BF8  90 01 00 24 */	stw r0, 0x24(r1)
 /* 80307DBC 00303BFC  39 61 00 20 */	addi r11, r1, 0x20
-/* 80307DC0 00303C00  4B CF F5 85 */	bl lbl_80007344
+/* 80307DC0 00303C00  4B CF F5 85 */	bl _savegpr_29
 /* 80307DC4 00303C04  7C 7D 1B 78 */	mr r29, r3
 /* 80307DC8 00303C08  7C DE 33 78 */	mr r30, r6
 /* 80307DCC 00303C0C  3C E0 80 48 */	lis r7, "@57573_80480800"@ha
@@ -1905,7 +1905,7 @@ lbl_80307E64:
 /* 80307E84 00303CC4  7F E4 FB 78 */	mr r4, r31
 /* 80307E88 00303CC8  4B FE F3 F5 */	bl start__Q43scn4step7gimmick5ModelFb
 /* 80307E8C 00303CCC  39 61 00 20 */	addi r11, r1, 0x20
-/* 80307E90 00303CD0  4B CF F5 01 */	bl lbl_80007390
+/* 80307E90 00303CD0  4B CF F5 01 */	bl _restgpr_29
 /* 80307E94 00303CD4  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80307E98 00303CD8  7C 08 03 A6 */	mtlr r0
 /* 80307E9C 00303CDC  38 21 00 20 */	addi r1, r1, 0x20

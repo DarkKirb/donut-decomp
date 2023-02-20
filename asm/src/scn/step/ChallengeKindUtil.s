@@ -285,7 +285,7 @@ TitleLayoutContext__Q33scn4step17ChallengeKindUtilFQ33scn4step13ChallengeKindRQ2
 /* 8021D058 00218E98  7C 08 02 A6 */	mflr r0
 /* 8021D05C 00218E9C  90 01 00 64 */	stw r0, 0x64(r1)
 /* 8021D060 00218EA0  39 61 00 60 */	addi r11, r1, 0x60
-/* 8021D064 00218EA4  4B DE A2 E1 */	bl lbl_80007344
+/* 8021D064 00218EA4  4B DE A2 E1 */	bl _savegpr_29
 /* 8021D068 00218EA8  7C 7D 1B 78 */	mr r29, r3
 /* 8021D06C 00218EAC  7C BE 2B 78 */	mr r30, r5
 /* 8021D070 00218EB0  7C 83 23 78 */	mr r3, r4
@@ -308,7 +308,7 @@ TitleLayoutContext__Q33scn4step17ChallengeKindUtilFQ33scn4step13ChallengeKindRQ2
 /* 8021D0B4 00218EF4  7F C6 F3 78 */	mr r6, r30
 /* 8021D0B8 00218EF8  4B F9 0C AD */	bl __ct__Q23lyt13LayoutContextFPCcPCcRQ23mem10IAllocator
 /* 8021D0BC 00218EFC  39 61 00 60 */	addi r11, r1, 0x60
-/* 8021D0C0 00218F00  4B DE A2 D1 */	bl lbl_80007390
+/* 8021D0C0 00218F00  4B DE A2 D1 */	bl _restgpr_29
 /* 8021D0C4 00218F04  80 01 00 64 */	lwz r0, 0x64(r1)
 /* 8021D0C8 00218F08  7C 08 03 A6 */	mtlr r0
 /* 8021D0CC 00218F0C  38 21 00 60 */	addi r1, r1, 0x60

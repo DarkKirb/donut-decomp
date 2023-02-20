@@ -169,7 +169,7 @@ onInWater__Q53scn4step5enemy10parasoldoo6CustomFv:
 /* 802CDE84 002C9CC4  7C 08 02 A6 */	mflr r0
 /* 802CDE88 002C9CC8  90 01 00 24 */	stw r0, 0x24(r1)
 /* 802CDE8C 002C9CCC  39 61 00 20 */	addi r11, r1, 0x20
-/* 802CDE90 002C9CD0  4B D3 94 B5 */	bl lbl_80007344
+/* 802CDE90 002C9CD0  4B D3 94 B5 */	bl _savegpr_29
 /* 802CDE94 002C9CD4  7C 7D 1B 78 */	mr r29, r3
 /* 802CDE98 002C9CD8  48 00 03 C5 */	bl onDamageProc__Q53scn4step5enemy10parasoldoo6CustomFv
 /* 802CDE9C 002C9CDC  7F A3 EB 78 */	mr r3, r29
@@ -195,7 +195,7 @@ lbl_802CDEE4:
 /* 802CDEE4 002C9D24  93 BF 00 0C */	stw r29, 0xc(r31)
 /* 802CDEE8 002C9D28  38 60 00 00 */	li r3, 0x0
 /* 802CDEEC 002C9D2C  39 61 00 20 */	addi r11, r1, 0x20
-/* 802CDEF0 002C9D30  4B D3 94 A1 */	bl lbl_80007390
+/* 802CDEF0 002C9D30  4B D3 94 A1 */	bl _restgpr_29
 /* 802CDEF4 002C9D34  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802CDEF8 002C9D38  7C 08 03 A6 */	mtlr r0
 /* 802CDEFC 002C9D3C  38 21 00 20 */	addi r1, r1, 0x20
@@ -368,7 +368,7 @@ onParasolRelease__Q53scn4step5enemy10parasoldoo6CustomFRQ53scn4step5enemy7paraso
 /* 802CE110 002C9F50  7C 08 02 A6 */	mflr r0
 /* 802CE114 002C9F54  90 01 00 24 */	stw r0, 0x24(r1)
 /* 802CE118 002C9F58  39 61 00 20 */	addi r11, r1, 0x20
-/* 802CE11C 002C9F5C  4B D3 92 21 */	bl lbl_8000733C
+/* 802CE11C 002C9F5C  4B D3 92 21 */	bl _savegpr_27
 /* 802CE120 002C9F60  7C 7B 1B 78 */	mr r27, r3
 /* 802CE124 002C9F64  7C 9C 23 78 */	mr r28, r4
 /* 802CE128 002C9F68  4B E3 26 B9 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
@@ -436,7 +436,7 @@ lbl_802CE1F4:
 /* 802CE200 002CA040  7F 63 DB 78 */	mr r3, r27
 /* 802CE204 002CA044  48 00 00 9D */	bl revertSettingOnParasolRelease__Q53scn4step5enemy10parasoldoo6CustomFv
 /* 802CE208 002CA048  39 61 00 20 */	addi r11, r1, 0x20
-/* 802CE20C 002CA04C  4B D3 91 7D */	bl lbl_80007388
+/* 802CE20C 002CA04C  4B D3 91 7D */	bl _restgpr_27
 /* 802CE210 002CA050  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802CE214 002CA054  7C 08 03 A6 */	mtlr r0
 /* 802CE218 002CA058  38 21 00 20 */	addi r1, r1, 0x20
@@ -515,7 +515,7 @@ changeParasolStateToRise__Q53scn4step5enemy10parasoldoo6CustomFv:
 /* 802CE318 002CA158  7C 08 02 A6 */	mflr r0
 /* 802CE31C 002CA15C  90 01 00 94 */	stw r0, 0x94(r1)
 /* 802CE320 002CA160  39 61 00 90 */	addi r11, r1, 0x90
-/* 802CE324 002CA164  4B D3 90 21 */	bl lbl_80007344
+/* 802CE324 002CA164  4B D3 90 21 */	bl _savegpr_29
 /* 802CE328 002CA168  7C 7D 1B 78 */	mr r29, r3
 /* 802CE32C 002CA16C  38 63 00 0C */	addi r3, r3, 0xc
 /* 802CE330 002CA170  4B EB A3 99 */	bl wasSetParent__Q24file8FileTreeCFv
@@ -597,7 +597,7 @@ lbl_802CE43C:
 .global lbl_802CE448
 lbl_802CE448:
 /* 802CE448 002CA288  39 61 00 90 */	addi r11, r1, 0x90
-/* 802CE44C 002CA28C  4B D3 8F 45 */	bl lbl_80007390
+/* 802CE44C 002CA28C  4B D3 8F 45 */	bl _restgpr_29
 /* 802CE450 002CA290  80 01 00 94 */	lwz r0, 0x94(r1)
 /* 802CE454 002CA294  7C 08 03 A6 */	mtlr r0
 /* 802CE458 002CA298  38 21 00 90 */	addi r1, r1, 0x90

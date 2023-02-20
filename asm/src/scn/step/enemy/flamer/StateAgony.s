@@ -7,7 +7,7 @@ __ct__Q53scn4step5enemy6flamer10StateAgonyFPQ43scn4step5enemy5Enemy:
 /* 802B23C4 002AE204  7C 08 02 A6 */	mflr r0
 /* 802B23C8 002AE208  90 01 00 24 */	stw r0, 0x24(r1)
 /* 802B23CC 002AE20C  39 61 00 20 */	addi r11, r1, 0x20
-/* 802B23D0 002AE210  4B D5 4F 75 */	bl lbl_80007344
+/* 802B23D0 002AE210  4B D5 4F 75 */	bl _savegpr_29
 /* 802B23D4 002AE214  7C 7D 1B 78 */	mr r29, r3
 /* 802B23D8 002AE218  4B FD B9 ED */	bl __ct__Q43scn4step5enemy9StateBaseFPQ43scn4step5enemy5Enemy
 /* 802B23DC 002AE21C  3C 60 80 47 */	lis r3, __vt__Q53scn4step5enemy6flamer10StateAgony@ha
@@ -51,7 +51,7 @@ lbl_802B2460:
 /* 802B2464 002AE2A4  4B FF 80 11 */	bl procAnim__Q53scn4step5enemy6damage23StateDeadCaptureReleaseFv
 /* 802B2468 002AE2A8  7F A3 EB 78 */	mr r3, r29
 /* 802B246C 002AE2AC  39 61 00 20 */	addi r11, r1, 0x20
-/* 802B2470 002AE2B0  4B D5 4F 21 */	bl lbl_80007390
+/* 802B2470 002AE2B0  4B D5 4F 21 */	bl _restgpr_29
 /* 802B2474 002AE2B4  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802B2478 002AE2B8  7C 08 03 A6 */	mtlr r0
 /* 802B247C 002AE2BC  38 21 00 20 */	addi r1, r1, 0x20
@@ -67,7 +67,7 @@ procAnim__Q53scn4step5enemy6flamer10StateAgonyFv:
 /* 802B2498 002AE2D8  DB C1 00 F0 */	stfd f30, 0xf0(r1)
 /* 802B249C 002AE2DC  F3 C1 00 F8 */	psq_st f30, 0xf8(r1), 0, qr0
 /* 802B24A0 002AE2E0  39 61 00 F0 */	addi r11, r1, 0xf0
-/* 802B24A4 002AE2E4  4B D5 4E A1 */	bl lbl_80007344
+/* 802B24A4 002AE2E4  4B D5 4E A1 */	bl _savegpr_29
 /* 802B24A8 002AE2E8  7C 7F 1B 78 */	mr r31, r3
 /* 802B24AC 002AE2EC  3C 00 43 30 */	lis r0, 0x4330
 /* 802B24B0 002AE2F0  90 01 00 A8 */	stw r0, 0xa8(r1)
@@ -283,7 +283,7 @@ lbl_802B27A4:
 /* 802B27C8 002AE608  13 C1 00 0C */	psq_lx f30, r1, r0, 0, qr0
 /* 802B27CC 002AE60C  CB C1 00 F0 */	lfd f30, 0xf0(r1)
 /* 802B27D0 002AE610  39 61 00 F0 */	addi r11, r1, 0xf0
-/* 802B27D4 002AE614  4B D5 4B BD */	bl lbl_80007390
+/* 802B27D4 002AE614  4B D5 4B BD */	bl _restgpr_29
 /* 802B27D8 002AE618  80 01 01 14 */	lwz r0, 0x114(r1)
 /* 802B27DC 002AE61C  7C 08 03 A6 */	mtlr r0
 /* 802B27E0 002AE620  38 21 01 10 */	addi r1, r1, 0x110

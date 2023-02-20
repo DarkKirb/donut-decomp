@@ -47,7 +47,7 @@ lbl_8028A2E4:
 /* 8028A300 00286140  7C 08 02 A6 */	mflr r0
 /* 8028A304 00286144  90 01 00 F4 */	stw r0, 0xf4(r1)
 /* 8028A308 00286148  39 61 00 F0 */	addi r11, r1, 0xf0
-/* 8028A30C 0028614C  4B D7 D0 39 */	bl lbl_80007344
+/* 8028A30C 0028614C  4B D7 D0 39 */	bl _savegpr_29
 /* 8028A310 00286150  7C 7D 1B 78 */	mr r29, r3
 /* 8028A314 00286154  7C 9E 23 78 */	mr r30, r4
 /* 8028A318 00286158  3B E0 00 00 */	li r31, 0x0
@@ -81,7 +81,7 @@ lbl_8028A358:
 /* 8028A378 002861B8  38 81 00 08 */	addi r4, r1, 0x8
 /* 8028A37C 002861BC  4B FF FF 01 */	bl "t_updateDamageInfo__Q43scn4step5enemy21@unnamed@MapColl_cpp@FRQ43scn4step5chara13MapCollResultRCQ35mcoll6detail9ActorInfo"
 /* 8028A380 002861C0  39 61 00 F0 */	addi r11, r1, 0xf0
-/* 8028A384 002861C4  4B D7 D0 0D */	bl lbl_80007390
+/* 8028A384 002861C4  4B D7 D0 0D */	bl _restgpr_29
 /* 8028A388 002861C8  80 01 00 F4 */	lwz r0, 0xf4(r1)
 /* 8028A38C 002861CC  7C 08 03 A6 */	mtlr r0
 /* 8028A390 002861D0  38 21 00 F0 */	addi r1, r1, 0xf0
@@ -92,7 +92,7 @@ __ct__Q43scn4step5enemy7MapCollFRQ43scn4step5enemy5Enemy:
 /* 8028A39C 002861DC  7C 08 02 A6 */	mflr r0
 /* 8028A3A0 002861E0  90 01 00 24 */	stw r0, 0x24(r1)
 /* 8028A3A4 002861E4  39 61 00 20 */	addi r11, r1, 0x20
-/* 8028A3A8 002861E8  4B D7 CF 9D */	bl lbl_80007344
+/* 8028A3A8 002861E8  4B D7 CF 9D */	bl _savegpr_29
 /* 8028A3AC 002861EC  7C 7D 1B 78 */	mr r29, r3
 /* 8028A3B0 002861F0  7C 9E 23 78 */	mr r30, r4
 /* 8028A3B4 002861F4  90 83 00 00 */	stw r4, 0x0(r3)
@@ -123,7 +123,7 @@ __ct__Q43scn4step5enemy7MapCollFRQ43scn4step5enemy5Enemy:
 /* 8028A418 00286258  48 00 09 59 */	bl initActor__Q43scn4step5enemy7MapCollFv
 /* 8028A41C 0028625C  7F A3 EB 78 */	mr r3, r29
 /* 8028A420 00286260  39 61 00 20 */	addi r11, r1, 0x20
-/* 8028A424 00286264  4B D7 CF 6D */	bl lbl_80007390
+/* 8028A424 00286264  4B D7 CF 6D */	bl _restgpr_29
 /* 8028A428 00286268  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8028A42C 0028626C  7C 08 03 A6 */	mtlr r0
 /* 8028A430 00286270  38 21 00 20 */	addi r1, r1, 0x20
@@ -149,7 +149,7 @@ procMapColl__Q43scn4step5enemy7MapCollFv:
 /* 8028A478 002862B8  DB 61 15 00 */	stfd f27, 0x1500(r1)
 /* 8028A47C 002862BC  13 61 00 0E */	psq_stx f27, r1, r0, 0, qr0
 /* 8028A480 002862C0  39 61 15 00 */	addi r11, r1, 0x1500
-/* 8028A484 002862C4  4B D7 CE B9 */	bl lbl_8000733C
+/* 8028A484 002862C4  4B D7 CE B9 */	bl _savegpr_27
 /* 8028A488 002862C8  7C 7F 1B 78 */	mr r31, r3
 /* 8028A48C 002862CC  88 03 00 48 */	lbz r0, 0x48(r3)
 /* 8028A490 002862D0  2C 00 00 00 */	cmpwi r0, 0x0
@@ -621,7 +621,7 @@ lbl_8028AABC:
 /* 8028AAF0 00286930  13 61 00 0C */	psq_lx f27, r1, r0, 0, qr0
 /* 8028AAF4 00286934  CB 61 15 00 */	lfd f27, 0x1500(r1)
 /* 8028AAF8 00286938  39 61 15 00 */	addi r11, r1, 0x1500
-/* 8028AAFC 0028693C  4B D7 C8 8D */	bl lbl_80007388
+/* 8028AAFC 0028693C  4B D7 C8 8D */	bl _restgpr_27
 /* 8028AB00 00286940  80 01 15 54 */	lwz r0, 0x1554(r1)
 /* 8028AB04 00286944  7C 08 03 A6 */	mtlr r0
 /* 8028AB08 00286948  38 21 15 50 */	addi r1, r1, 0x1550

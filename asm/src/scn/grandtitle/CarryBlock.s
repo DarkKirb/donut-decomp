@@ -7,7 +7,7 @@ __ct__Q33scn10grandtitle10CarryBlockFRQ33scn10grandtitle9ComponentRQ23g3d10Chara
 /* 80200E34 001FCC74  7C 08 02 A6 */	mflr r0
 /* 80200E38 001FCC78  90 01 01 24 */	stw r0, 0x124(r1)
 /* 80200E3C 001FCC7C  39 61 01 20 */	addi r11, r1, 0x120
-/* 80200E40 001FCC80  4B E0 64 F9 */	bl lbl_80007338
+/* 80200E40 001FCC80  4B E0 64 F9 */	bl _savegpr_26
 /* 80200E44 001FCC84  7C 7A 1B 78 */	mr r26, r3
 /* 80200E48 001FCC88  7C 9C 23 78 */	mr r28, r4
 /* 80200E4C 001FCC8C  7C BB 2B 78 */	mr r27, r5
@@ -78,7 +78,7 @@ __ct__Q33scn10grandtitle10CarryBlockFRQ33scn10grandtitle9ComponentRQ23g3d10Chara
 /* 80200F50 001FCD90  4B F9 3B F5 */	bl setModelRTMtx__Q23g3d8StdModelFRCQ33hel4math8Matrix34
 /* 80200F54 001FCD94  7F 43 D3 78 */	mr r3, r26
 /* 80200F58 001FCD98  39 61 01 20 */	addi r11, r1, 0x120
-/* 80200F5C 001FCD9C  4B E0 64 29 */	bl lbl_80007384
+/* 80200F5C 001FCD9C  4B E0 64 29 */	bl _restgpr_26
 /* 80200F60 001FCDA0  80 01 01 24 */	lwz r0, 0x124(r1)
 /* 80200F64 001FCDA4  7C 08 03 A6 */	mtlr r0
 /* 80200F68 001FCDA8  38 21 01 20 */	addi r1, r1, 0x120

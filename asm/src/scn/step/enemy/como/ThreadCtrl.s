@@ -255,7 +255,7 @@ setLength__Q53scn4step5enemy4como10ThreadCtrlFf:
 /* 802A8964 002A47A4  7C 08 02 A6 */	mflr r0
 /* 802A8968 002A47A8  90 01 00 44 */	stw r0, 0x44(r1)
 /* 802A896C 002A47AC  39 61 00 40 */	addi r11, r1, 0x40
-/* 802A8970 002A47B0  4B D5 E9 D5 */	bl lbl_80007344
+/* 802A8970 002A47B0  4B D5 E9 D5 */	bl _savegpr_29
 /* 802A8974 002A47B4  7C 7D 1B 78 */	mr r29, r3
 /* 802A8978 002A47B8  D0 23 00 0C */	stfs f1, 0xc(r3)
 /* 802A897C 002A47BC  80 63 00 00 */	lwz r3, 0x0(r3)
@@ -311,7 +311,7 @@ lbl_802A89AC:
 /* 802A8A3C 002A487C  7F C6 F3 78 */	mr r6, r30
 /* 802A8A40 002A4880  4B FC 98 09 */	bl addSearchAttack__Q43scn4step5chara7ObjCollFUlfRCQ33hel4math7Vector2RCQ33hel4math7Vector2
 /* 802A8A44 002A4884  39 61 00 40 */	addi r11, r1, 0x40
-/* 802A8A48 002A4888  4B D5 E9 49 */	bl lbl_80007390
+/* 802A8A48 002A4888  4B D5 E9 49 */	bl _restgpr_29
 /* 802A8A4C 002A488C  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 802A8A50 002A4890  7C 08 03 A6 */	mtlr r0
 /* 802A8A54 002A4894  38 21 00 40 */	addi r1, r1, 0x40

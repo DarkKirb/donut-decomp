@@ -11,7 +11,7 @@ GenerateStarEffect__Q43scn4step6weapon7UtilityFRQ43scn4step6weapon6WeaponRCQ33he
 /* 803D9010 003D4E50  7C 08 02 A6 */	mflr r0
 /* 803D9014 003D4E54  90 01 00 44 */	stw r0, 0x44(r1)
 /* 803D9018 003D4E58  39 61 00 40 */	addi r11, r1, 0x40
-/* 803D901C 003D4E5C  4B C2 E3 21 */	bl lbl_8000733C
+/* 803D901C 003D4E5C  4B C2 E3 21 */	bl _savegpr_27
 /* 803D9020 003D4E60  7C 7B 1B 78 */	mr r27, r3
 /* 803D9024 003D4E64  7C 9C 23 78 */	mr r28, r4
 /* 803D9028 003D4E68  7C BD 2B 78 */	mr r29, r5
@@ -36,7 +36,7 @@ GenerateStarEffect__Q43scn4step6weapon7UtilityFRQ43scn4step6weapon6WeaponRCQ33he
 /* 803D9074 003D4EB4  7F E7 FB 78 */	mr r7, r31
 /* 803D9078 003D4EB8  48 00 00 1D */	bl GenerateStarEffectByPos__Q43scn4step6weapon7UtilityFRQ43scn4step6weapon6WeaponRCQ33hel4math7Vector2RCQ33hel4math7Vector2Q43scn4step3map17BinEnemyVariationUl
 /* 803D907C 003D4EBC  39 61 00 40 */	addi r11, r1, 0x40
-/* 803D9080 003D4EC0  4B C2 E3 09 */	bl lbl_80007388
+/* 803D9080 003D4EC0  4B C2 E3 09 */	bl _restgpr_27
 /* 803D9084 003D4EC4  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 803D9088 003D4EC8  7C 08 03 A6 */	mtlr r0
 /* 803D908C 003D4ECC  38 21 00 40 */	addi r1, r1, 0x40
@@ -126,7 +126,7 @@ SetFollowerNodePos__Q43scn4step6weapon7UtilityFRQ43scn4step6weapon6WeaponRQ43scn
 /* 803D91B4 003D4FF4  7C 08 02 A6 */	mflr r0
 /* 803D91B8 003D4FF8  90 01 00 84 */	stw r0, 0x84(r1)
 /* 803D91BC 003D4FFC  39 61 00 80 */	addi r11, r1, 0x80
-/* 803D91C0 003D5000  4B C2 E1 81 */	bl lbl_80007340
+/* 803D91C0 003D5000  4B C2 E1 81 */	bl _savegpr_28
 /* 803D91C4 003D5004  7C 7C 1B 78 */	mr r28, r3
 /* 803D91C8 003D5008  7C 9D 23 78 */	mr r29, r4
 /* 803D91CC 003D500C  7C BE 2B 78 */	mr r30, r5
@@ -180,7 +180,7 @@ lbl_803D9274:
 .global lbl_803D927C
 lbl_803D927C:
 /* 803D927C 003D50BC  39 61 00 80 */	addi r11, r1, 0x80
-/* 803D9280 003D50C0  4B C2 E1 0D */	bl lbl_8000738C
+/* 803D9280 003D50C0  4B C2 E1 0D */	bl _restgpr_28
 /* 803D9284 003D50C4  80 01 00 84 */	lwz r0, 0x84(r1)
 /* 803D9288 003D50C8  7C 08 03 A6 */	mtlr r0
 /* 803D928C 003D50CC  38 21 00 80 */	addi r1, r1, 0x80

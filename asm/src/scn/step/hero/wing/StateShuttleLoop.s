@@ -7,7 +7,7 @@ TryToChangeState__Q53scn4step4hero4wing16StateShuttleLoopFPQ43scn4step4hero4Hero
 /* 80399884 003956C4  7C 08 02 A6 */	mflr r0
 /* 80399888 003956C8  90 01 00 24 */	stw r0, 0x24(r1)
 /* 8039988C 003956CC  39 61 00 20 */	addi r11, r1, 0x20
-/* 80399890 003956D0  4B C6 DA B5 */	bl lbl_80007344
+/* 80399890 003956D0  4B C6 DA B5 */	bl _savegpr_29
 /* 80399894 003956D4  7C 7D 1B 78 */	mr r29, r3
 /* 80399898 003956D8  4B FA 6A B5 */	bl hid__Q43scn4step4hero4HeroFv
 /* 8039989C 003956DC  38 80 00 20 */	li r4, 0x20
@@ -39,7 +39,7 @@ lbl_803998F0:
 .global lbl_803998F4
 lbl_803998F4:
 /* 803998F4 00395734  39 61 00 20 */	addi r11, r1, 0x20
-/* 803998F8 00395738  4B C6 DA 99 */	bl lbl_80007390
+/* 803998F8 00395738  4B C6 DA 99 */	bl _restgpr_29
 /* 803998FC 0039573C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80399900 00395740  7C 08 03 A6 */	mtlr r0
 /* 80399904 00395744  38 21 00 20 */	addi r1, r1, 0x20
@@ -153,7 +153,7 @@ procAnim__Q53scn4step4hero4wing16StateShuttleLoopFv:
 /* 80399A7C 003958BC  7C 08 02 A6 */	mflr r0
 /* 80399A80 003958C0  90 01 00 24 */	stw r0, 0x24(r1)
 /* 80399A84 003958C4  39 61 00 20 */	addi r11, r1, 0x20
-/* 80399A88 003958C8  4B C6 D8 BD */	bl lbl_80007344
+/* 80399A88 003958C8  4B C6 D8 BD */	bl _savegpr_29
 /* 80399A8C 003958CC  7C 7D 1B 78 */	mr r29, r3
 /* 80399A90 003958D0  4B D6 6D 51 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 80399A94 003958D4  4B FA 68 89 */	bl model__Q43scn4step4hero4HeroFv
@@ -189,7 +189,7 @@ lbl_80399B00:
 .global lbl_80399B04
 lbl_80399B04:
 /* 80399B04 00395944  39 61 00 20 */	addi r11, r1, 0x20
-/* 80399B08 00395948  4B C6 D8 89 */	bl lbl_80007390
+/* 80399B08 00395948  4B C6 D8 89 */	bl _restgpr_29
 /* 80399B0C 0039594C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80399B10 00395950  7C 08 03 A6 */	mtlr r0
 /* 80399B14 00395954  38 21 00 20 */	addi r1, r1, 0x20
@@ -203,7 +203,7 @@ procMove__Q53scn4step4hero4wing16StateShuttleLoopFv:
 /* 80399B28 00395968  DB E1 00 50 */	stfd f31, 0x50(r1)
 /* 80399B2C 0039596C  F3 E1 00 58 */	psq_st f31, 0x58(r1), 0, qr0
 /* 80399B30 00395970  39 61 00 50 */	addi r11, r1, 0x50
-/* 80399B34 00395974  4B C6 D8 0D */	bl lbl_80007340
+/* 80399B34 00395974  4B C6 D8 0D */	bl _savegpr_28
 /* 80399B38 00395978  7C 7C 1B 78 */	mr r28, r3
 /* 80399B3C 0039597C  4B D6 6C A5 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 80399B40 00395980  4B FA 67 9D */	bl param__Q43scn4step4hero4HeroFv
@@ -302,7 +302,7 @@ procMove__Q53scn4step4hero4wing16StateShuttleLoopFv:
 /* 80399CB4 00395AF4  13 E1 00 0C */	psq_lx f31, r1, r0, 0, qr0
 /* 80399CB8 00395AF8  CB E1 00 50 */	lfd f31, 0x50(r1)
 /* 80399CBC 00395AFC  39 61 00 50 */	addi r11, r1, 0x50
-/* 80399CC0 00395B00  4B C6 D6 CD */	bl lbl_8000738C
+/* 80399CC0 00395B00  4B C6 D6 CD */	bl _restgpr_28
 /* 80399CC4 00395B04  80 01 00 64 */	lwz r0, 0x64(r1)
 /* 80399CC8 00395B08  7C 08 03 A6 */	mtlr r0
 /* 80399CCC 00395B0C  38 21 00 60 */	addi r1, r1, 0x60

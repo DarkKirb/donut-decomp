@@ -7,7 +7,7 @@ Create__Q53scn4step4boss10creditroah9ModelDescFUlb:
 /* 8024B6D8 00247518  7C 08 02 A6 */	mflr r0
 /* 8024B6DC 0024751C  90 01 00 54 */	stw r0, 0x54(r1)
 /* 8024B6E0 00247520  39 61 00 50 */	addi r11, r1, 0x50
-/* 8024B6E4 00247524  4B DB BC 5D */	bl lbl_80007340
+/* 8024B6E4 00247524  4B DB BC 5D */	bl _savegpr_28
 /* 8024B6E8 00247528  3C 60 80 46 */	lis r3, "@50131_80467018"@ha
 /* 8024B6EC 0024752C  3B E3 70 18 */	addi r31, r3, "@50131_80467018"@l
 /* 8024B6F0 00247530  3B 9F 01 20 */	addi r28, r31, 0x120
@@ -73,7 +73,7 @@ lbl_8024B7B4:
 /* 8024B7C8 00247608  3C 60 80 54 */	lis r3, "@LOCAL@CreateTmpl<23,0,0>__Q43scn4step4boss9ModelDescFPCcPCcPCcUlPPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc"@ha
 /* 8024B7CC 0024760C  38 63 71 50 */	addi r3, r3, "@LOCAL@CreateTmpl<23,0,0>__Q43scn4step4boss9ModelDescFPCcPCcPCcUlPPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc"@l
 /* 8024B7D0 00247610  39 61 00 50 */	addi r11, r1, 0x50
-/* 8024B7D4 00247614  4B DB BB B9 */	bl lbl_8000738C
+/* 8024B7D4 00247614  4B DB BB B9 */	bl _restgpr_28
 /* 8024B7D8 00247618  80 01 00 54 */	lwz r0, 0x54(r1)
 /* 8024B7DC 0024761C  7C 08 03 A6 */	mtlr r0
 /* 8024B7E0 00247620  38 21 00 50 */	addi r1, r1, 0x50

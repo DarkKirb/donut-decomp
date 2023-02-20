@@ -8,7 +8,7 @@ SetBodyCollDefault__Q53scn4step4boss6common8CollUtilFRQ43scn4step4boss4BossUlfQ3
 /* 80244300 00240140  90 01 00 24 */	stw r0, 0x24(r1)
 /* 80244304 00240144  DB E1 00 18 */	stfd f31, 0x18(r1)
 /* 80244308 00240148  39 61 00 18 */	addi r11, r1, 0x18
-/* 8024430C 0024014C  4B DC 30 35 */	bl lbl_80007340
+/* 8024430C 0024014C  4B DC 30 35 */	bl _savegpr_28
 /* 80244310 00240150  7C 7C 1B 78 */	mr r28, r3
 /* 80244314 00240154  7C 9D 23 78 */	mr r29, r4
 /* 80244318 00240158  FF E0 08 90 */	fmr f31, f1
@@ -31,7 +31,7 @@ SetBodyCollDefault__Q53scn4step4boss6common8CollUtilFRQ43scn4step4boss4BossUlfQ3
 /* 8024435C 0024019C  48 02 8E 75 */	bl setResistLv__Q43scn4step5chara8BodyCollFQ43scn4step5ocoll11HitResistLv
 /* 80244360 002401A0  CB E1 00 18 */	lfd f31, 0x18(r1)
 /* 80244364 002401A4  39 61 00 18 */	addi r11, r1, 0x18
-/* 80244368 002401A8  4B DC 30 25 */	bl lbl_8000738C
+/* 80244368 002401A8  4B DC 30 25 */	bl _restgpr_28
 /* 8024436C 002401AC  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80244370 002401B0  7C 08 03 A6 */	mtlr r0
 /* 80244374 002401B4  38 21 00 20 */	addi r1, r1, 0x20
@@ -43,7 +43,7 @@ SetBodyCollDefault__Q53scn4step4boss6common8CollUtilFRQ43scn4step4boss4BossUlfQ3
 /* 80244384 002401C4  90 01 00 34 */	stw r0, 0x34(r1)
 /* 80244388 002401C8  DB E1 00 28 */	stfd f31, 0x28(r1)
 /* 8024438C 002401CC  39 61 00 28 */	addi r11, r1, 0x28
-/* 80244390 002401D0  4B DC 2F AD */	bl lbl_8000733C
+/* 80244390 002401D0  4B DC 2F AD */	bl _savegpr_27
 /* 80244394 002401D4  7C 7B 1B 78 */	mr r27, r3
 /* 80244398 002401D8  7C 9C 23 78 */	mr r28, r4
 /* 8024439C 002401DC  FF E0 08 90 */	fmr f31, f1
@@ -68,7 +68,7 @@ SetBodyCollDefault__Q53scn4step4boss6common8CollUtilFRQ43scn4step4boss4BossUlfQ3
 /* 802443E8 00240228  48 02 8D E9 */	bl setResistLv__Q43scn4step5chara8BodyCollFQ43scn4step5ocoll11HitResistLv
 /* 802443EC 0024022C  CB E1 00 28 */	lfd f31, 0x28(r1)
 /* 802443F0 00240230  39 61 00 28 */	addi r11, r1, 0x28
-/* 802443F4 00240234  4B DC 2F 95 */	bl lbl_80007388
+/* 802443F4 00240234  4B DC 2F 95 */	bl _restgpr_27
 /* 802443F8 00240238  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 802443FC 0024023C  7C 08 03 A6 */	mtlr r0
 /* 80244400 00240240  38 21 00 30 */	addi r1, r1, 0x30

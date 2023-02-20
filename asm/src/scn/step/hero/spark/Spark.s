@@ -7,7 +7,7 @@ __ct__Q53scn4step4hero5spark5SparkFRQ33scn4step9ComponentRQ43scn4step4hero4Hero:
 /* 8038CDA4 00388BE4  7C 08 02 A6 */	mflr r0
 /* 8038CDA8 00388BE8  90 01 00 24 */	stw r0, 0x24(r1)
 /* 8038CDAC 00388BEC  39 61 00 20 */	addi r11, r1, 0x20
-/* 8038CDB0 00388BF0  4B C7 A5 91 */	bl lbl_80007340
+/* 8038CDB0 00388BF0  4B C7 A5 91 */	bl _savegpr_28
 /* 8038CDB4 00388BF4  7C 7C 1B 78 */	mr r28, r3
 /* 8038CDB8 00388BF8  4B F9 E9 C9 */	bl __ct__Q43scn4step4hero11AbilityBaseFRQ33scn4step9ComponentRQ43scn4step4hero4Hero
 /* 8038CDBC 00388BFC  3C 60 80 49 */	lis r3, __vt__Q53scn4step4hero5spark5Spark@ha
@@ -33,7 +33,7 @@ __ct__Q53scn4step4hero5spark5SparkFRQ33scn4step9ComponentRQ43scn4step4hero4Hero:
 /* 8038CE0C 00388C4C  93 DC 02 88 */	stw r30, 0x288(r28)
 /* 8038CE10 00388C50  7F 83 E3 78 */	mr r3, r28
 /* 8038CE14 00388C54  39 61 00 20 */	addi r11, r1, 0x20
-/* 8038CE18 00388C58  4B C7 A5 75 */	bl lbl_8000738C
+/* 8038CE18 00388C58  4B C7 A5 75 */	bl _restgpr_28
 /* 8038CE1C 00388C5C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8038CE20 00388C60  7C 08 03 A6 */	mtlr r0
 /* 8038CE24 00388C64  38 21 00 20 */	addi r1, r1, 0x20
@@ -98,7 +98,7 @@ setup__Q53scn4step4hero5spark5SparkFv:
 /* 8038CEE0 00388D20  7C 08 02 A6 */	mflr r0
 /* 8038CEE4 00388D24  90 01 00 24 */	stw r0, 0x24(r1)
 /* 8038CEE8 00388D28  39 61 00 20 */	addi r11, r1, 0x20
-/* 8038CEEC 00388D2C  4B C7 A4 59 */	bl lbl_80007344
+/* 8038CEEC 00388D2C  4B C7 A4 59 */	bl _savegpr_29
 /* 8038CEF0 00388D30  7C 7D 1B 78 */	mr r29, r3
 /* 8038CEF4 00388D34  80 63 00 04 */	lwz r3, 0x4(r3)
 /* 8038CEF8 00388D38  4B E7 F3 41 */	bl sfxManager__Q33scn7history9ComponentFv
@@ -163,7 +163,7 @@ setup__Q53scn4step4hero5spark5SparkFv:
 /* 8038CFE4 00388E24  38 00 00 01 */	li r0, 0x1
 /* 8038CFE8 00388E28  98 1D 00 0C */	stb r0, 0xc(r29)
 /* 8038CFEC 00388E2C  39 61 00 20 */	addi r11, r1, 0x20
-/* 8038CFF0 00388E30  4B C7 A3 A1 */	bl lbl_80007390
+/* 8038CFF0 00388E30  4B C7 A3 A1 */	bl _restgpr_29
 /* 8038CFF4 00388E34  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8038CFF8 00388E38  7C 08 03 A6 */	mtlr r0
 /* 8038CFFC 00388E3C  38 21 00 20 */	addi r1, r1, 0x20
@@ -317,7 +317,7 @@ updateCharge__Q53scn4step4hero5spark5SparkFv:
 /* 8038D1D4 00389014  7C 08 02 A6 */	mflr r0
 /* 8038D1D8 00389018  90 01 00 24 */	stw r0, 0x24(r1)
 /* 8038D1DC 0038901C  39 61 00 20 */	addi r11, r1, 0x20
-/* 8038D1E0 00389020  4B C7 A1 65 */	bl lbl_80007344
+/* 8038D1E0 00389020  4B C7 A1 65 */	bl _savegpr_29
 /* 8038D1E4 00389024  7C 7D 1B 78 */	mr r29, r3
 /* 8038D1E8 00389028  83 C3 00 08 */	lwz r30, 0x8(r3)
 /* 8038D1EC 0038902C  48 00 08 E1 */	bl canCharge__Q53scn4step4hero5spark5SparkFv
@@ -408,7 +408,7 @@ lbl_8038D308:
 .global lbl_8038D310
 lbl_8038D310:
 /* 8038D310 00389150  39 61 00 20 */	addi r11, r1, 0x20
-/* 8038D314 00389154  4B C7 A0 7D */	bl lbl_80007390
+/* 8038D314 00389154  4B C7 A0 7D */	bl _restgpr_29
 /* 8038D318 00389158  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8038D31C 0038915C  7C 08 03 A6 */	mtlr r0
 /* 8038D320 00389160  38 21 00 20 */	addi r1, r1, 0x20
@@ -420,7 +420,7 @@ procObjCollReact__Q53scn4step4hero5spark5SparkFv:
 /* 8038D32C 0038916C  7C 08 02 A6 */	mflr r0
 /* 8038D330 00389170  90 01 00 24 */	stw r0, 0x24(r1)
 /* 8038D334 00389174  39 61 00 20 */	addi r11, r1, 0x20
-/* 8038D338 00389178  4B C7 A0 0D */	bl lbl_80007344
+/* 8038D338 00389178  4B C7 A0 0D */	bl _savegpr_29
 /* 8038D33C 0038917C  7C 7D 1B 78 */	mr r29, r3
 /* 8038D340 00389180  88 03 00 0C */	lbz r0, 0xc(r3)
 /* 8038D344 00389184  2C 00 00 00 */	cmpwi r0, 0x0
@@ -449,7 +449,7 @@ procObjCollReact__Q53scn4step4hero5spark5SparkFv:
 .global lbl_8038D3A0
 lbl_8038D3A0:
 /* 8038D3A0 003891E0  39 61 00 20 */	addi r11, r1, 0x20
-/* 8038D3A4 003891E4  4B C7 9F ED */	bl lbl_80007390
+/* 8038D3A4 003891E4  4B C7 9F ED */	bl _restgpr_29
 /* 8038D3A8 003891E8  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8038D3AC 003891EC  7C 08 03 A6 */	mtlr r0
 /* 8038D3B0 003891F0  38 21 00 20 */	addi r1, r1, 0x20
@@ -746,7 +746,7 @@ changePowerLv__Q53scn4step4hero5spark5SparkFv:
 /* 8038D788 003895C8  7C 08 02 A6 */	mflr r0
 /* 8038D78C 003895CC  90 01 00 24 */	stw r0, 0x24(r1)
 /* 8038D790 003895D0  39 61 00 20 */	addi r11, r1, 0x20
-/* 8038D794 003895D4  4B C7 9B A9 */	bl lbl_8000733C
+/* 8038D794 003895D4  4B C7 9B A9 */	bl _savegpr_27
 /* 8038D798 003895D8  7C 7B 1B 78 */	mr r27, r3
 /* 8038D79C 003895DC  80 63 00 08 */	lwz r3, 0x8(r3)
 /* 8038D7A0 003895E0  4B FB 2B 3D */	bl param__Q43scn4step4hero4HeroFv
@@ -828,7 +828,7 @@ lbl_8038D88C:
 .global lbl_8038D890
 lbl_8038D890:
 /* 8038D890 003896D0  39 61 00 20 */	addi r11, r1, 0x20
-/* 8038D894 003896D4  4B C7 9A F5 */	bl lbl_80007388
+/* 8038D894 003896D4  4B C7 9A F5 */	bl _restgpr_27
 /* 8038D898 003896D8  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8038D89C 003896DC  7C 08 03 A6 */	mtlr r0
 /* 8038D8A0 003896E0  38 21 00 20 */	addi r1, r1, 0x20

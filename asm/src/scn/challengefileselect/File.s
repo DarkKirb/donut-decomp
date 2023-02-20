@@ -7,7 +7,7 @@ __ct__Q33scn19challengefileselect4FileFRQ23mem10IAllocatorRCQ23lyt12PaneAccessor
 /* 801E39DC 001DF81C  7C 08 02 A6 */	mflr r0
 /* 801E39E0 001DF820  90 01 04 14 */	stw r0, 0x414(r1)
 /* 801E39E4 001DF824  39 61 04 10 */	addi r11, r1, 0x410
-/* 801E39E8 001DF828  4B E2 39 55 */	bl lbl_8000733C
+/* 801E39E8 001DF828  4B E2 39 55 */	bl _savegpr_27
 /* 801E39EC 001DF82C  7C 7B 1B 78 */	mr r27, r3
 /* 801E39F0 001DF830  7C 9C 23 78 */	mr r28, r4
 /* 801E39F4 001DF834  7C BD 2B 78 */	mr r29, r5
@@ -128,7 +128,7 @@ __ct__Q33scn19challengefileselect4FileFRQ23mem10IAllocatorRCQ23lyt12PaneAccessor
 /* 801E3BC0 001DFA00  48 00 00 F5 */	bl init__Q33scn19challengefileselect4FileFv
 /* 801E3BC4 001DFA04  7F 63 DB 78 */	mr r3, r27
 /* 801E3BC8 001DFA08  39 61 04 10 */	addi r11, r1, 0x410
-/* 801E3BCC 001DFA0C  4B E2 37 BD */	bl lbl_80007388
+/* 801E3BCC 001DFA0C  4B E2 37 BD */	bl _restgpr_27
 /* 801E3BD0 001DFA10  80 01 04 14 */	lwz r0, 0x414(r1)
 /* 801E3BD4 001DFA14  7C 08 03 A6 */	mtlr r0
 /* 801E3BD8 001DFA18  38 21 04 10 */	addi r1, r1, 0x410
@@ -331,7 +331,7 @@ selectPane__Q33scn19challengefileselect4FileFQ43scn19challengefileselect4File2No
 /* 801E3E1C 001DFC5C  7C 08 02 A6 */	mflr r0
 /* 801E3E20 001DFC60  90 01 0D 14 */	stw r0, 0xd14(r1)
 /* 801E3E24 001DFC64  39 61 0D 10 */	addi r11, r1, 0xd10
-/* 801E3E28 001DFC68  4B E2 35 01 */	bl lbl_80007328
+/* 801E3E28 001DFC68  4B E2 35 01 */	bl _savegpr_22
 /* 801E3E2C 001DFC6C  7C 7D 1B 78 */	mr r29, r3
 /* 801E3E30 001DFC70  7C 9E 23 78 */	mr r30, r4
 /* 801E3E34 001DFC74  3C 60 80 46 */	lis r3, "@52743_8045E0D8"@ha
@@ -525,7 +525,7 @@ lbl_801E3F1C:
 /* 801E410C 001DFF4C  38 80 FF FF */	li r4, -0x1
 /* 801E4110 001DFF50  4B F9 41 11 */	bl __dt__Q23lyt12PaneAccessorFv
 /* 801E4114 001DFF54  39 61 0D 10 */	addi r11, r1, 0xd10
-/* 801E4118 001DFF58  4B E2 32 5D */	bl lbl_80007374
+/* 801E4118 001DFF58  4B E2 32 5D */	bl _restgpr_22
 /* 801E411C 001DFF5C  80 01 0D 14 */	lwz r0, 0xd14(r1)
 /* 801E4120 001DFF60  7C 08 03 A6 */	mtlr r0
 /* 801E4124 001DFF64  38 21 0D 10 */	addi r1, r1, 0xd10

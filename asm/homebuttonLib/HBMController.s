@@ -83,7 +83,7 @@ wpadExtensionCallback__Q210homebutton10ControllerFll:
 /* 8012A124 00125F64  7C 08 02 A6 */	mflr r0
 /* 8012A128 00125F68  90 01 00 24 */	stw r0, 0x24(r1)
 /* 8012A12C 00125F6C  39 61 00 20 */	addi r11, r1, 0x20
-/* 8012A130 00125F70  4B ED D2 09 */	bl lbl_80007338
+/* 8012A130 00125F70  4B ED D2 09 */	bl _savegpr_26
 /* 8012A134 00125F74  3F A0 80 54 */	lis r29, sThis__Q210homebutton10Controller@ha
 /* 8012A138 00125F78  54 7C 10 3A */	slwi r28, r3, 2
 /* 8012A13C 00125F7C  3B BD 36 88 */	addi r29, r29, sThis__Q210homebutton10Controller@l
@@ -140,7 +140,7 @@ lbl_8012A1E0:
 .global lbl_8012A200
 lbl_8012A200:
 /* 8012A200 00126040  39 61 00 20 */	addi r11, r1, 0x20
-/* 8012A204 00126044  4B ED D1 81 */	bl lbl_80007384
+/* 8012A204 00126044  4B ED D1 81 */	bl _restgpr_26
 /* 8012A208 00126048  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8012A20C 0012604C  7C 08 03 A6 */	mtlr r0
 /* 8012A210 00126050  38 21 00 20 */	addi r1, r1, 0x20
@@ -185,7 +185,7 @@ __ct__Q210homebutton10ControllerFiPQ210homebutton9RemoteSpk:
 /* 8012A294 001260D4  7C 08 02 A6 */	mflr r0
 /* 8012A298 001260D8  90 01 00 24 */	stw r0, 0x24(r1)
 /* 8012A29C 001260DC  39 61 00 20 */	addi r11, r1, 0x20
-/* 8012A2A0 001260E0  4B ED D0 9D */	bl lbl_8000733C
+/* 8012A2A0 001260E0  4B ED D0 9D */	bl _savegpr_27
 /* 8012A2A4 001260E4  3C C0 80 41 */	lis r6, "@9283"@ha
 /* 8012A2A8 001260E8  3B E0 00 00 */	li r31, 0x0
 /* 8012A2AC 001260EC  C0 06 DD F8 */	lfs f0, "@9283"@l(r6)
@@ -223,7 +223,7 @@ __ct__Q210homebutton10ControllerFiPQ210homebutton9RemoteSpk:
 lbl_8012A328:
 /* 8012A328 00126168  39 61 00 20 */	addi r11, r1, 0x20
 /* 8012A32C 0012616C  7F 63 DB 78 */	mr r3, r27
-/* 8012A330 00126170  4B ED D0 59 */	bl lbl_80007388
+/* 8012A330 00126170  4B ED D0 59 */	bl _restgpr_27
 /* 8012A334 00126174  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8012A338 00126178  7C 08 03 A6 */	mtlr r0
 /* 8012A33C 0012617C  38 21 00 20 */	addi r1, r1, 0x20
@@ -617,7 +617,7 @@ updateSound__Q210homebutton10ControllerFv:
 /* 8012A824 00126664  7C 08 02 A6 */	mflr r0
 /* 8012A828 00126668  90 01 00 24 */	stw r0, 0x24(r1)
 /* 8012A82C 0012666C  39 61 00 20 */	addi r11, r1, 0x20
-/* 8012A830 00126670  4B ED CB 0D */	bl lbl_8000733C
+/* 8012A830 00126670  4B ED CB 0D */	bl _savegpr_27
 /* 8012A834 00126674  83 63 00 00 */	lwz r27, 0x0(r3)
 /* 8012A838 00126678  7C 7F 1B 78 */	mr r31, r3
 /* 8012A83C 0012667C  80 63 00 20 */	lwz r3, 0x20(r3)
@@ -758,7 +758,7 @@ lbl_8012A99C:
 .global lbl_8012AA40
 lbl_8012AA40:
 /* 8012AA40 00126880  39 61 00 20 */	addi r11, r1, 0x20
-/* 8012AA44 00126884  4B ED C9 45 */	bl lbl_80007388
+/* 8012AA44 00126884  4B ED C9 45 */	bl _restgpr_27
 /* 8012AA48 00126888  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8012AA4C 0012688C  7C 08 03 A6 */	mtlr r0
 /* 8012AA50 00126890  38 21 00 20 */	addi r1, r1, 0x20

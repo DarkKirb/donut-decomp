@@ -7,7 +7,7 @@ __ct__Q33scn10grandtitle9TitleInfoFRQ33scn10grandtitle9Component:
 /* 8020665C 0020249C  7C 08 02 A6 */	mflr r0
 /* 80206660 002024A0  90 01 01 84 */	stw r0, 0x184(r1)
 /* 80206664 002024A4  39 61 01 80 */	addi r11, r1, 0x180
-/* 80206668 002024A8  4B E0 0C DD */	bl lbl_80007344
+/* 80206668 002024A8  4B E0 0C DD */	bl _savegpr_29
 /* 8020666C 002024AC  7C 7D 1B 78 */	mr r29, r3
 /* 80206670 002024B0  7C 9E 23 78 */	mr r30, r4
 /* 80206674 002024B4  90 83 00 00 */	stw r4, 0x0(r3)
@@ -103,7 +103,7 @@ __ct__Q33scn10grandtitle9TitleInfoFRQ33scn10grandtitle9Component:
 /* 802067DC 0020261C  4B F7 1A 45 */	bl __dt__Q23lyt12PaneAccessorFv
 /* 802067E0 00202620  7F A3 EB 78 */	mr r3, r29
 /* 802067E4 00202624  39 61 01 80 */	addi r11, r1, 0x180
-/* 802067E8 00202628  4B E0 0B A9 */	bl lbl_80007390
+/* 802067E8 00202628  4B E0 0B A9 */	bl _restgpr_29
 /* 802067EC 0020262C  80 01 01 84 */	lwz r0, 0x184(r1)
 /* 802067F0 00202630  7C 08 03 A6 */	mtlr r0
 /* 802067F4 00202634  38 21 01 80 */	addi r1, r1, 0x180
@@ -365,7 +365,7 @@ updatePushText__Q33scn10grandtitle9TitleInfoFv:
 /* 80206B74 002029B4  DB E1 00 70 */	stfd f31, 0x70(r1)
 /* 80206B78 002029B8  F3 E1 00 78 */	psq_st f31, 0x78(r1), 0, qr0
 /* 80206B7C 002029BC  39 61 00 70 */	addi r11, r1, 0x70
-/* 80206B80 002029C0  4B E0 07 C5 */	bl lbl_80007344
+/* 80206B80 002029C0  4B E0 07 C5 */	bl _savegpr_29
 /* 80206B84 002029C4  7C 7D 1B 78 */	mr r29, r3
 /* 80206B88 002029C8  3C 60 80 46 */	lis r3, "@52919"@ha
 /* 80206B8C 002029CC  3B E3 0A 98 */	addi r31, r3, "@52919"@l
@@ -468,7 +468,7 @@ lbl_80206C54:
 /* 80206CD8 00202B18  13 E1 00 0C */	psq_lx f31, r1, r0, 0, qr0
 /* 80206CDC 00202B1C  CB E1 00 70 */	lfd f31, 0x70(r1)
 /* 80206CE0 00202B20  39 61 00 70 */	addi r11, r1, 0x70
-/* 80206CE4 00202B24  4B E0 06 AD */	bl lbl_80007390
+/* 80206CE4 00202B24  4B E0 06 AD */	bl _restgpr_29
 /* 80206CE8 00202B28  80 01 00 84 */	lwz r0, 0x84(r1)
 /* 80206CEC 00202B2C  7C 08 03 A6 */	mtlr r0
 /* 80206CF0 00202B30  38 21 00 80 */	addi r1, r1, 0x80

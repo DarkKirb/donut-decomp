@@ -7,7 +7,7 @@ Create__Q53scn4step4boss15challengemaster9ModelDescFUlb:
 /* 8023DACC 0023990C  7C 08 02 A6 */	mflr r0
 /* 8023DAD0 00239910  90 01 00 34 */	stw r0, 0x34(r1)
 /* 8023DAD4 00239914  39 61 00 30 */	addi r11, r1, 0x30
-/* 8023DAD8 00239918  4B DC 98 69 */	bl lbl_80007340
+/* 8023DAD8 00239918  4B DC 98 69 */	bl _savegpr_28
 /* 8023DADC 0023991C  3C 60 80 46 */	lis r3, "@50132_80465650"@ha
 /* 8023DAE0 00239920  3B C3 56 50 */	addi r30, r3, "@50132_80465650"@l
 /* 8023DAE4 00239924  3B 9E 06 B8 */	addi r28, r30, 0x6b8
@@ -46,7 +46,7 @@ lbl_8023DB10:
 /* 8023DB60 002399A0  4B FF 4E B5 */	bl Set__Q43scn4step4boss9ModelDescFRQ43scn4step5chara9ModelDescRQ24gobj8AnimDescRQ24gobj10ScriptDescPCcPCcPCcUlPPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry
 /* 8023DB64 002399A4  38 7F 6D 28 */	addi r3, r31, 0x6d28
 /* 8023DB68 002399A8  39 61 00 30 */	addi r11, r1, 0x30
-/* 8023DB6C 002399AC  4B DC 98 21 */	bl lbl_8000738C
+/* 8023DB6C 002399AC  4B DC 98 21 */	bl _restgpr_28
 /* 8023DB70 002399B0  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 8023DB74 002399B4  7C 08 03 A6 */	mtlr r0
 /* 8023DB78 002399B8  38 21 00 30 */	addi r1, r1, 0x30

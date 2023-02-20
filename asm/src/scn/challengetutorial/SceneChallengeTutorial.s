@@ -66,7 +66,7 @@ __ct__Q43scn17challengetutorial22SceneChallengeTutorial7PreLoadFRCQ43scn17challe
 /* 801F6848 001F2688  7C 08 02 A6 */	mflr r0
 /* 801F684C 001F268C  90 01 06 84 */	stw r0, 0x684(r1)
 /* 801F6850 001F2690  39 61 06 80 */	addi r11, r1, 0x680
-/* 801F6854 001F2694  4B E1 0A E9 */	bl lbl_8000733C
+/* 801F6854 001F2694  4B E1 0A E9 */	bl _savegpr_27
 /* 801F6858 001F2698  7C 7D 1B 78 */	mr r29, r3
 /* 801F685C 001F269C  7C 9E 23 78 */	mr r30, r4
 /* 801F6860 001F26A0  3C 60 80 46 */	lis r3, "@53516_8045F888"@ha
@@ -202,7 +202,7 @@ lbl_801F6A04:
 /* 801F6A1C 001F285C  4B F7 F1 4D */	bl __dt__Q23scn6ISceneFv
 /* 801F6A20 001F2860  7F A3 EB 78 */	mr r3, r29
 /* 801F6A24 001F2864  39 61 06 80 */	addi r11, r1, 0x680
-/* 801F6A28 001F2868  4B E1 09 61 */	bl lbl_80007388
+/* 801F6A28 001F2868  4B E1 09 61 */	bl _restgpr_27
 /* 801F6A2C 001F286C  80 01 06 84 */	lwz r0, 0x684(r1)
 /* 801F6A30 001F2870  7C 08 03 A6 */	mtlr r0
 /* 801F6A34 001F2874  38 21 06 80 */	addi r1, r1, 0x680
@@ -213,7 +213,7 @@ __ct__Q33scn17challengetutorial22SceneChallengeTutorialFRCQ43scn17challengetutor
 /* 801F6A40 001F2880  7C 08 02 A6 */	mflr r0
 /* 801F6A44 001F2884  90 01 00 B4 */	stw r0, 0xb4(r1)
 /* 801F6A48 001F2888  39 61 00 B0 */	addi r11, r1, 0xb0
-/* 801F6A4C 001F288C  4B E1 08 ED */	bl lbl_80007338
+/* 801F6A4C 001F288C  4B E1 08 ED */	bl _savegpr_26
 /* 801F6A50 001F2890  7C 7E 1B 78 */	mr r30, r3
 /* 801F6A54 001F2894  7C 9F 23 78 */	mr r31, r4
 /* 801F6A58 001F2898  3C A0 80 46 */	lis r5, __vt__Q33scn17challengetutorial22SceneChallengeTutorial@ha
@@ -422,7 +422,7 @@ lbl_801F6BFC:
 /* 801F6D44 001F2B84  90 1E 69 38 */	stw r0, 0x6938(r30)
 /* 801F6D48 001F2B88  7F C3 F3 78 */	mr r3, r30
 /* 801F6D4C 001F2B8C  39 61 00 B0 */	addi r11, r1, 0xb0
-/* 801F6D50 001F2B90  4B E1 06 35 */	bl lbl_80007384
+/* 801F6D50 001F2B90  4B E1 06 35 */	bl _restgpr_26
 /* 801F6D54 001F2B94  80 01 00 B4 */	lwz r0, 0xb4(r1)
 /* 801F6D58 001F2B98  7C 08 03 A6 */	mtlr r0
 /* 801F6D5C 001F2B9C  38 21 00 B0 */	addi r1, r1, 0xb0

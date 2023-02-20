@@ -45,7 +45,7 @@ procAnim__Q53scn4step4boss13watergalboros11StateAttackFv:
 /* 80259F38 00255D78  7C 08 02 A6 */	mflr r0
 /* 80259F3C 00255D7C  90 01 00 24 */	stw r0, 0x24(r1)
 /* 80259F40 00255D80  39 61 00 20 */	addi r11, r1, 0x20
-/* 80259F44 00255D84  4B DA D4 01 */	bl lbl_80007344
+/* 80259F44 00255D84  4B DA D4 01 */	bl _savegpr_29
 /* 80259F48 00255D88  7C 7D 1B 78 */	mr r29, r3
 /* 80259F4C 00255D8C  4B EA 68 95 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 80259F50 00255D90  4B FD 30 99 */	bl custom__Q43scn4step4boss4BossFv
@@ -128,7 +128,7 @@ lbl_8025A040:
 .global lbl_8025A044
 lbl_8025A044:
 /* 8025A044 00255E84  39 61 00 20 */	addi r11, r1, 0x20
-/* 8025A048 00255E88  4B DA D3 49 */	bl lbl_80007390
+/* 8025A048 00255E88  4B DA D3 49 */	bl _restgpr_29
 /* 8025A04C 00255E8C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8025A050 00255E90  7C 08 03 A6 */	mtlr r0
 /* 8025A054 00255E94  38 21 00 20 */	addi r1, r1, 0x20

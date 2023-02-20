@@ -375,7 +375,7 @@ detect__Q53scn4step5enemy10stareffect10StateBoundFRCQ33hel4math7Vector2RCQ33hel4
 /* 802E8448 002E4288  7C 08 02 A6 */	mflr r0
 /* 802E844C 002E428C  90 01 00 34 */	stw r0, 0x34(r1)
 /* 802E8450 002E4290  39 61 00 30 */	addi r11, r1, 0x30
-/* 802E8454 002E4294  4B D1 EE ED */	bl lbl_80007340
+/* 802E8454 002E4294  4B D1 EE ED */	bl _savegpr_28
 /* 802E8458 002E4298  7C 7C 1B 78 */	mr r28, r3
 /* 802E845C 002E429C  7C 9D 23 78 */	mr r29, r4
 /* 802E8460 002E42A0  7C BE 2B 78 */	mr r30, r5
@@ -396,7 +396,7 @@ detect__Q53scn4step5enemy10stareffect10StateBoundFRCQ33hel4math7Vector2RCQ33hel4
 /* 802E849C 002E42DC  38 C1 00 08 */	addi r6, r1, 0x8
 /* 802E84A0 002E42E0  4B EC 9F 2D */	bl rayCheck__Q25mcoll11LandManagerCFRCQ33hel4math7Vector2RCQ35mcoll6detail9DetectArg
 /* 802E84A4 002E42E4  39 61 00 30 */	addi r11, r1, 0x30
-/* 802E84A8 002E42E8  4B D1 EE E5 */	bl lbl_8000738C
+/* 802E84A8 002E42E8  4B D1 EE E5 */	bl _restgpr_28
 /* 802E84AC 002E42EC  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 802E84B0 002E42F0  7C 08 03 A6 */	mtlr r0
 /* 802E84B4 002E42F4  38 21 00 30 */	addi r1, r1, 0x30

@@ -9,7 +9,7 @@ __ct__Q53scn4step5enemy5gordo15StateMoveCircleFPQ43scn4step5enemy5Enemy:
 /* 802B9144 002B4F84  DB E1 00 60 */	stfd f31, 0x60(r1)
 /* 802B9148 002B4F88  F3 E1 00 68 */	psq_st f31, 0x68(r1), 0, qr0
 /* 802B914C 002B4F8C  39 61 00 60 */	addi r11, r1, 0x60
-/* 802B9150 002B4F90  4B D4 E1 F5 */	bl lbl_80007344
+/* 802B9150 002B4F90  4B D4 E1 F5 */	bl _savegpr_29
 /* 802B9154 002B4F94  7C 7D 1B 78 */	mr r29, r3
 /* 802B9158 002B4F98  7C 9E 23 78 */	mr r30, r4
 /* 802B915C 002B4F9C  4B FD 4C 69 */	bl __ct__Q43scn4step5enemy9StateBaseFPQ43scn4step5enemy5Enemy
@@ -136,7 +136,7 @@ lbl_802B92A8:
 /* 802B9308 002B5148  13 E1 00 0C */	psq_lx f31, r1, r0, 0, qr0
 /* 802B930C 002B514C  CB E1 00 60 */	lfd f31, 0x60(r1)
 /* 802B9310 002B5150  39 61 00 60 */	addi r11, r1, 0x60
-/* 802B9314 002B5154  4B D4 E0 7D */	bl lbl_80007390
+/* 802B9314 002B5154  4B D4 E0 7D */	bl _restgpr_29
 /* 802B9318 002B5158  80 01 00 74 */	lwz r0, 0x74(r1)
 /* 802B931C 002B515C  7C 08 03 A6 */	mtlr r0
 /* 802B9320 002B5160  38 21 00 70 */	addi r1, r1, 0x70

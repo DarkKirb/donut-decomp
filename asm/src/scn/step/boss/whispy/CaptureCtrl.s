@@ -7,7 +7,7 @@ __ct__Q53scn4step4boss6whispy11CaptureCtrlFRQ43scn4step4boss4Boss:
 /* 8025B8F4 00257734  7C 08 02 A6 */	mflr r0
 /* 8025B8F8 00257738  90 01 00 34 */	stw r0, 0x34(r1)
 /* 8025B8FC 0025773C  39 61 00 30 */	addi r11, r1, 0x30
-/* 8025B900 00257740  4B DA BA 45 */	bl lbl_80007344
+/* 8025B900 00257740  4B DA BA 45 */	bl _savegpr_29
 /* 8025B904 00257744  7C 7D 1B 78 */	mr r29, r3
 /* 8025B908 00257748  7C 9E 23 78 */	mr r30, r4
 /* 8025B90C 0025774C  90 83 00 00 */	stw r4, 0x0(r3)
@@ -53,7 +53,7 @@ __ct__Q53scn4step4boss6whispy11CaptureCtrlFRQ43scn4step4boss4Boss:
 /* 8025B9AC 002577EC  48 0D 73 4D */	bl setConstraintPos__Q43scn4step4hero19CaptureHeroAttackerFRCQ33hel4math7Vector3
 /* 8025B9B0 002577F0  7F A3 EB 78 */	mr r3, r29
 /* 8025B9B4 002577F4  39 61 00 30 */	addi r11, r1, 0x30
-/* 8025B9B8 002577F8  4B DA B9 D9 */	bl lbl_80007390
+/* 8025B9B8 002577F8  4B DA B9 D9 */	bl _restgpr_29
 /* 8025B9BC 002577FC  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 8025B9C0 00257800  7C 08 03 A6 */	mtlr r0
 /* 8025B9C4 00257804  38 21 00 30 */	addi r1, r1, 0x30

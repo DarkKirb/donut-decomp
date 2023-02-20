@@ -44,7 +44,7 @@ procAnim__Q53scn4step5enemy6pierce12StateFlyWaitFv:
 /* 802D1030 002CCE70  7C 08 02 A6 */	mflr r0
 /* 802D1034 002CCE74  90 01 00 24 */	stw r0, 0x24(r1)
 /* 802D1038 002CCE78  39 61 00 20 */	addi r11, r1, 0x20
-/* 802D103C 002CCE7C  4B D3 63 05 */	bl lbl_80007340
+/* 802D103C 002CCE7C  4B D3 63 05 */	bl _savegpr_28
 /* 802D1040 002CCE80  7C 7C 1B 78 */	mr r28, r3
 /* 802D1044 002CCE84  4B E2 F7 9D */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 802D1048 002CCE88  4B FB 70 3D */	bl param__Q43scn4step5enemy5EnemyCFv
@@ -129,7 +129,7 @@ lbl_802D111C:
 .global lbl_802D115C
 lbl_802D115C:
 /* 802D115C 002CCF9C  39 61 00 20 */	addi r11, r1, 0x20
-/* 802D1160 002CCFA0  4B D3 62 2D */	bl lbl_8000738C
+/* 802D1160 002CCFA0  4B D3 62 2D */	bl _restgpr_28
 /* 802D1164 002CCFA4  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802D1168 002CCFA8  7C 08 03 A6 */	mtlr r0
 /* 802D116C 002CCFAC  38 21 00 20 */	addi r1, r1, 0x20

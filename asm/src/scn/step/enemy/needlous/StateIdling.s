@@ -168,7 +168,7 @@ procMove__Q53scn4step5enemy8needlous11StateIdlingFv:
 /* 802C6990 002C27D0  7C 08 02 A6 */	mflr r0
 /* 802C6994 002C27D4  90 01 00 24 */	stw r0, 0x24(r1)
 /* 802C6998 002C27D8  39 61 00 20 */	addi r11, r1, 0x20
-/* 802C699C 002C27DC  4B D4 09 A9 */	bl lbl_80007344
+/* 802C699C 002C27DC  4B D4 09 A9 */	bl _savegpr_29
 /* 802C69A0 002C27E0  7C 7D 1B 78 */	mr r29, r3
 /* 802C69A4 002C27E4  4B E3 9E 3D */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 802C69A8 002C27E8  4B FC 16 DD */	bl param__Q43scn4step5enemy5EnemyCFv
@@ -191,7 +191,7 @@ procMove__Q53scn4step5enemy8needlous11StateIdlingFv:
 /* 802C69EC 002C282C  4B FF F0 D9 */	bl "DynamicCastToRef<Q53scn4step5enemy8needlous6Custom,Q43scn4step5enemy7ICustom>__Q23hel6commonFPQ43scn4step5enemy7ICustom_RQ53scn4step5enemy8needlous6Custom"
 /* 802C69F0 002C2830  4B EC F8 01 */	bl setWriteEnable__Q23gfx19GXFifoMemoryManagerFv
 /* 802C69F4 002C2834  39 61 00 20 */	addi r11, r1, 0x20
-/* 802C69F8 002C2838  4B D4 09 99 */	bl lbl_80007390
+/* 802C69F8 002C2838  4B D4 09 99 */	bl _restgpr_29
 /* 802C69FC 002C283C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802C6A00 002C2840  7C 08 03 A6 */	mtlr r0
 /* 802C6A04 002C2844  38 21 00 20 */	addi r1, r1, 0x20
@@ -205,7 +205,7 @@ procFixPos__Q53scn4step5enemy8needlous11StateIdlingFv:
 /* 802C6A18 002C2858  DB E1 00 60 */	stfd f31, 0x60(r1)
 /* 802C6A1C 002C285C  F3 E1 00 68 */	psq_st f31, 0x68(r1), 0, qr0
 /* 802C6A20 002C2860  39 61 00 60 */	addi r11, r1, 0x60
-/* 802C6A24 002C2864  4B D4 09 21 */	bl lbl_80007344
+/* 802C6A24 002C2864  4B D4 09 21 */	bl _savegpr_29
 /* 802C6A28 002C2868  7C 7D 1B 78 */	mr r29, r3
 /* 802C6A2C 002C286C  4B E3 9D B5 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 802C6A30 002C2870  4B FC 17 65 */	bl custom__Q43scn4step5enemy5EnemyFv
@@ -359,7 +359,7 @@ lbl_802C6C44:
 /* 802C6C48 002C2A88  13 E1 00 0C */	psq_lx f31, r1, r0, 0, qr0
 /* 802C6C4C 002C2A8C  CB E1 00 60 */	lfd f31, 0x60(r1)
 /* 802C6C50 002C2A90  39 61 00 60 */	addi r11, r1, 0x60
-/* 802C6C54 002C2A94  4B D4 07 3D */	bl lbl_80007390
+/* 802C6C54 002C2A94  4B D4 07 3D */	bl _restgpr_29
 /* 802C6C58 002C2A98  80 01 00 74 */	lwz r0, 0x74(r1)
 /* 802C6C5C 002C2A9C  7C 08 03 A6 */	mtlr r0
 /* 802C6C60 002C2AA0  38 21 00 70 */	addi r1, r1, 0x70

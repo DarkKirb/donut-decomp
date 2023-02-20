@@ -7,7 +7,7 @@ __ct__Q33scn7history11PackageHelpFRQ23mem10IAllocatorRCQ23lyt12PaneAccessor:
 /* 8020E018 00209E58  7C 08 02 A6 */	mflr r0
 /* 8020E01C 00209E5C  90 01 01 14 */	stw r0, 0x114(r1)
 /* 8020E020 00209E60  39 61 01 10 */	addi r11, r1, 0x110
-/* 8020E024 00209E64  4B DF 93 1D */	bl lbl_80007340
+/* 8020E024 00209E64  4B DF 93 1D */	bl _savegpr_28
 /* 8020E028 00209E68  7C 7C 1B 78 */	mr r28, r3
 /* 8020E02C 00209E6C  7C 9D 23 78 */	mr r29, r4
 /* 8020E030 00209E70  7C BE 2B 78 */	mr r30, r5
@@ -57,7 +57,7 @@ __ct__Q33scn7history11PackageHelpFRQ23mem10IAllocatorRCQ23lyt12PaneAccessor:
 /* 8020E0E0 00209F20  4B F6 A1 41 */	bl __dt__Q23lyt12PaneAccessorFv
 /* 8020E0E4 00209F24  7F 83 E3 78 */	mr r3, r28
 /* 8020E0E8 00209F28  39 61 01 10 */	addi r11, r1, 0x110
-/* 8020E0EC 00209F2C  4B DF 92 A1 */	bl lbl_8000738C
+/* 8020E0EC 00209F2C  4B DF 92 A1 */	bl _restgpr_28
 /* 8020E0F0 00209F30  80 01 01 14 */	lwz r0, 0x114(r1)
 /* 8020E0F4 00209F34  7C 08 03 A6 */	mtlr r0
 /* 8020E0F8 00209F38  38 21 01 10 */	addi r1, r1, 0x110

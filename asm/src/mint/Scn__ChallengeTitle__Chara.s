@@ -157,7 +157,7 @@ Func__Q38mintglue26Scn__ChallengeTitle__Chara53Mint_flashStart_0$55339Scn__Chall
 /* 801C36A0 001BF4E0  7C 08 02 A6 */	mflr r0
 /* 801C36A4 001BF4E4  90 01 00 34 */	stw r0, 0x34(r1)
 /* 801C36A8 001BF4E8  39 61 00 30 */	addi r11, r1, 0x30
-/* 801C36AC 001BF4EC  4B E4 3C 99 */	bl lbl_80007344
+/* 801C36AC 001BF4EC  4B E4 3C 99 */	bl _savegpr_29
 /* 801C36B0 001BF4F0  7C 7D 1B 78 */	mr r29, r3
 /* 801C36B4 001BF4F4  3C 80 80 46 */	lis r4, "@56082_8045ABC8"@ha
 /* 801C36B8 001BF4F8  38 A4 AB C8 */	addi r5, r4, "@56082_8045ABC8"@l
@@ -184,7 +184,7 @@ Func__Q38mintglue26Scn__ChallengeTitle__Chara53Mint_flashStart_0$55339Scn__Chall
 /* 801C370C 001BF54C  4B E4 3A B9 */	bl __ptmf_scall
 /* 801C3710 001BF550  60 00 00 00 */	nop
 /* 801C3714 001BF554  39 61 00 30 */	addi r11, r1, 0x30
-/* 801C3718 001BF558  4B E4 3C 79 */	bl lbl_80007390
+/* 801C3718 001BF558  4B E4 3C 79 */	bl _restgpr_29
 /* 801C371C 001BF55C  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 801C3720 001BF560  7C 08 03 A6 */	mtlr r0
 /* 801C3724 001BF564  38 21 00 30 */	addi r1, r1, 0x30
@@ -308,7 +308,7 @@ Func__Q38mintglue26Scn__ChallengeTitle__Chara57Mint_effectRequestN_0$55327Scn__C
 /* 801C38CC 001BF70C  7C 08 02 A6 */	mflr r0
 /* 801C38D0 001BF710  90 01 00 34 */	stw r0, 0x34(r1)
 /* 801C38D4 001BF714  39 61 00 30 */	addi r11, r1, 0x30
-/* 801C38D8 001BF718  4B E4 3A 6D */	bl lbl_80007344
+/* 801C38D8 001BF718  4B E4 3A 6D */	bl _savegpr_29
 /* 801C38DC 001BF71C  7C 7D 1B 78 */	mr r29, r3
 /* 801C38E0 001BF720  3C 80 80 46 */	lis r4, "@56121_8045AC10"@ha
 /* 801C38E4 001BF724  38 A4 AC 10 */	addi r5, r4, "@56121_8045AC10"@l
@@ -335,7 +335,7 @@ Func__Q38mintglue26Scn__ChallengeTitle__Chara57Mint_effectRequestN_0$55327Scn__C
 /* 801C3938 001BF778  4B E4 38 8D */	bl __ptmf_scall
 /* 801C393C 001BF77C  60 00 00 00 */	nop
 /* 801C3940 001BF780  39 61 00 30 */	addi r11, r1, 0x30
-/* 801C3944 001BF784  4B E4 3A 4D */	bl lbl_80007390
+/* 801C3944 001BF784  4B E4 3A 4D */	bl _restgpr_29
 /* 801C3948 001BF788  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 801C394C 001BF78C  7C 08 03 A6 */	mtlr r0
 /* 801C3950 001BF790  38 21 00 30 */	addi r1, r1, 0x30
@@ -411,7 +411,7 @@ Func__Q38mintglue26Scn__ChallengeTitle__Chara53Mint_changeAnim_0$55323Scn__Chall
 /* 801C3A38 001BF878  7C 08 02 A6 */	mflr r0
 /* 801C3A3C 001BF87C  90 01 00 34 */	stw r0, 0x34(r1)
 /* 801C3A40 001BF880  39 61 00 30 */	addi r11, r1, 0x30
-/* 801C3A44 001BF884  4B E4 39 01 */	bl lbl_80007344
+/* 801C3A44 001BF884  4B E4 39 01 */	bl _savegpr_29
 /* 801C3A48 001BF888  7C 7D 1B 78 */	mr r29, r3
 /* 801C3A4C 001BF88C  3C 80 80 46 */	lis r4, "@56141_8045AC28"@ha
 /* 801C3A50 001BF890  38 A4 AC 28 */	addi r5, r4, "@56141_8045AC28"@l
@@ -438,7 +438,7 @@ Func__Q38mintglue26Scn__ChallengeTitle__Chara53Mint_changeAnim_0$55323Scn__Chall
 /* 801C3AA4 001BF8E4  4B E4 37 21 */	bl __ptmf_scall
 /* 801C3AA8 001BF8E8  60 00 00 00 */	nop
 /* 801C3AAC 001BF8EC  39 61 00 30 */	addi r11, r1, 0x30
-/* 801C3AB0 001BF8F0  4B E4 38 E1 */	bl lbl_80007390
+/* 801C3AB0 001BF8F0  4B E4 38 E1 */	bl _restgpr_29
 /* 801C3AB4 001BF8F4  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 801C3AB8 001BF8F8  7C 08 03 A6 */	mtlr r0
 /* 801C3ABC 001BF8FC  38 21 00 30 */	addi r1, r1, 0x30

@@ -213,7 +213,7 @@ reqRollExp__Q53scn4step5enemy11bonkersbomb6CustomFv:
 /* 8029BED0 00297D10  7C 08 02 A6 */	mflr r0
 /* 8029BED4 00297D14  90 01 00 94 */	stw r0, 0x94(r1)
 /* 8029BED8 00297D18  39 61 00 90 */	addi r11, r1, 0x90
-/* 8029BEDC 00297D1C  4B D6 B4 69 */	bl lbl_80007344
+/* 8029BEDC 00297D1C  4B D6 B4 69 */	bl _savegpr_29
 /* 8029BEE0 00297D20  7C 7D 1B 78 */	mr r29, r3
 /* 8029BEE4 00297D24  4B E6 48 FD */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 8029BEE8 00297D28  4B FE C1 8D */	bl charaParam__Q43scn4step5enemy5EnemyCFv
@@ -345,7 +345,7 @@ lbl_8029C094:
 /* 8029C098 00297ED8  38 80 FF FF */	li r4, -0x1
 /* 8029C09C 00297EDC  4B F9 E0 15 */	bl "__dt__Q24util39ObjRefHandle<Q43scn4step6weapon6Weapon>Fv"
 /* 8029C0A0 00297EE0  39 61 00 90 */	addi r11, r1, 0x90
-/* 8029C0A4 00297EE4  4B D6 B2 ED */	bl lbl_80007390
+/* 8029C0A4 00297EE4  4B D6 B2 ED */	bl _restgpr_29
 /* 8029C0A8 00297EE8  80 01 00 94 */	lwz r0, 0x94(r1)
 /* 8029C0AC 00297EEC  7C 08 03 A6 */	mtlr r0
 /* 8029C0B0 00297EF0  38 21 00 90 */	addi r1, r1, 0x90

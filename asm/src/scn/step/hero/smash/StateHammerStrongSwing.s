@@ -68,7 +68,7 @@ __ct__Q53scn4step4hero5smash22StateHammerStrongSwingFPQ43scn4step4hero4Hero:
 /* 803A2124 0039DF64  7C 08 02 A6 */	mflr r0
 /* 803A2128 0039DF68  90 01 00 24 */	stw r0, 0x24(r1)
 /* 803A212C 0039DF6C  39 61 00 20 */	addi r11, r1, 0x20
-/* 803A2130 0039DF70  4B C6 52 15 */	bl lbl_80007344
+/* 803A2130 0039DF70  4B C6 52 15 */	bl _savegpr_29
 /* 803A2134 0039DF74  7C 7D 1B 78 */	mr r29, r3
 /* 803A2138 0039DF78  4B FB 33 B9 */	bl __ct__Q43scn4step4hero9StateBaseFPQ43scn4step4hero4Hero
 /* 803A213C 0039DF7C  3C 60 80 49 */	lis r3, __vt__Q53scn4step4hero5smash22StateHammerStrongSwing@ha
@@ -115,7 +115,7 @@ __ct__Q53scn4step4hero5smash22StateHammerStrongSwingFPQ43scn4step4hero4Hero:
 /* 803A21E0 0039E020  4B DF 9C 19 */	bl start__Q24gobj6ScriptFUl
 /* 803A21E4 0039E024  7F A3 EB 78 */	mr r3, r29
 /* 803A21E8 0039E028  39 61 00 20 */	addi r11, r1, 0x20
-/* 803A21EC 0039E02C  4B C6 51 A5 */	bl lbl_80007390
+/* 803A21EC 0039E02C  4B C6 51 A5 */	bl _restgpr_29
 /* 803A21F0 0039E030  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803A21F4 0039E034  7C 08 03 A6 */	mtlr r0
 /* 803A21F8 0039E038  38 21 00 20 */	addi r1, r1, 0x20

@@ -7,7 +7,7 @@ __ct__Q53scn4step5enemy7mumbies10StateChaseFPQ43scn4step5enemy5Enemy:
 /* 802C50F0 002C0F30  7C 08 02 A6 */	mflr r0
 /* 802C50F4 002C0F34  90 01 00 24 */	stw r0, 0x24(r1)
 /* 802C50F8 002C0F38  39 61 00 20 */	addi r11, r1, 0x20
-/* 802C50FC 002C0F3C  4B D4 22 49 */	bl lbl_80007344
+/* 802C50FC 002C0F3C  4B D4 22 49 */	bl _savegpr_29
 /* 802C5100 002C0F40  7C 7D 1B 78 */	mr r29, r3
 /* 802C5104 002C0F44  4B FC 8C C1 */	bl __ct__Q43scn4step5enemy9StateBaseFPQ43scn4step5enemy5Enemy
 /* 802C5108 002C0F48  3C 60 80 48 */	lis r3, __vt__Q53scn4step5enemy7mumbies10StateChase@ha
@@ -115,7 +115,7 @@ lbl_802C5248:
 /* 802C5250 002C1090  4B FA 86 ED */	bl setValid__Q43scn4step5chara7CullingFb
 /* 802C5254 002C1094  7F A3 EB 78 */	mr r3, r29
 /* 802C5258 002C1098  39 61 00 20 */	addi r11, r1, 0x20
-/* 802C525C 002C109C  4B D4 21 35 */	bl lbl_80007390
+/* 802C525C 002C109C  4B D4 21 35 */	bl _restgpr_29
 /* 802C5260 002C10A0  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802C5264 002C10A4  7C 08 03 A6 */	mtlr r0
 /* 802C5268 002C10A8  38 21 00 20 */	addi r1, r1, 0x20
@@ -268,7 +268,7 @@ procMove__Q53scn4step5enemy7mumbies10StateChaseFv:
 /* 802C5460 002C12A0  7C 08 02 A6 */	mflr r0
 /* 802C5464 002C12A4  90 01 00 B4 */	stw r0, 0xb4(r1)
 /* 802C5468 002C12A8  39 61 00 B0 */	addi r11, r1, 0xb0
-/* 802C546C 002C12AC  4B D4 1E D1 */	bl lbl_8000733C
+/* 802C546C 002C12AC  4B D4 1E D1 */	bl _savegpr_27
 /* 802C5470 002C12B0  7C 7E 1B 78 */	mr r30, r3
 /* 802C5474 002C12B4  4B E3 B3 6D */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 802C5478 002C12B8  4B FC 2C 0D */	bl param__Q43scn4step5enemy5EnemyCFv
@@ -488,7 +488,7 @@ lbl_802C578C:
 /* 802C5790 002C15D0  38 80 FF FF */	li r4, -0x1
 /* 802C5794 002C15D4  4B F6 AF 35 */	bl "__dt__Q24util35ObjRefHandle<Q43scn4step4hero4Hero>Fv"
 /* 802C5798 002C15D8  39 61 00 B0 */	addi r11, r1, 0xb0
-/* 802C579C 002C15DC  4B D4 1B ED */	bl lbl_80007388
+/* 802C579C 002C15DC  4B D4 1B ED */	bl _restgpr_27
 /* 802C57A0 002C15E0  80 01 00 B4 */	lwz r0, 0xb4(r1)
 /* 802C57A4 002C15E4  7C 08 03 A6 */	mtlr r0
 /* 802C57A8 002C15E8  38 21 00 B0 */	addi r1, r1, 0xb0

@@ -7,7 +7,7 @@ __ct__Q53scn4step7gimmick6arease6AreaSEFRCQ43scn4step3map18BinGmkGeneralEntryRQ3
 /* 802FDDBC 002F9BFC  7C 08 02 A6 */	mflr r0
 /* 802FDDC0 002F9C00  90 01 00 44 */	stw r0, 0x44(r1)
 /* 802FDDC4 002F9C04  39 61 00 40 */	addi r11, r1, 0x40
-/* 802FDDC8 002F9C08  4B D0 95 7D */	bl lbl_80007344
+/* 802FDDC8 002F9C08  4B D0 95 7D */	bl _savegpr_29
 /* 802FDDCC 002F9C0C  7C 7D 1B 78 */	mr r29, r3
 /* 802FDDD0 002F9C10  7C 9E 23 78 */	mr r30, r4
 /* 802FDDD4 002F9C14  7C BF 2B 78 */	mr r31, r5
@@ -49,7 +49,7 @@ __ct__Q53scn4step7gimmick6arease6AreaSEFRCQ43scn4step3map18BinGmkGeneralEntryRQ3
 /* 802FDE64 002F9CA4  4B FF 96 79 */	bl add__Q43scn4step7gimmick4StopFRQ23snd11SERequestor
 /* 802FDE68 002F9CA8  7F A3 EB 78 */	mr r3, r29
 /* 802FDE6C 002F9CAC  39 61 00 40 */	addi r11, r1, 0x40
-/* 802FDE70 002F9CB0  4B D0 95 21 */	bl lbl_80007390
+/* 802FDE70 002F9CB0  4B D0 95 21 */	bl _restgpr_29
 /* 802FDE74 002F9CB4  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 802FDE78 002F9CB8  7C 08 03 A6 */	mtlr r0
 /* 802FDE7C 002F9CBC  38 21 00 40 */	addi r1, r1, 0x40

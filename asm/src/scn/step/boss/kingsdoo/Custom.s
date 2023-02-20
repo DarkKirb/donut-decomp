@@ -25,7 +25,7 @@ onInit__Q53scn4step4boss8kingsdoo6CustomFv:
 /* 80253524 0024F364  7C 08 02 A6 */	mflr r0
 /* 80253528 0024F368  90 01 00 54 */	stw r0, 0x54(r1)
 /* 8025352C 0024F36C  39 61 00 50 */	addi r11, r1, 0x50
-/* 80253530 0024F370  4B DB 3E 0D */	bl lbl_8000733C
+/* 80253530 0024F370  4B DB 3E 0D */	bl _savegpr_27
 /* 80253534 0024F374  7C 7F 1B 78 */	mr r31, r3
 /* 80253538 0024F378  3C 80 80 47 */	lis r4, "@56375_80468230"@ha
 /* 8025353C 0024F37C  3B 64 82 30 */	addi r27, r4, "@56375_80468230"@l
@@ -200,7 +200,7 @@ lbl_802536EC:
 lbl_802537B4:
 /* 802537B4 0024F5F4  93 7F 00 0C */	stw r27, 0xc(r31)
 /* 802537B8 0024F5F8  39 61 00 50 */	addi r11, r1, 0x50
-/* 802537BC 0024F5FC  4B DB 3B CD */	bl lbl_80007388
+/* 802537BC 0024F5FC  4B DB 3B CD */	bl _restgpr_27
 /* 802537C0 0024F600  80 01 00 54 */	lwz r0, 0x54(r1)
 /* 802537C4 0024F604  7C 08 03 A6 */	mtlr r0
 /* 802537C8 0024F608  38 21 00 50 */	addi r1, r1, 0x50
@@ -224,7 +224,7 @@ onDead__Q53scn4step4boss8kingsdoo6CustomFv:
 /* 802537E0 0024F620  7C 08 02 A6 */	mflr r0
 /* 802537E4 0024F624  90 01 00 24 */	stw r0, 0x24(r1)
 /* 802537E8 0024F628  39 61 00 20 */	addi r11, r1, 0x20
-/* 802537EC 0024F62C  4B DB 3B 59 */	bl lbl_80007344
+/* 802537EC 0024F62C  4B DB 3B 59 */	bl _savegpr_29
 /* 802537F0 0024F630  7C 7D 1B 78 */	mr r29, r3
 /* 802537F4 0024F634  4B EA CF ED */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 802537F8 0024F638  4B FD 97 41 */	bl model__Q43scn4step4boss4BossFv
@@ -255,7 +255,7 @@ onDead__Q53scn4step4boss8kingsdoo6CustomFv:
 lbl_80253858:
 /* 80253858 0024F698  93 BF 00 0C */	stw r29, 0xc(r31)
 /* 8025385C 0024F69C  39 61 00 20 */	addi r11, r1, 0x20
-/* 80253860 0024F6A0  4B DB 3B 31 */	bl lbl_80007390
+/* 80253860 0024F6A0  4B DB 3B 31 */	bl _restgpr_29
 /* 80253864 0024F6A4  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80253868 0024F6A8  7C 08 03 A6 */	mtlr r0
 /* 8025386C 0024F6AC  38 21 00 20 */	addi r1, r1, 0x20

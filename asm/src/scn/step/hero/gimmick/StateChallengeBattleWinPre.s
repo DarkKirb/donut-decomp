@@ -87,7 +87,7 @@ lbl_8037A87C:
 /* 8037A894 003766D4  7C 08 02 A6 */	mflr r0
 /* 8037A898 003766D8  90 01 00 24 */	stw r0, 0x24(r1)
 /* 8037A89C 003766DC  39 61 00 20 */	addi r11, r1, 0x20
-/* 8037A8A0 003766E0  4B C8 CA A1 */	bl lbl_80007340
+/* 8037A8A0 003766E0  4B C8 CA A1 */	bl _savegpr_28
 /* 8037A8A4 003766E4  7C 7C 1B 78 */	mr r28, r3
 /* 8037A8A8 003766E8  7C 9D 23 78 */	mr r29, r4
 /* 8037A8AC 003766EC  7C BE 2B 78 */	mr r30, r5
@@ -107,7 +107,7 @@ lbl_8037A87C:
 lbl_8037A8E0:
 /* 8037A8E0 00376720  93 FC 00 0C */	stw r31, 0xc(r28)
 /* 8037A8E4 00376724  39 61 00 20 */	addi r11, r1, 0x20
-/* 8037A8E8 00376728  4B C8 CA A5 */	bl lbl_8000738C
+/* 8037A8E8 00376728  4B C8 CA A5 */	bl _restgpr_28
 /* 8037A8EC 0037672C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8037A8F0 00376730  7C 08 03 A6 */	mtlr r0
 /* 8037A8F4 00376734  38 21 00 20 */	addi r1, r1, 0x20
@@ -120,7 +120,7 @@ __ct__Q53scn4step4hero7gimmick26StateChallengeBattleWinPreFPQ43scn4step4hero4Her
 /* 8037A908 00376748  DB E1 00 80 */	stfd f31, 0x80(r1)
 /* 8037A90C 0037674C  F3 E1 00 88 */	psq_st f31, 0x88(r1), 0, qr0
 /* 8037A910 00376750  39 61 00 80 */	addi r11, r1, 0x80
-/* 8037A914 00376754  4B C8 CA 31 */	bl lbl_80007344
+/* 8037A914 00376754  4B C8 CA 31 */	bl _savegpr_29
 /* 8037A918 00376758  7C 7D 1B 78 */	mr r29, r3
 /* 8037A91C 0037675C  7C BE 2B 78 */	mr r30, r5
 /* 8037A920 00376760  4B FD AB D1 */	bl __ct__Q43scn4step4hero9StateBaseFPQ43scn4step4hero4Hero
@@ -432,7 +432,7 @@ lbl_8037AC5C:
 /* 8037AD68 00376BA8  13 E1 00 0C */	psq_lx f31, r1, r0, 0, qr0
 /* 8037AD6C 00376BAC  CB E1 00 80 */	lfd f31, 0x80(r1)
 /* 8037AD70 00376BB0  39 61 00 80 */	addi r11, r1, 0x80
-/* 8037AD74 00376BB4  4B C8 C6 1D */	bl lbl_80007390
+/* 8037AD74 00376BB4  4B C8 C6 1D */	bl _restgpr_29
 /* 8037AD78 00376BB8  80 01 00 94 */	lwz r0, 0x94(r1)
 /* 8037AD7C 00376BBC  7C 08 03 A6 */	mtlr r0
 /* 8037AD80 00376BC0  38 21 00 90 */	addi r1, r1, 0x90
@@ -497,7 +497,7 @@ procAnim__Q53scn4step4hero7gimmick26StateChallengeBattleWinPreFv:
 /* 8037AE44 00376C84  7C 08 02 A6 */	mflr r0
 /* 8037AE48 00376C88  90 01 00 34 */	stw r0, 0x34(r1)
 /* 8037AE4C 00376C8C  39 61 00 30 */	addi r11, r1, 0x30
-/* 8037AE50 00376C90  4B C8 C4 F5 */	bl lbl_80007344
+/* 8037AE50 00376C90  4B C8 C4 F5 */	bl _savegpr_29
 /* 8037AE54 00376C94  7C 7D 1B 78 */	mr r29, r3
 /* 8037AE58 00376C98  4B D8 59 89 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 8037AE5C 00376C9C  4B FC 54 C1 */	bl model__Q43scn4step4hero4HeroFv
@@ -617,7 +617,7 @@ lbl_8037AFDC:
 .global lbl_8037AFEC
 lbl_8037AFEC:
 /* 8037AFEC 00376E2C  39 61 00 30 */	addi r11, r1, 0x30
-/* 8037AFF0 00376E30  4B C8 C3 A1 */	bl lbl_80007390
+/* 8037AFF0 00376E30  4B C8 C3 A1 */	bl _restgpr_29
 /* 8037AFF4 00376E34  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 8037AFF8 00376E38  7C 08 03 A6 */	mtlr r0
 /* 8037AFFC 00376E3C  38 21 00 30 */	addi r1, r1, 0x30
@@ -629,7 +629,7 @@ procMove__Q53scn4step4hero7gimmick26StateChallengeBattleWinPreFv:
 /* 8037B008 00376E48  7C 08 02 A6 */	mflr r0
 /* 8037B00C 00376E4C  90 01 00 34 */	stw r0, 0x34(r1)
 /* 8037B010 00376E50  39 61 00 30 */	addi r11, r1, 0x30
-/* 8037B014 00376E54  4B C8 C3 31 */	bl lbl_80007344
+/* 8037B014 00376E54  4B C8 C3 31 */	bl _savegpr_29
 /* 8037B018 00376E58  7C 7D 1B 78 */	mr r29, r3
 /* 8037B01C 00376E5C  4B D8 57 C5 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 8037B020 00376E60  4B FC 52 BD */	bl param__Q43scn4step4hero4HeroFv
@@ -694,7 +694,7 @@ lbl_8037B0E0:
 .global lbl_8037B0EC
 lbl_8037B0EC:
 /* 8037B0EC 00376F2C  39 61 00 30 */	addi r11, r1, 0x30
-/* 8037B0F0 00376F30  4B C8 C2 A1 */	bl lbl_80007390
+/* 8037B0F0 00376F30  4B C8 C2 A1 */	bl _restgpr_29
 /* 8037B0F4 00376F34  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 8037B0F8 00376F38  7C 08 03 A6 */	mtlr r0
 /* 8037B0FC 00376F3C  38 21 00 30 */	addi r1, r1, 0x30
@@ -708,7 +708,7 @@ procFixPos__Q53scn4step4hero7gimmick26StateChallengeBattleWinPreFv:
 /* 8037B110 00376F50  DB E1 00 70 */	stfd f31, 0x70(r1)
 /* 8037B114 00376F54  F3 E1 00 78 */	psq_st f31, 0x78(r1), 0, qr0
 /* 8037B118 00376F58  39 61 00 70 */	addi r11, r1, 0x70
-/* 8037B11C 00376F5C  4B C8 C2 29 */	bl lbl_80007344
+/* 8037B11C 00376F5C  4B C8 C2 29 */	bl _savegpr_29
 /* 8037B120 00376F60  7C 7D 1B 78 */	mr r29, r3
 /* 8037B124 00376F64  4B D8 56 BD */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 8037B128 00376F68  4B FC 52 15 */	bl mapColl__Q43scn4step4hero4HeroFv
@@ -882,7 +882,7 @@ lbl_8037B38C:
 /* 8037B390 003771D0  13 E1 00 0C */	psq_lx f31, r1, r0, 0, qr0
 /* 8037B394 003771D4  CB E1 00 70 */	lfd f31, 0x70(r1)
 /* 8037B398 003771D8  39 61 00 70 */	addi r11, r1, 0x70
-/* 8037B39C 003771DC  4B C8 BF F5 */	bl lbl_80007390
+/* 8037B39C 003771DC  4B C8 BF F5 */	bl _restgpr_29
 /* 8037B3A0 003771E0  80 01 00 84 */	lwz r0, 0x84(r1)
 /* 8037B3A4 003771E4  7C 08 03 A6 */	mtlr r0
 /* 8037B3A8 003771E8  38 21 00 80 */	addi r1, r1, 0x80

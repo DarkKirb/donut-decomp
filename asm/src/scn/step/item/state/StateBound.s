@@ -173,7 +173,7 @@ procFixPos__Q53scn4step4item5state10StateBoundFv:
 /* 803C76C0 003C3500  7C 08 02 A6 */	mflr r0
 /* 803C76C4 003C3504  90 01 00 44 */	stw r0, 0x44(r1)
 /* 803C76C8 003C3508  39 61 00 40 */	addi r11, r1, 0x40
-/* 803C76CC 003C350C  4B C3 FC 79 */	bl lbl_80007344
+/* 803C76CC 003C350C  4B C3 FC 79 */	bl _savegpr_29
 /* 803C76D0 003C3510  7C 7D 1B 78 */	mr r29, r3
 /* 803C76D4 003C3514  4B D3 91 0D */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 803C76D8 003C3518  4B FF B5 D1 */	bl param__Q43scn4step4item4ItemCFv
@@ -296,7 +296,7 @@ lbl_803C7874:
 .global lbl_803C7884
 lbl_803C7884:
 /* 803C7884 003C36C4  39 61 00 40 */	addi r11, r1, 0x40
-/* 803C7888 003C36C8  4B C3 FB 09 */	bl lbl_80007390
+/* 803C7888 003C36C8  4B C3 FB 09 */	bl _restgpr_29
 /* 803C788C 003C36CC  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 803C7890 003C36D0  7C 08 03 A6 */	mtlr r0
 /* 803C7894 003C36D4  38 21 00 40 */	addi r1, r1, 0x40

@@ -46,7 +46,7 @@ procFixPos__Q53scn4step6weapon10comothread9StateMainFv:
 /* 803E23F0 003DE230  DB E1 01 A0 */	stfd f31, 0x1a0(r1)
 /* 803E23F4 003DE234  F3 E1 01 A8 */	psq_st f31, 0x1a8(r1), 0, qr0
 /* 803E23F8 003DE238  39 61 01 A0 */	addi r11, r1, 0x1a0
-/* 803E23FC 003DE23C  4B C2 4F 49 */	bl lbl_80007344
+/* 803E23FC 003DE23C  4B C2 4F 49 */	bl _savegpr_29
 /* 803E2400 003DE240  7C 7D 1B 78 */	mr r29, r3
 /* 803E2404 003DE244  4B D1 E3 DD */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 803E2408 003DE248  4B FF 8D 81 */	bl custom__Q43scn4step6weapon6WeaponFv
@@ -274,7 +274,7 @@ lbl_803E2714:
 /* 803E2718 003DE558  13 E1 00 0C */	psq_lx f31, r1, r0, 0, qr0
 /* 803E271C 003DE55C  CB E1 01 A0 */	lfd f31, 0x1a0(r1)
 /* 803E2720 003DE560  39 61 01 A0 */	addi r11, r1, 0x1a0
-/* 803E2724 003DE564  4B C2 4C 6D */	bl lbl_80007390
+/* 803E2724 003DE564  4B C2 4C 6D */	bl _restgpr_29
 /* 803E2728 003DE568  80 01 01 B4 */	lwz r0, 0x1b4(r1)
 /* 803E272C 003DE56C  7C 08 03 A6 */	mtlr r0
 /* 803E2730 003DE570  38 21 01 B0 */	addi r1, r1, 0x1b0

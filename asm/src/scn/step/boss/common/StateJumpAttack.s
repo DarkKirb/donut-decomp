@@ -7,7 +7,7 @@ __ct__Q53scn4step4boss6common15StateJumpAttackFPQ43scn4step4boss4BossRQ53scn4ste
 /* 80246BC0 00242A00  7C 08 02 A6 */	mflr r0
 /* 80246BC4 00242A04  90 01 00 34 */	stw r0, 0x34(r1)
 /* 80246BC8 00242A08  39 61 00 30 */	addi r11, r1, 0x30
-/* 80246BCC 00242A0C  4B DC 07 79 */	bl lbl_80007344
+/* 80246BCC 00242A0C  4B DC 07 79 */	bl _savegpr_29
 /* 80246BD0 00242A10  7C 7D 1B 78 */	mr r29, r3
 /* 80246BD4 00242A14  7C BE 2B 78 */	mr r30, r5
 /* 80246BD8 00242A18  7C DF 33 78 */	mr r31, r6
@@ -49,7 +49,7 @@ __ct__Q53scn4step4boss6common15StateJumpAttackFPQ43scn4step4boss4BossRQ53scn4ste
 /* 80246C68 00242AA8  4B F5 47 11 */	bl setVelocity__Q24gobj4MoveFRCQ33hel4math7Vector3
 /* 80246C6C 00242AAC  7F A3 EB 78 */	mr r3, r29
 /* 80246C70 00242AB0  39 61 00 30 */	addi r11, r1, 0x30
-/* 80246C74 00242AB4  4B DC 07 1D */	bl lbl_80007390
+/* 80246C74 00242AB4  4B DC 07 1D */	bl _restgpr_29
 /* 80246C78 00242AB8  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 80246C7C 00242ABC  7C 08 03 A6 */	mtlr r0
 /* 80246C80 00242AC0  38 21 00 30 */	addi r1, r1, 0x30
@@ -120,7 +120,7 @@ procFixPos__Q53scn4step4boss6common15StateJumpAttackFv:
 /* 80246D44 00242B84  7C 08 02 A6 */	mflr r0
 /* 80246D48 00242B88  90 01 00 54 */	stw r0, 0x54(r1)
 /* 80246D4C 00242B8C  39 61 00 50 */	addi r11, r1, 0x50
-/* 80246D50 00242B90  4B DC 05 F1 */	bl lbl_80007340
+/* 80246D50 00242B90  4B DC 05 F1 */	bl _savegpr_28
 /* 80246D54 00242B94  7C 7C 1B 78 */	mr r28, r3
 /* 80246D58 00242B98  4B EB 9A 89 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 80246D5C 00242B9C  4B FE 61 FD */	bl mapColl__Q43scn4step4boss4BossFv
@@ -207,7 +207,7 @@ lbl_80246E5C:
 .global lbl_80246E60
 lbl_80246E60:
 /* 80246E60 00242CA0  39 61 00 50 */	addi r11, r1, 0x50
-/* 80246E64 00242CA4  4B DC 05 29 */	bl lbl_8000738C
+/* 80246E64 00242CA4  4B DC 05 29 */	bl _restgpr_28
 /* 80246E68 00242CA8  80 01 00 54 */	lwz r0, 0x54(r1)
 /* 80246E6C 00242CAC  7C 08 03 A6 */	mtlr r0
 /* 80246E70 00242CB0  38 21 00 50 */	addi r1, r1, 0x50

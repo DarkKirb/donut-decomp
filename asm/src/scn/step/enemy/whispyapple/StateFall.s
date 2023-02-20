@@ -7,7 +7,7 @@ __ct__Q53scn4step5enemy11whispyapple9StateFallFPQ43scn4step5enemy5EnemyUlb:
 /* 802F1EF0 002EDD30  7C 08 02 A6 */	mflr r0
 /* 802F1EF4 002EDD34  90 01 00 24 */	stw r0, 0x24(r1)
 /* 802F1EF8 002EDD38  39 61 00 20 */	addi r11, r1, 0x20
-/* 802F1EFC 002EDD3C  4B D1 54 49 */	bl lbl_80007344
+/* 802F1EFC 002EDD3C  4B D1 54 49 */	bl _savegpr_29
 /* 802F1F00 002EDD40  7C 7D 1B 78 */	mr r29, r3
 /* 802F1F04 002EDD44  7C BE 2B 78 */	mr r30, r5
 /* 802F1F08 002EDD48  7C DF 33 78 */	mr r31, r6
@@ -34,7 +34,7 @@ __ct__Q53scn4step5enemy11whispyapple9StateFallFPQ43scn4step5enemy5EnemyUlb:
 /* 802F1F5C 002EDD9C  4B F7 F3 21 */	bl reqScript__Q43scn4step5chara5ModelFUl
 /* 802F1F60 002EDDA0  7F A3 EB 78 */	mr r3, r29
 /* 802F1F64 002EDDA4  39 61 00 20 */	addi r11, r1, 0x20
-/* 802F1F68 002EDDA8  4B D1 54 29 */	bl lbl_80007390
+/* 802F1F68 002EDDA8  4B D1 54 29 */	bl _restgpr_29
 /* 802F1F6C 002EDDAC  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802F1F70 002EDDB0  7C 08 03 A6 */	mtlr r0
 /* 802F1F74 002EDDB4  38 21 00 20 */	addi r1, r1, 0x20
@@ -93,7 +93,7 @@ procFixPos__Q53scn4step5enemy11whispyapple9StateFallFv:
 /* 802F2018 002EDE58  7C 08 02 A6 */	mflr r0
 /* 802F201C 002EDE5C  90 01 00 54 */	stw r0, 0x54(r1)
 /* 802F2020 002EDE60  39 61 00 50 */	addi r11, r1, 0x50
-/* 802F2024 002EDE64  4B D1 53 15 */	bl lbl_80007338
+/* 802F2024 002EDE64  4B D1 53 15 */	bl _savegpr_26
 /* 802F2028 002EDE68  7C 7A 1B 78 */	mr r26, r3
 /* 802F202C 002EDE6C  4B E0 E7 B5 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 802F2030 002EDE70  4B F9 60 CD */	bl mapColl__Q43scn4step5enemy5EnemyFv
@@ -218,7 +218,7 @@ lbl_802F21D0:
 .global lbl_802F21D4
 lbl_802F21D4:
 /* 802F21D4 002EE014  39 61 00 50 */	addi r11, r1, 0x50
-/* 802F21D8 002EE018  4B D1 51 AD */	bl lbl_80007384
+/* 802F21D8 002EE018  4B D1 51 AD */	bl _restgpr_26
 /* 802F21DC 002EE01C  80 01 00 54 */	lwz r0, 0x54(r1)
 /* 802F21E0 002EE020  7C 08 03 A6 */	mtlr r0
 /* 802F21E4 002EE024  38 21 00 50 */	addi r1, r1, 0x50

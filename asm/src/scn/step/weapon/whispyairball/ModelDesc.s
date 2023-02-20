@@ -42,7 +42,7 @@ Create__Q53scn4step6weapon13whispyairball9ModelDescFv:
 /* 803DE488 003DA2C8  7C 08 02 A6 */	mflr r0
 /* 803DE48C 003DA2CC  90 01 00 44 */	stw r0, 0x44(r1)
 /* 803DE490 003DA2D0  39 61 00 40 */	addi r11, r1, 0x40
-/* 803DE494 003DA2D4  4B C2 8E 9D */	bl lbl_80007330
+/* 803DE494 003DA2D4  4B C2 8E 9D */	bl _savegpr_24
 /* 803DE498 003DA2D8  7C 78 1B 78 */	mr r24, r3
 /* 803DE49C 003DA2DC  7C 99 23 78 */	mr r25, r4
 /* 803DE4A0 003DA2E0  7C BA 2B 78 */	mr r26, r5
@@ -79,7 +79,7 @@ lbl_803DE4DC:
 /* 803DE514 003DA354  4B FF 95 51 */	bl Set__Q43scn4step6weapon13ModelDescUtilFRQ43scn4step5chara9ModelDescRQ24gobj8AnimDescRQ24gobj10ScriptDescPCcPCcUlPPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry
 /* 803DE518 003DA358  38 7F 4C F8 */	addi r3, r31, 0x4cf8
 /* 803DE51C 003DA35C  39 61 00 40 */	addi r11, r1, 0x40
-/* 803DE520 003DA360  4B C2 8E 5D */	bl lbl_8000737C
+/* 803DE520 003DA360  4B C2 8E 5D */	bl _restgpr_24
 /* 803DE524 003DA364  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 803DE528 003DA368  7C 08 03 A6 */	mtlr r0
 /* 803DE52C 003DA36C  38 21 00 40 */	addi r1, r1, 0x40

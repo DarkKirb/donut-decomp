@@ -91,7 +91,7 @@ __dt__Q53scn4step4hero8captured29StateCapturedWhispyVomitBoundFv:
 /* 8038520C 0038104C  7C 08 02 A6 */	mflr r0
 /* 80385210 00381050  90 01 00 24 */	stw r0, 0x24(r1)
 /* 80385214 00381054  39 61 00 20 */	addi r11, r1, 0x20
-/* 80385218 00381058  4B C8 21 2D */	bl lbl_80007344
+/* 80385218 00381058  4B C8 21 2D */	bl _savegpr_29
 /* 8038521C 0038105C  7C 7D 1B 78 */	mr r29, r3
 /* 80385220 00381060  7C 9E 23 78 */	mr r30, r4
 /* 80385224 00381064  2C 03 00 00 */	cmpwi r3, 0x0
@@ -132,7 +132,7 @@ __dt__Q53scn4step4hero8captured29StateCapturedWhispyVomitBoundFv:
 lbl_803852AC:
 /* 803852AC 003810EC  7F A3 EB 78 */	mr r3, r29
 /* 803852B0 003810F0  39 61 00 20 */	addi r11, r1, 0x20
-/* 803852B4 003810F4  4B C8 20 DD */	bl lbl_80007390
+/* 803852B4 003810F4  4B C8 20 DD */	bl _restgpr_29
 /* 803852B8 003810F8  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803852BC 003810FC  7C 08 03 A6 */	mtlr r0
 /* 803852C0 00381100  38 21 00 20 */	addi r1, r1, 0x20
@@ -275,7 +275,7 @@ procFixPos__Q53scn4step4hero8captured29StateCapturedWhispyVomitBoundFv:
 /* 80385498 003812D8  DB E1 00 50 */	stfd f31, 0x50(r1)
 /* 8038549C 003812DC  F3 E1 00 58 */	psq_st f31, 0x58(r1), 0, qr0
 /* 803854A0 003812E0  39 61 00 50 */	addi r11, r1, 0x50
-/* 803854A4 003812E4  4B C8 1E A1 */	bl lbl_80007344
+/* 803854A4 003812E4  4B C8 1E A1 */	bl _savegpr_29
 /* 803854A8 003812E8  7C 7F 1B 78 */	mr r31, r3
 /* 803854AC 003812EC  4B D7 B3 35 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 803854B0 003812F0  4B FB AE 8D */	bl mapColl__Q43scn4step4hero4HeroFv
@@ -377,7 +377,7 @@ lbl_80385614:
 /* 80385618 00381458  13 E1 00 0C */	psq_lx f31, r1, r0, 0, qr0
 /* 8038561C 0038145C  CB E1 00 50 */	lfd f31, 0x50(r1)
 /* 80385620 00381460  39 61 00 50 */	addi r11, r1, 0x50
-/* 80385624 00381464  4B C8 1D 6D */	bl lbl_80007390
+/* 80385624 00381464  4B C8 1D 6D */	bl _restgpr_29
 /* 80385628 00381468  80 01 00 64 */	lwz r0, 0x64(r1)
 /* 8038562C 0038146C  7C 08 03 A6 */	mtlr r0
 /* 80385630 00381470  38 21 00 60 */	addi r1, r1, 0x60

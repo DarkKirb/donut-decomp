@@ -162,7 +162,7 @@ procAnim__Q53scn4step5enemy6juckle11StateFollowFv:
 /* 802BBE8C 002B7CCC  DB E1 00 30 */	stfd f31, 0x30(r1)
 /* 802BBE90 002B7CD0  F3 E1 00 38 */	psq_st f31, 0x38(r1), 0, qr0
 /* 802BBE94 002B7CD4  39 61 00 30 */	addi r11, r1, 0x30
-/* 802BBE98 002B7CD8  4B D4 B4 AD */	bl lbl_80007344
+/* 802BBE98 002B7CD8  4B D4 B4 AD */	bl _savegpr_29
 /* 802BBE9C 002B7CDC  7C 7D 1B 78 */	mr r29, r3
 /* 802BBEA0 002B7CE0  4B E4 49 41 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 802BBEA4 002B7CE4  4B FC C1 E1 */	bl param__Q43scn4step5enemy5EnemyCFv
@@ -232,7 +232,7 @@ lbl_802BBF74:
 /* 802BBF84 002B7DC4  13 E1 00 0C */	psq_lx f31, r1, r0, 0, qr0
 /* 802BBF88 002B7DC8  CB E1 00 30 */	lfd f31, 0x30(r1)
 /* 802BBF8C 002B7DCC  39 61 00 30 */	addi r11, r1, 0x30
-/* 802BBF90 002B7DD0  4B D4 B4 01 */	bl lbl_80007390
+/* 802BBF90 002B7DD0  4B D4 B4 01 */	bl _restgpr_29
 /* 802BBF94 002B7DD4  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 802BBF98 002B7DD8  7C 08 03 A6 */	mtlr r0
 /* 802BBF9C 002B7DDC  38 21 00 40 */	addi r1, r1, 0x40

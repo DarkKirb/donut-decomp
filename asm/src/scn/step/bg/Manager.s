@@ -7,7 +7,7 @@ __ct__Q43scn4step2bg7ManagerFRQ33scn4step9Component:
 /* 80227264 002230A4  7C 08 02 A6 */	mflr r0
 /* 80227268 002230A8  90 01 00 34 */	stw r0, 0x34(r1)
 /* 8022726C 002230AC  39 61 00 30 */	addi r11, r1, 0x30
-/* 80227270 002230B0  4B DE 00 CD */	bl lbl_8000733C
+/* 80227270 002230B0  4B DE 00 CD */	bl _savegpr_27
 /* 80227274 002230B4  7C 7B 1B 78 */	mr r27, r3
 /* 80227278 002230B8  7C 9C 23 78 */	mr r28, r4
 /* 8022727C 002230BC  3C A0 80 46 */	lis r5, __vt__Q43scn4step2bg7Manager@ha
@@ -84,7 +84,7 @@ lbl_80227358:
 /* 80227388 002231C8  48 1A 38 F9 */	bl registerEventReceiver__Q43scn4step5ostop5ActorFRQ25ostop19IActorEventReceiver
 /* 8022738C 002231CC  7F 63 DB 78 */	mr r3, r27
 /* 80227390 002231D0  39 61 00 30 */	addi r11, r1, 0x30
-/* 80227394 002231D4  4B DD FF F5 */	bl lbl_80007388
+/* 80227394 002231D4  4B DD FF F5 */	bl _restgpr_27
 /* 80227398 002231D8  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 8022739C 002231DC  7C 08 03 A6 */	mtlr r0
 /* 802273A0 002231E0  38 21 00 30 */	addi r1, r1, 0x30

@@ -7,7 +7,7 @@ __ct__Q43scn17challengetutorial4info13AbilityCursorFRCQ43scn17challengetutorial4
 /* 801F704C 001F2E8C  7C 08 02 A6 */	mflr r0
 /* 801F7050 001F2E90  90 01 01 34 */	stw r0, 0x134(r1)
 /* 801F7054 001F2E94  39 61 01 30 */	addi r11, r1, 0x130
-/* 801F7058 001F2E98  4B E1 02 ED */	bl lbl_80007344
+/* 801F7058 001F2E98  4B E1 02 ED */	bl _savegpr_29
 /* 801F705C 001F2E9C  7C 7D 1B 78 */	mr r29, r3
 /* 801F7060 001F2EA0  7C 9E 23 78 */	mr r30, r4
 /* 801F7064 001F2EA4  38 61 00 BC */	addi r3, r1, 0xbc
@@ -85,7 +85,7 @@ __ct__Q43scn17challengetutorial4info13AbilityCursorFRCQ43scn17challengetutorial4
 /* 801F7184 001F2FC4  4B FB 61 9D */	bl updateMatrix__Q23lyt6LayoutFv
 /* 801F7188 001F2FC8  7F A3 EB 78 */	mr r3, r29
 /* 801F718C 001F2FCC  39 61 01 30 */	addi r11, r1, 0x130
-/* 801F7190 001F2FD0  4B E1 02 01 */	bl lbl_80007390
+/* 801F7190 001F2FD0  4B E1 02 01 */	bl _restgpr_29
 /* 801F7194 001F2FD4  80 01 01 34 */	lwz r0, 0x134(r1)
 /* 801F7198 001F2FD8  7C 08 03 A6 */	mtlr r0
 /* 801F719C 001F2FDC  38 21 01 30 */	addi r1, r1, 0x130

@@ -7,7 +7,7 @@ __ct__Q35mcoll6detail21CollideTargetReposSetFv:
 /* 801B6E00 001B2C40  7C 08 02 A6 */	mflr r0
 /* 801B6E04 001B2C44  90 01 00 24 */	stw r0, 0x24(r1)
 /* 801B6E08 001B2C48  39 61 00 20 */	addi r11, r1, 0x20
-/* 801B6E0C 001B2C4C  4B E5 05 39 */	bl lbl_80007344
+/* 801B6E0C 001B2C4C  4B E5 05 39 */	bl _savegpr_29
 /* 801B6E10 001B2C50  7C 7D 1B 78 */	mr r29, r3
 /* 801B6E14 001B2C54  38 63 00 04 */	addi r3, r3, 0x4
 /* 801B6E18 001B2C58  4B FF FE F9 */	bl __ct__Q35mcoll6detail18CollideTargetReposFv
@@ -60,7 +60,7 @@ lbl_801B6E80:
 /* 801B6EB4 001B2CF4  93 AD EE 68 */	stw r29, "object___Q33hel6common57ExplicitSingleton<Q35mcoll6detail21CollideTargetReposSet>"@sda21(r13)
 /* 801B6EB8 001B2CF8  7F A3 EB 78 */	mr r3, r29
 /* 801B6EBC 001B2CFC  39 61 00 20 */	addi r11, r1, 0x20
-/* 801B6EC0 001B2D00  4B E5 04 D1 */	bl lbl_80007390
+/* 801B6EC0 001B2D00  4B E5 04 D1 */	bl _restgpr_29
 /* 801B6EC4 001B2D04  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 801B6EC8 001B2D08  7C 08 03 A6 */	mtlr r0
 /* 801B6ECC 001B2D0C  38 21 00 20 */	addi r1, r1, 0x20
@@ -167,7 +167,7 @@ moveReposReserve__Q35mcoll6detail21CollideTargetReposSetFUl:
 /* 801B7020 001B2E60  7C 08 02 A6 */	mflr r0
 /* 801B7024 001B2E64  90 01 00 24 */	stw r0, 0x24(r1)
 /* 801B7028 001B2E68  39 61 00 20 */	addi r11, r1, 0x20
-/* 801B702C 001B2E6C  4B E5 03 11 */	bl lbl_8000733C
+/* 801B702C 001B2E6C  4B E5 03 11 */	bl _savegpr_27
 /* 801B7030 001B2E70  7C 7B 1B 78 */	mr r27, r3
 /* 801B7034 001B2E74  7C 9C 23 78 */	mr r28, r4
 /* 801B7038 001B2E78  38 63 08 0C */	addi r3, r3, 0x80c
@@ -228,7 +228,7 @@ lbl_801B70D8:
 .global lbl_801B70EC
 lbl_801B70EC:
 /* 801B70EC 001B2F2C  39 61 00 20 */	addi r11, r1, 0x20
-/* 801B70F0 001B2F30  4B E5 02 99 */	bl lbl_80007388
+/* 801B70F0 001B2F30  4B E5 02 99 */	bl _restgpr_27
 /* 801B70F4 001B2F34  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 801B70F8 001B2F38  7C 08 03 A6 */	mtlr r0
 /* 801B70FC 001B2F3C  38 21 00 20 */	addi r1, r1, 0x20
@@ -239,7 +239,7 @@ moveReposFree__Q35mcoll6detail21CollideTargetReposSetFUl:
 /* 801B7108 001B2F48  7C 08 02 A6 */	mflr r0
 /* 801B710C 001B2F4C  90 01 00 24 */	stw r0, 0x24(r1)
 /* 801B7110 001B2F50  39 61 00 20 */	addi r11, r1, 0x20
-/* 801B7114 001B2F54  4B E5 02 31 */	bl lbl_80007344
+/* 801B7114 001B2F54  4B E5 02 31 */	bl _savegpr_29
 /* 801B7118 001B2F58  7C 7D 1B 78 */	mr r29, r3
 /* 801B711C 001B2F5C  7C 9E 23 78 */	mr r30, r4
 /* 801B7120 001B2F60  38 63 08 0C */	addi r3, r3, 0x80c
@@ -260,7 +260,7 @@ moveReposFree__Q35mcoll6detail21CollideTargetReposSetFUl:
 .global lbl_801B715C
 lbl_801B715C:
 /* 801B715C 001B2F9C  39 61 00 20 */	addi r11, r1, 0x20
-/* 801B7160 001B2FA0  4B E5 02 31 */	bl lbl_80007390
+/* 801B7160 001B2FA0  4B E5 02 31 */	bl _restgpr_29
 /* 801B7164 001B2FA4  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 801B7168 001B2FA8  7C 08 03 A6 */	mtlr r0
 /* 801B716C 001B2FAC  38 21 00 20 */	addi r1, r1, 0x20

@@ -17,7 +17,7 @@ procObjCollReact__Q43scn4step4hero16DamageFieldReactFv:
 /* 80334B58 00330998  DB E1 01 40 */	stfd f31, 0x140(r1)
 /* 80334B5C 0033099C  F3 E1 01 48 */	psq_st f31, 0x148(r1), 0, qr0
 /* 80334B60 003309A0  39 61 01 40 */	addi r11, r1, 0x140
-/* 80334B64 003309A4  4B CD 27 E1 */	bl lbl_80007344
+/* 80334B64 003309A4  4B CD 27 E1 */	bl _savegpr_29
 /* 80334B68 003309A8  7C 7E 1B 78 */	mr r30, r3
 /* 80334B6C 003309AC  80 63 00 00 */	lwz r3, 0x0(r3)
 /* 80334B70 003309B0  48 00 D5 4D */	bl IsSomebody__Q43scn4step4hero14InitiativeUtilFRQ43scn4step4hero4Hero
@@ -299,7 +299,7 @@ lbl_80334F24:
 /* 80334F28 00330D68  13 E1 00 0C */	psq_lx f31, r1, r0, 0, qr0
 /* 80334F2C 00330D6C  CB E1 01 40 */	lfd f31, 0x140(r1)
 /* 80334F30 00330D70  39 61 01 40 */	addi r11, r1, 0x140
-/* 80334F34 00330D74  4B CD 24 5D */	bl lbl_80007390
+/* 80334F34 00330D74  4B CD 24 5D */	bl _restgpr_29
 /* 80334F38 00330D78  80 01 01 54 */	lwz r0, 0x154(r1)
 /* 80334F3C 00330D7C  7C 08 03 A6 */	mtlr r0
 /* 80334F40 00330D80  38 21 01 50 */	addi r1, r1, 0x150

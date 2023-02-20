@@ -178,7 +178,7 @@ Func__Q38mintglue10App__Alert37Mint_PrintIndex_0$53281App__Alert_cppFRQ26mintvm1
 /* 801C0EF4 001BCD34  7C 08 02 A6 */	mflr r0
 /* 801C0EF8 001BCD38  90 01 00 24 */	stw r0, 0x24(r1)
 /* 801C0EFC 001BCD3C  39 61 00 20 */	addi r11, r1, 0x20
-/* 801C0F00 001BCD40  4B E4 64 3D */	bl lbl_8000733C
+/* 801C0F00 001BCD40  4B E4 64 3D */	bl _savegpr_27
 /* 801C0F04 001BCD44  7C 7B 1B 78 */	mr r27, r3
 /* 801C0F08 001BCD48  38 80 00 04 */	li r4, 0x4
 /* 801C0F0C 001BCD4C  4B FD 76 E9 */	bl internal_getArg_addr__Q26mintvm13MintFuncProxyCFUi
@@ -205,7 +205,7 @@ Func__Q38mintglue10App__Alert37Mint_PrintIndex_0$53281App__Alert_cppFRQ26mintvm1
 /* 801C0F60 001BCDA0  C0 7C 00 00 */	lfs f3, 0x0(r28)
 /* 801C0F64 001BCDA4  4B E6 35 3D */	bl DefaultSwitchThreadCallback
 /* 801C0F68 001BCDA8  39 61 00 20 */	addi r11, r1, 0x20
-/* 801C0F6C 001BCDAC  4B E4 64 1D */	bl lbl_80007388
+/* 801C0F6C 001BCDAC  4B E4 64 1D */	bl _restgpr_27
 /* 801C0F70 001BCDB0  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 801C0F74 001BCDB4  7C 08 03 A6 */	mtlr r0
 /* 801C0F78 001BCDB8  38 21 00 20 */	addi r1, r1, 0x20
@@ -216,7 +216,7 @@ Func__Q38mintglue10App__Alert37Mint_PrintIndex_0$53279App__Alert_cppFRQ26mintvm1
 /* 801C0F84 001BCDC4  7C 08 02 A6 */	mflr r0
 /* 801C0F88 001BCDC8  90 01 00 24 */	stw r0, 0x24(r1)
 /* 801C0F8C 001BCDCC  39 61 00 20 */	addi r11, r1, 0x20
-/* 801C0F90 001BCDD0  4B E4 63 B1 */	bl lbl_80007340
+/* 801C0F90 001BCDD0  4B E4 63 B1 */	bl _savegpr_28
 /* 801C0F94 001BCDD4  7C 7C 1B 78 */	mr r28, r3
 /* 801C0F98 001BCDD8  38 80 00 03 */	li r4, 0x3
 /* 801C0F9C 001BCDDC  4B FD 76 59 */	bl internal_getArg_addr__Q26mintvm13MintFuncProxyCFUi
@@ -238,7 +238,7 @@ Func__Q38mintglue10App__Alert37Mint_PrintIndex_0$53279App__Alert_cppFRQ26mintvm1
 /* 801C0FDC 001BCE1C  C0 5D 00 00 */	lfs f2, 0x0(r29)
 /* 801C0FE0 001BCE20  4B E6 34 C1 */	bl DefaultSwitchThreadCallback
 /* 801C0FE4 001BCE24  39 61 00 20 */	addi r11, r1, 0x20
-/* 801C0FE8 001BCE28  4B E4 63 A5 */	bl lbl_8000738C
+/* 801C0FE8 001BCE28  4B E4 63 A5 */	bl _restgpr_28
 /* 801C0FEC 001BCE2C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 801C0FF0 001BCE30  7C 08 03 A6 */	mtlr r0
 /* 801C0FF4 001BCE34  38 21 00 20 */	addi r1, r1, 0x20
@@ -249,7 +249,7 @@ Func__Q38mintglue10App__Alert37Mint_PrintIndex_0$53277App__Alert_cppFRQ26mintvm1
 /* 801C1000 001BCE40  7C 08 02 A6 */	mflr r0
 /* 801C1004 001BCE44  90 01 00 24 */	stw r0, 0x24(r1)
 /* 801C1008 001BCE48  39 61 00 20 */	addi r11, r1, 0x20
-/* 801C100C 001BCE4C  4B E4 63 39 */	bl lbl_80007344
+/* 801C100C 001BCE4C  4B E4 63 39 */	bl _savegpr_29
 /* 801C1010 001BCE50  7C 7D 1B 78 */	mr r29, r3
 /* 801C1014 001BCE54  38 80 00 02 */	li r4, 0x2
 /* 801C1018 001BCE58  4B FD 75 DD */	bl internal_getArg_addr__Q26mintvm13MintFuncProxyCFUi
@@ -266,7 +266,7 @@ Func__Q38mintglue10App__Alert37Mint_PrintIndex_0$53277App__Alert_cppFRQ26mintvm1
 /* 801C1044 001BCE84  C0 3E 00 00 */	lfs f1, 0x0(r30)
 /* 801C1048 001BCE88  4B E6 34 59 */	bl DefaultSwitchThreadCallback
 /* 801C104C 001BCE8C  39 61 00 20 */	addi r11, r1, 0x20
-/* 801C1050 001BCE90  4B E4 63 41 */	bl lbl_80007390
+/* 801C1050 001BCE90  4B E4 63 41 */	bl _restgpr_29
 /* 801C1054 001BCE94  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 801C1058 001BCE98  7C 08 03 A6 */	mtlr r0
 /* 801C105C 001BCE9C  38 21 00 20 */	addi r1, r1, 0x20
@@ -300,7 +300,7 @@ Func__Q38mintglue10App__Alert32Mint_Print_0$53273App__Alert_cppFRQ26mintvm13Mint
 /* 801C10BC 001BCEFC  7C 08 02 A6 */	mflr r0
 /* 801C10C0 001BCF00  90 01 00 24 */	stw r0, 0x24(r1)
 /* 801C10C4 001BCF04  39 61 00 20 */	addi r11, r1, 0x20
-/* 801C10C8 001BCF08  4B E4 62 79 */	bl lbl_80007340
+/* 801C10C8 001BCF08  4B E4 62 79 */	bl _savegpr_28
 /* 801C10CC 001BCF0C  7C 7C 1B 78 */	mr r28, r3
 /* 801C10D0 001BCF10  38 80 00 03 */	li r4, 0x3
 /* 801C10D4 001BCF14  4B FD 75 21 */	bl internal_getArg_addr__Q26mintvm13MintFuncProxyCFUi
@@ -322,7 +322,7 @@ Func__Q38mintglue10App__Alert32Mint_Print_0$53273App__Alert_cppFRQ26mintvm13Mint
 /* 801C1114 001BCF54  C0 7D 00 00 */	lfs f3, 0x0(r29)
 /* 801C1118 001BCF58  4B E6 33 89 */	bl DefaultSwitchThreadCallback
 /* 801C111C 001BCF5C  39 61 00 20 */	addi r11, r1, 0x20
-/* 801C1120 001BCF60  4B E4 62 6D */	bl lbl_8000738C
+/* 801C1120 001BCF60  4B E4 62 6D */	bl _restgpr_28
 /* 801C1124 001BCF64  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 801C1128 001BCF68  7C 08 03 A6 */	mtlr r0
 /* 801C112C 001BCF6C  38 21 00 20 */	addi r1, r1, 0x20
@@ -333,7 +333,7 @@ Func__Q38mintglue10App__Alert32Mint_Print_0$53271App__Alert_cppFRQ26mintvm13Mint
 /* 801C1138 001BCF78  7C 08 02 A6 */	mflr r0
 /* 801C113C 001BCF7C  90 01 00 24 */	stw r0, 0x24(r1)
 /* 801C1140 001BCF80  39 61 00 20 */	addi r11, r1, 0x20
-/* 801C1144 001BCF84  4B E4 62 01 */	bl lbl_80007344
+/* 801C1144 001BCF84  4B E4 62 01 */	bl _savegpr_29
 /* 801C1148 001BCF88  7C 7D 1B 78 */	mr r29, r3
 /* 801C114C 001BCF8C  38 80 00 02 */	li r4, 0x2
 /* 801C1150 001BCF90  4B FD 74 A5 */	bl internal_getArg_addr__Q26mintvm13MintFuncProxyCFUi
@@ -350,7 +350,7 @@ Func__Q38mintglue10App__Alert32Mint_Print_0$53271App__Alert_cppFRQ26mintvm13Mint
 /* 801C117C 001BCFBC  C0 5E 00 00 */	lfs f2, 0x0(r30)
 /* 801C1180 001BCFC0  4B E6 33 21 */	bl DefaultSwitchThreadCallback
 /* 801C1184 001BCFC4  39 61 00 20 */	addi r11, r1, 0x20
-/* 801C1188 001BCFC8  4B E4 62 09 */	bl lbl_80007390
+/* 801C1188 001BCFC8  4B E4 62 09 */	bl _restgpr_29
 /* 801C118C 001BCFCC  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 801C1190 001BCFD0  7C 08 03 A6 */	mtlr r0
 /* 801C1194 001BCFD4  38 21 00 20 */	addi r1, r1, 0x20
@@ -397,7 +397,7 @@ Func__Q38mintglue10App__Alert37Mint_PrintIndex_0$53265App__Alert_cppFRQ26mintvm1
 /* 801C1220 001BD060  7C 08 02 A6 */	mflr r0
 /* 801C1224 001BD064  90 01 00 24 */	stw r0, 0x24(r1)
 /* 801C1228 001BD068  39 61 00 20 */	addi r11, r1, 0x20
-/* 801C122C 001BD06C  4B E4 61 11 */	bl lbl_8000733C
+/* 801C122C 001BD06C  4B E4 61 11 */	bl _savegpr_27
 /* 801C1230 001BD070  7C 7B 1B 78 */	mr r27, r3
 /* 801C1234 001BD074  38 80 00 04 */	li r4, 0x4
 /* 801C1238 001BD078  4B FD 73 BD */	bl internal_getArg_addr__Q26mintvm13MintFuncProxyCFUi
@@ -424,7 +424,7 @@ Func__Q38mintglue10App__Alert37Mint_PrintIndex_0$53265App__Alert_cppFRQ26mintvm1
 /* 801C128C 001BD0CC  80 FC 00 00 */	lwz r7, 0x0(r28)
 /* 801C1290 001BD0D0  4B E6 32 11 */	bl DefaultSwitchThreadCallback
 /* 801C1294 001BD0D4  39 61 00 20 */	addi r11, r1, 0x20
-/* 801C1298 001BD0D8  4B E4 60 F1 */	bl lbl_80007388
+/* 801C1298 001BD0D8  4B E4 60 F1 */	bl _restgpr_27
 /* 801C129C 001BD0DC  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 801C12A0 001BD0E0  7C 08 03 A6 */	mtlr r0
 /* 801C12A4 001BD0E4  38 21 00 20 */	addi r1, r1, 0x20
@@ -435,7 +435,7 @@ Func__Q38mintglue10App__Alert37Mint_PrintIndex_0$53263App__Alert_cppFRQ26mintvm1
 /* 801C12B0 001BD0F0  7C 08 02 A6 */	mflr r0
 /* 801C12B4 001BD0F4  90 01 00 24 */	stw r0, 0x24(r1)
 /* 801C12B8 001BD0F8  39 61 00 20 */	addi r11, r1, 0x20
-/* 801C12BC 001BD0FC  4B E4 60 85 */	bl lbl_80007340
+/* 801C12BC 001BD0FC  4B E4 60 85 */	bl _savegpr_28
 /* 801C12C0 001BD100  7C 7C 1B 78 */	mr r28, r3
 /* 801C12C4 001BD104  38 80 00 03 */	li r4, 0x3
 /* 801C12C8 001BD108  4B FD 73 2D */	bl internal_getArg_addr__Q26mintvm13MintFuncProxyCFUi
@@ -457,7 +457,7 @@ Func__Q38mintglue10App__Alert37Mint_PrintIndex_0$53263App__Alert_cppFRQ26mintvm1
 /* 801C1308 001BD148  80 DD 00 00 */	lwz r6, 0x0(r29)
 /* 801C130C 001BD14C  4B E6 31 95 */	bl DefaultSwitchThreadCallback
 /* 801C1310 001BD150  39 61 00 20 */	addi r11, r1, 0x20
-/* 801C1314 001BD154  4B E4 60 79 */	bl lbl_8000738C
+/* 801C1314 001BD154  4B E4 60 79 */	bl _restgpr_28
 /* 801C1318 001BD158  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 801C131C 001BD15C  7C 08 03 A6 */	mtlr r0
 /* 801C1320 001BD160  38 21 00 20 */	addi r1, r1, 0x20
@@ -468,7 +468,7 @@ Func__Q38mintglue10App__Alert37Mint_PrintIndex_0$53261App__Alert_cppFRQ26mintvm1
 /* 801C132C 001BD16C  7C 08 02 A6 */	mflr r0
 /* 801C1330 001BD170  90 01 00 24 */	stw r0, 0x24(r1)
 /* 801C1334 001BD174  39 61 00 20 */	addi r11, r1, 0x20
-/* 801C1338 001BD178  4B E4 60 0D */	bl lbl_80007344
+/* 801C1338 001BD178  4B E4 60 0D */	bl _savegpr_29
 /* 801C133C 001BD17C  7C 7D 1B 78 */	mr r29, r3
 /* 801C1340 001BD180  38 80 00 02 */	li r4, 0x2
 /* 801C1344 001BD184  4B FD 72 B1 */	bl internal_getArg_addr__Q26mintvm13MintFuncProxyCFUi
@@ -485,7 +485,7 @@ Func__Q38mintglue10App__Alert37Mint_PrintIndex_0$53261App__Alert_cppFRQ26mintvm1
 /* 801C1370 001BD1B0  80 BE 00 00 */	lwz r5, 0x0(r30)
 /* 801C1374 001BD1B4  4B E6 31 2D */	bl DefaultSwitchThreadCallback
 /* 801C1378 001BD1B8  39 61 00 20 */	addi r11, r1, 0x20
-/* 801C137C 001BD1BC  4B E4 60 15 */	bl lbl_80007390
+/* 801C137C 001BD1BC  4B E4 60 15 */	bl _restgpr_29
 /* 801C1380 001BD1C0  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 801C1384 001BD1C4  7C 08 03 A6 */	mtlr r0
 /* 801C1388 001BD1C8  38 21 00 20 */	addi r1, r1, 0x20
@@ -519,7 +519,7 @@ Func__Q38mintglue10App__Alert32Mint_Print_0$53257App__Alert_cppFRQ26mintvm13Mint
 /* 801C13E8 001BD228  7C 08 02 A6 */	mflr r0
 /* 801C13EC 001BD22C  90 01 00 24 */	stw r0, 0x24(r1)
 /* 801C13F0 001BD230  39 61 00 20 */	addi r11, r1, 0x20
-/* 801C13F4 001BD234  4B E4 5F 4D */	bl lbl_80007340
+/* 801C13F4 001BD234  4B E4 5F 4D */	bl _savegpr_28
 /* 801C13F8 001BD238  7C 7C 1B 78 */	mr r28, r3
 /* 801C13FC 001BD23C  38 80 00 03 */	li r4, 0x3
 /* 801C1400 001BD240  4B FD 71 F5 */	bl internal_getArg_addr__Q26mintvm13MintFuncProxyCFUi
@@ -541,7 +541,7 @@ Func__Q38mintglue10App__Alert32Mint_Print_0$53257App__Alert_cppFRQ26mintvm13Mint
 /* 801C1440 001BD280  80 DD 00 00 */	lwz r6, 0x0(r29)
 /* 801C1444 001BD284  4B E6 30 5D */	bl DefaultSwitchThreadCallback
 /* 801C1448 001BD288  39 61 00 20 */	addi r11, r1, 0x20
-/* 801C144C 001BD28C  4B E4 5F 41 */	bl lbl_8000738C
+/* 801C144C 001BD28C  4B E4 5F 41 */	bl _restgpr_28
 /* 801C1450 001BD290  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 801C1454 001BD294  7C 08 03 A6 */	mtlr r0
 /* 801C1458 001BD298  38 21 00 20 */	addi r1, r1, 0x20
@@ -552,7 +552,7 @@ Func__Q38mintglue10App__Alert32Mint_Print_0$53255App__Alert_cppFRQ26mintvm13Mint
 /* 801C1464 001BD2A4  7C 08 02 A6 */	mflr r0
 /* 801C1468 001BD2A8  90 01 00 24 */	stw r0, 0x24(r1)
 /* 801C146C 001BD2AC  39 61 00 20 */	addi r11, r1, 0x20
-/* 801C1470 001BD2B0  4B E4 5E D5 */	bl lbl_80007344
+/* 801C1470 001BD2B0  4B E4 5E D5 */	bl _savegpr_29
 /* 801C1474 001BD2B4  7C 7D 1B 78 */	mr r29, r3
 /* 801C1478 001BD2B8  38 80 00 02 */	li r4, 0x2
 /* 801C147C 001BD2BC  4B FD 71 79 */	bl internal_getArg_addr__Q26mintvm13MintFuncProxyCFUi
@@ -569,7 +569,7 @@ Func__Q38mintglue10App__Alert32Mint_Print_0$53255App__Alert_cppFRQ26mintvm13Mint
 /* 801C14A8 001BD2E8  80 BE 00 00 */	lwz r5, 0x0(r30)
 /* 801C14AC 001BD2EC  4B E6 2F F5 */	bl DefaultSwitchThreadCallback
 /* 801C14B0 001BD2F0  39 61 00 20 */	addi r11, r1, 0x20
-/* 801C14B4 001BD2F4  4B E4 5E DD */	bl lbl_80007390
+/* 801C14B4 001BD2F4  4B E4 5E DD */	bl _restgpr_29
 /* 801C14B8 001BD2F8  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 801C14BC 001BD2FC  7C 08 03 A6 */	mtlr r0
 /* 801C14C0 001BD300  38 21 00 20 */	addi r1, r1, 0x20

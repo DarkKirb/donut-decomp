@@ -7,7 +7,7 @@ __ct__Q53scn4step4info9challenge5RadarFRQ23mem10IAllocatorRCQ23lyt12PaneAccessor
 /* 803B4E60 003B0CA0  7C 08 02 A6 */	mflr r0
 /* 803B4E64 003B0CA4  90 01 01 54 */	stw r0, 0x154(r1)
 /* 803B4E68 003B0CA8  39 61 01 50 */	addi r11, r1, 0x150
-/* 803B4E6C 003B0CAC  4B C5 24 D5 */	bl lbl_80007340
+/* 803B4E6C 003B0CAC  4B C5 24 D5 */	bl _savegpr_28
 /* 803B4E70 003B0CB0  7C 7C 1B 78 */	mr r28, r3
 /* 803B4E74 003B0CB4  7C 9F 23 78 */	mr r31, r4
 /* 803B4E78 003B0CB8  7C BD 2B 78 */	mr r29, r5
@@ -157,7 +157,7 @@ __ct__Q53scn4step4info9challenge5RadarFRQ23mem10IAllocatorRCQ23lyt12PaneAccessor
 /* 803B50B8 003B0EF8  48 00 02 09 */	bl setMasterRatio__Q53scn4step4info9challenge5RadarFf
 /* 803B50BC 003B0EFC  7F 83 E3 78 */	mr r3, r28
 /* 803B50C0 003B0F00  39 61 01 50 */	addi r11, r1, 0x150
-/* 803B50C4 003B0F04  4B C5 22 C9 */	bl lbl_8000738C
+/* 803B50C4 003B0F04  4B C5 22 C9 */	bl _restgpr_28
 /* 803B50C8 003B0F08  80 01 01 54 */	lwz r0, 0x154(r1)
 /* 803B50CC 003B0F0C  7C 08 03 A6 */	mtlr r0
 /* 803B50D0 003B0F10  38 21 01 50 */	addi r1, r1, 0x150

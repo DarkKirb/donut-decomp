@@ -67,7 +67,7 @@ procAnim__Q53scn4step5enemy6pierce16StateFlySinCurveFv:
 /* 802D0BD0 002CCA10  7C 08 02 A6 */	mflr r0
 /* 802D0BD4 002CCA14  90 01 00 24 */	stw r0, 0x24(r1)
 /* 802D0BD8 002CCA18  39 61 00 20 */	addi r11, r1, 0x20
-/* 802D0BDC 002CCA1C  4B D3 67 65 */	bl lbl_80007340
+/* 802D0BDC 002CCA1C  4B D3 67 65 */	bl _savegpr_28
 /* 802D0BE0 002CCA20  7C 7C 1B 78 */	mr r28, r3
 /* 802D0BE4 002CCA24  4B E2 FB FD */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 802D0BE8 002CCA28  4B FB 74 9D */	bl param__Q43scn4step5enemy5EnemyCFv
@@ -197,7 +197,7 @@ lbl_802D0D78:
 .global lbl_802D0D80
 lbl_802D0D80:
 /* 802D0D80 002CCBC0  39 61 00 20 */	addi r11, r1, 0x20
-/* 802D0D84 002CCBC4  4B D3 66 09 */	bl lbl_8000738C
+/* 802D0D84 002CCBC4  4B D3 66 09 */	bl _restgpr_28
 /* 802D0D88 002CCBC8  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802D0D8C 002CCBCC  7C 08 03 A6 */	mtlr r0
 /* 802D0D90 002CCBD0  38 21 00 20 */	addi r1, r1, 0x20

@@ -9,7 +9,7 @@ __ct__Q53scn4step7gimmick11areamapdemo10CameraCtrlFRQ33scn4step9Componentff:
 /* 802FA454 002F6294  DB E1 00 20 */	stfd f31, 0x20(r1)
 /* 802FA458 002F6298  F3 E1 00 28 */	psq_st f31, 0x28(r1), 0, qr0
 /* 802FA45C 002F629C  39 61 00 20 */	addi r11, r1, 0x20
-/* 802FA460 002F62A0  4B D0 CE E5 */	bl lbl_80007344
+/* 802FA460 002F62A0  4B D0 CE E5 */	bl _savegpr_29
 /* 802FA464 002F62A4  7C 7D 1B 78 */	mr r29, r3
 /* 802FA468 002F62A8  90 83 00 00 */	stw r4, 0x0(r3)
 /* 802FA46C 002F62AC  D0 23 00 04 */	stfs f1, 0x4(r3)
@@ -53,7 +53,7 @@ lbl_802FA4CC:
 /* 802FA4FC 002F633C  13 E1 00 0C */	psq_lx f31, r1, r0, 0, qr0
 /* 802FA500 002F6340  CB E1 00 20 */	lfd f31, 0x20(r1)
 /* 802FA504 002F6344  39 61 00 20 */	addi r11, r1, 0x20
-/* 802FA508 002F6348  4B D0 CE 89 */	bl lbl_80007390
+/* 802FA508 002F6348  4B D0 CE 89 */	bl _restgpr_29
 /* 802FA50C 002F634C  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 802FA510 002F6350  7C 08 03 A6 */	mtlr r0
 /* 802FA514 002F6354  38 21 00 30 */	addi r1, r1, 0x30

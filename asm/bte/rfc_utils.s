@@ -52,7 +52,7 @@ rfc_alloc_multiplexer_channel:
 /* 8009C038 00097E78  7C 08 02 A6 */	mflr r0
 /* 8009C03C 00097E7C  90 01 00 24 */	stw r0, 0x24(r1)
 /* 8009C040 00097E80  39 61 00 20 */	addi r11, r1, 0x20
-/* 8009C044 00097E84  4B F6 B2 F9 */	bl lbl_8000733C
+/* 8009C044 00097E84  4B F6 B2 F9 */	bl _savegpr_27
 /* 8009C048 00097E88  3C A0 80 50 */	lis r5, rfc_cb@ha
 /* 8009C04C 00097E8C  7C 7B 1B 78 */	mr r27, r3
 /* 8009C050 00097E90  3B E5 98 08 */	addi r31, r5, rfc_cb@l
@@ -141,7 +141,7 @@ lbl_8009C170:
 .global lbl_8009C174
 lbl_8009C174:
 /* 8009C174 00097FB4  39 61 00 20 */	addi r11, r1, 0x20
-/* 8009C178 00097FB8  4B F6 B2 11 */	bl lbl_80007388
+/* 8009C178 00097FB8  4B F6 B2 11 */	bl _restgpr_27
 /* 8009C17C 00097FBC  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8009C180 00097FC0  7C 08 03 A6 */	mtlr r0
 /* 8009C184 00097FC4  38 21 00 20 */	addi r1, r1, 0x20

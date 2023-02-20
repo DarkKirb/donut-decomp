@@ -429,7 +429,7 @@ GetMoveGroupSaveData__Q33scn4step16StorageAccessor2FRQ33scn4step9ComponentQ43scn
 /* 80222434 0021E274  7C 08 02 A6 */	mflr r0
 /* 80222438 0021E278  90 01 00 24 */	stw r0, 0x24(r1)
 /* 8022243C 0021E27C  39 61 00 20 */	addi r11, r1, 0x20
-/* 80222440 0021E280  4B DE 4F 05 */	bl lbl_80007344
+/* 80222440 0021E280  4B DE 4F 05 */	bl _savegpr_29
 /* 80222444 0021E284  7C 7D 1B 78 */	mr r29, r3
 /* 80222448 0021E288  7C BE 2B 78 */	mr r30, r5
 /* 8022244C 0021E28C  7C DF 33 78 */	mr r31, r6
@@ -440,7 +440,7 @@ GetMoveGroupSaveData__Q33scn4step16StorageAccessor2FRQ33scn4step9ComponentQ43scn
 /* 80222460 0021E2A0  7F E6 FB 78 */	mr r6, r31
 /* 80222464 0021E2A4  48 1E 2F DD */	bl getMoveGroupSaveData__Q37storage13VolatileData213StepStageDataCFll
 /* 80222468 0021E2A8  39 61 00 20 */	addi r11, r1, 0x20
-/* 8022246C 0021E2AC  4B DE 4F 25 */	bl lbl_80007390
+/* 8022246C 0021E2AC  4B DE 4F 25 */	bl _restgpr_29
 /* 80222470 0021E2B0  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80222474 0021E2B4  7C 08 03 A6 */	mtlr r0
 /* 80222478 0021E2B8  38 21 00 20 */	addi r1, r1, 0x20

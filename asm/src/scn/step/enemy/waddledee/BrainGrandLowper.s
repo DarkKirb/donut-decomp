@@ -25,7 +25,7 @@ onStart__Q53scn4step5enemy9waddledee16BrainGrandLowperFv:
 /* 802ED304 002E9144  7C 08 02 A6 */	mflr r0
 /* 802ED308 002E9148  90 01 00 24 */	stw r0, 0x24(r1)
 /* 802ED30C 002E914C  39 61 00 20 */	addi r11, r1, 0x20
-/* 802ED310 002E9150  4B D1 A0 35 */	bl lbl_80007344
+/* 802ED310 002E9150  4B D1 A0 35 */	bl _savegpr_29
 /* 802ED314 002E9154  7C 7D 1B 78 */	mr r29, r3
 /* 802ED318 002E9158  4B E1 34 C9 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 802ED31C 002E915C  7C 7E 1B 78 */	mr r30, r3
@@ -49,7 +49,7 @@ lbl_802ED35C:
 /* 802ED35C 002E919C  93 BF 00 0C */	stw r29, 0xc(r31)
 /* 802ED360 002E91A0  38 60 00 01 */	li r3, 0x1
 /* 802ED364 002E91A4  39 61 00 20 */	addi r11, r1, 0x20
-/* 802ED368 002E91A8  4B D1 A0 29 */	bl lbl_80007390
+/* 802ED368 002E91A8  4B D1 A0 29 */	bl _restgpr_29
 /* 802ED36C 002E91AC  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802ED370 002E91B0  7C 08 03 A6 */	mtlr r0
 /* 802ED374 002E91B4  38 21 00 20 */	addi r1, r1, 0x20

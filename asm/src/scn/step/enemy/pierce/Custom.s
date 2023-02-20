@@ -102,7 +102,7 @@ turnHeroWithTime__Q53scn4step5enemy6pierce6CustomFUl:
 /* 802CFA70 002CB8B0  DB E1 00 30 */	stfd f31, 0x30(r1)
 /* 802CFA74 002CB8B4  F3 E1 00 38 */	psq_st f31, 0x38(r1), 0, qr0
 /* 802CFA78 002CB8B8  39 61 00 30 */	addi r11, r1, 0x30
-/* 802CFA7C 002CB8BC  4B D3 78 C9 */	bl lbl_80007344
+/* 802CFA7C 002CB8BC  4B D3 78 C9 */	bl _savegpr_29
 /* 802CFA80 002CB8C0  7C 7D 1B 78 */	mr r29, r3
 /* 802CFA84 002CB8C4  7C 9E 23 78 */	mr r30, r4
 /* 802CFA88 002CB8C8  4B E3 0D 59 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
@@ -147,7 +147,7 @@ lbl_802CFB10:
 /* 802CFB14 002CB954  13 E1 00 0C */	psq_lx f31, r1, r0, 0, qr0
 /* 802CFB18 002CB958  CB E1 00 30 */	lfd f31, 0x30(r1)
 /* 802CFB1C 002CB95C  39 61 00 30 */	addi r11, r1, 0x30
-/* 802CFB20 002CB960  4B D3 78 71 */	bl lbl_80007390
+/* 802CFB20 002CB960  4B D3 78 71 */	bl _restgpr_29
 /* 802CFB24 002CB964  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 802CFB28 002CB968  7C 08 03 A6 */	mtlr r0
 /* 802CFB2C 002CB96C  38 21 00 40 */	addi r1, r1, 0x40

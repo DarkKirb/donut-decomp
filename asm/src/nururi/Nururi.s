@@ -7,7 +7,7 @@ __ct__Q26nururi6NururiFRQ26nururi7ManagerQ26nururi8Category:
 /* 801D3480 001CF2C0  7C 08 02 A6 */	mflr r0
 /* 801D3484 001CF2C4  90 01 00 24 */	stw r0, 0x24(r1)
 /* 801D3488 001CF2C8  39 61 00 20 */	addi r11, r1, 0x20
-/* 801D348C 001CF2CC  4B E3 3E B9 */	bl lbl_80007344
+/* 801D348C 001CF2CC  4B E3 3E B9 */	bl _savegpr_29
 /* 801D3490 001CF2D0  7C 7D 1B 78 */	mr r29, r3
 /* 801D3494 001CF2D4  7C BE 2B 78 */	mr r30, r5
 /* 801D3498 001CF2D8  3C A0 80 46 */	lis r5, __vt__Q26nururi6Nururi@ha
@@ -35,7 +35,7 @@ __ct__Q26nururi6NururiFRQ26nururi7ManagerQ26nururi8Category:
 /* 801D34F0 001CF330  48 00 00 89 */	bl setValid__Q26nururi6NururiFb
 /* 801D34F4 001CF334  7F A3 EB 78 */	mr r3, r29
 /* 801D34F8 001CF338  39 61 00 20 */	addi r11, r1, 0x20
-/* 801D34FC 001CF33C  4B E3 3E 95 */	bl lbl_80007390
+/* 801D34FC 001CF33C  4B E3 3E 95 */	bl _restgpr_29
 /* 801D3500 001CF340  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 801D3504 001CF344  7C 08 03 A6 */	mtlr r0
 /* 801D3508 001CF348  38 21 00 20 */	addi r1, r1, 0x20
@@ -289,7 +289,7 @@ updateResultRound__Q26nururi6NururiFRCQ26nururi6Nururi:
 /* 801D382C 001CF66C  DB E1 00 50 */	stfd f31, 0x50(r1)
 /* 801D3830 001CF670  F3 E1 00 58 */	psq_st f31, 0x58(r1), 0, qr0
 /* 801D3834 001CF674  39 61 00 50 */	addi r11, r1, 0x50
-/* 801D3838 001CF678  4B E3 3B 0D */	bl lbl_80007344
+/* 801D3838 001CF678  4B E3 3B 0D */	bl _savegpr_29
 /* 801D383C 001CF67C  7C 7D 1B 78 */	mr r29, r3
 /* 801D3840 001CF680  7C 9E 23 78 */	mr r30, r4
 /* 801D3844 001CF684  38 61 00 38 */	addi r3, r1, 0x38
@@ -410,7 +410,7 @@ lbl_801D39C4:
 /* 801D39D8 001CF818  13 E1 00 0C */	psq_lx f31, r1, r0, 0, qr0
 /* 801D39DC 001CF81C  CB E1 00 50 */	lfd f31, 0x50(r1)
 /* 801D39E0 001CF820  39 61 00 50 */	addi r11, r1, 0x50
-/* 801D39E4 001CF824  4B E3 39 AD */	bl lbl_80007390
+/* 801D39E4 001CF824  4B E3 39 AD */	bl _restgpr_29
 /* 801D39E8 001CF828  80 01 00 64 */	lwz r0, 0x64(r1)
 /* 801D39EC 001CF82C  7C 08 03 A6 */	mtlr r0
 /* 801D39F0 001CF830  38 21 00 60 */	addi r1, r1, 0x60

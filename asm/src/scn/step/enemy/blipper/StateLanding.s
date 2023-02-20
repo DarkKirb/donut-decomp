@@ -42,7 +42,7 @@ procAnim__Q53scn4step5enemy7blipper12StateLandingFv:
 /* 8029B10C 00296F4C  7C 08 02 A6 */	mflr r0
 /* 8029B110 00296F50  90 01 00 24 */	stw r0, 0x24(r1)
 /* 8029B114 00296F54  39 61 00 20 */	addi r11, r1, 0x20
-/* 8029B118 00296F58  4B D6 C2 2D */	bl lbl_80007344
+/* 8029B118 00296F58  4B D6 C2 2D */	bl _savegpr_29
 /* 8029B11C 00296F5C  7C 7D 1B 78 */	mr r29, r3
 /* 8029B120 00296F60  4B E6 56 C1 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 8029B124 00296F64  4B FE CF A9 */	bl model__Q43scn4step5enemy5EnemyFv
@@ -102,7 +102,7 @@ lbl_8029B1E0:
 .global lbl_8029B1E4
 lbl_8029B1E4:
 /* 8029B1E4 00297024  39 61 00 20 */	addi r11, r1, 0x20
-/* 8029B1E8 00297028  4B D6 C1 A9 */	bl lbl_80007390
+/* 8029B1E8 00297028  4B D6 C1 A9 */	bl _restgpr_29
 /* 8029B1EC 0029702C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8029B1F0 00297030  7C 08 03 A6 */	mtlr r0
 /* 8029B1F4 00297034  38 21 00 20 */	addi r1, r1, 0x20
@@ -114,7 +114,7 @@ procFixPos__Q53scn4step5enemy7blipper12StateLandingFv:
 /* 8029B200 00297040  7C 08 02 A6 */	mflr r0
 /* 8029B204 00297044  90 01 00 54 */	stw r0, 0x54(r1)
 /* 8029B208 00297048  39 61 00 50 */	addi r11, r1, 0x50
-/* 8029B20C 0029704C  4B D6 C1 39 */	bl lbl_80007344
+/* 8029B20C 0029704C  4B D6 C1 39 */	bl _savegpr_29
 /* 8029B210 00297050  7C 7D 1B 78 */	mr r29, r3
 /* 8029B214 00297054  4B E6 55 CD */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 8029B218 00297058  4B FE CE E5 */	bl mapColl__Q43scn4step5enemy5EnemyFv
@@ -148,7 +148,7 @@ lbl_8029B27C:
 .global lbl_8029B280
 lbl_8029B280:
 /* 8029B280 002970C0  39 61 00 50 */	addi r11, r1, 0x50
-/* 8029B284 002970C4  4B D6 C1 0D */	bl lbl_80007390
+/* 8029B284 002970C4  4B D6 C1 0D */	bl _restgpr_29
 /* 8029B288 002970C8  80 01 00 54 */	lwz r0, 0x54(r1)
 /* 8029B28C 002970CC  7C 08 03 A6 */	mtlr r0
 /* 8029B290 002970D0  38 21 00 50 */	addi r1, r1, 0x50

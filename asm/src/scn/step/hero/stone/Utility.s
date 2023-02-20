@@ -7,7 +7,7 @@ OnStateStartChange__Q53scn4step4hero5stone7UtilityFRQ43scn4step4hero4HeroRQ53scn
 /* 80391B60 0038D9A0  7C 08 02 A6 */	mflr r0
 /* 80391B64 0038D9A4  90 01 00 24 */	stw r0, 0x24(r1)
 /* 80391B68 0038D9A8  39 61 00 20 */	addi r11, r1, 0x20
-/* 80391B6C 0038D9AC  4B C7 57 D5 */	bl lbl_80007340
+/* 80391B6C 0038D9AC  4B C7 57 D5 */	bl _savegpr_28
 /* 80391B70 0038D9B0  7C 7C 1B 78 */	mr r28, r3
 /* 80391B74 0038D9B4  7C 9D 23 78 */	mr r29, r4
 /* 80391B78 0038D9B8  4B FA E7 A5 */	bl model__Q43scn4step4hero4HeroFv
@@ -52,7 +52,7 @@ OnStateStartChange__Q53scn4step4hero5stone7UtilityFRQ43scn4step4hero4HeroRQ53scn
 .global lbl_80391C14
 lbl_80391C14:
 /* 80391C14 0038DA54  39 61 00 20 */	addi r11, r1, 0x20
-/* 80391C18 0038DA58  4B C7 57 75 */	bl lbl_8000738C
+/* 80391C18 0038DA58  4B C7 57 75 */	bl _restgpr_28
 /* 80391C1C 0038DA5C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80391C20 0038DA60  7C 08 03 A6 */	mtlr r0
 /* 80391C24 0038DA64  38 21 00 20 */	addi r1, r1, 0x20
@@ -94,7 +94,7 @@ InitRotH__Q53scn4step4hero5stone7UtilityFRQ43scn4step4hero4HeroRQ53scn4step4hero
 /* 80391CA4 0038DAE4  DB E1 00 30 */	stfd f31, 0x30(r1)
 /* 80391CA8 0038DAE8  F3 E1 00 38 */	psq_st f31, 0x38(r1), 0, qr0
 /* 80391CAC 0038DAEC  39 61 00 30 */	addi r11, r1, 0x30
-/* 80391CB0 0038DAF0  4B C7 56 95 */	bl lbl_80007344
+/* 80391CB0 0038DAF0  4B C7 56 95 */	bl _savegpr_29
 /* 80391CB4 0038DAF4  7C 7D 1B 78 */	mr r29, r3
 /* 80391CB8 0038DAF8  7C 9E 23 78 */	mr r30, r4
 /* 80391CBC 0038DAFC  4B FA E6 61 */	bl model__Q43scn4step4hero4HeroFv
@@ -204,7 +204,7 @@ lbl_80391E30:
 /* 80391E34 0038DC74  13 E1 00 0C */	psq_lx f31, r1, r0, 0, qr0
 /* 80391E38 0038DC78  CB E1 00 30 */	lfd f31, 0x30(r1)
 /* 80391E3C 0038DC7C  39 61 00 30 */	addi r11, r1, 0x30
-/* 80391E40 0038DC80  4B C7 55 51 */	bl lbl_80007390
+/* 80391E40 0038DC80  4B C7 55 51 */	bl _restgpr_29
 /* 80391E44 0038DC84  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 80391E48 0038DC88  7C 08 03 A6 */	mtlr r0
 /* 80391E4C 0038DC8C  38 21 00 40 */	addi r1, r1, 0x40
@@ -215,7 +215,7 @@ UpdateSlipRolling__Q53scn4step4hero5stone7UtilityFRQ43scn4step4hero4HeroRQ53scn4
 /* 80391E58 0038DC98  7C 08 02 A6 */	mflr r0
 /* 80391E5C 0038DC9C  90 01 00 34 */	stw r0, 0x34(r1)
 /* 80391E60 0038DCA0  39 61 00 30 */	addi r11, r1, 0x30
-/* 80391E64 0038DCA4  4B C7 54 DD */	bl lbl_80007340
+/* 80391E64 0038DCA4  4B C7 54 DD */	bl _savegpr_28
 /* 80391E68 0038DCA8  7C 7C 1B 78 */	mr r28, r3
 /* 80391E6C 0038DCAC  7C 9D 23 78 */	mr r29, r4
 /* 80391E70 0038DCB0  7F A3 EB 78 */	mr r3, r29
@@ -270,7 +270,7 @@ lbl_80391F20:
 /* 80391F24 0038DD64  7F A4 EB 78 */	mr r4, r29
 /* 80391F28 0038DD68  4B FF FD 71 */	bl InitRotH__Q53scn4step4hero5stone7UtilityFRQ43scn4step4hero4HeroRQ53scn4step4hero5stone7Context
 /* 80391F2C 0038DD6C  39 61 00 30 */	addi r11, r1, 0x30
-/* 80391F30 0038DD70  4B C7 54 5D */	bl lbl_8000738C
+/* 80391F30 0038DD70  4B C7 54 5D */	bl _restgpr_28
 /* 80391F34 0038DD74  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 80391F38 0038DD78  7C 08 03 A6 */	mtlr r0
 /* 80391F3C 0038DD7C  38 21 00 30 */	addi r1, r1, 0x30

@@ -146,7 +146,7 @@ procMove__Q53scn4step5enemy10parasoldee16StateParasolFallFv:
 /* 802CD2F4 002C9134  7C 08 02 A6 */	mflr r0
 /* 802CD2F8 002C9138  90 01 00 24 */	stw r0, 0x24(r1)
 /* 802CD2FC 002C913C  39 61 00 20 */	addi r11, r1, 0x20
-/* 802CD300 002C9140  4B D3 A0 45 */	bl lbl_80007344
+/* 802CD300 002C9140  4B D3 A0 45 */	bl _savegpr_29
 /* 802CD304 002C9144  7C 7D 1B 78 */	mr r29, r3
 /* 802CD308 002C9148  4B E3 34 D9 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 802CD30C 002C914C  4B FB AD 79 */	bl param__Q43scn4step5enemy5EnemyCFv
@@ -164,7 +164,7 @@ procMove__Q53scn4step5enemy10parasoldee16StateParasolFallFv:
 /* 802CD33C 002C917C  38 BE 00 04 */	addi r5, r30, 0x4
 /* 802CD340 002C9180  4B EC E1 E9 */	bl airDecelFall__Q24gobj4MoveFRCQ24gobj14MoveParamDecelRCQ24gobj13MoveParamFall
 /* 802CD344 002C9184  39 61 00 20 */	addi r11, r1, 0x20
-/* 802CD348 002C9188  4B D3 A0 49 */	bl lbl_80007390
+/* 802CD348 002C9188  4B D3 A0 49 */	bl _restgpr_29
 /* 802CD34C 002C918C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802CD350 002C9190  7C 08 03 A6 */	mtlr r0
 /* 802CD354 002C9194  38 21 00 20 */	addi r1, r1, 0x20
@@ -176,7 +176,7 @@ procFixPos__Q53scn4step5enemy10parasoldee16StateParasolFallFv:
 /* 802CD360 002C91A0  7C 08 02 A6 */	mflr r0
 /* 802CD364 002C91A4  90 01 00 54 */	stw r0, 0x54(r1)
 /* 802CD368 002C91A8  39 61 00 50 */	addi r11, r1, 0x50
-/* 802CD36C 002C91AC  4B D3 9F D9 */	bl lbl_80007344
+/* 802CD36C 002C91AC  4B D3 9F D9 */	bl _savegpr_29
 /* 802CD370 002C91B0  7C 7F 1B 78 */	mr r31, r3
 /* 802CD374 002C91B4  4B E3 34 6D */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 802CD378 002C91B8  4B FB AD 85 */	bl mapColl__Q43scn4step5enemy5EnemyFv
@@ -235,7 +235,7 @@ lbl_802CD434:
 .global lbl_802CD43C
 lbl_802CD43C:
 /* 802CD43C 002C927C  39 61 00 50 */	addi r11, r1, 0x50
-/* 802CD440 002C9280  4B D3 9F 51 */	bl lbl_80007390
+/* 802CD440 002C9280  4B D3 9F 51 */	bl _restgpr_29
 /* 802CD444 002C9284  80 01 00 54 */	lwz r0, 0x54(r1)
 /* 802CD448 002C9288  7C 08 03 A6 */	mtlr r0
 /* 802CD44C 002C928C  38 21 00 50 */	addi r1, r1, 0x50

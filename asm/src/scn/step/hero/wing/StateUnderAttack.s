@@ -7,7 +7,7 @@ TryToChangeState__Q53scn4step4hero4wing16StateUnderAttackFPQ43scn4step4hero4Hero
 /* 8039A53C 0039637C  7C 08 02 A6 */	mflr r0
 /* 8039A540 00396380  90 01 00 24 */	stw r0, 0x24(r1)
 /* 8039A544 00396384  39 61 00 20 */	addi r11, r1, 0x20
-/* 8039A548 00396388  4B C6 CD FD */	bl lbl_80007344
+/* 8039A548 00396388  4B C6 CD FD */	bl _savegpr_29
 /* 8039A54C 0039638C  7C 7D 1B 78 */	mr r29, r3
 /* 8039A550 00396390  4B FA 5D AD */	bl footState__Q43scn4step4hero4HeroFv
 /* 8039A554 00396394  4B DF F9 65 */	bl isAir__Q24gobj9FootStateCFv
@@ -50,7 +50,7 @@ lbl_8039A5D4:
 .global lbl_8039A5D8
 lbl_8039A5D8:
 /* 8039A5D8 00396418  39 61 00 20 */	addi r11, r1, 0x20
-/* 8039A5DC 0039641C  4B C6 CD B5 */	bl lbl_80007390
+/* 8039A5DC 0039641C  4B C6 CD B5 */	bl _restgpr_29
 /* 8039A5E0 00396420  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8039A5E4 00396424  7C 08 03 A6 */	mtlr r0
 /* 8039A5E8 00396428  38 21 00 20 */	addi r1, r1, 0x20
@@ -329,7 +329,7 @@ procFixPos__Q53scn4step4hero4wing16StateUnderAttackFv:
 /* 8039A9BC 003967FC  7C 08 02 A6 */	mflr r0
 /* 8039A9C0 00396800  90 01 00 54 */	stw r0, 0x54(r1)
 /* 8039A9C4 00396804  39 61 00 50 */	addi r11, r1, 0x50
-/* 8039A9C8 00396808  4B C6 C9 79 */	bl lbl_80007340
+/* 8039A9C8 00396808  4B C6 C9 79 */	bl _savegpr_28
 /* 8039A9CC 0039680C  7C 7F 1B 78 */	mr r31, r3
 /* 8039A9D0 00396810  4B D6 5E 11 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 8039A9D4 00396814  4B FA 59 69 */	bl mapColl__Q43scn4step4hero4HeroFv
@@ -412,7 +412,7 @@ lbl_8039AAE0:
 .global lbl_8039AB00
 lbl_8039AB00:
 /* 8039AB00 00396940  39 61 00 50 */	addi r11, r1, 0x50
-/* 8039AB04 00396944  4B C6 C8 89 */	bl lbl_8000738C
+/* 8039AB04 00396944  4B C6 C8 89 */	bl _restgpr_28
 /* 8039AB08 00396948  80 01 00 54 */	lwz r0, 0x54(r1)
 /* 8039AB0C 0039694C  7C 08 03 A6 */	mtlr r0
 /* 8039AB10 00396950  38 21 00 50 */	addi r1, r1, 0x50

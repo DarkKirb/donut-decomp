@@ -7,7 +7,7 @@
 /* 801B75C8 001B3408  7C 08 02 A6 */	mflr r0
 /* 801B75CC 001B340C  90 01 00 24 */	stw r0, 0x24(r1)
 /* 801B75D0 001B3410  39 61 00 20 */	addi r11, r1, 0x20
-/* 801B75D4 001B3414  4B E4 FD 6D */	bl lbl_80007340
+/* 801B75D4 001B3414  4B E4 FD 6D */	bl _savegpr_28
 /* 801B75D8 001B3418  7C 7C 1B 78 */	mr r28, r3
 /* 801B75DC 001B341C  3B E0 00 00 */	li r31, 0x0
 /* 801B75E0 001B3420  48 00 00 4C */	b lbl_801B762C
@@ -37,7 +37,7 @@ lbl_801B762C:
 /* 801B7630 001B3470  2C 03 00 00 */	cmpwi r3, 0x0
 /* 801B7634 001B3474  40 82 FF B0 */	bne lbl_801B75E4
 /* 801B7638 001B3478  39 61 00 20 */	addi r11, r1, 0x20
-/* 801B763C 001B347C  4B E4 FD 51 */	bl lbl_8000738C
+/* 801B763C 001B347C  4B E4 FD 51 */	bl _restgpr_28
 /* 801B7640 001B3480  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 801B7644 001B3484  7C 08 03 A6 */	mtlr r0
 /* 801B7648 001B3488  38 21 00 20 */	addi r1, r1, 0x20
@@ -48,7 +48,7 @@ initialize__Q35mcoll6detail16FixedGridManagerFRCQ35mcoll6detail20FixedGridManage
 /* 801B7654 001B3494  7C 08 02 A6 */	mflr r0
 /* 801B7658 001B3498  90 01 00 24 */	stw r0, 0x24(r1)
 /* 801B765C 001B349C  39 61 00 20 */	addi r11, r1, 0x20
-/* 801B7660 001B34A0  4B E4 FC D9 */	bl lbl_80007338
+/* 801B7660 001B34A0  4B E4 FC D9 */	bl _savegpr_26
 /* 801B7664 001B34A4  7C 7A 1B 78 */	mr r26, r3
 /* 801B7668 001B34A8  7C 9B 23 78 */	mr r27, r4
 /* 801B766C 001B34AC  4B FF FF 59 */	bl "clear__Q23mem52ExplicitAutoDeleteArray<Q35mcoll6detail9LandLayer,2>Fv"
@@ -89,7 +89,7 @@ lbl_801B76DC:
 /* 801B76E0 001B3520  7C 1C 00 40 */	cmplw r28, r0
 /* 801B76E4 001B3524  41 80 FF 9C */	blt lbl_801B7680
 /* 801B76E8 001B3528  39 61 00 20 */	addi r11, r1, 0x20
-/* 801B76EC 001B352C  4B E4 FC 99 */	bl lbl_80007384
+/* 801B76EC 001B352C  4B E4 FC 99 */	bl _restgpr_26
 /* 801B76F0 001B3530  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 801B76F4 001B3534  7C 08 03 A6 */	mtlr r0
 /* 801B76F8 001B3538  38 21 00 20 */	addi r1, r1, 0x20
@@ -145,7 +145,7 @@ gatherCollideTarget__Q35mcoll6detail16FixedGridManagerCFRQ35mcoll6detail18Collid
 /* 801B77A0 001B35E0  7C 08 02 A6 */	mflr r0
 /* 801B77A4 001B35E4  90 01 00 74 */	stw r0, 0x74(r1)
 /* 801B77A8 001B35E8  39 61 00 70 */	addi r11, r1, 0x70
-/* 801B77AC 001B35EC  4B E4 FB 95 */	bl lbl_80007340
+/* 801B77AC 001B35EC  4B E4 FB 95 */	bl _savegpr_28
 /* 801B77B0 001B35F0  7C 7C 1B 78 */	mr r28, r3
 /* 801B77B4 001B35F4  7C 9D 23 78 */	mr r29, r4
 /* 801B77B8 001B35F8  7C BE 2B 78 */	mr r30, r5
@@ -200,7 +200,7 @@ gatherCollideTarget__Q35mcoll6detail16FixedGridManagerCFRQ35mcoll6detail18Collid
 /* 801B787C 001B36BC  7F E6 FB 78 */	mr r6, r31
 /* 801B7880 001B36C0  48 00 15 CD */	bl gatherCollideTarget__Q35mcoll6detail9LandLayerCFRQ35mcoll6detail18CollideTargetReposRCQ24util10UIntAABBoxRCQ35mcoll6detail16LandGatherOption
 /* 801B7884 001B36C4  39 61 00 70 */	addi r11, r1, 0x70
-/* 801B7888 001B36C8  4B E4 FB 05 */	bl lbl_8000738C
+/* 801B7888 001B36C8  4B E4 FB 05 */	bl _restgpr_28
 /* 801B788C 001B36CC  80 01 00 74 */	lwz r0, 0x74(r1)
 /* 801B7890 001B36D0  7C 08 03 A6 */	mtlr r0
 /* 801B7894 001B36D4  38 21 00 70 */	addi r1, r1, 0x70

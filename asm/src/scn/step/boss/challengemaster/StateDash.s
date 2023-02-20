@@ -7,7 +7,7 @@ TryToChangeState__Q53scn4step4boss15challengemaster9StateDashFPQ43scn4step4boss4
 /* 8023FAE4 0023B924  7C 08 02 A6 */	mflr r0
 /* 8023FAE8 0023B928  90 01 00 24 */	stw r0, 0x24(r1)
 /* 8023FAEC 0023B92C  39 61 00 20 */	addi r11, r1, 0x20
-/* 8023FAF0 0023B930  4B DC 78 55 */	bl lbl_80007344
+/* 8023FAF0 0023B930  4B DC 78 55 */	bl _savegpr_29
 /* 8023FAF4 0023B934  7C 7D 1B 78 */	mr r29, r3
 /* 8023FAF8 0023B938  4B FE D4 F1 */	bl custom__Q43scn4step4boss4BossFv
 /* 8023FAFC 0023B93C  4B FF CA 51 */	bl "DynamicCastToRef<Q53scn4step4boss15challengemaster6Custom,Q43scn4step4boss7ICustom>__Q23hel6commonFPQ43scn4step4boss7ICustom_RQ53scn4step4boss15challengemaster6Custom"
@@ -40,7 +40,7 @@ lbl_8023FB54:
 .global lbl_8023FB58
 lbl_8023FB58:
 /* 8023FB58 0023B998  39 61 00 20 */	addi r11, r1, 0x20
-/* 8023FB5C 0023B99C  4B DC 78 35 */	bl lbl_80007390
+/* 8023FB5C 0023B99C  4B DC 78 35 */	bl _restgpr_29
 /* 8023FB60 0023B9A0  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8023FB64 0023B9A4  7C 08 03 A6 */	mtlr r0
 /* 8023FB68 0023B9A8  38 21 00 20 */	addi r1, r1, 0x20
@@ -109,7 +109,7 @@ __dt__Q53scn4step4boss15challengemaster9StateDashFv:
 /* 8023FC38 0023BA78  7C 08 02 A6 */	mflr r0
 /* 8023FC3C 0023BA7C  90 01 00 24 */	stw r0, 0x24(r1)
 /* 8023FC40 0023BA80  39 61 00 20 */	addi r11, r1, 0x20
-/* 8023FC44 0023BA84  4B DC 77 01 */	bl lbl_80007344
+/* 8023FC44 0023BA84  4B DC 77 01 */	bl _savegpr_29
 /* 8023FC48 0023BA88  7C 7D 1B 78 */	mr r29, r3
 /* 8023FC4C 0023BA8C  7C 9E 23 78 */	mr r30, r4
 /* 8023FC50 0023BA90  2C 03 00 00 */	cmpwi r3, 0x0
@@ -143,7 +143,7 @@ __dt__Q53scn4step4boss15challengemaster9StateDashFv:
 lbl_8023FCBC:
 /* 8023FCBC 0023BAFC  7F A3 EB 78 */	mr r3, r29
 /* 8023FCC0 0023BB00  39 61 00 20 */	addi r11, r1, 0x20
-/* 8023FCC4 0023BB04  4B DC 76 CD */	bl lbl_80007390
+/* 8023FCC4 0023BB04  4B DC 76 CD */	bl _restgpr_29
 /* 8023FCC8 0023BB08  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8023FCCC 0023BB0C  7C 08 03 A6 */	mtlr r0
 /* 8023FCD0 0023BB10  38 21 00 20 */	addi r1, r1, 0x20
@@ -155,7 +155,7 @@ procAnim__Q53scn4step4boss15challengemaster9StateDashFv:
 /* 8023FCDC 0023BB1C  7C 08 02 A6 */	mflr r0
 /* 8023FCE0 0023BB20  90 01 00 24 */	stw r0, 0x24(r1)
 /* 8023FCE4 0023BB24  39 61 00 20 */	addi r11, r1, 0x20
-/* 8023FCE8 0023BB28  4B DC 76 5D */	bl lbl_80007344
+/* 8023FCE8 0023BB28  4B DC 76 5D */	bl _savegpr_29
 /* 8023FCEC 0023BB2C  7C 7F 1B 78 */	mr r31, r3
 /* 8023FCF0 0023BB30  4B EC 0A F1 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 8023FCF4 0023BB34  4B FE D2 F5 */	bl custom__Q43scn4step4boss4BossFv
@@ -238,7 +238,7 @@ lbl_8023FDFC:
 .global lbl_8023FE10
 lbl_8023FE10:
 /* 8023FE10 0023BC50  39 61 00 20 */	addi r11, r1, 0x20
-/* 8023FE14 0023BC54  4B DC 75 7D */	bl lbl_80007390
+/* 8023FE14 0023BC54  4B DC 75 7D */	bl _restgpr_29
 /* 8023FE18 0023BC58  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8023FE1C 0023BC5C  7C 08 03 A6 */	mtlr r0
 /* 8023FE20 0023BC60  38 21 00 20 */	addi r1, r1, 0x20

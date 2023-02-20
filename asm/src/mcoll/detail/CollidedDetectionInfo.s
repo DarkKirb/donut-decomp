@@ -50,7 +50,7 @@ __ct__Q35mcoll6detail21CollidedDetectionInfoFRCQ33hel5geo2d7SegmentRCQ33hel4math
 /* 801B6794 001B25D4  90 01 00 34 */	stw r0, 0x34(r1)
 /* 801B6798 001B25D8  DB E1 00 28 */	stfd f31, 0x28(r1)
 /* 801B679C 001B25DC  39 61 00 28 */	addi r11, r1, 0x28
-/* 801B67A0 001B25E0  4B E5 0B 91 */	bl lbl_80007330
+/* 801B67A0 001B25E0  4B E5 0B 91 */	bl _savegpr_24
 /* 801B67A4 001B25E4  7C 78 1B 78 */	mr r24, r3
 /* 801B67A8 001B25E8  7C B9 2B 78 */	mr r25, r5
 /* 801B67AC 001B25EC  7C DA 33 78 */	mr r26, r6
@@ -103,7 +103,7 @@ __ct__Q35mcoll6detail21CollidedDetectionInfoFRCQ33hel5geo2d7SegmentRCQ33hel4math
 /* 801B6868 001B26A8  7F 03 C3 78 */	mr r3, r24
 /* 801B686C 001B26AC  CB E1 00 28 */	lfd f31, 0x28(r1)
 /* 801B6870 001B26B0  39 61 00 28 */	addi r11, r1, 0x28
-/* 801B6874 001B26B4  4B E5 0B 09 */	bl lbl_8000737C
+/* 801B6874 001B26B4  4B E5 0B 09 */	bl _restgpr_24
 /* 801B6878 001B26B8  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 801B687C 001B26BC  7C 08 03 A6 */	mtlr r0
 /* 801B6880 001B26C0  38 21 00 30 */	addi r1, r1, 0x30

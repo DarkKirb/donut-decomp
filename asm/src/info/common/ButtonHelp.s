@@ -7,7 +7,7 @@ __ct__Q34info6common10ButtonHelpFRQ23mem10IAllocatorRCQ23lyt12PaneAccessorQ44inf
 /* 801A8310 001A4150  7C 08 02 A6 */	mflr r0
 /* 801A8314 001A4154  90 01 00 A4 */	stw r0, 0xa4(r1)
 /* 801A8318 001A4158  39 61 00 A0 */	addi r11, r1, 0xa0
-/* 801A831C 001A415C  4B E5 F0 21 */	bl lbl_8000733C
+/* 801A831C 001A415C  4B E5 F0 21 */	bl _savegpr_27
 /* 801A8320 001A4160  7C 7B 1B 78 */	mr r27, r3
 /* 801A8324 001A4164  7C 9C 23 78 */	mr r28, r4
 /* 801A8328 001A4168  7C BD 2B 78 */	mr r29, r5
@@ -39,7 +39,7 @@ __ct__Q34info6common10ButtonHelpFRQ23mem10IAllocatorRCQ23lyt12PaneAccessorQ44inf
 /* 801A8390 001A41D0  48 00 01 79 */	bl init__Q34info6common10ButtonHelpFRCQ23lyt12PaneAccessor
 /* 801A8394 001A41D4  7F 63 DB 78 */	mr r3, r27
 /* 801A8398 001A41D8  39 61 00 A0 */	addi r11, r1, 0xa0
-/* 801A839C 001A41DC  4B E5 EF ED */	bl lbl_80007388
+/* 801A839C 001A41DC  4B E5 EF ED */	bl _restgpr_27
 /* 801A83A0 001A41E0  80 01 00 A4 */	lwz r0, 0xa4(r1)
 /* 801A83A4 001A41E4  7C 08 03 A6 */	mtlr r0
 /* 801A83A8 001A41E8  38 21 00 A0 */	addi r1, r1, 0xa0
@@ -50,7 +50,7 @@ __ct__Q34info6common10ButtonHelpFRQ23mem10IAllocatorRCQ23lyt12PaneAccessorRCQ23l
 /* 801A83B4 001A41F4  7C 08 02 A6 */	mflr r0
 /* 801A83B8 001A41F8  90 01 00 34 */	stw r0, 0x34(r1)
 /* 801A83BC 001A41FC  39 61 00 30 */	addi r11, r1, 0x30
-/* 801A83C0 001A4200  4B E5 EF 81 */	bl lbl_80007340
+/* 801A83C0 001A4200  4B E5 EF 81 */	bl _savegpr_28
 /* 801A83C4 001A4204  7C 7C 1B 78 */	mr r28, r3
 /* 801A83C8 001A4208  7C 9D 23 78 */	mr r29, r4
 /* 801A83CC 001A420C  7C BE 2B 78 */	mr r30, r5
@@ -75,7 +75,7 @@ __ct__Q34info6common10ButtonHelpFRQ23mem10IAllocatorRCQ23lyt12PaneAccessorRCQ23l
 /* 801A8418 001A4258  48 00 00 F1 */	bl init__Q34info6common10ButtonHelpFRCQ23lyt12PaneAccessor
 /* 801A841C 001A425C  7F 83 E3 78 */	mr r3, r28
 /* 801A8420 001A4260  39 61 00 30 */	addi r11, r1, 0x30
-/* 801A8424 001A4264  4B E5 EF 69 */	bl lbl_8000738C
+/* 801A8424 001A4264  4B E5 EF 69 */	bl _restgpr_28
 /* 801A8428 001A4268  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 801A842C 001A426C  7C 08 03 A6 */	mtlr r0
 /* 801A8430 001A4270  38 21 00 30 */	addi r1, r1, 0x30

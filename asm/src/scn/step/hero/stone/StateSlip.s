@@ -151,7 +151,7 @@ procMove__Q53scn4step4hero5stone9StateSlipFv:
 /* 80391064 0038CEA4  DB E1 00 40 */	stfd f31, 0x40(r1)
 /* 80391068 0038CEA8  F3 E1 00 48 */	psq_st f31, 0x48(r1), 0, qr0
 /* 8039106C 0038CEAC  39 61 00 40 */	addi r11, r1, 0x40
-/* 80391070 0038CEB0  4B C7 62 D1 */	bl lbl_80007340
+/* 80391070 0038CEB0  4B C7 62 D1 */	bl _savegpr_28
 /* 80391074 0038CEB4  7C 7C 1B 78 */	mr r28, r3
 /* 80391078 0038CEB8  4B D6 F7 69 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 8039107C 0038CEBC  4B FA F2 81 */	bl footState__Q43scn4step4hero4HeroFv
@@ -269,7 +269,7 @@ lbl_80391218:
 /* 8039121C 0038D05C  13 E1 00 0C */	psq_lx f31, r1, r0, 0, qr0
 /* 80391220 0038D060  CB E1 00 40 */	lfd f31, 0x40(r1)
 /* 80391224 0038D064  39 61 00 40 */	addi r11, r1, 0x40
-/* 80391228 0038D068  4B C7 61 65 */	bl lbl_8000738C
+/* 80391228 0038D068  4B C7 61 65 */	bl _restgpr_28
 /* 8039122C 0038D06C  80 01 00 54 */	lwz r0, 0x54(r1)
 /* 80391230 0038D070  7C 08 03 A6 */	mtlr r0
 /* 80391234 0038D074  38 21 00 50 */	addi r1, r1, 0x50
@@ -283,7 +283,7 @@ procFixPos__Q53scn4step4hero5stone9StateSlipFv:
 /* 80391248 0038D088  DB E1 00 E0 */	stfd f31, 0xe0(r1)
 /* 8039124C 0038D08C  F3 E1 00 E8 */	psq_st f31, 0xe8(r1), 0, qr0
 /* 80391250 0038D090  39 61 00 E0 */	addi r11, r1, 0xe0
-/* 80391254 0038D094  4B C7 60 ED */	bl lbl_80007340
+/* 80391254 0038D094  4B C7 60 ED */	bl _savegpr_28
 /* 80391258 0038D098  7C 7E 1B 78 */	mr r30, r3
 /* 8039125C 0038D09C  4B D6 F5 85 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 80391260 0038D0A0  4B FC 5D 39 */	bl MapCollReactDefaultAction__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Hero
@@ -433,7 +433,7 @@ lbl_80391464:
 /* 80391468 0038D2A8  13 E1 00 0C */	psq_lx f31, r1, r0, 0, qr0
 /* 8039146C 0038D2AC  CB E1 00 E0 */	lfd f31, 0xe0(r1)
 /* 80391470 0038D2B0  39 61 00 E0 */	addi r11, r1, 0xe0
-/* 80391474 0038D2B4  4B C7 5F 19 */	bl lbl_8000738C
+/* 80391474 0038D2B4  4B C7 5F 19 */	bl _restgpr_28
 /* 80391478 0038D2B8  80 01 00 F4 */	lwz r0, 0xf4(r1)
 /* 8039147C 0038D2BC  7C 08 03 A6 */	mtlr r0
 /* 80391480 0038D2C0  38 21 00 F0 */	addi r1, r1, 0xf0

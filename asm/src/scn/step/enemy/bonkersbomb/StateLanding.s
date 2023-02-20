@@ -136,7 +136,7 @@ procAnim__Q53scn4step5enemy11bonkersbomb12StateLandingFv:
 /* 8029C358 00298198  7C 08 02 A6 */	mflr r0
 /* 8029C35C 0029819C  90 01 00 24 */	stw r0, 0x24(r1)
 /* 8029C360 002981A0  39 61 00 20 */	addi r11, r1, 0x20
-/* 8029C364 002981A4  4B D6 AF E1 */	bl lbl_80007344
+/* 8029C364 002981A4  4B D6 AF E1 */	bl _savegpr_29
 /* 8029C368 002981A8  7C 7D 1B 78 */	mr r29, r3
 /* 8029C36C 002981AC  4B E6 44 75 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 8029C370 002981B0  4B E8 C9 31 */	bl getID__Q310homebutton3gui9ComponentFv
@@ -249,7 +249,7 @@ lbl_8029C4AC:
 .global lbl_8029C4CC
 lbl_8029C4CC:
 /* 8029C4CC 0029830C  39 61 00 20 */	addi r11, r1, 0x20
-/* 8029C4D0 00298310  4B D6 AE C1 */	bl lbl_80007390
+/* 8029C4D0 00298310  4B D6 AE C1 */	bl _restgpr_29
 /* 8029C4D4 00298314  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8029C4D8 00298318  7C 08 03 A6 */	mtlr r0
 /* 8029C4DC 0029831C  38 21 00 20 */	addi r1, r1, 0x20

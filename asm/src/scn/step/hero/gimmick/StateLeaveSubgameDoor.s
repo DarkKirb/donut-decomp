@@ -7,7 +7,7 @@ __ct__Q53scn4step4hero7gimmick21StateLeaveSubgameDoorFPQ43scn4step4hero4HeroQ33h
 /* 80381360 0037D1A0  7C 08 02 A6 */	mflr r0
 /* 80381364 0037D1A4  90 01 00 34 */	stw r0, 0x34(r1)
 /* 80381368 0037D1A8  39 61 00 30 */	addi r11, r1, 0x30
-/* 8038136C 0037D1AC  4B C8 5F D9 */	bl lbl_80007344
+/* 8038136C 0037D1AC  4B C8 5F D9 */	bl _savegpr_29
 /* 80381370 0037D1B0  7C 7D 1B 78 */	mr r29, r3
 /* 80381374 0037D1B4  7C BE 2B 78 */	mr r30, r5
 /* 80381378 0037D1B8  4B FD 41 79 */	bl __ct__Q43scn4step4hero9StateBaseFPQ43scn4step4hero4Hero
@@ -97,7 +97,7 @@ __ct__Q53scn4step4hero7gimmick21StateLeaveSubgameDoorFPQ43scn4step4hero4HeroQ33h
 /* 803814C8 0037D308  93 FD 00 08 */	stw r31, 0x8(r29)
 /* 803814CC 0037D30C  7F A3 EB 78 */	mr r3, r29
 /* 803814D0 0037D310  39 61 00 30 */	addi r11, r1, 0x30
-/* 803814D4 0037D314  4B C8 5E BD */	bl lbl_80007390
+/* 803814D4 0037D314  4B C8 5E BD */	bl _restgpr_29
 /* 803814D8 0037D318  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 803814DC 0037D31C  7C 08 03 A6 */	mtlr r0
 /* 803814E0 0037D320  38 21 00 30 */	addi r1, r1, 0x30

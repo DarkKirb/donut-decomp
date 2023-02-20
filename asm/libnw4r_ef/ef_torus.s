@@ -43,7 +43,7 @@ Emission__Q34nw4r2ef16EmitterFormTorusFPQ34nw4r2ef7EmitterPQ34nw4r2ef15ParticleM
 /* 800B6824 000B2664  F1 E1 00 D8 */	psq_st f15, 0xd8(r1), 0, qr0
 /* 800B6828 000B2668  D9 C1 00 C0 */	stfd f14, 0xc0(r1)
 /* 800B682C 000B266C  F1 C1 00 C8 */	psq_st f14, 0xc8(r1), 0, qr0
-/* 800B6830 000B2670  4B F5 0A F1 */	bl lbl_80007320
+/* 800B6830 000B2670  4B F5 0A F1 */	bl _savegpr_20
 /* 800B6834 000B2674  FF E0 08 90 */	fmr f31, f1
 /* 800B6838 000B2678  2C 06 00 01 */	cmpwi r6, 0x1
 /* 800B683C 000B267C  3C 00 43 30 */	lis r0, 0x4330
@@ -439,7 +439,7 @@ lbl_800B6D24:
 /* 800B6DAC 000B2BEC  C9 E1 00 D0 */	lfd f15, 0xd0(r1)
 /* 800B6DB0 000B2BF0  E1 C1 00 C8 */	psq_l f14, 0xc8(r1), 0, qr0
 /* 800B6DB4 000B2BF4  C9 C1 00 C0 */	lfd f14, 0xc0(r1)
-/* 800B6DB8 000B2BF8  4B F5 05 B5 */	bl lbl_8000736C
+/* 800B6DB8 000B2BF8  4B F5 05 B5 */	bl _restgpr_20
 /* 800B6DBC 000B2BFC  80 01 01 E4 */	lwz r0, 0x1e4(r1)
 /* 800B6DC0 000B2C00  7C 08 03 A6 */	mtlr r0
 /* 800B6DC4 000B2C04  38 21 01 E0 */	addi r1, r1, 0x1e0

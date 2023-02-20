@@ -43,7 +43,7 @@ __ct__Q43scn4step4info14NextArrowPanelFRQ23mem10IAllocatorRCQ23lyt12PaneAccessor
 /* 803AF6CC 003AB50C  7C 08 02 A6 */	mflr r0
 /* 803AF6D0 003AB510  90 01 01 54 */	stw r0, 0x154(r1)
 /* 803AF6D4 003AB514  39 61 01 50 */	addi r11, r1, 0x150
-/* 803AF6D8 003AB518  4B C5 7C 69 */	bl lbl_80007340
+/* 803AF6D8 003AB518  4B C5 7C 69 */	bl _savegpr_28
 /* 803AF6DC 003AB51C  7C 7C 1B 78 */	mr r28, r3
 /* 803AF6E0 003AB520  7C 9D 23 78 */	mr r29, r4
 /* 803AF6E4 003AB524  7C BE 2B 78 */	mr r30, r5
@@ -128,7 +128,7 @@ __ct__Q43scn4step4info14NextArrowPanelFRQ23mem10IAllocatorRCQ23lyt12PaneAccessor
 /* 803AF820 003AB660  4B DC 8A 01 */	bl __dt__Q23lyt12PaneAccessorFv
 /* 803AF824 003AB664  7F 83 E3 78 */	mr r3, r28
 /* 803AF828 003AB668  39 61 01 50 */	addi r11, r1, 0x150
-/* 803AF82C 003AB66C  4B C5 7B 61 */	bl lbl_8000738C
+/* 803AF82C 003AB66C  4B C5 7B 61 */	bl _restgpr_28
 /* 803AF830 003AB670  80 01 01 54 */	lwz r0, 0x154(r1)
 /* 803AF834 003AB674  7C 08 03 A6 */	mtlr r0
 /* 803AF838 003AB678  38 21 01 50 */	addi r1, r1, 0x150

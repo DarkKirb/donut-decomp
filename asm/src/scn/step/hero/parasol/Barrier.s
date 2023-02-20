@@ -24,7 +24,7 @@ AddAttack__Q53scn4step4hero7parasol7BarrierFRQ43scn4step4hero4Herob:
 /* 8039215C 0038DF9C  7C 08 02 A6 */	mflr r0
 /* 80392160 0038DFA0  90 01 00 24 */	stw r0, 0x24(r1)
 /* 80392164 0038DFA4  39 61 00 20 */	addi r11, r1, 0x20
-/* 80392168 0038DFA8  4B C7 51 DD */	bl lbl_80007344
+/* 80392168 0038DFA8  4B C7 51 DD */	bl _savegpr_29
 /* 8039216C 0038DFAC  7C 7D 1B 78 */	mr r29, r3
 /* 80392170 0038DFB0  7C 9E 23 78 */	mr r30, r4
 /* 80392174 0038DFB4  4B FA E2 01 */	bl abilityManager__Q43scn4step4hero4HeroFv
@@ -109,7 +109,7 @@ lbl_80392260:
 .global lbl_803922A0
 lbl_803922A0:
 /* 803922A0 0038E0E0  39 61 00 20 */	addi r11, r1, 0x20
-/* 803922A4 0038E0E4  4B C7 50 ED */	bl lbl_80007390
+/* 803922A4 0038E0E4  4B C7 50 ED */	bl _restgpr_29
 /* 803922A8 0038E0E8  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803922AC 0038E0EC  7C 08 03 A6 */	mtlr r0
 /* 803922B0 0038E0F0  38 21 00 20 */	addi r1, r1, 0x20
@@ -124,7 +124,7 @@ AddAttackNode__Q53scn4step4hero7parasol7BarrierFRQ43scn4step4hero4HerobRCQ53scn4
 /* 803922CC 0038E10C  DB C1 00 90 */	stfd f30, 0x90(r1)
 /* 803922D0 0038E110  F3 C1 00 98 */	psq_st f30, 0x98(r1), 0, qr0
 /* 803922D4 0038E114  39 61 00 90 */	addi r11, r1, 0x90
-/* 803922D8 0038E118  4B C7 50 6D */	bl lbl_80007344
+/* 803922D8 0038E118  4B C7 50 6D */	bl _savegpr_29
 /* 803922DC 0038E11C  7C 7D 1B 78 */	mr r29, r3
 /* 803922E0 0038E120  7C 9E 23 78 */	mr r30, r4
 /* 803922E4 0038E124  7C BF 2B 78 */	mr r31, r5
@@ -226,7 +226,7 @@ lbl_8039240C:
 /* 8039244C 0038E28C  13 C1 00 0C */	psq_lx f30, r1, r0, 0, qr0
 /* 80392450 0038E290  CB C1 00 90 */	lfd f30, 0x90(r1)
 /* 80392454 0038E294  39 61 00 90 */	addi r11, r1, 0x90
-/* 80392458 0038E298  4B C7 4F 39 */	bl lbl_80007390
+/* 80392458 0038E298  4B C7 4F 39 */	bl _restgpr_29
 /* 8039245C 0038E29C  80 01 00 B4 */	lwz r0, 0xb4(r1)
 /* 80392460 0038E2A0  7C 08 03 A6 */	mtlr r0
 /* 80392464 0038E2A4  38 21 00 B0 */	addi r1, r1, 0xb0

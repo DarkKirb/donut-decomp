@@ -237,7 +237,7 @@ procMoveToTarget__Q53scn4step4boss15challengemaster12StateLoseFlyFv:
 /* 80241370 0023D1B0  DB E1 00 A0 */	stfd f31, 0xa0(r1)
 /* 80241374 0023D1B4  F3 E1 00 A8 */	psq_st f31, 0xa8(r1), 0, qr0
 /* 80241378 0023D1B8  39 61 00 A0 */	addi r11, r1, 0xa0
-/* 8024137C 0023D1BC  4B DC 5F C1 */	bl lbl_8000733C
+/* 8024137C 0023D1BC  4B DC 5F C1 */	bl _savegpr_27
 /* 80241380 0023D1C0  7C 7B 1B 78 */	mr r27, r3
 /* 80241384 0023D1C4  4B EB F4 5D */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 80241388 0023D1C8  4B FE BB 89 */	bl param__Q43scn4step4boss4BossCFv
@@ -405,7 +405,7 @@ lbl_802415A4:
 /* 802415D8 0023D418  13 E1 00 0C */	psq_lx f31, r1, r0, 0, qr0
 /* 802415DC 0023D41C  CB E1 00 A0 */	lfd f31, 0xa0(r1)
 /* 802415E0 0023D420  39 61 00 A0 */	addi r11, r1, 0xa0
-/* 802415E4 0023D424  4B DC 5D A5 */	bl lbl_80007388
+/* 802415E4 0023D424  4B DC 5D A5 */	bl _restgpr_27
 /* 802415E8 0023D428  80 01 00 B4 */	lwz r0, 0xb4(r1)
 /* 802415EC 0023D42C  7C 08 03 A6 */	mtlr r0
 /* 802415F0 0023D430  38 21 00 B0 */	addi r1, r1, 0xb0

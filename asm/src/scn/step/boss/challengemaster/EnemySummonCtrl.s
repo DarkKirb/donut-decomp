@@ -137,7 +137,7 @@ update__Q53scn4step4boss15challengemaster15EnemySummonCtrlFv:
 /* 8023CC48 00238A88  7C 08 02 A6 */	mflr r0
 /* 8023CC4C 00238A8C  90 01 00 34 */	stw r0, 0x34(r1)
 /* 8023CC50 00238A90  39 61 00 30 */	addi r11, r1, 0x30
-/* 8023CC54 00238A94  4B DC A6 ED */	bl lbl_80007340
+/* 8023CC54 00238A94  4B DC A6 ED */	bl _savegpr_28
 /* 8023CC58 00238A98  7C 7C 1B 78 */	mr r28, r3
 /* 8023CC5C 00238A9C  80 63 00 00 */	lwz r3, 0x0(r3)
 /* 8023CC60 00238AA0  4B FF 03 89 */	bl custom__Q43scn4step4boss4BossFv
@@ -227,7 +227,7 @@ lbl_8023CD58:
 .global lbl_8023CD78
 lbl_8023CD78:
 /* 8023CD78 00238BB8  39 61 00 30 */	addi r11, r1, 0x30
-/* 8023CD7C 00238BBC  4B DC A6 11 */	bl lbl_8000738C
+/* 8023CD7C 00238BBC  4B DC A6 11 */	bl _restgpr_28
 /* 8023CD80 00238BC0  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 8023CD84 00238BC4  7C 08 03 A6 */	mtlr r0
 /* 8023CD88 00238BC8  38 21 00 30 */	addi r1, r1, 0x30
@@ -515,7 +515,7 @@ pick__Q53scn4step4boss15challengemaster15EnemySummonCtrlFv:
 /* 8023D158 00238F98  7C 08 02 A6 */	mflr r0
 /* 8023D15C 00238F9C  90 01 00 24 */	stw r0, 0x24(r1)
 /* 8023D160 00238FA0  39 61 00 20 */	addi r11, r1, 0x20
-/* 8023D164 00238FA4  4B DC A1 E1 */	bl lbl_80007344
+/* 8023D164 00238FA4  4B DC A1 E1 */	bl _savegpr_29
 /* 8023D168 00238FA8  7C 7E 1B 78 */	mr r30, r3
 /* 8023D16C 00238FAC  7C 9D 23 78 */	mr r29, r4
 /* 8023D170 00238FB0  38 64 01 08 */	addi r3, r4, 0x108
@@ -552,7 +552,7 @@ lbl_8023D1C4:
 .global lbl_8023D1DC
 lbl_8023D1DC:
 /* 8023D1DC 0023901C  39 61 00 20 */	addi r11, r1, 0x20
-/* 8023D1E0 00239020  4B DC A1 B1 */	bl lbl_80007390
+/* 8023D1E0 00239020  4B DC A1 B1 */	bl _restgpr_29
 /* 8023D1E4 00239024  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8023D1E8 00239028  7C 08 03 A6 */	mtlr r0
 /* 8023D1EC 0023902C  38 21 00 20 */	addi r1, r1, 0x20
@@ -644,7 +644,7 @@ reqSummonLight__Q53scn4step4boss15challengemaster15EnemySummonCtrlFRCQ63scn4step
 /* 8023D304 00239144  7C 08 02 A6 */	mflr r0
 /* 8023D308 00239148  90 01 00 B4 */	stw r0, 0xb4(r1)
 /* 8023D30C 0023914C  39 61 00 B0 */	addi r11, r1, 0xb0
-/* 8023D310 00239150  4B DC A0 31 */	bl lbl_80007340
+/* 8023D310 00239150  4B DC A0 31 */	bl _savegpr_28
 /* 8023D314 00239154  7C 7C 1B 78 */	mr r28, r3
 /* 8023D318 00239158  7C 9D 23 78 */	mr r29, r4
 /* 8023D31C 0023915C  80 63 00 00 */	lwz r3, 0x0(r3)
@@ -793,7 +793,7 @@ lbl_8023D52C:
 /* 8023D530 00239370  38 80 FF FF */	li r4, -0x1
 /* 8023D534 00239374  4B FF CB 7D */	bl "__dt__Q24util39ObjRefHandle<Q43scn4step6weapon6Weapon>Fv"
 /* 8023D538 00239378  39 61 00 B0 */	addi r11, r1, 0xb0
-/* 8023D53C 0023937C  4B DC 9E 51 */	bl lbl_8000738C
+/* 8023D53C 0023937C  4B DC 9E 51 */	bl _restgpr_28
 /* 8023D540 00239380  80 01 00 B4 */	lwz r0, 0xb4(r1)
 /* 8023D544 00239384  7C 08 03 A6 */	mtlr r0
 /* 8023D548 00239388  38 21 00 B0 */	addi r1, r1, 0xb0

@@ -71,7 +71,7 @@ Func__Q38mintglue22Scn__GrandTitle__Block50Mint_setVacuumed_0$54663Scn__GrandTit
 /* 801C418C 001BFFCC  7C 08 02 A6 */	mflr r0
 /* 801C4190 001BFFD0  90 01 00 34 */	stw r0, 0x34(r1)
 /* 801C4194 001BFFD4  39 61 00 30 */	addi r11, r1, 0x30
-/* 801C4198 001BFFD8  4B E4 31 AD */	bl lbl_80007344
+/* 801C4198 001BFFD8  4B E4 31 AD */	bl _savegpr_29
 /* 801C419C 001BFFDC  7C 7D 1B 78 */	mr r29, r3
 /* 801C41A0 001BFFE0  3C 80 80 46 */	lis r4, "@54989_8045AF74"@ha
 /* 801C41A4 001BFFE4  38 A4 AF 74 */	addi r5, r4, "@54989_8045AF74"@l
@@ -98,7 +98,7 @@ Func__Q38mintglue22Scn__GrandTitle__Block50Mint_setVacuumed_0$54663Scn__GrandTit
 /* 801C41F8 001C0038  4B E4 2F CD */	bl __ptmf_scall
 /* 801C41FC 001C003C  60 00 00 00 */	nop
 /* 801C4200 001C0040  39 61 00 30 */	addi r11, r1, 0x30
-/* 801C4204 001C0044  4B E4 31 8D */	bl lbl_80007390
+/* 801C4204 001C0044  4B E4 31 8D */	bl _restgpr_29
 /* 801C4208 001C0048  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 801C420C 001C004C  7C 08 03 A6 */	mtlr r0
 /* 801C4210 001C0050  38 21 00 30 */	addi r1, r1, 0x30

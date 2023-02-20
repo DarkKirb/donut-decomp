@@ -7,7 +7,7 @@ ChangeStateNoScrew__Q53scn4step4hero5stone11StateChangeFPQ43scn4step4hero4HeroRQ
 /* 8038FA9C 0038B8DC  7C 08 02 A6 */	mflr r0
 /* 8038FAA0 0038B8E0  90 01 00 24 */	stw r0, 0x24(r1)
 /* 8038FAA4 0038B8E4  39 61 00 20 */	addi r11, r1, 0x20
-/* 8038FAA8 0038B8E8  4B C7 78 99 */	bl lbl_80007340
+/* 8038FAA8 0038B8E8  4B C7 78 99 */	bl _savegpr_28
 /* 8038FAAC 0038B8EC  7C 7C 1B 78 */	mr r28, r3
 /* 8038FAB0 0038B8F0  7C 9D 23 78 */	mr r29, r4
 /* 8038FAB4 0038B8F4  7F A3 EB 78 */	mr r3, r29
@@ -38,7 +38,7 @@ ChangeStateNoScrew__Q53scn4step4hero5stone11StateChangeFPQ43scn4step4hero4HeroRQ
 lbl_8038FB14:
 /* 8038FB14 0038B954  93 BE 00 0C */	stw r29, 0xc(r30)
 /* 8038FB18 0038B958  39 61 00 20 */	addi r11, r1, 0x20
-/* 8038FB1C 0038B95C  4B C7 78 71 */	bl lbl_8000738C
+/* 8038FB1C 0038B95C  4B C7 78 71 */	bl _restgpr_28
 /* 8038FB20 0038B960  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8038FB24 0038B964  7C 08 03 A6 */	mtlr r0
 /* 8038FB28 0038B968  38 21 00 20 */	addi r1, r1, 0x20
@@ -188,7 +188,7 @@ procAnim__Q53scn4step4hero5stone11StateChangeFv:
 /* 8038FD20 0038BB60  7C 08 02 A6 */	mflr r0
 /* 8038FD24 0038BB64  90 01 00 34 */	stw r0, 0x34(r1)
 /* 8038FD28 0038BB68  39 61 00 30 */	addi r11, r1, 0x30
-/* 8038FD2C 0038BB6C  4B C7 76 15 */	bl lbl_80007340
+/* 8038FD2C 0038BB6C  4B C7 76 15 */	bl _savegpr_28
 /* 8038FD30 0038BB70  7C 7C 1B 78 */	mr r28, r3
 /* 8038FD34 0038BB74  4B D7 0A AD */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 8038FD38 0038BB78  4B FB 05 E5 */	bl model__Q43scn4step4hero4HeroFv
@@ -320,7 +320,7 @@ lbl_8038FEF4:
 .global lbl_8038FEF8
 lbl_8038FEF8:
 /* 8038FEF8 0038BD38  39 61 00 30 */	addi r11, r1, 0x30
-/* 8038FEFC 0038BD3C  4B C7 74 91 */	bl lbl_8000738C
+/* 8038FEFC 0038BD3C  4B C7 74 91 */	bl _restgpr_28
 /* 8038FF00 0038BD40  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 8038FF04 0038BD44  7C 08 03 A6 */	mtlr r0
 /* 8038FF08 0038BD48  38 21 00 30 */	addi r1, r1, 0x30

@@ -37,7 +37,7 @@ Emission__Q34nw4r2ef15EmitterFormDiscFPQ34nw4r2ef7EmitterPQ34nw4r2ef15ParticleMa
 /* 800B52BC 000B10FC  F2 41 00 C8 */	psq_st f18, 0xc8(r1), 0, qr0
 /* 800B52C0 000B1100  DA 21 00 B0 */	stfd f17, 0xb0(r1)
 /* 800B52C4 000B1104  F2 21 00 B8 */	psq_st f17, 0xb8(r1), 0, qr0
-/* 800B52C8 000B1108  4B F5 20 59 */	bl lbl_80007320
+/* 800B52C8 000B1108  4B F5 20 59 */	bl _savegpr_20
 /* 800B52CC 000B110C  FE 40 08 90 */	fmr f18, f1
 /* 800B52D0 000B1110  2C 06 00 01 */	cmpwi r6, 0x1
 /* 800B52D4 000B1114  3C 00 43 30 */	lis r0, 0x4330
@@ -371,7 +371,7 @@ lbl_800B56E4:
 /* 800B5754 000B1594  CA 41 00 C0 */	lfd f18, 0xc0(r1)
 /* 800B5758 000B1598  E2 21 00 B8 */	psq_l f17, 0xb8(r1), 0, qr0
 /* 800B575C 000B159C  CA 21 00 B0 */	lfd f17, 0xb0(r1)
-/* 800B5760 000B15A0  4B F5 1C 0D */	bl lbl_8000736C
+/* 800B5760 000B15A0  4B F5 1C 0D */	bl _restgpr_20
 /* 800B5764 000B15A4  80 01 01 A4 */	lwz r0, 0x1a4(r1)
 /* 800B5768 000B15A8  7C 08 03 A6 */	mtlr r0
 /* 800B576C 000B15AC  38 21 01 A0 */	addi r1, r1, 0x1a0

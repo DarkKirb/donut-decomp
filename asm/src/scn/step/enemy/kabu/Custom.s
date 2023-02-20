@@ -73,7 +73,7 @@ setJumpWaitTime__Q53scn4step5enemy4kabu6CustomFv:
 /* 802BCD4C 002B8B8C  7C 08 02 A6 */	mflr r0
 /* 802BCD50 002B8B90  90 01 00 24 */	stw r0, 0x24(r1)
 /* 802BCD54 002B8B94  39 61 00 20 */	addi r11, r1, 0x20
-/* 802BCD58 002B8B98  4B D4 A5 ED */	bl lbl_80007344
+/* 802BCD58 002B8B98  4B D4 A5 ED */	bl _savegpr_29
 /* 802BCD5C 002B8B9C  7C 7D 1B 78 */	mr r29, r3
 /* 802BCD60 002B8BA0  4B E4 3A 81 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 802BCD64 002B8BA4  4B E6 41 0D */	bl Tell__Q34nw4r2ut13DvdFileStreamCFv
@@ -96,7 +96,7 @@ lbl_802BCD78:
 /* 802BCDA0 002B8BE0  7C 1E 01 D6 */	mullw r0, r30, r0
 /* 802BCDA4 002B8BE4  7C 60 F8 50 */	subf r3, r0, r31
 /* 802BCDA8 002B8BE8  39 61 00 20 */	addi r11, r1, 0x20
-/* 802BCDAC 002B8BEC  4B D4 A5 E5 */	bl lbl_80007390
+/* 802BCDAC 002B8BEC  4B D4 A5 E5 */	bl _restgpr_29
 /* 802BCDB0 002B8BF0  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802BCDB4 002B8BF4  7C 08 03 A6 */	mtlr r0
 /* 802BCDB8 002B8BF8  38 21 00 20 */	addi r1, r1, 0x20

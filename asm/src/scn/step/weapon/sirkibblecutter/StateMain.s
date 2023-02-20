@@ -9,7 +9,7 @@ __ct__Q53scn4step6weapon15sirkibblecutter9StateMainFPQ43scn4step6weapon6Weapon:
 /* 803E791C 003E375C  DB E1 00 50 */	stfd f31, 0x50(r1)
 /* 803E7920 003E3760  F3 E1 00 58 */	psq_st f31, 0x58(r1), 0, qr0
 /* 803E7924 003E3764  39 61 00 50 */	addi r11, r1, 0x50
-/* 803E7928 003E3768  4B C1 FA 19 */	bl lbl_80007340
+/* 803E7928 003E3768  4B C1 FA 19 */	bl _savegpr_28
 /* 803E792C 003E376C  7C 7C 1B 78 */	mr r28, r3
 /* 803E7930 003E3770  4B FF 10 11 */	bl __ct__Q43scn4step6weapon9StateBaseFPQ43scn4step6weapon6Weapon
 /* 803E7934 003E3774  3C 60 80 49 */	lis r3, __vt__Q53scn4step6weapon15sirkibblecutter9StateMain@ha
@@ -143,7 +143,7 @@ __ct__Q53scn4step6weapon15sirkibblecutter9StateMainFPQ43scn4step6weapon6Weapon:
 /* 803E7B34 003E3974  13 E1 00 0C */	psq_lx f31, r1, r0, 0, qr0
 /* 803E7B38 003E3978  CB E1 00 50 */	lfd f31, 0x50(r1)
 /* 803E7B3C 003E397C  39 61 00 50 */	addi r11, r1, 0x50
-/* 803E7B40 003E3980  4B C1 F8 4D */	bl lbl_8000738C
+/* 803E7B40 003E3980  4B C1 F8 4D */	bl _restgpr_28
 /* 803E7B44 003E3984  80 01 00 64 */	lwz r0, 0x64(r1)
 /* 803E7B48 003E3988  7C 08 03 A6 */	mtlr r0
 /* 803E7B4C 003E398C  38 21 00 60 */	addi r1, r1, 0x60
@@ -272,7 +272,7 @@ procFixPos__Q53scn4step6weapon15sirkibblecutter9StateMainFv:
 /* 803E7CF8 003E3B38  DB E1 00 70 */	stfd f31, 0x70(r1)
 /* 803E7CFC 003E3B3C  F3 E1 00 78 */	psq_st f31, 0x78(r1), 0, qr0
 /* 803E7D00 003E3B40  39 61 00 70 */	addi r11, r1, 0x70
-/* 803E7D04 003E3B44  4B C1 F6 3D */	bl lbl_80007340
+/* 803E7D04 003E3B44  4B C1 F6 3D */	bl _savegpr_28
 /* 803E7D08 003E3B48  7C 7C 1B 78 */	mr r28, r3
 /* 803E7D0C 003E3B4C  4B D1 8A D5 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 803E7D10 003E3B50  4B FF 33 C9 */	bl param__Q43scn4step6weapon6WeaponCFv
@@ -389,7 +389,7 @@ lbl_803E7EB8:
 /* 803E7EBC 003E3CFC  13 E1 00 0C */	psq_lx f31, r1, r0, 0, qr0
 /* 803E7EC0 003E3D00  CB E1 00 70 */	lfd f31, 0x70(r1)
 /* 803E7EC4 003E3D04  39 61 00 70 */	addi r11, r1, 0x70
-/* 803E7EC8 003E3D08  4B C1 F4 C5 */	bl lbl_8000738C
+/* 803E7EC8 003E3D08  4B C1 F4 C5 */	bl _restgpr_28
 /* 803E7ECC 003E3D0C  80 01 00 84 */	lwz r0, 0x84(r1)
 /* 803E7ED0 003E3D10  7C 08 03 A6 */	mtlr r0
 /* 803E7ED4 003E3D14  38 21 00 80 */	addi r1, r1, 0x80
@@ -401,7 +401,7 @@ procObjCollReact__Q53scn4step6weapon15sirkibblecutter9StateMainFv:
 /* 803E7EE0 003E3D20  7C 08 02 A6 */	mflr r0
 /* 803E7EE4 003E3D24  90 01 00 44 */	stw r0, 0x44(r1)
 /* 803E7EE8 003E3D28  39 61 00 40 */	addi r11, r1, 0x40
-/* 803E7EEC 003E3D2C  4B C1 F4 59 */	bl lbl_80007344
+/* 803E7EEC 003E3D2C  4B C1 F4 59 */	bl _savegpr_29
 /* 803E7EF0 003E3D30  7C 7D 1B 78 */	mr r29, r3
 /* 803E7EF4 003E3D34  3B C0 00 00 */	li r30, 0x0
 /* 803E7EF8 003E3D38  4B D1 88 E9 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
@@ -491,7 +491,7 @@ lbl_803E8010:
 .global lbl_803E8028
 lbl_803E8028:
 /* 803E8028 003E3E68  39 61 00 40 */	addi r11, r1, 0x40
-/* 803E802C 003E3E6C  4B C1 F3 65 */	bl lbl_80007390
+/* 803E802C 003E3E6C  4B C1 F3 65 */	bl _restgpr_29
 /* 803E8030 003E3E70  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 803E8034 003E3E74  7C 08 03 A6 */	mtlr r0
 /* 803E8038 003E3E78  38 21 00 40 */	addi r1, r1, 0x40

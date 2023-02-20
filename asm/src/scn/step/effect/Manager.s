@@ -7,7 +7,7 @@ __ct__Q43scn4step6effect7ManagerFRQ33scn4step9Component:
 /* 8027AB88 002769C8  7C 08 02 A6 */	mflr r0
 /* 8027AB8C 002769CC  90 01 00 64 */	stw r0, 0x64(r1)
 /* 8027AB90 002769D0  39 61 00 60 */	addi r11, r1, 0x60
-/* 8027AB94 002769D4  4B D8 C7 B1 */	bl lbl_80007344
+/* 8027AB94 002769D4  4B D8 C7 B1 */	bl _savegpr_29
 /* 8027AB98 002769D8  7C 7D 1B 78 */	mr r29, r3
 /* 8027AB9C 002769DC  90 83 00 00 */	stw r4, 0x0(r3)
 /* 8027ABA0 002769E0  80 6D ED 00 */	lwz r3, "object___Q33hel6common32ExplicitSingleton<Q23mem6Memory>"@sda21(r13)
@@ -118,7 +118,7 @@ lbl_8027ACF0:
 /* 8027AD14 00276B54  41 80 FF BC */	blt lbl_8027ACD0
 /* 8027AD18 00276B58  7F A3 EB 78 */	mr r3, r29
 /* 8027AD1C 00276B5C  39 61 00 60 */	addi r11, r1, 0x60
-/* 8027AD20 00276B60  4B D8 C6 71 */	bl lbl_80007390
+/* 8027AD20 00276B60  4B D8 C6 71 */	bl _restgpr_29
 /* 8027AD24 00276B64  80 01 00 64 */	lwz r0, 0x64(r1)
 /* 8027AD28 00276B68  7C 08 03 A6 */	mtlr r0
 /* 8027AD2C 00276B6C  38 21 00 60 */	addi r1, r1, 0x60
@@ -177,7 +177,7 @@ procCamera__Q43scn4step6effect7ManagerFv:
 /* 8027ADC0 00276C00  7C 08 02 A6 */	mflr r0
 /* 8027ADC4 00276C04  90 01 01 34 */	stw r0, 0x134(r1)
 /* 8027ADC8 00276C08  39 61 01 30 */	addi r11, r1, 0x130
-/* 8027ADCC 00276C0C  4B D8 C5 79 */	bl lbl_80007344
+/* 8027ADCC 00276C0C  4B D8 C5 79 */	bl _savegpr_29
 /* 8027ADD0 00276C10  7C 7D 1B 78 */	mr r29, r3
 /* 8027ADD4 00276C14  38 63 00 64 */	addi r3, r3, 0x64
 /* 8027ADD8 00276C18  4B F0 38 91 */	bl updatePolyMtxAll__Q26effect7ManagerFv
@@ -248,7 +248,7 @@ lbl_8027AEA8:
 /* 8027AEAC 00276CEC  7C 1F 00 40 */	cmplw r31, r0
 /* 8027AEB0 00276CF0  41 80 FF 94 */	blt lbl_8027AE44
 /* 8027AEB4 00276CF4  39 61 01 30 */	addi r11, r1, 0x130
-/* 8027AEB8 00276CF8  4B D8 C4 D9 */	bl lbl_80007390
+/* 8027AEB8 00276CF8  4B D8 C4 D9 */	bl _restgpr_29
 /* 8027AEBC 00276CFC  80 01 01 34 */	lwz r0, 0x134(r1)
 /* 8027AEC0 00276D00  7C 08 03 A6 */	mtlr r0
 /* 8027AEC4 00276D04  38 21 01 30 */	addi r1, r1, 0x130
@@ -259,7 +259,7 @@ procReadyToRender__Q43scn4step6effect7ManagerFv:
 /* 8027AED0 00276D10  7C 08 02 A6 */	mflr r0
 /* 8027AED4 00276D14  90 01 00 24 */	stw r0, 0x24(r1)
 /* 8027AED8 00276D18  39 61 00 20 */	addi r11, r1, 0x20
-/* 8027AEDC 00276D1C  4B D8 C4 65 */	bl lbl_80007340
+/* 8027AEDC 00276D1C  4B D8 C4 65 */	bl _savegpr_28
 /* 8027AEE0 00276D20  7C 7C 1B 78 */	mr r28, r3
 /* 8027AEE4 00276D24  80 63 00 00 */	lwz r3, 0x0(r3)
 /* 8027AEE8 00276D28  4B F8 65 D9 */	bl effectManager__Q33scn10grandtitle9ComponentFv
@@ -284,7 +284,7 @@ lbl_8027AF20:
 /* 8027AF24 00276D64  7C 1D 00 40 */	cmplw r29, r0
 /* 8027AF28 00276D68  41 80 FF D0 */	blt lbl_8027AEF8
 /* 8027AF2C 00276D6C  39 61 00 20 */	addi r11, r1, 0x20
-/* 8027AF30 00276D70  4B D8 C4 5D */	bl lbl_8000738C
+/* 8027AF30 00276D70  4B D8 C4 5D */	bl _restgpr_28
 /* 8027AF34 00276D74  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8027AF38 00276D78  7C 08 03 A6 */	mtlr r0
 /* 8027AF3C 00276D7C  38 21 00 20 */	addi r1, r1, 0x20
@@ -299,7 +299,7 @@ createCameraInfo__Q43scn4step6effect7ManagerFQ43scn4step6camera4Kind:
 /* 8027AF50 00276D90  7C 08 02 A6 */	mflr r0
 /* 8027AF54 00276D94  90 01 00 64 */	stw r0, 0x64(r1)
 /* 8027AF58 00276D98  39 61 00 60 */	addi r11, r1, 0x60
-/* 8027AF5C 00276D9C  4B D8 C3 E9 */	bl lbl_80007344
+/* 8027AF5C 00276D9C  4B D8 C3 E9 */	bl _savegpr_29
 /* 8027AF60 00276DA0  7C 7D 1B 78 */	mr r29, r3
 /* 8027AF64 00276DA4  7C BE 2B 78 */	mr r30, r5
 /* 8027AF68 00276DA8  80 64 00 00 */	lwz r3, 0x0(r4)
@@ -330,7 +330,7 @@ createCameraInfo__Q43scn4step6effect7ManagerFQ43scn4step6camera4Kind:
 /* 8027AFCC 00276E0C  4B FE 7B 65 */	bl projFar__Q43scn4step6camera14CameraAccessorCFQ43scn4step6camera4Kind
 /* 8027AFD0 00276E10  D0 3D 00 40 */	stfs f1, 0x40(r29)
 /* 8027AFD4 00276E14  39 61 00 60 */	addi r11, r1, 0x60
-/* 8027AFD8 00276E18  4B D8 C3 B9 */	bl lbl_80007390
+/* 8027AFD8 00276E18  4B D8 C3 B9 */	bl _restgpr_29
 /* 8027AFDC 00276E1C  80 01 00 64 */	lwz r0, 0x64(r1)
 /* 8027AFE0 00276E20  7C 08 03 A6 */	mtlr r0
 /* 8027AFE4 00276E24  38 21 00 60 */	addi r1, r1, 0x60

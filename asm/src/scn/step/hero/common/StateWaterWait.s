@@ -7,7 +7,7 @@ TryToChangeState__Q53scn4step4hero6common14StateWaterWaitFPQ43scn4step4hero4Hero
 /* 8036F508 0036B348  7C 08 02 A6 */	mflr r0
 /* 8036F50C 0036B34C  90 01 00 54 */	stw r0, 0x54(r1)
 /* 8036F510 0036B350  39 61 00 50 */	addi r11, r1, 0x50
-/* 8036F514 0036B354  4B C9 7E 31 */	bl lbl_80007344
+/* 8036F514 0036B354  4B C9 7E 31 */	bl _savegpr_29
 /* 8036F518 0036B358  7C 7D 1B 78 */	mr r29, r3
 /* 8036F51C 0036B35C  4B FE 8B AD */	bl CanWaterLanding__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Hero
 /* 8036F520 0036B360  2C 03 00 00 */	cmpwi r3, 0x0
@@ -49,7 +49,7 @@ lbl_8036F594:
 .global lbl_8036F598
 lbl_8036F598:
 /* 8036F598 0036B3D8  39 61 00 50 */	addi r11, r1, 0x50
-/* 8036F59C 0036B3DC  4B C9 7D F5 */	bl lbl_80007390
+/* 8036F59C 0036B3DC  4B C9 7D F5 */	bl _restgpr_29
 /* 8036F5A0 0036B3E0  80 01 00 54 */	lwz r0, 0x54(r1)
 /* 8036F5A4 0036B3E4  7C 08 03 A6 */	mtlr r0
 /* 8036F5A8 0036B3E8  38 21 00 50 */	addi r1, r1, 0x50
@@ -60,7 +60,7 @@ TryToChangeStateWithScript__Q53scn4step4hero6common14StateWaterWaitFPQ43scn4step
 /* 8036F5B4 0036B3F4  7C 08 02 A6 */	mflr r0
 /* 8036F5B8 0036B3F8  90 01 00 54 */	stw r0, 0x54(r1)
 /* 8036F5BC 0036B3FC  39 61 00 50 */	addi r11, r1, 0x50
-/* 8036F5C0 0036B400  4B C9 7D 81 */	bl lbl_80007340
+/* 8036F5C0 0036B400  4B C9 7D 81 */	bl _savegpr_28
 /* 8036F5C4 0036B404  7C 7C 1B 78 */	mr r28, r3
 /* 8036F5C8 0036B408  7C 9D 23 78 */	mr r29, r4
 /* 8036F5CC 0036B40C  4B FE 8A FD */	bl CanWaterLanding__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Hero
@@ -104,7 +104,7 @@ lbl_8036F648:
 .global lbl_8036F64C
 lbl_8036F64C:
 /* 8036F64C 0036B48C  39 61 00 50 */	addi r11, r1, 0x50
-/* 8036F650 0036B490  4B C9 7D 3D */	bl lbl_8000738C
+/* 8036F650 0036B490  4B C9 7D 3D */	bl _restgpr_28
 /* 8036F654 0036B494  80 01 00 54 */	lwz r0, 0x54(r1)
 /* 8036F658 0036B498  7C 08 03 A6 */	mtlr r0
 /* 8036F65C 0036B49C  38 21 00 50 */	addi r1, r1, 0x50
@@ -302,7 +302,7 @@ lbl_8036F8E8:
 /* 8036F904 0036B744  7C 08 02 A6 */	mflr r0
 /* 8036F908 0036B748  90 01 00 24 */	stw r0, 0x24(r1)
 /* 8036F90C 0036B74C  39 61 00 20 */	addi r11, r1, 0x20
-/* 8036F910 0036B750  4B C9 7A 35 */	bl lbl_80007344
+/* 8036F910 0036B750  4B C9 7A 35 */	bl _savegpr_29
 /* 8036F914 0036B754  7C 7D 1B 78 */	mr r29, r3
 /* 8036F918 0036B758  7C 9E 23 78 */	mr r30, r4
 /* 8036F91C 0036B75C  48 09 65 E5 */	bl onSetNextStateFactory__Q24util16StateChangerBaseFv
@@ -320,7 +320,7 @@ lbl_8036F8E8:
 lbl_8036F948:
 /* 8036F948 0036B788  93 FD 00 0C */	stw r31, 0xc(r29)
 /* 8036F94C 0036B78C  39 61 00 20 */	addi r11, r1, 0x20
-/* 8036F950 0036B790  4B C9 7A 41 */	bl lbl_80007390
+/* 8036F950 0036B790  4B C9 7A 41 */	bl _restgpr_29
 /* 8036F954 0036B794  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8036F958 0036B798  7C 08 03 A6 */	mtlr r0
 /* 8036F95C 0036B79C  38 21 00 20 */	addi r1, r1, 0x20

@@ -21,7 +21,7 @@ update__Q53scn4step4boss15challengemaster12ProgressCtrlFv:
 /* 8023F480 0023B2C0  DB C1 00 30 */	stfd f30, 0x30(r1)
 /* 8023F484 0023B2C4  F3 C1 00 38 */	psq_st f30, 0x38(r1), 0, qr0
 /* 8023F488 0023B2C8  39 61 00 30 */	addi r11, r1, 0x30
-/* 8023F48C 0023B2CC  4B DC 7E B9 */	bl lbl_80007344
+/* 8023F48C 0023B2CC  4B DC 7E B9 */	bl _savegpr_29
 /* 8023F490 0023B2D0  7C 7D 1B 78 */	mr r29, r3
 /* 8023F494 0023B2D4  80 63 00 00 */	lwz r3, 0x0(r3)
 /* 8023F498 0023B2D8  4B E3 62 99 */	bl GKI_getfirst
@@ -206,7 +206,7 @@ lbl_8023F6F4:
 /* 8023F704 0023B544  13 C1 00 0C */	psq_lx f30, r1, r0, 0, qr0
 /* 8023F708 0023B548  CB C1 00 30 */	lfd f30, 0x30(r1)
 /* 8023F70C 0023B54C  39 61 00 30 */	addi r11, r1, 0x30
-/* 8023F710 0023B550  4B DC 7C 81 */	bl lbl_80007390
+/* 8023F710 0023B550  4B DC 7C 81 */	bl _restgpr_29
 /* 8023F714 0023B554  80 01 00 54 */	lwz r0, 0x54(r1)
 /* 8023F718 0023B558  7C 08 03 A6 */	mtlr r0
 /* 8023F71C 0023B55C  38 21 00 50 */	addi r1, r1, 0x50

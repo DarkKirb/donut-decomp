@@ -67,7 +67,7 @@ set__Q53scn4step4info9challenge4TimeFUl:
 /* 803B595C 003B179C  7C 08 02 A6 */	mflr r0
 /* 803B5960 003B17A0  90 01 04 E4 */	stw r0, 0x4e4(r1)
 /* 803B5964 003B17A4  39 61 04 E0 */	addi r11, r1, 0x4e0
-/* 803B5968 003B17A8  4B C5 19 D9 */	bl lbl_80007340
+/* 803B5968 003B17A8  4B C5 19 D9 */	bl _savegpr_28
 /* 803B596C 003B17AC  7C 7C 1B 78 */	mr r28, r3
 /* 803B5970 003B17B0  7C 9D 23 78 */	mr r29, r4
 /* 803B5974 003B17B4  38 61 00 30 */	addi r3, r1, 0x30
@@ -125,7 +125,7 @@ set__Q53scn4step4info9challenge4TimeFUl:
 /* 803B5A44 003B1884  38 80 FF FF */	li r4, -0x1
 /* 803B5A48 003B1888  4B DC 27 D9 */	bl __dt__Q23lyt12PaneAccessorFv
 /* 803B5A4C 003B188C  39 61 04 E0 */	addi r11, r1, 0x4e0
-/* 803B5A50 003B1890  4B C5 19 3D */	bl lbl_8000738C
+/* 803B5A50 003B1890  4B C5 19 3D */	bl _restgpr_28
 /* 803B5A54 003B1894  80 01 04 E4 */	lwz r0, 0x4e4(r1)
 /* 803B5A58 003B1898  7C 08 03 A6 */	mtlr r0
 /* 803B5A5C 003B189C  38 21 04 E0 */	addi r1, r1, 0x4e0

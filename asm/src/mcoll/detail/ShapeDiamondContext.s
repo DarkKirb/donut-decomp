@@ -31,7 +31,7 @@ __ct__Q35mcoll6detail19ShapeDiamondContextFRCQ33hel4math7Vector2ffffff:
 /* 801BCD38 001B8B78  7C 08 02 A6 */	mflr r0
 /* 801BCD3C 001B8B7C  90 01 00 44 */	stw r0, 0x44(r1)
 /* 801BCD40 001B8B80  39 61 00 40 */	addi r11, r1, 0x40
-/* 801BCD44 001B8B84  4B E4 A5 5D */	bl lbl_800072A0
+/* 801BCD44 001B8B84  4B E4 A5 5D */	bl _savefpr_26
 /* 801BCD48 001B8B88  93 E1 00 0C */	stw r31, 0xc(r1)
 /* 801BCD4C 001B8B8C  7C 7F 1B 78 */	mr r31, r3
 /* 801BCD50 001B8B90  FF 40 08 90 */	fmr f26, f1
@@ -49,7 +49,7 @@ __ct__Q35mcoll6detail19ShapeDiamondContextFRCQ33hel4math7Vector2ffffff:
 /* 801BCD80 001B8BC0  D3 FF 00 1C */	stfs f31, 0x1c(r31)
 /* 801BCD84 001B8BC4  7F E3 FB 78 */	mr r3, r31
 /* 801BCD88 001B8BC8  39 61 00 40 */	addi r11, r1, 0x40
-/* 801BCD8C 001B8BCC  4B E4 A5 61 */	bl lbl_800072EC
+/* 801BCD8C 001B8BCC  4B E4 A5 61 */	bl _restfpr_26
 /* 801BCD90 001B8BD0  83 E1 00 0C */	lwz r31, 0xc(r1)
 /* 801BCD94 001B8BD4  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 801BCD98 001B8BD8  7C 08 03 A6 */	mtlr r0

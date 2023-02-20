@@ -49,7 +49,7 @@ procMove__Q53scn4step5enemy6flamer10StateChaseFv:
 /* 802B3018 002AEE58  7C 08 02 A6 */	mflr r0
 /* 802B301C 002AEE5C  90 01 00 94 */	stw r0, 0x94(r1)
 /* 802B3020 002AEE60  39 61 00 90 */	addi r11, r1, 0x90
-/* 802B3024 002AEE64  4B D5 43 1D */	bl lbl_80007340
+/* 802B3024 002AEE64  4B D5 43 1D */	bl _savegpr_28
 /* 802B3028 002AEE68  7C 7C 1B 78 */	mr r28, r3
 /* 802B302C 002AEE6C  4B E4 D7 B5 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 802B3030 002AEE70  4B FD 50 55 */	bl param__Q43scn4step5enemy5EnemyCFv
@@ -195,7 +195,7 @@ lbl_802B31E0:
 /* 802B3228 002AF068  38 81 00 28 */	addi r4, r1, 0x28
 /* 802B322C 002AF06C  4B FB C4 91 */	bl setPos__Q43scn4step5chara8LocationFRCQ33hel4math7Vector3
 /* 802B3230 002AF070  39 61 00 90 */	addi r11, r1, 0x90
-/* 802B3234 002AF074  4B D5 41 59 */	bl lbl_8000738C
+/* 802B3234 002AF074  4B D5 41 59 */	bl _restgpr_28
 /* 802B3238 002AF078  80 01 00 94 */	lwz r0, 0x94(r1)
 /* 802B323C 002AF07C  7C 08 03 A6 */	mtlr r0
 /* 802B3240 002AF080  38 21 00 90 */	addi r1, r1, 0x90
@@ -301,7 +301,7 @@ offset__Q53scn4step5enemy6flamer10StateChaseCFv:
 /* 802B3394 002AF1D4  DB C1 00 30 */	stfd f30, 0x30(r1)
 /* 802B3398 002AF1D8  F3 C1 00 38 */	psq_st f30, 0x38(r1), 0, qr0
 /* 802B339C 002AF1DC  39 61 00 30 */	addi r11, r1, 0x30
-/* 802B33A0 002AF1E0  4B D5 3F A5 */	bl lbl_80007344
+/* 802B33A0 002AF1E0  4B D5 3F A5 */	bl _savegpr_29
 /* 802B33A4 002AF1E4  7C 7D 1B 78 */	mr r29, r3
 /* 802B33A8 002AF1E8  7C 9E 23 78 */	mr r30, r4
 /* 802B33AC 002AF1EC  7F C3 F3 78 */	mr r3, r30
@@ -350,7 +350,7 @@ offset__Q53scn4step5enemy6flamer10StateChaseCFv:
 /* 802B3458 002AF298  13 C1 00 0C */	psq_lx f30, r1, r0, 0, qr0
 /* 802B345C 002AF29C  CB C1 00 30 */	lfd f30, 0x30(r1)
 /* 802B3460 002AF2A0  39 61 00 30 */	addi r11, r1, 0x30
-/* 802B3464 002AF2A4  4B D5 3F 2D */	bl lbl_80007390
+/* 802B3464 002AF2A4  4B D5 3F 2D */	bl _restgpr_29
 /* 802B3468 002AF2A8  80 01 00 54 */	lwz r0, 0x54(r1)
 /* 802B346C 002AF2AC  7C 08 03 A6 */	mtlr r0
 /* 802B3470 002AF2B0  38 21 00 50 */	addi r1, r1, 0x50

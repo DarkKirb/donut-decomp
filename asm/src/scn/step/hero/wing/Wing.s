@@ -69,7 +69,7 @@ setup__Q53scn4step4hero4wing4WingFv:
 /* 8039B0A8 00396EE8  7C 08 02 A6 */	mflr r0
 /* 8039B0AC 00396EEC  90 01 00 24 */	stw r0, 0x24(r1)
 /* 8039B0B0 00396EF0  39 61 00 20 */	addi r11, r1, 0x20
-/* 8039B0B4 00396EF4  4B C6 C2 91 */	bl lbl_80007344
+/* 8039B0B4 00396EF4  4B C6 C2 91 */	bl _savegpr_29
 /* 8039B0B8 00396EF8  7C 7D 1B 78 */	mr r29, r3
 /* 8039B0BC 00396EFC  80 63 00 04 */	lwz r3, 0x4(r3)
 /* 8039B0C0 00396F00  4B E7 11 79 */	bl sfxManager__Q33scn7history9ComponentFv
@@ -139,7 +139,7 @@ setup__Q53scn4step4hero4wing4WingFv:
 /* 8039B1C0 00397000  38 00 00 01 */	li r0, 0x1
 /* 8039B1C4 00397004  98 1D 00 0C */	stb r0, 0xc(r29)
 /* 8039B1C8 00397008  39 61 00 20 */	addi r11, r1, 0x20
-/* 8039B1CC 0039700C  4B C6 C1 C5 */	bl lbl_80007390
+/* 8039B1CC 0039700C  4B C6 C1 C5 */	bl _restgpr_29
 /* 8039B1D0 00397010  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8039B1D4 00397014  7C 08 03 A6 */	mtlr r0
 /* 8039B1D8 00397018  38 21 00 20 */	addi r1, r1, 0x20

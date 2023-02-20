@@ -46,7 +46,7 @@ init__Q33scn19challengefileselect6CursorFQ43scn19challengefileselect7IButton4Kin
 /* 801E3010 001DEE50  7C 08 02 A6 */	mflr r0
 /* 801E3014 001DEE54  90 01 00 74 */	stw r0, 0x74(r1)
 /* 801E3018 001DEE58  39 61 00 70 */	addi r11, r1, 0x70
-/* 801E301C 001DEE5C  4B E2 43 1D */	bl lbl_80007338
+/* 801E301C 001DEE5C  4B E2 43 1D */	bl _savegpr_26
 /* 801E3020 001DEE60  7C 7A 1B 78 */	mr r26, r3
 /* 801E3024 001DEE64  7C 9B 23 78 */	mr r27, r4
 /* 801E3028 001DEE68  7C BC 2B 78 */	mr r28, r5
@@ -102,7 +102,7 @@ lbl_801E306C:
 /* 801E30E0 001DEF20  7F 84 E3 78 */	mr r4, r28
 /* 801E30E4 001DEF24  4B FC A0 55 */	bl setParent__Q23lyt6LayoutFRCQ23lyt12PaneAccessor
 /* 801E30E8 001DEF28  39 61 00 70 */	addi r11, r1, 0x70
-/* 801E30EC 001DEF2C  4B E2 42 99 */	bl lbl_80007384
+/* 801E30EC 001DEF2C  4B E2 42 99 */	bl _restgpr_26
 /* 801E30F0 001DEF30  80 01 00 74 */	lwz r0, 0x74(r1)
 /* 801E30F4 001DEF34  7C 08 03 A6 */	mtlr r0
 /* 801E30F8 001DEF38  38 21 00 70 */	addi r1, r1, 0x70

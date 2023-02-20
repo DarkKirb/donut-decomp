@@ -7,7 +7,7 @@ __ct__Q53scn4step5enemy6common16StateSuperAppearFPQ43scn4step5enemy5EnemyRCQ25os
 /* 8029433C 0029017C  7C 08 02 A6 */	mflr r0
 /* 80294340 00290180  90 01 00 44 */	stw r0, 0x44(r1)
 /* 80294344 00290184  39 61 00 40 */	addi r11, r1, 0x40
-/* 80294348 00290188  4B D7 2F F9 */	bl lbl_80007340
+/* 80294348 00290188  4B D7 2F F9 */	bl _savegpr_28
 /* 8029434C 0029018C  7C 7C 1B 78 */	mr r28, r3
 /* 80294350 00290190  7C 9D 23 78 */	mr r29, r4
 /* 80294354 00290194  7C BE 2B 78 */	mr r30, r5
@@ -147,7 +147,7 @@ __ct__Q53scn4step5enemy6common16StateSuperAppearFPQ43scn4step5enemy5EnemyRCQ25os
 /* 8029456C 002903AC  4B FF 58 79 */	bl setSuperEnemyAppeared__Q43scn4step5enemy7ManagerFRCQ43scn4step5enemy5Enemy
 /* 80294570 002903B0  7F 83 E3 78 */	mr r3, r28
 /* 80294574 002903B4  39 61 00 40 */	addi r11, r1, 0x40
-/* 80294578 002903B8  4B D7 2E 15 */	bl lbl_8000738C
+/* 80294578 002903B8  4B D7 2E 15 */	bl _restgpr_28
 /* 8029457C 002903BC  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 80294580 002903C0  7C 08 03 A6 */	mtlr r0
 /* 80294584 002903C4  38 21 00 40 */	addi r1, r1, 0x40
@@ -159,7 +159,7 @@ __dt__Q53scn4step5enemy6common16StateSuperAppearFv:
 /* 80294590 002903D0  7C 08 02 A6 */	mflr r0
 /* 80294594 002903D4  90 01 00 24 */	stw r0, 0x24(r1)
 /* 80294598 002903D8  39 61 00 20 */	addi r11, r1, 0x20
-/* 8029459C 002903DC  4B D7 2D A9 */	bl lbl_80007344
+/* 8029459C 002903DC  4B D7 2D A9 */	bl _savegpr_29
 /* 802945A0 002903E0  7C 7D 1B 78 */	mr r29, r3
 /* 802945A4 002903E4  7C 9E 23 78 */	mr r30, r4
 /* 802945A8 002903E8  2C 03 00 00 */	cmpwi r3, 0x0
@@ -251,7 +251,7 @@ lbl_80294644:
 lbl_802946F4:
 /* 802946F4 00290534  7F A3 EB 78 */	mr r3, r29
 /* 802946F8 00290538  39 61 00 20 */	addi r11, r1, 0x20
-/* 802946FC 0029053C  4B D7 2C 95 */	bl lbl_80007390
+/* 802946FC 0029053C  4B D7 2C 95 */	bl _restgpr_29
 /* 80294700 00290540  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80294704 00290544  7C 08 03 A6 */	mtlr r0
 /* 80294708 00290548  38 21 00 20 */	addi r1, r1, 0x20

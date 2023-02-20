@@ -205,7 +205,7 @@ procAnim__Q53scn4step4hero7gimmick17StateGetShipPartsFv:
 /* 8037FD40 0037BB80  DB C1 00 30 */	stfd f30, 0x30(r1)
 /* 8037FD44 0037BB84  F3 C1 00 38 */	psq_st f30, 0x38(r1), 0, qr0
 /* 8037FD48 0037BB88  39 61 00 30 */	addi r11, r1, 0x30
-/* 8037FD4C 0037BB8C  4B C8 75 F9 */	bl lbl_80007344
+/* 8037FD4C 0037BB8C  4B C8 75 F9 */	bl _savegpr_29
 /* 8037FD50 0037BB90  7C 7D 1B 78 */	mr r29, r3
 /* 8037FD54 0037BB94  4B D8 0A 8D */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 8037FD58 0037BB98  4B CF 59 D9 */	bl GKI_getfirst
@@ -300,7 +300,7 @@ lbl_8037FE94:
 /* 8037FEA4 0037BCE4  13 C1 00 0C */	psq_lx f30, r1, r0, 0, qr0
 /* 8037FEA8 0037BCE8  CB C1 00 30 */	lfd f30, 0x30(r1)
 /* 8037FEAC 0037BCEC  39 61 00 30 */	addi r11, r1, 0x30
-/* 8037FEB0 0037BCF0  4B C8 74 E1 */	bl lbl_80007390
+/* 8037FEB0 0037BCF0  4B C8 74 E1 */	bl _restgpr_29
 /* 8037FEB4 0037BCF4  80 01 00 54 */	lwz r0, 0x54(r1)
 /* 8037FEB8 0037BCF8  7C 08 03 A6 */	mtlr r0
 /* 8037FEBC 0037BCFC  38 21 00 50 */	addi r1, r1, 0x50

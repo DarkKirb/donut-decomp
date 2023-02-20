@@ -25,7 +25,7 @@ onStart__Q53scn4step5enemy10knucklejoe17BrainWalkStepBackFv:
 /* 802BF1A8 002BAFE8  7C 08 02 A6 */	mflr r0
 /* 802BF1AC 002BAFEC  90 01 00 24 */	stw r0, 0x24(r1)
 /* 802BF1B0 002BAFF0  39 61 00 20 */	addi r11, r1, 0x20
-/* 802BF1B4 002BAFF4  4B D4 81 91 */	bl lbl_80007344
+/* 802BF1B4 002BAFF4  4B D4 81 91 */	bl _savegpr_29
 /* 802BF1B8 002BAFF8  7C 7D 1B 78 */	mr r29, r3
 /* 802BF1BC 002BAFFC  4B E4 16 25 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 802BF1C0 002BB000  4B FC 8F D5 */	bl custom__Q43scn4step5enemy5EnemyFv
@@ -92,7 +92,7 @@ lbl_802BF27C:
 /* 802BF27C 002BB0BC  90 9F 00 0C */	stw r4, 0xc(r31)
 /* 802BF280 002BB0C0  38 60 00 01 */	li r3, 0x1
 /* 802BF284 002BB0C4  39 61 00 20 */	addi r11, r1, 0x20
-/* 802BF288 002BB0C8  4B D4 81 09 */	bl lbl_80007390
+/* 802BF288 002BB0C8  4B D4 81 09 */	bl _restgpr_29
 /* 802BF28C 002BB0CC  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802BF290 002BB0D0  7C 08 03 A6 */	mtlr r0
 /* 802BF294 002BB0D4  38 21 00 20 */	addi r1, r1, 0x20

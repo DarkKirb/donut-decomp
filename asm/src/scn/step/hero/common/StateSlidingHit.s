@@ -123,7 +123,7 @@ procMove__Q53scn4step4hero6common15StateSlidingHitFv:
 /* 8036AB68 003669A8  7C 08 02 A6 */	mflr r0
 /* 8036AB6C 003669AC  90 01 00 24 */	stw r0, 0x24(r1)
 /* 8036AB70 003669B0  39 61 00 20 */	addi r11, r1, 0x20
-/* 8036AB74 003669B4  4B C9 C7 D1 */	bl lbl_80007344
+/* 8036AB74 003669B4  4B C9 C7 D1 */	bl _savegpr_29
 /* 8036AB78 003669B8  7C 7D 1B 78 */	mr r29, r3
 /* 8036AB7C 003669BC  4B D9 5C 65 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 8036AB80 003669C0  4B FD 57 5D */	bl param__Q43scn4step4hero4HeroFv
@@ -141,7 +141,7 @@ procMove__Q53scn4step4hero6common15StateSlidingHitFv:
 /* 8036ABB0 003669F0  38 BE 00 90 */	addi r5, r30, 0x90
 /* 8036ABB4 003669F4  4B E3 09 75 */	bl airDecelFall__Q24gobj4MoveFRCQ24gobj14MoveParamDecelRCQ24gobj13MoveParamFall
 /* 8036ABB8 003669F8  39 61 00 20 */	addi r11, r1, 0x20
-/* 8036ABBC 003669FC  4B C9 C7 D5 */	bl lbl_80007390
+/* 8036ABBC 003669FC  4B C9 C7 D5 */	bl _restgpr_29
 /* 8036ABC0 00366A00  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8036ABC4 00366A04  7C 08 03 A6 */	mtlr r0
 /* 8036ABC8 00366A08  38 21 00 20 */	addi r1, r1, 0x20

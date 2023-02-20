@@ -7,7 +7,7 @@ __ct__Q53scn4step4boss15challengemaster11StateWinFlyFPQ43scn4step4boss4Boss:
 /* 80243774 0023F5B4  7C 08 02 A6 */	mflr r0
 /* 80243778 0023F5B8  90 01 00 44 */	stw r0, 0x44(r1)
 /* 8024377C 0023F5BC  39 61 00 40 */	addi r11, r1, 0x40
-/* 80243780 0023F5C0  4B DC 3B C5 */	bl lbl_80007344
+/* 80243780 0023F5C0  4B DC 3B C5 */	bl _savegpr_29
 /* 80243784 0023F5C4  7C 7D 1B 78 */	mr r29, r3
 /* 80243788 0023F5C8  7C 9E 23 78 */	mr r30, r4
 /* 8024378C 0023F5CC  4B FF 0D 55 */	bl __ct__Q43scn4step4boss9StateBaseFPQ43scn4step4boss4Boss
@@ -90,7 +90,7 @@ __ct__Q53scn4step4boss15challengemaster11StateWinFlyFPQ43scn4step4boss4Boss:
 lbl_802438BC:
 /* 802438BC 0023F6FC  7F A3 EB 78 */	mr r3, r29
 /* 802438C0 0023F700  39 61 00 40 */	addi r11, r1, 0x40
-/* 802438C4 0023F704  4B DC 3A CD */	bl lbl_80007390
+/* 802438C4 0023F704  4B DC 3A CD */	bl _restgpr_29
 /* 802438C8 0023F708  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 802438CC 0023F70C  7C 08 03 A6 */	mtlr r0
 /* 802438D0 0023F710  38 21 00 40 */	addi r1, r1, 0x40

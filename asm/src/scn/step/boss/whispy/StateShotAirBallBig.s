@@ -151,7 +151,7 @@ reqAirBallIN__Q53scn4step4boss6whispy19StateShotAirBallBigFRCQ33hel4math7Vector2
 /* 8025E5B4 0025A3F4  7C 08 02 A6 */	mflr r0
 /* 8025E5B8 0025A3F8  90 01 00 84 */	stw r0, 0x84(r1)
 /* 8025E5BC 0025A3FC  39 61 00 80 */	addi r11, r1, 0x80
-/* 8025E5C0 0025A400  4B DA 8D 81 */	bl lbl_80007340
+/* 8025E5C0 0025A400  4B DA 8D 81 */	bl _savegpr_28
 /* 8025E5C4 0025A404  7C 7C 1B 78 */	mr r28, r3
 /* 8025E5C8 0025A408  7C 9D 23 78 */	mr r29, r4
 /* 8025E5CC 0025A40C  7C BE 2B 78 */	mr r30, r5
@@ -202,7 +202,7 @@ reqAirBallIN__Q53scn4step4boss6whispy19StateShotAirBallBigFRCQ33hel4math7Vector2
 /* 8025E680 0025A4C0  38 80 FF FF */	li r4, -0x1
 /* 8025E684 0025A4C4  4B FD BA 2D */	bl "__dt__Q24util39ObjRefHandle<Q43scn4step6weapon6Weapon>Fv"
 /* 8025E688 0025A4C8  39 61 00 80 */	addi r11, r1, 0x80
-/* 8025E68C 0025A4CC  4B DA 8D 01 */	bl lbl_8000738C
+/* 8025E68C 0025A4CC  4B DA 8D 01 */	bl _restgpr_28
 /* 8025E690 0025A4D0  80 01 00 84 */	lwz r0, 0x84(r1)
 /* 8025E694 0025A4D4  7C 08 03 A6 */	mtlr r0
 /* 8025E698 0025A4D8  38 21 00 80 */	addi r1, r1, 0x80

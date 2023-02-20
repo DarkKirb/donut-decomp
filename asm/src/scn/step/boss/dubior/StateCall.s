@@ -125,7 +125,7 @@ reqDubiorJr__Q53scn4step4boss6dubior9StateCallFv:
 /* 8024D9B8 002497F8  7C 08 02 A6 */	mflr r0
 /* 8024D9BC 002497FC  90 01 01 D4 */	stw r0, 0x1d4(r1)
 /* 8024D9C0 00249800  39 61 01 D0 */	addi r11, r1, 0x1d0
-/* 8024D9C4 00249804  4B DB 99 81 */	bl lbl_80007344
+/* 8024D9C4 00249804  4B DB 99 81 */	bl _savegpr_29
 /* 8024D9C8 00249808  7C 7D 1B 78 */	mr r29, r3
 /* 8024D9CC 0024980C  4B EB 2E 15 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 8024D9D0 00249810  4B FD F5 41 */	bl param__Q43scn4step4boss4BossCFv
@@ -540,7 +540,7 @@ lbl_8024DED4:
 .global lbl_8024DFD4
 lbl_8024DFD4:
 /* 8024DFD4 00249E14  39 61 01 D0 */	addi r11, r1, 0x1d0
-/* 8024DFD8 00249E18  4B DB 93 B9 */	bl lbl_80007390
+/* 8024DFD8 00249E18  4B DB 93 B9 */	bl _restgpr_29
 /* 8024DFDC 00249E1C  80 01 01 D4 */	lwz r0, 0x1d4(r1)
 /* 8024DFE0 00249E20  7C 08 03 A6 */	mtlr r0
 /* 8024DFE4 00249E24  38 21 01 D0 */	addi r1, r1, 0x1d0

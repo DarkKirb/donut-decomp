@@ -48,7 +48,7 @@ procFixPos__Q53scn4step5enemy6sodory9StateWaitFv:
 /* 802E64A0 002E22E0  7C 08 02 A6 */	mflr r0
 /* 802E64A4 002E22E4  90 01 00 54 */	stw r0, 0x54(r1)
 /* 802E64A8 002E22E8  39 61 00 50 */	addi r11, r1, 0x50
-/* 802E64AC 002E22EC  4B D2 0E 99 */	bl lbl_80007344
+/* 802E64AC 002E22EC  4B D2 0E 99 */	bl _savegpr_29
 /* 802E64B0 002E22F0  7C 7D 1B 78 */	mr r29, r3
 /* 802E64B4 002E22F4  4B E1 A3 2D */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 802E64B8 002E22F8  4B FA 1C 45 */	bl mapColl__Q43scn4step5enemy5EnemyFv
@@ -96,7 +96,7 @@ lbl_802E653C:
 /* 802E6548 002E2388  4B FF E4 E9 */	bl "DynamicCastToRef<Q53scn4step5enemy6sodory6Custom,Q43scn4step5enemy7ICustom>__Q23hel6commonFPQ43scn4step5enemy7ICustom_RQ53scn4step5enemy6sodory6Custom"
 /* 802E654C 002E238C  4B FF E9 C5 */	bl setDirectionAll__Q53scn4step5enemy6sodory6CustomFv
 /* 802E6550 002E2390  39 61 00 50 */	addi r11, r1, 0x50
-/* 802E6554 002E2394  4B D2 0E 3D */	bl lbl_80007390
+/* 802E6554 002E2394  4B D2 0E 3D */	bl _restgpr_29
 /* 802E6558 002E2398  80 01 00 54 */	lwz r0, 0x54(r1)
 /* 802E655C 002E239C  7C 08 03 A6 */	mtlr r0
 /* 802E6560 002E23A0  38 21 00 50 */	addi r1, r1, 0x50

@@ -8,7 +8,7 @@ __ct__Q53scn4step5enemy6lanzer9StateWalkFPQ43scn4step5enemy5Enemy:
 /* 802C2758 002BE598  90 01 00 24 */	stw r0, 0x24(r1)
 /* 802C275C 002BE59C  DB E1 00 18 */	stfd f31, 0x18(r1)
 /* 802C2760 002BE5A0  39 61 00 18 */	addi r11, r1, 0x18
-/* 802C2764 002BE5A4  4B D4 4B E1 */	bl lbl_80007344
+/* 802C2764 002BE5A4  4B D4 4B E1 */	bl _savegpr_29
 /* 802C2768 002BE5A8  7C 7D 1B 78 */	mr r29, r3
 /* 802C276C 002BE5AC  4B FC B6 59 */	bl __ct__Q43scn4step5enemy9StateBaseFPQ43scn4step5enemy5Enemy
 /* 802C2770 002BE5B0  3C 60 80 48 */	lis r3, __vt__Q53scn4step5enemy6lanzer9StateWalk@ha
@@ -55,7 +55,7 @@ lbl_802C280C:
 /* 802C280C 002BE64C  7F A3 EB 78 */	mr r3, r29
 /* 802C2810 002BE650  CB E1 00 18 */	lfd f31, 0x18(r1)
 /* 802C2814 002BE654  39 61 00 18 */	addi r11, r1, 0x18
-/* 802C2818 002BE658  4B D4 4B 79 */	bl lbl_80007390
+/* 802C2818 002BE658  4B D4 4B 79 */	bl _restgpr_29
 /* 802C281C 002BE65C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802C2820 002BE660  7C 08 03 A6 */	mtlr r0
 /* 802C2824 002BE664  38 21 00 20 */	addi r1, r1, 0x20
@@ -105,7 +105,7 @@ procAnim__Q53scn4step5enemy6lanzer9StateWalkFv:
 /* 802C28B4 002BE6F4  DB E1 00 20 */	stfd f31, 0x20(r1)
 /* 802C28B8 002BE6F8  F3 E1 00 28 */	psq_st f31, 0x28(r1), 0, qr0
 /* 802C28BC 002BE6FC  39 61 00 20 */	addi r11, r1, 0x20
-/* 802C28C0 002BE700  4B D4 4A 85 */	bl lbl_80007344
+/* 802C28C0 002BE700  4B D4 4A 85 */	bl _savegpr_29
 /* 802C28C4 002BE704  7C 7D 1B 78 */	mr r29, r3
 /* 802C28C8 002BE708  4B E3 DF 19 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 802C28CC 002BE70C  4B FC 58 C9 */	bl custom__Q43scn4step5enemy5EnemyFv
@@ -211,7 +211,7 @@ lbl_802C2A38:
 /* 802C2A3C 002BE87C  13 E1 00 0C */	psq_lx f31, r1, r0, 0, qr0
 /* 802C2A40 002BE880  CB E1 00 20 */	lfd f31, 0x20(r1)
 /* 802C2A44 002BE884  39 61 00 20 */	addi r11, r1, 0x20
-/* 802C2A48 002BE888  4B D4 49 49 */	bl lbl_80007390
+/* 802C2A48 002BE888  4B D4 49 49 */	bl _restgpr_29
 /* 802C2A4C 002BE88C  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 802C2A50 002BE890  7C 08 03 A6 */	mtlr r0
 /* 802C2A54 002BE894  38 21 00 30 */	addi r1, r1, 0x30

@@ -48,7 +48,7 @@ challengeGrade__Q27storage11StorageUtilCFi:
 /* 8040501C 00400E5C  7C 08 02 A6 */	mflr r0
 /* 80405020 00400E60  90 01 00 24 */	stw r0, 0x24(r1)
 /* 80405024 00400E64  39 61 00 20 */	addi r11, r1, 0x20
-/* 80405028 00400E68  4B C0 23 1D */	bl lbl_80007344
+/* 80405028 00400E68  4B C0 23 1D */	bl _savegpr_29
 /* 8040502C 00400E6C  7C 7D 1B 78 */	mr r29, r3
 /* 80405030 00400E70  7C 9E 23 78 */	mr r30, r4
 /* 80405034 00400E74  80 6D ED 10 */	lwz r3, "object___Q33hel6common38ExplicitSingleton<Q23app11Application>"@sda21(r13)
@@ -65,7 +65,7 @@ challengeGrade__Q27storage11StorageUtilCFi:
 /* 80405060 00400EA0  7F E4 FB 78 */	mr r4, r31
 /* 80405064 00400EA4  48 00 00 1D */	bl challengeGradeFromScore__Q27storage11StorageUtilCFib
 /* 80405068 00400EA8  39 61 00 20 */	addi r11, r1, 0x20
-/* 8040506C 00400EAC  4B C0 23 25 */	bl lbl_80007390
+/* 8040506C 00400EAC  4B C0 23 25 */	bl _restgpr_29
 /* 80405070 00400EB0  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80405074 00400EB4  7C 08 03 A6 */	mtlr r0
 /* 80405078 00400EB8  38 21 00 20 */	addi r1, r1, 0x20
@@ -76,7 +76,7 @@ challengeGradeFromScore__Q27storage11StorageUtilCFib:
 /* 80405084 00400EC4  7C 08 02 A6 */	mflr r0
 /* 80405088 00400EC8  90 01 00 24 */	stw r0, 0x24(r1)
 /* 8040508C 00400ECC  39 61 00 20 */	addi r11, r1, 0x20
-/* 80405090 00400ED0  4B C0 22 AD */	bl lbl_8000733C
+/* 80405090 00400ED0  4B C0 22 AD */	bl _savegpr_27
 /* 80405094 00400ED4  7C 7B 1B 78 */	mr r27, r3
 /* 80405098 00400ED8  7C 9C 23 78 */	mr r28, r4
 /* 8040509C 00400EDC  7C BD 2B 78 */	mr r29, r5
@@ -105,7 +105,7 @@ lbl_804050D4:
 .global lbl_804050E0
 lbl_804050E0:
 /* 804050E0 00400F20  39 61 00 20 */	addi r11, r1, 0x20
-/* 804050E4 00400F24  4B C0 22 A5 */	bl lbl_80007388
+/* 804050E4 00400F24  4B C0 22 A5 */	bl _restgpr_27
 /* 804050E8 00400F28  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 804050EC 00400F2C  7C 08 03 A6 */	mtlr r0
 /* 804050F0 00400F30  38 21 00 20 */	addi r1, r1, 0x20

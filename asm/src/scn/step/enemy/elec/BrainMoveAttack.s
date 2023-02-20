@@ -27,7 +27,7 @@ onStart__Q53scn4step5enemy4elec15BrainMoveAttackFv:
 /* 802AF7E8 002AB628  7C 08 02 A6 */	mflr r0
 /* 802AF7EC 002AB62C  90 01 00 24 */	stw r0, 0x24(r1)
 /* 802AF7F0 002AB630  39 61 00 20 */	addi r11, r1, 0x20
-/* 802AF7F4 002AB634  4B D5 7B 51 */	bl lbl_80007344
+/* 802AF7F4 002AB634  4B D5 7B 51 */	bl _savegpr_29
 /* 802AF7F8 002AB638  7C 7D 1B 78 */	mr r29, r3
 /* 802AF7FC 002AB63C  4B E5 0F E5 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 802AF800 002AB640  4B E7 16 61 */	bl GetSize__Q34nw4r2ut13DvdFileStreamCFv
@@ -82,7 +82,7 @@ lbl_802AF8A4:
 lbl_802AF8A8:
 /* 802AF8A8 002AB6E8  38 60 00 01 */	li r3, 0x1
 /* 802AF8AC 002AB6EC  39 61 00 20 */	addi r11, r1, 0x20
-/* 802AF8B0 002AB6F0  4B D5 7A E1 */	bl lbl_80007390
+/* 802AF8B0 002AB6F0  4B D5 7A E1 */	bl _restgpr_29
 /* 802AF8B4 002AB6F4  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802AF8B8 002AB6F8  7C 08 03 A6 */	mtlr r0
 /* 802AF8BC 002AB6FC  38 21 00 20 */	addi r1, r1, 0x20
@@ -116,7 +116,7 @@ onRecover__Q53scn4step5enemy4elec15BrainMoveAttackFv:
 /* 802AF918 002AB758  7C 08 02 A6 */	mflr r0
 /* 802AF91C 002AB75C  90 01 00 24 */	stw r0, 0x24(r1)
 /* 802AF920 002AB760  39 61 00 20 */	addi r11, r1, 0x20
-/* 802AF924 002AB764  4B D5 7A 21 */	bl lbl_80007344
+/* 802AF924 002AB764  4B D5 7A 21 */	bl _savegpr_29
 /* 802AF928 002AB768  7C 7D 1B 78 */	mr r29, r3
 /* 802AF92C 002AB76C  7C 9E 23 78 */	mr r30, r4
 /* 802AF930 002AB770  48 15 65 D1 */	bl onSetNextStateFactory__Q24util16StateChangerBaseFv
@@ -134,7 +134,7 @@ onRecover__Q53scn4step5enemy4elec15BrainMoveAttackFv:
 lbl_802AF95C:
 /* 802AF95C 002AB79C  93 FD 00 0C */	stw r31, 0xc(r29)
 /* 802AF960 002AB7A0  39 61 00 20 */	addi r11, r1, 0x20
-/* 802AF964 002AB7A4  4B D5 7A 2D */	bl lbl_80007390
+/* 802AF964 002AB7A4  4B D5 7A 2D */	bl _restgpr_29
 /* 802AF968 002AB7A8  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802AF96C 002AB7AC  7C 08 03 A6 */	mtlr r0
 /* 802AF970 002AB7B0  38 21 00 20 */	addi r1, r1, 0x20

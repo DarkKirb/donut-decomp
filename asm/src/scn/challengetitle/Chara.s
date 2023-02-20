@@ -7,7 +7,7 @@ __ct__Q33scn14challengetitle5CharaFRQ33scn14challengetitle9ComponentRQ23g3d8StdM
 /* 801EA678 001E64B8  7C 08 02 A6 */	mflr r0
 /* 801EA67C 001E64BC  90 01 01 84 */	stw r0, 0x184(r1)
 /* 801EA680 001E64C0  39 61 01 80 */	addi r11, r1, 0x180
-/* 801EA684 001E64C4  4B E1 CC A5 */	bl lbl_80007328
+/* 801EA684 001E64C4  4B E1 CC A5 */	bl _savegpr_22
 /* 801EA688 001E64C8  7C 7C 1B 78 */	mr r28, r3
 /* 801EA68C 001E64CC  7C 9D 23 78 */	mr r29, r4
 /* 801EA690 001E64D0  7C BE 2B 78 */	mr r30, r5
@@ -251,7 +251,7 @@ lbl_801EA9D0:
 lbl_801EA9D4:
 /* 801EA9D4 001E6814  7F 83 E3 78 */	mr r3, r28
 /* 801EA9D8 001E6818  39 61 01 80 */	addi r11, r1, 0x180
-/* 801EA9DC 001E681C  4B E1 C9 99 */	bl lbl_80007374
+/* 801EA9DC 001E681C  4B E1 C9 99 */	bl _restgpr_22
 /* 801EA9E0 001E6820  80 01 01 84 */	lwz r0, 0x184(r1)
 /* 801EA9E4 001E6824  7C 08 03 A6 */	mtlr r0
 /* 801EA9E8 001E6828  38 21 01 80 */	addi r1, r1, 0x180
@@ -709,7 +709,7 @@ effectRequestN__Q33scn14challengetitle5CharaFUlPCc:
 /* 801EAFE0 001E6E20  7C 08 02 A6 */	mflr r0
 /* 801EAFE4 001E6E24  90 01 00 44 */	stw r0, 0x44(r1)
 /* 801EAFE8 001E6E28  39 61 00 40 */	addi r11, r1, 0x40
-/* 801EAFEC 001E6E2C  4B E1 C3 59 */	bl lbl_80007344
+/* 801EAFEC 001E6E2C  4B E1 C3 59 */	bl _savegpr_29
 /* 801EAFF0 001E6E30  7C 7D 1B 78 */	mr r29, r3
 /* 801EAFF4 001E6E34  7C 9E 23 78 */	mr r30, r4
 /* 801EAFF8 001E6E38  7C BF 2B 78 */	mr r31, r5
@@ -731,7 +731,7 @@ effectRequestN__Q33scn14challengetitle5CharaFUlPCc:
 /* 801EB038 001E6E78  38 80 FF FF */	li r4, -0x1
 /* 801EB03C 001E6E7C  4B F9 0F 0D */	bl __dt__Q23g3d13ModelAccessorFv
 /* 801EB040 001E6E80  39 61 00 40 */	addi r11, r1, 0x40
-/* 801EB044 001E6E84  4B E1 C3 4D */	bl lbl_80007390
+/* 801EB044 001E6E84  4B E1 C3 4D */	bl _restgpr_29
 /* 801EB048 001E6E88  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 801EB04C 001E6E8C  7C 08 03 A6 */	mtlr r0
 /* 801EB050 001E6E90  38 21 00 40 */	addi r1, r1, 0x40
@@ -750,7 +750,7 @@ createEquip__Q33scn14challengetitle5CharaFv:
 /* 801EB06C 001E6EAC  7C 08 02 A6 */	mflr r0
 /* 801EB070 001E6EB0  90 01 00 24 */	stw r0, 0x24(r1)
 /* 801EB074 001E6EB4  39 61 00 20 */	addi r11, r1, 0x20
-/* 801EB078 001E6EB8  4B E1 C2 C9 */	bl lbl_80007340
+/* 801EB078 001E6EB8  4B E1 C2 C9 */	bl _savegpr_28
 /* 801EB07C 001E6EBC  7C 7C 1B 78 */	mr r28, r3
 /* 801EB080 001E6EC0  80 63 07 10 */	lwz r3, 0x710(r3)
 /* 801EB084 001E6EC4  4B FF F0 E5 */	bl IsUseGear__Q33scn14challengetitle15AbilityKindUtilFQ33scn14challengetitle11AbilityKind
@@ -809,7 +809,7 @@ lbl_801EB13C:
 .global lbl_801EB140
 lbl_801EB140:
 /* 801EB140 001E6F80  39 61 00 20 */	addi r11, r1, 0x20
-/* 801EB144 001E6F84  4B E1 C2 49 */	bl lbl_8000738C
+/* 801EB144 001E6F84  4B E1 C2 49 */	bl _restgpr_28
 /* 801EB148 001E6F88  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 801EB14C 001E6F8C  7C 08 03 A6 */	mtlr r0
 /* 801EB150 001E6F90  38 21 00 20 */	addi r1, r1, 0x20

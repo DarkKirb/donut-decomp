@@ -73,7 +73,7 @@ Func__Q63scn4step5enemy7blipper9AddOnMint47Mint_FattyBufferEscapeNear_0$55357Add
 /* 80298594 002943D4  7C 08 02 A6 */	mflr r0
 /* 80298598 002943D8  90 01 00 24 */	stw r0, 0x24(r1)
 /* 8029859C 002943DC  39 61 00 20 */	addi r11, r1, 0x20
-/* 802985A0 002943E0  4B D6 ED A5 */	bl lbl_80007344
+/* 802985A0 002943E0  4B D6 ED A5 */	bl _savegpr_29
 /* 802985A4 002943E4  4B FF 28 29 */	bl Obj__Q43scn4step5enemy9MintEnemyFv
 /* 802985A8 002943E8  7C 7E 1B 78 */	mr r30, r3
 /* 802985AC 002943EC  4B FF 28 21 */	bl Obj__Q43scn4step5enemy9MintEnemyFv
@@ -94,7 +94,7 @@ Func__Q63scn4step5enemy7blipper9AddOnMint47Mint_FattyBufferEscapeNear_0$55357Add
 lbl_802985E4:
 /* 802985E4 00294424  93 BF 00 0C */	stw r29, 0xc(r31)
 /* 802985E8 00294428  39 61 00 20 */	addi r11, r1, 0x20
-/* 802985EC 0029442C  4B D6 ED A5 */	bl lbl_80007390
+/* 802985EC 0029442C  4B D6 ED A5 */	bl _restgpr_29
 /* 802985F0 00294430  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802985F4 00294434  7C 08 03 A6 */	mtlr r0
 /* 802985F8 00294438  38 21 00 20 */	addi r1, r1, 0x20
@@ -108,7 +108,7 @@ Func__Q63scn4step5enemy7blipper9AddOnMint30Mint_Move_0$55355AddOnMint_cppFRQ26mi
 /* 80298608 00294448  7C 08 02 A6 */	mflr r0
 /* 8029860C 0029444C  90 01 00 24 */	stw r0, 0x24(r1)
 /* 80298610 00294450  39 61 00 20 */	addi r11, r1, 0x20
-/* 80298614 00294454  4B D6 ED 31 */	bl lbl_80007344
+/* 80298614 00294454  4B D6 ED 31 */	bl _savegpr_29
 /* 80298618 00294458  4B FF 27 B5 */	bl Obj__Q43scn4step5enemy9MintEnemyFv
 /* 8029861C 0029445C  7C 7E 1B 78 */	mr r30, r3
 /* 80298620 00294460  4B FF 27 AD */	bl Obj__Q43scn4step5enemy9MintEnemyFv
@@ -129,7 +129,7 @@ Func__Q63scn4step5enemy7blipper9AddOnMint30Mint_Move_0$55355AddOnMint_cppFRQ26mi
 lbl_80298658:
 /* 80298658 00294498  93 BF 00 0C */	stw r29, 0xc(r31)
 /* 8029865C 0029449C  39 61 00 20 */	addi r11, r1, 0x20
-/* 80298660 002944A0  4B D6 ED 31 */	bl lbl_80007390
+/* 80298660 002944A0  4B D6 ED 31 */	bl _restgpr_29
 /* 80298664 002944A4  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80298668 002944A8  7C 08 03 A6 */	mtlr r0
 /* 8029866C 002944AC  38 21 00 20 */	addi r1, r1, 0x20
@@ -143,7 +143,7 @@ Func__Q63scn4step5enemy7blipper9AddOnMint33Mint_Landing_0$55353AddOnMint_cppFRQ2
 /* 8029867C 002944BC  7C 08 02 A6 */	mflr r0
 /* 80298680 002944C0  90 01 00 24 */	stw r0, 0x24(r1)
 /* 80298684 002944C4  39 61 00 20 */	addi r11, r1, 0x20
-/* 80298688 002944C8  4B D6 EC BD */	bl lbl_80007344
+/* 80298688 002944C8  4B D6 EC BD */	bl _savegpr_29
 /* 8029868C 002944CC  4B FF 27 41 */	bl Obj__Q43scn4step5enemy9MintEnemyFv
 /* 80298690 002944D0  7C 7E 1B 78 */	mr r30, r3
 /* 80298694 002944D4  4B FF 27 39 */	bl Obj__Q43scn4step5enemy9MintEnemyFv
@@ -164,7 +164,7 @@ Func__Q63scn4step5enemy7blipper9AddOnMint33Mint_Landing_0$55353AddOnMint_cppFRQ2
 lbl_802986CC:
 /* 802986CC 0029450C  93 BF 00 0C */	stw r29, 0xc(r31)
 /* 802986D0 00294510  39 61 00 20 */	addi r11, r1, 0x20
-/* 802986D4 00294514  4B D6 EC BD */	bl lbl_80007390
+/* 802986D4 00294514  4B D6 EC BD */	bl _restgpr_29
 /* 802986D8 00294518  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802986DC 0029451C  7C 08 03 A6 */	mtlr r0
 /* 802986E0 00294520  38 21 00 20 */	addi r1, r1, 0x20
@@ -178,7 +178,7 @@ Func__Q63scn4step5enemy7blipper9AddOnMint30Mint_Jump_0$55351AddOnMint_cppFRQ26mi
 /* 802986F0 00294530  7C 08 02 A6 */	mflr r0
 /* 802986F4 00294534  90 01 00 24 */	stw r0, 0x24(r1)
 /* 802986F8 00294538  39 61 00 20 */	addi r11, r1, 0x20
-/* 802986FC 0029453C  4B D6 EC 49 */	bl lbl_80007344
+/* 802986FC 0029453C  4B D6 EC 49 */	bl _savegpr_29
 /* 80298700 00294540  4B FF 26 CD */	bl Obj__Q43scn4step5enemy9MintEnemyFv
 /* 80298704 00294544  7C 7E 1B 78 */	mr r30, r3
 /* 80298708 00294548  4B FF 26 C5 */	bl Obj__Q43scn4step5enemy9MintEnemyFv
@@ -199,7 +199,7 @@ Func__Q63scn4step5enemy7blipper9AddOnMint30Mint_Jump_0$55351AddOnMint_cppFRQ26mi
 lbl_80298740:
 /* 80298740 00294580  93 BF 00 0C */	stw r29, 0xc(r31)
 /* 80298744 00294584  39 61 00 20 */	addi r11, r1, 0x20
-/* 80298748 00294588  4B D6 EC 49 */	bl lbl_80007390
+/* 80298748 00294588  4B D6 EC 49 */	bl _restgpr_29
 /* 8029874C 0029458C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80298750 00294590  7C 08 03 A6 */	mtlr r0
 /* 80298754 00294594  38 21 00 20 */	addi r1, r1, 0x20
@@ -213,7 +213,7 @@ Func__Q63scn4step5enemy7blipper9AddOnMint35Mint_FlyingOut_0$55349AddOnMint_cppFR
 /* 80298764 002945A4  7C 08 02 A6 */	mflr r0
 /* 80298768 002945A8  90 01 00 24 */	stw r0, 0x24(r1)
 /* 8029876C 002945AC  39 61 00 20 */	addi r11, r1, 0x20
-/* 80298770 002945B0  4B D6 EB D5 */	bl lbl_80007344
+/* 80298770 002945B0  4B D6 EB D5 */	bl _savegpr_29
 /* 80298774 002945B4  4B FF 26 59 */	bl Obj__Q43scn4step5enemy9MintEnemyFv
 /* 80298778 002945B8  7C 7E 1B 78 */	mr r30, r3
 /* 8029877C 002945BC  4B FF 26 51 */	bl Obj__Q43scn4step5enemy9MintEnemyFv
@@ -234,7 +234,7 @@ Func__Q63scn4step5enemy7blipper9AddOnMint35Mint_FlyingOut_0$55349AddOnMint_cppFR
 lbl_802987B4:
 /* 802987B4 002945F4  93 BF 00 0C */	stw r29, 0xc(r31)
 /* 802987B8 002945F8  39 61 00 20 */	addi r11, r1, 0x20
-/* 802987BC 002945FC  4B D6 EB D5 */	bl lbl_80007390
+/* 802987BC 002945FC  4B D6 EB D5 */	bl _restgpr_29
 /* 802987C0 00294600  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802987C4 00294604  7C 08 03 A6 */	mtlr r0
 /* 802987C8 00294608  38 21 00 20 */	addi r1, r1, 0x20
@@ -248,7 +248,7 @@ Func__Q63scn4step5enemy7blipper9AddOnMint30Mint_Fall_0$55347AddOnMint_cppFRQ26mi
 /* 802987D8 00294618  7C 08 02 A6 */	mflr r0
 /* 802987DC 0029461C  90 01 00 24 */	stw r0, 0x24(r1)
 /* 802987E0 00294620  39 61 00 20 */	addi r11, r1, 0x20
-/* 802987E4 00294624  4B D6 EB 61 */	bl lbl_80007344
+/* 802987E4 00294624  4B D6 EB 61 */	bl _savegpr_29
 /* 802987E8 00294628  4B FF 25 E5 */	bl Obj__Q43scn4step5enemy9MintEnemyFv
 /* 802987EC 0029462C  7C 7E 1B 78 */	mr r30, r3
 /* 802987F0 00294630  4B FF 25 DD */	bl Obj__Q43scn4step5enemy9MintEnemyFv
@@ -269,7 +269,7 @@ Func__Q63scn4step5enemy7blipper9AddOnMint30Mint_Fall_0$55347AddOnMint_cppFRQ26mi
 lbl_80298828:
 /* 80298828 00294668  93 BF 00 0C */	stw r29, 0xc(r31)
 /* 8029882C 0029466C  39 61 00 20 */	addi r11, r1, 0x20
-/* 80298830 00294670  4B D6 EB 61 */	bl lbl_80007390
+/* 80298830 00294670  4B D6 EB 61 */	bl _restgpr_29
 /* 80298834 00294674  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80298838 00294678  7C 08 03 A6 */	mtlr r0
 /* 8029883C 0029467C  38 21 00 20 */	addi r1, r1, 0x20
@@ -283,7 +283,7 @@ Func__Q63scn4step5enemy7blipper9AddOnMint30Mint_Dive_0$55345AddOnMint_cppFRQ26mi
 /* 8029884C 0029468C  7C 08 02 A6 */	mflr r0
 /* 80298850 00294690  90 01 00 24 */	stw r0, 0x24(r1)
 /* 80298854 00294694  39 61 00 20 */	addi r11, r1, 0x20
-/* 80298858 00294698  4B D6 EA ED */	bl lbl_80007344
+/* 80298858 00294698  4B D6 EA ED */	bl _savegpr_29
 /* 8029885C 0029469C  4B FF 25 71 */	bl Obj__Q43scn4step5enemy9MintEnemyFv
 /* 80298860 002946A0  7C 7E 1B 78 */	mr r30, r3
 /* 80298864 002946A4  4B FF 25 69 */	bl Obj__Q43scn4step5enemy9MintEnemyFv
@@ -304,7 +304,7 @@ Func__Q63scn4step5enemy7blipper9AddOnMint30Mint_Dive_0$55345AddOnMint_cppFRQ26mi
 lbl_8029889C:
 /* 8029889C 002946DC  93 BF 00 0C */	stw r29, 0xc(r31)
 /* 802988A0 002946E0  39 61 00 20 */	addi r11, r1, 0x20
-/* 802988A4 002946E4  4B D6 EA ED */	bl lbl_80007390
+/* 802988A4 002946E4  4B D6 EA ED */	bl _restgpr_29
 /* 802988A8 002946E8  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802988AC 002946EC  7C 08 03 A6 */	mtlr r0
 /* 802988B0 002946F0  38 21 00 20 */	addi r1, r1, 0x20
@@ -318,7 +318,7 @@ Func__Q63scn4step5enemy7blipper9AddOnMint31Mint_Chase_0$55343AddOnMint_cppFRQ26m
 /* 802988C0 00294700  7C 08 02 A6 */	mflr r0
 /* 802988C4 00294704  90 01 00 24 */	stw r0, 0x24(r1)
 /* 802988C8 00294708  39 61 00 20 */	addi r11, r1, 0x20
-/* 802988CC 0029470C  4B D6 EA 79 */	bl lbl_80007344
+/* 802988CC 0029470C  4B D6 EA 79 */	bl _savegpr_29
 /* 802988D0 00294710  4B FF 24 FD */	bl Obj__Q43scn4step5enemy9MintEnemyFv
 /* 802988D4 00294714  7C 7E 1B 78 */	mr r30, r3
 /* 802988D8 00294718  4B FF 24 F5 */	bl Obj__Q43scn4step5enemy9MintEnemyFv
@@ -339,7 +339,7 @@ Func__Q63scn4step5enemy7blipper9AddOnMint31Mint_Chase_0$55343AddOnMint_cppFRQ26m
 lbl_80298910:
 /* 80298910 00294750  93 BF 00 0C */	stw r29, 0xc(r31)
 /* 80298914 00294754  39 61 00 20 */	addi r11, r1, 0x20
-/* 80298918 00294758  4B D6 EA 79 */	bl lbl_80007390
+/* 80298918 00294758  4B D6 EA 79 */	bl _restgpr_29
 /* 8029891C 0029475C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80298920 00294760  7C 08 03 A6 */	mtlr r0
 /* 80298924 00294764  38 21 00 20 */	addi r1, r1, 0x20

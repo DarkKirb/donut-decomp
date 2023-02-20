@@ -230,7 +230,7 @@ requestN__Q26effect12StdRequestorFUlRCQ23g3d12NodeAccessorRCQ33hel4math7Vector3f
 /* 8017F1BC 0017AFFC  90 01 01 04 */	stw r0, 0x104(r1)
 /* 8017F1C0 0017B000  DB E1 00 F8 */	stfd f31, 0xf8(r1)
 /* 8017F1C4 0017B004  39 61 00 F8 */	addi r11, r1, 0xf8
-/* 8017F1C8 0017B008  4B E8 81 7D */	bl lbl_80007344
+/* 8017F1C8 0017B008  4B E8 81 7D */	bl _savegpr_29
 /* 8017F1CC 0017B00C  7C 7D 1B 78 */	mr r29, r3
 /* 8017F1D0 0017B010  7C 9E 23 78 */	mr r30, r4
 /* 8017F1D4 0017B014  7C DF 33 78 */	mr r31, r6
@@ -259,7 +259,7 @@ requestN__Q26effect12StdRequestorFUlRCQ23g3d12NodeAccessorRCQ33hel4math7Vector3f
 /* 8017F230 0017B070  4B FF FD 7D */	bl __dt__Q36effect6detail16RequestArgOptionFv
 /* 8017F234 0017B074  CB E1 00 F8 */	lfd f31, 0xf8(r1)
 /* 8017F238 0017B078  39 61 00 F8 */	addi r11, r1, 0xf8
-/* 8017F23C 0017B07C  4B E8 81 55 */	bl lbl_80007390
+/* 8017F23C 0017B07C  4B E8 81 55 */	bl _restgpr_29
 /* 8017F240 0017B080  80 01 01 04 */	lwz r0, 0x104(r1)
 /* 8017F244 0017B084  7C 08 03 A6 */	mtlr r0
 /* 8017F248 0017B088  38 21 01 00 */	addi r1, r1, 0x100
@@ -286,7 +286,7 @@ requestND__Q26effect12StdRequestorFUlRCQ23g3d12NodeAccessorRCQ33hel4math10Direct
 /* 8017F27C 0017B0BC  90 01 01 04 */	stw r0, 0x104(r1)
 /* 8017F280 0017B0C0  DB E1 00 F8 */	stfd f31, 0xf8(r1)
 /* 8017F284 0017B0C4  39 61 00 F8 */	addi r11, r1, 0xf8
-/* 8017F288 0017B0C8  4B E8 80 BD */	bl lbl_80007344
+/* 8017F288 0017B0C8  4B E8 80 BD */	bl _savegpr_29
 /* 8017F28C 0017B0CC  7C 7D 1B 78 */	mr r29, r3
 /* 8017F290 0017B0D0  7C 9E 23 78 */	mr r30, r4
 /* 8017F294 0017B0D4  7C FF 3B 78 */	mr r31, r7
@@ -316,7 +316,7 @@ requestND__Q26effect12StdRequestorFUlRCQ23g3d12NodeAccessorRCQ33hel4math10Direct
 /* 8017F2F4 0017B134  4B FF FC B9 */	bl __dt__Q36effect6detail16RequestArgOptionFv
 /* 8017F2F8 0017B138  CB E1 00 F8 */	lfd f31, 0xf8(r1)
 /* 8017F2FC 0017B13C  39 61 00 F8 */	addi r11, r1, 0xf8
-/* 8017F300 0017B140  4B E8 80 91 */	bl lbl_80007390
+/* 8017F300 0017B140  4B E8 80 91 */	bl _restgpr_29
 /* 8017F304 0017B144  80 01 01 04 */	lwz r0, 0x104(r1)
 /* 8017F308 0017B148  7C 08 03 A6 */	mtlr r0
 /* 8017F30C 0017B14C  38 21 01 00 */	addi r1, r1, 0x100

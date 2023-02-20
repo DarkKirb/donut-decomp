@@ -7,7 +7,7 @@ __ct__Q53scn4step5enemy6damage16StateDeadInWaterFPQ43scn4step5enemy5Enemy:
 /* 802AA9B8 002A67F8  7C 08 02 A6 */	mflr r0
 /* 802AA9BC 002A67FC  90 01 00 54 */	stw r0, 0x54(r1)
 /* 802AA9C0 002A6800  39 61 00 50 */	addi r11, r1, 0x50
-/* 802AA9C4 002A6804  4B D5 C9 81 */	bl lbl_80007344
+/* 802AA9C4 002A6804  4B D5 C9 81 */	bl _savegpr_29
 /* 802AA9C8 002A6808  7C 7D 1B 78 */	mr r29, r3
 /* 802AA9CC 002A680C  7C 9E 23 78 */	mr r30, r4
 /* 802AA9D0 002A6810  4B FE 33 F5 */	bl __ct__Q43scn4step5enemy9StateBaseFPQ43scn4step5enemy5Enemy
@@ -137,7 +137,7 @@ lbl_802AAAFC:
 /* 802AABA8 002A69E8  48 15 81 2D */	bl start__Q23snd11SERequestorFUl
 /* 802AABAC 002A69EC  7F A3 EB 78 */	mr r3, r29
 /* 802AABB0 002A69F0  39 61 00 50 */	addi r11, r1, 0x50
-/* 802AABB4 002A69F4  4B D5 C7 DD */	bl lbl_80007390
+/* 802AABB4 002A69F4  4B D5 C7 DD */	bl _restgpr_29
 /* 802AABB8 002A69F8  80 01 00 54 */	lwz r0, 0x54(r1)
 /* 802AABBC 002A69FC  7C 08 03 A6 */	mtlr r0
 /* 802AABC0 002A6A00  38 21 00 50 */	addi r1, r1, 0x50

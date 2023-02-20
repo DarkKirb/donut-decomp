@@ -143,7 +143,7 @@ procMove__Q53scn4step4hero6common16StateShotAirBallFv:
 /* 8036A2B8 003660F8  7C 08 02 A6 */	mflr r0
 /* 8036A2BC 003660FC  90 01 00 24 */	stw r0, 0x24(r1)
 /* 8036A2C0 00366100  39 61 00 20 */	addi r11, r1, 0x20
-/* 8036A2C4 00366104  4B C9 D0 7D */	bl lbl_80007340
+/* 8036A2C4 00366104  4B C9 D0 7D */	bl _savegpr_28
 /* 8036A2C8 00366108  7C 7C 1B 78 */	mr r28, r3
 /* 8036A2CC 0036610C  4B D9 65 15 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 8036A2D0 00366110  4B FD 75 D5 */	bl Param__Q43scn4step4hero10IndiviUtilFRCQ43scn4step4hero4Hero
@@ -164,7 +164,7 @@ procMove__Q53scn4step4hero6common16StateShotAirBallFv:
 /* 8036A30C 0036614C  38 DD 00 58 */	addi r6, r29, 0x58
 /* 8036A310 00366150  4B FE CA A1 */	bl MoveFromKeyState__Q43scn4step4hero7UtilityFRQ43scn4step4hero4HeroRCQ24gobj14MoveParamAccelRCQ24gobj14MoveParamDecelRCQ24gobj13MoveParamFall
 /* 8036A314 00366154  39 61 00 20 */	addi r11, r1, 0x20
-/* 8036A318 00366158  4B C9 D0 75 */	bl lbl_8000738C
+/* 8036A318 00366158  4B C9 D0 75 */	bl _restgpr_28
 /* 8036A31C 0036615C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8036A320 00366160  7C 08 03 A6 */	mtlr r0
 /* 8036A324 00366164  38 21 00 20 */	addi r1, r1, 0x20

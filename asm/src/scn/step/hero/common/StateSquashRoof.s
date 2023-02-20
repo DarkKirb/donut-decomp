@@ -201,7 +201,7 @@ procMove__Q53scn4step4hero6common15StateSquashRoofFv:
 /* 8036AE8C 00366CCC  7C 08 02 A6 */	mflr r0
 /* 8036AE90 00366CD0  90 01 00 34 */	stw r0, 0x34(r1)
 /* 8036AE94 00366CD4  39 61 00 30 */	addi r11, r1, 0x30
-/* 8036AE98 00366CD8  4B C9 C4 A9 */	bl lbl_80007340
+/* 8036AE98 00366CD8  4B C9 C4 A9 */	bl _savegpr_28
 /* 8036AE9C 00366CDC  7C 7C 1B 78 */	mr r28, r3
 /* 8036AEA0 00366CE0  4B D9 59 41 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 8036AEA4 00366CE4  4B FE B3 75 */	bl IsPressHDirKey__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Hero
@@ -267,7 +267,7 @@ lbl_8036AF48:
 .global lbl_8036AF7C
 lbl_8036AF7C:
 /* 8036AF7C 00366DBC  39 61 00 30 */	addi r11, r1, 0x30
-/* 8036AF80 00366DC0  4B C9 C4 0D */	bl lbl_8000738C
+/* 8036AF80 00366DC0  4B C9 C4 0D */	bl _restgpr_28
 /* 8036AF84 00366DC4  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 8036AF88 00366DC8  7C 08 03 A6 */	mtlr r0
 /* 8036AF8C 00366DCC  38 21 00 30 */	addi r1, r1, 0x30

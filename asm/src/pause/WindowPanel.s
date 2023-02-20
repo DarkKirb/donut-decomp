@@ -7,7 +7,7 @@ __ct__Q25pause11WindowPanelFRQ25pause9ComponentRCQ23lyt12PaneAccessorb:
 /* 801DF308 001DB148  7C 08 02 A6 */	mflr r0
 /* 801DF30C 001DB14C  90 01 00 B4 */	stw r0, 0xb4(r1)
 /* 801DF310 001DB150  39 61 00 B0 */	addi r11, r1, 0xb0
-/* 801DF314 001DB154  4B E2 80 2D */	bl lbl_80007340
+/* 801DF314 001DB154  4B E2 80 2D */	bl _savegpr_28
 /* 801DF318 001DB158  7C 7C 1B 78 */	mr r28, r3
 /* 801DF31C 001DB15C  7C BD 2B 78 */	mr r29, r5
 /* 801DF320 001DB160  7C DE 33 78 */	mr r30, r6
@@ -53,7 +53,7 @@ __ct__Q25pause11WindowPanelFRQ25pause9ComponentRCQ23lyt12PaneAccessorb:
 /* 801DF3C0 001DB200  4B FC DD 79 */	bl setParent__Q23lyt6LayoutFRCQ23lyt12PaneAccessor
 /* 801DF3C4 001DB204  7F 83 E3 78 */	mr r3, r28
 /* 801DF3C8 001DB208  39 61 00 B0 */	addi r11, r1, 0xb0
-/* 801DF3CC 001DB20C  4B E2 7F C1 */	bl lbl_8000738C
+/* 801DF3CC 001DB20C  4B E2 7F C1 */	bl _restgpr_28
 /* 801DF3D0 001DB210  80 01 00 B4 */	lwz r0, 0xb4(r1)
 /* 801DF3D4 001DB214  7C 08 03 A6 */	mtlr r0
 /* 801DF3D8 001DB218  38 21 00 B0 */	addi r1, r1, 0xb0

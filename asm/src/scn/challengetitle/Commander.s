@@ -387,7 +387,7 @@ start__Q33scn14challengetitle9CommanderFv:
 /* 801EC21C 001E805C  7C 08 02 A6 */	mflr r0
 /* 801EC220 001E8060  90 01 00 24 */	stw r0, 0x24(r1)
 /* 801EC224 001E8064  39 61 00 20 */	addi r11, r1, 0x20
-/* 801EC228 001E8068  4B E1 B1 1D */	bl lbl_80007344
+/* 801EC228 001E8068  4B E1 B1 1D */	bl _savegpr_29
 /* 801EC22C 001E806C  7C 7D 1B 78 */	mr r29, r3
 /* 801EC230 001E8070  3C 80 80 46 */	lis r4, "@55882_8045EBA8"@ha
 /* 801EC234 001E8074  3B E4 EB A8 */	addi r31, r4, "@55882_8045EBA8"@l
@@ -412,7 +412,7 @@ start__Q33scn14challengetitle9CommanderFv:
 /* 801EC280 001E80C0  7F A3 EB 78 */	mr r3, r29
 /* 801EC284 001E80C4  48 00 01 91 */	bl execScript__Q33scn14challengetitle9CommanderFv
 /* 801EC288 001E80C8  39 61 00 20 */	addi r11, r1, 0x20
-/* 801EC28C 001E80CC  4B E1 B1 05 */	bl lbl_80007390
+/* 801EC28C 001E80CC  4B E1 B1 05 */	bl _restgpr_29
 /* 801EC290 001E80D0  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 801EC294 001E80D4  7C 08 03 A6 */	mtlr r0
 /* 801EC298 001E80D8  38 21 00 20 */	addi r1, r1, 0x20

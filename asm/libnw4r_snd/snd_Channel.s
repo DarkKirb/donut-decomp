@@ -125,7 +125,7 @@ Shutdown__Q44nw4r3snd6detail14ChannelManagerFv:
 /* 80107064 00102EA4  7C 08 02 A6 */	mflr r0
 /* 80107068 00102EA8  90 01 00 44 */	stw r0, 0x44(r1)
 /* 8010706C 00102EAC  39 61 00 40 */	addi r11, r1, 0x40
-/* 80107070 00102EB0  4B F0 02 B5 */	bl lbl_80007324
+/* 80107070 00102EB0  4B F0 02 B5 */	bl _savegpr_21
 /* 80107074 00102EB4  7C 7F 1B 78 */	mr r31, r3
 /* 80107078 00102EB8  4B F1 A7 A9 */	bl OSDisableInterrupts
 /* 8010707C 00102EBC  88 1F 00 10 */	lbz r0, 0x10(r31)
@@ -223,7 +223,7 @@ lbl_80107194:
 .global lbl_801071BC
 lbl_801071BC:
 /* 801071BC 00102FFC  39 61 00 40 */	addi r11, r1, 0x40
-/* 801071C0 00103000  4B F0 01 B1 */	bl lbl_80007370
+/* 801071C0 00103000  4B F0 01 B1 */	bl _restgpr_21
 /* 801071C4 00103004  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 801071C8 00103008  7C 08 03 A6 */	mtlr r0
 /* 801071CC 0010300C  38 21 00 40 */	addi r1, r1, 0x40
@@ -1147,7 +1147,7 @@ AllocChannel__Q44nw4r3snd6detail7ChannelFiiiPFPQ44nw4r3snd6detail7ChannelQ54nw4r
 /* 80107E64 00103CA4  7C 08 02 A6 */	mflr r0
 /* 80107E68 00103CA8  90 01 00 34 */	stw r0, 0x34(r1)
 /* 80107E6C 00103CAC  39 61 00 30 */	addi r11, r1, 0x30
-/* 80107E70 00103CB0  4B EF F4 C1 */	bl lbl_80007330
+/* 80107E70 00103CB0  4B EF F4 C1 */	bl _savegpr_24
 /* 80107E74 00103CB4  88 0D EB E0 */	lbz r0, "@GUARD@GetInstance__Q44nw4r3snd6detail14ChannelManagerFv@instance"@sda21(r13)
 /* 80107E78 00103CB8  7C 78 1B 78 */	mr r24, r3
 /* 80107E7C 00103CBC  7C 99 23 78 */	mr r25, r4
@@ -1277,7 +1277,7 @@ lbl_8010801C:
 .global lbl_80108034
 lbl_80108034:
 /* 80108034 00103E74  39 61 00 30 */	addi r11, r1, 0x30
-/* 80108038 00103E78  4B EF F3 45 */	bl lbl_8000737C
+/* 80108038 00103E78  4B EF F3 45 */	bl _restgpr_24
 /* 8010803C 00103E7C  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 80108040 00103E80  7C 08 03 A6 */	mtlr r0
 /* 80108044 00103E84  38 21 00 30 */	addi r1, r1, 0x30

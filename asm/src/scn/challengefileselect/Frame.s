@@ -7,7 +7,7 @@ __ct__Q33scn19challengefileselect5FrameFRQ23mem10IAllocatorRCQ23lyt12PaneAccesso
 /* 801E41B4 001DFFF4  7C 08 02 A6 */	mflr r0
 /* 801E41B8 001DFFF8  90 01 00 C4 */	stw r0, 0xc4(r1)
 /* 801E41BC 001DFFFC  39 61 00 C0 */	addi r11, r1, 0xc0
-/* 801E41C0 001E0000  4B E2 31 81 */	bl lbl_80007340
+/* 801E41C0 001E0000  4B E2 31 81 */	bl _savegpr_28
 /* 801E41C4 001E0004  7C 7C 1B 78 */	mr r28, r3
 /* 801E41C8 001E0008  7C 9D 23 78 */	mr r29, r4
 /* 801E41CC 001E000C  7C BE 2B 78 */	mr r30, r5
@@ -62,7 +62,7 @@ __ct__Q33scn19challengefileselect5FrameFRQ23mem10IAllocatorRCQ23lyt12PaneAccesso
 /* 801E4290 001E00D0  4B F9 3F 91 */	bl __dt__Q23lyt12PaneAccessorFv
 /* 801E4294 001E00D4  7F 83 E3 78 */	mr r3, r28
 /* 801E4298 001E00D8  39 61 00 C0 */	addi r11, r1, 0xc0
-/* 801E429C 001E00DC  4B E2 30 F1 */	bl lbl_8000738C
+/* 801E429C 001E00DC  4B E2 30 F1 */	bl _restgpr_28
 /* 801E42A0 001E00E0  80 01 00 C4 */	lwz r0, 0xc4(r1)
 /* 801E42A4 001E00E4  7C 08 03 A6 */	mtlr r0
 /* 801E42A8 001E00E8  38 21 00 C0 */	addi r1, r1, 0xc0

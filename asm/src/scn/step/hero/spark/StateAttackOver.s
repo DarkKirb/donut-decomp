@@ -7,7 +7,7 @@ TryToChangeState__Q53scn4step4hero5spark15StateAttackOverFPQ43scn4step4hero4Hero
 /* 8038E24C 0038A08C  7C 08 02 A6 */	mflr r0
 /* 8038E250 0038A090  90 01 00 24 */	stw r0, 0x24(r1)
 /* 8038E254 0038A094  39 61 00 20 */	addi r11, r1, 0x20
-/* 8038E258 0038A098  4B C7 90 ED */	bl lbl_80007344
+/* 8038E258 0038A098  4B C7 90 ED */	bl _savegpr_29
 /* 8038E25C 0038A09C  7C 7D 1B 78 */	mr r29, r3
 /* 8038E260 0038A0A0  4B FB 20 ED */	bl hid__Q43scn4step4hero4HeroFv
 /* 8038E264 0038A0A4  38 80 00 08 */	li r4, 0x8
@@ -45,7 +45,7 @@ lbl_8038E2D0:
 .global lbl_8038E2D4
 lbl_8038E2D4:
 /* 8038E2D4 0038A114  39 61 00 20 */	addi r11, r1, 0x20
-/* 8038E2D8 0038A118  4B C7 90 B9 */	bl lbl_80007390
+/* 8038E2D8 0038A118  4B C7 90 B9 */	bl _restgpr_29
 /* 8038E2DC 0038A11C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8038E2E0 0038A120  7C 08 03 A6 */	mtlr r0
 /* 8038E2E4 0038A124  38 21 00 20 */	addi r1, r1, 0x20
@@ -174,7 +174,7 @@ procAnim__Q53scn4step4hero5spark15StateAttackOverFv:
 /* 8038E4A0 0038A2E0  7C 08 02 A6 */	mflr r0
 /* 8038E4A4 0038A2E4  90 01 00 24 */	stw r0, 0x24(r1)
 /* 8038E4A8 0038A2E8  39 61 00 20 */	addi r11, r1, 0x20
-/* 8038E4AC 0038A2EC  4B C7 8E 99 */	bl lbl_80007344
+/* 8038E4AC 0038A2EC  4B C7 8E 99 */	bl _savegpr_29
 /* 8038E4B0 0038A2F0  7C 7D 1B 78 */	mr r29, r3
 /* 8038E4B4 0038A2F4  80 83 00 08 */	lwz r4, 0x8(r3)
 /* 8038E4B8 0038A2F8  38 04 00 01 */	addi r0, r4, 0x1
@@ -242,7 +242,7 @@ lbl_8038E58C:
 .global lbl_8038E590
 lbl_8038E590:
 /* 8038E590 0038A3D0  39 61 00 20 */	addi r11, r1, 0x20
-/* 8038E594 0038A3D4  4B C7 8D FD */	bl lbl_80007390
+/* 8038E594 0038A3D4  4B C7 8D FD */	bl _restgpr_29
 /* 8038E598 0038A3D8  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8038E59C 0038A3DC  7C 08 03 A6 */	mtlr r0
 /* 8038E5A0 0038A3E0  38 21 00 20 */	addi r1, r1, 0x20
@@ -288,7 +288,7 @@ reqEffect__Q53scn4step4hero5spark15StateAttackOverFv:
 /* 8038E610 0038A450  DB E1 00 70 */	stfd f31, 0x70(r1)
 /* 8038E614 0038A454  F3 E1 00 78 */	psq_st f31, 0x78(r1), 0, qr0
 /* 8038E618 0038A458  39 61 00 70 */	addi r11, r1, 0x70
-/* 8038E61C 0038A45C  4B C7 8D 29 */	bl lbl_80007344
+/* 8038E61C 0038A45C  4B C7 8D 29 */	bl _savegpr_29
 /* 8038E620 0038A460  7C 7D 1B 78 */	mr r29, r3
 /* 8038E624 0038A464  4B D7 21 BD */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 8038E628 0038A468  4B FB 1C DD */	bl location__Q43scn4step4hero4HeroCFv
@@ -359,7 +359,7 @@ lbl_8038E6A8:
 /* 8038E71C 0038A55C  13 E1 00 0C */	psq_lx f31, r1, r0, 0, qr0
 /* 8038E720 0038A560  CB E1 00 70 */	lfd f31, 0x70(r1)
 /* 8038E724 0038A564  39 61 00 70 */	addi r11, r1, 0x70
-/* 8038E728 0038A568  4B C7 8C 69 */	bl lbl_80007390
+/* 8038E728 0038A568  4B C7 8C 69 */	bl _restgpr_29
 /* 8038E72C 0038A56C  80 01 00 84 */	lwz r0, 0x84(r1)
 /* 8038E730 0038A570  7C 08 03 A6 */	mtlr r0
 /* 8038E734 0038A574  38 21 00 80 */	addi r1, r1, 0x80

@@ -7,7 +7,7 @@ TryToChangeState__Q53scn4step4hero5spark9StateShotFPQ43scn4step4hero4Heroi:
 /* 8038EECC 0038AD0C  7C 08 02 A6 */	mflr r0
 /* 8038EED0 0038AD10  90 01 00 24 */	stw r0, 0x24(r1)
 /* 8038EED4 0038AD14  39 61 00 20 */	addi r11, r1, 0x20
-/* 8038EED8 0038AD18  4B C7 84 6D */	bl lbl_80007344
+/* 8038EED8 0038AD18  4B C7 84 6D */	bl _savegpr_29
 /* 8038EEDC 0038AD1C  7C 7D 1B 78 */	mr r29, r3
 /* 8038EEE0 0038AD20  7C 9F 23 78 */	mr r31, r4
 /* 8038EEE4 0038AD24  4B FB 14 69 */	bl hid__Q43scn4step4hero4HeroFv
@@ -73,7 +73,7 @@ lbl_8038EFA0:
 .global lbl_8038EFA4
 lbl_8038EFA4:
 /* 8038EFA4 0038ADE4  39 61 00 20 */	addi r11, r1, 0x20
-/* 8038EFA8 0038ADE8  4B C7 83 E9 */	bl lbl_80007390
+/* 8038EFA8 0038ADE8  4B C7 83 E9 */	bl _restgpr_29
 /* 8038EFAC 0038ADEC  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8038EFB0 0038ADF0  7C 08 03 A6 */	mtlr r0
 /* 8038EFB4 0038ADF4  38 21 00 20 */	addi r1, r1, 0x20
@@ -402,7 +402,7 @@ procMove__Q53scn4step4hero5spark9StateShotFv:
 /* 8038F414 0038B254  7C 08 02 A6 */	mflr r0
 /* 8038F418 0038B258  90 01 00 24 */	stw r0, 0x24(r1)
 /* 8038F41C 0038B25C  39 61 00 20 */	addi r11, r1, 0x20
-/* 8038F420 0038B260  4B C7 7F 25 */	bl lbl_80007344
+/* 8038F420 0038B260  4B C7 7F 25 */	bl _savegpr_29
 /* 8038F424 0038B264  7C 7D 1B 78 */	mr r29, r3
 /* 8038F428 0038B268  48 00 00 79 */	bl param__Q53scn4step4hero5spark9StateShotCFv
 /* 8038F42C 0038B26C  3B E3 00 14 */	addi r31, r3, 0x14
@@ -432,7 +432,7 @@ lbl_8038F46C:
 .global lbl_8038F484
 lbl_8038F484:
 /* 8038F484 0038B2C4  39 61 00 20 */	addi r11, r1, 0x20
-/* 8038F488 0038B2C8  4B C7 7F 09 */	bl lbl_80007390
+/* 8038F488 0038B2C8  4B C7 7F 09 */	bl _restgpr_29
 /* 8038F48C 0038B2CC  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8038F490 0038B2D0  7C 08 03 A6 */	mtlr r0
 /* 8038F494 0038B2D4  38 21 00 20 */	addi r1, r1, 0x20

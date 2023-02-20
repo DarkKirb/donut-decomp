@@ -7,7 +7,7 @@ __ct__Q53scn4step4info9challenge9GhostIconFRQ33scn4step9ComponentRQ23mem10IAlloc
 /* 803B257C 003AE3BC  7C 08 02 A6 */	mflr r0
 /* 803B2580 003AE3C0  90 01 02 24 */	stw r0, 0x224(r1)
 /* 803B2584 003AE3C4  39 61 02 20 */	addi r11, r1, 0x220
-/* 803B2588 003AE3C8  4B C5 4D B9 */	bl lbl_80007340
+/* 803B2588 003AE3C8  4B C5 4D B9 */	bl _savegpr_28
 /* 803B258C 003AE3CC  7C 7C 1B 78 */	mr r28, r3
 /* 803B2590 003AE3D0  7C BF 2B 78 */	mr r31, r5
 /* 803B2594 003AE3D4  7C DD 33 78 */	mr r29, r6
@@ -196,7 +196,7 @@ __ct__Q53scn4step4info9challenge9GhostIconFRQ33scn4step9ComponentRQ23mem10IAlloc
 /* 803B2870 003AE6B0  D0 1C 05 B4 */	stfs f0, 0x5b4(r28)
 /* 803B2874 003AE6B4  7F 83 E3 78 */	mr r3, r28
 /* 803B2878 003AE6B8  39 61 02 20 */	addi r11, r1, 0x220
-/* 803B287C 003AE6BC  4B C5 4B 11 */	bl lbl_8000738C
+/* 803B287C 003AE6BC  4B C5 4B 11 */	bl _restgpr_28
 /* 803B2880 003AE6C0  80 01 02 24 */	lwz r0, 0x224(r1)
 /* 803B2884 003AE6C4  7C 08 03 A6 */	mtlr r0
 /* 803B2888 003AE6C8  38 21 02 20 */	addi r1, r1, 0x220

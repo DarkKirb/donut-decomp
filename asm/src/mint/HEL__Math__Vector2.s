@@ -253,7 +253,7 @@ __dv__Q33hel4math7Vector2CFf:
 /* 801C1C08 001BDA48  7C 08 02 A6 */	mflr r0
 /* 801C1C0C 001BDA4C  90 01 00 34 */	stw r0, 0x34(r1)
 /* 801C1C10 001BDA50  39 61 00 30 */	addi r11, r1, 0x30
-/* 801C1C14 001BDA54  4B E4 57 31 */	bl lbl_80007344
+/* 801C1C14 001BDA54  4B E4 57 31 */	bl _savegpr_29
 /* 801C1C18 001BDA58  7C 9D 23 78 */	mr r29, r4
 /* 801C1C1C 001BDA5C  80 83 00 00 */	lwz r4, 0x0(r3)
 /* 801C1C20 001BDA60  80 03 00 04 */	lwz r0, 0x4(r3)
@@ -288,7 +288,7 @@ __dv__Q33hel4math7Vector2CFf:
 .global lbl_801C1C94
 lbl_801C1C94:
 /* 801C1C94 001BDAD4  39 61 00 30 */	addi r11, r1, 0x30
-/* 801C1C98 001BDAD8  4B E4 56 F9 */	bl lbl_80007390
+/* 801C1C98 001BDAD8  4B E4 56 F9 */	bl _restgpr_29
 /* 801C1C9C 001BDADC  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 801C1CA0 001BDAE0  7C 08 03 A6 */	mtlr r0
 /* 801C1CA4 001BDAE4  38 21 00 30 */	addi r1, r1, 0x30
@@ -353,7 +353,7 @@ Func__Q38mintglue18HEL__Math__Vector240Mint_opSub_0$53213HEL__Math__Vector2_cppF
 /* 801C1D70 001BDBB0  7C 08 02 A6 */	mflr r0
 /* 801C1D74 001BDBB4  90 01 00 34 */	stw r0, 0x34(r1)
 /* 801C1D78 001BDBB8  39 61 00 30 */	addi r11, r1, 0x30
-/* 801C1D7C 001BDBBC  4B E4 55 C9 */	bl lbl_80007344
+/* 801C1D7C 001BDBBC  4B E4 55 C9 */	bl _savegpr_29
 /* 801C1D80 001BDBC0  7C 9D 23 78 */	mr r29, r4
 /* 801C1D84 001BDBC4  80 83 00 00 */	lwz r4, 0x0(r3)
 /* 801C1D88 001BDBC8  80 03 00 04 */	lwz r0, 0x4(r3)
@@ -388,7 +388,7 @@ Func__Q38mintglue18HEL__Math__Vector240Mint_opSub_0$53213HEL__Math__Vector2_cppF
 .global lbl_801C1DFC
 lbl_801C1DFC:
 /* 801C1DFC 001BDC3C  39 61 00 30 */	addi r11, r1, 0x30
-/* 801C1E00 001BDC40  4B E4 55 91 */	bl lbl_80007390
+/* 801C1E00 001BDC40  4B E4 55 91 */	bl _restgpr_29
 /* 801C1E04 001BDC44  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 801C1E08 001BDC48  7C 08 03 A6 */	mtlr r0
 /* 801C1E0C 001BDC4C  38 21 00 30 */	addi r1, r1, 0x30
@@ -642,7 +642,7 @@ Func__Q38mintglue18HEL__Math__Vector246Mint_isZeroLoose_0$53197HEL__Math__Vector
 /* 801C218C 001BDFCC  7C 08 02 A6 */	mflr r0
 /* 801C2190 001BDFD0  90 01 00 34 */	stw r0, 0x34(r1)
 /* 801C2194 001BDFD4  39 61 00 30 */	addi r11, r1, 0x30
-/* 801C2198 001BDFD8  4B E4 51 AD */	bl lbl_80007344
+/* 801C2198 001BDFD8  4B E4 51 AD */	bl _savegpr_29
 /* 801C219C 001BDFDC  7C 7D 1B 78 */	mr r29, r3
 /* 801C21A0 001BDFE0  3C 80 80 46 */	lis r4, "@54244"@ha
 /* 801C21A4 001BDFE4  38 A4 A4 7C */	addi r5, r4, "@54244"@l
@@ -676,7 +676,7 @@ Func__Q38mintglue18HEL__Math__Vector246Mint_isZeroLoose_0$53197HEL__Math__Vector
 .global lbl_801C2214
 lbl_801C2214:
 /* 801C2214 001BE054  39 61 00 30 */	addi r11, r1, 0x30
-/* 801C2218 001BE058  4B E4 51 79 */	bl lbl_80007390
+/* 801C2218 001BE058  4B E4 51 79 */	bl _restgpr_29
 /* 801C221C 001BE05C  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 801C2220 001BE060  7C 08 03 A6 */	mtlr r0
 /* 801C2224 001BE064  38 21 00 30 */	addi r1, r1, 0x30
@@ -687,7 +687,7 @@ Func__Q38mintglue18HEL__Math__Vector238Mint_set_0$53195HEL__Math__Vector2_cppFRQ
 /* 801C2230 001BE070  7C 08 02 A6 */	mflr r0
 /* 801C2234 001BE074  90 01 00 34 */	stw r0, 0x34(r1)
 /* 801C2238 001BE078  39 61 00 30 */	addi r11, r1, 0x30
-/* 801C223C 001BE07C  4B E4 51 09 */	bl lbl_80007344
+/* 801C223C 001BE07C  4B E4 51 09 */	bl _savegpr_29
 /* 801C2240 001BE080  7C 7D 1B 78 */	mr r29, r3
 /* 801C2244 001BE084  3C 80 80 46 */	lis r4, "@54265"@ha
 /* 801C2248 001BE088  38 A4 A4 88 */	addi r5, r4, "@54265"@l
@@ -714,7 +714,7 @@ Func__Q38mintglue18HEL__Math__Vector238Mint_set_0$53195HEL__Math__Vector2_cppFRQ
 /* 801C229C 001BE0DC  4B E4 4F 29 */	bl __ptmf_scall
 /* 801C22A0 001BE0E0  60 00 00 00 */	nop
 /* 801C22A4 001BE0E4  39 61 00 30 */	addi r11, r1, 0x30
-/* 801C22A8 001BE0E8  4B E4 50 E9 */	bl lbl_80007390
+/* 801C22A8 001BE0E8  4B E4 50 E9 */	bl _restgpr_29
 /* 801C22AC 001BE0EC  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 801C22B0 001BE0F0  7C 08 03 A6 */	mtlr r0
 /* 801C22B4 001BE0F4  38 21 00 30 */	addi r1, r1, 0x30

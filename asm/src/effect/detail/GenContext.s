@@ -7,7 +7,7 @@ CreatePtcl__Q36effect6detail10GenContextFUlPCcQ36effect6detail14ConstraintType:
 /* 801813D8 0017D218  7C 08 02 A6 */	mflr r0
 /* 801813DC 0017D21C  90 01 00 44 */	stw r0, 0x44(r1)
 /* 801813E0 0017D220  39 61 00 40 */	addi r11, r1, 0x40
-/* 801813E4 0017D224  4B E8 5F 5D */	bl lbl_80007340
+/* 801813E4 0017D224  4B E8 5F 5D */	bl _savegpr_28
 /* 801813E8 0017D228  7C 7C 1B 78 */	mr r28, r3
 /* 801813EC 0017D22C  7C 9D 23 78 */	mr r29, r4
 /* 801813F0 0017D230  7C BE 2B 78 */	mr r30, r5
@@ -26,7 +26,7 @@ CreatePtcl__Q36effect6detail10GenContextFUlPCcQ36effect6detail14ConstraintType:
 /* 80181424 0017D264  57 A0 04 3E */	clrlwi r0, r29, 16
 /* 80181428 0017D268  B0 1C 00 04 */	sth r0, 0x4(r28)
 /* 8018142C 0017D26C  39 61 00 40 */	addi r11, r1, 0x40
-/* 80181430 0017D270  4B E8 5F 5D */	bl lbl_8000738C
+/* 80181430 0017D270  4B E8 5F 5D */	bl _restgpr_28
 /* 80181434 0017D274  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 80181438 0017D278  7C 08 03 A6 */	mtlr r0
 /* 8018143C 0017D27C  38 21 00 40 */	addi r1, r1, 0x40
@@ -79,7 +79,7 @@ CreatePoly__Q36effect6detail10GenContextFUlPCcPCcQ36effect6detail13AnimComboType
 /* 801814D0 0017D310  7C 08 02 A6 */	mflr r0
 /* 801814D4 0017D314  90 01 00 64 */	stw r0, 0x64(r1)
 /* 801814D8 0017D318  39 61 00 60 */	addi r11, r1, 0x60
-/* 801814DC 0017D31C  4B E8 5E 59 */	bl lbl_80007334
+/* 801814DC 0017D31C  4B E8 5E 59 */	bl _savegpr_25
 /* 801814E0 0017D320  7C 79 1B 78 */	mr r25, r3
 /* 801814E4 0017D324  7C 9A 23 78 */	mr r26, r4
 /* 801814E8 0017D328  7C BB 2B 78 */	mr r27, r5
@@ -118,7 +118,7 @@ CreatePoly__Q36effect6detail10GenContextFUlPCcPCcQ36effect6detail13AnimComboType
 /* 8018156C 0017D3AC  57 40 04 3E */	clrlwi r0, r26, 16
 /* 80181570 0017D3B0  B0 19 00 04 */	sth r0, 0x4(r25)
 /* 80181574 0017D3B4  39 61 00 60 */	addi r11, r1, 0x60
-/* 80181578 0017D3B8  4B E8 5E 09 */	bl lbl_80007380
+/* 80181578 0017D3B8  4B E8 5E 09 */	bl _restgpr_25
 /* 8018157C 0017D3BC  80 01 00 64 */	lwz r0, 0x64(r1)
 /* 80181580 0017D3C0  7C 08 03 A6 */	mtlr r0
 /* 80181584 0017D3C4  38 21 00 60 */	addi r1, r1, 0x60
@@ -129,7 +129,7 @@ CreatePoly__Q36effect6detail10GenContextFUlPCcPCcQ36effect6detail13AnimComboType
 /* 80181590 0017D3D0  7C 08 02 A6 */	mflr r0
 /* 80181594 0017D3D4  90 01 00 94 */	stw r0, 0x94(r1)
 /* 80181598 0017D3D8  39 61 00 90 */	addi r11, r1, 0x90
-/* 8018159C 0017D3DC  4B E8 5D A9 */	bl lbl_80007344
+/* 8018159C 0017D3DC  4B E8 5D A9 */	bl _savegpr_29
 /* 801815A0 0017D3E0  7C 7D 1B 78 */	mr r29, r3
 /* 801815A4 0017D3E4  7C 9E 23 78 */	mr r30, r4
 /* 801815A8 0017D3E8  40 86 00 24 */	bne cr1, lbl_801815CC
@@ -166,7 +166,7 @@ lbl_801815CC:
 /* 8018161C 0017D45C  7F C6 F3 78 */	mr r6, r30
 /* 80181620 0017D460  48 01 C3 E1 */	bl "VPrintf__Q33hel6common9Traits<c>FPcUlP16__va_list_structPCc"
 /* 80181624 0017D464  39 61 00 90 */	addi r11, r1, 0x90
-/* 80181628 0017D468  4B E8 5D 69 */	bl lbl_80007390
+/* 80181628 0017D468  4B E8 5D 69 */	bl _restgpr_29
 /* 8018162C 0017D46C  80 01 00 94 */	lwz r0, 0x94(r1)
 /* 80181630 0017D470  7C 08 03 A6 */	mtlr r0
 /* 80181634 0017D474  38 21 00 90 */	addi r1, r1, 0x90

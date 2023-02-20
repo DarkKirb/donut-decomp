@@ -7,7 +7,7 @@ __ct__Q43scn4step5chara7ObjCollFRQ33scn4step9ComponentRQ24gobj5ModelQ43scn4step5
 /* 80271D38 0026DB78  7C 08 02 A6 */	mflr r0
 /* 80271D3C 0026DB7C  90 01 00 24 */	stw r0, 0x24(r1)
 /* 80271D40 0026DB80  39 61 00 20 */	addi r11, r1, 0x20
-/* 80271D44 0026DB84  4B D9 55 FD */	bl lbl_80007340
+/* 80271D44 0026DB84  4B D9 55 FD */	bl _savegpr_28
 /* 80271D48 0026DB88  7C 7C 1B 78 */	mr r28, r3
 /* 80271D4C 0026DB8C  7C DD 33 78 */	mr r29, r6
 /* 80271D50 0026DB90  7C FE 3B 78 */	mr r30, r7
@@ -46,7 +46,7 @@ __ct__Q43scn4step5chara7ObjCollFRQ33scn4step9ComponentRQ24gobj5ModelQ43scn4step5
 /* 80271DD4 0026DC14  4B F6 1C 3D */	bl __ct__Q25ocoll6AttackFRQ25ocoll7ManagerRQ25ocoll5OwnerUl
 /* 80271DD8 0026DC18  7F 83 E3 78 */	mr r3, r28
 /* 80271DDC 0026DC1C  39 61 00 20 */	addi r11, r1, 0x20
-/* 80271DE0 0026DC20  4B D9 55 AD */	bl lbl_8000738C
+/* 80271DE0 0026DC20  4B D9 55 AD */	bl _restgpr_28
 /* 80271DE4 0026DC24  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80271DE8 0026DC28  7C 08 03 A6 */	mtlr r0
 /* 80271DEC 0026DC2C  38 21 00 20 */	addi r1, r1, 0x20
@@ -141,7 +141,7 @@ addBodyColl__Q43scn4step5chara7ObjCollFUlfRCQ33hel4math7Vector2RCQ33hel4math7Vec
 /* 80271F10 0026DD50  90 01 00 44 */	stw r0, 0x44(r1)
 /* 80271F14 0026DD54  DB E1 00 38 */	stfd f31, 0x38(r1)
 /* 80271F18 0026DD58  39 61 00 38 */	addi r11, r1, 0x38
-/* 80271F1C 0026DD5C  4B D9 54 21 */	bl lbl_8000733C
+/* 80271F1C 0026DD5C  4B D9 54 21 */	bl _savegpr_27
 /* 80271F20 0026DD60  7C 7B 1B 78 */	mr r27, r3
 /* 80271F24 0026DD64  7C 9C 23 78 */	mr r28, r4
 /* 80271F28 0026DD68  FF E0 08 90 */	fmr f31, f1
@@ -166,7 +166,7 @@ addBodyColl__Q43scn4step5chara7ObjCollFUlfRCQ33hel4math7Vector2RCQ33hel4math7Vec
 /* 80271F74 0026DDB4  4B F0 A7 1D */	bl __dt__Q23g3d12NodeAccessorFv
 /* 80271F78 0026DDB8  CB E1 00 38 */	lfd f31, 0x38(r1)
 /* 80271F7C 0026DDBC  39 61 00 38 */	addi r11, r1, 0x38
-/* 80271F80 0026DDC0  4B D9 54 09 */	bl lbl_80007388
+/* 80271F80 0026DDC0  4B D9 54 09 */	bl _restgpr_27
 /* 80271F84 0026DDC4  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 80271F88 0026DDC8  7C 08 03 A6 */	mtlr r0
 /* 80271F8C 0026DDCC  38 21 00 40 */	addi r1, r1, 0x40
@@ -194,7 +194,7 @@ addAttack__Q43scn4step5chara7ObjCollFUlUlfRCQ33hel4math7Vector2RCQ33hel4math7Vec
 /* 80271FBC 0026DDFC  90 01 00 74 */	stw r0, 0x74(r1)
 /* 80271FC0 0026DE00  DB E1 00 68 */	stfd f31, 0x68(r1)
 /* 80271FC4 0026DE04  39 61 00 68 */	addi r11, r1, 0x68
-/* 80271FC8 0026DE08  4B D9 53 71 */	bl lbl_80007338
+/* 80271FC8 0026DE08  4B D9 53 71 */	bl _savegpr_26
 /* 80271FCC 0026DE0C  7C 7A 1B 78 */	mr r26, r3
 /* 80271FD0 0026DE10  7C 9B 23 78 */	mr r27, r4
 /* 80271FD4 0026DE14  7C BC 2B 78 */	mr r28, r5
@@ -234,7 +234,7 @@ addAttack__Q43scn4step5chara7ObjCollFUlUlfRCQ33hel4math7Vector2RCQ33hel4math7Vec
 /* 8027205C 0026DE9C  4B FF AF 3D */	bl __dt__Q25ocoll8NodeDescFv
 /* 80272060 0026DEA0  CB E1 00 68 */	lfd f31, 0x68(r1)
 /* 80272064 0026DEA4  39 61 00 68 */	addi r11, r1, 0x68
-/* 80272068 0026DEA8  4B D9 53 1D */	bl lbl_80007384
+/* 80272068 0026DEA8  4B D9 53 1D */	bl _restgpr_26
 /* 8027206C 0026DEAC  80 01 00 74 */	lwz r0, 0x74(r1)
 /* 80272070 0026DEB0  7C 08 03 A6 */	mtlr r0
 /* 80272074 0026DEB4  38 21 00 70 */	addi r1, r1, 0x70
@@ -257,7 +257,7 @@ setAttackCenter__Q43scn4step5chara7ObjCollFUlRCQ33hel4math7Vector2:
 /* 80272098 0026DED8  7C 08 02 A6 */	mflr r0
 /* 8027209C 0026DEDC  90 01 00 34 */	stw r0, 0x34(r1)
 /* 802720A0 0026DEE0  39 61 00 30 */	addi r11, r1, 0x30
-/* 802720A4 0026DEE4  4B D9 52 A1 */	bl lbl_80007344
+/* 802720A4 0026DEE4  4B D9 52 A1 */	bl _savegpr_29
 /* 802720A8 0026DEE8  7C 7D 1B 78 */	mr r29, r3
 /* 802720AC 0026DEEC  7C 9E 23 78 */	mr r30, r4
 /* 802720B0 0026DEF0  7C BF 2B 78 */	mr r31, r5
@@ -275,7 +275,7 @@ setAttackCenter__Q43scn4step5chara7ObjCollFUlRCQ33hel4math7Vector2:
 /* 802720E0 0026DF20  38 80 FF FF */	li r4, -0x1
 /* 802720E4 0026DF24  4B F0 A5 AD */	bl __dt__Q23g3d12NodeAccessorFv
 /* 802720E8 0026DF28  39 61 00 30 */	addi r11, r1, 0x30
-/* 802720EC 0026DF2C  4B D9 52 A5 */	bl lbl_80007390
+/* 802720EC 0026DF2C  4B D9 52 A5 */	bl _restgpr_29
 /* 802720F0 0026DF30  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 802720F4 0026DF34  7C 08 03 A6 */	mtlr r0
 /* 802720F8 0026DF38  38 21 00 30 */	addi r1, r1, 0x30
@@ -307,7 +307,7 @@ addSearchHit__Q43scn4step5chara7ObjCollFUlfRCQ33hel4math7Vector2RCQ33hel4math7Ve
 /* 80272130 0026DF70  90 01 00 74 */	stw r0, 0x74(r1)
 /* 80272134 0026DF74  DB E1 00 68 */	stfd f31, 0x68(r1)
 /* 80272138 0026DF78  39 61 00 68 */	addi r11, r1, 0x68
-/* 8027213C 0026DF7C  4B D9 52 01 */	bl lbl_8000733C
+/* 8027213C 0026DF7C  4B D9 52 01 */	bl _savegpr_27
 /* 80272140 0026DF80  7C 7B 1B 78 */	mr r27, r3
 /* 80272144 0026DF84  7C 9C 23 78 */	mr r28, r4
 /* 80272148 0026DF88  FF E0 08 90 */	fmr f31, f1
@@ -345,7 +345,7 @@ addSearchHit__Q43scn4step5chara7ObjCollFUlfRCQ33hel4math7Vector2RCQ33hel4math7Ve
 /* 802721C8 0026E008  4B FF AD D1 */	bl __dt__Q25ocoll8NodeDescFv
 /* 802721CC 0026E00C  CB E1 00 68 */	lfd f31, 0x68(r1)
 /* 802721D0 0026E010  39 61 00 68 */	addi r11, r1, 0x68
-/* 802721D4 0026E014  4B D9 51 B5 */	bl lbl_80007388
+/* 802721D4 0026E014  4B D9 51 B5 */	bl _restgpr_27
 /* 802721D8 0026E018  80 01 00 74 */	lwz r0, 0x74(r1)
 /* 802721DC 0026E01C  7C 08 03 A6 */	mtlr r0
 /* 802721E0 0026E020  38 21 00 70 */	addi r1, r1, 0x70
@@ -395,7 +395,7 @@ addSearchAttack__Q43scn4step5chara7ObjCollFUlfRCQ33hel4math7Vector2RCQ33hel4math
 /* 80272258 0026E098  90 01 00 74 */	stw r0, 0x74(r1)
 /* 8027225C 0026E09C  DB E1 00 68 */	stfd f31, 0x68(r1)
 /* 80272260 0026E0A0  39 61 00 68 */	addi r11, r1, 0x68
-/* 80272264 0026E0A4  4B D9 50 D9 */	bl lbl_8000733C
+/* 80272264 0026E0A4  4B D9 50 D9 */	bl _savegpr_27
 /* 80272268 0026E0A8  7C 7B 1B 78 */	mr r27, r3
 /* 8027226C 0026E0AC  7C 9C 23 78 */	mr r28, r4
 /* 80272270 0026E0B0  FF E0 08 90 */	fmr f31, f1
@@ -433,7 +433,7 @@ addSearchAttack__Q43scn4step5chara7ObjCollFUlfRCQ33hel4math7Vector2RCQ33hel4math
 /* 802722F0 0026E130  4B FF AC A9 */	bl __dt__Q25ocoll8NodeDescFv
 /* 802722F4 0026E134  CB E1 00 68 */	lfd f31, 0x68(r1)
 /* 802722F8 0026E138  39 61 00 68 */	addi r11, r1, 0x68
-/* 802722FC 0026E13C  4B D9 50 8D */	bl lbl_80007388
+/* 802722FC 0026E13C  4B D9 50 8D */	bl _restgpr_27
 /* 80272300 0026E140  80 01 00 74 */	lwz r0, 0x74(r1)
 /* 80272304 0026E144  7C 08 03 A6 */	mtlr r0
 /* 80272308 0026E148  38 21 00 70 */	addi r1, r1, 0x70

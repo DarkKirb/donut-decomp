@@ -9,7 +9,7 @@ __ct__Q53scn4step4hero5stone14StateStartJumpFPQ43scn4step4hero4HeroRQ53scn4step4
 /* 80391540 0038D380  DB E1 00 20 */	stfd f31, 0x20(r1)
 /* 80391544 0038D384  F3 E1 00 28 */	psq_st f31, 0x28(r1), 0, qr0
 /* 80391548 0038D388  39 61 00 20 */	addi r11, r1, 0x20
-/* 8039154C 0038D38C  4B C7 5D F9 */	bl lbl_80007344
+/* 8039154C 0038D38C  4B C7 5D F9 */	bl _savegpr_29
 /* 80391550 0038D390  7C 7D 1B 78 */	mr r29, r3
 /* 80391554 0038D394  7C BE 2B 78 */	mr r30, r5
 /* 80391558 0038D398  4B FC 3F 99 */	bl __ct__Q43scn4step4hero9StateBaseFPQ43scn4step4hero4Hero
@@ -86,7 +86,7 @@ lbl_80391610:
 /* 80391664 0038D4A4  13 E1 00 0C */	psq_lx f31, r1, r0, 0, qr0
 /* 80391668 0038D4A8  CB E1 00 20 */	lfd f31, 0x20(r1)
 /* 8039166C 0038D4AC  39 61 00 20 */	addi r11, r1, 0x20
-/* 80391670 0038D4B0  4B C7 5D 21 */	bl lbl_80007390
+/* 80391670 0038D4B0  4B C7 5D 21 */	bl _restgpr_29
 /* 80391674 0038D4B4  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 80391678 0038D4B8  7C 08 03 A6 */	mtlr r0
 /* 8039167C 0038D4BC  38 21 00 30 */	addi r1, r1, 0x30

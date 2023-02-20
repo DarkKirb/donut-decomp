@@ -7,7 +7,7 @@ __ct__Q53scn4step4boss6whispy14StateFallEnemyFPQ43scn4step4boss4BossQ53scn4step4
 /* 8025D4A0 002592E0  7C 08 02 A6 */	mflr r0
 /* 8025D4A4 002592E4  90 01 00 24 */	stw r0, 0x24(r1)
 /* 8025D4A8 002592E8  39 61 00 20 */	addi r11, r1, 0x20
-/* 8025D4AC 002592EC  4B DA 9E 95 */	bl lbl_80007340
+/* 8025D4AC 002592EC  4B DA 9E 95 */	bl _savegpr_28
 /* 8025D4B0 002592F0  7C 7C 1B 78 */	mr r28, r3
 /* 8025D4B4 002592F4  7C 9D 23 78 */	mr r29, r4
 /* 8025D4B8 002592F8  7C BE 2B 78 */	mr r30, r5
@@ -35,7 +35,7 @@ __ct__Q53scn4step4boss6whispy14StateFallEnemyFPQ43scn4step4boss4BossQ53scn4step4
 /* 8025D510 00259350  48 01 3D 6D */	bl reqScript__Q43scn4step5chara5ModelFUl
 /* 8025D514 00259354  7F 83 E3 78 */	mr r3, r28
 /* 8025D518 00259358  39 61 00 20 */	addi r11, r1, 0x20
-/* 8025D51C 0025935C  4B DA 9E 71 */	bl lbl_8000738C
+/* 8025D51C 0025935C  4B DA 9E 71 */	bl _restgpr_28
 /* 8025D520 00259360  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8025D524 00259364  7C 08 03 A6 */	mtlr r0
 /* 8025D528 00259368  38 21 00 20 */	addi r1, r1, 0x20

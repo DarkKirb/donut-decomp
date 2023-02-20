@@ -27,7 +27,7 @@ reqAirBall__Q53scn4step4boss6whispy23StateShotAirBallTornadoFv:
 /* 8025E6EC 0025A52C  7C 08 02 A6 */	mflr r0
 /* 8025E6F0 0025A530  90 01 00 A4 */	stw r0, 0xa4(r1)
 /* 8025E6F4 0025A534  39 61 00 A0 */	addi r11, r1, 0xa0
-/* 8025E6F8 0025A538  4B DA 8C 4D */	bl lbl_80007344
+/* 8025E6F8 0025A538  4B DA 8C 4D */	bl _savegpr_29
 /* 8025E6FC 0025A53C  7C 7D 1B 78 */	mr r29, r3
 /* 8025E700 0025A540  4B EA 20 E1 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 8025E704 0025A544  4B FC E8 0D */	bl param__Q43scn4step4boss4BossCFv
@@ -141,7 +141,7 @@ reqAirBall__Q53scn4step4boss6whispy23StateShotAirBallTornadoFv:
 /* 8025E8B4 0025A6F4  EC 01 00 2A */	fadds f0, f1, f0
 /* 8025E8B8 0025A6F8  D0 1D 00 24 */	stfs f0, 0x24(r29)
 /* 8025E8BC 0025A6FC  39 61 00 A0 */	addi r11, r1, 0xa0
-/* 8025E8C0 0025A700  4B DA 8A D1 */	bl lbl_80007390
+/* 8025E8C0 0025A700  4B DA 8A D1 */	bl _restgpr_29
 /* 8025E8C4 0025A704  80 01 00 A4 */	lwz r0, 0xa4(r1)
 /* 8025E8C8 0025A708  7C 08 03 A6 */	mtlr r0
 /* 8025E8CC 0025A70C  38 21 00 A0 */	addi r1, r1, 0xa0

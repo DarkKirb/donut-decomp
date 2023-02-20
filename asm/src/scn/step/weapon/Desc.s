@@ -45,7 +45,7 @@ __ct__Q43scn4step6weapon4DescFQ43scn4step6weapon4KindUlQ43scn4step5ostop4FlagRCQ
 /* 803D60F8 003D1F38  7C 08 02 A6 */	mflr r0
 /* 803D60FC 003D1F3C  90 01 00 24 */	stw r0, 0x24(r1)
 /* 803D6100 003D1F40  39 61 00 20 */	addi r11, r1, 0x20
-/* 803D6104 003D1F44  4B C3 12 3D */	bl lbl_80007340
+/* 803D6104 003D1F44  4B C3 12 3D */	bl _savegpr_28
 /* 803D6108 003D1F48  7C 7C 1B 78 */	mr r28, r3
 /* 803D610C 003D1F4C  7C FD 3B 78 */	mr r29, r7
 /* 803D6110 003D1F50  7D 1E 43 78 */	mr r30, r8
@@ -75,7 +75,7 @@ __ct__Q43scn4step6weapon4DescFQ43scn4step6weapon4KindUlQ43scn4step5ostop4FlagRCQ
 /* 803D6170 003D1FB0  93 FC 00 34 */	stw r31, 0x34(r28)
 /* 803D6174 003D1FB4  7F 83 E3 78 */	mr r3, r28
 /* 803D6178 003D1FB8  39 61 00 20 */	addi r11, r1, 0x20
-/* 803D617C 003D1FBC  4B C3 12 11 */	bl lbl_8000738C
+/* 803D617C 003D1FBC  4B C3 12 11 */	bl _restgpr_28
 /* 803D6180 003D1FC0  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803D6184 003D1FC4  7C 08 03 A6 */	mtlr r0
 /* 803D6188 003D1FC8  38 21 00 20 */	addi r1, r1, 0x20
@@ -86,7 +86,7 @@ __ct__Q43scn4step6weapon4DescFQ43scn4step6weapon4KindUlQ43scn4step5ostop4FlagRCQ
 /* 803D6194 003D1FD4  7C 08 02 A6 */	mflr r0
 /* 803D6198 003D1FD8  90 01 00 24 */	stw r0, 0x24(r1)
 /* 803D619C 003D1FDC  39 61 00 20 */	addi r11, r1, 0x20
-/* 803D61A0 003D1FE0  4B C3 11 9D */	bl lbl_8000733C
+/* 803D61A0 003D1FE0  4B C3 11 9D */	bl _savegpr_27
 /* 803D61A4 003D1FE4  7C 7B 1B 78 */	mr r27, r3
 /* 803D61A8 003D1FE8  7C FC 3B 78 */	mr r28, r7
 /* 803D61AC 003D1FEC  7D 1D 43 78 */	mr r29, r8
@@ -117,7 +117,7 @@ __ct__Q43scn4step6weapon4DescFQ43scn4step6weapon4KindUlQ43scn4step5ostop4FlagRCQ
 /* 803D6210 003D2050  93 FB 00 34 */	stw r31, 0x34(r27)
 /* 803D6214 003D2054  7F 63 DB 78 */	mr r3, r27
 /* 803D6218 003D2058  39 61 00 20 */	addi r11, r1, 0x20
-/* 803D621C 003D205C  4B C3 11 6D */	bl lbl_80007388
+/* 803D621C 003D205C  4B C3 11 6D */	bl _restgpr_27
 /* 803D6220 003D2060  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803D6224 003D2064  7C 08 03 A6 */	mtlr r0
 /* 803D6228 003D2068  38 21 00 20 */	addi r1, r1, 0x20

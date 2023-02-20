@@ -7,7 +7,7 @@ __ct__Q53scn4step4info5lvmap13ExplainCursorFRQ33scn4step9ComponentRCQ23lyt12Pane
 /* 803BCF5C 003B8D9C  7C 08 02 A6 */	mflr r0
 /* 803BCF60 003B8DA0  90 01 00 94 */	stw r0, 0x94(r1)
 /* 803BCF64 003B8DA4  39 61 00 90 */	addi r11, r1, 0x90
-/* 803BCF68 003B8DA8  4B C4 A3 DD */	bl lbl_80007344
+/* 803BCF68 003B8DA8  4B C4 A3 DD */	bl _savegpr_29
 /* 803BCF6C 003B8DAC  7C 7D 1B 78 */	mr r29, r3
 /* 803BCF70 003B8DB0  7C BE 2B 78 */	mr r30, r5
 /* 803BCF74 003B8DB4  7C DF 33 78 */	mr r31, r6
@@ -46,7 +46,7 @@ __ct__Q53scn4step4info5lvmap13ExplainCursorFRQ33scn4step9ComponentRCQ23lyt12Pane
 /* 803BCFF8 003B8E38  4B DF 03 29 */	bl updateMatrix__Q23lyt6LayoutFv
 /* 803BCFFC 003B8E3C  7F A3 EB 78 */	mr r3, r29
 /* 803BD000 003B8E40  39 61 00 90 */	addi r11, r1, 0x90
-/* 803BD004 003B8E44  4B C4 A3 8D */	bl lbl_80007390
+/* 803BD004 003B8E44  4B C4 A3 8D */	bl _restgpr_29
 /* 803BD008 003B8E48  80 01 00 94 */	lwz r0, 0x94(r1)
 /* 803BD00C 003B8E4C  7C 08 03 A6 */	mtlr r0
 /* 803BD010 003B8E50  38 21 00 90 */	addi r1, r1, 0x90

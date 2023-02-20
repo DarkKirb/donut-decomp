@@ -7,7 +7,7 @@ __ct__Q53scn4step5enemy6damage19StateParasolReleaseFPQ43scn4step5enemy5EnemyUxUl
 /* 802AB620 002A7460  7C 08 02 A6 */	mflr r0
 /* 802AB624 002A7464  90 01 00 54 */	stw r0, 0x54(r1)
 /* 802AB628 002A7468  39 61 00 50 */	addi r11, r1, 0x50
-/* 802AB62C 002A746C  4B D5 BD 15 */	bl lbl_80007340
+/* 802AB62C 002A746C  4B D5 BD 15 */	bl _savegpr_28
 /* 802AB630 002A7470  7C 7C 1B 78 */	mr r28, r3
 /* 802AB634 002A7474  7C BE 2B 78 */	mr r30, r5
 /* 802AB638 002A7478  7C DD 33 78 */	mr r29, r6
@@ -115,7 +115,7 @@ lbl_802AB7A4:
 /* 802AB7C0 002A7600  4B F8 4F 09 */	bl "__dt__Q24util35ObjRefHandle<Q43scn4step4hero4Hero>Fv"
 /* 802AB7C4 002A7604  7F 83 E3 78 */	mr r3, r28
 /* 802AB7C8 002A7608  39 61 00 50 */	addi r11, r1, 0x50
-/* 802AB7CC 002A760C  4B D5 BB C1 */	bl lbl_8000738C
+/* 802AB7CC 002A760C  4B D5 BB C1 */	bl _restgpr_28
 /* 802AB7D0 002A7610  80 01 00 54 */	lwz r0, 0x54(r1)
 /* 802AB7D4 002A7614  7C 08 03 A6 */	mtlr r0
 /* 802AB7D8 002A7618  38 21 00 50 */	addi r1, r1, 0x50

@@ -30,7 +30,7 @@ nextLightSet__Q43scn4step4core18G3DLightSetManagerFv:
 /* 8027607C 00271EBC  7C 08 02 A6 */	mflr r0
 /* 80276080 00271EC0  90 01 00 24 */	stw r0, 0x24(r1)
 /* 80276084 00271EC4  39 61 00 20 */	addi r11, r1, 0x20
-/* 80276088 00271EC8  4B D9 12 BD */	bl lbl_80007344
+/* 80276088 00271EC8  4B D9 12 BD */	bl _savegpr_29
 /* 8027608C 00271ECC  7C 7D 1B 78 */	mr r29, r3
 /* 80276090 00271ED0  7C 9E 23 78 */	mr r30, r4
 /* 80276094 00271ED4  83 E4 00 08 */	lwz r31, 0x8(r4)
@@ -46,7 +46,7 @@ nextLightSet__Q43scn4step4core18G3DLightSetManagerFv:
 /* 802760BC 00271EFC  38 A1 00 08 */	addi r5, r1, 0x8
 /* 802760C0 00271F00  4B FF FF 3D */	bl __ct__Q43scn4step4core11G3DLightSetFUlRCQ23g3d16LightSetAccessor
 /* 802760C4 00271F04  39 61 00 20 */	addi r11, r1, 0x20
-/* 802760C8 00271F08  4B D9 12 C9 */	bl lbl_80007390
+/* 802760C8 00271F08  4B D9 12 C9 */	bl _restgpr_29
 /* 802760CC 00271F0C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802760D0 00271F10  7C 08 03 A6 */	mtlr r0
 /* 802760D4 00271F14  38 21 00 20 */	addi r1, r1, 0x20

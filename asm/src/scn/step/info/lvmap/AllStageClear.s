@@ -7,7 +7,7 @@ __ct__Q53scn4step4info5lvmap13AllStageClearFRQ23mem10IAllocatorRCQ23lyt12PaneAcc
 /* 803B9938 003B5778  7C 08 02 A6 */	mflr r0
 /* 803B993C 003B577C  90 01 01 14 */	stw r0, 0x114(r1)
 /* 803B9940 003B5780  39 61 01 10 */	addi r11, r1, 0x110
-/* 803B9944 003B5784  4B C4 D9 FD */	bl lbl_80007340
+/* 803B9944 003B5784  4B C4 D9 FD */	bl _savegpr_28
 /* 803B9948 003B5788  7C 7C 1B 78 */	mr r28, r3
 /* 803B994C 003B578C  7C 9D 23 78 */	mr r29, r4
 /* 803B9950 003B5790  7C BE 2B 78 */	mr r30, r5
@@ -63,7 +63,7 @@ __ct__Q53scn4step4info5lvmap13AllStageClearFRQ23mem10IAllocatorRCQ23lyt12PaneAcc
 /* 803B9A18 003B5858  4B DB E8 09 */	bl __dt__Q23lyt12PaneAccessorFv
 /* 803B9A1C 003B585C  7F 83 E3 78 */	mr r3, r28
 /* 803B9A20 003B5860  39 61 01 10 */	addi r11, r1, 0x110
-/* 803B9A24 003B5864  4B C4 D9 69 */	bl lbl_8000738C
+/* 803B9A24 003B5864  4B C4 D9 69 */	bl _restgpr_28
 /* 803B9A28 003B5868  80 01 01 14 */	lwz r0, 0x114(r1)
 /* 803B9A2C 003B586C  7C 08 03 A6 */	mtlr r0
 /* 803B9A30 003B5870  38 21 01 10 */	addi r1, r1, 0x110
@@ -74,7 +74,7 @@ appear__Q53scn4step4info5lvmap13AllStageClearFQ33hel4math7Vector3:
 /* 803B9A3C 003B587C  7C 08 02 A6 */	mflr r0
 /* 803B9A40 003B5880  90 01 00 B4 */	stw r0, 0xb4(r1)
 /* 803B9A44 003B5884  39 61 00 B0 */	addi r11, r1, 0xb0
-/* 803B9A48 003B5888  4B C4 D8 FD */	bl lbl_80007344
+/* 803B9A48 003B5888  4B C4 D8 FD */	bl _savegpr_29
 /* 803B9A4C 003B588C  7C 7D 1B 78 */	mr r29, r3
 /* 803B9A50 003B5890  7C 9E 23 78 */	mr r30, r4
 /* 803B9A54 003B5894  3C 60 80 49 */	lis r3, "@53621"@ha
@@ -158,7 +158,7 @@ appear__Q53scn4step4info5lvmap13AllStageClearFQ33hel4math7Vector3:
 /* 803B9B8C 003B59CC  38 00 00 01 */	li r0, 0x1
 /* 803B9B90 003B59D0  90 1D 04 2C */	stw r0, 0x42c(r29)
 /* 803B9B94 003B59D4  39 61 00 B0 */	addi r11, r1, 0xb0
-/* 803B9B98 003B59D8  4B C4 D7 F9 */	bl lbl_80007390
+/* 803B9B98 003B59D8  4B C4 D7 F9 */	bl _restgpr_29
 /* 803B9B9C 003B59DC  80 01 00 B4 */	lwz r0, 0xb4(r1)
 /* 803B9BA0 003B59E0  7C 08 03 A6 */	mtlr r0
 /* 803B9BA4 003B59E4  38 21 00 B0 */	addi r1, r1, 0xb0

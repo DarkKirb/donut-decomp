@@ -76,7 +76,7 @@ procMove__Q53scn4step4boss9moundeath16StateMoveForwardFv:
 /* 80255ED8 00251D18  DB E1 00 40 */	stfd f31, 0x40(r1)
 /* 80255EDC 00251D1C  F3 E1 00 48 */	psq_st f31, 0x48(r1), 0, qr0
 /* 80255EE0 00251D20  39 61 00 40 */	addi r11, r1, 0x40
-/* 80255EE4 00251D24  4B DB 14 61 */	bl lbl_80007344
+/* 80255EE4 00251D24  4B DB 14 61 */	bl _savegpr_29
 /* 80255EE8 00251D28  7C 7D 1B 78 */	mr r29, r3
 /* 80255EEC 00251D2C  4B EA A8 F5 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 80255EF0 00251D30  4B FD 70 21 */	bl param__Q43scn4step4boss4BossCFv
@@ -148,7 +148,7 @@ procMove__Q53scn4step4boss9moundeath16StateMoveForwardFv:
 /* 80255FF8 00251E38  13 E1 00 0C */	psq_lx f31, r1, r0, 0, qr0
 /* 80255FFC 00251E3C  CB E1 00 40 */	lfd f31, 0x40(r1)
 /* 80256000 00251E40  39 61 00 40 */	addi r11, r1, 0x40
-/* 80256004 00251E44  4B DB 13 8D */	bl lbl_80007390
+/* 80256004 00251E44  4B DB 13 8D */	bl _restgpr_29
 /* 80256008 00251E48  80 01 00 54 */	lwz r0, 0x54(r1)
 /* 8025600C 00251E4C  7C 08 03 A6 */	mtlr r0
 /* 80256010 00251E50  38 21 00 50 */	addi r1, r1, 0x50

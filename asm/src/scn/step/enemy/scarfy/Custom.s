@@ -145,7 +145,7 @@ onVacuumResist__Q53scn4step5enemy6scarfy6CustomFv:
 /* 802D9C78 002D5AB8  7C 08 02 A6 */	mflr r0
 /* 802D9C7C 002D5ABC  90 01 00 24 */	stw r0, 0x24(r1)
 /* 802D9C80 002D5AC0  39 61 00 20 */	addi r11, r1, 0x20
-/* 802D9C84 002D5AC4  4B D2 D6 C1 */	bl lbl_80007344
+/* 802D9C84 002D5AC4  4B D2 D6 C1 */	bl _savegpr_29
 /* 802D9C88 002D5AC8  7C 7D 1B 78 */	mr r29, r3
 /* 802D9C8C 002D5ACC  4B E2 6B 55 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 802D9C90 002D5AD0  4B FA E4 7D */	bl hitPoint__Q43scn4step5enemy5EnemyFv
@@ -195,7 +195,7 @@ lbl_802D9D24:
 .global lbl_802D9D28
 lbl_802D9D28:
 /* 802D9D28 002D5B68  39 61 00 20 */	addi r11, r1, 0x20
-/* 802D9D2C 002D5B6C  4B D2 D6 65 */	bl lbl_80007390
+/* 802D9D2C 002D5B6C  4B D2 D6 65 */	bl _restgpr_29
 /* 802D9D30 002D5B70  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802D9D34 002D5B74  7C 08 03 A6 */	mtlr r0
 /* 802D9D38 002D5B78  38 21 00 20 */	addi r1, r1, 0x20

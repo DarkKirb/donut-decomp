@@ -63,7 +63,7 @@ init__Q43scn4step5chara26MoveAlgorithmVacuumReceiveFRCQ33hel4math7Vector2RCQ33he
 /* 802719A4 0026D7E4  90 01 00 24 */	stw r0, 0x24(r1)
 /* 802719A8 0026D7E8  DB E1 00 18 */	stfd f31, 0x18(r1)
 /* 802719AC 0026D7EC  39 61 00 18 */	addi r11, r1, 0x18
-/* 802719B0 0026D7F0  4B D9 59 91 */	bl lbl_80007340
+/* 802719B0 0026D7F0  4B D9 59 91 */	bl _savegpr_28
 /* 802719B4 0026D7F4  7C 7C 1B 78 */	mr r28, r3
 /* 802719B8 0026D7F8  7C 9D 23 78 */	mr r29, r4
 /* 802719BC 0026D7FC  7C BE 2B 78 */	mr r30, r5
@@ -83,7 +83,7 @@ init__Q43scn4step5chara26MoveAlgorithmVacuumReceiveFRCQ33hel4math7Vector2RCQ33he
 /* 802719F4 0026D834  98 1C 00 00 */	stb r0, 0x0(r28)
 /* 802719F8 0026D838  CB E1 00 18 */	lfd f31, 0x18(r1)
 /* 802719FC 0026D83C  39 61 00 18 */	addi r11, r1, 0x18
-/* 80271A00 0026D840  4B D9 59 8D */	bl lbl_8000738C
+/* 80271A00 0026D840  4B D9 59 8D */	bl _restgpr_28
 /* 80271A04 0026D844  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80271A08 0026D848  7C 08 03 A6 */	mtlr r0
 /* 80271A0C 0026D84C  38 21 00 20 */	addi r1, r1, 0x20

@@ -7,7 +7,7 @@ Create__Q53scn4step5enemy10stareffect9ModelDescFv:
 /* 802E7E88 002E3CC8  7C 08 02 A6 */	mflr r0
 /* 802E7E8C 002E3CCC  90 01 00 34 */	stw r0, 0x34(r1)
 /* 802E7E90 002E3CD0  39 61 00 30 */	addi r11, r1, 0x30
-/* 802E7E94 002E3CD4  4B D1 F4 B1 */	bl lbl_80007344
+/* 802E7E94 002E3CD4  4B D1 F4 B1 */	bl _savegpr_29
 /* 802E7E98 002E3CD8  83 ED F7 58 */	lwz r31, "T_ANIM_ENTRIES__Q53scn4step5enemy10stareffect23@unnamed@ModelDesc_cpp@"@sda21(r13)
 /* 802E7E9C 002E3CDC  3C 60 80 48 */	lis r3, "@50198_8047D310"@ha
 /* 802E7EA0 002E3CE0  3B A3 D3 10 */	addi r29, r3, "@50198_8047D310"@l
@@ -44,7 +44,7 @@ lbl_802E7ED0:
 /* 802E7F14 002E3D54  4B FA 2E C9 */	bl Set__Q43scn4step5enemy13ModelDescUtilFRQ43scn4step5chara9ModelDescRQ24gobj8AnimDescRQ24gobj10ScriptDescPCcPCcUlPPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry
 /* 802E7F18 002E3D58  38 7F 1F 00 */	addi r3, r31, 0x1f00
 /* 802E7F1C 002E3D5C  39 61 00 30 */	addi r11, r1, 0x30
-/* 802E7F20 002E3D60  4B D1 F4 71 */	bl lbl_80007390
+/* 802E7F20 002E3D60  4B D1 F4 71 */	bl _restgpr_29
 /* 802E7F24 002E3D64  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 802E7F28 002E3D68  7C 08 03 A6 */	mtlr r0
 /* 802E7F2C 002E3D6C  38 21 00 30 */	addi r1, r1, 0x30

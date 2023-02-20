@@ -23,7 +23,7 @@ add__Q25ocoll19AttackResultGimmickFRCQ35ocoll19AttackResultGimmick5Datum:
 /* 801D5154 001D0F94  7C 08 02 A6 */	mflr r0
 /* 801D5158 001D0F98  90 01 00 24 */	stw r0, 0x24(r1)
 /* 801D515C 001D0F9C  39 61 00 20 */	addi r11, r1, 0x20
-/* 801D5160 001D0FA0  4B E3 21 E5 */	bl lbl_80007344
+/* 801D5160 001D0FA0  4B E3 21 E5 */	bl _savegpr_29
 /* 801D5164 001D0FA4  7C 7D 1B 78 */	mr r29, r3
 /* 801D5168 001D0FA8  7C 9E 23 78 */	mr r30, r4
 /* 801D516C 001D0FAC  80 03 00 00 */	lwz r0, 0x0(r3)
@@ -47,7 +47,7 @@ add__Q25ocoll19AttackResultGimmickFRCQ35ocoll19AttackResultGimmick5Datum:
 .global lbl_801D51B4
 lbl_801D51B4:
 /* 801D51B4 001D0FF4  39 61 00 20 */	addi r11, r1, 0x20
-/* 801D51B8 001D0FF8  4B E3 21 D9 */	bl lbl_80007390
+/* 801D51B8 001D0FF8  4B E3 21 D9 */	bl _restgpr_29
 /* 801D51BC 001D0FFC  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 801D51C0 001D1000  7C 08 03 A6 */	mtlr r0
 /* 801D51C4 001D1004  38 21 00 20 */	addi r1, r1, 0x20

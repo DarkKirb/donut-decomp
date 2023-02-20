@@ -25,7 +25,7 @@ onStart__Q53scn4step5enemy5rocky24BrainCreditFallToGoodbyeFv:
 /* 802D3650 002CF490  7C 08 02 A6 */	mflr r0
 /* 802D3654 002CF494  90 01 00 24 */	stw r0, 0x24(r1)
 /* 802D3658 002CF498  39 61 00 20 */	addi r11, r1, 0x20
-/* 802D365C 002CF49C  4B D3 3C E9 */	bl lbl_80007344
+/* 802D365C 002CF49C  4B D3 3C E9 */	bl _savegpr_29
 /* 802D3660 002CF4A0  7C 7D 1B 78 */	mr r29, r3
 /* 802D3664 002CF4A4  4B E2 D1 7D */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 802D3668 002CF4A8  4B FB 4B 2D */	bl custom__Q43scn4step5enemy5EnemyFv
@@ -92,7 +92,7 @@ lbl_802D3724:
 /* 802D3724 002CF564  90 9F 00 0C */	stw r4, 0xc(r31)
 /* 802D3728 002CF568  38 60 00 01 */	li r3, 0x1
 /* 802D372C 002CF56C  39 61 00 20 */	addi r11, r1, 0x20
-/* 802D3730 002CF570  4B D3 3C 61 */	bl lbl_80007390
+/* 802D3730 002CF570  4B D3 3C 61 */	bl _restgpr_29
 /* 802D3734 002CF574  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802D3738 002CF578  7C 08 03 A6 */	mtlr r0
 /* 802D373C 002CF57C  38 21 00 20 */	addi r1, r1, 0x20

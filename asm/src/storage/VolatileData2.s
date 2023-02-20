@@ -69,7 +69,7 @@ addIgnoreObj__Q37storage13VolatileData213StepStageDataFlRCQ33hel4math4Vec2:
 /* 80405260 004010A0  7C 08 02 A6 */	mflr r0
 /* 80405264 004010A4  90 01 00 24 */	stw r0, 0x24(r1)
 /* 80405268 004010A8  39 61 00 20 */	addi r11, r1, 0x20
-/* 8040526C 004010AC  4B C0 20 D9 */	bl lbl_80007344
+/* 8040526C 004010AC  4B C0 20 D9 */	bl _savegpr_29
 /* 80405270 004010B0  7C 7D 1B 78 */	mr r29, r3
 /* 80405274 004010B4  7C 9E 23 78 */	mr r30, r4
 /* 80405278 004010B8  7C BF 2B 78 */	mr r31, r5
@@ -95,7 +95,7 @@ addIgnoreObj__Q37storage13VolatileData213StepStageDataFlRCQ33hel4math4Vec2:
 .global lbl_804052C8
 lbl_804052C8:
 /* 804052C8 00401108  39 61 00 20 */	addi r11, r1, 0x20
-/* 804052CC 0040110C  4B C0 20 C5 */	bl lbl_80007390
+/* 804052CC 0040110C  4B C0 20 C5 */	bl _restgpr_29
 /* 804052D0 00401110  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 804052D4 00401114  7C 08 03 A6 */	mtlr r0
 /* 804052D8 00401118  38 21 00 20 */	addi r1, r1, 0x20

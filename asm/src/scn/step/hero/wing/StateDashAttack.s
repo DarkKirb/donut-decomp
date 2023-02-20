@@ -7,7 +7,7 @@ TryToChangeState__Q53scn4step4hero4wing15StateDashAttackFPQ43scn4step4hero4Hero:
 /* 80397254 00393094  7C 08 02 A6 */	mflr r0
 /* 80397258 00393098  90 01 00 24 */	stw r0, 0x24(r1)
 /* 8039725C 0039309C  39 61 00 20 */	addi r11, r1, 0x20
-/* 80397260 003930A0  4B C7 00 E5 */	bl lbl_80007344
+/* 80397260 003930A0  4B C7 00 E5 */	bl _savegpr_29
 /* 80397264 003930A4  7C 7D 1B 78 */	mr r29, r3
 /* 80397268 003930A8  4B FA 91 15 */	bl stateChecker__Q43scn4step4hero4HeroFv
 /* 8039726C 003930AC  88 03 00 08 */	lbz r0, 0x8(r3)
@@ -51,7 +51,7 @@ lbl_803972E8:
 .global lbl_803972EC
 lbl_803972EC:
 /* 803972EC 0039312C  39 61 00 20 */	addi r11, r1, 0x20
-/* 803972F0 00393130  4B C7 00 A1 */	bl lbl_80007390
+/* 803972F0 00393130  4B C7 00 A1 */	bl _restgpr_29
 /* 803972F4 00393134  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803972F8 00393138  7C 08 03 A6 */	mtlr r0
 /* 803972FC 0039313C  38 21 00 20 */	addi r1, r1, 0x20
@@ -116,7 +116,7 @@ __dt__Q53scn4step4hero4wing15StateDashAttackFv:
 /* 803973CC 0039320C  7C 08 02 A6 */	mflr r0
 /* 803973D0 00393210  90 01 00 24 */	stw r0, 0x24(r1)
 /* 803973D4 00393214  39 61 00 20 */	addi r11, r1, 0x20
-/* 803973D8 00393218  4B C6 FF 6D */	bl lbl_80007344
+/* 803973D8 00393218  4B C6 FF 6D */	bl _savegpr_29
 /* 803973DC 0039321C  7C 7D 1B 78 */	mr r29, r3
 /* 803973E0 00393220  7C 9E 23 78 */	mr r30, r4
 /* 803973E4 00393224  2C 03 00 00 */	cmpwi r3, 0x0
@@ -177,7 +177,7 @@ lbl_8039748C:
 lbl_803974AC:
 /* 803974AC 003932EC  7F A3 EB 78 */	mr r3, r29
 /* 803974B0 003932F0  39 61 00 20 */	addi r11, r1, 0x20
-/* 803974B4 003932F4  4B C6 FE DD */	bl lbl_80007390
+/* 803974B4 003932F4  4B C6 FE DD */	bl _restgpr_29
 /* 803974B8 003932F8  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803974BC 003932FC  7C 08 03 A6 */	mtlr r0
 /* 803974C0 00393300  38 21 00 20 */	addi r1, r1, 0x20
@@ -306,7 +306,7 @@ procMove__Q53scn4step4hero4wing15StateDashAttackFv:
 /* 8039766C 003934AC  7C 08 02 A6 */	mflr r0
 /* 80397670 003934B0  90 01 00 24 */	stw r0, 0x24(r1)
 /* 80397674 003934B4  39 61 00 20 */	addi r11, r1, 0x20
-/* 80397678 003934B8  4B C6 FC CD */	bl lbl_80007344
+/* 80397678 003934B8  4B C6 FC CD */	bl _savegpr_29
 /* 8039767C 003934BC  7C 7D 1B 78 */	mr r29, r3
 /* 80397680 003934C0  4B D6 91 61 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 80397684 003934C4  4B FA 8C 59 */	bl param__Q43scn4step4hero4HeroFv
@@ -329,7 +329,7 @@ lbl_803976A8:
 /* 803976B8 003934F8  38 BF 00 A4 */	addi r5, r31, 0xa4
 /* 803976BC 003934FC  4B E0 3E 6D */	bl airDecelFall__Q24gobj4MoveFRCQ24gobj14MoveParamDecelRCQ24gobj13MoveParamFall
 /* 803976C0 00393500  39 61 00 20 */	addi r11, r1, 0x20
-/* 803976C4 00393504  4B C6 FC CD */	bl lbl_80007390
+/* 803976C4 00393504  4B C6 FC CD */	bl _restgpr_29
 /* 803976C8 00393508  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803976CC 0039350C  7C 08 03 A6 */	mtlr r0
 /* 803976D0 00393510  38 21 00 20 */	addi r1, r1, 0x20
@@ -525,7 +525,7 @@ tryToChangeCancelAttack__Q53scn4step4hero4wing15StateDashAttackFv:
 /* 80397960 003937A0  7C 08 02 A6 */	mflr r0
 /* 80397964 003937A4  90 01 00 24 */	stw r0, 0x24(r1)
 /* 80397968 003937A8  39 61 00 20 */	addi r11, r1, 0x20
-/* 8039796C 003937AC  4B C6 F9 D9 */	bl lbl_80007344
+/* 8039796C 003937AC  4B C6 F9 D9 */	bl _savegpr_29
 /* 80397970 003937B0  7C 7D 1B 78 */	mr r29, r3
 /* 80397974 003937B4  4B D6 8E 6D */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 80397978 003937B8  4B FA 89 D5 */	bl hid__Q43scn4step4hero4HeroFv
@@ -603,7 +603,7 @@ lbl_80397A6C:
 .global lbl_80397A70
 lbl_80397A70:
 /* 80397A70 003938B0  39 61 00 20 */	addi r11, r1, 0x20
-/* 80397A74 003938B4  4B C6 F9 1D */	bl lbl_80007390
+/* 80397A74 003938B4  4B C6 F9 1D */	bl _restgpr_29
 /* 80397A78 003938B8  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80397A7C 003938BC  7C 08 03 A6 */	mtlr r0
 /* 80397A80 003938C0  38 21 00 20 */	addi r1, r1, 0x20
@@ -614,7 +614,7 @@ reqEffect__Q53scn4step4hero4wing15StateDashAttackFv:
 /* 80397A8C 003938CC  7C 08 02 A6 */	mflr r0
 /* 80397A90 003938D0  90 01 00 84 */	stw r0, 0x84(r1)
 /* 80397A94 003938D4  39 61 00 80 */	addi r11, r1, 0x80
-/* 80397A98 003938D8  4B C6 F8 AD */	bl lbl_80007344
+/* 80397A98 003938D8  4B C6 F8 AD */	bl _savegpr_29
 /* 80397A9C 003938DC  7C 7D 1B 78 */	mr r29, r3
 /* 80397AA0 003938E0  38 61 00 3C */	addi r3, r1, 0x3c
 /* 80397AA4 003938E4  3C 80 80 54 */	lis r4, BASIS_Y__Q33hel4math7Vector3@ha
@@ -753,7 +753,7 @@ lbl_80397C64:
 /* 80397C80 00393AC0  38 E1 00 3C */	addi r7, r1, 0x3c
 /* 80397C84 00393AC4  4B ED 65 8D */	bl requestND__Q43scn4step5chara6EffectFQ43scn4step6effect4KindUlRCQ33hel4math10Direction3RCQ33hel4math7Vector3
 /* 80397C88 00393AC8  39 61 00 80 */	addi r11, r1, 0x80
-/* 80397C8C 00393ACC  4B C6 F7 05 */	bl lbl_80007390
+/* 80397C8C 00393ACC  4B C6 F7 05 */	bl _restgpr_29
 /* 80397C90 00393AD0  80 01 00 84 */	lwz r0, 0x84(r1)
 /* 80397C94 00393AD4  7C 08 03 A6 */	mtlr r0
 /* 80397C98 00393AD8  38 21 00 80 */	addi r1, r1, 0x80
@@ -764,7 +764,7 @@ changeStateWallHit__Q53scn4step4hero4wing15StateDashAttackFv:
 /* 80397CA4 00393AE4  7C 08 02 A6 */	mflr r0
 /* 80397CA8 00393AE8  90 01 00 24 */	stw r0, 0x24(r1)
 /* 80397CAC 00393AEC  39 61 00 20 */	addi r11, r1, 0x20
-/* 80397CB0 00393AF0  4B C6 F6 95 */	bl lbl_80007344
+/* 80397CB0 00393AF0  4B C6 F6 95 */	bl _savegpr_29
 /* 80397CB4 00393AF4  7C 7D 1B 78 */	mr r29, r3
 /* 80397CB8 00393AF8  4B D6 8B 29 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 80397CBC 00393AFC  4B FA 86 69 */	bl effect__Q43scn4step4hero4HeroFv
@@ -797,7 +797,7 @@ changeStateWallHit__Q53scn4step4hero4wing15StateDashAttackFv:
 lbl_80397D24:
 /* 80397D24 00393B64  93 BF 00 0C */	stw r29, 0xc(r31)
 /* 80397D28 00393B68  39 61 00 20 */	addi r11, r1, 0x20
-/* 80397D2C 00393B6C  4B C6 F6 65 */	bl lbl_80007390
+/* 80397D2C 00393B6C  4B C6 F6 65 */	bl _restgpr_29
 /* 80397D30 00393B70  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80397D34 00393B74  7C 08 03 A6 */	mtlr r0
 /* 80397D38 00393B78  38 21 00 20 */	addi r1, r1, 0x20

@@ -7,7 +7,7 @@ __ct__Q43scn4step4info15TotalScorePanelFRQ33scn4step9ComponentRQ23mem10IAllocato
 /* 803AFAE4 003AB924  7C 08 02 A6 */	mflr r0
 /* 803AFAE8 003AB928  90 01 01 34 */	stw r0, 0x134(r1)
 /* 803AFAEC 003AB92C  39 61 01 30 */	addi r11, r1, 0x130
-/* 803AFAF0 003AB930  4B C5 78 4D */	bl lbl_8000733C
+/* 803AFAF0 003AB930  4B C5 78 4D */	bl _savegpr_27
 /* 803AFAF4 003AB934  7C 7B 1B 78 */	mr r27, r3
 /* 803AFAF8 003AB938  7C 9C 23 78 */	mr r28, r4
 /* 803AFAFC 003AB93C  7C BF 2B 78 */	mr r31, r5
@@ -109,7 +109,7 @@ __ct__Q43scn4step4info15TotalScorePanelFRQ33scn4step9ComponentRQ23mem10IAllocato
 /* 803AFC7C 003ABABC  48 00 01 9D */	bl set__Q43scn4step4info15TotalScorePanelFQ27storage14ChallengeGradeibb
 /* 803AFC80 003ABAC0  7F 63 DB 78 */	mr r3, r27
 /* 803AFC84 003ABAC4  39 61 01 30 */	addi r11, r1, 0x130
-/* 803AFC88 003ABAC8  4B C5 77 01 */	bl lbl_80007388
+/* 803AFC88 003ABAC8  4B C5 77 01 */	bl _restgpr_27
 /* 803AFC8C 003ABACC  80 01 01 34 */	lwz r0, 0x134(r1)
 /* 803AFC90 003ABAD0  7C 08 03 A6 */	mtlr r0
 /* 803AFC94 003ABAD4  38 21 01 30 */	addi r1, r1, 0x130
@@ -231,7 +231,7 @@ set__Q43scn4step4info15TotalScorePanelFQ27storage14ChallengeGradeibb:
 /* 803AFE1C 003ABC5C  7C 08 02 A6 */	mflr r0
 /* 803AFE20 003ABC60  90 01 00 24 */	stw r0, 0x24(r1)
 /* 803AFE24 003ABC64  39 61 00 20 */	addi r11, r1, 0x20
-/* 803AFE28 003ABC68  4B C5 75 19 */	bl lbl_80007340
+/* 803AFE28 003ABC68  4B C5 75 19 */	bl _savegpr_28
 /* 803AFE2C 003ABC6C  7C 7F 1B 78 */	mr r31, r3
 /* 803AFE30 003ABC70  7C 9D 23 78 */	mr r29, r4
 /* 803AFE34 003ABC74  7C FC 3B 78 */	mr r28, r7
@@ -313,7 +313,7 @@ lbl_803AFF2C:
 .global lbl_803AFF34
 lbl_803AFF34:
 /* 803AFF34 003ABD74  39 61 00 20 */	addi r11, r1, 0x20
-/* 803AFF38 003ABD78  4B C5 74 55 */	bl lbl_8000738C
+/* 803AFF38 003ABD78  4B C5 74 55 */	bl _restgpr_28
 /* 803AFF3C 003ABD7C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803AFF40 003ABD80  7C 08 03 A6 */	mtlr r0
 /* 803AFF44 003ABD84  38 21 00 20 */	addi r1, r1, 0x20

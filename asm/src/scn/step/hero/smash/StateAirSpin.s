@@ -7,7 +7,7 @@ TryToChangeState__Q53scn4step4hero5smash12StateAirSpinFPQ43scn4step4hero4Hero:
 /* 803A0D1C 0039CB5C  7C 08 02 A6 */	mflr r0
 /* 803A0D20 0039CB60  90 01 00 24 */	stw r0, 0x24(r1)
 /* 803A0D24 0039CB64  39 61 00 20 */	addi r11, r1, 0x20
-/* 803A0D28 0039CB68  4B C6 66 1D */	bl lbl_80007344
+/* 803A0D28 0039CB68  4B C6 66 1D */	bl _savegpr_29
 /* 803A0D2C 0039CB6C  7C 7D 1B 78 */	mr r29, r3
 /* 803A0D30 0039CB70  4B F9 F5 CD */	bl footState__Q43scn4step4hero4HeroFv
 /* 803A0D34 0039CB74  4B DF 91 85 */	bl isAir__Q24gobj9FootStateCFv
@@ -44,7 +44,7 @@ lbl_803A0D9C:
 .global lbl_803A0DA0
 lbl_803A0DA0:
 /* 803A0DA0 0039CBE0  39 61 00 20 */	addi r11, r1, 0x20
-/* 803A0DA4 0039CBE4  4B C6 65 ED */	bl lbl_80007390
+/* 803A0DA4 0039CBE4  4B C6 65 ED */	bl _restgpr_29
 /* 803A0DA8 0039CBE8  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803A0DAC 0039CBEC  7C 08 03 A6 */	mtlr r0
 /* 803A0DB0 0039CBF0  38 21 00 20 */	addi r1, r1, 0x20
@@ -132,7 +132,7 @@ procAnim__Q53scn4step4hero5smash12StateAirSpinFv:
 /* 803A0ED0 0039CD10  7C 08 02 A6 */	mflr r0
 /* 803A0ED4 0039CD14  90 01 00 24 */	stw r0, 0x24(r1)
 /* 803A0ED8 0039CD18  39 61 00 20 */	addi r11, r1, 0x20
-/* 803A0EDC 0039CD1C  4B C6 64 69 */	bl lbl_80007344
+/* 803A0EDC 0039CD1C  4B C6 64 69 */	bl _savegpr_29
 /* 803A0EE0 0039CD20  7C 7D 1B 78 */	mr r29, r3
 /* 803A0EE4 0039CD24  4B D5 F8 FD */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 803A0EE8 0039CD28  4B FB 76 4D */	bl ChkLogoutForce__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Hero
@@ -170,7 +170,7 @@ lbl_803A0F5C:
 .global lbl_803A0F60
 lbl_803A0F60:
 /* 803A0F60 0039CDA0  39 61 00 20 */	addi r11, r1, 0x20
-/* 803A0F64 0039CDA4  4B C6 64 2D */	bl lbl_80007390
+/* 803A0F64 0039CDA4  4B C6 64 2D */	bl _restgpr_29
 /* 803A0F68 0039CDA8  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803A0F6C 0039CDAC  7C 08 03 A6 */	mtlr r0
 /* 803A0F70 0039CDB0  38 21 00 20 */	addi r1, r1, 0x20

@@ -9,7 +9,7 @@ __ct__Q53scn4step6weapon16fighterhadoushot9StateMainFPQ43scn4step6weapon6WeaponQ
 /* 803E6EAC 003E2CEC  DB E1 00 20 */	stfd f31, 0x20(r1)
 /* 803E6EB0 003E2CF0  F3 E1 00 28 */	psq_st f31, 0x28(r1), 0, qr0
 /* 803E6EB4 003E2CF4  39 61 00 20 */	addi r11, r1, 0x20
-/* 803E6EB8 003E2CF8  4B C2 04 8D */	bl lbl_80007344
+/* 803E6EB8 003E2CF8  4B C2 04 8D */	bl _savegpr_29
 /* 803E6EBC 003E2CFC  7C 7D 1B 78 */	mr r29, r3
 /* 803E6EC0 003E2D00  7C BE 2B 78 */	mr r30, r5
 /* 803E6EC4 003E2D04  4B FF 1A 7D */	bl __ct__Q43scn4step6weapon9StateBaseFPQ43scn4step6weapon6Weapon
@@ -114,7 +114,7 @@ lbl_803E6FC4:
 /* 803E7020 003E2E60  13 E1 00 0C */	psq_lx f31, r1, r0, 0, qr0
 /* 803E7024 003E2E64  CB E1 00 20 */	lfd f31, 0x20(r1)
 /* 803E7028 003E2E68  39 61 00 20 */	addi r11, r1, 0x20
-/* 803E702C 003E2E6C  4B C2 03 65 */	bl lbl_80007390
+/* 803E702C 003E2E6C  4B C2 03 65 */	bl _restgpr_29
 /* 803E7030 003E2E70  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 803E7034 003E2E74  7C 08 03 A6 */	mtlr r0
 /* 803E7038 003E2E78  38 21 00 30 */	addi r1, r1, 0x30
@@ -213,7 +213,7 @@ explode__Q53scn4step6weapon16fighterhadoushot9StateMainFv:
 /* 803E7150 003E2F90  7C 08 02 A6 */	mflr r0
 /* 803E7154 003E2F94  90 01 00 24 */	stw r0, 0x24(r1)
 /* 803E7158 003E2F98  39 61 00 20 */	addi r11, r1, 0x20
-/* 803E715C 003E2F9C  4B C2 01 E9 */	bl lbl_80007344
+/* 803E715C 003E2F9C  4B C2 01 E9 */	bl _savegpr_29
 /* 803E7160 003E2FA0  7C 7F 1B 78 */	mr r31, r3
 /* 803E7164 003E2FA4  83 A3 00 08 */	lwz r29, 0x8(r3)
 /* 803E7168 003E2FA8  38 1D FF FF */	addi r0, r29, -0x1
@@ -257,7 +257,7 @@ lbl_803E71EC:
 .global lbl_803E71F0
 lbl_803E71F0:
 /* 803E71F0 003E3030  39 61 00 20 */	addi r11, r1, 0x20
-/* 803E71F4 003E3034  4B C2 01 9D */	bl lbl_80007390
+/* 803E71F4 003E3034  4B C2 01 9D */	bl _restgpr_29
 /* 803E71F8 003E3038  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803E71FC 003E303C  7C 08 03 A6 */	mtlr r0
 /* 803E7200 003E3040  38 21 00 20 */	addi r1, r1, 0x20

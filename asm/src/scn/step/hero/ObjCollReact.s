@@ -9,7 +9,7 @@ procObjCollReact__Q43scn4step4hero12ObjCollReactFv:
 /* 8034F9C8 0034B808  DB E1 00 D0 */	stfd f31, 0xd0(r1)
 /* 8034F9CC 0034B80C  F3 E1 00 D8 */	psq_st f31, 0xd8(r1), 0, qr0
 /* 8034F9D0 0034B810  39 61 00 D0 */	addi r11, r1, 0xd0
-/* 8034F9D4 0034B814  4B CB 79 69 */	bl lbl_8000733C
+/* 8034F9D4 0034B814  4B CB 79 69 */	bl _savegpr_27
 /* 8034F9D8 0034B818  7C 7F 1B 78 */	mr r31, r3
 /* 8034F9DC 0034B81C  80 63 00 00 */	lwz r3, 0x0(r3)
 /* 8034F9E0 0034B820  48 00 09 55 */	bl "bodyColl__Q43scn4step4hero26@unnamed@ObjCollReact_cpp@FRQ43scn4step4hero4Hero"
@@ -700,7 +700,7 @@ lbl_80350310:
 /* 80350314 0034C154  13 E1 00 0C */	psq_lx f31, r1, r0, 0, qr0
 /* 80350318 0034C158  CB E1 00 D0 */	lfd f31, 0xd0(r1)
 /* 8035031C 0034C15C  39 61 00 D0 */	addi r11, r1, 0xd0
-/* 80350320 0034C160  4B CB 70 69 */	bl lbl_80007388
+/* 80350320 0034C160  4B CB 70 69 */	bl _restgpr_27
 /* 80350324 0034C164  80 01 00 E4 */	lwz r0, 0xe4(r1)
 /* 80350328 0034C168  7C 08 03 A6 */	mtlr r0
 /* 8035032C 0034C16C  38 21 00 E0 */	addi r1, r1, 0xe0
@@ -744,7 +744,7 @@ attackDenude__Q43scn4step5chara10DamageInfoCFv:
 /* 803503A4 0034C1E4  7C 08 02 A6 */	mflr r0
 /* 803503A8 0034C1E8  90 01 00 24 */	stw r0, 0x24(r1)
 /* 803503AC 0034C1EC  39 61 00 20 */	addi r11, r1, 0x20
-/* 803503B0 0034C1F0  4B CB 6F 95 */	bl lbl_80007344
+/* 803503B0 0034C1F0  4B CB 6F 95 */	bl _savegpr_29
 /* 803503B4 0034C1F4  7C 7D 1B 78 */	mr r29, r3
 /* 803503B8 0034C1F8  7C 9E 23 78 */	mr r30, r4
 /* 803503BC 0034C1FC  48 0B 5B 45 */	bl onSetNextStateFactory__Q24util16StateChangerBaseFv
@@ -762,7 +762,7 @@ attackDenude__Q43scn4step5chara10DamageInfoCFv:
 lbl_803503E8:
 /* 803503E8 0034C228  93 FD 00 0C */	stw r31, 0xc(r29)
 /* 803503EC 0034C22C  39 61 00 20 */	addi r11, r1, 0x20
-/* 803503F0 0034C230  4B CB 6F A1 */	bl lbl_80007390
+/* 803503F0 0034C230  4B CB 6F A1 */	bl _restgpr_29
 /* 803503F4 0034C234  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803503F8 0034C238  7C 08 03 A6 */	mtlr r0
 /* 803503FC 0034C23C  38 21 00 20 */	addi r1, r1, 0x20
@@ -773,7 +773,7 @@ lbl_803503E8:
 /* 80350408 0034C248  7C 08 02 A6 */	mflr r0
 /* 8035040C 0034C24C  90 01 00 24 */	stw r0, 0x24(r1)
 /* 80350410 0034C250  39 61 00 20 */	addi r11, r1, 0x20
-/* 80350414 0034C254  4B CB 6F 31 */	bl lbl_80007344
+/* 80350414 0034C254  4B CB 6F 31 */	bl _savegpr_29
 /* 80350418 0034C258  7C 7D 1B 78 */	mr r29, r3
 /* 8035041C 0034C25C  7C 9E 23 78 */	mr r30, r4
 /* 80350420 0034C260  48 0B 5A E1 */	bl onSetNextStateFactory__Q24util16StateChangerBaseFv
@@ -791,7 +791,7 @@ lbl_803503E8:
 lbl_8035044C:
 /* 8035044C 0034C28C  93 FD 00 0C */	stw r31, 0xc(r29)
 /* 80350450 0034C290  39 61 00 20 */	addi r11, r1, 0x20
-/* 80350454 0034C294  4B CB 6F 3D */	bl lbl_80007390
+/* 80350454 0034C294  4B CB 6F 3D */	bl _restgpr_29
 /* 80350458 0034C298  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8035045C 0034C29C  7C 08 03 A6 */	mtlr r0
 /* 80350460 0034C2A0  38 21 00 20 */	addi r1, r1, 0x20
@@ -802,7 +802,7 @@ requestHitEffectAndSE__Q43scn4step4hero12ObjCollReactFb:
 /* 8035046C 0034C2AC  7C 08 02 A6 */	mflr r0
 /* 80350470 0034C2B0  90 01 00 D4 */	stw r0, 0xd4(r1)
 /* 80350474 0034C2B4  39 61 00 D0 */	addi r11, r1, 0xd0
-/* 80350478 0034C2B8  4B CB 6E C5 */	bl lbl_8000733C
+/* 80350478 0034C2B8  4B CB 6E C5 */	bl _savegpr_27
 /* 8035047C 0034C2BC  7C 7B 1B 78 */	mr r27, r3
 /* 80350480 0034C2C0  7C 9C 23 78 */	mr r28, r4
 /* 80350484 0034C2C4  80 63 00 00 */	lwz r3, 0x0(r3)
@@ -919,7 +919,7 @@ lbl_803505C8:
 .global lbl_80350628
 lbl_80350628:
 /* 80350628 0034C468  39 61 00 D0 */	addi r11, r1, 0xd0
-/* 8035062C 0034C46C  4B CB 6D 5D */	bl lbl_80007388
+/* 8035062C 0034C46C  4B CB 6D 5D */	bl _restgpr_27
 /* 80350630 0034C470  80 01 00 D4 */	lwz r0, 0xd4(r1)
 /* 80350634 0034C474  7C 08 03 A6 */	mtlr r0
 /* 80350638 0034C478  38 21 00 D0 */	addi r1, r1, 0xd0

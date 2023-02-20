@@ -39,7 +39,7 @@ procMove__Q53scn4step5enemy10brontoburt12StateTakeOffFv:
 /* 802A0144 0029BF84  7C 08 02 A6 */	mflr r0
 /* 802A0148 0029BF88  90 01 00 44 */	stw r0, 0x44(r1)
 /* 802A014C 0029BF8C  39 61 00 40 */	addi r11, r1, 0x40
-/* 802A0150 0029BF90  4B D6 71 F5 */	bl lbl_80007344
+/* 802A0150 0029BF90  4B D6 71 F5 */	bl _savegpr_29
 /* 802A0154 0029BF94  7C 7D 1B 78 */	mr r29, r3
 /* 802A0158 0029BF98  4B E6 06 89 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 802A015C 0029BF9C  4B FE 7F 29 */	bl param__Q43scn4step5enemy5EnemyCFv
@@ -157,7 +157,7 @@ lbl_802A02F0:
 .global lbl_802A02F4
 lbl_802A02F4:
 /* 802A02F4 0029C134  39 61 00 40 */	addi r11, r1, 0x40
-/* 802A02F8 0029C138  4B D6 70 99 */	bl lbl_80007390
+/* 802A02F8 0029C138  4B D6 70 99 */	bl _restgpr_29
 /* 802A02FC 0029C13C  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 802A0300 0029C140  7C 08 03 A6 */	mtlr r0
 /* 802A0304 0029C144  38 21 00 40 */	addi r1, r1, 0x40

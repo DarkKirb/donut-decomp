@@ -148,7 +148,7 @@ procAnim__Q53scn4step4hero8captured25StateCapturedWhispyVacuumFv:
 /* 80384BBC 003809FC  7C 08 02 A6 */	mflr r0
 /* 80384BC0 00380A00  90 01 00 24 */	stw r0, 0x24(r1)
 /* 80384BC4 00380A04  39 61 00 20 */	addi r11, r1, 0x20
-/* 80384BC8 00380A08  4B C8 27 7D */	bl lbl_80007344
+/* 80384BC8 00380A08  4B C8 27 7D */	bl _savegpr_29
 /* 80384BCC 00380A0C  7C 7D 1B 78 */	mr r29, r3
 /* 80384BD0 00380A10  38 63 00 08 */	addi r3, r3, 0x8
 /* 80384BD4 00380A14  4B EE CE C1 */	bl isEnd__Q43scn4step5chara26MoveAlgorithmVacuumReceiveCFv
@@ -191,7 +191,7 @@ lbl_80384C50:
 .global lbl_80384C58
 lbl_80384C58:
 /* 80384C58 00380A98  39 61 00 20 */	addi r11, r1, 0x20
-/* 80384C5C 00380A9C  4B C8 27 35 */	bl lbl_80007390
+/* 80384C5C 00380A9C  4B C8 27 35 */	bl _restgpr_29
 /* 80384C60 00380AA0  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80384C64 00380AA4  7C 08 03 A6 */	mtlr r0
 /* 80384C68 00380AA8  38 21 00 20 */	addi r1, r1, 0x20

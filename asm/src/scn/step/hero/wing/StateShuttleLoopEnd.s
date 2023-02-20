@@ -136,7 +136,7 @@ procMove__Q53scn4step4hero4wing19StateShuttleLoopEndFv:
 /* 80399EE4 00395D24  7C 08 02 A6 */	mflr r0
 /* 80399EE8 00395D28  90 01 00 24 */	stw r0, 0x24(r1)
 /* 80399EEC 00395D2C  39 61 00 20 */	addi r11, r1, 0x20
-/* 80399EF0 00395D30  4B C6 D4 51 */	bl lbl_80007340
+/* 80399EF0 00395D30  4B C6 D4 51 */	bl _savegpr_28
 /* 80399EF4 00395D34  7C 7C 1B 78 */	mr r28, r3
 /* 80399EF8 00395D38  4B D6 68 E9 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 80399EFC 00395D3C  4B FA 64 01 */	bl footState__Q43scn4step4hero4HeroFv
@@ -181,7 +181,7 @@ lbl_80399F38:
 .global lbl_80399F90
 lbl_80399F90:
 /* 80399F90 00395DD0  39 61 00 20 */	addi r11, r1, 0x20
-/* 80399F94 00395DD4  4B C6 D3 F9 */	bl lbl_8000738C
+/* 80399F94 00395DD4  4B C6 D3 F9 */	bl _restgpr_28
 /* 80399F98 00395DD8  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80399F9C 00395DDC  7C 08 03 A6 */	mtlr r0
 /* 80399FA0 00395DE0  38 21 00 20 */	addi r1, r1, 0x20

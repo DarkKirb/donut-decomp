@@ -69,7 +69,7 @@ setup__Q53scn4step4hero5sword5SwordFv:
 /* 80389D90 00385BD0  7C 08 02 A6 */	mflr r0
 /* 80389D94 00385BD4  90 01 00 24 */	stw r0, 0x24(r1)
 /* 80389D98 00385BD8  39 61 00 20 */	addi r11, r1, 0x20
-/* 80389D9C 00385BDC  4B C7 D5 A9 */	bl lbl_80007344
+/* 80389D9C 00385BDC  4B C7 D5 A9 */	bl _savegpr_29
 /* 80389DA0 00385BE0  7C 7D 1B 78 */	mr r29, r3
 /* 80389DA4 00385BE4  80 63 00 04 */	lwz r3, 0x4(r3)
 /* 80389DA8 00385BE8  4B E8 24 91 */	bl sfxManager__Q33scn7history9ComponentFv
@@ -135,7 +135,7 @@ setup__Q53scn4step4hero5sword5SwordFv:
 /* 80389E98 00385CD8  38 00 00 01 */	li r0, 0x1
 /* 80389E9C 00385CDC  98 1D 00 0C */	stb r0, 0xc(r29)
 /* 80389EA0 00385CE0  39 61 00 20 */	addi r11, r1, 0x20
-/* 80389EA4 00385CE4  4B C7 D4 ED */	bl lbl_80007390
+/* 80389EA4 00385CE4  4B C7 D4 ED */	bl _restgpr_29
 /* 80389EA8 00385CE8  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80389EAC 00385CEC  7C 08 03 A6 */	mtlr r0
 /* 80389EB0 00385CF0  38 21 00 20 */	addi r1, r1, 0x20

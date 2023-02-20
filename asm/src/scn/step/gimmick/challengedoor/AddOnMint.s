@@ -677,7 +677,7 @@ Func__Q63scn4step7gimmick13challengedoor9AddOnMint33Mint_SetZoom_0$55585AddOnMin
 /* 803063E4 00302224  7C 08 02 A6 */	mflr r0
 /* 803063E8 00302228  90 01 00 24 */	stw r0, 0x24(r1)
 /* 803063EC 0030222C  39 61 00 20 */	addi r11, r1, 0x20
-/* 803063F0 00302230  4B D0 0F 55 */	bl lbl_80007344
+/* 803063F0 00302230  4B D0 0F 55 */	bl _savegpr_29
 /* 803063F4 00302234  7C 7D 1B 78 */	mr r29, r3
 /* 803063F8 00302238  4B E9 21 2D */	bl useRetVal__Q26mintvm13MintFuncProxyFv
 /* 803063FC 0030223C  7F A3 EB 78 */	mr r3, r29
@@ -699,7 +699,7 @@ Func__Q63scn4step7gimmick13challengedoor9AddOnMint33Mint_SetZoom_0$55585AddOnMin
 .global lbl_8030643C
 lbl_8030643C:
 /* 8030643C 0030227C  39 61 00 20 */	addi r11, r1, 0x20
-/* 80306440 00302280  4B D0 0F 51 */	bl lbl_80007390
+/* 80306440 00302280  4B D0 0F 51 */	bl _restgpr_29
 /* 80306444 00302284  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80306448 00302288  7C 08 03 A6 */	mtlr r0
 /* 8030644C 0030228C  38 21 00 20 */	addi r1, r1, 0x20

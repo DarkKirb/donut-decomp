@@ -7,7 +7,7 @@ __ct__Q23gfx10XFBManagerFRCQ23gfx9VISetting:
 /* 80197D54 00193B94  7C 08 02 A6 */	mflr r0
 /* 80197D58 00193B98  90 01 00 24 */	stw r0, 0x24(r1)
 /* 80197D5C 00193B9C  39 61 00 20 */	addi r11, r1, 0x20
-/* 80197D60 00193BA0  4B E6 F5 E5 */	bl lbl_80007344
+/* 80197D60 00193BA0  4B E6 F5 E5 */	bl _savegpr_29
 /* 80197D64 00193BA4  7C 7D 1B 78 */	mr r29, r3
 /* 80197D68 00193BA8  7C 9E 23 78 */	mr r30, r4
 /* 80197D6C 00193BAC  80 6D ED 00 */	lwz r3, "object___Q33hel6common32ExplicitSingleton<Q23mem6Memory>"@sda21(r13)
@@ -40,7 +40,7 @@ __ct__Q23gfx10XFBManagerFRCQ23gfx9VISetting:
 /* 80197DD8 00193C18  48 00 00 A1 */	bl changeDrawTargetXFB__Q23gfx10XFBManagerFv
 /* 80197DDC 00193C1C  7F A3 EB 78 */	mr r3, r29
 /* 80197DE0 00193C20  39 61 00 20 */	addi r11, r1, 0x20
-/* 80197DE4 00193C24  4B E6 F5 AD */	bl lbl_80007390
+/* 80197DE4 00193C24  4B E6 F5 AD */	bl _restgpr_29
 /* 80197DE8 00193C28  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80197DEC 00193C2C  7C 08 03 A6 */	mtlr r0
 /* 80197DF0 00193C30  38 21 00 20 */	addi r1, r1, 0x20

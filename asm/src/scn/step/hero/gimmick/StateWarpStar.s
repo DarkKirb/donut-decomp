@@ -20,7 +20,7 @@ TryToChangeState__Q53scn4step4hero7gimmick13StateWarpStarFPQ43scn4step4hero4Hero
 /* 8038218C 0037DFCC  7C 08 02 A6 */	mflr r0
 /* 80382190 0037DFD0  90 01 00 34 */	stw r0, 0x34(r1)
 /* 80382194 0037DFD4  39 61 00 30 */	addi r11, r1, 0x30
-/* 80382198 0037DFD8  4B C8 51 AD */	bl lbl_80007344
+/* 80382198 0037DFD8  4B C8 51 AD */	bl _savegpr_29
 /* 8038219C 0037DFDC  7C 7D 1B 78 */	mr r29, r3
 /* 803821A0 0037DFE0  4B FF FF BD */	bl "isArenaEntrance__Q53scn4step4hero7gimmick27@unnamed@StateWarpStar_cpp@FRQ43scn4step4hero4Hero"
 /* 803821A4 0037DFE4  2C 03 00 00 */	cmpwi r3, 0x0
@@ -102,7 +102,7 @@ lbl_803822A8:
 .global lbl_803822AC
 lbl_803822AC:
 /* 803822AC 0037E0EC  39 61 00 30 */	addi r11, r1, 0x30
-/* 803822B0 0037E0F0  4B C8 50 E1 */	bl lbl_80007390
+/* 803822B0 0037E0F0  4B C8 50 E1 */	bl _restgpr_29
 /* 803822B4 0037E0F4  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 803822B8 0037E0F8  7C 08 03 A6 */	mtlr r0
 /* 803822BC 0037E0FC  38 21 00 30 */	addi r1, r1, 0x30
@@ -128,7 +128,7 @@ __ct__Q53scn4step4hero7gimmick13StateWarpStarFPQ43scn4step4hero4Herobi:
 /* 803822FC 0037E13C  7C 08 02 A6 */	mflr r0
 /* 80382300 0037E140  90 01 00 44 */	stw r0, 0x44(r1)
 /* 80382304 0037E144  39 61 00 40 */	addi r11, r1, 0x40
-/* 80382308 0037E148  4B C8 50 3D */	bl lbl_80007344
+/* 80382308 0037E148  4B C8 50 3D */	bl _savegpr_29
 /* 8038230C 0037E14C  7C 7D 1B 78 */	mr r29, r3
 /* 80382310 0037E150  7C BE 2B 78 */	mr r30, r5
 /* 80382314 0037E154  7C DF 33 78 */	mr r31, r6
@@ -438,7 +438,7 @@ lbl_80382760:
 /* 80382764 0037E5A4  48 00 03 E1 */	bl constraint__Q53scn4step4hero7gimmick13StateWarpStarFv
 /* 80382768 0037E5A8  7F A3 EB 78 */	mr r3, r29
 /* 8038276C 0037E5AC  39 61 00 40 */	addi r11, r1, 0x40
-/* 80382770 0037E5B0  4B C8 4C 21 */	bl lbl_80007390
+/* 80382770 0037E5B0  4B C8 4C 21 */	bl _restgpr_29
 /* 80382774 0037E5B4  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 80382778 0037E5B8  7C 08 03 A6 */	mtlr r0
 /* 8038277C 0037E5BC  38 21 00 40 */	addi r1, r1, 0x40

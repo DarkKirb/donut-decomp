@@ -24,7 +24,7 @@ shot__Q53scn4step5enemy6owgulf6CustomFQ33hel4math7Vector3Q33hel4math7Vector3Q53s
 /* 802C9E38 002C5C78  7C 08 02 A6 */	mflr r0
 /* 802C9E3C 002C5C7C  90 01 00 84 */	stw r0, 0x84(r1)
 /* 802C9E40 002C5C80  39 61 00 80 */	addi r11, r1, 0x80
-/* 802C9E44 002C5C84  4B D3 D4 F9 */	bl lbl_8000733C
+/* 802C9E44 002C5C84  4B D3 D4 F9 */	bl _savegpr_27
 /* 802C9E48 002C5C88  7C 7B 1B 78 */	mr r27, r3
 /* 802C9E4C 002C5C8C  7C 9C 23 78 */	mr r28, r4
 /* 802C9E50 002C5C90  7C BD 2B 78 */	mr r29, r5
@@ -72,7 +72,7 @@ lbl_802C9EEC:
 /* 802C9EF0 002C5D30  38 80 FF FF */	li r4, -0x1
 /* 802C9EF4 002C5D34  4B F7 01 BD */	bl "__dt__Q24util39ObjRefHandle<Q43scn4step6weapon6Weapon>Fv"
 /* 802C9EF8 002C5D38  39 61 00 80 */	addi r11, r1, 0x80
-/* 802C9EFC 002C5D3C  4B D3 D4 8D */	bl lbl_80007388
+/* 802C9EFC 002C5D3C  4B D3 D4 8D */	bl _restgpr_27
 /* 802C9F00 002C5D40  80 01 00 84 */	lwz r0, 0x84(r1)
 /* 802C9F04 002C5D44  7C 08 03 A6 */	mtlr r0
 /* 802C9F08 002C5D48  38 21 00 80 */	addi r1, r1, 0x80

@@ -7,7 +7,7 @@ __ct__Q33scn14challengetitle7MahoroaFRQ33scn14challengetitle9ComponentRQ23g3d8St
 /* 801EE6FC 001EA53C  7C 08 02 A6 */	mflr r0
 /* 801EE700 001EA540  90 01 01 54 */	stw r0, 0x154(r1)
 /* 801EE704 001EA544  39 61 01 50 */	addi r11, r1, 0x150
-/* 801EE708 001EA548  4B E1 8C 29 */	bl lbl_80007330
+/* 801EE708 001EA548  4B E1 8C 29 */	bl _savegpr_24
 /* 801EE70C 001EA54C  7C 78 1B 78 */	mr r24, r3
 /* 801EE710 001EA550  7C 9B 23 78 */	mr r27, r4
 /* 801EE714 001EA554  7C B9 2B 78 */	mr r25, r5
@@ -111,7 +111,7 @@ __ct__Q33scn14challengetitle7MahoroaFRQ33scn14challengetitle9ComponentRQ23g3d8St
 /* 801EE89C 001EA6DC  48 21 70 E5 */	bl reset__Q24util12FrameCounterFUl
 /* 801EE8A0 001EA6E0  7F 03 C3 78 */	mr r3, r24
 /* 801EE8A4 001EA6E4  39 61 01 50 */	addi r11, r1, 0x150
-/* 801EE8A8 001EA6E8  4B E1 8A D5 */	bl lbl_8000737C
+/* 801EE8A8 001EA6E8  4B E1 8A D5 */	bl _restgpr_24
 /* 801EE8AC 001EA6EC  80 01 01 54 */	lwz r0, 0x154(r1)
 /* 801EE8B0 001EA6F0  7C 08 03 A6 */	mtlr r0
 /* 801EE8B4 001EA6F4  38 21 01 50 */	addi r1, r1, 0x150

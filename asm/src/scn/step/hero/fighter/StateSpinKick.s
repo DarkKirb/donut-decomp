@@ -193,7 +193,7 @@ procMove__Q53scn4step4hero7fighter13StateSpinKickFv:
 /* 8039F2D8 0039B118  DB E1 00 20 */	stfd f31, 0x20(r1)
 /* 8039F2DC 0039B11C  F3 E1 00 28 */	psq_st f31, 0x28(r1), 0, qr0
 /* 8039F2E0 0039B120  39 61 00 20 */	addi r11, r1, 0x20
-/* 8039F2E4 0039B124  4B C6 80 61 */	bl lbl_80007344
+/* 8039F2E4 0039B124  4B C6 80 61 */	bl _savegpr_29
 /* 8039F2E8 0039B128  7C 7D 1B 78 */	mr r29, r3
 /* 8039F2EC 0039B12C  4B D6 14 F5 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 8039F2F0 0039B130  4B FA 0F ED */	bl param__Q43scn4step4hero4HeroFv
@@ -287,7 +287,7 @@ lbl_8039F42C:
 /* 8039F430 0039B270  13 E1 00 0C */	psq_lx f31, r1, r0, 0, qr0
 /* 8039F434 0039B274  CB E1 00 20 */	lfd f31, 0x20(r1)
 /* 8039F438 0039B278  39 61 00 20 */	addi r11, r1, 0x20
-/* 8039F43C 0039B27C  4B C6 7F 55 */	bl lbl_80007390
+/* 8039F43C 0039B27C  4B C6 7F 55 */	bl _restgpr_29
 /* 8039F440 0039B280  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 8039F444 0039B284  7C 08 03 A6 */	mtlr r0
 /* 8039F448 0039B288  38 21 00 30 */	addi r1, r1, 0x30

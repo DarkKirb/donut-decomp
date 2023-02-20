@@ -102,7 +102,7 @@ addIgnoreObj__Q53scn4step5enemy9challenge4UtilFRQ43scn4step5enemy5Enemy:
 /* 80281C94 0027DAD4  7C 08 02 A6 */	mflr r0
 /* 80281C98 0027DAD8  90 01 00 24 */	stw r0, 0x24(r1)
 /* 80281C9C 0027DADC  39 61 00 20 */	addi r11, r1, 0x20
-/* 80281CA0 0027DAE0  4B D8 56 A5 */	bl lbl_80007344
+/* 80281CA0 0027DAE0  4B D8 56 A5 */	bl _savegpr_29
 /* 80281CA4 0027DAE4  7C 7D 1B 78 */	mr r29, r3
 /* 80281CA8 0027DAE8  4B DB 4E B9 */	bl GXGetTexObjUserData
 /* 80281CAC 0027DAEC  2C 03 00 73 */	cmpwi r3, 0x73
@@ -129,7 +129,7 @@ addIgnoreObj__Q53scn4step5enemy9challenge4UtilFRQ43scn4step5enemy5Enemy:
 .global lbl_80281D00
 lbl_80281D00:
 /* 80281D00 0027DB40  39 61 00 20 */	addi r11, r1, 0x20
-/* 80281D04 0027DB44  4B D8 56 8D */	bl lbl_80007390
+/* 80281D04 0027DB44  4B D8 56 8D */	bl _restgpr_29
 /* 80281D08 0027DB48  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80281D0C 0027DB4C  7C 08 03 A6 */	mtlr r0
 /* 80281D10 0027DB50  38 21 00 20 */	addi r1, r1, 0x20

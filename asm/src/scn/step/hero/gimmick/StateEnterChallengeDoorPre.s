@@ -7,7 +7,7 @@ TryToChangeState__Q53scn4step4hero7gimmick26StateEnterChallengeDoorPreFPQ43scn4s
 /* 8037C74C 0037858C  7C 08 02 A6 */	mflr r0
 /* 8037C750 00378590  90 01 00 54 */	stw r0, 0x54(r1)
 /* 8037C754 00378594  39 61 00 50 */	addi r11, r1, 0x50
-/* 8037C758 00378598  4B C8 AB ED */	bl lbl_80007344
+/* 8037C758 00378598  4B C8 AB ED */	bl _savegpr_29
 /* 8037C75C 0037859C  7C 7D 1B 78 */	mr r29, r3
 /* 8037C760 003785A0  4B FC 1F 11 */	bl isMainPlayer__Q43scn4step4hero4HeroCFv
 /* 8037C764 003785A4  2C 03 00 00 */	cmpwi r3, 0x0
@@ -111,7 +111,7 @@ lbl_8037C8B0:
 .global lbl_8037C8B4
 lbl_8037C8B4:
 /* 8037C8B4 003786F4  39 61 00 50 */	addi r11, r1, 0x50
-/* 8037C8B8 003786F8  4B C8 AA D9 */	bl lbl_80007390
+/* 8037C8B8 003786F8  4B C8 AA D9 */	bl _restgpr_29
 /* 8037C8BC 003786FC  80 01 00 54 */	lwz r0, 0x54(r1)
 /* 8037C8C0 00378700  7C 08 03 A6 */	mtlr r0
 /* 8037C8C4 00378704  38 21 00 50 */	addi r1, r1, 0x50
@@ -409,7 +409,7 @@ tryAppearExplain__Q53scn4step4hero7gimmick26StateEnterChallengeDoorPreFv:
 /* 8037CCD4 00378B14  7C 08 02 A6 */	mflr r0
 /* 8037CCD8 00378B18  90 01 00 74 */	stw r0, 0x74(r1)
 /* 8037CCDC 00378B1C  39 61 00 70 */	addi r11, r1, 0x70
-/* 8037CCE0 00378B20  4B C8 A6 61 */	bl lbl_80007340
+/* 8037CCE0 00378B20  4B C8 A6 61 */	bl _savegpr_28
 /* 8037CCE4 00378B24  7C 7F 1B 78 */	mr r31, r3
 /* 8037CCE8 00378B28  4B D8 3A F9 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 8037CCEC 00378B2C  4B FC 19 85 */	bl isMainPlayer__Q43scn4step4hero4HeroCFv
@@ -598,7 +598,7 @@ lbl_8037CF3C:
 .global lbl_8037CF40
 lbl_8037CF40:
 /* 8037CF40 00378D80  39 61 00 70 */	addi r11, r1, 0x70
-/* 8037CF44 00378D84  4B C8 A4 49 */	bl lbl_8000738C
+/* 8037CF44 00378D84  4B C8 A4 49 */	bl _restgpr_28
 /* 8037CF48 00378D88  80 01 00 74 */	lwz r0, 0x74(r1)
 /* 8037CF4C 00378D8C  7C 08 03 A6 */	mtlr r0
 /* 8037CF50 00378D90  38 21 00 70 */	addi r1, r1, 0x70

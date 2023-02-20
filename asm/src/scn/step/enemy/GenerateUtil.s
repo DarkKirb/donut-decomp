@@ -38,7 +38,7 @@ requestDeeParasol__Q53scn4step5enemy8generate12GenerateUtilFRQ43scn4step5enemy5E
 /* 8028868C 002844CC  7C 08 02 A6 */	mflr r0
 /* 80288690 002844D0  90 01 00 94 */	stw r0, 0x94(r1)
 /* 80288694 002844D4  39 61 00 90 */	addi r11, r1, 0x90
-/* 80288698 002844D8  4B D7 EC A9 */	bl lbl_80007340
+/* 80288698 002844D8  4B D7 EC A9 */	bl _savegpr_28
 /* 8028869C 002844DC  7C 7C 1B 78 */	mr r28, r3
 /* 802886A0 002844E0  4B FF F9 DD */	bl isDead__Q43scn4step5enemy5EnemyCFv
 /* 802886A4 002844E4  2C 03 00 00 */	cmpwi r3, 0x0
@@ -140,7 +140,7 @@ lbl_802887F8:
 .global lbl_80288804
 lbl_80288804:
 /* 80288804 00284644  39 61 00 90 */	addi r11, r1, 0x90
-/* 80288808 00284648  4B D7 EB 85 */	bl lbl_8000738C
+/* 80288808 00284648  4B D7 EB 85 */	bl _restgpr_28
 /* 8028880C 0028464C  80 01 00 94 */	lwz r0, 0x94(r1)
 /* 80288810 00284650  7C 08 03 A6 */	mtlr r0
 /* 80288814 00284654  38 21 00 90 */	addi r1, r1, 0x90
@@ -185,7 +185,7 @@ requestDooParasol__Q53scn4step5enemy8generate12GenerateUtilFRQ43scn4step5enemy5E
 /* 80288890 002846D0  7C 08 02 A6 */	mflr r0
 /* 80288894 002846D4  90 01 00 94 */	stw r0, 0x94(r1)
 /* 80288898 002846D8  39 61 00 90 */	addi r11, r1, 0x90
-/* 8028889C 002846DC  4B D7 EA A5 */	bl lbl_80007340
+/* 8028889C 002846DC  4B D7 EA A5 */	bl _savegpr_28
 /* 802888A0 002846E0  7C 7C 1B 78 */	mr r28, r3
 /* 802888A4 002846E4  4B FF F7 D9 */	bl isDead__Q43scn4step5enemy5EnemyCFv
 /* 802888A8 002846E8  2C 03 00 00 */	cmpwi r3, 0x0
@@ -287,7 +287,7 @@ lbl_802889FC:
 .global lbl_80288A08
 lbl_80288A08:
 /* 80288A08 00284848  39 61 00 90 */	addi r11, r1, 0x90
-/* 80288A0C 0028484C  4B D7 E9 81 */	bl lbl_8000738C
+/* 80288A0C 0028484C  4B D7 E9 81 */	bl _restgpr_28
 /* 80288A10 00284850  80 01 00 94 */	lwz r0, 0x94(r1)
 /* 80288A14 00284854  7C 08 03 A6 */	mtlr r0
 /* 80288A18 00284858  38 21 00 90 */	addi r1, r1, 0x90

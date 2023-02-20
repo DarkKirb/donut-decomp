@@ -7,7 +7,7 @@ __ct__Q53scn4step7gimmick10arrowboard10ArrowBoardFRCQ43scn4step3map18BinGmkGener
 /* 802FE3A8 002FA1E8  7C 08 02 A6 */	mflr r0
 /* 802FE3AC 002FA1EC  90 01 00 54 */	stw r0, 0x54(r1)
 /* 802FE3B0 002FA1F0  39 61 00 50 */	addi r11, r1, 0x50
-/* 802FE3B4 002FA1F4  4B D0 8F 91 */	bl lbl_80007344
+/* 802FE3B4 002FA1F4  4B D0 8F 91 */	bl _savegpr_29
 /* 802FE3B8 002FA1F8  7C 7D 1B 78 */	mr r29, r3
 /* 802FE3BC 002FA1FC  7C 9F 23 78 */	mr r31, r4
 /* 802FE3C0 002FA200  7C BE 2B 78 */	mr r30, r5
@@ -104,7 +104,7 @@ __ct__Q53scn4step7gimmick10arrowboard10ArrowBoardFRCQ43scn4step3map18BinGmkGener
 /* 802FE52C 002FA36C  4B FF 8F B1 */	bl add__Q43scn4step7gimmick4StopFRQ23snd11SERequestor
 /* 802FE530 002FA370  7F A3 EB 78 */	mr r3, r29
 /* 802FE534 002FA374  39 61 00 50 */	addi r11, r1, 0x50
-/* 802FE538 002FA378  4B D0 8E 59 */	bl lbl_80007390
+/* 802FE538 002FA378  4B D0 8E 59 */	bl _restgpr_29
 /* 802FE53C 002FA37C  80 01 00 54 */	lwz r0, 0x54(r1)
 /* 802FE540 002FA380  7C 08 03 A6 */	mtlr r0
 /* 802FE544 002FA384  38 21 00 50 */	addi r1, r1, 0x50

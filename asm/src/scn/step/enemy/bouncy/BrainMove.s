@@ -25,7 +25,7 @@ onStart__Q53scn4step5enemy6bouncy9BrainMoveFv:
 /* 8029CE14 00298C54  7C 08 02 A6 */	mflr r0
 /* 8029CE18 00298C58  90 01 00 24 */	stw r0, 0x24(r1)
 /* 8029CE1C 00298C5C  39 61 00 20 */	addi r11, r1, 0x20
-/* 8029CE20 00298C60  4B D6 A5 25 */	bl lbl_80007344
+/* 8029CE20 00298C60  4B D6 A5 25 */	bl _savegpr_29
 /* 8029CE24 00298C64  7C 7D 1B 78 */	mr r29, r3
 /* 8029CE28 00298C68  4B E6 39 B9 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 8029CE2C 00298C6C  7C 7E 1B 78 */	mr r30, r3
@@ -54,7 +54,7 @@ lbl_8029CE74:
 /* 8029CE80 00298CC0  4B FF 18 DD */	bl SetTargetByDirType__Q43scn4step5enemy7UtilityFRQ43scn4step5enemy5Enemy
 /* 8029CE84 00298CC4  38 60 00 01 */	li r3, 0x1
 /* 8029CE88 00298CC8  39 61 00 20 */	addi r11, r1, 0x20
-/* 8029CE8C 00298CCC  4B D6 A5 05 */	bl lbl_80007390
+/* 8029CE8C 00298CCC  4B D6 A5 05 */	bl _restgpr_29
 /* 8029CE90 00298CD0  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8029CE94 00298CD4  7C 08 03 A6 */	mtlr r0
 /* 8029CE98 00298CD8  38 21 00 20 */	addi r1, r1, 0x20

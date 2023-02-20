@@ -7,7 +7,7 @@ __ct__Q53scn4step4info5lvmap13ExplainButtonFRQ33scn4step9ComponentRCQ23lyt12Pane
 /* 803BBCBC 003B7AFC  7C 08 02 A6 */	mflr r0
 /* 803BBCC0 003B7B00  90 01 01 84 */	stw r0, 0x184(r1)
 /* 803BBCC4 003B7B04  39 61 01 80 */	addi r11, r1, 0x180
-/* 803BBCC8 003B7B08  4B C4 B6 79 */	bl lbl_80007340
+/* 803BBCC8 003B7B08  4B C4 B6 79 */	bl _savegpr_28
 /* 803BBCCC 003B7B0C  7C 7C 1B 78 */	mr r28, r3
 /* 803BBCD0 003B7B10  7C BD 2B 78 */	mr r29, r5
 /* 803BBCD4 003B7B14  7C DE 33 78 */	mr r30, r6
@@ -78,7 +78,7 @@ __ct__Q53scn4step4info5lvmap13ExplainButtonFRQ33scn4step9ComponentRCQ23lyt12Pane
 /* 803BBDD8 003B7C18  4B DF 15 49 */	bl updateMatrix__Q23lyt6LayoutFv
 /* 803BBDDC 003B7C1C  7F 83 E3 78 */	mr r3, r28
 /* 803BBDE0 003B7C20  39 61 01 80 */	addi r11, r1, 0x180
-/* 803BBDE4 003B7C24  4B C4 B5 A9 */	bl lbl_8000738C
+/* 803BBDE4 003B7C24  4B C4 B5 A9 */	bl _restgpr_28
 /* 803BBDE8 003B7C28  80 01 01 84 */	lwz r0, 0x184(r1)
 /* 803BBDEC 003B7C2C  7C 08 03 A6 */	mtlr r0
 /* 803BBDF0 003B7C30  38 21 01 80 */	addi r1, r1, 0x180
@@ -89,7 +89,7 @@ appear__Q53scn4step4info5lvmap13ExplainButtonFRCQ63scn4step4info5lvmap13ExplainB
 /* 803BBDFC 003B7C3C  7C 08 02 A6 */	mflr r0
 /* 803BBE00 003B7C40  90 01 00 E4 */	stw r0, 0xe4(r1)
 /* 803BBE04 003B7C44  39 61 00 E0 */	addi r11, r1, 0xe0
-/* 803BBE08 003B7C48  4B C4 B5 31 */	bl lbl_80007338
+/* 803BBE08 003B7C48  4B C4 B5 31 */	bl _savegpr_26
 /* 803BBE0C 003B7C4C  7C 7E 1B 78 */	mr r30, r3
 /* 803BBE10 003B7C50  7C 9F 23 78 */	mr r31, r4
 /* 803BBE14 003B7C54  3C A0 80 49 */	lis r5, "@51576_804911C0"@ha
@@ -245,7 +245,7 @@ lbl_803BC024:
 /* 803BC02C 003B7E6C  38 00 00 00 */	li r0, 0x0
 /* 803BC030 003B7E70  90 1E 05 7C */	stw r0, 0x57c(r30)
 /* 803BC034 003B7E74  39 61 00 E0 */	addi r11, r1, 0xe0
-/* 803BC038 003B7E78  4B C4 B3 4D */	bl lbl_80007384
+/* 803BC038 003B7E78  4B C4 B3 4D */	bl _restgpr_26
 /* 803BC03C 003B7E7C  80 01 00 E4 */	lwz r0, 0xe4(r1)
 /* 803BC040 003B7E80  7C 08 03 A6 */	mtlr r0
 /* 803BC044 003B7E84  38 21 00 E0 */	addi r1, r1, 0xe0

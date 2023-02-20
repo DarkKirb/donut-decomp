@@ -21,7 +21,7 @@ add__Q35mcoll6detail18CollideTargetReposFRCQ35mcoll6detail13CollideTarget:
 /* 801B6D3C 001B2B7C  7C 08 02 A6 */	mflr r0
 /* 801B6D40 001B2B80  90 01 00 24 */	stw r0, 0x24(r1)
 /* 801B6D44 001B2B84  39 61 00 20 */	addi r11, r1, 0x20
-/* 801B6D48 001B2B88  4B E5 05 FD */	bl lbl_80007344
+/* 801B6D48 001B2B88  4B E5 05 FD */	bl _savegpr_29
 /* 801B6D4C 001B2B8C  7C 9D 23 78 */	mr r29, r4
 /* 801B6D50 001B2B90  80 03 00 04 */	lwz r0, 0x4(r3)
 /* 801B6D54 001B2B94  28 00 00 40 */	cmplwi r0, 0x40
@@ -65,7 +65,7 @@ lbl_801B6DC4:
 .global lbl_801B6DE4
 lbl_801B6DE4:
 /* 801B6DE4 001B2C24  39 61 00 20 */	addi r11, r1, 0x20
-/* 801B6DE8 001B2C28  4B E5 05 A9 */	bl lbl_80007390
+/* 801B6DE8 001B2C28  4B E5 05 A9 */	bl _restgpr_29
 /* 801B6DEC 001B2C2C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 801B6DF0 001B2C30  7C 08 03 A6 */	mtlr r0
 /* 801B6DF4 001B2C34  38 21 00 20 */	addi r1, r1, 0x20

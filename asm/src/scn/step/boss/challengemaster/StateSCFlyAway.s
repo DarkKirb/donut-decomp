@@ -7,7 +7,7 @@ TryToChangeState__Q53scn4step4boss15challengemaster14StateSCFlyAwayFPQ43scn4step
 /* 80241A3C 0023D87C  7C 08 02 A6 */	mflr r0
 /* 80241A40 0023D880  90 01 00 24 */	stw r0, 0x24(r1)
 /* 80241A44 0023D884  39 61 00 20 */	addi r11, r1, 0x20
-/* 80241A48 0023D888  4B DC 58 FD */	bl lbl_80007344
+/* 80241A48 0023D888  4B DC 58 FD */	bl _savegpr_29
 /* 80241A4C 0023D88C  7C 7D 1B 78 */	mr r29, r3
 /* 80241A50 0023D890  4B E3 3C E1 */	bl GKI_getfirst
 /* 80241A54 0023D894  4B FD F4 15 */	bl bossManager__Q33scn4step9ComponentFv
@@ -40,7 +40,7 @@ lbl_80241AAC:
 .global lbl_80241AB0
 lbl_80241AB0:
 /* 80241AB0 0023D8F0  39 61 00 20 */	addi r11, r1, 0x20
-/* 80241AB4 0023D8F4  4B DC 58 DD */	bl lbl_80007390
+/* 80241AB4 0023D8F4  4B DC 58 DD */	bl _restgpr_29
 /* 80241AB8 0023D8F8  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80241ABC 0023D8FC  7C 08 03 A6 */	mtlr r0
 /* 80241AC0 0023D900  38 21 00 20 */	addi r1, r1, 0x20
@@ -148,7 +148,7 @@ procAnim__Q53scn4step4boss15challengemaster14StateSCFlyAwayFv:
 /* 80241C30 0023DA70  7C 08 02 A6 */	mflr r0
 /* 80241C34 0023DA74  90 01 00 24 */	stw r0, 0x24(r1)
 /* 80241C38 0023DA78  39 61 00 20 */	addi r11, r1, 0x20
-/* 80241C3C 0023DA7C  4B DC 57 09 */	bl lbl_80007344
+/* 80241C3C 0023DA7C  4B DC 57 09 */	bl _savegpr_29
 /* 80241C40 0023DA80  7C 7D 1B 78 */	mr r29, r3
 /* 80241C44 0023DA84  4B EB EB 9D */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 80241C48 0023DA88  4B FE B2 F9 */	bl scriptTrigger__Q43scn4step4boss4BossFv
@@ -206,7 +206,7 @@ lbl_80241CFC:
 .global lbl_80241D00
 lbl_80241D00:
 /* 80241D00 0023DB40  39 61 00 20 */	addi r11, r1, 0x20
-/* 80241D04 0023DB44  4B DC 56 8D */	bl lbl_80007390
+/* 80241D04 0023DB44  4B DC 56 8D */	bl _restgpr_29
 /* 80241D08 0023DB48  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80241D0C 0023DB4C  7C 08 03 A6 */	mtlr r0
 /* 80241D10 0023DB50  38 21 00 20 */	addi r1, r1, 0x20
@@ -371,7 +371,7 @@ procFixPos__Q53scn4step4boss15challengemaster14StateSCFlyAwayFv:
 /* 80241F64 0023DDA4  DB E1 00 F0 */	stfd f31, 0xf0(r1)
 /* 80241F68 0023DDA8  F3 E1 00 F8 */	psq_st f31, 0xf8(r1), 0, qr0
 /* 80241F6C 0023DDAC  39 61 00 F0 */	addi r11, r1, 0xf0
-/* 80241F70 0023DDB0  4B DC 53 D5 */	bl lbl_80007344
+/* 80241F70 0023DDB0  4B DC 53 D5 */	bl _savegpr_29
 /* 80241F74 0023DDB4  7C 7F 1B 78 */	mr r31, r3
 /* 80241F78 0023DDB8  88 03 00 08 */	lbz r0, 0x8(r3)
 /* 80241F7C 0023DDBC  2C 00 00 00 */	cmpwi r0, 0x0
@@ -594,7 +594,7 @@ lbl_8024229C:
 /* 802422A0 0023E0E0  13 E1 00 0C */	psq_lx f31, r1, r0, 0, qr0
 /* 802422A4 0023E0E4  CB E1 00 F0 */	lfd f31, 0xf0(r1)
 /* 802422A8 0023E0E8  39 61 00 F0 */	addi r11, r1, 0xf0
-/* 802422AC 0023E0EC  4B DC 50 E5 */	bl lbl_80007390
+/* 802422AC 0023E0EC  4B DC 50 E5 */	bl _restgpr_29
 /* 802422B0 0023E0F0  80 01 01 04 */	lwz r0, 0x104(r1)
 /* 802422B4 0023E0F4  7C 08 03 A6 */	mtlr r0
 /* 802422B8 0023E0F8  38 21 01 00 */	addi r1, r1, 0x100

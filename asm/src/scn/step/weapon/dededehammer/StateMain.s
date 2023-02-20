@@ -7,7 +7,7 @@ __ct__Q53scn4step6weapon12dededehammer9StateMainFPQ43scn4step6weapon6Weapon:
 /* 803ECBD8 003E8A18  7C 08 02 A6 */	mflr r0
 /* 803ECBDC 003E8A1C  90 01 00 34 */	stw r0, 0x34(r1)
 /* 803ECBE0 003E8A20  39 61 00 30 */	addi r11, r1, 0x30
-/* 803ECBE4 003E8A24  4B C1 A7 5D */	bl lbl_80007340
+/* 803ECBE4 003E8A24  4B C1 A7 5D */	bl _savegpr_28
 /* 803ECBE8 003E8A28  7C 7C 1B 78 */	mr r28, r3
 /* 803ECBEC 003E8A2C  4B FE BD 55 */	bl __ct__Q43scn4step6weapon9StateBaseFPQ43scn4step6weapon6Weapon
 /* 803ECBF0 003E8A30  3C 60 80 49 */	lis r3, __vt__Q53scn4step6weapon12dededehammer9StateMain@ha
@@ -71,7 +71,7 @@ __ct__Q53scn4step6weapon12dededehammer9StateMainFPQ43scn4step6weapon6Weapon:
 /* 803ECCD8 003E8B18  4B FE E3 F1 */	bl setDarknessLightVisibility__Q43scn4step6weapon6WeaponFb
 /* 803ECCDC 003E8B1C  7F 83 E3 78 */	mr r3, r28
 /* 803ECCE0 003E8B20  39 61 00 30 */	addi r11, r1, 0x30
-/* 803ECCE4 003E8B24  4B C1 A6 A9 */	bl lbl_8000738C
+/* 803ECCE4 003E8B24  4B C1 A6 A9 */	bl _restgpr_28
 /* 803ECCE8 003E8B28  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 803ECCEC 003E8B2C  7C 08 03 A6 */	mtlr r0
 /* 803ECCF0 003E8B30  38 21 00 30 */	addi r1, r1, 0x30

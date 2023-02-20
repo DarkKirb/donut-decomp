@@ -178,7 +178,7 @@ procMove__Q53scn4step4boss9moundeath17StateTornadoChaseFv:
 /* 802581F4 00254034  7C 08 02 A6 */	mflr r0
 /* 802581F8 00254038  90 01 00 84 */	stw r0, 0x84(r1)
 /* 802581FC 0025403C  39 61 00 80 */	addi r11, r1, 0x80
-/* 80258200 00254040  4B DA F1 41 */	bl lbl_80007340
+/* 80258200 00254040  4B DA F1 41 */	bl _savegpr_28
 /* 80258204 00254044  7C 7C 1B 78 */	mr r28, r3
 /* 80258208 00254048  4B EA 85 D9 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 8025820C 0025404C  4B FD 4D 05 */	bl param__Q43scn4step4boss4BossCFv
@@ -305,7 +305,7 @@ lbl_802583B8:
 /* 802583C8 00254208  38 BD 01 60 */	addi r5, r29, 0x160
 /* 802583CC 0025420C  4B F4 30 09 */	bl accel__Q24gobj4MoveFRCQ33hel4math7Vector3RCQ24gobj14MoveParamAccel
 /* 802583D0 00254210  39 61 00 80 */	addi r11, r1, 0x80
-/* 802583D4 00254214  4B DA EF B9 */	bl lbl_8000738C
+/* 802583D4 00254214  4B DA EF B9 */	bl _restgpr_28
 /* 802583D8 00254218  80 01 00 84 */	lwz r0, 0x84(r1)
 /* 802583DC 0025421C  7C 08 03 A6 */	mtlr r0
 /* 802583E0 00254220  38 21 00 80 */	addi r1, r1, 0x80

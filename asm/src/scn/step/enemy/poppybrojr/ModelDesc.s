@@ -9,7 +9,7 @@ Create__Q53scn4step5enemy10poppybrojr9ModelDescFv:
 /* 802D1D34 002CDB74  DB E1 00 C0 */	stfd f31, 0xc0(r1)
 /* 802D1D38 002CDB78  F3 E1 00 C8 */	psq_st f31, 0xc8(r1), 0, qr0
 /* 802D1D3C 002CDB7C  39 61 00 C0 */	addi r11, r1, 0xc0
-/* 802D1D40 002CDB80  4B D3 56 01 */	bl lbl_80007340
+/* 802D1D40 002CDB80  4B D3 56 01 */	bl _savegpr_28
 /* 802D1D44 002CDB84  3C 60 80 48 */	lis r3, "@50129_8047A780"@ha
 /* 802D1D48 002CDB88  3B E3 A7 80 */	addi r31, r3, "@50129_8047A780"@l
 /* 802D1D4C 002CDB8C  3B DF 00 CC */	addi r30, r31, 0xcc
@@ -176,7 +176,7 @@ lbl_802D1F68:
 /* 802D1FA0 002CDDE0  13 E1 00 0C */	psq_lx f31, r1, r0, 0, qr0
 /* 802D1FA4 002CDDE4  CB E1 00 C0 */	lfd f31, 0xc0(r1)
 /* 802D1FA8 002CDDE8  39 61 00 C0 */	addi r11, r1, 0xc0
-/* 802D1FAC 002CDDEC  4B D3 53 E1 */	bl lbl_8000738C
+/* 802D1FAC 002CDDEC  4B D3 53 E1 */	bl _restgpr_28
 /* 802D1FB0 002CDDF0  80 01 00 D4 */	lwz r0, 0xd4(r1)
 /* 802D1FB4 002CDDF4  7C 08 03 A6 */	mtlr r0
 /* 802D1FB8 002CDDF8  38 21 00 D0 */	addi r1, r1, 0xd0

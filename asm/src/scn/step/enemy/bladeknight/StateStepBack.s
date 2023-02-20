@@ -138,7 +138,7 @@ procFixPos__Q53scn4step5enemy11bladeknight13StateStepBackFv:
 /* 80298228 00294068  7C 08 02 A6 */	mflr r0
 /* 8029822C 0029406C  90 01 00 54 */	stw r0, 0x54(r1)
 /* 80298230 00294070  39 61 00 50 */	addi r11, r1, 0x50
-/* 80298234 00294074  4B D6 F1 0D */	bl lbl_80007340
+/* 80298234 00294074  4B D6 F1 0D */	bl _savegpr_28
 /* 80298238 00294078  7C 7C 1B 78 */	mr r28, r3
 /* 8029823C 0029407C  4B E6 85 A5 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 80298240 00294080  4B FE FF 55 */	bl custom__Q43scn4step5enemy5EnemyFv
@@ -249,7 +249,7 @@ lbl_80298374:
 .global lbl_80298394
 lbl_80298394:
 /* 80298394 002941D4  39 61 00 50 */	addi r11, r1, 0x50
-/* 80298398 002941D8  4B D6 EF F5 */	bl lbl_8000738C
+/* 80298398 002941D8  4B D6 EF F5 */	bl _restgpr_28
 /* 8029839C 002941DC  80 01 00 54 */	lwz r0, 0x54(r1)
 /* 802983A0 002941E0  7C 08 03 A6 */	mtlr r0
 /* 802983A4 002941E4  38 21 00 50 */	addi r1, r1, 0x50

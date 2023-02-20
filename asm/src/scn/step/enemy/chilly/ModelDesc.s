@@ -7,7 +7,7 @@ CreateNormal__Q53scn4step5enemy6chilly9ModelDescFv:
 /* 802A62E8 002A2128  7C 08 02 A6 */	mflr r0
 /* 802A62EC 002A212C  90 01 00 34 */	stw r0, 0x34(r1)
 /* 802A62F0 002A2130  39 61 00 30 */	addi r11, r1, 0x30
-/* 802A62F4 002A2134  4B D6 10 51 */	bl lbl_80007344
+/* 802A62F4 002A2134  4B D6 10 51 */	bl _savegpr_29
 /* 802A62F8 002A2138  3B AD B4 D8 */	addi r29, r13, "@50213_805598F8"@sda21
 /* 802A62FC 002A213C  3C 60 80 47 */	lis r3, "@50214_804758D8"@ha
 /* 802A6300 002A2140  3B C3 58 D8 */	addi r30, r3, "@50214_804758D8"@l
@@ -44,7 +44,7 @@ lbl_802A6328:
 /* 802A6374 002A21B4  4B FE 4A 69 */	bl Set__Q43scn4step5enemy13ModelDescUtilFRQ43scn4step5chara9ModelDescRQ24gobj8AnimDescRQ24gobj10ScriptDescPCcPCcUlPPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry
 /* 802A6378 002A21B8  38 7F 02 18 */	addi r3, r31, 0x218
 /* 802A637C 002A21BC  39 61 00 30 */	addi r11, r1, 0x30
-/* 802A6380 002A21C0  4B D6 10 11 */	bl lbl_80007390
+/* 802A6380 002A21C0  4B D6 10 11 */	bl _restgpr_29
 /* 802A6384 002A21C4  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 802A6388 002A21C8  7C 08 03 A6 */	mtlr r0
 /* 802A638C 002A21CC  38 21 00 30 */	addi r1, r1, 0x30

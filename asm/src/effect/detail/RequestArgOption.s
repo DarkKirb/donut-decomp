@@ -28,7 +28,7 @@ CreatePD__Q36effect6detail16RequestArgOptionFRCQ33hel4math7Vector3RCQ33hel4math1
 /* 80186E18 00182C58  7C 08 02 A6 */	mflr r0
 /* 80186E1C 00182C5C  90 01 00 24 */	stw r0, 0x24(r1)
 /* 80186E20 00182C60  39 61 00 20 */	addi r11, r1, 0x20
-/* 80186E24 00182C64  4B E8 05 21 */	bl lbl_80007344
+/* 80186E24 00182C64  4B E8 05 21 */	bl _savegpr_29
 /* 80186E28 00182C68  7C 7D 1B 78 */	mr r29, r3
 /* 80186E2C 00182C6C  7C 9E 23 78 */	mr r30, r4
 /* 80186E30 00182C70  7C BF 2B 78 */	mr r31, r5
@@ -42,7 +42,7 @@ CreatePD__Q36effect6detail16RequestArgOptionFRCQ33hel4math7Vector3RCQ33hel4math1
 /* 80186E50 00182C90  7F E4 FB 78 */	mr r4, r31
 /* 80186E54 00182C94  4B FF B2 F1 */	bl __as__Q33hel4math10Direction3FRCQ33hel4math10Direction3
 /* 80186E58 00182C98  39 61 00 20 */	addi r11, r1, 0x20
-/* 80186E5C 00182C9C  4B E8 05 35 */	bl lbl_80007390
+/* 80186E5C 00182C9C  4B E8 05 35 */	bl _restgpr_29
 /* 80186E60 00182CA0  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80186E64 00182CA4  7C 08 03 A6 */	mtlr r0
 /* 80186E68 00182CA8  38 21 00 20 */	addi r1, r1, 0x20
@@ -93,7 +93,7 @@ CreateND__Q36effect6detail16RequestArgOptionFRCQ23g3d12NodeAccessorRCQ33hel4math
 /* 80186F04 00182D44  7C 08 02 A6 */	mflr r0
 /* 80186F08 00182D48  90 01 00 24 */	stw r0, 0x24(r1)
 /* 80186F0C 00182D4C  39 61 00 20 */	addi r11, r1, 0x20
-/* 80186F10 00182D50  4B E8 04 35 */	bl lbl_80007344
+/* 80186F10 00182D50  4B E8 04 35 */	bl _savegpr_29
 /* 80186F14 00182D54  7C 7D 1B 78 */	mr r29, r3
 /* 80186F18 00182D58  7C 9E 23 78 */	mr r30, r4
 /* 80186F1C 00182D5C  7C BF 2B 78 */	mr r31, r5
@@ -107,7 +107,7 @@ CreateND__Q36effect6detail16RequestArgOptionFRCQ23g3d12NodeAccessorRCQ33hel4math
 /* 80186F3C 00182D7C  7F E4 FB 78 */	mr r4, r31
 /* 80186F40 00182D80  4B FF B2 05 */	bl __as__Q33hel4math10Direction3FRCQ33hel4math10Direction3
 /* 80186F44 00182D84  39 61 00 20 */	addi r11, r1, 0x20
-/* 80186F48 00182D88  4B E8 04 49 */	bl lbl_80007390
+/* 80186F48 00182D88  4B E8 04 49 */	bl _restgpr_29
 /* 80186F4C 00182D8C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80186F50 00182D90  7C 08 03 A6 */	mtlr r0
 /* 80186F54 00182D94  38 21 00 20 */	addi r1, r1, 0x20

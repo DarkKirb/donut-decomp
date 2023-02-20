@@ -11,7 +11,7 @@ TryToChangeState__Q53scn4step4hero6common9StateJumpFPQ43scn4step4hero4Herob:
 /* 80364550 00360390  7C 08 02 A6 */	mflr r0
 /* 80364554 00360394  90 01 00 24 */	stw r0, 0x24(r1)
 /* 80364558 00360398  39 61 00 20 */	addi r11, r1, 0x20
-/* 8036455C 0036039C  4B CA 2D E5 */	bl lbl_80007340
+/* 8036455C 0036039C  4B CA 2D E5 */	bl _savegpr_28
 /* 80364560 003603A0  7C 7C 1B 78 */	mr r28, r3
 /* 80364564 003603A4  7C 9D 23 78 */	mr r29, r4
 /* 80364568 003603A8  4B FD BD E5 */	bl hid__Q43scn4step4hero4HeroFv
@@ -45,7 +45,7 @@ lbl_803645C4:
 .global lbl_803645C8
 lbl_803645C8:
 /* 803645C8 00360408  39 61 00 20 */	addi r11, r1, 0x20
-/* 803645CC 0036040C  4B CA 2D C1 */	bl lbl_8000738C
+/* 803645CC 0036040C  4B CA 2D C1 */	bl _restgpr_28
 /* 803645D0 00360410  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803645D4 00360414  7C 08 03 A6 */	mtlr r0
 /* 803645D8 00360418  38 21 00 20 */	addi r1, r1, 0x20
@@ -56,7 +56,7 @@ __ct__Q53scn4step4hero6common9StateJumpFPQ43scn4step4hero4Herobb:
 /* 803645E4 00360424  7C 08 02 A6 */	mflr r0
 /* 803645E8 00360428  90 01 00 24 */	stw r0, 0x24(r1)
 /* 803645EC 0036042C  39 61 00 20 */	addi r11, r1, 0x20
-/* 803645F0 00360430  4B CA 2D 55 */	bl lbl_80007344
+/* 803645F0 00360430  4B CA 2D 55 */	bl _savegpr_29
 /* 803645F4 00360434  7C 7D 1B 78 */	mr r29, r3
 /* 803645F8 00360438  7C BE 2B 78 */	mr r30, r5
 /* 803645FC 0036043C  7C DF 33 78 */	mr r31, r6
@@ -73,7 +73,7 @@ __ct__Q53scn4step4hero6common9StateJumpFPQ43scn4step4hero4Herobb:
 /* 80364628 00360468  48 00 03 A9 */	bl construct__Q53scn4step4hero6common9StateJumpFb
 /* 8036462C 0036046C  7F A3 EB 78 */	mr r3, r29
 /* 80364630 00360470  39 61 00 20 */	addi r11, r1, 0x20
-/* 80364634 00360474  4B CA 2D 5D */	bl lbl_80007390
+/* 80364634 00360474  4B CA 2D 5D */	bl _restgpr_29
 /* 80364638 00360478  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8036463C 0036047C  7C 08 03 A6 */	mtlr r0
 /* 80364640 00360480  38 21 00 20 */	addi r1, r1, 0x20
@@ -84,7 +84,7 @@ __ct__Q53scn4step4hero6common9StateJumpFPQ43scn4step4hero4HeroUlbb:
 /* 8036464C 0036048C  7C 08 02 A6 */	mflr r0
 /* 80364650 00360490  90 01 00 24 */	stw r0, 0x24(r1)
 /* 80364654 00360494  39 61 00 20 */	addi r11, r1, 0x20
-/* 80364658 00360498  4B CA 2C E9 */	bl lbl_80007340
+/* 80364658 00360498  4B CA 2C E9 */	bl _savegpr_28
 /* 8036465C 0036049C  7C 7C 1B 78 */	mr r28, r3
 /* 80364660 003604A0  7C BD 2B 78 */	mr r29, r5
 /* 80364664 003604A4  7C DE 33 78 */	mr r30, r6
@@ -102,7 +102,7 @@ __ct__Q53scn4step4hero6common9StateJumpFPQ43scn4step4hero4HeroUlbb:
 /* 80364694 003604D4  48 00 03 3D */	bl construct__Q53scn4step4hero6common9StateJumpFb
 /* 80364698 003604D8  7F 83 E3 78 */	mr r3, r28
 /* 8036469C 003604DC  39 61 00 20 */	addi r11, r1, 0x20
-/* 803646A0 003604E0  4B CA 2C ED */	bl lbl_8000738C
+/* 803646A0 003604E0  4B CA 2C ED */	bl _restgpr_28
 /* 803646A4 003604E4  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803646A8 003604E8  7C 08 03 A6 */	mtlr r0
 /* 803646AC 003604EC  38 21 00 20 */	addi r1, r1, 0x20
@@ -150,7 +150,7 @@ procAnim__Q53scn4step4hero6common9StateJumpFv:
 /* 80364734 00360574  7C 08 02 A6 */	mflr r0
 /* 80364738 00360578  90 01 00 24 */	stw r0, 0x24(r1)
 /* 8036473C 0036057C  39 61 00 20 */	addi r11, r1, 0x20
-/* 80364740 00360580  4B CA 2C 05 */	bl lbl_80007344
+/* 80364740 00360580  4B CA 2C 05 */	bl _savegpr_29
 /* 80364744 00360584  7C 7D 1B 78 */	mr r29, r3
 /* 80364748 00360588  80 83 00 08 */	lwz r4, 0x8(r3)
 /* 8036474C 0036058C  38 04 00 01 */	addi r0, r4, 0x1
@@ -254,7 +254,7 @@ lbl_803648A4:
 .global lbl_803648B4
 lbl_803648B4:
 /* 803648B4 003606F4  39 61 00 20 */	addi r11, r1, 0x20
-/* 803648B8 003606F8  4B CA 2A D9 */	bl lbl_80007390
+/* 803648B8 003606F8  4B CA 2A D9 */	bl _restgpr_29
 /* 803648BC 003606FC  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 803648C0 00360700  7C 08 03 A6 */	mtlr r0
 /* 803648C4 00360704  38 21 00 20 */	addi r1, r1, 0x20
@@ -265,7 +265,7 @@ lbl_803648B4:
 /* 803648D0 00360710  7C 08 02 A6 */	mflr r0
 /* 803648D4 00360714  90 01 00 24 */	stw r0, 0x24(r1)
 /* 803648D8 00360718  39 61 00 20 */	addi r11, r1, 0x20
-/* 803648DC 0036071C  4B CA 2A 65 */	bl lbl_80007340
+/* 803648DC 0036071C  4B CA 2A 65 */	bl _savegpr_28
 /* 803648E0 00360720  7C 7C 1B 78 */	mr r28, r3
 /* 803648E4 00360724  7C 9D 23 78 */	mr r29, r4
 /* 803648E8 00360728  7C BE 2B 78 */	mr r30, r5
@@ -285,7 +285,7 @@ lbl_803648B4:
 lbl_8036491C:
 /* 8036491C 0036075C  93 FC 00 0C */	stw r31, 0xc(r28)
 /* 80364920 00360760  39 61 00 20 */	addi r11, r1, 0x20
-/* 80364924 00360764  4B CA 2A 69 */	bl lbl_8000738C
+/* 80364924 00360764  4B CA 2A 69 */	bl _restgpr_28
 /* 80364928 00360768  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8036492C 0036076C  7C 08 03 A6 */	mtlr r0
 /* 80364930 00360770  38 21 00 20 */	addi r1, r1, 0x20
@@ -297,7 +297,7 @@ procMove__Q53scn4step4hero6common9StateJumpFv:
 /* 8036493C 0036077C  7C 08 02 A6 */	mflr r0
 /* 80364940 00360780  90 01 00 34 */	stw r0, 0x34(r1)
 /* 80364944 00360784  39 61 00 30 */	addi r11, r1, 0x30
-/* 80364948 00360788  4B CA 29 FD */	bl lbl_80007344
+/* 80364948 00360788  4B CA 29 FD */	bl _savegpr_29
 /* 8036494C 0036078C  7C 7D 1B 78 */	mr r29, r3
 /* 80364950 00360790  4B D9 BE 91 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 80364954 00360794  4B FF 1B 59 */	bl MoveDefault__Q43scn4step4hero7UtilityFRQ43scn4step4hero4Hero
@@ -327,7 +327,7 @@ procMove__Q53scn4step4hero6common9StateJumpFv:
 .global lbl_803649B4
 lbl_803649B4:
 /* 803649B4 003607F4  39 61 00 30 */	addi r11, r1, 0x30
-/* 803649B8 003607F8  4B CA 29 D9 */	bl lbl_80007390
+/* 803649B8 003607F8  4B CA 29 D9 */	bl _restgpr_29
 /* 803649BC 003607FC  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 803649C0 00360800  7C 08 03 A6 */	mtlr r0
 /* 803649C4 00360804  38 21 00 30 */	addi r1, r1, 0x30
@@ -426,7 +426,7 @@ doEnableRotAnim__Q53scn4step4hero6common9StateJumpCFv:
 /* 80364B0C 0036094C  7C 08 02 A6 */	mflr r0
 /* 80364B10 00360950  90 01 00 24 */	stw r0, 0x24(r1)
 /* 80364B14 00360954  39 61 00 20 */	addi r11, r1, 0x20
-/* 80364B18 00360958  4B CA 28 25 */	bl lbl_8000733C
+/* 80364B18 00360958  4B CA 28 25 */	bl _savegpr_27
 /* 80364B1C 0036095C  7C 7B 1B 78 */	mr r27, r3
 /* 80364B20 00360960  3B E0 00 00 */	li r31, 0x0
 /* 80364B24 00360964  3B C0 00 00 */	li r30, 0x0
@@ -495,7 +495,7 @@ lbl_80364BC8:
 lbl_80364BF4:
 /* 80364BF4 00360A34  7F E3 FB 78 */	mr r3, r31
 /* 80364BF8 00360A38  39 61 00 20 */	addi r11, r1, 0x20
-/* 80364BFC 00360A3C  4B CA 27 8D */	bl lbl_80007388
+/* 80364BFC 00360A3C  4B CA 27 8D */	bl _restgpr_27
 /* 80364C00 00360A40  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80364C04 00360A44  7C 08 03 A6 */	mtlr r0
 /* 80364C08 00360A48  38 21 00 20 */	addi r1, r1, 0x20

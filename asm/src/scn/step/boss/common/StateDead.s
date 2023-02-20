@@ -9,7 +9,7 @@ __ct__Q53scn4step4boss6common9StateDeadFPQ43scn4step4boss4Bossi:
 /* 80245B20 00241960  DB E1 01 20 */	stfd f31, 0x120(r1)
 /* 80245B24 00241964  F3 E1 01 28 */	psq_st f31, 0x128(r1), 0, qr0
 /* 80245B28 00241968  39 61 01 20 */	addi r11, r1, 0x120
-/* 80245B2C 0024196C  4B DC 18 11 */	bl lbl_8000733C
+/* 80245B2C 0024196C  4B DC 18 11 */	bl _savegpr_27
 /* 80245B30 00241970  7C 7B 1B 78 */	mr r27, r3
 /* 80245B34 00241974  7C BC 2B 78 */	mr r28, r5
 /* 80245B38 00241978  4B FE E9 A9 */	bl __ct__Q43scn4step4boss9StateBaseFPQ43scn4step4boss4Boss
@@ -236,7 +236,7 @@ lbl_80245E4C:
 /* 80245E8C 00241CCC  13 E1 00 0C */	psq_lx f31, r1, r0, 0, qr0
 /* 80245E90 00241CD0  CB E1 01 20 */	lfd f31, 0x120(r1)
 /* 80245E94 00241CD4  39 61 01 20 */	addi r11, r1, 0x120
-/* 80245E98 00241CD8  4B DC 14 F1 */	bl lbl_80007388
+/* 80245E98 00241CD8  4B DC 14 F1 */	bl _restgpr_27
 /* 80245E9C 00241CDC  80 01 01 34 */	lwz r0, 0x134(r1)
 /* 80245EA0 00241CE0  7C 08 03 A6 */	mtlr r0
 /* 80245EA4 00241CE4  38 21 01 30 */	addi r1, r1, 0x130
@@ -322,7 +322,7 @@ procMove__Q53scn4step4boss6common9StateDeadFv:
 /* 80245FA8 00241DE8  7C 08 02 A6 */	mflr r0
 /* 80245FAC 00241DEC  90 01 00 84 */	stw r0, 0x84(r1)
 /* 80245FB0 00241DF0  39 61 00 80 */	addi r11, r1, 0x80
-/* 80245FB4 00241DF4  4B DC 13 91 */	bl lbl_80007344
+/* 80245FB4 00241DF4  4B DC 13 91 */	bl _savegpr_29
 /* 80245FB8 00241DF8  7C 7D 1B 78 */	mr r29, r3
 /* 80245FBC 00241DFC  4B EB A8 25 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 80245FC0 00241E00  4B FE 6F 51 */	bl param__Q43scn4step4boss4BossCFv
@@ -397,7 +397,7 @@ lbl_802460AC:
 .global lbl_802460C4
 lbl_802460C4:
 /* 802460C4 00241F04  39 61 00 80 */	addi r11, r1, 0x80
-/* 802460C8 00241F08  4B DC 12 C9 */	bl lbl_80007390
+/* 802460C8 00241F08  4B DC 12 C9 */	bl _restgpr_29
 /* 802460CC 00241F0C  80 01 00 84 */	lwz r0, 0x84(r1)
 /* 802460D0 00241F10  7C 08 03 A6 */	mtlr r0
 /* 802460D4 00241F14  38 21 00 80 */	addi r1, r1, 0x80
@@ -409,7 +409,7 @@ procFixPos__Q53scn4step4boss6common9StateDeadFv:
 /* 802460E0 00241F20  7C 08 02 A6 */	mflr r0
 /* 802460E4 00241F24  90 01 00 74 */	stw r0, 0x74(r1)
 /* 802460E8 00241F28  39 61 00 70 */	addi r11, r1, 0x70
-/* 802460EC 00241F2C  4B DC 12 59 */	bl lbl_80007344
+/* 802460EC 00241F2C  4B DC 12 59 */	bl _savegpr_29
 /* 802460F0 00241F30  7C 7D 1B 78 */	mr r29, r3
 /* 802460F4 00241F34  4B EB A6 ED */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 802460F8 00241F38  4B FE 6E 19 */	bl param__Q43scn4step4boss4BossCFv
@@ -545,7 +545,7 @@ lbl_802462A8:
 .global lbl_802462D8
 lbl_802462D8:
 /* 802462D8 00242118  39 61 00 70 */	addi r11, r1, 0x70
-/* 802462DC 0024211C  4B DC 10 B5 */	bl lbl_80007390
+/* 802462DC 0024211C  4B DC 10 B5 */	bl _restgpr_29
 /* 802462E0 00242120  80 01 00 74 */	lwz r0, 0x74(r1)
 /* 802462E4 00242124  7C 08 03 A6 */	mtlr r0
 /* 802462E8 00242128  38 21 00 70 */	addi r1, r1, 0x70

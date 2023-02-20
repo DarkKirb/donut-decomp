@@ -7,7 +7,7 @@ __ct__Q43scn4step9challenge9ScoreInfoFRQ33scn4step9ComponentRQ43scn4step9challen
 /* 8026A04C 00265E8C  7C 08 02 A6 */	mflr r0
 /* 8026A050 00265E90  90 01 00 E4 */	stw r0, 0xe4(r1)
 /* 8026A054 00265E94  39 61 00 E0 */	addi r11, r1, 0xe0
-/* 8026A058 00265E98  4B D9 D2 E5 */	bl lbl_8000733C
+/* 8026A058 00265E98  4B D9 D2 E5 */	bl _savegpr_27
 /* 8026A05C 00265E9C  7C 7B 1B 78 */	mr r27, r3
 /* 8026A060 00265EA0  7C DC 33 78 */	mr r28, r6
 /* 8026A064 00265EA4  7C FD 3B 78 */	mr r29, r7
@@ -55,7 +55,7 @@ __ct__Q43scn4step9challenge9ScoreInfoFRQ33scn4step9ComponentRQ43scn4step9challen
 /* 8026A10C 00265F4C  4B F2 AC F9 */	bl start__Q23g3d8StdModelFb
 /* 8026A110 00265F50  7F 63 DB 78 */	mr r3, r27
 /* 8026A114 00265F54  39 61 00 E0 */	addi r11, r1, 0xe0
-/* 8026A118 00265F58  4B D9 D2 71 */	bl lbl_80007388
+/* 8026A118 00265F58  4B D9 D2 71 */	bl _restgpr_27
 /* 8026A11C 00265F5C  80 01 00 E4 */	lwz r0, 0xe4(r1)
 /* 8026A120 00265F60  7C 08 03 A6 */	mtlr r0
 /* 8026A124 00265F64  38 21 00 E0 */	addi r1, r1, 0xe0

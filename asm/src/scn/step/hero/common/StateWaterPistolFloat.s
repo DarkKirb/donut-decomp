@@ -7,7 +7,7 @@ TryToChangeState__Q53scn4step4hero6common21StateWaterPistolFloatFPQ43scn4step4he
 /* 8036F1D4 0036B014  7C 08 02 A6 */	mflr r0
 /* 8036F1D8 0036B018  90 01 00 24 */	stw r0, 0x24(r1)
 /* 8036F1DC 0036B01C  39 61 00 20 */	addi r11, r1, 0x20
-/* 8036F1E0 0036B020  4B C9 81 65 */	bl lbl_80007344
+/* 8036F1E0 0036B020  4B C9 81 65 */	bl _savegpr_29
 /* 8036F1E4 0036B024  7C 7D 1B 78 */	mr r29, r3
 /* 8036F1E8 0036B028  4B E4 76 C9 */	bl collideTargetIndex__Q35mcoll6detail21CollidedDetectionInfoCFv
 /* 8036F1EC 0036B02C  4B FD 2A 01 */	bl IsKirby__Q43scn4step4hero10IndiviUtilFQ43scn4step4hero4Kind
@@ -57,7 +57,7 @@ lbl_8036F278:
 .global lbl_8036F27C
 lbl_8036F27C:
 /* 8036F27C 0036B0BC  39 61 00 20 */	addi r11, r1, 0x20
-/* 8036F280 0036B0C0  4B C9 81 11 */	bl lbl_80007390
+/* 8036F280 0036B0C0  4B C9 81 11 */	bl _restgpr_29
 /* 8036F284 0036B0C4  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8036F288 0036B0C8  7C 08 03 A6 */	mtlr r0
 /* 8036F28C 0036B0CC  38 21 00 20 */	addi r1, r1, 0x20
@@ -142,7 +142,7 @@ procAnim__Q53scn4step4hero6common21StateWaterPistolFloatFv:
 /* 8036F3A0 0036B1E0  7C 08 02 A6 */	mflr r0
 /* 8036F3A4 0036B1E4  90 01 00 24 */	stw r0, 0x24(r1)
 /* 8036F3A8 0036B1E8  39 61 00 20 */	addi r11, r1, 0x20
-/* 8036F3AC 0036B1EC  4B C9 7F 99 */	bl lbl_80007344
+/* 8036F3AC 0036B1EC  4B C9 7F 99 */	bl _savegpr_29
 /* 8036F3B0 0036B1F0  7C 7D 1B 78 */	mr r29, r3
 /* 8036F3B4 0036B1F4  4B D9 14 2D */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 8036F3B8 0036B1F8  4B FD 0F BD */	bl abilityManager__Q43scn4step4hero4HeroFv
@@ -225,7 +225,7 @@ lbl_8036F494:
 .global lbl_8036F4C4
 lbl_8036F4C4:
 /* 8036F4C4 0036B304  39 61 00 20 */	addi r11, r1, 0x20
-/* 8036F4C8 0036B308  4B C9 7E C9 */	bl lbl_80007390
+/* 8036F4C8 0036B308  4B C9 7E C9 */	bl _restgpr_29
 /* 8036F4CC 0036B30C  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 8036F4D0 0036B310  7C 08 03 A6 */	mtlr r0
 /* 8036F4D4 0036B314  38 21 00 20 */	addi r1, r1, 0x20

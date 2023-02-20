@@ -7,7 +7,7 @@ __ct__Q53scn4step4info5lvmap12RankingPanelFRQ33scn4step9ComponentRCQ23lyt12PaneA
 /* 803BF438 003BB278  7C 08 02 A6 */	mflr r0
 /* 803BF43C 003BB27C  90 01 01 34 */	stw r0, 0x134(r1)
 /* 803BF440 003BB280  39 61 01 30 */	addi r11, r1, 0x130
-/* 803BF444 003BB284  4B C4 7E FD */	bl lbl_80007340
+/* 803BF444 003BB284  4B C4 7E FD */	bl _savegpr_28
 /* 803BF448 003BB288  7C 7C 1B 78 */	mr r28, r3
 /* 803BF44C 003BB28C  7C BD 2B 78 */	mr r29, r5
 /* 803BF450 003BB290  7C DE 33 78 */	mr r30, r6
@@ -80,7 +80,7 @@ __ct__Q53scn4step4info5lvmap12RankingPanelFRQ33scn4step9ComponentRCQ23lyt12PaneA
 /* 803BF55C 003BB39C  4B DE DD C5 */	bl updateMatrix__Q23lyt6LayoutFv
 /* 803BF560 003BB3A0  7F 83 E3 78 */	mr r3, r28
 /* 803BF564 003BB3A4  39 61 01 30 */	addi r11, r1, 0x130
-/* 803BF568 003BB3A8  4B C4 7E 25 */	bl lbl_8000738C
+/* 803BF568 003BB3A8  4B C4 7E 25 */	bl _restgpr_28
 /* 803BF56C 003BB3AC  80 01 01 34 */	lwz r0, 0x134(r1)
 /* 803BF570 003BB3B0  7C 08 03 A6 */	mtlr r0
 /* 803BF574 003BB3B4  38 21 01 30 */	addi r1, r1, 0x130
@@ -91,7 +91,7 @@ appear__Q53scn4step4info5lvmap12RankingPanelFRCQ63scn4step4info5lvmap12RankingPa
 /* 803BF580 003BB3C0  7C 08 02 A6 */	mflr r0
 /* 803BF584 003BB3C4  90 01 00 C4 */	stw r0, 0xc4(r1)
 /* 803BF588 003BB3C8  39 61 00 C0 */	addi r11, r1, 0xc0
-/* 803BF58C 003BB3CC  4B C4 7D B9 */	bl lbl_80007344
+/* 803BF58C 003BB3CC  4B C4 7D B9 */	bl _savegpr_29
 /* 803BF590 003BB3D0  7C 7D 1B 78 */	mr r29, r3
 /* 803BF594 003BB3D4  7C 9E 23 78 */	mr r30, r4
 /* 803BF598 003BB3D8  3C 60 80 49 */	lis r3, "@52661"@ha
@@ -277,7 +277,7 @@ lbl_803BF810:
 /* 803BF810 003BB650  38 7D 00 08 */	addi r3, r29, 0x8
 /* 803BF814 003BB654  4B DE DB 0D */	bl updateMatrix__Q23lyt6LayoutFv
 /* 803BF818 003BB658  39 61 00 C0 */	addi r11, r1, 0xc0
-/* 803BF81C 003BB65C  4B C4 7B 75 */	bl lbl_80007390
+/* 803BF81C 003BB65C  4B C4 7B 75 */	bl _restgpr_29
 /* 803BF820 003BB660  80 01 00 C4 */	lwz r0, 0xc4(r1)
 /* 803BF824 003BB664  7C 08 03 A6 */	mtlr r0
 /* 803BF828 003BB668  38 21 00 C0 */	addi r1, r1, 0xc0

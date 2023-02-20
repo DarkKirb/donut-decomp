@@ -120,7 +120,7 @@ procAnim__Q53scn4step4hero7fighter14StateFootSweepFv:
 /* 8039D678 003994B8  DB E1 00 20 */	stfd f31, 0x20(r1)
 /* 8039D67C 003994BC  F3 E1 00 28 */	psq_st f31, 0x28(r1), 0, qr0
 /* 8039D680 003994C0  39 61 00 20 */	addi r11, r1, 0x20
-/* 8039D684 003994C4  4B C6 9C C1 */	bl lbl_80007344
+/* 8039D684 003994C4  4B C6 9C C1 */	bl _savegpr_29
 /* 8039D688 003994C8  7C 7D 1B 78 */	mr r29, r3
 /* 8039D68C 003994CC  4B D6 31 55 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 8039D690 003994D0  4B FA 2C 8D */	bl model__Q43scn4step4hero4HeroFv
@@ -182,7 +182,7 @@ lbl_8039D754:
 /* 8039D758 00399598  13 E1 00 0C */	psq_lx f31, r1, r0, 0, qr0
 /* 8039D75C 0039959C  CB E1 00 20 */	lfd f31, 0x20(r1)
 /* 8039D760 003995A0  39 61 00 20 */	addi r11, r1, 0x20
-/* 8039D764 003995A4  4B C6 9C 2D */	bl lbl_80007390
+/* 8039D764 003995A4  4B C6 9C 2D */	bl _restgpr_29
 /* 8039D768 003995A8  80 01 00 34 */	lwz r0, 0x34(r1)
 /* 8039D76C 003995AC  7C 08 03 A6 */	mtlr r0
 /* 8039D770 003995B0  38 21 00 30 */	addi r1, r1, 0x30
@@ -220,7 +220,7 @@ procFixPos__Q53scn4step4hero7fighter14StateFootSweepFv:
 /* 8039D7D8 00399618  DB E1 00 60 */	stfd f31, 0x60(r1)
 /* 8039D7DC 0039961C  F3 E1 00 68 */	psq_st f31, 0x68(r1), 0, qr0
 /* 8039D7E0 00399620  39 61 00 60 */	addi r11, r1, 0x60
-/* 8039D7E4 00399624  4B C6 9B 61 */	bl lbl_80007344
+/* 8039D7E4 00399624  4B C6 9B 61 */	bl _savegpr_29
 /* 8039D7E8 00399628  7C 7F 1B 78 */	mr r31, r3
 /* 8039D7EC 0039962C  4B D6 2F F5 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 8039D7F0 00399630  4B FA 2B 4D */	bl mapColl__Q43scn4step4hero4HeroFv
@@ -355,7 +355,7 @@ lbl_8039D9B0:
 /* 8039D9B4 003997F4  13 E1 00 0C */	psq_lx f31, r1, r0, 0, qr0
 /* 8039D9B8 003997F8  CB E1 00 60 */	lfd f31, 0x60(r1)
 /* 8039D9BC 003997FC  39 61 00 60 */	addi r11, r1, 0x60
-/* 8039D9C0 00399800  4B C6 99 D1 */	bl lbl_80007390
+/* 8039D9C0 00399800  4B C6 99 D1 */	bl _restgpr_29
 /* 8039D9C4 00399804  80 01 00 74 */	lwz r0, 0x74(r1)
 /* 8039D9C8 00399808  7C 08 03 A6 */	mtlr r0
 /* 8039D9CC 0039980C  38 21 00 70 */	addi r1, r1, 0x70

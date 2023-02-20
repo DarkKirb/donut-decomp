@@ -178,7 +178,7 @@ procAnim__Q53scn4step5enemy7blipper9StateMoveFv:
 /* 8029B500 00297340  7C 08 02 A6 */	mflr r0
 /* 8029B504 00297344  90 01 00 44 */	stw r0, 0x44(r1)
 /* 8029B508 00297348  39 61 00 40 */	addi r11, r1, 0x40
-/* 8029B50C 0029734C  4B D6 BE 39 */	bl lbl_80007344
+/* 8029B50C 0029734C  4B D6 BE 39 */	bl _savegpr_29
 /* 8029B510 00297350  7C 7F 1B 78 */	mr r31, r3
 /* 8029B514 00297354  4B E6 52 CD */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 8029B518 00297358  4B FE CB 6D */	bl param__Q43scn4step5enemy5EnemyCFv
@@ -305,7 +305,7 @@ lbl_8029B66C:
 .global lbl_8029B6C4
 lbl_8029B6C4:
 /* 8029B6C4 00297504  39 61 00 40 */	addi r11, r1, 0x40
-/* 8029B6C8 00297508  4B D6 BC C9 */	bl lbl_80007390
+/* 8029B6C8 00297508  4B D6 BC C9 */	bl _restgpr_29
 /* 8029B6CC 0029750C  80 01 00 44 */	lwz r0, 0x44(r1)
 /* 8029B6D0 00297510  7C 08 03 A6 */	mtlr r0
 /* 8029B6D4 00297514  38 21 00 40 */	addi r1, r1, 0x40
@@ -389,7 +389,7 @@ procFixPos__Q53scn4step5enemy7blipper9StateMoveFv:
 /* 8029B7CC 0029760C  DB E1 01 30 */	stfd f31, 0x130(r1)
 /* 8029B7D0 00297610  F3 E1 01 38 */	psq_st f31, 0x138(r1), 0, qr0
 /* 8029B7D4 00297614  39 61 01 30 */	addi r11, r1, 0x130
-/* 8029B7D8 00297618  4B D6 BB 6D */	bl lbl_80007344
+/* 8029B7D8 00297618  4B D6 BB 6D */	bl _savegpr_29
 /* 8029B7DC 0029761C  7C 7F 1B 78 */	mr r31, r3
 /* 8029B7E0 00297620  4B E6 50 01 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 8029B7E4 00297624  4B E8 56 7D */	bl GetSize__Q34nw4r2ut13DvdFileStreamCFv
@@ -643,7 +643,7 @@ lbl_8029BB2C:
 /* 8029BB5C 0029799C  13 E1 00 0C */	psq_lx f31, r1, r0, 0, qr0
 /* 8029BB60 002979A0  CB E1 01 30 */	lfd f31, 0x130(r1)
 /* 8029BB64 002979A4  39 61 01 30 */	addi r11, r1, 0x130
-/* 8029BB68 002979A8  4B D6 B8 29 */	bl lbl_80007390
+/* 8029BB68 002979A8  4B D6 B8 29 */	bl _restgpr_29
 /* 8029BB6C 002979AC  80 01 01 44 */	lwz r0, 0x144(r1)
 /* 8029BB70 002979B0  7C 08 03 A6 */	mtlr r0
 /* 8029BB74 002979B4  38 21 01 40 */	addi r1, r1, 0x140

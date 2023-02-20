@@ -303,7 +303,7 @@ Func__Q38mintglue26Scn__GrandTitle__Commander58Mint_RequestBGEffect_0$55267Scn__
 /* 801C5300 001C1140  7C 08 02 A6 */	mflr r0
 /* 801C5304 001C1144  90 01 00 24 */	stw r0, 0x24(r1)
 /* 801C5308 001C1148  39 61 00 20 */	addi r11, r1, 0x20
-/* 801C530C 001C114C  4B E4 20 39 */	bl lbl_80007344
+/* 801C530C 001C114C  4B E4 20 39 */	bl _savegpr_29
 /* 801C5310 001C1150  7C 7D 1B 78 */	mr r29, r3
 /* 801C5314 001C1154  7C 9E 23 78 */	mr r30, r4
 /* 801C5318 001C1158  7F C3 F3 78 */	mr r3, r30
@@ -319,7 +319,7 @@ Func__Q38mintglue26Scn__GrandTitle__Commander58Mint_RequestBGEffect_0$55267Scn__
 /* 801C5340 001C1180  7D 89 03 A6 */	mtctr r12
 /* 801C5344 001C1184  4E 80 04 21 */	bctrl
 /* 801C5348 001C1188  39 61 00 20 */	addi r11, r1, 0x20
-/* 801C534C 001C118C  4B E4 20 45 */	bl lbl_80007390
+/* 801C534C 001C118C  4B E4 20 45 */	bl _restgpr_29
 /* 801C5350 001C1190  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 801C5354 001C1194  7C 08 03 A6 */	mtlr r0
 /* 801C5358 001C1198  38 21 00 20 */	addi r1, r1, 0x20

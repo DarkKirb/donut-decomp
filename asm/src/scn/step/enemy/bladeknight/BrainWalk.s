@@ -7,7 +7,7 @@ __ct__Q53scn4step5enemy11bladeknight9BrainWalkFRQ43scn4step5enemy5Enemy:
 /* 80296DF0 00292C30  7C 08 02 A6 */	mflr r0
 /* 80296DF4 00292C34  90 01 00 24 */	stw r0, 0x24(r1)
 /* 80296DF8 00292C38  39 61 00 20 */	addi r11, r1, 0x20
-/* 80296DFC 00292C3C  4B D7 05 49 */	bl lbl_80007344
+/* 80296DFC 00292C3C  4B D7 05 49 */	bl _savegpr_29
 /* 80296E00 00292C40  7C 7D 1B 78 */	mr r29, r3
 /* 80296E04 00292C44  4B FE 80 11 */	bl __ct__Q43scn4step5enemy9BrainBaseFRQ43scn4step5enemy5Enemy
 /* 80296E08 00292C48  3C 60 80 47 */	lis r3, __vt__Q53scn4step5enemy11bladeknight9BrainWalk@ha
@@ -55,7 +55,7 @@ lbl_80296E7C:
 /* 80296E80 00292CC0  48 16 96 7D */	bl onSceneEnd__Q23seq10SequenceVCFRQ23scn6IScene
 /* 80296E84 00292CC4  7F A3 EB 78 */	mr r3, r29
 /* 80296E88 00292CC8  39 61 00 20 */	addi r11, r1, 0x20
-/* 80296E8C 00292CCC  4B D7 05 05 */	bl lbl_80007390
+/* 80296E8C 00292CCC  4B D7 05 05 */	bl _restgpr_29
 /* 80296E90 00292CD0  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80296E94 00292CD4  7C 08 03 A6 */	mtlr r0
 /* 80296E98 00292CD8  38 21 00 20 */	addi r1, r1, 0x20

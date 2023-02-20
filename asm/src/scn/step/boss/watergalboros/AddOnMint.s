@@ -58,7 +58,7 @@ lbl_802589DC:
 /* 802589FC 0025483C  7C 08 02 A6 */	mflr r0
 /* 80258A00 00254840  90 01 00 D4 */	stw r0, 0xd4(r1)
 /* 80258A04 00254844  39 61 00 D0 */	addi r11, r1, 0xd0
-/* 80258A08 00254848  4B DA E9 3D */	bl lbl_80007344
+/* 80258A08 00254848  4B DA E9 3D */	bl _savegpr_29
 /* 80258A0C 0025484C  4B FD 9F B9 */	bl Obj__Q43scn4step4boss8MintBossFv
 /* 80258A10 00254850  4B FD 45 01 */	bl param__Q43scn4step4boss4BossCFv
 /* 80258A14 00254854  4B FD B4 7D */	bl watergalboros__Q43scn4step4boss5ParamCFv
@@ -116,7 +116,7 @@ lbl_802589DC:
 /* 80258AE4 00254924  38 E0 00 06 */	li r7, 0x6
 /* 80258AE8 00254928  48 00 00 1D */	bl "setNextState<Q53scn4step4boss6common14StateJumpStart,PQ43scn4step4boss4Boss,Q53scn4step4boss6common13StateJumpDesc,Q53scn4step4boss13watergalboros10ScriptKind,Q53scn4step4boss13watergalboros10ScriptKind>__Q24util41StateChanger<Q43scn4step4boss6IState,256>FPQ43scn4step4boss4BossQ53scn4step4boss6common13StateJumpDescQ53scn4step4boss13watergalboros10ScriptKindQ53scn4step4boss13watergalboros10ScriptKind_v"
 /* 80258AEC 0025492C  39 61 00 D0 */	addi r11, r1, 0xd0
-/* 80258AF0 00254930  4B DA E8 A1 */	bl lbl_80007390
+/* 80258AF0 00254930  4B DA E8 A1 */	bl _restgpr_29
 /* 80258AF4 00254934  80 01 00 D4 */	lwz r0, 0xd4(r1)
 /* 80258AF8 00254938  7C 08 03 A6 */	mtlr r0
 /* 80258AFC 0025493C  38 21 00 D0 */	addi r1, r1, 0xd0
@@ -127,7 +127,7 @@ lbl_802589DC:
 /* 80258B08 00254948  7C 08 02 A6 */	mflr r0
 /* 80258B0C 0025494C  90 01 00 64 */	stw r0, 0x64(r1)
 /* 80258B10 00254950  39 61 00 60 */	addi r11, r1, 0x60
-/* 80258B14 00254954  4B DA E8 25 */	bl lbl_80007338
+/* 80258B14 00254954  4B DA E8 25 */	bl _savegpr_26
 /* 80258B18 00254958  7C 7A 1B 78 */	mr r26, r3
 /* 80258B1C 0025495C  7C 9B 23 78 */	mr r27, r4
 /* 80258B20 00254960  7C BC 2B 78 */	mr r28, r5
@@ -156,7 +156,7 @@ lbl_802589DC:
 lbl_80258B78:
 /* 80258B78 002549B8  93 FA 00 0C */	stw r31, 0xc(r26)
 /* 80258B7C 002549BC  39 61 00 60 */	addi r11, r1, 0x60
-/* 80258B80 002549C0  4B DA E8 05 */	bl lbl_80007384
+/* 80258B80 002549C0  4B DA E8 05 */	bl _restgpr_26
 /* 80258B84 002549C4  80 01 00 64 */	lwz r0, 0x64(r1)
 /* 80258B88 002549C8  7C 08 03 A6 */	mtlr r0
 /* 80258B8C 002549CC  38 21 00 60 */	addi r1, r1, 0x60
@@ -167,7 +167,7 @@ lbl_80258B78:
 /* 80258B98 002549D8  7C 08 02 A6 */	mflr r0
 /* 80258B9C 002549DC  90 01 00 D4 */	stw r0, 0xd4(r1)
 /* 80258BA0 002549E0  39 61 00 D0 */	addi r11, r1, 0xd0
-/* 80258BA4 002549E4  4B DA E7 A1 */	bl lbl_80007344
+/* 80258BA4 002549E4  4B DA E7 A1 */	bl _savegpr_29
 /* 80258BA8 002549E8  4B FD 9E 1D */	bl Obj__Q43scn4step4boss8MintBossFv
 /* 80258BAC 002549EC  4B FD 43 65 */	bl param__Q43scn4step4boss4BossCFv
 /* 80258BB0 002549F0  4B FD B2 E1 */	bl watergalboros__Q43scn4step4boss5ParamCFv
@@ -225,7 +225,7 @@ lbl_80258B78:
 /* 80258C80 00254AC0  38 E0 00 06 */	li r7, 0x6
 /* 80258C84 00254AC4  4B FF FE 81 */	bl "setNextState<Q53scn4step4boss6common14StateJumpStart,PQ43scn4step4boss4Boss,Q53scn4step4boss6common13StateJumpDesc,Q53scn4step4boss13watergalboros10ScriptKind,Q53scn4step4boss13watergalboros10ScriptKind>__Q24util41StateChanger<Q43scn4step4boss6IState,256>FPQ43scn4step4boss4BossQ53scn4step4boss6common13StateJumpDescQ53scn4step4boss13watergalboros10ScriptKindQ53scn4step4boss13watergalboros10ScriptKind_v"
 /* 80258C88 00254AC8  39 61 00 D0 */	addi r11, r1, 0xd0
-/* 80258C8C 00254ACC  4B DA E7 05 */	bl lbl_80007390
+/* 80258C8C 00254ACC  4B DA E7 05 */	bl _restgpr_29
 /* 80258C90 00254AD0  80 01 00 D4 */	lwz r0, 0xd4(r1)
 /* 80258C94 00254AD4  7C 08 03 A6 */	mtlr r0
 /* 80258C98 00254AD8  38 21 00 D0 */	addi r1, r1, 0xd0
@@ -236,7 +236,7 @@ lbl_80258B78:
 /* 80258CA4 00254AE4  7C 08 02 A6 */	mflr r0
 /* 80258CA8 00254AE8  90 01 00 D4 */	stw r0, 0xd4(r1)
 /* 80258CAC 00254AEC  39 61 00 D0 */	addi r11, r1, 0xd0
-/* 80258CB0 00254AF0  4B DA E6 95 */	bl lbl_80007344
+/* 80258CB0 00254AF0  4B DA E6 95 */	bl _savegpr_29
 /* 80258CB4 00254AF4  4B FD 9D 11 */	bl Obj__Q43scn4step4boss8MintBossFv
 /* 80258CB8 00254AF8  4B FD 42 59 */	bl param__Q43scn4step4boss4BossCFv
 /* 80258CBC 00254AFC  4B FD B1 D5 */	bl watergalboros__Q43scn4step4boss5ParamCFv
@@ -294,7 +294,7 @@ lbl_80258B78:
 /* 80258D8C 00254BCC  38 E0 00 08 */	li r7, 0x8
 /* 80258D90 00254BD0  4B FF FD 75 */	bl "setNextState<Q53scn4step4boss6common14StateJumpStart,PQ43scn4step4boss4Boss,Q53scn4step4boss6common13StateJumpDesc,Q53scn4step4boss13watergalboros10ScriptKind,Q53scn4step4boss13watergalboros10ScriptKind>__Q24util41StateChanger<Q43scn4step4boss6IState,256>FPQ43scn4step4boss4BossQ53scn4step4boss6common13StateJumpDescQ53scn4step4boss13watergalboros10ScriptKindQ53scn4step4boss13watergalboros10ScriptKind_v"
 /* 80258D94 00254BD4  39 61 00 D0 */	addi r11, r1, 0xd0
-/* 80258D98 00254BD8  4B DA E5 F9 */	bl lbl_80007390
+/* 80258D98 00254BD8  4B DA E5 F9 */	bl _restgpr_29
 /* 80258D9C 00254BDC  80 01 00 D4 */	lwz r0, 0xd4(r1)
 /* 80258DA0 00254BE0  7C 08 03 A6 */	mtlr r0
 /* 80258DA4 00254BE4  38 21 00 D0 */	addi r1, r1, 0xd0
@@ -305,7 +305,7 @@ lbl_80258B78:
 /* 80258DB0 00254BF0  7C 08 02 A6 */	mflr r0
 /* 80258DB4 00254BF4  90 01 00 24 */	stw r0, 0x24(r1)
 /* 80258DB8 00254BF8  39 61 00 20 */	addi r11, r1, 0x20
-/* 80258DBC 00254BFC  4B DA E5 89 */	bl lbl_80007344
+/* 80258DBC 00254BFC  4B DA E5 89 */	bl _savegpr_29
 /* 80258DC0 00254C00  4B FD 9C 05 */	bl Obj__Q43scn4step4boss8MintBossFv
 /* 80258DC4 00254C04  7C 7E 1B 78 */	mr r30, r3
 /* 80258DC8 00254C08  4B FD 9B FD */	bl Obj__Q43scn4step4boss8MintBossFv
@@ -328,7 +328,7 @@ lbl_80258B78:
 lbl_80258E08:
 /* 80258E08 00254C48  93 BF 00 0C */	stw r29, 0xc(r31)
 /* 80258E0C 00254C4C  39 61 00 20 */	addi r11, r1, 0x20
-/* 80258E10 00254C50  4B DA E5 81 */	bl lbl_80007390
+/* 80258E10 00254C50  4B DA E5 81 */	bl _restgpr_29
 /* 80258E14 00254C54  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80258E18 00254C58  7C 08 03 A6 */	mtlr r0
 /* 80258E1C 00254C5C  38 21 00 20 */	addi r1, r1, 0x20
@@ -357,7 +357,7 @@ lbl_80258E08:
 /* 80258E68 00254CA8  7C 08 02 A6 */	mflr r0
 /* 80258E6C 00254CAC  90 01 00 24 */	stw r0, 0x24(r1)
 /* 80258E70 00254CB0  39 61 00 20 */	addi r11, r1, 0x20
-/* 80258E74 00254CB4  4B DA E4 CD */	bl lbl_80007340
+/* 80258E74 00254CB4  4B DA E4 CD */	bl _savegpr_28
 /* 80258E78 00254CB8  7C 7C 1B 78 */	mr r28, r3
 /* 80258E7C 00254CBC  7C 9D 23 78 */	mr r29, r4
 /* 80258E80 00254CC0  7C BE 2B 78 */	mr r30, r5
@@ -377,7 +377,7 @@ lbl_80258E08:
 lbl_80258EB4:
 /* 80258EB4 00254CF4  93 FC 00 0C */	stw r31, 0xc(r28)
 /* 80258EB8 00254CF8  39 61 00 20 */	addi r11, r1, 0x20
-/* 80258EBC 00254CFC  4B DA E4 D1 */	bl lbl_8000738C
+/* 80258EBC 00254CFC  4B DA E4 D1 */	bl _restgpr_28
 /* 80258EC0 00254D00  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80258EC4 00254D04  7C 08 03 A6 */	mtlr r0
 /* 80258EC8 00254D08  38 21 00 20 */	addi r1, r1, 0x20
@@ -406,7 +406,7 @@ lbl_80258EB4:
 /* 80258F14 00254D54  7C 08 02 A6 */	mflr r0
 /* 80258F18 00254D58  90 01 00 24 */	stw r0, 0x24(r1)
 /* 80258F1C 00254D5C  39 61 00 20 */	addi r11, r1, 0x20
-/* 80258F20 00254D60  4B DA E4 25 */	bl lbl_80007344
+/* 80258F20 00254D60  4B DA E4 25 */	bl _savegpr_29
 /* 80258F24 00254D64  90 61 00 08 */	stw r3, 0x8(r1)
 /* 80258F28 00254D68  90 81 00 0C */	stw r4, 0xc(r1)
 /* 80258F2C 00254D6C  4B FD 9A 99 */	bl Obj__Q43scn4step4boss8MintBossFv
@@ -433,7 +433,7 @@ lbl_80258EB4:
 lbl_80258F7C:
 /* 80258F7C 00254DBC  93 BF 00 0C */	stw r29, 0xc(r31)
 /* 80258F80 00254DC0  39 61 00 20 */	addi r11, r1, 0x20
-/* 80258F84 00254DC4  4B DA E4 0D */	bl lbl_80007390
+/* 80258F84 00254DC4  4B DA E4 0D */	bl _restgpr_29
 /* 80258F88 00254DC8  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 80258F8C 00254DCC  7C 08 03 A6 */	mtlr r0
 /* 80258F90 00254DD0  38 21 00 20 */	addi r1, r1, 0x20
@@ -444,7 +444,7 @@ lbl_80258F7C:
 /* 80258F9C 00254DDC  7C 08 02 A6 */	mflr r0
 /* 80258FA0 00254DE0  90 01 01 B4 */	stw r0, 0x1b4(r1)
 /* 80258FA4 00254DE4  39 61 01 B0 */	addi r11, r1, 0x1b0
-/* 80258FA8 00254DE8  4B DA E3 9D */	bl lbl_80007344
+/* 80258FA8 00254DE8  4B DA E3 9D */	bl _savegpr_29
 /* 80258FAC 00254DEC  4B FD 9A 19 */	bl Obj__Q43scn4step4boss8MintBossFv
 /* 80258FB0 00254DF0  4B FD 3F 61 */	bl param__Q43scn4step4boss4BossCFv
 /* 80258FB4 00254DF4  4B FD AE DD */	bl watergalboros__Q43scn4step4boss5ParamCFv
@@ -629,7 +629,7 @@ lbl_80259154:
 lbl_8025925C:
 /* 8025925C 0025509C  93 DF 00 0C */	stw r30, 0xc(r31)
 /* 80259260 002550A0  39 61 01 B0 */	addi r11, r1, 0x1b0
-/* 80259264 002550A4  4B DA E1 2D */	bl lbl_80007390
+/* 80259264 002550A4  4B DA E1 2D */	bl _restgpr_29
 /* 80259268 002550A8  80 01 01 B4 */	lwz r0, 0x1b4(r1)
 /* 8025926C 002550AC  7C 08 03 A6 */	mtlr r0
 /* 80259270 002550B0  38 21 01 B0 */	addi r1, r1, 0x1b0
@@ -640,7 +640,7 @@ lbl_8025925C:
 /* 8025927C 002550BC  7C 08 02 A6 */	mflr r0
 /* 80259280 002550C0  90 01 00 24 */	stw r0, 0x24(r1)
 /* 80259284 002550C4  39 61 00 20 */	addi r11, r1, 0x20
-/* 80259288 002550C8  4B DA E0 BD */	bl lbl_80007344
+/* 80259288 002550C8  4B DA E0 BD */	bl _savegpr_29
 /* 8025928C 002550CC  4B FD 97 39 */	bl Obj__Q43scn4step4boss8MintBossFv
 /* 80259290 002550D0  7C 7E 1B 78 */	mr r30, r3
 /* 80259294 002550D4  4B FD 97 31 */	bl Obj__Q43scn4step4boss8MintBossFv
@@ -661,7 +661,7 @@ lbl_8025925C:
 lbl_802592CC:
 /* 802592CC 0025510C  93 BF 00 0C */	stw r29, 0xc(r31)
 /* 802592D0 00255110  39 61 00 20 */	addi r11, r1, 0x20
-/* 802592D4 00255114  4B DA E0 BD */	bl lbl_80007390
+/* 802592D4 00255114  4B DA E0 BD */	bl _restgpr_29
 /* 802592D8 00255118  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802592DC 0025511C  7C 08 03 A6 */	mtlr r0
 /* 802592E0 00255120  38 21 00 20 */	addi r1, r1, 0x20
@@ -784,7 +784,7 @@ Func__Q63scn4step4boss13watergalboros9AddOnMint36Mint_AddReqData_0$54043AddOnMin
 /* 8025948C 002552CC  7C 08 02 A6 */	mflr r0
 /* 80259490 002552D0  90 01 00 24 */	stw r0, 0x24(r1)
 /* 80259494 002552D4  39 61 00 20 */	addi r11, r1, 0x20
-/* 80259498 002552D8  4B DA DE AD */	bl lbl_80007344
+/* 80259498 002552D8  4B DA DE AD */	bl _savegpr_29
 /* 8025949C 002552DC  7C 7D 1B 78 */	mr r29, r3
 /* 802594A0 002552E0  38 80 00 02 */	li r4, 0x2
 /* 802594A4 002552E4  4B F3 F1 51 */	bl internal_getArg_addr__Q26mintvm13MintFuncProxyCFUi
@@ -801,7 +801,7 @@ Func__Q63scn4step4boss13watergalboros9AddOnMint36Mint_AddReqData_0$54043AddOnMin
 /* 802594D0 00255310  C0 5E 00 00 */	lfs f2, 0x0(r30)
 /* 802594D4 00255314  4B FF FE 15 */	bl "t_WeaponCtrl_AddReqData__Q53scn4step4boss13watergalboros23@unnamed@AddOnMint_cpp@Fiff"
 /* 802594D8 00255318  39 61 00 20 */	addi r11, r1, 0x20
-/* 802594DC 0025531C  4B DA DE B5 */	bl lbl_80007390
+/* 802594DC 0025531C  4B DA DE B5 */	bl _restgpr_29
 /* 802594E0 00255320  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 802594E4 00255324  7C 08 03 A6 */	mtlr r0
 /* 802594E8 00255328  38 21 00 20 */	addi r1, r1, 0x20

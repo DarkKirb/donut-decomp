@@ -176,7 +176,7 @@ reqBomb__Q53scn4step4boss7bonkers9StateBombFv:
 /* 80237FE8 00233E28  7C 08 02 A6 */	mflr r0
 /* 80237FEC 00233E2C  90 01 00 54 */	stw r0, 0x54(r1)
 /* 80237FF0 00233E30  39 61 00 50 */	addi r11, r1, 0x50
-/* 80237FF4 00233E34  4B DC F3 4D */	bl lbl_80007340
+/* 80237FF4 00233E34  4B DC F3 4D */	bl _savegpr_28
 /* 80237FF8 00233E38  7C 7C 1B 78 */	mr r28, r3
 /* 80237FFC 00233E3C  4B EC 87 E5 */	bl GetZeroBufferAddress__Q44nw4r3snd6detail9AxManagerFv
 /* 80238000 00233E40  4B FF 4F 11 */	bl param__Q43scn4step4boss4BossCFv
@@ -271,7 +271,7 @@ lbl_80238104:
 /* 8023812C 00233F6C  7F C6 F3 78 */	mr r6, r30
 /* 80238130 00233F70  4B FF F9 2D */	bl reqBomb__Q53scn4step4boss7bonkers6CustomFQ33hel4math7Vector2Q33hel4math7Vector2Q43scn4step3map12BinEnemySize
 /* 80238134 00233F74  39 61 00 50 */	addi r11, r1, 0x50
-/* 80238138 00233F78  4B DC F2 55 */	bl lbl_8000738C
+/* 80238138 00233F78  4B DC F2 55 */	bl _restgpr_28
 /* 8023813C 00233F7C  80 01 00 54 */	lwz r0, 0x54(r1)
 /* 80238140 00233F80  7C 08 03 A6 */	mtlr r0
 /* 80238144 00233F84  38 21 00 50 */	addi r1, r1, 0x50

@@ -3118,9 +3118,10 @@ $(BUILD_DIR)/asm/src/scn/grandmenu/G3DRootSet.o \
 $(BUILD_DIR)/asm/src/scn/grandmenu/Main.o \
 $(BUILD_DIR)/asm/src/scn/grandmenu/SceneGrandMenu.o \
 \
+$(BUILD_DIR)/asm/src/scn/grandmenu/effect/Table.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/grandmenu/effect/Table_803f454c.o \
 $(BUILD_DIR)/asm/src/scn/grandmenu/menu/BackButton_803f4608.o \
 $(BUILD_DIR)/asm/src/scn/grandmenu/menu/BG_803f49f8.o \
 $(BUILD_DIR)/asm/src/scn/grandmenu/menu/Curtain_803f4b24.o \
@@ -3188,7 +3189,6 @@ $(BUILD_DIR)/asm/src/util/StateChanger_80405cd0.o \
 $(BUILD_DIR)/asm/src/util/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/util/UIntAABBox_8040603c.o \
 \
-$(BUILD_DIR)/asm/src/scn/grandmenu/effect/Table_80564230.o \
 $(BUILD_DIR)/asm/src/scn/grandmenu/menu/Menu_80564240.o \
 $(BUILD_DIR)/asm/src/scn/staffcredit/BgManager_80564248.o \
 $(BUILD_DIR)/asm/src/scn/staffcredit/CameraManager_80564250.o \

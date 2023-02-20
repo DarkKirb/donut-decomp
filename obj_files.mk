@@ -2989,10 +2989,11 @@ $(BUILD_DIR)/asm/src/scn/step/weapon/starshotlv1/StateMain.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/starshotlv2/ModelDesc.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/starshotlv2/StateMain.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/weapon/starshotlv3/ModelDesc.o \
+$(BUILD_DIR)/asm/src/scn/step/weapon/starshotlv3/StateMain.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/weapon/starshotlv3/ModelDesc_803dd184.o \
-$(BUILD_DIR)/asm/src/scn/step/weapon/starshotlv3/StateMain_803dd2a0.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/whispyairball/ModelDesc_803de400.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/whispyairball/StateMain_803de5d0.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/rollexp/Custom_803dea40.o \
@@ -3153,8 +3154,6 @@ $(BUILD_DIR)/asm/src/util/StateChanger_80405cd0.o \
 $(BUILD_DIR)/asm/src/util/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/util/UIntAABBox_8040603c.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/weapon/starshotlv3/ModelDesc_80563dd0.o \
-$(BUILD_DIR)/asm/src/scn/step/weapon/starshotlv3/StateMain_80563dd8.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/rollexp/Custom_80563e40.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/rollexp/StateMain_80563e48.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/enemywaterbullet/ModelDesc_80563ed8.o \

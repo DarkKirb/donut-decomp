@@ -28,3 +28,11 @@ SetDescNode__Q53scn4step4hero9modeldesc8DynamicsFRQ28dynamics8DescNodeRCQ63scn4s
 /* 8035C154 00357F94  D0 E3 00 1C */	stfs f7, 0x1c(r3)
 /* 8035C158 00357F98  D1 03 00 20 */	stfs f8, 0x20(r3)
 /* 8035C15C 00357F9C  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@49488"
+"@49488":
+
+	.4byte 0x3C8EFA35
+	.4byte 0

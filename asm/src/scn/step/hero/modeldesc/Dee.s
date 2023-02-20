@@ -2428,3 +2428,11 @@ lbl_8035C0B8:
 .global "@GUARD@Dyna__Q53scn4step4hero9modeldesc3DeeFv@desc"
 "@GUARD@Dyna__Q53scn4step4hero9modeldesc3DeeFv@desc":
 	.skip 0x7
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@50025"
+"@50025":
+
+	.4byte 0
+	.4byte 0

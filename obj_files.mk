@@ -2532,23 +2532,24 @@ $(BUILD_DIR)/asm/src/scn/step/hero/Water.o \
 $(BUILD_DIR)/asm/src/scn/step/hero/WearBack.o \
 $(BUILD_DIR)/asm/src/scn/step/hero/ZNururi.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/hero/modeldesc/Common.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/modeldesc/Cutter.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/modeldesc/Dedede.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/modeldesc/Dee.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/modeldesc/Dynamics.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/modeldesc/Fighter.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/modeldesc/Hammer.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/modeldesc/Kirby.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/modeldesc/Meta.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/modeldesc/Parasol.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/modeldesc/Spark.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/modeldesc/Stone.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/modeldesc/Sword.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/modeldesc/Whip.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/modeldesc/Wing.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/hero/modeldesc/Common_8035bbac.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/modeldesc/Cutter_8035bbd8.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/modeldesc/Dedede_8035bbe4.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/modeldesc/Dee_8035bce8.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/modeldesc/Dynamics_8035c0fc.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/modeldesc/Fighter_8035c160.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/modeldesc/Hammer_8035c578.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/modeldesc/Kirby_8035c634.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/modeldesc/Meta_8035c77c.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/modeldesc/Parasol_8035c8ac.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/modeldesc/Spark_8035c964.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/modeldesc/Stone_8035ca68.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/modeldesc/Sword_8035cab8.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/modeldesc/Whip_8035ce68.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/modeldesc/Wing_8035cf30.o \
 $(BUILD_DIR)/asm/src/scn/step/hero/inactive/StateInit_8035d268.o \
 $(BUILD_DIR)/asm/src/scn/step/hero/inactive/StateSelect_8035d590.o \
 $(BUILD_DIR)/asm/src/scn/step/hero/inactive/Utility_8035e2b4.o \
@@ -3114,10 +3115,6 @@ $(BUILD_DIR)/asm/src/util/StateChanger_80405cd0.o \
 $(BUILD_DIR)/asm/src/util/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/util/UIntAABBox_8040603c.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/hero/modeldesc/Dee_80562fa0.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/modeldesc/Dynamics_80562fa8.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/modeldesc/Fighter_80562fb0.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/modeldesc/Spark_80562fb8.o \
 $(BUILD_DIR)/asm/src/scn/step/hero/sword/Sword_80562fc0.o \
 $(BUILD_DIR)/asm/src/scn/step/hero/common/StateAirJump_80562fc8.o \
 $(BUILD_DIR)/asm/src/scn/step/hero/common/StateAnyWhereIn_80562fd0.o \

@@ -1355,16 +1355,17 @@ $(BUILD_DIR)/asm/src/scn/step/boss/gigantedge/ModelDesc.o \
 $(BUILD_DIR)/asm/src/scn/step/boss/gigantedge/StateGuard.o \
 $(BUILD_DIR)/asm/src/scn/step/boss/gigantedge/StateShot.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/boss/kingsdoo/AddOnMint.o \
+$(BUILD_DIR)/asm/src/scn/step/boss/kingsdoo/Custom.o \
+$(BUILD_DIR)/asm/src/scn/step/boss/kingsdoo/ModelDesc.o \
+$(BUILD_DIR)/asm/src/scn/step/boss/kingsdoo/StateChargeAttack.o \
+$(BUILD_DIR)/asm/src/scn/step/boss/kingsdoo/StateChargeAttackStart.o \
+$(BUILD_DIR)/asm/src/scn/step/boss/kingsdoo/StateJumpCenterAttack.o \
+$(BUILD_DIR)/asm/src/scn/step/boss/kingsdoo/StateJumpMachinegun.o \
+$(BUILD_DIR)/asm/src/scn/step/boss/kingsdoo/StateJumpMachinegunStart.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/boss/kingsdoo/AddOnMint_80252800.o \
-$(BUILD_DIR)/asm/src/scn/step/boss/kingsdoo/Custom_802534e4.o \
-$(BUILD_DIR)/asm/src/scn/step/boss/kingsdoo/ModelDesc_8025388c.o \
-$(BUILD_DIR)/asm/src/scn/step/boss/kingsdoo/StateChargeAttack_80253958.o \
-$(BUILD_DIR)/asm/src/scn/step/boss/kingsdoo/StateChargeAttackStart_80253e10.o \
-$(BUILD_DIR)/asm/src/scn/step/boss/kingsdoo/StateJumpCenterAttack_80253e9c.o \
-$(BUILD_DIR)/asm/src/scn/step/boss/kingsdoo/StateJumpMachinegun_802542c4.o \
-$(BUILD_DIR)/asm/src/scn/step/boss/kingsdoo/StateJumpMachinegunStart_80254898.o \
 $(BUILD_DIR)/asm/src/scn/step/boss/moundeath/AddOnMint_802549c8.o \
 $(BUILD_DIR)/asm/src/scn/step/boss/moundeath/Custom_8025563c.o \
 $(BUILD_DIR)/asm/src/scn/step/boss/moundeath/ModelDesc_80255ac8.o \
@@ -2995,11 +2996,6 @@ $(BUILD_DIR)/asm/src/util/SIntAABBox_80405b68.o \
 $(BUILD_DIR)/asm/src/util/StateChanger_80405cd0.o \
 $(BUILD_DIR)/asm/src/util/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/util/UIntAABBox_8040603c.o \
-$(BUILD_DIR)/asm/src/scn/step/boss/kingsdoo/AddOnMint_80560858.o \
-$(BUILD_DIR)/asm/src/scn/step/boss/kingsdoo/Custom_80560860.o \
-$(BUILD_DIR)/asm/src/scn/step/boss/kingsdoo/StateChargeAttack_80560870.o \
-$(BUILD_DIR)/asm/src/scn/step/boss/kingsdoo/StateJumpCenterAttack_80560878.o \
-$(BUILD_DIR)/asm/src/scn/step/boss/kingsdoo/StateJumpMachinegun_80560890.o \
 $(BUILD_DIR)/asm/src/scn/step/boss/moundeath/Custom_805608b0.o \
 $(BUILD_DIR)/asm/src/scn/step/boss/moundeath/StateJump_805608c0.o \
 $(BUILD_DIR)/asm/src/scn/step/boss/moundeath/StateMoveForward_805608c8.o \

@@ -50,3 +50,15 @@ lbl_802F0D18:
 /* 802F0D34 002ECB74  7C 08 03 A6 */	mtlr r0
 /* 802F0D38 002ECB78  38 21 00 B0 */	addi r1, r1, 0xb0
 /* 802F0D3C 002ECB7C  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@48787_80562550"
+"@48787_80562550":
+
+	.4byte 0
+
+.global "@48788_80562554"
+"@48788_80562554":
+
+	.4byte 0x3EB33333

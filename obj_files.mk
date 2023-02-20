@@ -2234,17 +2234,18 @@ $(BUILD_DIR)/asm/src/scn/step/enemy/whippy/CharaParam.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/whippy/ModelDesc.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/whippy/StateAttack.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/enemy/whispyapple/CharaParam.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/whispyapple/Custom.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/whispyapple/ModelDesc.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/whispyapple/StateAppear.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/whispyapple/StateBound1.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/whispyapple/StateBound2.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/whispyapple/StateBoundNear.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/whispyapple/StateFall.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/whispyapple/WhispyAppleUtility.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/enemy/whispyapple/CharaParam_802f0c94.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/whispyapple/Custom_802f0d40.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/whispyapple/ModelDesc_802f10a8.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/whispyapple/StateAppear_802f1190.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/whispyapple/StateBound1_802f1338.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/whispyapple/StateBound2_802f17cc.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/whispyapple/StateBoundNear_802f1adc.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/whispyapple/StateFall_802f1eec.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/whispyapple/WhispyAppleUtility_802f2214.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/zankibblecutter/CharaParam_802f22d4.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/zankibblecutter/Custom_802f2384.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/zankibblecutter/ModelDesc_802f2570.o \
@@ -3074,12 +3075,6 @@ $(BUILD_DIR)/asm/src/util/StateChanger_80405cd0.o \
 $(BUILD_DIR)/asm/src/util/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/util/UIntAABBox_8040603c.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/enemy/whispyapple/CharaParam_80562550.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/whispyapple/Custom_80562558.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/whispyapple/StateBound1_80562570.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/whispyapple/StateBound2_80562578.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/whispyapple/StateBoundNear_80562580.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/whispyapple/StateFall_80562588.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/zankibblecutter/ModelDesc_80562590.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/zankibblecutter/StateBackCircle_80562598.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/zankibblecutter/StateCircle_805625a8.o \

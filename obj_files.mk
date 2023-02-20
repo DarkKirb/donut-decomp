@@ -1308,16 +1308,17 @@ $(BUILD_DIR)/asm/src/scn/step/boss/creditdedede/StateHide.o \
 $(BUILD_DIR)/asm/src/scn/step/boss/creditdedede/StateHoverFar.o \
 $(BUILD_DIR)/asm/src/scn/step/boss/creditdedede/StatePraise.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/boss/creditdee/Custom.o \
+$(BUILD_DIR)/asm/src/scn/step/boss/creditdee/ModelDesc.o \
+$(BUILD_DIR)/asm/src/scn/step/boss/creditdee/StateFlightFar.o \
+$(BUILD_DIR)/asm/src/scn/step/boss/creditdee/StateHide.o \
+$(BUILD_DIR)/asm/src/scn/step/boss/creditdee/StatePick.o \
+$(BUILD_DIR)/asm/src/scn/step/boss/creditdee/StatePraise.o \
+$(BUILD_DIR)/asm/src/scn/step/boss/creditdee/StateRun.o \
+$(BUILD_DIR)/asm/src/scn/step/boss/creditdee/StateRunAppear.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/boss/creditdee/Custom_8024855c.o \
-$(BUILD_DIR)/asm/src/scn/step/boss/creditdee/ModelDesc_802486a8.o \
-$(BUILD_DIR)/asm/src/scn/step/boss/creditdee/StateFlightFar_8024891c.o \
-$(BUILD_DIR)/asm/src/scn/step/boss/creditdee/StateHide_80248ee8.o \
-$(BUILD_DIR)/asm/src/scn/step/boss/creditdee/StatePick_80249218.o \
-$(BUILD_DIR)/asm/src/scn/step/boss/creditdee/StatePraise_802494a4.o \
-$(BUILD_DIR)/asm/src/scn/step/boss/creditdee/StateRun_80249694.o \
-$(BUILD_DIR)/asm/src/scn/step/boss/creditdee/StateRunAppear_8024987c.o \
 $(BUILD_DIR)/asm/src/scn/step/boss/creditmeta/Custom_80249bf8.o \
 $(BUILD_DIR)/asm/src/scn/step/boss/creditmeta/ModelDesc_80249d44.o \
 $(BUILD_DIR)/asm/src/scn/step/boss/creditmeta/StateGlide_80249e24.o \
@@ -2990,11 +2991,6 @@ $(BUILD_DIR)/asm/src/util/SIntAABBox_80405b68.o \
 $(BUILD_DIR)/asm/src/util/StateChanger_80405cd0.o \
 $(BUILD_DIR)/asm/src/util/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/util/UIntAABBox_8040603c.o \
-$(BUILD_DIR)/asm/src/scn/step/boss/creditdee/Custom_80560668.o \
-$(BUILD_DIR)/asm/src/scn/step/boss/creditdee/ModelDesc_80560670.o \
-$(BUILD_DIR)/asm/src/scn/step/boss/creditdee/StateFlightFar_80560678.o \
-$(BUILD_DIR)/asm/src/scn/step/boss/creditdee/StatePick_80560680.o \
-$(BUILD_DIR)/asm/src/scn/step/boss/creditdee/StateRunAppear_80560688.o \
 $(BUILD_DIR)/asm/src/scn/step/boss/creditmeta/Custom_80560690.o \
 $(BUILD_DIR)/asm/src/scn/step/boss/creditmeta/StateGlide_80560698.o \
 $(BUILD_DIR)/asm/src/scn/step/boss/creditmeta/StateGlideAway_805606a8.o \

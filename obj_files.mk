@@ -2325,10 +2325,11 @@ $(BUILD_DIR)/asm/src/scn/step/gimmick/challengedoor/Result.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/consecutivebattle/ConsecutiveBattle.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/consecutivebattle/Manager.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/gimmick/cutropestep/CutRopeStep.o \
+$(BUILD_DIR)/asm/src/scn/step/gimmick/cutropestep/Manager.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/cutropestep/CutRopeStep_8030b888.o \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/cutropestep/Manager_8030d4e0.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/door/Door_8030d910.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/door/Manager_8030e550.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/door/Result_8030ea10.o \
@@ -3086,7 +3087,6 @@ $(BUILD_DIR)/asm/src/util/StateChanger_80405cd0.o \
 $(BUILD_DIR)/asm/src/util/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/util/UIntAABBox_8040603c.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/cutropestep/CutRopeStep_80562818.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/door/Door_80562870.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/door/Result_80562888.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/ghost/Ghost_80562890.o \

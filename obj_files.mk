@@ -2176,24 +2176,25 @@ $(BUILD_DIR)/asm/src/scn/step/enemy/sun/StateMove.o \
 \
 $(BUILD_DIR)/asm/src/scn/step/enemy/toughdee/CharaParam.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/enemy/tsukikage/AddOnMint.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/tsukikage/BrainGround.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/tsukikage/BrainSmoke.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/tsukikage/BrainWall.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/tsukikage/CharaParam.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/tsukikage/Custom.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/tsukikage/ModelDesc.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/tsukikage/StateAttack.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/tsukikage/StateFall.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/tsukikage/StateJump.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/tsukikage/StateJumpAttack.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/tsukikage/StateLanding.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/tsukikage/StateWait.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/tsukikage/StateWall.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/tsukikage/StateWallAttack.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/tsukikage/StateWarp.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/enemy/tsukikage/AddOnMint_802e9d54.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/tsukikage/BrainGround_802ea418.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/tsukikage/BrainSmoke_802ea4dc.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/tsukikage/BrainWall_802ea5a0.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/tsukikage/CharaParam_802ea6f8.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/tsukikage/Custom_802ea788.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/tsukikage/ModelDesc_802eaffc.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/tsukikage/StateAttack_802eb0fc.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/tsukikage/StateFall_802eb370.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/tsukikage/StateJump_802eb514.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/tsukikage/StateJumpAttack_802eba40.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/tsukikage/StateLanding_802ebf80.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/tsukikage/StateWait_802ec1bc.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/tsukikage/StateWall_802ec318.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/tsukikage/StateWallAttack_802ec4fc.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/tsukikage/StateWarp_802ec768.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/waddledee/AddOnMint_802ed0e4.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/waddledee/BrainCreditWalkToPraise_802ed1e0.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/waddledee/BrainGrandLowper_802ed2c4.o \
@@ -3069,12 +3070,6 @@ $(BUILD_DIR)/asm/src/util/StateChanger_80405cd0.o \
 $(BUILD_DIR)/asm/src/util/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/util/UIntAABBox_8040603c.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/enemy/tsukikage/Custom_80562450.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/tsukikage/StateJump_80562468.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/tsukikage/StateJumpAttack_80562478.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/tsukikage/StateWall_80562480.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/tsukikage/StateWallAttack_80562488.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/tsukikage/StateWarp_80562490.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/waddledee/CharaParam_805624b0.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/waddledee/StateGrandLowperAppear_805624b8.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/waddledee/StateSmashed_805624c0.o \

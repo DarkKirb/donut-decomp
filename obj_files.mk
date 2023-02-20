@@ -1930,14 +1930,15 @@ $(BUILD_DIR)/asm/src/scn/step/enemy/needlous/StateAttack.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/needlous/StateIdling.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/needlous/StateWalkStraight.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/enemy/noddy/AddOnMint.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/noddy/BrainWait.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/noddy/BrainWalk.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/noddy/CharaParam.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/noddy/ModelDesc.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/noddy/StateWalk.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/enemy/noddy/AddOnMint_802c70ec.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/noddy/BrainWait_802c71a4.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/noddy/BrainWalk_802c71ec.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/noddy/CharaParam_802c72b0.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/noddy/ModelDesc_802c732c.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/noddy/StateWalk_802c740c.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/nruff/AddOnMint_802c74f0.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/nruff/BrainGrandLowper_802c7770.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/nruff/BrainRun_802c798c.o \

@@ -94,7 +94,7 @@ PYTHON  := python3
 FRANK := tools/franklite.py
 
 # Options
-INCLUDES := -i include/
+INCLUDES := -i- -i include/
 ASM_INCLUDES := -I include/
 
 ASFLAGS := -mbroadway $(ASM_INCLUDES) --defsym version=$(VERSION)
@@ -104,9 +104,9 @@ LDFLAGS := $(MAPGEN) -fp hard -nodefaults
 endif
 ifeq ($(VERBOSE),0)
 # this set of LDFLAGS generates no warnings.
-LDFLAGS := $(MAPGEN) -fp hard -nodefaults -w off
+LDFLAGS := $(MAPGEN) -fp hard -nodefaults -w off -code_merging all
 endif
-CFLAGS   = -Cpp_exceptions off -enum int -inline auto -proc gekko -RTTI off -fp hard -fp_contract on -rostr -O4,p -use_lmw_stmw on -sdata 8 -sdata2 8 -nodefaults $(INCLUDES)
+CFLAGS   = -DNDEBUG -Cpp_exceptions off -enum int -inline auto -proc gekko -RTTI off -fp hard -fp_contract on -opt level=4,space -schedule on -sdata 8 -sdata2 8 -nodefaults $(INCLUDES)
 
 ifeq ($(VERBOSE),0)
 # this set of ASFLAGS generates no warnings.
@@ -147,7 +147,7 @@ $(DOL): $(ELF) | tools
 	$(QUIET) $(ELF2DOL) $< $@
 	$(QUIET) $(SHA1SUM) -c sha1/$(NAME).$(VERSION).sha1
 ifneq ($(findstring -map,$(LDFLAGS)),)
-	$(QUIET) $(PYTHON) tools/calcprogress.py $(DOL) $(MAP)
+	$(QUIET) $(PYTHON) tools/calcprogress/calcprogress.py --dol $(DOL) --map $(MAP)
 endif
 
 clean:

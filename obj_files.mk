@@ -632,7 +632,7 @@ $(BUILD_DIR)/asm/libms/msgfile.o \
 $(BUILD_DIR)/asm/libms/commonbin.o \
 $(BUILD_DIR)/asm/libms/projfile.o \
 \
-$(BUILD_DIR)/asm/src/Main.o \
+$(BUILD_DIR)/src/src/Main.o \
 $(BUILD_DIR)/asm/src/TPL.o \
 $(BUILD_DIR)/asm/src/app/AddOnMint.o \
 $(BUILD_DIR)/asm/src/app/AppImpl.o \

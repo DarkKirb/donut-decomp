@@ -18,6 +18,8 @@
           yapf
           gnumake
           vbindiff
+          clang-tools
+          llvmPackages.bintools
         ];
         NIX = 1;
       };

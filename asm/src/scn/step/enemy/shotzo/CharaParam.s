@@ -55,3 +55,25 @@ lbl_802E0278:
 /* 802E0294 002DC0D4  7C 08 03 A6 */	mtlr r0
 /* 802E0298 002DC0D8  38 21 00 C0 */	addi r1, r1, 0xc0
 /* 802E029C 002DC0DC  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@48730_80562250"
+"@48730_80562250":
+
+	.4byte 0
+
+.global lbl_80562254
+lbl_80562254:
+
+	.4byte 0x3F2147AE
+
+.global "@48789_80562258"
+"@48789_80562258":
+
+	.4byte 0x3ECCCCCD
+
+.global "@48790_8056225C"
+"@48790_8056225C":
+
+	.4byte 0

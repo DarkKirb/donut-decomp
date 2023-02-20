@@ -2097,19 +2097,20 @@ $(BUILD_DIR)/asm/src/scn/step/enemy/sheld/StateJumpStart.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/sheld/StateSmashed.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/sheld/StateSmashedEnd.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/enemy/shotzo/AddOnMint.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/shotzo/BrainFix.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/shotzo/BrainFixCeil.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/shotzo/BrainPursuit.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/shotzo/BrainPursuitCeil.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/shotzo/CharaParam.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/shotzo/Custom.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/shotzo/ModelDesc.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/shotzo/StateAim.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/shotzo/StateShot.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/shotzo/StateWait.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/enemy/shotzo/AddOnMint_802dfae0.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/shotzo/BrainFix_802dfda0.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/shotzo/BrainFixCeil_802dff00.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/shotzo/BrainPursuit_802e00d8.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/shotzo/BrainPursuitCeil_802e019c.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/shotzo/CharaParam_802e01e0.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/shotzo/Custom_802e02a0.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/shotzo/ModelDesc_802e0740.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/shotzo/StateAim_802e0824.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/shotzo/StateShot_802e0ab0.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/shotzo/StateWait_802e0e88.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/sirkibble/AddOnMint_802e0ef0.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/sirkibble/BrainJumpAttack_802e11f8.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/sirkibble/CharaParam_802e12dc.o \
@@ -3060,11 +3061,6 @@ $(BUILD_DIR)/asm/src/util/StateChanger_80405cd0.o \
 $(BUILD_DIR)/asm/src/util/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/util/UIntAABBox_8040603c.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/enemy/shotzo/BrainFixCeil_80562240.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/shotzo/CharaParam_80562250.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/shotzo/Custom_80562260.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/shotzo/StateAim_80562290.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/shotzo/StateShot_805622a8.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/sirkibble/CharaParam_805622b8.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/sirkibble/Custom_805622c0.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/sirkibble/StateJump_805622c8.o \

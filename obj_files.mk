@@ -2011,14 +2011,15 @@ $(BUILD_DIR)/asm/src/scn/step/enemy/poppybrojr/ModelDesc.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/poppybrojr/StateMove.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/poppybrojr/StateThrow.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/enemy/poppybrojrbomb/BrainShot.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/poppybrojrbomb/CharaParam.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/poppybrojrbomb/Custom.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/poppybrojrbomb/ModelDesc.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/poppybrojrbomb/StateShot.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/poppybrojrbomb/StateWait.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/enemy/poppybrojrbomb/BrainShot_802d274c.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/poppybrojrbomb/CharaParam_802d2830.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/poppybrojrbomb/Custom_802d28d0.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/poppybrojrbomb/ModelDesc_802d2c0c.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/poppybrojrbomb/StateShot_802d2cbc.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/poppybrojrbomb/StateWait_802d3148.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/puppetdee/CharaParam_802d3198.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/puppetdee/Custom_802d3270.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/puppetdee/ModelDesc_802d3318.o \
@@ -3052,8 +3053,6 @@ $(BUILD_DIR)/asm/src/util/StateChanger_80405cd0.o \
 $(BUILD_DIR)/asm/src/util/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/util/UIntAABBox_8040603c.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/enemy/poppybrojrbomb/Custom_80561fa8.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/poppybrojrbomb/StateShot_80561fb0.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/puppetdee/CharaParam_80561fd0.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/rocky/StateAttack_80561fe8.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/rocky/StateCliffAttack_80561ff0.o \

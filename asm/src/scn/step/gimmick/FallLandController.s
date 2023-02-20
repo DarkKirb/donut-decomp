@@ -150,3 +150,11 @@ setInvalid__Q43scn4step7gimmick18FallLandControllerFv:
 /* 802F4248 002F0088  38 00 00 00 */	li r0, 0x0
 /* 802F424C 002F008C  98 03 00 24 */	stb r0, 0x24(r3)
 /* 802F4250 002F0090  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@53415_805625D0"
+"@53415_805625D0":
+
+	.4byte 0
+	.4byte 0

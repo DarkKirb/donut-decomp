@@ -2252,20 +2252,21 @@ $(BUILD_DIR)/asm/src/scn/step/enemy/zankibblecutter/StateCircle.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/zankibblecutter/StateSlant.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/zankibblecutter/StateStraight.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/gimmick/AddOnMint.o \
+$(BUILD_DIR)/asm/src/scn/step/gimmick/Effect.o \
+$(BUILD_DIR)/asm/src/scn/step/gimmick/FallLandController.o \
+$(BUILD_DIR)/asm/src/scn/step/gimmick/Manager.o \
+$(BUILD_DIR)/asm/src/scn/step/gimmick/Model.o \
+$(BUILD_DIR)/asm/src/scn/step/gimmick/StepMoveInfo.o \
+$(BUILD_DIR)/asm/src/scn/step/gimmick/Stop.o \
+$(BUILD_DIR)/asm/src/scn/step/gimmick/SuperStop.o \
+$(BUILD_DIR)/asm/src/scn/step/gimmick/SwitchReceiver.o \
+$(BUILD_DIR)/asm/src/scn/step/gimmick/SwitchReceiverManager.o \
+$(BUILD_DIR)/asm/src/scn/step/gimmick/TalkManager.o \
+$(BUILD_DIR)/asm/src/scn/step/gimmick/Util.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/AddOnMint_802f395c.o \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/Effect_802f39a0.o \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/FallLandController_802f4058.o \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/Manager_802f4254.o \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/Model_802f70c8.o \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/StepMoveInfo_802f7294.o \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/Stop_802f72c4.o \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/SuperStop_802f79cc.o \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/SwitchReceiver_802f7bbc.o \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/SwitchReceiverManager_802f7d04.o \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/TalkManager_802f8084.o \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/Util_802f8314.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/airflow/AirFlow_802f83b8.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/airflow/Manager_802f926c.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/areamapdemo/AddOnMint_802f99e4.o \
@@ -3076,8 +3077,6 @@ $(BUILD_DIR)/asm/src/util/StateChanger_80405cd0.o \
 $(BUILD_DIR)/asm/src/util/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/util/UIntAABBox_8040603c.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/FallLandController_805625d0.o \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/TalkManager_805625d8.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/airflow/AirFlow_805625e0.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/areamapdemo/CameraCtrl_805625f0.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/areamapdemo/Demo_80562600.o \

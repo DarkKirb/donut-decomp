@@ -222,3 +222,21 @@ setupDrawOriginal__Q23sfx11ScreenRemapFv:
 /* 80401A58 003FD898  7C 08 03 A6 */	mtlr r0
 /* 80401A5C 003FD89C  38 21 00 40 */	addi r1, r1, 0x40
 /* 80401A60 003FD8A0  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@51565_80564308"
+"@51565_80564308":
+
+	.4byte 0xFFFFFFFF
+
+.global "@51592_8056430C"
+"@51592_8056430C":
+
+	.4byte 0x000000FF
+
+.global "@51606_80564310"
+"@51606_80564310":
+
+	.4byte 0
+	.4byte 0

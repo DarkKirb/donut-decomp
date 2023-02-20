@@ -3154,17 +3154,18 @@ $(BUILD_DIR)/asm/src/seq/SequenceStaffCredit.o \
 $(BUILD_DIR)/asm/src/seq/SequenceStep.o \
 $(BUILD_DIR)/asm/src/seq/SequenceVC.o \
 \
+$(BUILD_DIR)/asm/src/sfx/CinemaScopeModel.o \
+$(BUILD_DIR)/asm/src/sfx/Fade.o \
+$(BUILD_DIR)/asm/src/sfx/FullScreenModel.o \
+$(BUILD_DIR)/asm/src/sfx/Manager.o \
+$(BUILD_DIR)/asm/src/sfx/Monotone.o \
+$(BUILD_DIR)/asm/src/sfx/ScreenRemap.o \
+$(BUILD_DIR)/asm/src/sfx/Utility.o \
+$(BUILD_DIR)/asm/src/sfx/Warp.o \
+$(BUILD_DIR)/asm/src/sfx/Wipe.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/sfx/CinemaScopeModel_80400510.o \
-$(BUILD_DIR)/asm/src/sfx/Fade_8040078c.o \
-$(BUILD_DIR)/asm/src/sfx/FullScreenModel_80400c6c.o \
-$(BUILD_DIR)/asm/src/sfx/Manager_804011d4.o \
-$(BUILD_DIR)/asm/src/sfx/Monotone_8040130c.o \
-$(BUILD_DIR)/asm/src/sfx/ScreenRemap_80401708.o \
-$(BUILD_DIR)/asm/src/sfx/Utility_80401a64.o \
-$(BUILD_DIR)/asm/src/sfx/Warp_80401d90.o \
-$(BUILD_DIR)/asm/src/sfx/Wipe_80402248.o \
 $(BUILD_DIR)/asm/src/snd/AddOnMint_8040257c.o \
 $(BUILD_DIR)/asm/src/snd/BgmPlayer_80402654.o \
 $(BUILD_DIR)/asm/src/snd/MintSERequestor_80402a3c.o \
@@ -3192,13 +3193,6 @@ $(BUILD_DIR)/asm/src/util/StateChanger_80405cd0.o \
 $(BUILD_DIR)/asm/src/util/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/util/UIntAABBox_8040603c.o \
 \
-$(BUILD_DIR)/asm/src/sfx/Fade_805642a8.o \
-$(BUILD_DIR)/asm/src/sfx/FullScreenModel_805642d0.o \
-$(BUILD_DIR)/asm/src/sfx/Monotone_805642f8.o \
-$(BUILD_DIR)/asm/src/sfx/ScreenRemap_80564308.o \
-$(BUILD_DIR)/asm/src/sfx/Utility_80564318.o \
-$(BUILD_DIR)/asm/src/sfx/Warp_80564330.o \
-$(BUILD_DIR)/asm/src/sfx/Wipe_80564348.o \
 $(BUILD_DIR)/asm/src/snd/BgmPlayer_80564358.o \
 $(BUILD_DIR)/asm/src/snd/WaveHandle_80564360.o \
 $(BUILD_DIR)/asm/src/storage/StorageManager_80564368.o \

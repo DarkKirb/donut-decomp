@@ -623,3 +623,35 @@ __vt__Q53scn4step5enemy6pierce14StateFlyAround:
 	.4byte procConstraint__Q43scn4step5enemy9StateBaseFv
 	.4byte procFixPos__Q53scn4step5enemy6pierce14StateFlyAroundFv
 	.4byte procObjCollReact__Q43scn4step5enemy9StateBaseFv
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@56372_80561F08"
+"@56372_80561F08":
+
+	.4byte 0
+
+.global "@56439_80561F0C"
+"@56439_80561F0C":
+
+	.4byte 0x42B40000
+
+.global "@56440_80561F10"
+"@56440_80561F10":
+
+	.4byte 0x43870000
+
+.global "@56447"
+"@56447":
+
+	.4byte 0x43B40000
+
+.global "@56460_80561F18"
+"@56460_80561F18":
+
+	.4byte 0x3F800000
+
+.global "@56461_80561F1C"
+"@56461_80561F1C":
+
+	.4byte 0xBF800000

@@ -1993,16 +1993,17 @@ $(BUILD_DIR)/asm/src/scn/step/enemy/parasoldoo/StateNoseDive.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/parasoldoo/StateParasolFall.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/parasoldoo/StateWalkStraight.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/enemy/pierce/BrainFly.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/pierce/CharaParam.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/pierce/Custom.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/pierce/ModelDesc.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/pierce/StateFlyAround.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/pierce/StateFlyPursuit.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/pierce/StateFlySinCurve.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/pierce/StateFlyWait.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/enemy/pierce/BrainFly_802cf63c.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/pierce/CharaParam_802cf890.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/pierce/Custom_802cf918.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/pierce/ModelDesc_802cfb3c.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/pierce/StateFlyAround_802cfc24.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/pierce/StateFlyPursuit_802d0404.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/pierce/StateFlySinCurve_802d0b04.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/pierce/StateFlyWait_802d0fb0.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/poppybrojr/AddOnMint_802d11f4.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/poppybrojr/BrainMoveAttack_802d156c.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/poppybrojr/BrainWaitAttack_802d1634.o \
@@ -3050,9 +3051,6 @@ $(BUILD_DIR)/asm/src/util/StateChanger_80405cd0.o \
 $(BUILD_DIR)/asm/src/util/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/util/UIntAABBox_8040603c.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/enemy/pierce/StateFlyAround_80561f08.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/pierce/StateFlyPursuit_80561f20.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/pierce/StateFlySinCurve_80561f30.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/poppybrojr/CharaParam_80561f50.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/poppybrojr/Custom_80561f60.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/poppybrojr/ModelDesc_80561f68.o \

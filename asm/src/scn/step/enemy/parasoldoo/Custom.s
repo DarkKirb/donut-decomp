@@ -651,3 +651,11 @@ __vt__Q53scn4step5enemy10parasoldoo6Custom:
 	.4byte "@8@onParasolRequireUnsetReceiver__Q53scn4step5enemy10parasoldoo6CustomFRQ53scn4step5enemy7parasol6Custom"
 	.4byte onParasolRelease__Q53scn4step5enemy10parasoldoo6CustomFRQ53scn4step5enemy7parasol6Custom
 	.4byte onParasolRequireUnsetReceiver__Q53scn4step5enemy10parasoldoo6CustomFRQ53scn4step5enemy7parasol6Custom
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@57142"
+"@57142":
+
+	.4byte 0
+	.4byte 0

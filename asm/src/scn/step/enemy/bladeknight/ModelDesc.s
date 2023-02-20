@@ -1061,3 +1061,61 @@ lbl_80297550:
 .global "@GUARD@CreateTmpl<9,0>__Q43scn4step5enemy13ModelDescUtilFPCcPCcUlPPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc"
 "@GUARD@CreateTmpl<9,0>__Q43scn4step5enemy13ModelDescUtilFPCcPCcUlPPCcUlPCQ34gobj20G3DAnimDataReposDesc5EntryUlPCQ34gobj10ScriptDesc5Entry_RQ43scn4step5chara9ModelDesc@desc":
 	.skip 0x8
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@50411_805611D0"
+"@50411_805611D0":
+
+	.4byte 0
+
+.global "@50412_805611D4"
+"@50412_805611D4":
+
+	.4byte 0x3CA3D70A
+
+.global "@50413_805611D8"
+"@50413_805611D8":
+
+	.4byte 0x3F800000
+
+.global "@50414_805611DC"
+"@50414_805611DC":
+
+	.4byte 0x3ECCCCCD
+
+.global "@50415_805611E0"
+"@50415_805611E0":
+
+	.4byte 0x3B64C388
+
+.global "@50416_805611E4"
+"@50416_805611E4":
+
+	.4byte 0x3D0EFA35
+
+.global "@50417_805611E8"
+"@50417_805611E8":
+
+	.4byte 0x3DFA35DD
+
+.global "@50418_805611EC"
+"@50418_805611EC":
+
+	.4byte 0x3F490FDB
+
+.global "@50419_805611F0"
+"@50419_805611F0":
+
+	.4byte 0x3E99999A
+
+.global "@50420_805611F4"
+"@50420_805611F4":
+
+	.4byte 0x3E4CCCCD
+
+.global "@50421_805611F8"
+"@50421_805611F8":
+
+	.4byte 0x3DCCCCCD
+	.4byte 0

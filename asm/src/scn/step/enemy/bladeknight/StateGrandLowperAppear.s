@@ -148,3 +148,35 @@ __vt__Q53scn4step5enemy11bladeknight22StateGrandLowperAppear:
 	.4byte procConstraint__Q43scn4step5enemy9StateBaseFv
 	.4byte procFixPos__Q53scn4step5enemy11bladeknight22StateGrandLowperAppearFv
 	.4byte procObjCollReact__Q43scn4step5enemy9StateBaseFv
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@56597_80561208"
+"@56597_80561208":
+
+	.4byte 0x4222F983
+
+.global "@56598_8056120C"
+"@56598_8056120C":
+
+	.4byte 0x3C8EFA35
+
+.global "@56599_80561210"
+"@56599_80561210":
+
+	.4byte 0x42B40000
+
+.global "@56600_80561214"
+"@56600_80561214":
+
+	.4byte 0x43B40000
+
+.global "@56601_80561218"
+"@56601_80561218":
+
+	.4byte 0x3F800000
+
+.global "@56602_8056121C"
+"@56602_8056121C":
+
+	.4byte 0

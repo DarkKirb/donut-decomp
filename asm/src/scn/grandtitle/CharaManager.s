@@ -803,3 +803,11 @@ block__Q33scn10grandtitle12CharaManagerFUl:
 
 	.4byte 0x546F704C
 	.4byte 0
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@54420_8055FF80"
+"@54420_8055FF80":
+
+	.4byte 0x43300000
+	.4byte 0x80000000

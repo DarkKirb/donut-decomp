@@ -573,3 +573,25 @@ lbl_80205C8C:
 /* 80205CBC 00201AFC  7C 08 03 A6 */	mtlr r0
 /* 80205CC0 00201B00  38 21 00 20 */	addi r1, r1, 0x20
 /* 80205CC4 00201B04  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@57239"
+"@57239":
+
+	.4byte 0x3F19999A
+
+.global "@57240_8055FFD4"
+"@57240_8055FFD4":
+
+	.4byte 0x3F800000
+
+.global "@57241_8055FFD8"
+"@57241_8055FFD8":
+
+	.4byte 0x3E4CCCCD
+
+.global "@57242"
+"@57242":
+
+	.4byte 0x3DCCCCCD

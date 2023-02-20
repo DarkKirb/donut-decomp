@@ -2193,26 +2193,27 @@ $(BUILD_DIR)/asm/src/scn/step/enemy/tsukikage/StateWall.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/tsukikage/StateWallAttack.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/tsukikage/StateWarp.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/enemy/waddledee/AddOnMint.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/waddledee/BrainCreditWalkToPraise.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/waddledee/BrainGrandLowper.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/waddledee/BrainWait.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/waddledee/BrainWhispy.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/waddledee/CharaParam.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/waddledee/ModelDesc.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/waddledee/StateGrandLowperAppear.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/waddledee/StateGrandLowperEscape.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/waddledee/StateGrandLowperEscapeStart.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/waddledee/StateGrandLowperLanding.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/waddledee/StateSmashed.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/waddledee/StateSmashedEnd.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/waddledee/StateWait.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/waddledee/StateWhispyAppear.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/waddledee/StateWhispyFall.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/waddledee/StateWhispyLanding.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/waddledee/Utility.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/enemy/waddledee/AddOnMint_802ed0e4.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/waddledee/BrainCreditWalkToPraise_802ed1e0.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/waddledee/BrainGrandLowper_802ed2c4.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/waddledee/BrainWait_802ed3a4.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/waddledee/BrainWhispy_802ed578.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/waddledee/CharaParam_802ed670.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/waddledee/ModelDesc_802ed6f4.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/waddledee/StateGrandLowperAppear_802ed994.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/waddledee/StateGrandLowperEscape_802edc68.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/waddledee/StateGrandLowperEscapeStart_802edea0.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/waddledee/StateGrandLowperLanding_802edfd4.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/waddledee/StateSmashed_802ee0e8.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/waddledee/StateSmashedEnd_802ee6c8.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/waddledee/StateWait_802eea08.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/waddledee/StateWhispyAppear_802eece0.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/waddledee/StateWhispyFall_802eefb4.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/waddledee/StateWhispyLanding_802ef244.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/waddledee/Utility_802ef2c4.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/waddledoo/AddOnMint_802ef7cc.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/waddledoo/BrainJumpOrAttack_802ef958.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/waddledoo/BrainWalkAround_802ef9d8.o \
@@ -3070,13 +3071,6 @@ $(BUILD_DIR)/asm/src/util/StateChanger_80405cd0.o \
 $(BUILD_DIR)/asm/src/util/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/util/UIntAABBox_8040603c.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/enemy/waddledee/CharaParam_805624b0.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/waddledee/StateGrandLowperAppear_805624b8.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/waddledee/StateSmashed_805624c0.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/waddledee/StateSmashedEnd_805624e0.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/waddledee/StateWhispyAppear_805624f0.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/waddledee/StateWhispyFall_80562508.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/Utility_80562510.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/watergalbo/CharaParam_80562528.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/watergalbo/StateAttack_80562530.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/whippy/CharaParam_80562538.o \

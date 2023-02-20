@@ -2667,29 +2667,30 @@ $(BUILD_DIR)/asm/src/scn/step/hero/captured/StateCapturedWhispyVomitSoft.o \
 \
 $(BUILD_DIR)/asm/src/scn/step/hero/mix/ShuffleManager.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/hero/sword/StateSwordAirSpin.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/sword/StateSwordAttack.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/sword/StateSwordAttackFinish.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/sword/StateSwordCharge.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/sword/StateSwordChargeStart.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/sword/StateSwordChopping.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/sword/StateSwordChoppingHit.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/sword/StateSwordFloatSpin.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/sword/StateSwordMeteor.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/sword/StateSwordMeteorLanding.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/sword/StateSwordMince.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/sword/StateSwordRaising.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/sword/StateSwordRaisingEnd.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/sword/StateSwordSpin.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/sword/StateSwordThrust.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/sword/StateSwordThrustEnd.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/sword/StateSwordUnderThrust.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/sword/StateSwordUnderThrustLanding.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/sword/StateSwordUnderThrustStart.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/sword/StateSwordWaterSpin.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/sword/Sword.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/hero/sword/StateSwordAirSpin_803862ac.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/sword/StateSwordAttack_8038669c.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/sword/StateSwordAttackFinish_80386c08.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/sword/StateSwordCharge_80386fa8.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/sword/StateSwordChargeStart_80387104.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/sword/StateSwordChopping_80387344.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/sword/StateSwordChoppingHit_8038779c.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/sword/StateSwordFloatSpin_80387a4c.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/sword/StateSwordMeteor_80387f94.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/sword/StateSwordMeteorLanding_8038839c.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/sword/StateSwordMince_80388514.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/sword/StateSwordRaising_80388804.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/sword/StateSwordRaisingEnd_80388bfc.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/sword/StateSwordSpin_80388cfc.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/sword/StateSwordThrust_80388ee8.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/sword/StateSwordThrustEnd_803893d0.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/sword/StateSwordUnderThrust_80389434.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/sword/StateSwordUnderThrustLanding_803896d0.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/sword/StateSwordUnderThrustStart_80389818.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/sword/StateSwordWaterSpin_80389ab4.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/sword/Sword_80389cbc.o \
 $(BUILD_DIR)/asm/src/scn/step/hero/whip/StateWhipAttack_8038a03c.o \
 $(BUILD_DIR)/asm/src/scn/step/hero/whip/StateWhipAttackAir_8038a0d4.o \
 $(BUILD_DIR)/asm/src/scn/step/hero/whip/StateWhipAttackUp_8038a2cc.o \
@@ -3122,12 +3123,6 @@ $(BUILD_DIR)/asm/src/util/StateChanger_80405cd0.o \
 $(BUILD_DIR)/asm/src/util/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/util/UIntAABBox_8040603c.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/hero/sword/StateSwordAttack_80563540.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/sword/StateSwordChoppingHit_80563548.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/sword/StateSwordFloatSpin_80563560.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/sword/StateSwordRaising_80563568.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/sword/StateSwordThrust_80563570.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/sword/StateSwordUnderThrust_80563578.o \
 $(BUILD_DIR)/asm/src/scn/step/hero/whip/StateWhipCatch_80563580.o \
 $(BUILD_DIR)/asm/src/scn/step/hero/whip/StateWhipGazerSpiral_80563588.o \
 $(BUILD_DIR)/asm/src/scn/step/hero/spark/StateAttackOver_80563598.o \

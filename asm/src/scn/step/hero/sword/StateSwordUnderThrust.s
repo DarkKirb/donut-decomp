@@ -218,3 +218,11 @@ __vt__Q53scn4step4hero5sword21StateSwordUnderThrust:
 	.4byte procObjCollReact__Q43scn4step4hero9StateBaseFv
 	.4byte procEnd__Q43scn4step4hero9StateBaseFv
 	.4byte 0
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@59034_80563578"
+"@59034_80563578":
+
+	.4byte 0x3DCCCCCD
+	.4byte 0

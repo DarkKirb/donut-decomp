@@ -1937,22 +1937,23 @@ $(BUILD_DIR)/asm/src/scn/step/enemy/noddy/CharaParam.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/noddy/ModelDesc.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/noddy/StateWalk.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/enemy/nruff/AddOnMint.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/nruff/BrainGrandLowper.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/nruff/BrainRun.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/nruff/CharaParam.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/nruff/Custom.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/nruff/ModelDesc.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/nruff/StateFall.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/nruff/StateGrandLowperAppear.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/nruff/StateGrandLowperEscape.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/nruff/StateGrandLowperEscapeStart.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/nruff/StateStay.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/nruff/StateStop.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/nruff/StateStopAir.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/nruff/StateWalk.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/enemy/nruff/AddOnMint_802c74f0.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/nruff/BrainGrandLowper_802c7770.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/nruff/BrainRun_802c798c.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/nruff/CharaParam_802c7a68.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/nruff/Custom_802c7af0.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/nruff/ModelDesc_802c7e00.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/nruff/StateFall_802c7ee4.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/nruff/StateGrandLowperAppear_802c83ac.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/nruff/StateGrandLowperEscape_802c85a4.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/nruff/StateGrandLowperEscapeStart_802c87dc.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/nruff/StateStay_802c8910.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/nruff/StateStop_802c8af8.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/nruff/StateStopAir_802c8e34.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/nruff/StateWalk_802c9158.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/owgulf/AddOnMint_802c97f0.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/owgulf/BrainFlyAround_802c9acc.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/owgulf/BrainFlyStraight_802c9cd8.o \
@@ -3045,14 +3046,6 @@ $(BUILD_DIR)/asm/src/util/StateChanger_80405cd0.o \
 $(BUILD_DIR)/asm/src/util/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/util/UIntAABBox_8040603c.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/enemy/nruff/BrainGrandLowper_80561d70.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/nruff/CharaParam_80561d78.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/nruff/Custom_80561d80.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/nruff/StateFall_80561d88.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/nruff/StateGrandLowperAppear_80561d98.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/nruff/StateStop_80561db0.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/nruff/StateStopAir_80561db8.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/nruff/StateWalk_80561dc0.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/owgulf/CharaParam_80561dd8.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/owgulf/StateAttack1Way_80561de0.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/owgulf/StateAttack3Way_80561df8.o \

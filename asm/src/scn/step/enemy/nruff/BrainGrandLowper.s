@@ -198,3 +198,11 @@ __vt__Q53scn4step5enemy5nruff16BrainGrandLowper:
 	.4byte onLanding__Q53scn4step5enemy5nruff16BrainGrandLowperFv
 	.4byte update__Q43scn4step5enemy9BrainBaseFv
 	.4byte 0
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@55058_80561D70"
+"@55058_80561D70":
+
+	.4byte 0x41400000
+	.4byte 0

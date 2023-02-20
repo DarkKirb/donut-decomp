@@ -1914,15 +1914,16 @@ $(BUILD_DIR)/asm/src/scn/step/enemy/mbossdead/Custom.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/mbossdead/ModelDesc.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/mbossdead/StateMain.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/enemy/mumbies/AddOnMint.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/mumbies/BrainChase.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/mumbies/CharaParam.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/mumbies/Custom.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/mumbies/ModelDesc.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/mumbies/StateChase.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/mumbies/StateEndure.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/enemy/mumbies/AddOnMint_802c4c34.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/mumbies/BrainChase_802c4cec.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/mumbies/CharaParam_802c4db4.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/mumbies/Custom_802c4e34.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/mumbies/ModelDesc_802c5000.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/mumbies/StateChase_802c50ec.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/mumbies/StateEndure_802c5880.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/needlous/BrainAttackStraight_802c5a3c.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/needlous/CharaParam_802c5d1c.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/needlous/Custom_802c5dc4.o \
@@ -3042,7 +3043,6 @@ $(BUILD_DIR)/asm/src/util/StateChanger_80405cd0.o \
 $(BUILD_DIR)/asm/src/util/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/util/UIntAABBox_8040603c.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/enemy/mumbies/StateChase_80561ce8.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/needlous/BrainAttackStraight_80561d00.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/needlous/CharaParam_80561d10.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/needlous/Custom_80561d20.o \

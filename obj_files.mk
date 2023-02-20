@@ -2381,10 +2381,11 @@ $(BUILD_DIR)/asm/src/scn/step/gimmick/rollball/Manager.o \
 \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/roomguarder/RoomGuarder.o \
 \
-$(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
-\
 $(BUILD_DIR)/asm/src/scn/step/gimmick/roomguardermarker/Manager_8031e08c.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/roomguardermarker/RoomGuarderMarker_8031e360.o \
+\
+$(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
+\
 $(BUILD_DIR)/asm/src/scn/step/gimmick/shipevent/AddOnMint_8031e3e8.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/shipevent/Manager_8031f214.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/shipevent/MintShipEvent_8031f7a0.o \

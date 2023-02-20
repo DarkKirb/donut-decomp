@@ -161,3 +161,11 @@ rate__Q43scn4step5chara8HitPointCFv:
 /* 8026ECDC 0026AB1C  EC 21 00 24 */	fdivs f1, f1, f0
 /* 8026ECE0 0026AB20  38 21 00 20 */	addi r1, r1, 0x20
 /* 8026ECE4 0026AB24  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@49001_80560C88"
+"@49001_80560C88":
+
+	.4byte 0x43300000
+	.4byte 0

@@ -355,3 +355,21 @@ changePadding__Q43scn4step5chara9WorldCageFff:
 /* 802739D4 0026F814  D0 23 00 0C */	stfs f1, 0xc(r3)
 /* 802739D8 0026F818  D0 43 00 10 */	stfs f2, 0x10(r3)
 /* 802739DC 0026F81C  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@54475"
+"@54475":
+
+	.4byte 0
+
+.global "@54508_80560D74"
+"@54508_80560D74":
+
+	.4byte 0x3F000000
+
+.global "@54509_80560D78"
+"@54509_80560D78":
+
+	.4byte 0x3727C5AC
+	.4byte 0

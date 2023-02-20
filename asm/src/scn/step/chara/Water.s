@@ -358,3 +358,11 @@ setUseCallback__Q43scn4step5chara5WaterFb:
 setForbidEffect__Q43scn4step5chara5WaterFb:
 /* 802734D8 0026F318  98 83 00 1F */	stb r4, 0x1f(r3)
 /* 802734DC 0026F31C  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@53564_80560D68"
+"@53564_80560D68":
+
+	.4byte 0x3F800000
+	.4byte 0

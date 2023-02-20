@@ -218,3 +218,11 @@ __ct__Q53scn4step5chara10DamageInfo4DataFv:
 /* 8026DE98 00269CD8  7C 08 03 A6 */	mtlr r0
 /* 8026DE9C 00269CDC  38 21 00 10 */	addi r1, r1, 0x10
 /* 8026DEA0 00269CE0  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@49900"
+"@49900":
+
+	.4byte 0
+	.4byte 0

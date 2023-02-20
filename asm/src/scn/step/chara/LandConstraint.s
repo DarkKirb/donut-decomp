@@ -384,3 +384,11 @@ lbl_8026F600:
 /* 8026F60C 0026B44C  7C 08 03 A6 */	mtlr r0
 /* 8026F610 0026B450  38 21 00 50 */	addi r1, r1, 0x50
 /* 8026F614 0026B454  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@53036_80560CB0"
+"@53036_80560CB0":
+
+	.4byte 0x3F800000
+	.4byte 0

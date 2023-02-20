@@ -3073,11 +3073,12 @@ $(BUILD_DIR)/asm/src/scn/step/weapon/combinationdededebomber/StateMain.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/combinationdeeshot/ModelDesc.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/combinationdeeshot/StateMain.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/weapon/dededehammer/ModelDesc.o \
+$(BUILD_DIR)/asm/src/scn/step/weapon/dededehammer/StateExplosion.o \
+$(BUILD_DIR)/asm/src/scn/step/weapon/dededehammer/StateMain.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/weapon/dededehammer/ModelDesc_803ec79c.o \
-$(BUILD_DIR)/asm/src/scn/step/weapon/dededehammer/StateExplosion_803ec898.o \
-$(BUILD_DIR)/asm/src/scn/step/weapon/dededehammer/StateMain_803ecbd4.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/deespear/ModelDesc_803ecf88.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/deespear/StateMain_803ed0b4.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/deespear/StateReflect_803ed654.o \
@@ -3178,8 +3179,6 @@ $(BUILD_DIR)/asm/src/util/StateChanger_80405cd0.o \
 $(BUILD_DIR)/asm/src/util/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/util/UIntAABBox_8040603c.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/weapon/dededehammer/StateExplosion_805640d0.o \
-$(BUILD_DIR)/asm/src/scn/step/weapon/dededehammer/StateMain_805640e8.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/deespear/StateReflect_80564100.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/deespear/StateStickWall_80564118.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/deespear/StateVanish_80564128.o \

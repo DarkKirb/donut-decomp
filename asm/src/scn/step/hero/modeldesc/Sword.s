@@ -613,3 +613,11 @@ SwordAnim__Q53scn4step4hero9modeldesc5SwordFv:
 .global "@LOCAL@SwordModel__Q53scn4step4hero9modeldesc5SwordFv@nodeReposDesc@0"
 "@LOCAL@SwordModel__Q53scn4step4hero9modeldesc5SwordFv@nodeReposDesc@0":
 	.skip 0x8
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@49876"
+"@49876":
+
+	.4byte 0
+	.4byte 0

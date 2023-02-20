@@ -1778,18 +1778,19 @@ $(BUILD_DIR)/asm/src/scn/step/enemy/dubiorspark/Custom.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/dubiorspark/ModelDesc.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/dubiorspark/StateShot.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/enemy/elec/AddOnMint.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/elec/BrainAttack.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/elec/BrainMove.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/elec/BrainMoveAttack.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/elec/CharaParam.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/elec/Custom.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/elec/ModelDesc.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/elec/StateAttack.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/elec/StateChase.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/elec/StateMove.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/enemy/elec/AddOnMint_802af168.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/elec/BrainAttack_802af3f4.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/elec/BrainMove_802af4dc.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/elec/BrainMoveAttack_802af7a0.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/elec/CharaParam_802afa00.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/elec/Custom_802afaa0.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/elec/ModelDesc_802afc40.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/elec/StateAttack_802afd28.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/elec/StateChase_802afedc.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/elec/StateMove_802b0294.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/flamer/AddOnMint_802b125c.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/flamer/BrainAttack_802b1bc0.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/flamer/BrainMove_802b1dcc.o \
@@ -3029,13 +3030,6 @@ $(BUILD_DIR)/asm/src/util/StateChanger_80405cd0.o \
 $(BUILD_DIR)/asm/src/util/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/util/UIntAABBox_8040603c.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/enemy/elec/AddOnMint_805617f0.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/elec/BrainMoveAttack_805617f8.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/elec/CharaParam_80561808.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/elec/Custom_80561810.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/elec/StateAttack_80561818.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/elec/StateChase_80561828.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/elec/StateMove_80561838.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/flamer/AddOnMint_80561878.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/flamer/CharaParam_80561888.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/flamer/StateAgony_80561890.o \

@@ -226,3 +226,15 @@ Func__Q63scn4step5enemy4elec9AddOnMint39Mint_SetViewOffset_0$56476AddOnMint_cppF
 	.4byte 0x636C6173
 	.4byte 0x73000000
 	.4byte 0
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@56635_805617F0"
+"@56635_805617F0":
+
+	.4byte 0
+
+.global "@56647_805617F4"
+"@56647_805617F4":
+
+	.4byte 0x3E99999A

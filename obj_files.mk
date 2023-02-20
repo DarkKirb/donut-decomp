@@ -2366,12 +2366,13 @@ $(BUILD_DIR)/asm/src/scn/step/gimmick/movegroupctrl/MoveGroupCtrl.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/movegroupctrl/MoveGroupCtrlOrder.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/movegroupctrl/OrderUtil.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/gimmick/monitor/AddOnMint.o \
+$(BUILD_DIR)/asm/src/scn/step/gimmick/monitor/Manager.o \
+$(BUILD_DIR)/asm/src/scn/step/gimmick/monitor/MintMonitor.o \
+$(BUILD_DIR)/asm/src/scn/step/gimmick/monitor/Monitor.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/monitor/AddOnMint_80319278.o \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/monitor/Manager_803193ec.o \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/monitor/MintMonitor_803197fc.o \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/monitor/Monitor_8031980c.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/movelandattack/Manager_803199f4.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/movelandattack/MoveLandAttack_80319c8c.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/otachidai/Manager_8031a06c.o \
@@ -3096,7 +3097,6 @@ $(BUILD_DIR)/asm/src/util/StateChanger_80405cd0.o \
 $(BUILD_DIR)/asm/src/util/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/util/UIntAABBox_8040603c.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/monitor/Monitor_805629b0.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/movelandattack/MoveLandAttack_805629c0.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/otachidai/Otachidai_805629d0.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/rollball/Manager_805629e8.o \

@@ -2284,6 +2284,9 @@ $(BUILD_DIR)/asm/src/scn/step/gimmick/areamapdemo/MintDemo.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/arease/AreaSE.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/arease/Manager.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/gimmick/arrowboard/ArrowBoard.o \
+$(BUILD_DIR)/asm/src/scn/step/gimmick/arrowboard/Manager.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/block/Block_802fee98.o \
@@ -3078,7 +3081,6 @@ $(BUILD_DIR)/asm/src/util/StateChanger_80405cd0.o \
 $(BUILD_DIR)/asm/src/util/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/util/UIntAABBox_8040603c.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/arrowboard/ArrowBoard_80562698.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/block/Block_805626a0.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/block/BlockEffRequestInfo_805626b0.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/block/BlockManager_805626b8.o \

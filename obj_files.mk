@@ -2294,19 +2294,20 @@ $(BUILD_DIR)/asm/src/scn/step/gimmick/block/BlockInfo.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/block/BlockManager.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/block/BlockResFiles.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/gimmick/cameralock/CameraLock.o \
+$(BUILD_DIR)/asm/src/scn/step/gimmick/cameralock/Manager.o \
+$(BUILD_DIR)/asm/src/scn/step/gimmick/cameralock/VariationDemo.o \
+$(BUILD_DIR)/asm/src/scn/step/gimmick/cameralock/VariationDownside.o \
+$(BUILD_DIR)/asm/src/scn/step/gimmick/cameralock/VariationLoose.o \
+$(BUILD_DIR)/asm/src/scn/step/gimmick/cameralock/VariationMove.o \
+$(BUILD_DIR)/asm/src/scn/step/gimmick/cameralock/VariationPerm.o \
+$(BUILD_DIR)/asm/src/scn/step/gimmick/cameralock/VariationShooting.o \
+$(BUILD_DIR)/asm/src/scn/step/gimmick/cameralock/VariationSphere.o \
+$(BUILD_DIR)/asm/src/scn/step/gimmick/cameralock/VariationStill.o \
+$(BUILD_DIR)/asm/src/scn/step/gimmick/cameralock/VariationUpside.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/cameralock/CameraLock_80302e64.o \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/cameralock/Manager_80303404.o \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/cameralock/VariationDemo_8030378c.o \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/cameralock/VariationDownside_80304230.o \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/cameralock/VariationLoose_80304304.o \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/cameralock/VariationMove_80304c0c.o \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/cameralock/VariationPerm_80304c98.o \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/cameralock/VariationShooting_80304dd4.o \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/cameralock/VariationSphere_80305014.o \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/cameralock/VariationStill_80305468.o \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/cameralock/VariationUpside_803056b4.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/chainstarter/ChainStarter_80305780.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/chainstarter/Manager_803058b8.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/challengedoor/AddOnMint_80305afc.o \
@@ -3082,14 +3083,6 @@ $(BUILD_DIR)/asm/src/util/StateChanger_80405cd0.o \
 $(BUILD_DIR)/asm/src/util/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/util/UIntAABBox_8040603c.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/cameralock/VariationDemo_80562700.o \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/cameralock/VariationDownside_80562730.o \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/cameralock/VariationLoose_80562738.o \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/cameralock/VariationPerm_80562748.o \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/cameralock/VariationShooting_80562758.o \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/cameralock/VariationSphere_80562770.o \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/cameralock/VariationStill_80562778.o \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/cameralock/VariationUpside_80562788.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/challengedoor/ChallengeDoor_80562790.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/challengedoor/ChallengeDoorMaster_805627b0.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/challengedoor/ChallengeDoorMusou_805627c8.o \

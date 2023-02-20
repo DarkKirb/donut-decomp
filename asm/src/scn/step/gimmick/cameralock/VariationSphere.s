@@ -323,3 +323,15 @@ __vt__Q53scn4step7gimmick10cameralock15VariationSphere:
 	.4byte updateLockNonStop__Q53scn4step7gimmick10cameralock15VariationSphereFRQ53scn4step7gimmick10cameralock10CameraLock
 	.4byte setIsPose__Q53scn4step7gimmick10cameralock15VariationSphereFb
 	.4byte 0
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@55509"
+"@55509":
+
+	.4byte 0x3F000000
+
+.global "@55575_80562774"
+"@55575_80562774":
+
+	.4byte 0

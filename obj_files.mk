@@ -1801,16 +1801,17 @@ $(BUILD_DIR)/asm/src/scn/step/enemy/flamer/StateAttack.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/flamer/StateChase.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/flamer/StateMove.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/enemy/foley/BrainMove.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/foley/BrainWait.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/foley/CharaParam.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/foley/Custom.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/foley/ModelDesc.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/foley/StateAttack.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/foley/StateMove.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/foley/StateWait.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/enemy/foley/BrainMove_802b42d4.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/foley/BrainWait_802b43b8.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/foley/CharaParam_802b449c.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/foley/Custom_802b4524.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/foley/ModelDesc_802b49c8.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/foley/StateAttack_802b4aa0.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/foley/StateMove_802b4ff8.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/foley/StateWait_802b52dc.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/gemra/AddOnMint_802b54fc.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/gemra/BrainWait_802b5688.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/gemra/CharaParam_802b5840.o \
@@ -3031,10 +3032,6 @@ $(BUILD_DIR)/asm/src/util/StateChanger_80405cd0.o \
 $(BUILD_DIR)/asm/src/util/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/util/UIntAABBox_8040603c.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/enemy/foley/Custom_80561968.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/foley/StateAttack_80561970.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/foley/StateMove_80561980.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/foley/StateWait_80561988.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/gemra/Custom_80561990.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/gemra/StateAttack_805619b0.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/gigatzo/CharaParam_805619b8.o \

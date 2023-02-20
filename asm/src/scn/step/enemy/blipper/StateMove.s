@@ -666,3 +666,35 @@ __vt__Q53scn4step5enemy7blipper9StateMove:
 	.4byte procConstraint__Q43scn4step5enemy9StateBaseFv
 	.4byte procFixPos__Q53scn4step5enemy7blipper9StateMoveFv
 	.4byte procObjCollReact__Q43scn4step5enemy9StateBaseFv
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@56356_805612F8"
+"@56356_805612F8":
+
+	.4byte 0
+
+.global "@56357_805612FC"
+"@56357_805612FC":
+
+	.4byte 0x3F800000
+
+.global "@56358_80561300"
+"@56358_80561300":
+
+	.4byte 0x41200000
+
+.global "@56359_80561304"
+"@56359_80561304":
+
+	.4byte 0xBF800000
+
+.global "@56466"
+"@56466":
+
+	.4byte 0x3F000000
+
+.global "@56467"
+"@56467":
+
+	.4byte 0x3A83126F

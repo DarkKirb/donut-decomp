@@ -1615,25 +1615,26 @@ $(BUILD_DIR)/asm/src/scn/step/enemy/bladeknight/StateGrandLowperEscapeStart.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/bladeknight/StateStepBack.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/bladeknight/StateWalk.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/enemy/blipper/AddOnMint.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/blipper/BrainChase.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/blipper/BrainFattyBuffer.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/blipper/BrainJump.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/blipper/BrainMove.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/blipper/CharaParam.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/blipper/Custom.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/blipper/ModelDesc.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/blipper/StateChase.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/blipper/StateDive.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/blipper/StateFall.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/blipper/StateFattyBufferAppearFall.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/blipper/StateFattyBufferEscapeNear.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/blipper/StateFlyingOut.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/blipper/StateJump.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/blipper/StateLanding.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/blipper/StateMove.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/enemy/blipper/AddOnMint_80298498.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/blipper/BrainChase_80298a2c.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/blipper/BrainFattyBuffer_80298b54.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/blipper/BrainJump_80298c3c.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/blipper/BrainMove_80298d64.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/blipper/CharaParam_80298e8c.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/blipper/Custom_80298f14.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/blipper/ModelDesc_80299398.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/blipper/StateChase_8029948c.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/blipper/StateDive_8029a120.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/blipper/StateFall_8029a570.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/blipper/StateFattyBufferAppearFall_8029a740.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/blipper/StateFattyBufferEscapeNear_8029a9d8.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/blipper/StateFlyingOut_8029ab64.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/blipper/StateJump_8029ae34.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/blipper/StateLanding_8029b088.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/blipper/StateMove_8029b29c.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/bonkersbomb/CharaParam_8029bb80.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/bonkersbomb/Custom_8029bc14.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/bonkersbomb/ModelDesc_8029c0e0.o \
@@ -3013,16 +3014,6 @@ $(BUILD_DIR)/asm/src/util/StateChanger_80405cd0.o \
 $(BUILD_DIR)/asm/src/util/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/util/UIntAABBox_8040603c.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/enemy/blipper/CharaParam_80561228.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/blipper/Custom_80561230.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/blipper/StateChase_80561240.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/blipper/StateDive_80561290.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/blipper/StateFall_805612a0.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/blipper/StateFattyBufferAppearFall_805612b0.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/blipper/StateFattyBufferEscapeNear_805612b8.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/blipper/StateFlyingOut_805612c0.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/blipper/StateJump_805612d8.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/blipper/StateMove_805612f8.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/bonkersbomb/CharaParam_80561310.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/bonkersbomb/StateLanding_80561318.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/bonkersbomb/StateShot_80561320.o \

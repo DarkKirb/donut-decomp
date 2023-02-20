@@ -41,3 +41,11 @@ lbl_80298EEC:
 /* 80298F08 00294D48  7C 08 03 A6 */	mtlr r0
 /* 80298F0C 00294D4C  38 21 00 B0 */	addi r1, r1, 0xb0
 /* 80298F10 00294D50  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@48778_80561228"
+"@48778_80561228":
+
+	.4byte 0x3F99999A
+	.4byte 0

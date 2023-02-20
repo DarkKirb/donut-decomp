@@ -367,3 +367,25 @@ __vt__Q53scn4step5enemy7blipper6Custom:
 	.4byte reqCustomDeadEffect__Q43scn4step5enemy10CustomBaseFv
 	.4byte setupSuperEnemyEffect__Q43scn4step5enemy10CustomBaseFv
 	.4byte 0
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@56686_80561230"
+"@56686_80561230":
+
+	.4byte 0x3F0CCCCD
+
+.global "@56687_80561234"
+"@56687_80561234":
+
+	.4byte 0
+
+.global "@56688_80561238"
+"@56688_80561238":
+
+	.4byte 0x40000000
+
+.global "@56715_8056123C"
+"@56715_8056123C":
+
+	.4byte 0x3DCCCCCD

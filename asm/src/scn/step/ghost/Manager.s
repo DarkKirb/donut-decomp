@@ -1088,3 +1088,51 @@ createContext__Q43scn4step5ghost7ManagerFv:
 	.4byte lbl_803F19D0
 	.4byte lbl_803F19E0
 	.4byte lbl_803F19F0
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@52582_805641B8"
+"@52582_805641B8":
+
+	.4byte 0
+
+.global "@52646_805641BC"
+"@52646_805641BC":
+
+	.4byte 0x42480000
+
+.global "@52647_805641C0"
+"@52647_805641C0":
+
+	.4byte 0x3CA3D70A
+
+.global "@52648_805641C4"
+"@52648_805641C4":
+
+	.4byte 0x42800000
+
+.global "@52649_805641C8"
+"@52649_805641C8":
+
+	.4byte 0x42C80000
+
+.global "@52650_805641CC"
+"@52650_805641CC":
+
+	.4byte 0x43000000
+
+.global "@52651_805641D0"
+"@52651_805641D0":
+
+	.4byte 0x3C23D70A
+
+.global "@52652_805641D4"
+"@52652_805641D4":
+
+	.4byte 0x47000000
+
+.global "@52658"
+"@52658":
+
+	.4byte 0x43300000
+	.4byte 0x80000000

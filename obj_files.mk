@@ -3104,9 +3104,10 @@ $(BUILD_DIR)/asm/src/scn/step/weapon/challengemastershot/StateWait.o \
 \
 $(BUILD_DIR)/asm/src/scn/step/ghost/Manager.o \
 \
+$(BUILD_DIR)/asm/src/scn/strap/SceneStrap.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/strap/SceneStrap_803f20ec.o \
 $(BUILD_DIR)/asm/src/scn/vc/Loader_803f2834.o \
 $(BUILD_DIR)/asm/src/scn/vc/Main_803f2894.o \
 $(BUILD_DIR)/asm/src/scn/vc/SceneVC_803f28f0.o \
@@ -3185,8 +3186,6 @@ $(BUILD_DIR)/asm/src/util/StateChanger_80405cd0.o \
 $(BUILD_DIR)/asm/src/util/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/util/UIntAABBox_8040603c.o \
 \
-$(BUILD_DIR)/asm/src/sfx/Manager_805641b8.o \
-$(BUILD_DIR)/asm/src/scn/strap/SceneStrap_805641e0.o \
 $(BUILD_DIR)/asm/src/scn/grandmenu/Camera_805641f0.o \
 $(BUILD_DIR)/asm/src/scn/grandmenu/CameraSet_80564210.o \
 $(BUILD_DIR)/asm/src/scn/grandmenu/Component_80564218.o \

@@ -175,3 +175,31 @@ clear__Q53scn4step4boss6whispy8WindCtrlFv:
 	.4byte 0x3FC00000
 	.4byte 0x3FCCCCCD
 	.4byte 0
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@50595_80560A38"
+"@50595_80560A38":
+
+	.4byte 0
+
+.global "@50596_80560A3C"
+"@50596_80560A3C":
+
+	.4byte 0x41100000
+
+.global "@50597_80560A40"
+"@50597_80560A40":
+
+	.4byte 0xC0000000
+
+.global "@50598_80560A44"
+"@50598_80560A44":
+
+	.4byte 0xC0400000
+
+.global "@50599_80560A48"
+"@50599_80560A48":
+
+	.4byte 0x40000000
+	.4byte 0

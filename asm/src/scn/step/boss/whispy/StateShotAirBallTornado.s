@@ -166,3 +166,11 @@ __vt__Q53scn4step4boss6whispy23StateShotAirBallTornado:
 	.4byte procObjCollReact__Q43scn4step4boss9StateBaseFv
 	.4byte reqAirBall__Q53scn4step4boss6whispy23StateShotAirBallTornadoFv
 	.4byte 0
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@53395_80560A28"
+"@53395_80560A28":
+
+	.4byte 0
+	.4byte 0

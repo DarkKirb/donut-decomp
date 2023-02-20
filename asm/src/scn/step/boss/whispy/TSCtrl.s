@@ -119,3 +119,11 @@ setBaseScale__Q53scn4step4boss6whispy6TSCtrlFRCQ33hel4math7Vector3:
 	.4byte 0x00000007
 	.4byte 0x00000008
 	.4byte 0
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@54977_80560A30"
+"@54977_80560A30":
+
+	.4byte 0x3F800000
+	.4byte 0

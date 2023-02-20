@@ -280,3 +280,15 @@ __vt__Q53scn4step4boss6common16StateDashWallHit:
 	.4byte procConstraint__Q43scn4step4boss9StateBaseFv
 	.4byte procFixPos__Q53scn4step4boss6common16StateDashWallHitFv
 	.4byte procObjCollReact__Q43scn4step4boss9StateBaseFv
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@55953"
+"@55953":
+
+	.4byte 0
+
+.global "@55993_805605F4"
+"@55993_805605F4":
+
+	.4byte 0xBF800000

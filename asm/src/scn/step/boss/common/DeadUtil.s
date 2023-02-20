@@ -99,3 +99,15 @@ lbl_80244538:
 /* 8024456C 002403AC  7C 08 03 A6 */	mtlr r0
 /* 80244570 002403B0  38 21 00 50 */	addi r1, r1, 0x50
 /* 80244574 002403B4  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@54560_805605C8"
+"@54560_805605C8":
+
+	.4byte 0xFFFFFF3C
+
+.global "@54563_805605CC"
+"@54563_805605CC":
+
+	.4byte 0xFFFFFFC0

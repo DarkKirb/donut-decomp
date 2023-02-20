@@ -2992,12 +2992,14 @@ $(BUILD_DIR)/asm/src/scn/step/weapon/starshotlv2/StateMain.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/starshotlv3/ModelDesc.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/starshotlv3/StateMain.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/weapon/whispyairball/ModelDesc.o \
+$(BUILD_DIR)/asm/src/scn/step/weapon/whispyairball/StateMain.o \
+\
+$(BUILD_DIR)/asm/src/scn/step/weapon/rollexp/Custom.o \
+$(BUILD_DIR)/asm/src/scn/step/weapon/rollexp/StateMain.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/weapon/whispyairball/ModelDesc_803de400.o \
-$(BUILD_DIR)/asm/src/scn/step/weapon/whispyairball/StateMain_803de5d0.o \
-$(BUILD_DIR)/asm/src/scn/step/weapon/rollexp/Custom_803dea40.o \
-$(BUILD_DIR)/asm/src/scn/step/weapon/rollexp/StateMain_803deb40.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/leafanpollen/ModelDesc_803df078.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/leafanpollen/StateMain_803df174.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/gigatzobullet/Custom_803e0174.o \
@@ -3154,8 +3156,6 @@ $(BUILD_DIR)/asm/src/util/StateChanger_80405cd0.o \
 $(BUILD_DIR)/asm/src/util/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/util/UIntAABBox_8040603c.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/weapon/rollexp/Custom_80563e40.o \
-$(BUILD_DIR)/asm/src/scn/step/weapon/rollexp/StateMain_80563e48.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/enemywaterbullet/ModelDesc_80563ed8.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/enemywaterbullet/StateMain_80563ee0.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/enemywaterbulletwarp/ModelDesc_80563f00.o \

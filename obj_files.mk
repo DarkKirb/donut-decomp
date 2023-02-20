@@ -1180,13 +1180,14 @@ $(BUILD_DIR)/asm/src/scn/step/SceneStep.o \
 $(BUILD_DIR)/asm/src/scn/step/StepReleaseUtil.o \
 $(BUILD_DIR)/asm/src/scn/step/StorageAccessor2.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/bg/DecorationBG.o \
+$(BUILD_DIR)/asm/src/scn/step/bg/DecorationManager.o \
+$(BUILD_DIR)/asm/src/scn/step/bg/DecorationMapro.o \
+$(BUILD_DIR)/asm/src/scn/step/bg/DecorationMaproColl.o \
+$(BUILD_DIR)/asm/src/scn/step/bg/Manager.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/bg/DecorationBG_802224a4.o \
-$(BUILD_DIR)/asm/src/scn/step/bg/DecorationManager_80222948.o \
-$(BUILD_DIR)/asm/src/scn/step/bg/DecorationMapro_80223acc.o \
-$(BUILD_DIR)/asm/src/scn/step/bg/DecorationMaproColl_80224104.o \
-$(BUILD_DIR)/asm/src/scn/step/bg/Manager_80227260.o \
 $(BUILD_DIR)/asm/src/scn/step/boss/Accessor_802276d4.o \
 $(BUILD_DIR)/asm/src/scn/step/boss/AddOnMint_80227a14.o \
 $(BUILD_DIR)/asm/src/scn/step/boss/Angry_80228ee0.o \
@@ -2984,8 +2985,6 @@ $(BUILD_DIR)/asm/src/util/SIntAABBox_80405b68.o \
 $(BUILD_DIR)/asm/src/util/StateChanger_80405cd0.o \
 $(BUILD_DIR)/asm/src/util/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/util/UIntAABBox_8040603c.o \
-$(BUILD_DIR)/asm/src/scn/step/bg/DecorationManager_80560228.o \
-$(BUILD_DIR)/asm/src/scn/step/bg/DecorationMaproColl_80560258.o \
 $(BUILD_DIR)/asm/src/scn/step/boss/Angry_80560260.o \
 $(BUILD_DIR)/asm/src/scn/step/boss/AttackFlash_80560268.o \
 $(BUILD_DIR)/asm/src/scn/step/boss/Boss_80560290.o \

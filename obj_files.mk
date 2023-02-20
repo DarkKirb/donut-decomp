@@ -2389,10 +2389,11 @@ $(BUILD_DIR)/asm/src/scn/step/gimmick/shipevent/Manager.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/shipevent/MintShipEvent.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/shipevent/ShipEvent.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/gimmick/shooting/Manager.o \
+$(BUILD_DIR)/asm/src/scn/step/gimmick/shooting/Shooting.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/shooting/Manager_80322cd4.o \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/shooting/Shooting_80322fc0.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/shutter/Manager_80323040.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/shutter/Shutter_803234d0.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/sun/Manager_8032514c.o \

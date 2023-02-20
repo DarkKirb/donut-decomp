@@ -1742,19 +1742,20 @@ $(BUILD_DIR)/asm/src/scn/step/enemy/como/StateDiveWait.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/como/StateHang.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/como/ThreadCtrl.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/enemy/damage/StateDamageCapture.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/damage/StateDamageExtreme.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/damage/StateDamageNormal.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/damage/StateDamageWingToss.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/damage/StateDeadCaptureRelease.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/damage/StateDeadExtreme.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/damage/StateDeadInWater.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/damage/StateDeadSuper.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/damage/StateParasolRelease.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/damage/StateThrownFighter.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/damage/Utility.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/enemy/damage/StateDamageCapture_802a8e48.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/damage/StateDamageExtreme_802a94c8.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/damage/StateDamageNormal_802a99d8.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/damage/StateDamageWingToss_802a9dd4.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/damage/StateDeadCaptureRelease_802aa230.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/damage/StateDeadExtreme_802aa520.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/damage/StateDeadInWater_802aa9b4.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/damage/StateDeadSuper_802aaf74.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/damage/StateParasolRelease_802ab61c.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/damage/StateThrownFighter_802abb38.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/damage/Utility_802ac250.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/degout/AddOnMint_802acd04.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/degout/BrainChase_802acf3c.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/degout/BrainWait_802ad0f0.o \
@@ -3025,17 +3026,6 @@ $(BUILD_DIR)/asm/src/util/StateChanger_80405cd0.o \
 $(BUILD_DIR)/asm/src/util/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/util/UIntAABBox_8040603c.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/enemy/damage/StateDamageCapture_80561610.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/damage/StateDamageExtreme_80561640.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/damage/StateDamageNormal_80561658.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/damage/StateDamageWingToss_80561660.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/damage/StateDeadCaptureRelease_80561668.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/damage/StateDeadExtreme_80561680.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/damage/StateDeadInWater_80561698.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/damage/StateDeadSuper_805616f0.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/damage/StateParasolRelease_80561710.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/damage/StateThrownFighter_80561730.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/waddledee/Utility_80561758.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/degout/StateChase_80561798.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/dubiorjr/BrainMain_805617a8.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/dubiorjr/CharaParam_805617b0.o \

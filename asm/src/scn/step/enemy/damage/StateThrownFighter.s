@@ -537,3 +537,55 @@ __vt__Q53scn4step5enemy6damage18StateThrownFighter:
 	.4byte procConstraint__Q43scn4step5enemy9StateBaseFv
 	.4byte procFixPos__Q53scn4step5enemy6damage18StateThrownFighterFv
 	.4byte procObjCollReact__Q43scn4step5enemy9StateBaseFv
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@57792_80561730"
+"@57792_80561730":
+
+	.4byte 0
+
+.global "@57793_80561734"
+"@57793_80561734":
+
+	.4byte 0x3E99999A
+
+.global "@57794"
+"@57794":
+
+	.4byte 0x3F4CCCCD
+
+.global "@57795"
+"@57795":
+
+	.4byte 0x3727C5AC
+
+.global "@57796"
+"@57796":
+
+	.4byte 0x3D4CCCCD
+
+.global "@57797_80561744"
+"@57797_80561744":
+
+	.4byte 0x3DCCCCCD
+
+.global "@57871_80561748"
+"@57871_80561748":
+
+	.4byte 0x41A00000
+
+.global "@57872_8056174C"
+"@57872_8056174C":
+
+	.4byte 0x43B40000
+
+.global "@57873_80561750"
+"@57873_80561750":
+
+	.4byte 0x3F800000
+
+.global "@57874_80561754"
+"@57874_80561754":
+
+	.4byte 0x42652EE1

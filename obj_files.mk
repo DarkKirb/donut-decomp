@@ -1690,16 +1690,17 @@ $(BUILD_DIR)/asm/src/scn/step/enemy/broomhatter/StateGrandLowperEscapeStart.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/broomhatter/StateWalk.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/broomhatter/StateWalkAround.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/enemy/cappy/AddOnMint.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/cappy/BrainAttack.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/cappy/CharaParam.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/cappy/Custom.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/cappy/ModelDesc.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/cappy/StateAttack.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/cappy/StateLostHat.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/cappy/StateSkinned.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/enemy/cappy/AddOnMint_802a2104.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/cappy/BrainAttack_802a2408.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/cappy/CharaParam_802a2704.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/cappy/Custom_802a285c.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/cappy/ModelDesc_802a2da4.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/cappy/StateAttack_802a2e90.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/cappy/StateLostHat_802a3314.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/cappy/StateSkinned_802a34a0.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/cappyhat/CharaParam_802a3918.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/cappyhat/Custom_802a39c8.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/cappyhat/ModelDesc_802a3d14.o \
@@ -3019,8 +3020,6 @@ $(BUILD_DIR)/asm/src/util/StateChanger_80405cd0.o \
 $(BUILD_DIR)/asm/src/util/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/util/UIntAABBox_8040603c.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/enemy/cappy/CharaParam_80561460.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/cappy/StateAttack_80561478.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/cappyhat/CharaParam_80561480.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/cappyhat/Custom_80561488.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/cappyhat/StateThrow_805614b0.o \

@@ -2859,10 +2859,11 @@ $(BUILD_DIR)/asm/src/scn/step/info/lvmap/RankingPanel.o \
 $(BUILD_DIR)/asm/src/scn/step/info/lvmap/SphereComplete.o \
 $(BUILD_DIR)/asm/src/scn/step/info/lvmap/TargetScorePanel.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/info/ship/Ship.o \
+$(BUILD_DIR)/asm/src/scn/step/info/ship/Skip.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/info/ship/Ship_803c0418.o \
-$(BUILD_DIR)/asm/src/scn/step/info/ship/Skip_803c0548.o \
 $(BUILD_DIR)/asm/src/scn/step/item/Catcher_803c0740.o \
 $(BUILD_DIR)/asm/src/scn/step/item/CliffEdgeBoundCtrl_803c0e40.o \
 $(BUILD_DIR)/asm/src/scn/step/item/Desc_803c0f2c.o \

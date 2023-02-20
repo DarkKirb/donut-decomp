@@ -2408,9 +2408,10 @@ $(BUILD_DIR)/asm/src/scn/step/gimmick/switch_n/SwitchToggle.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/warpstar/Manager.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/warpstar/WarpStar.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/gimmick/warpstarcontinue/Manager.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/warpstarcontinue/Manager_80329acc.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/waterflow/WaterFlow_8032a508.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/zoneswitch/Manager_8032b1d0.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/zoneswitch/ZoneSwitch_8032b4b0.o \

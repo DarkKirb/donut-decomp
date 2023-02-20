@@ -52,3 +52,11 @@ lbl_802E7A34:
 /* 802E7A50 002E3890  7C 08 03 A6 */	mtlr r0
 /* 802E7A54 002E3894  38 21 00 C0 */	addi r1, r1, 0xc0
 /* 802E7A58 002E3898  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@48789_805623B0"
+"@48789_805623B0":
+
+	.4byte 0
+	.4byte 0

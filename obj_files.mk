@@ -2160,15 +2160,16 @@ $(BUILD_DIR)/asm/src/scn/step/enemy/sparky/StateAttack.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/sparky/StateJump.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/sparky/StatePraise.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/enemy/stareffect/BrainBound.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/stareffect/BrainPuff.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/stareffect/CharaParam.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/stareffect/Custom.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/stareffect/ModelDesc.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/stareffect/StateBound.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/stareffect/StatePuff.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/enemy/stareffect/BrainBound_802e77e0.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/stareffect/BrainPuff_802e78c4.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/stareffect/CharaParam_802e79a8.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/stareffect/Custom_802e7a5c.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/stareffect/ModelDesc_802e7e84.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/stareffect/StateBound_802e7f34.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/stareffect/StatePuff_802e84bc.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/sun/BrainMove_802e86d0.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/sun/CharaParam_802e87b4.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/sun/Custom_802e8878.o \
@@ -3066,10 +3067,6 @@ $(BUILD_DIR)/asm/src/util/StateChanger_80405cd0.o \
 $(BUILD_DIR)/asm/src/util/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/util/UIntAABBox_8040603c.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/enemy/stareffect/CharaParam_805623b0.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/stareffect/Custom_805623b8.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/stareffect/StateBound_805623d0.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/stareffect/StatePuff_805623e0.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/sun/CharaParam_805623e8.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/sun/Custom_805623f8.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/sun/StateMove_80562418.o \

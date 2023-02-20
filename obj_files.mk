@@ -3015,15 +3015,16 @@ $(BUILD_DIR)/asm/src/scn/step/weapon/enemywaterbullet/StateMain.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/enemywaterbulletwarp/ModelDesc.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/enemywaterbulletwarp/StateMain.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/weapon/spearspear/ModelDesc.o \
+$(BUILD_DIR)/asm/src/scn/step/weapon/spearspear/StateMain.o \
+$(BUILD_DIR)/asm/src/scn/step/weapon/spearspear/StateReflect.o \
+$(BUILD_DIR)/asm/src/scn/step/weapon/spearspear/StateStickObj.o \
+$(BUILD_DIR)/asm/src/scn/step/weapon/spearspear/StateStickWall.o \
+$(BUILD_DIR)/asm/src/scn/step/weapon/spearspear/StateVanish.o \
+$(BUILD_DIR)/asm/src/scn/step/weapon/spearspear/Utility.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/weapon/spearspear/ModelDesc_803e3f64.o \
-$(BUILD_DIR)/asm/src/scn/step/weapon/spearspear/StateMain_803e4090.o \
-$(BUILD_DIR)/asm/src/scn/step/weapon/spearspear/StateReflect_803e4640.o \
-$(BUILD_DIR)/asm/src/scn/step/weapon/spearspear/StateStickObj_803e4af8.o \
-$(BUILD_DIR)/asm/src/scn/step/weapon/spearspear/StateStickWall_803e4cd4.o \
-$(BUILD_DIR)/asm/src/scn/step/weapon/spearspear/StateVanish_803e4fa4.o \
-$(BUILD_DIR)/asm/src/scn/step/weapon/spearspear/Utility_803e5244.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/hammerhammer/ModelDesc_803e5350.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/hammerhammer/StateExplosion_803e544c.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/hammerhammer/StateMain_803e5788.o \
@@ -3161,10 +3162,6 @@ $(BUILD_DIR)/asm/src/util/StateChanger_80405cd0.o \
 $(BUILD_DIR)/asm/src/util/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/util/UIntAABBox_8040603c.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/weapon/spearspear/StateReflect_80563f18.o \
-$(BUILD_DIR)/asm/src/scn/step/weapon/spearspear/StateStickWall_80563f30.o \
-$(BUILD_DIR)/asm/src/scn/step/weapon/spearspear/StateVanish_80563f40.o \
-$(BUILD_DIR)/asm/src/scn/step/weapon/spearspear/Utility_80563f48.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/hammerhammer/StateExplosion_80563f50.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/hammerhammer/StateMain_80563f68.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/wingshot/ModelDesc_80563f78.o \

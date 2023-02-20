@@ -527,3 +527,11 @@ __vt__Q53scn4step4hero6hammer9StateSpin:
 	.4byte procObjCollReact__Q53scn4step4hero6hammer9StateSpinFv
 	.4byte procEnd__Q43scn4step4hero9StateBaseFv
 	.4byte 0
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@58565"
+"@58565":
+
+	.4byte 0xBF800000
+	.4byte 0

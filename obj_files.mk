@@ -2745,10 +2745,11 @@ $(BUILD_DIR)/asm/src/scn/step/hero/parasol/StateParasolWaterDive.o \
 $(BUILD_DIR)/asm/src/scn/step/hero/parasol/StateParasolWaterDrill.o \
 $(BUILD_DIR)/asm/src/scn/step/hero/parasol/StateParasolWaterDrillEnd.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/hero/hammer/StateSpin.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/hammer/StateThrow.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/hero/hammer/StateSpin_80396898.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/hammer/StateThrow_80396f2c.o \
 $(BUILD_DIR)/asm/src/scn/step/hero/wing/StateDashAttack_80397250.o \
 $(BUILD_DIR)/asm/src/scn/step/hero/wing/StateDashAttackWallHit_80397dc0.o \
 $(BUILD_DIR)/asm/src/scn/step/hero/wing/StateDiveAttack_8039806c.o \
@@ -3127,8 +3128,6 @@ $(BUILD_DIR)/asm/src/util/StateChanger_80405cd0.o \
 $(BUILD_DIR)/asm/src/util/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/util/UIntAABBox_8040603c.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/hero/hammer/StateSpin_805636c8.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/hammer/StateThrow_805636d0.o \
 $(BUILD_DIR)/asm/src/scn/step/hero/wing/StateDashAttack_805636d8.o \
 $(BUILD_DIR)/asm/src/scn/step/hero/wing/StateDashAttackWallHit_805636e8.o \
 $(BUILD_DIR)/asm/src/scn/step/hero/wing/StateDiveAttack_80563700.o \

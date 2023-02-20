@@ -2222,13 +2222,14 @@ $(BUILD_DIR)/asm/src/scn/step/enemy/waddledoo/ModelDesc.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/waddledoo/StateAttack.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/waddledoo/StateJump.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/enemy/watergalbo/AddOnMint.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/watergalbo/BrainAttack.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/watergalbo/CharaParam.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/watergalbo/ModelDesc.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/watergalbo/StateAttack.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/enemy/watergalbo/AddOnMint_802effa8.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/watergalbo/BrainAttack_802f0060.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/watergalbo/CharaParam_802f0134.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/watergalbo/ModelDesc_802f01bc.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/watergalbo/StateAttack_802f02ac.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/whippy/AddOnMint_802f0680.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/whippy/BrainAttack_802f0738.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/whippy/CharaParam_802f077c.o \
@@ -3072,8 +3073,6 @@ $(BUILD_DIR)/asm/src/util/StateChanger_80405cd0.o \
 $(BUILD_DIR)/asm/src/util/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/util/UIntAABBox_8040603c.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/enemy/watergalbo/CharaParam_80562528.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/watergalbo/StateAttack_80562530.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/whippy/CharaParam_80562538.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/whippy/StateAttack_80562540.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/whispyapple/CharaParam_80562550.o \

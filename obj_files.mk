@@ -1810,15 +1810,16 @@ $(BUILD_DIR)/asm/src/scn/step/enemy/foley/StateAttack.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/foley/StateMove.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/foley/StateWait.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/enemy/gemra/AddOnMint.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/gemra/BrainWait.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/gemra/CharaParam.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/gemra/Custom.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/gemra/ModelDesc.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/gemra/StateAttack.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/gemra/StateFly.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/enemy/gemra/AddOnMint_802b54fc.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/gemra/BrainWait_802b5688.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/gemra/CharaParam_802b5840.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/gemra/Custom_802b58d0.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/gemra/ModelDesc_802b61ac.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/gemra/StateAttack_802b628c.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/gemra/StateFly_802b643c.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/gigatzo/AddOnMint_802b6624.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/gigatzo/BrainAttack_802b69c4.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/gigatzo/CharaParam_802b6aa8.o \
@@ -3032,8 +3033,6 @@ $(BUILD_DIR)/asm/src/util/StateChanger_80405cd0.o \
 $(BUILD_DIR)/asm/src/util/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/util/UIntAABBox_8040603c.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/enemy/gemra/Custom_80561990.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/gemra/StateAttack_805619b0.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/gigatzo/CharaParam_805619b8.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/gigatzo/Custom_805619c8.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/gigatzo/StateAim_80561a00.o \

@@ -1827,17 +1827,18 @@ $(BUILD_DIR)/asm/src/scn/step/enemy/gigatzo/StateAim.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/gigatzo/StateAttack.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/gigatzo/StateWait.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/enemy/gordo/BrainMove.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/gordo/BrainWhispy.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/gordo/CharaParam.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/gordo/Custom.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/gordo/ModelDesc.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/gordo/StateMoveCircle.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/gordo/StateMoveSinCurve.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/gordo/StateMoveStraight.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/gordo/StateWhispyAppear.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/enemy/gordo/BrainMove_802b8a40.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/gordo/BrainWhispy_802b8c2c.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/gordo/CharaParam_802b8d28.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/gordo/Custom_802b8dd0.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/gordo/ModelDesc_802b9058.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/gordo/StateMoveCircle_802b9138.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/gordo/StateMoveSinCurve_802b9494.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/gordo/StateMoveStraight_802b98fc.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/gordo/StateWhispyAppear_802b9b48.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/hothead/AddOnMint_802b9db4.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/hothead/BrainAttack_802ba100.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/hothead/CharaParam_802ba260.o \
@@ -3034,12 +3035,6 @@ $(BUILD_DIR)/asm/src/util/StateChanger_80405cd0.o \
 $(BUILD_DIR)/asm/src/util/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/util/UIntAABBox_8040603c.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/enemy/gordo/CharaParam_80561a48.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/gordo/Custom_80561a50.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/gordo/StateMoveCircle_80561a58.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/gordo/StateMoveSinCurve_80561a60.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/gordo/StateMoveStraight_80561a70.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/gordo/StateWhispyAppear_80561a78.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/hothead/Custom_80561a90.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/hothead/StateAttackShot_80561a98.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/juckle/CharaParam_80561aa8.o \

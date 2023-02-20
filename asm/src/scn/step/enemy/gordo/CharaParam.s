@@ -49,3 +49,15 @@ lbl_802B8DA8:
 /* 802B8DC4 002B4C04  7C 08 03 A6 */	mtlr r0
 /* 802B8DC8 002B4C08  38 21 00 B0 */	addi r1, r1, 0xb0
 /* 802B8DCC 002B4C0C  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@48778_80561A48"
+"@48778_80561A48":
+
+	.4byte 0
+
+.global "@48779_80561A4C"
+"@48779_80561A4C":
+
+	.4byte 0x3ECCCCCD

@@ -2605,17 +2605,18 @@ $(BUILD_DIR)/asm/src/scn/step/hero/common/StateWaterPistolFloat.o \
 $(BUILD_DIR)/asm/src/scn/step/hero/common/StateWaterWait.o \
 $(BUILD_DIR)/asm/src/scn/step/hero/common/StateWaterWalk.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/hero/interference/StateCombinationAttack.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/interference/StateEaten.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/interference/StateHang.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/interference/StateKiss.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/interference/StateKissReceive.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/interference/StatePiggyback.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/interference/StateSpaceJump.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/interference/StateVacuumReceive.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/interference/StateVomited.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/hero/interference/StateCombinationAttack_8036ff9c.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/interference/StateEaten_80370e3c.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/interference/StateHang_80371678.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/interference/StateKiss_80371ff8.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/interference/StateKissReceive_803729cc.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/interference/StatePiggyback_8037303c.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/interference/StateSpaceJump_80373594.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/interference/StateVacuumReceive_803744a0.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/interference/StateVomited_80374a10.o \
 $(BUILD_DIR)/asm/src/scn/step/hero/damage/StateAbilityCrash_80375580.o \
 $(BUILD_DIR)/asm/src/scn/step/hero/damage/StateBodyHit_80375878.o \
 $(BUILD_DIR)/asm/src/scn/step/hero/damage/StateExtreme_80375ad8.o \
@@ -3117,15 +3118,6 @@ $(BUILD_DIR)/asm/src/util/StateChanger_80405cd0.o \
 $(BUILD_DIR)/asm/src/util/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/util/UIntAABBox_8040603c.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/hero/interference/StateCombinationAttack_805631b0.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/interference/StateEaten_805631d0.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/interference/StateHang_805631d8.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/interference/StateKiss_80563200.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/interference/StateKissReceive_80563220.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/interference/StatePiggyback_80563240.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/interference/StateSpaceJump_80563250.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/interference/StateVacuumReceive_80563260.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/interference/StateVomited_80563270.o \
 $(BUILD_DIR)/asm/src/scn/step/hero/damage/StateAbilityCrash_805632a0.o \
 $(BUILD_DIR)/asm/src/scn/step/hero/damage/StateBodyHit_805632b0.o \
 $(BUILD_DIR)/asm/src/scn/step/hero/damage/StateExtreme_805632b8.o \

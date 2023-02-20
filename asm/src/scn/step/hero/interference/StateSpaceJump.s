@@ -1100,3 +1100,21 @@ __vt__Q53scn4step4hero12interference14StateSpaceJump:
 	.4byte procObjCollReact__Q43scn4step4hero9StateBaseFv
 	.4byte procEnd__Q43scn4step4hero9StateBaseFv
 	.4byte 0
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@60789"
+"@60789":
+
+	.4byte 0
+
+.global "@60832"
+"@60832":
+
+	.4byte 0x3D75C28F
+
+.global "@60833"
+"@60833":
+
+	.4byte 0x3DCCCCCD
+	.4byte 0

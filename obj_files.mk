@@ -1837,15 +1837,16 @@ $(BUILD_DIR)/asm/src/scn/step/enemy/gordo/StateMoveSinCurve.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/gordo/StateMoveStraight.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/gordo/StateWhispyAppear.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/enemy/hothead/AddOnMint.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/hothead/BrainAttack.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/hothead/CharaParam.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/hothead/Custom.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/hothead/ModelDesc.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/hothead/StateAttackBreath.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/hothead/StateAttackShot.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/enemy/hothead/AddOnMint_802b9db4.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/hothead/BrainAttack_802ba100.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/hothead/CharaParam_802ba260.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/hothead/Custom_802ba2e8.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/hothead/ModelDesc_802ba66c.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/hothead/StateAttackBreath_802ba750.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/hothead/StateAttackShot_802ba95c.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/juckle/AddOnMint_802bae48.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/juckle/BrainFly_802bb124.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/juckle/BrainFollow_802bb16c.o \
@@ -3035,8 +3036,6 @@ $(BUILD_DIR)/asm/src/util/StateChanger_80405cd0.o \
 $(BUILD_DIR)/asm/src/util/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/util/UIntAABBox_8040603c.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/enemy/hothead/Custom_80561a90.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/hothead/StateAttackShot_80561a98.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/juckle/CharaParam_80561aa8.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/juckle/Custom_80561ab0.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/juckle/StateAttack_80561ac8.o \

@@ -1325,14 +1325,15 @@ $(BUILD_DIR)/asm/src/scn/step/boss/creditmeta/StateHide.o \
 $(BUILD_DIR)/asm/src/scn/step/boss/creditmeta/StatePraise.o \
 $(BUILD_DIR)/asm/src/scn/step/boss/creditmeta/StateShuttleLoop.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/boss/creditroah/Custom.o \
+$(BUILD_DIR)/asm/src/scn/step/boss/creditroah/ModelDesc.o \
+$(BUILD_DIR)/asm/src/scn/step/boss/creditroah/StateAppear.o \
+$(BUILD_DIR)/asm/src/scn/step/boss/creditroah/StateFlyAway.o \
+$(BUILD_DIR)/asm/src/scn/step/boss/creditroah/StateHide.o \
+$(BUILD_DIR)/asm/src/scn/step/boss/creditroah/StateWaitFar.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/boss/creditroah/Custom_8024b394.o \
-$(BUILD_DIR)/asm/src/scn/step/boss/creditroah/ModelDesc_8024b6d4.o \
-$(BUILD_DIR)/asm/src/scn/step/boss/creditroah/StateAppear_8024b7f8.o \
-$(BUILD_DIR)/asm/src/scn/step/boss/creditroah/StateFlyAway_8024ba70.o \
-$(BUILD_DIR)/asm/src/scn/step/boss/creditroah/StateHide_8024bf5c.o \
-$(BUILD_DIR)/asm/src/scn/step/boss/creditroah/StateWaitFar_8024c0b8.o \
 $(BUILD_DIR)/asm/src/scn/step/boss/dubior/AddOnMint_8024c390.o \
 $(BUILD_DIR)/asm/src/scn/step/boss/dubior/Custom_8024c994.o \
 $(BUILD_DIR)/asm/src/scn/step/boss/dubior/EnemyCtrl_8024d41c.o \
@@ -2992,9 +2993,6 @@ $(BUILD_DIR)/asm/src/util/SIntAABBox_80405b68.o \
 $(BUILD_DIR)/asm/src/util/StateChanger_80405cd0.o \
 $(BUILD_DIR)/asm/src/util/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/util/UIntAABBox_8040603c.o \
-$(BUILD_DIR)/asm/src/scn/step/boss/creditroah/Custom_805606f8.o \
-$(BUILD_DIR)/asm/src/scn/step/boss/creditroah/ModelDesc_80560708.o \
-$(BUILD_DIR)/asm/src/scn/step/boss/creditroah/StateFlyAway_80560710.o \
 $(BUILD_DIR)/asm/src/scn/step/boss/dubior/Custom_80560738.o \
 $(BUILD_DIR)/asm/src/scn/step/boss/dubior/StateCall_80560750.o \
 $(BUILD_DIR)/asm/src/scn/step/boss/dubior/StateGlide_80560758.o \

@@ -3040,10 +3040,11 @@ $(BUILD_DIR)/asm/src/scn/step/weapon/fighterhadoushot/Custom.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/fighterhadoushot/StateExplosion.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/fighterhadoushot/StateMain.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/weapon/shotzobullet/ModelDesc.o \
+$(BUILD_DIR)/asm/src/scn/step/weapon/shotzobullet/StateMain.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/weapon/shotzobullet/ModelDesc_803e7290.o \
-$(BUILD_DIR)/asm/src/scn/step/weapon/shotzobullet/StateMain_803e738c.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/sirkibblecutter/ModelDesc_803e77f4.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/sirkibblecutter/StateMain_803e7910.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/owgulffeather/ModelDesc_803e8040.o \

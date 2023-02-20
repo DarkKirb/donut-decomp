@@ -1519,11 +1519,12 @@ $(BUILD_DIR)/asm/src/scn/step/debug/GeneralDrawer.o \
 $(BUILD_DIR)/asm/src/scn/step/debug/ObjInfoRepos.o \
 $(BUILD_DIR)/asm/src/scn/step/debug/ObjPlacement.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/effect/Manager.o \
+$(BUILD_DIR)/asm/src/scn/step/effect/Requestor.o \
+$(BUILD_DIR)/asm/src/scn/step/effect/Table.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/effect/Manager_8027ab84.o \
-$(BUILD_DIR)/asm/src/scn/step/effect/Requestor_8027afec.o \
-$(BUILD_DIR)/asm/src/scn/step/effect/Table_8027b128.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/Accessor_8027e25c.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/AddOnMint_8027e2fc.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/BrainBase_8027ee14.o \
@@ -3007,7 +3008,6 @@ $(BUILD_DIR)/asm/src/util/StateChanger_80405cd0.o \
 $(BUILD_DIR)/asm/src/util/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/util/UIntAABBox_8040603c.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/effect/Table_80560de8.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/CaptureReceiver_80560df0.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/DamageFieldReact_80560df8.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/DamageFlash_80560e08.o \

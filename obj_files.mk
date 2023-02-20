@@ -3120,16 +3120,17 @@ $(BUILD_DIR)/asm/src/scn/grandmenu/SceneGrandMenu.o \
 \
 $(BUILD_DIR)/asm/src/scn/grandmenu/effect/Table.o \
 \
+$(BUILD_DIR)/asm/src/scn/grandmenu/menu/BackButton.o \
+$(BUILD_DIR)/asm/src/scn/grandmenu/menu/BG.o \
+$(BUILD_DIR)/asm/src/scn/grandmenu/menu/Curtain.o \
+$(BUILD_DIR)/asm/src/scn/grandmenu/menu/Explanation.o \
+$(BUILD_DIR)/asm/src/scn/grandmenu/menu/Input.o \
+$(BUILD_DIR)/asm/src/scn/grandmenu/menu/Item.o \
+$(BUILD_DIR)/asm/src/scn/grandmenu/menu/Menu.o \
+$(BUILD_DIR)/asm/src/scn/grandmenu/menu/PlayerWindow.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/grandmenu/menu/BackButton_803f4608.o \
-$(BUILD_DIR)/asm/src/scn/grandmenu/menu/BG_803f49f8.o \
-$(BUILD_DIR)/asm/src/scn/grandmenu/menu/Curtain_803f4b24.o \
-$(BUILD_DIR)/asm/src/scn/grandmenu/menu/Explanation_803f4df4.o \
-$(BUILD_DIR)/asm/src/scn/grandmenu/menu/Input_803f54b0.o \
-$(BUILD_DIR)/asm/src/scn/grandmenu/menu/Item_803f5b24.o \
-$(BUILD_DIR)/asm/src/scn/grandmenu/menu/Menu_803f6188.o \
-$(BUILD_DIR)/asm/src/scn/grandmenu/menu/PlayerWindow_803f7ba0.o \
 $(BUILD_DIR)/asm/src/scn/staffcredit/AddOnMint_803f7fc8.o \
 $(BUILD_DIR)/asm/src/scn/staffcredit/BgManager_803f8874.o \
 $(BUILD_DIR)/asm/src/scn/staffcredit/CameraManager_803f8c14.o \
@@ -3189,7 +3190,6 @@ $(BUILD_DIR)/asm/src/util/StateChanger_80405cd0.o \
 $(BUILD_DIR)/asm/src/util/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/util/UIntAABBox_8040603c.o \
 \
-$(BUILD_DIR)/asm/src/scn/grandmenu/menu/Menu_80564240.o \
 $(BUILD_DIR)/asm/src/scn/staffcredit/BgManager_80564248.o \
 $(BUILD_DIR)/asm/src/scn/staffcredit/CameraManager_80564250.o \
 $(BUILD_DIR)/asm/src/scn/staffcredit/Commander_80564258.o \

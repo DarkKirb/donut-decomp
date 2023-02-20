@@ -247,3 +247,11 @@ __vt__Q53scn4step7gimmick10guideboard11ActionHover:
 
 	.4byte 0x44576169
 	.4byte 0x74310000
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@52848_805628D0"
+"@52848_805628D0":
+
+	.4byte 0
+	.4byte 0

@@ -2341,17 +2341,18 @@ $(BUILD_DIR)/asm/src/scn/step/gimmick/ghost/Manager.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/goalflag/GoalFlag.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/goalflag/Manager.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/gimmick/guideboard/ActionAttack.o \
+$(BUILD_DIR)/asm/src/scn/step/gimmick/guideboard/ActionDrink.o \
+$(BUILD_DIR)/asm/src/scn/step/gimmick/guideboard/ActionHover.o \
+$(BUILD_DIR)/asm/src/scn/step/gimmick/guideboard/ActionRun.o \
+$(BUILD_DIR)/asm/src/scn/step/gimmick/guideboard/ActionThroughLand.o \
+$(BUILD_DIR)/asm/src/scn/step/gimmick/guideboard/ActionVacuumSuper.o \
+$(BUILD_DIR)/asm/src/scn/step/gimmick/guideboard/ActionVomit.o \
+$(BUILD_DIR)/asm/src/scn/step/gimmick/guideboard/GuideBoard.o \
+$(BUILD_DIR)/asm/src/scn/step/gimmick/guideboard/Manager.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/guideboard/ActionAttack_80310230.o \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/guideboard/ActionDrink_8031057c.o \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/guideboard/ActionHover_803109fc.o \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/guideboard/ActionRun_80310ca4.o \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/guideboard/ActionThroughLand_803110bc.o \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/guideboard/ActionVacuumSuper_803114ec.o \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/guideboard/ActionVomit_80311908.o \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/guideboard/GuideBoard_80311d88.o \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/guideboard/Manager_80312b58.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/mahoroa/Mahoroa_80313300.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/mahoroa/Manager_80313d80.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/mahoroa/VariationNpc_80314314.o \
@@ -3091,12 +3092,6 @@ $(BUILD_DIR)/asm/src/util/StateChanger_80405cd0.o \
 $(BUILD_DIR)/asm/src/util/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/util/UIntAABBox_8040603c.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/guideboard/ActionAttack_805628c8.o \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/guideboard/ActionHover_805628d0.o \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/guideboard/ActionRun_805628d8.o \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/guideboard/ActionThroughLand_805628e0.o \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/guideboard/ActionVacuumSuper_805628e8.o \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/guideboard/GuideBoard_805628f0.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/mahoroa/Mahoroa_80562900.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/mahoroa/VariationNpc_80562918.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/mastermarker/Manager_80562948.o \

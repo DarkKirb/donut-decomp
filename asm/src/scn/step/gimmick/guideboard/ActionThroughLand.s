@@ -361,3 +361,11 @@ __vt__Q53scn4step7gimmick10guideboard17ActionThroughLand:
 
 	.4byte 0x46576169
 	.4byte 0x74310000
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@53318_805628E0"
+"@53318_805628E0":
+
+	.4byte 0
+	.4byte 0

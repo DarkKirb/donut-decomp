@@ -2212,17 +2212,18 @@ $(BUILD_DIR)/asm/src/scn/step/enemy/waddledee/StateWhispyFall.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/waddledee/StateWhispyLanding.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/waddledee/Utility.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/enemy/waddledoo/AddOnMint.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/waddledoo/BrainJumpOrAttack.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/waddledoo/BrainWalkAround.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/waddledoo/BrainWalkStraight.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/waddledoo/CharaParam.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/waddledoo/Custom.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/waddledoo/ModelDesc.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/waddledoo/StateAttack.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/waddledoo/StateJump.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/enemy/waddledoo/AddOnMint_802ef7cc.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/waddledoo/BrainJumpOrAttack_802ef958.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/waddledoo/BrainWalkAround_802ef9d8.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/waddledoo/BrainWalkStraight_802efa20.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/waddledoo/CharaParam_802efa68.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/waddledoo/Custom_802efaf0.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/waddledoo/ModelDesc_802efb34.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/waddledoo/StateAttack_802efc4c.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/waddledoo/StateJump_802efcb8.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/watergalbo/AddOnMint_802effa8.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/watergalbo/BrainAttack_802f0060.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/watergalbo/CharaParam_802f0134.o \

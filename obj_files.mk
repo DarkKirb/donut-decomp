@@ -1709,12 +1709,13 @@ $(BUILD_DIR)/asm/src/scn/step/enemy/captured/StateCapturedParasol.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/captured/StateCapturedWhip.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/captured/Utility.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/enemy/cerulean/BrainFly.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/cerulean/CharaParam.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/cerulean/ModelDesc.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/cerulean/StateFly.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/enemy/cerulean/BrainFly_802a5410.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/cerulean/CharaParam_802a54f8.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/cerulean/ModelDesc_802a5580.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/cerulean/StateFly_802a5668.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/chilly/AddOnMint_802a5c7c.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/chilly/BrainCreditWalkToPraise_802a5f98.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/chilly/BrainMove_802a605c.o \
@@ -3022,8 +3023,6 @@ $(BUILD_DIR)/asm/src/util/StateChanger_80405cd0.o \
 $(BUILD_DIR)/asm/src/util/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/util/UIntAABBox_8040603c.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/enemy/cerulean/CharaParam_80561520.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/cerulean/StateFly_80561528.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/chilly/StateCreditMove_80561530.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/chilly/StateMove_80561548.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/como/BrainDive_80561560.o \

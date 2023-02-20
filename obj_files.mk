@@ -2052,24 +2052,25 @@ $(BUILD_DIR)/asm/src/scn/step/enemy/sandbag/CharaParam.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/sandbag/Custom.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/sandbag/ModelDesc.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/enemy/scarfy/AddOnMint.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/scarfy/BrainChase.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/scarfy/BrainFly.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/scarfy/BrainFlyUpDown.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/scarfy/BrainGrandLowper.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/scarfy/BrainWhispy.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/scarfy/CharaParam.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/scarfy/Custom.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/scarfy/ModelDesc.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/scarfy/StateAngerChase.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/scarfy/StateChase.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/scarfy/StateEscape.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/scarfy/StateFaceChange.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/scarfy/StateFlyUpDown.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/scarfy/StateGrandLowperAppear.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/scarfy/StateWhispyAppear.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/enemy/scarfy/AddOnMint_802d9268.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/scarfy/BrainChase_802d94a0.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/scarfy/BrainFly_802d9700.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/scarfy/BrainFlyUpDown_802d9748.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/scarfy/BrainGrandLowper_802d9828.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/scarfy/BrainWhispy_802d9908.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/scarfy/CharaParam_802d9a00.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/scarfy/Custom_802d9a88.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/scarfy/ModelDesc_802d9d58.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/scarfy/StateAngerChase_802d9e74.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/scarfy/StateChase_802da6a0.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/scarfy/StateEscape_802dac04.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/scarfy/StateFaceChange_802dae08.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/scarfy/StateFlyUpDown_802db178.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/scarfy/StateGrandLowperAppear_802db3f0.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/scarfy/StateWhispyAppear_802db61c.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/searches/BrainFly_802dba18.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/searches/CharaParam_802dbb80.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/searches/Custom_802dbc10.o \
@@ -3057,12 +3058,6 @@ $(BUILD_DIR)/asm/src/util/StateChanger_80405cd0.o \
 $(BUILD_DIR)/asm/src/util/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/util/UIntAABBox_8040603c.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/enemy/scarfy/ModelDesc_805620d8.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/scarfy/StateAngerChase_805620e0.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/scarfy/StateChase_80562120.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/scarfy/StateFlyUpDown_80562138.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/scarfy/StateGrandLowperAppear_80562148.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/scarfy/StateWhispyAppear_80562160.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/searches/CharaParam_80562178.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/searches/Custom_80562180.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/searches/StateAttack_80562188.o \

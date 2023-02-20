@@ -3036,11 +3036,12 @@ $(BUILD_DIR)/asm/src/scn/step/weapon/fightersmashshot/StateMain.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/fighterkickshot/StateExplosion.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/fighterkickshot/StateMain.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/weapon/fighterhadoushot/Custom.o \
+$(BUILD_DIR)/asm/src/scn/step/weapon/fighterhadoushot/StateExplosion.o \
+$(BUILD_DIR)/asm/src/scn/step/weapon/fighterhadoushot/StateMain.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/weapon/fighterhadoushot/Custom_803e6ab4.o \
-$(BUILD_DIR)/asm/src/scn/step/weapon/fighterhadoushot/StateExplosion_803e6c50.o \
-$(BUILD_DIR)/asm/src/scn/step/weapon/fighterhadoushot/StateMain_803e6ea0.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/shotzobullet/ModelDesc_803e7290.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/shotzobullet/StateMain_803e738c.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/sirkibblecutter/ModelDesc_803e77f4.o \
@@ -3166,8 +3167,6 @@ $(BUILD_DIR)/asm/src/util/StateChanger_80405cd0.o \
 $(BUILD_DIR)/asm/src/util/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/util/UIntAABBox_8040603c.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/weapon/fighterhadoushot/StateExplosion_80563fb0.o \
-$(BUILD_DIR)/asm/src/scn/step/weapon/fighterhadoushot/StateMain_80563fc8.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/sirkibblecutter/ModelDesc_80563fe0.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/sirkibblecutter/StateMain_80563fe8.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/tsukikageshuriken/ModelDesc_80564048.o \

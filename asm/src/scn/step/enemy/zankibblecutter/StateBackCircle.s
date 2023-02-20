@@ -390,3 +390,21 @@ __vt__Q53scn4step5enemy15zankibblecutter15StateBackCircle:
 	.4byte procConstraint__Q43scn4step5enemy9StateBaseFv
 	.4byte procFixPos__Q53scn4step5enemy15zankibblecutter15StateBackCircleFv
 	.4byte procObjCollReact__Q43scn4step5enemy9StateBaseFv
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@56131_80562598"
+"@56131_80562598":
+
+	.4byte 0
+
+.global "@56132_8056259C"
+"@56132_8056259C":
+
+	.4byte 0xBF800000
+
+.global "@56133_805625A0"
+"@56133_805625A0":
+
+	.4byte 0x3F800000
+	.4byte 0

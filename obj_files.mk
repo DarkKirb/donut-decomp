@@ -2244,15 +2244,16 @@ $(BUILD_DIR)/asm/src/scn/step/enemy/whispyapple/StateBoundNear.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/whispyapple/StateFall.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/whispyapple/WhispyAppleUtility.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/enemy/zankibblecutter/CharaParam.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/zankibblecutter/Custom.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/zankibblecutter/ModelDesc.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/zankibblecutter/StateBackCircle.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/zankibblecutter/StateCircle.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/zankibblecutter/StateSlant.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/zankibblecutter/StateStraight.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/enemy/zankibblecutter/CharaParam_802f22d4.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/zankibblecutter/Custom_802f2384.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/zankibblecutter/ModelDesc_802f2570.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/zankibblecutter/StateBackCircle_802f2620.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/zankibblecutter/StateCircle_802f2b4c.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/zankibblecutter/StateSlant_802f30c0.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/zankibblecutter/StateStraight_802f348c.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/AddOnMint_802f395c.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/Effect_802f39a0.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/FallLandController_802f4058.o \
@@ -3075,11 +3076,6 @@ $(BUILD_DIR)/asm/src/util/StateChanger_80405cd0.o \
 $(BUILD_DIR)/asm/src/util/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/util/UIntAABBox_8040603c.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/enemy/zankibblecutter/ModelDesc_80562590.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/zankibblecutter/StateBackCircle_80562598.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/zankibblecutter/StateCircle_805625a8.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/zankibblecutter/StateSlant_805625b8.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/zankibblecutter/StateStraight_805625c0.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/FallLandController_805625d0.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/TalkManager_805625d8.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/airflow/AirFlow_805625e0.o \

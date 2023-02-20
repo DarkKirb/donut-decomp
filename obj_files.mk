@@ -1922,15 +1922,16 @@ $(BUILD_DIR)/asm/src/scn/step/enemy/mumbies/ModelDesc.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/mumbies/StateChase.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/mumbies/StateEndure.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/enemy/needlous/BrainAttackStraight.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/needlous/CharaParam.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/needlous/Custom.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/needlous/ModelDesc.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/needlous/StateAttack.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/needlous/StateIdling.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/needlous/StateWalkStraight.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/enemy/needlous/BrainAttackStraight_802c5a3c.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/needlous/CharaParam_802c5d1c.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/needlous/Custom_802c5dc4.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/needlous/ModelDesc_802c6204.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/needlous/StateAttack_802c62e0.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/needlous/StateIdling_802c674c.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/needlous/StateWalkStraight_802c6c88.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/noddy/AddOnMint_802c70ec.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/noddy/BrainWait_802c71a4.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/noddy/BrainWalk_802c71ec.o \
@@ -3043,12 +3044,6 @@ $(BUILD_DIR)/asm/src/util/StateChanger_80405cd0.o \
 $(BUILD_DIR)/asm/src/util/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/util/UIntAABBox_8040603c.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/enemy/needlous/BrainAttackStraight_80561d00.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/needlous/CharaParam_80561d10.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/needlous/Custom_80561d20.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/needlous/StateAttack_80561d40.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/needlous/StateIdling_80561d48.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/needlous/StateWalkStraight_80561d58.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/nruff/BrainGrandLowper_80561d70.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/nruff/CharaParam_80561d78.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/nruff/Custom_80561d80.o \

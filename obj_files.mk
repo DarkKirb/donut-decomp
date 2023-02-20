@@ -2705,18 +2705,19 @@ $(BUILD_DIR)/asm/src/scn/step/hero/whip/StateWhipSlamFront.o \
 $(BUILD_DIR)/asm/src/scn/step/hero/whip/StateWhipSlamUp.o \
 $(BUILD_DIR)/asm/src/scn/step/hero/whip/Whip.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/hero/spark/Custom.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/spark/Spark.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/spark/StateAttack.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/spark/StateAttackEnd.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/spark/StateAttackOver.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/spark/StateAttackOverEnd.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/spark/StateAttackUnder.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/spark/StateAttackUnderEnd.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/spark/StateShot.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/spark/Utility.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/hero/spark/Custom_8038ccd4.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/spark/Spark_8038cda0.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/spark/StateAttack_8038dc30.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/spark/StateAttackEnd_8038e078.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/spark/StateAttackOver_8038e248.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/spark/StateAttackOverEnd_8038e77c.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/spark/StateAttackUnder_8038e874.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/spark/StateAttackUnderEnd_8038edd0.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/spark/StateShot_8038eec8.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/spark/Utility_8038f54c.o \
 $(BUILD_DIR)/asm/src/scn/step/hero/stone/Context_8038f948.o \
 $(BUILD_DIR)/asm/src/scn/step/hero/stone/GearNodeRandomChanger_8038f978.o \
 $(BUILD_DIR)/asm/src/scn/step/hero/stone/StateChange_8038fa98.o \
@@ -3124,9 +3125,6 @@ $(BUILD_DIR)/asm/src/util/StateChanger_80405cd0.o \
 $(BUILD_DIR)/asm/src/util/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/util/UIntAABBox_8040603c.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/hero/spark/StateAttackOver_80563598.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/spark/StateAttackUnder_805635a0.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/spark/StateShot_805635a8.o \
 $(BUILD_DIR)/asm/src/scn/step/hero/stone/Utility_805635b0.o \
 $(BUILD_DIR)/asm/src/scn/step/hero/stone/Context_805635c0.o \
 $(BUILD_DIR)/asm/src/scn/step/hero/stone/StateChange_805635c8.o \

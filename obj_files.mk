@@ -3055,10 +3055,11 @@ $(BUILD_DIR)/asm/src/scn/step/weapon/foleyleaf/StateMain.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/bowbyarrow/ModelDesc.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/bowbyarrow/StateMain.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/weapon/jucklecutter/ModelDesc.o \
+$(BUILD_DIR)/asm/src/scn/step/weapon/jucklecutter/StateMain.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/weapon/jucklecutter/ModelDesc_803e9494.o \
-$(BUILD_DIR)/asm/src/scn/step/weapon/jucklecutter/StateMain_803e9590.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/tsukikageshuriken/ModelDesc_803e98c8.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/tsukikageshuriken/StateMain_803e99e4.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/whispyroot/ModelDesc_803ea768.o \

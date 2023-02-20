@@ -2018,11 +2018,12 @@ $(BUILD_DIR)/asm/src/scn/step/enemy/poppybrojrbomb/ModelDesc.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/poppybrojrbomb/StateShot.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/poppybrojrbomb/StateWait.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/enemy/puppetdee/CharaParam.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/puppetdee/Custom.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/puppetdee/ModelDesc.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/enemy/puppetdee/CharaParam_802d3198.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/puppetdee/Custom_802d3270.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/puppetdee/ModelDesc_802d3318.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/rocky/AddOnMint_802d33f8.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/rocky/BrainCreditFallToGoodbye_802d3610.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/rocky/BrainMove_802d3768.o \
@@ -3053,7 +3054,6 @@ $(BUILD_DIR)/asm/src/util/StateChanger_80405cd0.o \
 $(BUILD_DIR)/asm/src/util/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/util/UIntAABBox_8040603c.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/enemy/puppetdee/CharaParam_80561fd0.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/rocky/StateAttack_80561fe8.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/rocky/StateCliffAttack_80561ff0.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/rocky/StateFall_80561ff8.o \

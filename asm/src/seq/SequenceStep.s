@@ -545,3 +545,11 @@ __vt__Q23seq12SequenceStep:
 	.4byte createScene__Q23seq12SequenceStepCFv
 	.4byte onSceneEnd__Q23seq12SequenceStepFRQ23scn6IScene
 	.4byte 0
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@51094"
+"@51094":
+
+	.4byte 0
+	.4byte 0

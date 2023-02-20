@@ -3139,22 +3139,23 @@ $(BUILD_DIR)/asm/src/scn/staffcredit/SceneStaffCredit.o \
 $(BUILD_DIR)/asm/src/scn/staffcredit/StaffRoll.o \
 $(BUILD_DIR)/asm/src/scn/staffcredit/StepMain.o \
 \
+$(BUILD_DIR)/asm/src/seq/ContextStory.o \
+$(BUILD_DIR)/asm/src/seq/ISequence.o \
+$(BUILD_DIR)/asm/src/seq/SequenceChallengeRoot.o \
+$(BUILD_DIR)/asm/src/seq/SequenceChallengeTitleRoot.o \
+$(BUILD_DIR)/asm/src/seq/SequenceFirstDemo.o \
+$(BUILD_DIR)/asm/src/seq/SequenceGrandMenu.o \
+$(BUILD_DIR)/asm/src/seq/SequenceHistory.o \
+$(BUILD_DIR)/asm/src/seq/SequenceLvMapRoot.o \
+$(BUILD_DIR)/asm/src/seq/SequenceProductRoot.o \
+$(BUILD_DIR)/asm/src/seq/SequenceRoot.o \
+$(BUILD_DIR)/asm/src/seq/SequenceStack.o \
+$(BUILD_DIR)/asm/src/seq/SequenceStaffCredit.o \
+$(BUILD_DIR)/asm/src/seq/SequenceStep.o \
+$(BUILD_DIR)/asm/src/seq/SequenceVC.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/seq/ContextStory_803fcb20.o \
-$(BUILD_DIR)/asm/src/seq/ISequence_803fcbdc.o \
-$(BUILD_DIR)/asm/src/seq/SequenceChallengeRoot_803fcc4c.o \
-$(BUILD_DIR)/asm/src/seq/SequenceChallengeTitleRoot_803fd988.o \
-$(BUILD_DIR)/asm/src/seq/SequenceFirstDemo_803fe028.o \
-$(BUILD_DIR)/asm/src/seq/SequenceGrandMenu_803fe2c4.o \
-$(BUILD_DIR)/asm/src/seq/SequenceHistory_803fe750.o \
-$(BUILD_DIR)/asm/src/seq/SequenceLvMapRoot_803fec20.o \
-$(BUILD_DIR)/asm/src/seq/SequenceProductRoot_803ff424.o \
-$(BUILD_DIR)/asm/src/seq/SequenceRoot_803ff96c.o \
-$(BUILD_DIR)/asm/src/seq/SequenceStack_803ffa5c.o \
-$(BUILD_DIR)/asm/src/seq/SequenceStaffCredit_803ffc30.o \
-$(BUILD_DIR)/asm/src/seq/SequenceStep_803ffdac.o \
-$(BUILD_DIR)/asm/src/seq/SequenceVC_80400440.o \
 $(BUILD_DIR)/asm/src/sfx/CinemaScopeModel_80400510.o \
 $(BUILD_DIR)/asm/src/sfx/Fade_8040078c.o \
 $(BUILD_DIR)/asm/src/sfx/FullScreenModel_80400c6c.o \
@@ -3191,7 +3192,6 @@ $(BUILD_DIR)/asm/src/util/StateChanger_80405cd0.o \
 $(BUILD_DIR)/asm/src/util/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/util/UIntAABBox_8040603c.o \
 \
-$(BUILD_DIR)/asm/src/seq/SequenceStep_805642a0.o \
 $(BUILD_DIR)/asm/src/sfx/Fade_805642a8.o \
 $(BUILD_DIR)/asm/src/sfx/FullScreenModel_805642d0.o \
 $(BUILD_DIR)/asm/src/sfx/Monotone_805642f8.o \

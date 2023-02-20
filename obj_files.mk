@@ -3102,9 +3102,10 @@ $(BUILD_DIR)/asm/src/scn/step/weapon/challengemastershot/StateMain.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/challengemastershot/StateReady.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/challengemastershot/StateWait.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/ghost/Manager.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/ghost/Manager_803f11e0.o \
 $(BUILD_DIR)/asm/src/scn/strap/SceneStrap_803f20ec.o \
 $(BUILD_DIR)/asm/src/scn/vc/Loader_803f2834.o \
 $(BUILD_DIR)/asm/src/scn/vc/Main_803f2894.o \

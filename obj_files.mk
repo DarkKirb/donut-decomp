@@ -3058,10 +3058,11 @@ $(BUILD_DIR)/asm/src/scn/step/weapon/bowbyarrow/StateMain.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/jucklecutter/ModelDesc.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/jucklecutter/StateMain.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/weapon/tsukikageshuriken/ModelDesc.o \
+$(BUILD_DIR)/asm/src/scn/step/weapon/tsukikageshuriken/StateMain.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/weapon/tsukikageshuriken/ModelDesc_803e98c8.o \
-$(BUILD_DIR)/asm/src/scn/step/weapon/tsukikageshuriken/StateMain_803e99e4.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/whispyroot/ModelDesc_803ea768.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/whispyroot/StateMain_803ea864.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/combinationairball/ModelDesc_803eacac.o \
@@ -3173,8 +3174,6 @@ $(BUILD_DIR)/asm/src/util/StateChanger_80405cd0.o \
 $(BUILD_DIR)/asm/src/util/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/util/UIntAABBox_8040603c.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/weapon/tsukikageshuriken/ModelDesc_80564048.o \
-$(BUILD_DIR)/asm/src/scn/step/weapon/tsukikageshuriken/StateMain_80564050.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/combinationairball/ModelDesc_805640a0.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/combinationairball/StateMain_805640a8.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/dededehammer/StateExplosion_805640d0.o \

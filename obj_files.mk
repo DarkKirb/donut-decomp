@@ -2355,10 +2355,11 @@ $(BUILD_DIR)/asm/src/scn/step/gimmick/mahoroa/Mahoroa.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/mahoroa/Manager.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/mahoroa/VariationNpc.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/gimmick/masterattackarea/Manager.o \
+$(BUILD_DIR)/asm/src/scn/step/gimmick/masterattackarea/MasterAttackArea.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/masterattackarea/Manager_80315744.o \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/masterattackarea/MasterAttackArea_80315c14.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/mastermarker/Manager_80315cd0.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/mastermarker/MasterMarker_80316d58.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/movegroupctrl/Manager_80316e14.o \

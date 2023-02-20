@@ -2998,10 +2998,11 @@ $(BUILD_DIR)/asm/src/scn/step/weapon/whispyairball/StateMain.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/rollexp/Custom.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/rollexp/StateMain.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/weapon/leafanpollen/ModelDesc.o \
+$(BUILD_DIR)/asm/src/scn/step/weapon/leafanpollen/StateMain.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/weapon/leafanpollen/ModelDesc_803df078.o \
-$(BUILD_DIR)/asm/src/scn/step/weapon/leafanpollen/StateMain_803df174.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/gigatzobullet/Custom_803e0174.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/gigatzobullet/ModelDesc_803e02b8.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/gigatzobullet/StateMain_803e04f8.o \

@@ -202,3 +202,31 @@ __vt__Q53scn4step5enemy4como11StateAppear:
 	.4byte procConstraint__Q43scn4step5enemy9StateBaseFv
 	.4byte procFixPos__Q53scn4step5enemy4como11StateAppearFv
 	.4byte procObjCollReact__Q43scn4step5enemy9StateBaseFv
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@55225_80561580"
+"@55225_80561580":
+
+	.4byte 0x3F800000
+
+.global "@55226_80561584"
+"@55226_80561584":
+
+	.4byte 0x4222F983
+
+.global "@55227_80561588"
+"@55227_80561588":
+
+	.4byte 0x3C8EFA35
+
+.global "@55228"
+"@55228":
+
+	.4byte 0x42B40000
+
+.global "@55231_80561590"
+"@55231_80561590":
+
+	.4byte 0x43300000
+	.4byte 0

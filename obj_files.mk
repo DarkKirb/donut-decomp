@@ -1726,23 +1726,24 @@ $(BUILD_DIR)/asm/src/scn/step/enemy/chilly/StateCreditMove.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/chilly/StateLookAround.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/chilly/StateMove.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/enemy/como/AddOnMint.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/como/BrainDive.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/como/BrainHang.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/como/BrainWhispy.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/como/CharaParam.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/como/Custom.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/como/ModelDesc.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/como/StateAppear.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/como/StateBack.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/como/StateCutFall.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/como/StateCutLanding.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/como/StateDive.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/como/StateDiveWait.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/como/StateHang.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/como/ThreadCtrl.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/enemy/como/AddOnMint_802a6bd0.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/como/BrainDive_802a6c88.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/como/BrainHang_802a6f18.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/como/BrainWhispy_802a70c8.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/como/CharaParam_802a7238.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/como/Custom_802a72f8.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/como/ModelDesc_802a7470.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/como/StateAppear_802a7550.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/como/StateBack_802a77bc.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/como/StateCutFall_802a7a5c.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/como/StateCutLanding_802a7cd0.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/como/StateDive_802a7e6c.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/como/StateDiveWait_802a8108.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/como/StateHang_802a82ec.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/como/ThreadCtrl_802a85f8.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/damage/StateDamageCapture_802a8e48.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/damage/StateDamageExtreme_802a94c8.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/damage/StateDamageNormal_802a99d8.o \
@@ -3024,16 +3025,6 @@ $(BUILD_DIR)/asm/src/util/StateChanger_80405cd0.o \
 $(BUILD_DIR)/asm/src/util/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/util/UIntAABBox_8040603c.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/enemy/como/BrainDive_80561560.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/como/BrainHang_80561568.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/como/CharaParam_80561570.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/como/StateAppear_80561580.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/como/StateBack_80561598.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/como/StateCutFall_805615b0.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/como/StateCutLanding_805615b8.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/como/StateDive_805615c0.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/como/StateHang_805615c8.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/como/ThreadCtrl_805615d8.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/damage/StateDamageCapture_80561610.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/damage/StateDamageExtreme_80561640.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/damage/StateDamageNormal_80561658.o \

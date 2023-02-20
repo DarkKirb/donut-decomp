@@ -603,3 +603,71 @@ lbl_802A8E30:
 .global "@LOCAL@RuntimeTypeInfoImpl<Q53scn4step6weapon10comothread6Custom>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti"
 "@LOCAL@RuntimeTypeInfoImpl<Q53scn4step6weapon10comothread6Custom>__Q23hel6commonFv_RCQ33hel6common15RuntimeTypeInfo@ti":
 	.skip 0x8
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@58039_805615D8"
+"@58039_805615D8":
+
+	.4byte 0
+
+.global "@58040_805615DC"
+"@58040_805615DC":
+
+	.4byte 0x41200000
+
+.global "@58041_805615E0"
+"@58041_805615E0":
+
+	.4byte 0x3C23D70A
+
+.global "@58042_805615E4"
+"@58042_805615E4":
+
+	.4byte 0xBE99999A
+
+.global "@58043_805615E8"
+"@58043_805615E8":
+
+	.4byte 0x3FA66666
+
+.global "@58044_805615EC"
+"@58044_805615EC":
+
+	.4byte 0x3F800000
+
+.global "@58048_805615F0"
+"@58048_805615F0":
+
+	.4byte 0x43300000
+	.4byte 0
+
+.global "@58168_805615F8"
+"@58168_805615F8":
+
+	.4byte 0x3E800000
+
+.global "@58172_805615FC"
+"@58172_805615FC":
+
+	.4byte 0x3DCCCCCD
+
+.global "@58173_80561600"
+"@58173_80561600":
+
+	.4byte 0x3F8CCCCD
+
+.global "@58174"
+"@58174":
+
+	.4byte 0x3F733333
+
+.global "@58175_80561608"
+"@58175_80561608":
+
+	.4byte 0x3F99999A
+
+.global "@58216_8056160C"
+"@58216_8056160C":
+
+	.4byte 0x400CCCCD

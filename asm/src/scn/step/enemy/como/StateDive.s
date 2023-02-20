@@ -223,3 +223,15 @@ __vt__Q53scn4step5enemy4como9StateDive:
 	.4byte procConstraint__Q43scn4step5enemy9StateBaseFv
 	.4byte procFixPos__Q53scn4step5enemy4como9StateDiveFv
 	.4byte procObjCollReact__Q53scn4step5enemy4como9StateDiveFv
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@56046_805615C0"
+"@56046_805615C0":
+
+	.4byte 0
+
+.global "@56059_805615C4"
+"@56059_805615C4":
+
+	.4byte 0x3F800000

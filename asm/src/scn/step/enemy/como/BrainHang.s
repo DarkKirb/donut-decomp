@@ -158,3 +158,11 @@ __vt__Q53scn4step5enemy4como9BrainHang:
 	.4byte onLanding__Q43scn4step5enemy9BrainBaseFv
 	.4byte update__Q43scn4step5enemy9BrainBaseFv
 	.4byte 0
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@55208_80561568"
+"@55208_80561568":
+
+	.4byte 0
+	.4byte 0

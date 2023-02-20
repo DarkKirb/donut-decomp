@@ -1845,16 +1845,17 @@ $(BUILD_DIR)/asm/src/scn/step/enemy/hothead/ModelDesc.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/hothead/StateAttackBreath.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/hothead/StateAttackShot.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/enemy/juckle/AddOnMint.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/juckle/BrainFly.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/juckle/BrainFollow.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/juckle/CharaParam.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/juckle/Custom.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/juckle/ModelDesc.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/juckle/StateAttack.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/juckle/StateFollow.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/enemy/juckle/AddOnMint_802bae48.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/juckle/BrainFly_802bb124.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/juckle/BrainFollow_802bb16c.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/juckle/CharaParam_802bb270.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/juckle/Custom_802bb310.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/juckle/ModelDesc_802bb7a0.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/juckle/StateAttack_802bb874.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/juckle/StateFollow_802bbc78.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/kabu/AddOnMint_802bc190.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/kabu/BrainGrandLowper_802bc5c4.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/kabu/BrainJump_802bc708.o \
@@ -3036,10 +3037,6 @@ $(BUILD_DIR)/asm/src/util/StateChanger_80405cd0.o \
 $(BUILD_DIR)/asm/src/util/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/util/UIntAABBox_8040603c.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/enemy/juckle/CharaParam_80561aa8.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/juckle/Custom_80561ab0.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/juckle/StateAttack_80561ac8.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/juckle/StateFollow_80561ae0.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/kabu/BrainGrandLowper_80561b08.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/kabu/CharaParam_80561b10.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/kabu/StateFall_80561b18.o \

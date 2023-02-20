@@ -2306,10 +2306,11 @@ $(BUILD_DIR)/asm/src/scn/step/gimmick/cameralock/VariationSphere.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/cameralock/VariationStill.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/cameralock/VariationUpside.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/gimmick/chainstarter/ChainStarter.o \
+$(BUILD_DIR)/asm/src/scn/step/gimmick/chainstarter/Manager.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/chainstarter/ChainStarter_80305780.o \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/chainstarter/Manager_803058b8.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/challengedoor/AddOnMint_80305afc.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/challengedoor/ChallengeDoor_80306478.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/challengedoor/ChallengeDoorMaster_80307ed0.o \

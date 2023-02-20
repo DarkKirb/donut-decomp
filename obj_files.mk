@@ -3085,13 +3085,14 @@ $(BUILD_DIR)/asm/src/scn/step/weapon/deespear/StateStickWall.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/deespear/StateVanish.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/deespear/Utility.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/weapon/vacuumedblock/Custom.o \
+$(BUILD_DIR)/asm/src/scn/step/weapon/vacuumedblock/ModelDesc.o \
+$(BUILD_DIR)/asm/src/scn/step/weapon/vacuumedblock/StateMain.o \
+$(BUILD_DIR)/asm/src/scn/step/weapon/vacuumedblock/StateVacuumReceive.o \
+$(BUILD_DIR)/asm/src/scn/step/weapon/vacuumedblock/VacuumReceiver.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/weapon/vacuumedblock/Custom_803ee29c.o \
-$(BUILD_DIR)/asm/src/scn/step/weapon/vacuumedblock/ModelDesc_803ee568.o \
-$(BUILD_DIR)/asm/src/scn/step/weapon/vacuumedblock/StateMain_803eee68.o \
-$(BUILD_DIR)/asm/src/scn/step/weapon/vacuumedblock/StateVacuumReceive_803eeeb4.o \
-$(BUILD_DIR)/asm/src/scn/step/weapon/vacuumedblock/VacuumReceiver_803ef218.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/hotheadfire/ModelDesc_803ef5ec.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/hotheadfire/StateMain_803ef708.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/challengemastersummonlight/Custom_803ef98c.o \

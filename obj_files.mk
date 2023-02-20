@@ -1233,20 +1233,21 @@ $(BUILD_DIR)/asm/src/scn/step/boss/Utility.o \
 $(BUILD_DIR)/asm/src/scn/step/boss/VacuumReceiver.o \
 $(BUILD_DIR)/asm/src/scn/step/boss/WeakPointCtrl.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/boss/bonkers/AddOnMint.o \
+$(BUILD_DIR)/asm/src/scn/step/boss/bonkers/Custom.o \
+$(BUILD_DIR)/asm/src/scn/step/boss/bonkers/ModelDesc.o \
+$(BUILD_DIR)/asm/src/scn/step/boss/bonkers/StateBomb.o \
+$(BUILD_DIR)/asm/src/scn/step/boss/bonkers/StateBombStart.o \
+$(BUILD_DIR)/asm/src/scn/step/boss/bonkers/StateJumpBig.o \
+$(BUILD_DIR)/asm/src/scn/step/boss/bonkers/StateJumpBigStart.o \
+$(BUILD_DIR)/asm/src/scn/step/boss/bonkers/StateRainBomb.o \
+$(BUILD_DIR)/asm/src/scn/step/boss/bonkers/StateRainBombStart.o \
+$(BUILD_DIR)/asm/src/scn/step/boss/bonkers/StateSwing.o \
+$(BUILD_DIR)/asm/src/scn/step/boss/bonkers/StateSwingEnd.o \
+$(BUILD_DIR)/asm/src/scn/step/boss/bonkers/StateSwingPursuit.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/boss/bonkers/AddOnMint_802366bc.o \
-$(BUILD_DIR)/asm/src/scn/step/boss/bonkers/Custom_802373a4.o \
-$(BUILD_DIR)/asm/src/scn/step/boss/bonkers/ModelDesc_80237c08.o \
-$(BUILD_DIR)/asm/src/scn/step/boss/bonkers/StateBomb_80237da8.o \
-$(BUILD_DIR)/asm/src/scn/step/boss/bonkers/StateBombStart_8023814c.o \
-$(BUILD_DIR)/asm/src/scn/step/boss/bonkers/StateJumpBig_80238204.o \
-$(BUILD_DIR)/asm/src/scn/step/boss/bonkers/StateJumpBigStart_802386c8.o \
-$(BUILD_DIR)/asm/src/scn/step/boss/bonkers/StateRainBomb_802387ec.o \
-$(BUILD_DIR)/asm/src/scn/step/boss/bonkers/StateRainBombStart_80238c40.o \
-$(BUILD_DIR)/asm/src/scn/step/boss/bonkers/StateSwing_80238ffc.o \
-$(BUILD_DIR)/asm/src/scn/step/boss/bonkers/StateSwingEnd_80239424.o \
-$(BUILD_DIR)/asm/src/scn/step/boss/bonkers/StateSwingPursuit_80239578.o \
 $(BUILD_DIR)/asm/src/scn/step/boss/challengemaster/AddOnMint_80239b20.o \
 $(BUILD_DIR)/asm/src/scn/step/boss/challengemaster/AttackBallCtrl_80239e30.o \
 $(BUILD_DIR)/asm/src/scn/step/boss/challengemaster/AvoidEnemyCtrl_8023ae58.o \
@@ -2986,12 +2987,6 @@ $(BUILD_DIR)/asm/src/util/SIntAABBox_80405b68.o \
 $(BUILD_DIR)/asm/src/util/StateChanger_80405cd0.o \
 $(BUILD_DIR)/asm/src/util/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/util/UIntAABBox_8040603c.o \
-$(BUILD_DIR)/asm/src/scn/step/boss/bonkers/AddOnMint_805603e0.o \
-$(BUILD_DIR)/asm/src/scn/step/boss/bonkers/Custom_805603e8.o \
-$(BUILD_DIR)/asm/src/scn/step/boss/bonkers/StateJumpBig_80560400.o \
-$(BUILD_DIR)/asm/src/scn/step/boss/bonkers/StateRainBomb_80560428.o \
-$(BUILD_DIR)/asm/src/scn/step/boss/bonkers/StateRainBombStart_80560438.o \
-$(BUILD_DIR)/asm/src/scn/step/boss/bonkers/StateSwingPursuit_80560458.o \
 $(BUILD_DIR)/asm/src/scn/step/boss/challengemaster/AttackBallCtrl_80560468.o \
 $(BUILD_DIR)/asm/src/scn/step/boss/challengemaster/AvoidEnemyCtrl_80560470.o \
 $(BUILD_DIR)/asm/src/scn/step/boss/challengemaster/Custom_80560478.o \

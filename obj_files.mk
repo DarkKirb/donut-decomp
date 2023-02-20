@@ -1764,16 +1764,17 @@ $(BUILD_DIR)/asm/src/scn/step/enemy/degout/ModelDesc.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/degout/StateChase.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/degout/StateFly.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/enemy/dubiorjr/AddOnMint.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/dubiorjr/BrainMain.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/dubiorjr/CharaParam.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/dubiorjr/Custom.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/dubiorjr/ModelDesc.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/dubiorjr/StateBack.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/dubiorjr/StateFly.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/dubiorjr/StateMove.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/enemy/dubiorjr/AddOnMint_802adb38.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/dubiorjr/BrainMain_802adee8.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/dubiorjr/CharaParam_802adfb8.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/dubiorjr/Custom_802ae05c.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/dubiorjr/ModelDesc_802ae194.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/dubiorjr/StateBack_802ae32c.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/dubiorjr/StateFly_802ae5e4.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/dubiorjr/StateMove_802ae6f8.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/dubiorspark/CharaParam_802aec08.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/dubiorspark/Custom_802aecc0.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/dubiorspark/ModelDesc_802aee80.o \
@@ -3027,10 +3028,6 @@ $(BUILD_DIR)/asm/src/util/StateChanger_80405cd0.o \
 $(BUILD_DIR)/asm/src/util/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/util/UIntAABBox_8040603c.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/enemy/dubiorjr/BrainMain_805617a8.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/dubiorjr/CharaParam_805617b0.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/dubiorjr/StateBack_805617b8.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/dubiorjr/StateMove_805617c0.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/dubiorspark/CharaParam_805617e0.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/dubiorspark/ModelDesc_805617e8.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/elec/AddOnMint_805617f0.o \

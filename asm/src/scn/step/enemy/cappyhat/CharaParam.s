@@ -51,3 +51,11 @@ lbl_802A39A0:
 /* 802A39BC 0029F7FC  7C 08 03 A6 */	mtlr r0
 /* 802A39C0 0029F800  38 21 00 C0 */	addi r1, r1, 0xc0
 /* 802A39C4 0029F804  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@48789_80561480"
+"@48789_80561480":
+
+	.4byte 0x3ECCCCCD
+	.4byte 0

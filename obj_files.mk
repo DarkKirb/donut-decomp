@@ -1699,12 +1699,13 @@ $(BUILD_DIR)/asm/src/scn/step/enemy/cappy/StateAttack.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/cappy/StateLostHat.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/cappy/StateSkinned.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/enemy/cappyhat/CharaParam.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/cappyhat/Custom.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/cappyhat/ModelDesc.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/cappyhat/StateThrow.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/enemy/cappyhat/CharaParam_802a3918.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/cappyhat/Custom_802a39c8.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/cappyhat/ModelDesc_802a3d14.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/cappyhat/StateThrow_802a3df8.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/captured/StateCapturedFighter_802a4220.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/captured/StateCapturedParasol_802a4638.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/captured/StateCapturedWhip_802a4bb4.o \
@@ -3020,9 +3021,6 @@ $(BUILD_DIR)/asm/src/util/StateChanger_80405cd0.o \
 $(BUILD_DIR)/asm/src/util/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/util/UIntAABBox_8040603c.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/enemy/cappyhat/CharaParam_80561480.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/cappyhat/Custom_80561488.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/cappyhat/StateThrow_805614b0.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/captured/StateCapturedFighter_805614d0.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/captured/StateCapturedParasol_805614e0.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/captured/StateCapturedWhip_80561500.o \

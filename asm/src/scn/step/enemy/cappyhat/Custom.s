@@ -262,3 +262,47 @@ __vt__Q53scn4step5enemy8cappyhat6Custom:
 	.4byte reqCustomDeadEffect__Q43scn4step5enemy10CustomBaseFv
 	.4byte setupSuperEnemyEffect__Q43scn4step5enemy10CustomBaseFv
 	.4byte 0
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@55998"
+"@55998":
+
+	.4byte 0
+	.4byte 0
+
+.global "@56001_80561490"
+"@56001_80561490":
+
+	.4byte 0x43300000
+	.4byte 0
+
+.global "@56003_80561498"
+"@56003_80561498":
+
+	.4byte 0x41600000
+
+.global "@56004_8056149C"
+"@56004_8056149C":
+
+	.4byte 0xC1200000
+
+.global "@56005_805614A0"
+"@56005_805614A0":
+
+	.4byte 0xC1000000
+
+.global "@56006"
+"@56006":
+
+	.4byte 0x40000000
+
+.global "@56007"
+"@56007":
+
+	.4byte 0x41000000
+
+.global "@56008"
+"@56008":
+
+	.4byte 0x3F000000

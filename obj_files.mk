@@ -3030,12 +3030,14 @@ $(BUILD_DIR)/asm/src/scn/step/weapon/hammerhammer/StateMain.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/wingshot/ModelDesc.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/wingshot/StateMain.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/weapon/fightersmashshot/StateExplosion.o \
+$(BUILD_DIR)/asm/src/scn/step/weapon/fightersmashshot/StateMain.o \
+\
+$(BUILD_DIR)/asm/src/scn/step/weapon/fighterkickshot/StateExplosion.o \
+$(BUILD_DIR)/asm/src/scn/step/weapon/fighterkickshot/StateMain.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/weapon/fightersmashshot/StateExplosion_803e6284.o \
-$(BUILD_DIR)/asm/src/scn/step/weapon/fightersmashshot/StateMain_803e63c0.o \
-$(BUILD_DIR)/asm/src/scn/step/weapon/fighterkickshot/StateExplosion_803e669c.o \
-$(BUILD_DIR)/asm/src/scn/step/weapon/fighterkickshot/StateMain_803e67d8.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/fighterhadoushot/Custom_803e6ab4.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/fighterhadoushot/StateExplosion_803e6c50.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/fighterhadoushot/StateMain_803e6ea0.o \

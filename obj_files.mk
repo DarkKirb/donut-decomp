@@ -2405,10 +2405,11 @@ $(BUILD_DIR)/asm/src/scn/step/gimmick/switch_n/SwitchOnce.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/switch_n/SwitchReturn.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/switch_n/SwitchToggle.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/gimmick/warpstar/Manager.o \
+$(BUILD_DIR)/asm/src/scn/step/gimmick/warpstar/WarpStar.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/warpstar/Manager_8032864c.o \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/warpstar/WarpStar_80328ca4.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/warpstarcontinue/Manager_80329acc.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/waterflow/WaterFlow_8032a508.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/zoneswitch/Manager_8032b1d0.o \
@@ -3108,7 +3109,6 @@ $(BUILD_DIR)/asm/src/util/StateChanger_80405cd0.o \
 $(BUILD_DIR)/asm/src/util/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/util/UIntAABBox_8040603c.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/warpstar/WarpStar_80562aa8.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/waterflow/WaterFlow_80562ab8.o \
 $(BUILD_DIR)/asm/src/scn/step/hero/AdditionalMove_80562ad0.o \
 $(BUILD_DIR)/asm/src/scn/step/hero/Blink_80562b00.o \

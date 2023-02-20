@@ -256,3 +256,15 @@ __vt__Q53scn4step4hero4whip14StateWhipCatch:
 	.4byte procObjCollReact__Q53scn4step4hero4whip14StateWhipCatchFv
 	.4byte procEnd__Q43scn4step4hero9StateBaseFv
 	.4byte 0
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@58486"
+"@58486":
+
+	.4byte 0
+
+.global "@58563_80563584"
+"@58563_80563584":
+
+	.4byte 0x3F666666

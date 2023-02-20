@@ -2689,23 +2689,24 @@ $(BUILD_DIR)/asm/src/scn/step/hero/sword/StateSwordUnderThrustStart.o \
 $(BUILD_DIR)/asm/src/scn/step/hero/sword/StateSwordWaterSpin.o \
 $(BUILD_DIR)/asm/src/scn/step/hero/sword/Sword.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/hero/whip/StateWhipAttack.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/whip/StateWhipAttackAir.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/whip/StateWhipAttackUp.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/whip/StateWhipCapture.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/whip/StateWhipCaptureUp.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/whip/StateWhipCatch.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/whip/StateWhipCharge.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/whip/StateWhipDrill.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/whip/StateWhipGazerSpiral.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/whip/StateWhipRush.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/whip/StateWhipSlamBack.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/whip/StateWhipSlamDown.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/whip/StateWhipSlamFront.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/whip/StateWhipSlamUp.o \
+$(BUILD_DIR)/asm/src/scn/step/hero/whip/Whip.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/hero/whip/StateWhipAttack_8038a03c.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/whip/StateWhipAttackAir_8038a0d4.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/whip/StateWhipAttackUp_8038a2cc.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/whip/StateWhipCapture_8038a410.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/whip/StateWhipCaptureUp_8038a770.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/whip/StateWhipCatch_8038a8a8.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/whip/StateWhipCharge_8038abe4.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/whip/StateWhipDrill_8038b134.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/whip/StateWhipGazerSpiral_8038b518.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/whip/StateWhipRush_8038b97c.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/whip/StateWhipSlamBack_8038bc94.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/whip/StateWhipSlamDown_8038bf44.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/whip/StateWhipSlamFront_8038c214.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/whip/StateWhipSlamUp_8038c52c.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/whip/Whip_8038c79c.o \
 $(BUILD_DIR)/asm/src/scn/step/hero/spark/Custom_8038ccd4.o \
 $(BUILD_DIR)/asm/src/scn/step/hero/spark/Spark_8038cda0.o \
 $(BUILD_DIR)/asm/src/scn/step/hero/spark/StateAttack_8038dc30.o \
@@ -3123,8 +3124,6 @@ $(BUILD_DIR)/asm/src/util/StateChanger_80405cd0.o \
 $(BUILD_DIR)/asm/src/util/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/util/UIntAABBox_8040603c.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/hero/whip/StateWhipCatch_80563580.o \
-$(BUILD_DIR)/asm/src/scn/step/hero/whip/StateWhipGazerSpiral_80563588.o \
 $(BUILD_DIR)/asm/src/scn/step/hero/spark/StateAttackOver_80563598.o \
 $(BUILD_DIR)/asm/src/scn/step/hero/spark/StateAttackUnder_805635a0.o \
 $(BUILD_DIR)/asm/src/scn/step/hero/spark/StateShot_805635a8.o \

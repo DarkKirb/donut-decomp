@@ -1964,14 +1964,15 @@ $(BUILD_DIR)/asm/src/scn/step/enemy/owgulf/StateAttack3Way.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/owgulf/StateFlyStraight.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/owgulf/StateFlyWaitFix.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/enemy/parasol/BrainRise.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/parasol/CharaParam.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/parasol/Custom.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/parasol/ModelDesc.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/parasol/StateLink.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/parasol/StateRise.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/enemy/parasol/BrainRise_802caa14.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/parasol/CharaParam_802caaf8.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/parasol/Custom_802cab8c.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/parasol/ModelDesc_802cb104.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/parasol/StateLink_802cb1f4.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/parasol/StateRise_802cb3d0.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/parasoldee/BrainNoseDive_802cb6e0.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/parasoldee/BrainRelease_802cb85c.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/parasoldee/BrainWalk_802cb9b0.o \
@@ -3047,9 +3048,6 @@ $(BUILD_DIR)/asm/src/util/StateChanger_80405cd0.o \
 $(BUILD_DIR)/asm/src/util/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/util/UIntAABBox_8040603c.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/enemy/parasol/Custom_80561e20.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/parasol/StateLink_80561e38.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/parasol/StateRise_80561e40.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/parasoldee/Custom_80561e68.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/parasoldee/StateFall_80561e70.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/parasoldee/StateLanding_80561e80.o \

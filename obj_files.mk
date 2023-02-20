@@ -1754,17 +1754,18 @@ $(BUILD_DIR)/asm/src/scn/step/enemy/damage/StateParasolRelease.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/damage/StateThrownFighter.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/damage/Utility.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/enemy/degout/AddOnMint.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/degout/BrainChase.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/degout/BrainWait.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/degout/BrainWaitAndChase.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/degout/CharaParam.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/degout/Custom.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/degout/ModelDesc.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/degout/StateChase.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/degout/StateFly.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/enemy/degout/AddOnMint_802acd04.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/degout/BrainChase_802acf3c.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/degout/BrainWait_802ad0f0.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/degout/BrainWaitAndChase_802ad1d0.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/degout/CharaParam_802ad218.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/degout/Custom_802ad2a0.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/degout/ModelDesc_802ad344.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/degout/StateChase_802ad428.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/degout/StateFly_802ada58.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/dubiorjr/AddOnMint_802adb38.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/dubiorjr/BrainMain_802adee8.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/dubiorjr/CharaParam_802adfb8.o \
@@ -3026,7 +3027,6 @@ $(BUILD_DIR)/asm/src/util/StateChanger_80405cd0.o \
 $(BUILD_DIR)/asm/src/util/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/util/UIntAABBox_8040603c.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/enemy/degout/StateChase_80561798.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/dubiorjr/BrainMain_805617a8.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/dubiorjr/CharaParam_805617b0.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/dubiorjr/StateBack_805617b8.o \

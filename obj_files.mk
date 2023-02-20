@@ -2395,10 +2395,11 @@ $(BUILD_DIR)/asm/src/scn/step/gimmick/shooting/Shooting.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/shutter/Manager.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/shutter/Shutter.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/gimmick/stake/Manager.o \
+$(BUILD_DIR)/asm/src/scn/step/gimmick/stake/Stake.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/sun/Manager_8032514c.o \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/stake/Stake_80325534.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/sun/Manager_80325b94.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/switch_n/Switch_8032757c.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/switch_n/SwitchOnce_80328260.o \
@@ -3105,7 +3106,6 @@ $(BUILD_DIR)/asm/src/util/StateChanger_80405cd0.o \
 $(BUILD_DIR)/asm/src/util/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/util/UIntAABBox_8040603c.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/stake/Stake_80562a78.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/sun/Manager_80562a88.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/switch_n/Switch_80562aa0.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/warpstar/WarpStar_80562aa8.o \

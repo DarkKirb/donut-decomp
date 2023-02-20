@@ -3046,10 +3046,11 @@ $(BUILD_DIR)/asm/src/scn/step/weapon/shotzobullet/StateMain.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/sirkibblecutter/ModelDesc.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/sirkibblecutter/StateMain.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/weapon/owgulffeather/ModelDesc.o \
+$(BUILD_DIR)/asm/src/scn/step/weapon/owgulffeather/StateMain.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/weapon/owgulffeather/ModelDesc_803e8040.o \
-$(BUILD_DIR)/asm/src/scn/step/weapon/owgulffeather/StateMain_803e813c.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/foleyleaf/ModelDesc_803e84a4.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/foleyleaf/StateMain_803e85cc.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/bowbyarrow/ModelDesc_803e87f4.o \

@@ -202,3 +202,11 @@ interpolation__Q43scn4step4core13AreaLightInfoFRCQ43scn4step4core13AreaLightInfo
 /* 80273EC8 0026FD08  7C 08 03 A6 */	mtlr r0
 /* 80273ECC 0026FD0C  38 21 00 70 */	addi r1, r1, 0x70
 /* 80273ED0 0026FD10  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@50391_80560D80"
+"@50391_80560D80":
+
+	.4byte 0
+	.4byte 0

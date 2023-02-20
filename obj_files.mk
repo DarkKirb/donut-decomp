@@ -1492,29 +1492,30 @@ $(BUILD_DIR)/asm/src/scn/step/chara/SoundSE.o \
 $(BUILD_DIR)/asm/src/scn/step/chara/Water.o \
 $(BUILD_DIR)/asm/src/scn/step/chara/WorldCage.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/core/AddOnMint.o \
+$(BUILD_DIR)/asm/src/scn/step/core/AreaLightInfo.o \
+$(BUILD_DIR)/asm/src/scn/step/core/AreaLightManager.o \
+$(BUILD_DIR)/asm/src/scn/step/core/AreaOperation.o \
+$(BUILD_DIR)/asm/src/scn/step/core/BGMController.o \
+$(BUILD_DIR)/asm/src/scn/step/core/Drawer.o \
+$(BUILD_DIR)/asm/src/scn/step/core/DrawLayerKindUtil.o \
+$(BUILD_DIR)/asm/src/scn/step/core/G3DLightSet.o \
+$(BUILD_DIR)/asm/src/scn/step/core/G3DLightSetManager.o \
+$(BUILD_DIR)/asm/src/scn/step/core/G3DRootSet.o \
+$(BUILD_DIR)/asm/src/scn/step/core/Main.o \
+$(BUILD_DIR)/asm/src/scn/step/core/MintBGMController.o \
+$(BUILD_DIR)/asm/src/scn/step/core/MintManager.o \
+$(BUILD_DIR)/asm/src/scn/step/core/MoveLimit.o \
+$(BUILD_DIR)/asm/src/scn/step/core/PauseManager.o \
+$(BUILD_DIR)/asm/src/scn/step/core/PauseTrigger.o \
+$(BUILD_DIR)/asm/src/scn/step/core/PermEffect.o \
+$(BUILD_DIR)/asm/src/scn/step/core/PermSoundSE.o \
+$(BUILD_DIR)/asm/src/scn/step/core/PreLoadReq.o \
+$(BUILD_DIR)/asm/src/scn/step/core/SceneChanger.o \
+$(BUILD_DIR)/asm/src/scn/step/core/Updater.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/core/AddOnMint_802739e0.o \
-$(BUILD_DIR)/asm/src/scn/step/core/AreaLightInfo_80273bc8.o \
-$(BUILD_DIR)/asm/src/scn/step/core/AreaLightManager_80273ed4.o \
-$(BUILD_DIR)/asm/src/scn/step/core/AreaOperation_802740a4.o \
-$(BUILD_DIR)/asm/src/scn/step/core/BGMController_802745e4.o \
-$(BUILD_DIR)/asm/src/scn/step/core/Drawer_80274bf4.o \
-$(BUILD_DIR)/asm/src/scn/step/core/DrawLayerKindUtil_80275f7c.o \
-$(BUILD_DIR)/asm/src/scn/step/core/G3DLightSet_80275fc0.o \
-$(BUILD_DIR)/asm/src/scn/step/core/G3DLightSetManager_8027602c.o \
-$(BUILD_DIR)/asm/src/scn/step/core/G3DRootSet_802760dc.o \
-$(BUILD_DIR)/asm/src/scn/step/core/Main_80276a18.o \
-$(BUILD_DIR)/asm/src/scn/step/core/MintBGMController_802775ac.o \
-$(BUILD_DIR)/asm/src/scn/step/core/MintManager_8027763c.o \
-$(BUILD_DIR)/asm/src/scn/step/core/MoveLimit_802776c8.o \
-$(BUILD_DIR)/asm/src/scn/step/core/PauseManager_802777b0.o \
-$(BUILD_DIR)/asm/src/scn/step/core/PauseTrigger_802779a0.o \
-$(BUILD_DIR)/asm/src/scn/step/core/PermEffect_80277ec4.o \
-$(BUILD_DIR)/asm/src/scn/step/core/PermSoundSE_80278310.o \
-$(BUILD_DIR)/asm/src/scn/step/core/PreLoadReq_802783c4.o \
-$(BUILD_DIR)/asm/src/scn/step/core/SceneChanger_80278514.o \
-$(BUILD_DIR)/asm/src/scn/step/core/Updater_802795f4.o \
 $(BUILD_DIR)/asm/src/scn/step/debug/EnemyKiller_8027a434.o \
 $(BUILD_DIR)/asm/src/scn/step/debug/GeneralDrawer_8027a5d0.o \
 $(BUILD_DIR)/asm/src/scn/step/debug/ObjInfoRepos_8027a9ac.o \
@@ -3005,12 +3006,6 @@ $(BUILD_DIR)/asm/src/util/StateChanger_80405cd0.o \
 $(BUILD_DIR)/asm/src/util/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/util/UIntAABBox_8040603c.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/core/AreaLightInfo_80560d80.o \
-$(BUILD_DIR)/asm/src/scn/step/core/AreaOperation_80560d88.o \
-$(BUILD_DIR)/asm/src/scn/step/core/BGMController_80560d90.o \
-$(BUILD_DIR)/asm/src/scn/step/core/Drawer_80560da0.o \
-$(BUILD_DIR)/asm/src/scn/step/core/G3DRootSet_80560db8.o \
-$(BUILD_DIR)/asm/src/scn/step/core/MoveLimit_80560dc8.o \
 $(BUILD_DIR)/asm/src/scn/step/debug/EnemyKiller_80560dd8.o \
 $(BUILD_DIR)/asm/src/scn/step/debug/GeneralDrawer_80560de0.o \
 $(BUILD_DIR)/asm/src/scn/step/effect/Table_80560de8.o \

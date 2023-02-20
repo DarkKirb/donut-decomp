@@ -63,3 +63,17 @@ reset__Q43scn4step4core9MoveLimitFv:
 /* 802777A4 002735E4  7C 08 03 A6 */	mtlr r0
 /* 802777A8 002735E8  38 21 00 30 */	addi r1, r1, 0x30
 /* 802777AC 002735EC  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@52312_80560DC8"
+"@52312_80560DC8":
+
+	.4byte 0
+	.4byte 0
+
+.global "@52315_80560DD0"
+"@52315_80560DD0":
+
+	.4byte 0x43300000
+	.4byte 0

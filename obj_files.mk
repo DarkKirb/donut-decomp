@@ -1349,13 +1349,14 @@ $(BUILD_DIR)/asm/src/scn/step/boss/dubior/StateThunder.o \
 $(BUILD_DIR)/asm/src/scn/step/boss/dubior/StateThunderStart.o \
 $(BUILD_DIR)/asm/src/scn/step/boss/dubior/StateWait.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/boss/gigantedge/AddOnMint.o \
+$(BUILD_DIR)/asm/src/scn/step/boss/gigantedge/Custom.o \
+$(BUILD_DIR)/asm/src/scn/step/boss/gigantedge/ModelDesc.o \
+$(BUILD_DIR)/asm/src/scn/step/boss/gigantedge/StateGuard.o \
+$(BUILD_DIR)/asm/src/scn/step/boss/gigantedge/StateShot.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/boss/gigantedge/AddOnMint_80250ea0.o \
-$(BUILD_DIR)/asm/src/scn/step/boss/gigantedge/Custom_80251b44.o \
-$(BUILD_DIR)/asm/src/scn/step/boss/gigantedge/ModelDesc_802522b8.o \
-$(BUILD_DIR)/asm/src/scn/step/boss/gigantedge/StateGuard_80252388.o \
-$(BUILD_DIR)/asm/src/scn/step/boss/gigantedge/StateShot_80252658.o \
 $(BUILD_DIR)/asm/src/scn/step/boss/kingsdoo/AddOnMint_80252800.o \
 $(BUILD_DIR)/asm/src/scn/step/boss/kingsdoo/Custom_802534e4.o \
 $(BUILD_DIR)/asm/src/scn/step/boss/kingsdoo/ModelDesc_8025388c.o \
@@ -2994,7 +2995,6 @@ $(BUILD_DIR)/asm/src/util/SIntAABBox_80405b68.o \
 $(BUILD_DIR)/asm/src/util/StateChanger_80405cd0.o \
 $(BUILD_DIR)/asm/src/util/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/util/UIntAABBox_8040603c.o \
-$(BUILD_DIR)/asm/src/scn/step/boss/gigantedge/Custom_80560840.o \
 $(BUILD_DIR)/asm/src/scn/step/boss/kingsdoo/AddOnMint_80560858.o \
 $(BUILD_DIR)/asm/src/scn/step/boss/kingsdoo/Custom_80560860.o \
 $(BUILD_DIR)/asm/src/scn/step/boss/kingsdoo/StateChargeAttack_80560870.o \

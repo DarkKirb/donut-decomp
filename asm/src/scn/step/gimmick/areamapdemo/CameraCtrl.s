@@ -622,3 +622,21 @@ lbl_802FAC40:
 /* 802FACF8 002F6B38  7C 08 03 A6 */	mtlr r0
 /* 802FACFC 002F6B3C  38 21 00 10 */	addi r1, r1, 0x10
 /* 802FAD00 002F6B40  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@54595"
+"@54595":
+
+	.4byte 0
+
+.global "@54619_805625F4"
+"@54619_805625F4":
+
+	.4byte 0x3F800000
+
+.global "@54691_805625F8"
+"@54691_805625F8":
+
+	.4byte 0x3F000000
+	.4byte 0

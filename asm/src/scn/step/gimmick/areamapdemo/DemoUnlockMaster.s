@@ -342,3 +342,21 @@ __vt__Q53scn4step7gimmick11areamapdemo16DemoUnlockMaster:
 	.4byte startDoorUnlockDemo__Q53scn4step7gimmick11areamapdemo16DemoUnlockMasterFv
 	.4byte isDoorUnlockDemoEnd__Q53scn4step7gimmick11areamapdemo16DemoUnlockMasterCFv
 	.4byte unsetZoomAll__Q53scn4step7gimmick11areamapdemo16DemoUnlockMasterFv
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@55199"
+"@55199":
+
+	.4byte 0x3F800000
+
+.global "@55200"
+"@55200":
+
+	.4byte 0
+
+.global "@55203_80562668"
+"@55203_80562668":
+
+	.4byte 0x43300000
+	.4byte 0

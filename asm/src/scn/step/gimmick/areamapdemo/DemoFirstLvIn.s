@@ -368,3 +368,31 @@ __vt__Q53scn4step7gimmick11areamapdemo13DemoFirstLvIn:
 	.4byte startDoorUnlockDemo__Q53scn4step7gimmick11areamapdemo13DemoFirstLvInFv
 	.4byte isDoorUnlockDemoEnd__Q53scn4step7gimmick11areamapdemo13DemoFirstLvInCFv
 	.4byte unsetZoomAll__Q53scn4step7gimmick11areamapdemo13DemoFirstLvInFv
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@55356"
+"@55356":
+
+	.4byte 0
+
+.global "@55377_8056263C"
+"@55377_8056263C":
+
+	.4byte 0x40400000
+
+.global "@55378_80562640"
+"@55378_80562640":
+
+	.4byte 0x40000000
+
+.global "@55469_80562644"
+"@55469_80562644":
+
+	.4byte 0x3F800000
+
+.global "@55472_80562648"
+"@55472_80562648":
+
+	.4byte 0x43300000
+	.4byte 0

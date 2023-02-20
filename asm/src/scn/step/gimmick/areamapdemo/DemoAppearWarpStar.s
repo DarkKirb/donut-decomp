@@ -316,3 +316,25 @@ __vt__Q53scn4step7gimmick11areamapdemo18DemoAppearWarpStar:
 	.4byte startDoorUnlockDemo__Q53scn4step7gimmick11areamapdemo18DemoAppearWarpStarFv
 	.4byte isDoorUnlockDemoEnd__Q53scn4step7gimmick11areamapdemo18DemoAppearWarpStarCFv
 	.4byte unsetZoomAll__Q53scn4step7gimmick11areamapdemo4DemoFv
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@56125_80562618"
+"@56125_80562618":
+
+	.4byte 0
+
+.global "@56141_8056261C"
+"@56141_8056261C":
+
+	.4byte 0x40400000
+
+.global "@56142_80562620"
+"@56142_80562620":
+
+	.4byte 0x40000000
+
+.global "@56183_80562624"
+"@56183_80562624":
+
+	.4byte 0x41380000

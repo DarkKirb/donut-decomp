@@ -2268,20 +2268,21 @@ $(BUILD_DIR)/asm/src/scn/step/gimmick/Util.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/airflow/AirFlow.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/airflow/Manager.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/gimmick/areamapdemo/AddOnMint.o \
+$(BUILD_DIR)/asm/src/scn/step/gimmick/areamapdemo/CameraCtrl.o \
+$(BUILD_DIR)/asm/src/scn/step/gimmick/areamapdemo/Demo.o \
+$(BUILD_DIR)/asm/src/scn/step/gimmick/areamapdemo/DemoAllStageClear.o \
+$(BUILD_DIR)/asm/src/scn/step/gimmick/areamapdemo/DemoAppearWarpStar.o \
+$(BUILD_DIR)/asm/src/scn/step/gimmick/areamapdemo/DemoChangeGrade.o \
+$(BUILD_DIR)/asm/src/scn/step/gimmick/areamapdemo/DemoFirstLvIn.o \
+$(BUILD_DIR)/asm/src/scn/step/gimmick/areamapdemo/DemoFirstPlay.o \
+$(BUILD_DIR)/asm/src/scn/step/gimmick/areamapdemo/DemoUnlockMaster.o \
+$(BUILD_DIR)/asm/src/scn/step/gimmick/areamapdemo/DemoUnlockMasterEx.o \
+$(BUILD_DIR)/asm/src/scn/step/gimmick/areamapdemo/Manager.o \
+$(BUILD_DIR)/asm/src/scn/step/gimmick/areamapdemo/MintDemo.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/areamapdemo/AddOnMint_802f99e4.o \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/areamapdemo/CameraCtrl_802fa448.o \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/areamapdemo/Demo_802fad04.o \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/areamapdemo/DemoAllStageClear_802fae98.o \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/areamapdemo/DemoAppearWarpStar_802fb228.o \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/areamapdemo/DemoChangeGrade_802fb5f4.o \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/areamapdemo/DemoFirstLvIn_802fbf80.o \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/areamapdemo/DemoFirstPlay_802fc3fc.o \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/areamapdemo/DemoUnlockMaster_802fc868.o \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/areamapdemo/DemoUnlockMasterEx_802fcc64.o \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/areamapdemo/Manager_802fcdf8.o \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/areamapdemo/MintDemo_802fdd94.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/arease/AreaSE_802fddb8.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/arease/Manager_802fe0cc.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/arrowboard/ArrowBoard_802fe3a4.o \
@@ -3078,16 +3079,6 @@ $(BUILD_DIR)/asm/src/util/StateChanger_80405cd0.o \
 $(BUILD_DIR)/asm/src/util/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/util/UIntAABBox_8040603c.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/areamapdemo/CameraCtrl_805625f0.o \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/areamapdemo/Demo_80562600.o \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/areamapdemo/DemoAllStageClear_80562608.o \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/areamapdemo/DemoAppearWarpStar_80562618.o \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/areamapdemo/DemoChangeGrade_80562628.o \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/areamapdemo/DemoFirstLvIn_80562638.o \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/areamapdemo/DemoFirstPlay_80562650.o \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/areamapdemo/DemoUnlockMaster_80562660.o \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/areamapdemo/DemoUnlockMasterEx_80562670.o \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/areamapdemo/Manager_80562678.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/arease/AreaSE_80562688.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/arrowboard/ArrowBoard_80562698.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/block/Block_805626a0.o \

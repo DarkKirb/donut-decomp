@@ -2022,26 +2022,27 @@ $(BUILD_DIR)/asm/src/scn/step/enemy/puppetdee/CharaParam.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/puppetdee/Custom.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/puppetdee/ModelDesc.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/enemy/rocky/AddOnMint.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/rocky/BrainCreditFallToGoodbye.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/rocky/BrainMove.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/rocky/BrainWalk.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/rocky/CharaParam.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/rocky/Custom.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/rocky/ModelDesc.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/rocky/StateAttack.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/rocky/StateCliffAttack.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/rocky/StateCliffJump.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/rocky/StateFall.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/rocky/StateJump.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/rocky/StateLanding.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/rocky/StateSlope.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/rocky/StateStay.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/rocky/StateWalk.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/rocky/StateWalkEnd.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/rocky/StateWalkStart.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/enemy/rocky/AddOnMint_802d33f8.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/rocky/BrainCreditFallToGoodbye_802d3610.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/rocky/BrainMove_802d3768.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/rocky/BrainWalk_802d38e0.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/rocky/CharaParam_802d3928.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/rocky/Custom_802d39b0.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/rocky/ModelDesc_802d3a88.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/rocky/StateAttack_802d3b84.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/rocky/StateCliffAttack_802d3de4.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/rocky/StateCliffJump_802d3f58.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/rocky/StateFall_802d4254.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/rocky/StateJump_802d45f8.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/rocky/StateLanding_802d48f4.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/rocky/StateSlope_802d4e40.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/rocky/StateStay_802d524c.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/rocky/StateWalk_802d566c.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/rocky/StateWalkEnd_802d5e48.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/rocky/StateWalkStart_802d5f6c.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/rollball/BrainMove_802d608c.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/rollball/CharaParam_802d6170.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/rollball/Custom_802d6228.o \
@@ -3054,15 +3055,6 @@ $(BUILD_DIR)/asm/src/util/StateChanger_80405cd0.o \
 $(BUILD_DIR)/asm/src/util/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/util/UIntAABBox_8040603c.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/enemy/rocky/StateAttack_80561fe8.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/rocky/StateCliffAttack_80561ff0.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/rocky/StateFall_80561ff8.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/rocky/StateLanding_80562000.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/rocky/StateSlope_80562010.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/rocky/StateStay_80562018.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/rocky/StateWalk_80562020.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/rocky/StateWalkEnd_80562030.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/rocky/StateWalkStart_80562038.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/rollball/CharaParam_80562040.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/rollball/Custom_80562050.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/rollball/StateMove_80562060.o \

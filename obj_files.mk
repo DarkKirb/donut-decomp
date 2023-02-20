@@ -1714,19 +1714,20 @@ $(BUILD_DIR)/asm/src/scn/step/enemy/cerulean/CharaParam.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/cerulean/ModelDesc.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/cerulean/StateFly.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/enemy/chilly/AddOnMint.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/chilly/BrainCreditWalkToPraise.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/chilly/BrainMove.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/chilly/BrainWait.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/chilly/CharaParam.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/chilly/Custom.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/chilly/ModelDesc.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/chilly/StateAttack.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/chilly/StateCreditMove.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/chilly/StateLookAround.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/chilly/StateMove.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/enemy/chilly/AddOnMint_802a5c7c.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/chilly/BrainCreditWalkToPraise_802a5f98.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/chilly/BrainMove_802a605c.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/chilly/BrainWait_802a6120.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/chilly/CharaParam_802a61e4.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/chilly/Custom_802a626c.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/chilly/ModelDesc_802a62e4.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/chilly/StateAttack_802a63d8.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/chilly/StateCreditMove_802a6610.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/chilly/StateLookAround_802a6884.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/chilly/StateMove_802a68f0.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/como/AddOnMint_802a6bd0.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/como/BrainDive_802a6c88.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/como/BrainHang_802a6f18.o \
@@ -3023,8 +3024,6 @@ $(BUILD_DIR)/asm/src/util/StateChanger_80405cd0.o \
 $(BUILD_DIR)/asm/src/util/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/util/UIntAABBox_8040603c.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/enemy/chilly/StateCreditMove_80561530.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/chilly/StateMove_80561548.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/como/BrainDive_80561560.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/como/BrainHang_80561568.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/como/CharaParam_80561570.o \

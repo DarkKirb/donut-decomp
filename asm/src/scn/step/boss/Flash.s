@@ -256,3 +256,11 @@ attack__Q43scn4step4boss5FlashFv:
 custom__Q43scn4step4boss5FlashFv:
 /* 8022FB70 0022B9B0  38 63 00 68 */	addi r3, r3, 0x68
 /* 8022FB74 0022B9B4  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@55122"
+"@55122":
+
+	.4byte 0xFFFFFF00
+	.4byte 0

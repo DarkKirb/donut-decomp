@@ -28,3 +28,15 @@ lbl_802304F8:
 /* 80230500 0022C340  7C 04 00 AE */	lbzx r0, r4, r0
 /* 80230504 0022C344  98 03 00 03 */	stb r0, 0x3(r3)
 /* 80230508 0022C348  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "T_ALPHA_TABLE__Q43scn4step4boss24@unnamed@GuardFlash_cpp@"
+"T_ALPHA_TABLE__Q43scn4step4boss24@unnamed@GuardFlash_cpp@":
+
+	.4byte 0x00006464
+
+.global "@49319_80560344"
+"@49319_80560344":
+
+	.4byte 0xC0C0C000

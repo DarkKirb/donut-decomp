@@ -80,3 +80,11 @@ setChangeBrain__Q43scn4step4boss5AngryFPCc:
 /* 80228FC8 00224E08  38 63 00 0D */	addi r3, r3, 0xd
 /* 80228FCC 00224E0C  38 A0 00 80 */	li r5, 0x80
 /* 80228FD0 00224E10  4B F7 49 EC */	b "Strncpy__Q33hel6common9Traits<c>FPcPCcUl"
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@52593_80560260"
+"@52593_80560260":
+
+	.4byte 0x3F000000
+	.4byte 0

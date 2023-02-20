@@ -105,3 +105,11 @@ lbl_80230D28:
 /* 80230D30 0022CB70  7C 08 03 A6 */	mtlr r0
 /* 80230D34 0022CB74  38 21 00 10 */	addi r1, r1, 0x10
 /* 80230D38 0022CB78  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@50018"
+"@50018":
+
+	.4byte 0xFFFFFF00
+	.4byte 0

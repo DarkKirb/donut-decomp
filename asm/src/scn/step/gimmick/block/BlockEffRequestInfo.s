@@ -206,3 +206,15 @@ __ct__Q63scn4step7gimmick5block19BlockEffRequestInfo4InfoFUlfRCQ33hel4math4Vec3U
 /* 803006F4 002FC534  7C 08 03 A6 */	mtlr r0
 /* 803006F8 002FC538  38 21 00 20 */	addi r1, r1, 0x20
 /* 803006FC 002FC53C  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@50372_805626B0"
+"@50372_805626B0":
+
+	.4byte 0x3F800000
+
+.global "@50373_805626B4"
+"@50373_805626B4":
+
+	.4byte 0

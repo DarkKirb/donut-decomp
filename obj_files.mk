@@ -2287,14 +2287,15 @@ $(BUILD_DIR)/asm/src/scn/step/gimmick/arease/Manager.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/arrowboard/ArrowBoard.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/arrowboard/Manager.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/gimmick/block/Block.o \
+$(BUILD_DIR)/asm/src/scn/step/gimmick/block/BlockAttackResult.o \
+$(BUILD_DIR)/asm/src/scn/step/gimmick/block/BlockEffRequestInfo.o \
+$(BUILD_DIR)/asm/src/scn/step/gimmick/block/BlockInfo.o \
+$(BUILD_DIR)/asm/src/scn/step/gimmick/block/BlockManager.o \
+$(BUILD_DIR)/asm/src/scn/step/gimmick/block/BlockResFiles.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/block/Block_802fee98.o \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/block/BlockAttackResult_80300234.o \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/block/BlockEffRequestInfo_8030041c.o \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/block/BlockInfo_80300700.o \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/block/BlockManager_80300760.o \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/block/BlockResFiles_80302c38.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/cameralock/CameraLock_80302e64.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/cameralock/Manager_80303404.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/cameralock/VariationDemo_8030378c.o \
@@ -3081,10 +3082,6 @@ $(BUILD_DIR)/asm/src/util/StateChanger_80405cd0.o \
 $(BUILD_DIR)/asm/src/util/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/util/UIntAABBox_8040603c.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/block/Block_805626a0.o \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/block/BlockEffRequestInfo_805626b0.o \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/block/BlockManager_805626b8.o \
-$(BUILD_DIR)/asm/src/scn/step/gimmick/block/BlockResFiles_805626f8.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/cameralock/VariationDemo_80562700.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/cameralock/VariationDownside_80562730.o \
 $(BUILD_DIR)/asm/src/scn/step/gimmick/cameralock/VariationLoose_80562738.o \

@@ -41,3 +41,11 @@ lbl_802F07DC:
 /* 802F07F8 002EC638  7C 08 03 A6 */	mtlr r0
 /* 802F07FC 002EC63C  38 21 00 B0 */	addi r1, r1, 0xb0
 /* 802F0800 002EC640  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@48778_80562538"
+"@48778_80562538":
+
+	.4byte 0x41F00000
+	.4byte 0

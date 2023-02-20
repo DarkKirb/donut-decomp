@@ -2228,13 +2228,14 @@ $(BUILD_DIR)/asm/src/scn/step/enemy/watergalbo/CharaParam.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/watergalbo/ModelDesc.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/watergalbo/StateAttack.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/enemy/whippy/AddOnMint.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/whippy/BrainAttack.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/whippy/CharaParam.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/whippy/ModelDesc.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/whippy/StateAttack.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/enemy/whippy/AddOnMint_802f0680.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/whippy/BrainAttack_802f0738.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/whippy/CharaParam_802f077c.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/whippy/ModelDesc_802f0804.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/whippy/StateAttack_802f08e4.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/whispyapple/CharaParam_802f0c94.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/whispyapple/Custom_802f0d40.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/whispyapple/ModelDesc_802f10a8.o \
@@ -3073,8 +3074,6 @@ $(BUILD_DIR)/asm/src/util/StateChanger_80405cd0.o \
 $(BUILD_DIR)/asm/src/util/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/util/UIntAABBox_8040603c.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/enemy/whippy/CharaParam_80562538.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/whippy/StateAttack_80562540.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/whispyapple/CharaParam_80562550.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/whispyapple/Custom_80562558.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/whispyapple/StateBound1_80562570.o \

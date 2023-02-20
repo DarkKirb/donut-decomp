@@ -2895,23 +2895,25 @@ $(BUILD_DIR)/asm/src/scn/step/item/state/StateRoah.o \
 $(BUILD_DIR)/asm/src/scn/step/item/state/StateVacuumReceive.o \
 $(BUILD_DIR)/asm/src/scn/step/item/state/StateWaft.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/map/BinCarryItemKindUtil.o \
+$(BUILD_DIR)/asm/src/scn/step/map/BinDecorationKindUtil.o \
+$(BUILD_DIR)/asm/src/scn/step/map/BinMaproPos.o \
+$(BUILD_DIR)/asm/src/scn/step/map/BinMaproRect.o \
+$(BUILD_DIR)/asm/src/scn/step/map/BossDataAccessor.o \
+$(BUILD_DIR)/asm/src/scn/step/map/Constant.o \
+$(BUILD_DIR)/asm/src/scn/step/map/DataAccessor.o \
+$(BUILD_DIR)/asm/src/scn/step/map/DataFile.o \
+$(BUILD_DIR)/asm/src/scn/step/map/DecorationDataAccessor.o \
+$(BUILD_DIR)/asm/src/scn/step/map/EnemyDataAccessor.o \
+$(BUILD_DIR)/asm/src/scn/step/map/GimmickDataAccessor.o \
+$(BUILD_DIR)/asm/src/scn/step/map/ItemDataAccessor.o \
+$(BUILD_DIR)/asm/src/scn/step/map/KindUtil.o \
+$(BUILD_DIR)/asm/src/scn/step/map/LandManager.o \
+$(BUILD_DIR)/asm/src/scn/step/map/MemManager.o \
+$(BUILD_DIR)/asm/src/scn/step/map/MoveGroupAccessor.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/map/BinCarryItemKindUtil_803c8e48.o \
-$(BUILD_DIR)/asm/src/scn/step/map/BinDecorationKindUtil_803c8e5c.o \
-$(BUILD_DIR)/asm/src/scn/step/map/BinMaproPos_803c8fdc.o \
-$(BUILD_DIR)/asm/src/scn/step/map/BinMaproRect_803c9018.o \
-$(BUILD_DIR)/asm/src/scn/step/map/BossDataAccessor_803c9030.o \
-$(BUILD_DIR)/asm/src/scn/step/map/DataAccessor_803c9050.o \
-$(BUILD_DIR)/asm/src/scn/step/map/DataFile_803c9a3c.o \
-$(BUILD_DIR)/asm/src/scn/step/map/DecorationDataAccessor_803c9bd8.o \
-$(BUILD_DIR)/asm/src/scn/step/map/EnemyDataAccessor_803c9d34.o \
-$(BUILD_DIR)/asm/src/scn/step/map/GimmickDataAccessor_803c9d48.o \
-$(BUILD_DIR)/asm/src/scn/step/map/ItemDataAccessor_803ca19c.o \
-$(BUILD_DIR)/asm/src/scn/step/map/KindUtil_803ca1b0.o \
-$(BUILD_DIR)/asm/src/scn/step/map/LandManager_803ca68c.o \
-$(BUILD_DIR)/asm/src/scn/step/map/MemManager_803ca710.o \
-$(BUILD_DIR)/asm/src/scn/step/map/MoveGroupAccessor_803ca780.o \
 $(BUILD_DIR)/asm/src/scn/step/ocoll/AddOnMint_803ca898.o \
 $(BUILD_DIR)/asm/src/scn/step/ocoll/ManagerCreator_803caae4.o \
 $(BUILD_DIR)/asm/src/scn/step/ocoll/MintOCollManager_803cab98.o \
@@ -3141,8 +3143,6 @@ $(BUILD_DIR)/asm/src/util/StateChanger_80405cd0.o \
 $(BUILD_DIR)/asm/src/util/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/util/UIntAABBox_8040603c.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/map/Constant_80563b20.o \
-$(BUILD_DIR)/asm/src/scn/step/map/DataAccessor_80563b28.o \
 $(BUILD_DIR)/asm/src/scn/step/ogen/Generator_80563b30.o \
 $(BUILD_DIR)/asm/src/scn/step/ogen/Manager_80563b58.o \
 $(BUILD_DIR)/asm/src/scn/step/sfx/AbilityGetFade_80563b60.o \

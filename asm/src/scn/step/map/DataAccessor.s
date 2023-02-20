@@ -726,3 +726,11 @@ comebackPortalNo__Q43scn4step3map12DataAccessorCFv:
 header__Q43scn4step3map12DataAccessorCFv:
 /* 803C9A34 003C5874  80 63 00 00 */	lwz r3, 0x0(r3)
 /* 803C9A38 003C5878  4B DF 71 DC */	b header__Q24mint13ScriptArchiveCFv
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@53264_80563B28"
+"@53264_80563B28":
+
+	.4byte 0x3C8EFA35
+	.4byte 0

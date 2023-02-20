@@ -117,3 +117,37 @@ viewMtx__Q33scn9grandmenu6CameraFv:
 /* 803F2CB8 003EEAF8  7C 08 03 A6 */	mtlr r0
 /* 803F2CBC 003EEAFC  38 21 00 40 */	addi r1, r1, 0x40
 /* 803F2CC0 003EEB00  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@51509"
+"@51509":
+
+	.4byte 0x42480000
+
+.global "@51510"
+"@51510":
+
+	.4byte 0x3FB40000
+
+.global "@51513"
+"@51513":
+
+	.4byte 0x43300000
+	.4byte 0
+
+.global "@51526_80564200"
+"@51526_80564200":
+
+	.4byte 0x3F800000
+
+.global "@51528_80564204"
+"@51528_80564204":
+
+	.4byte 0x447A0000
+
+.global "@51536_80564208"
+"@51536_80564208":
+
+	.4byte 0
+	.4byte 0

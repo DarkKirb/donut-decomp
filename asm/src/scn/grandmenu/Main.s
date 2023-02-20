@@ -420,3 +420,15 @@ lbl_803F3F7C:
 /* 803F3F84 003EFDC4  7C 08 03 A6 */	mtlr r0
 /* 803F3F88 003EFDC8  38 21 00 10 */	addi r1, r1, 0x10
 /* 803F3F8C 003EFDCC  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@54093"
+"@54093":
+
+	.4byte 0
+
+.global "@54094_8056422C"
+"@54094_8056422C":
+
+	.4byte 0x3F800000

@@ -215,3 +215,15 @@ drawLYT__Q33scn9grandmenu13EffectManagerFv:
 /* 803F362C 003EF46C  7C 08 03 A6 */	mtlr r0
 /* 803F3630 003EF470  38 21 00 E0 */	addi r1, r1, 0xe0
 /* 803F3634 003EF474  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@53185"
+"@53185":
+
+	.4byte 0x3DCCCCCD
+
+.global "@53186"
+"@53186":
+
+	.4byte 0x447A0000

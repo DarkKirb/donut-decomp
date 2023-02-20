@@ -3110,22 +3110,23 @@ $(BUILD_DIR)/asm/src/scn/vc/Loader.o \
 $(BUILD_DIR)/asm/src/scn/vc/Main.o \
 $(BUILD_DIR)/asm/src/scn/vc/SceneVC.o \
 \
+$(BUILD_DIR)/asm/src/scn/grandmenu/Camera.o \
+$(BUILD_DIR)/asm/src/scn/grandmenu/CameraSet.o \
+$(BUILD_DIR)/asm/src/scn/grandmenu/Component.o \
+$(BUILD_DIR)/asm/src/scn/grandmenu/EffectManager.o \
+$(BUILD_DIR)/asm/src/scn/grandmenu/G3DRootSet.o \
+$(BUILD_DIR)/asm/src/scn/grandmenu/Main.o \
+$(BUILD_DIR)/asm/src/scn/grandmenu/SceneGrandMenu.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/grandmenu/Camera_803f2b1c.o \
-$(BUILD_DIR)/asm/src/scn/grandmenu/CameraSet_803f2cc4.o \
-$(BUILD_DIR)/asm/src/scn/grandmenu/Component_803f2e80.o \
-$(BUILD_DIR)/asm/src/scn/grandmenu/EffectManager_803f3308.o \
-$(BUILD_DIR)/asm/src/scn/grandmenu/G3DRootSet_803f3638.o \
-$(BUILD_DIR)/asm/src/scn/grandmenu/Main_803f39f4.o \
-$(BUILD_DIR)/asm/src/scn/grandmenu/SceneGrandMenu_803f3f90.o \
 $(BUILD_DIR)/asm/src/scn/grandmenu/effect/Table_803f454c.o \
 $(BUILD_DIR)/asm/src/scn/grandmenu/menu/BackButton_803f4608.o \
 $(BUILD_DIR)/asm/src/scn/grandmenu/menu/BG_803f49f8.o \
 $(BUILD_DIR)/asm/src/scn/grandmenu/menu/Curtain_803f4b24.o \
 $(BUILD_DIR)/asm/src/scn/grandmenu/menu/Explanation_803f4df4.o \
-$(BUILD_DIR)/asm/src/scn/grandmenu/Input_803f54b0.o \
-$(BUILD_DIR)/asm/src/scn/grandmenu/Item_803f5b24.o \
+$(BUILD_DIR)/asm/src/scn/grandmenu/menu/Input_803f54b0.o \
+$(BUILD_DIR)/asm/src/scn/grandmenu/menu/Item_803f5b24.o \
 $(BUILD_DIR)/asm/src/scn/grandmenu/menu/Menu_803f6188.o \
 $(BUILD_DIR)/asm/src/scn/grandmenu/menu/PlayerWindow_803f7ba0.o \
 $(BUILD_DIR)/asm/src/scn/staffcredit/AddOnMint_803f7fc8.o \
@@ -3187,11 +3188,6 @@ $(BUILD_DIR)/asm/src/util/StateChanger_80405cd0.o \
 $(BUILD_DIR)/asm/src/util/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/util/UIntAABBox_8040603c.o \
 \
-$(BUILD_DIR)/asm/src/scn/grandmenu/Camera_805641f0.o \
-$(BUILD_DIR)/asm/src/scn/grandmenu/CameraSet_80564210.o \
-$(BUILD_DIR)/asm/src/scn/grandmenu/Component_80564218.o \
-$(BUILD_DIR)/asm/src/scn/grandmenu/EffectManager_80564220.o \
-$(BUILD_DIR)/asm/src/scn/grandmenu/Main_80564228.o \
 $(BUILD_DIR)/asm/src/scn/grandmenu/effect/Table_80564230.o \
 $(BUILD_DIR)/asm/src/scn/grandmenu/menu/Menu_80564240.o \
 $(BUILD_DIR)/asm/src/scn/staffcredit/BgManager_80564248.o \

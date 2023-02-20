@@ -130,3 +130,15 @@ camera__Q33scn9grandmenu9CameraSetFQ33scn9grandmenu13DrawLayerKind:
 /* 803F2E74 003EECB4  7C 08 03 A6 */	mtlr r0
 /* 803F2E78 003EECB8  38 21 00 10 */	addi r1, r1, 0x10
 /* 803F2E7C 003EECBC  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@51461"
+"@51461":
+
+	.4byte 0x41700000
+
+.global "@51462"
+"@51462":
+
+	.4byte 0x40E00000

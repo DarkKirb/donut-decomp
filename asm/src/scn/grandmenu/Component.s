@@ -323,3 +323,15 @@ lbl_803F32EC:
 /* 803F32FC 003EF13C  7C 08 03 A6 */	mtlr r0
 /* 803F3300 003EF140  38 21 00 10 */	addi r1, r1, 0x10
 /* 803F3304 003EF144  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@52815_80564218"
+"@52815_80564218":
+
+	.4byte 0xFFFFFFFF
+
+.global "@52819_8056421C"
+"@52819_8056421C":
+
+	.4byte 0xFFFFFFFF

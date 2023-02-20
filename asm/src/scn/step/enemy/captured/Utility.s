@@ -247,3 +247,15 @@ ConstraintPos__Q53scn4step5enemy8captured7UtilityFPQ43scn4step5enemy5Enemyf:
 /* 802A5404 002A1244  7C 08 03 A6 */	mtlr r0
 /* 802A5408 002A1248  38 21 00 A0 */	addi r1, r1, 0xa0
 /* 802A540C 002A124C  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@56724_80561518"
+"@56724_80561518":
+
+	.4byte 0
+
+.global "@56725_8056151C"
+"@56725_8056151C":
+
+	.4byte 0xBF000000

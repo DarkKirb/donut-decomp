@@ -1896,3 +1896,25 @@ setVacuumedPri__Q43scn4step6vacuum8AttackerFUl:
 vacuumedPri__Q43scn4step6vacuum8AttackerCFv:
 /* 803D2750 003CE590  80 63 09 44 */	lwz r3, 0x944(r3)
 /* 803D2754 003CE594  4E 80 00 20 */	blr
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@54544_80563CD0"
+"@54544_80563CD0":
+
+	.4byte 0
+
+.global "@55010"
+"@55010":
+
+	.4byte 0x3F400000
+
+.global "@55011"
+"@55011":
+
+	.4byte 0xBF400000
+
+.global "@55012"
+"@55012":
+
+	.4byte 0xBFC00000

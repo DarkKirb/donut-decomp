@@ -2945,16 +2945,17 @@ $(BUILD_DIR)/asm/src/scn/step/sfx/SuperBackPicture.o \
 $(BUILD_DIR)/asm/src/scn/step/sfx/SuperFade.o \
 $(BUILD_DIR)/asm/src/scn/step/sfx/Wipe.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/spstop/Manager_803d0b9c.o \
+$(BUILD_DIR)/asm/src/scn/step/spstop/Manager.o \
+\
+$(BUILD_DIR)/asm/src/scn/step/vacuum/AddOnMint.o \
+$(BUILD_DIR)/asm/src/scn/step/vacuum/Attacker.o \
+$(BUILD_DIR)/asm/src/scn/step/vacuum/Manager.o \
+$(BUILD_DIR)/asm/src/scn/step/vacuum/MintAttacker.o \
+$(BUILD_DIR)/asm/src/scn/step/vacuum/ReceiverBase.o \
+$(BUILD_DIR)/asm/src/scn/step/vacuum/Utility.o \
 \
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/vacuum/AddOnMint_803d0e90.o \
-$(BUILD_DIR)/asm/src/scn/step/vacuum/Attacker_803d0f4c.o \
-$(BUILD_DIR)/asm/src/scn/step/vacuum/Manager_803d2758.o \
-$(BUILD_DIR)/asm/src/scn/step/vacuum/MintAttacker_803d3098.o \
-$(BUILD_DIR)/asm/src/scn/step/vacuum/ReceiverBase_803d30bc.o \
-$(BUILD_DIR)/asm/src/scn/step/vacuum/Utility_803d342c.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/CameraTarget_803d36b0.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/CustomBase_803d3750.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/CustomFactory_803d37e0.o \
@@ -3148,8 +3149,6 @@ $(BUILD_DIR)/asm/src/util/StateChanger_80405cd0.o \
 $(BUILD_DIR)/asm/src/util/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/util/UIntAABBox_8040603c.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/vacuum/Attacker_80563cd0.o \
-$(BUILD_DIR)/asm/src/scn/step/vacuum/Manager_80563ce0.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/Utility_80563ce8.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/CameraTarget_80563d00.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/MapColl_80563d08.o \

@@ -2665,9 +2665,10 @@ $(BUILD_DIR)/asm/src/scn/step/hero/captured/StateCapturedWhispyVomit.o \
 $(BUILD_DIR)/asm/src/scn/step/hero/captured/StateCapturedWhispyVomitBound.o \
 $(BUILD_DIR)/asm/src/scn/step/hero/captured/StateCapturedWhispyVomitSoft.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/hero/mix/ShuffleManager.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/hero/mix/ShuffleManager_80385aa4.o \
 $(BUILD_DIR)/asm/src/scn/step/hero/sword/StateSwordAirSpin_803862ac.o \
 $(BUILD_DIR)/asm/src/scn/step/hero/sword/StateSwordAttack_8038669c.o \
 $(BUILD_DIR)/asm/src/scn/step/hero/sword/StateSwordAttackFinish_80386c08.o \

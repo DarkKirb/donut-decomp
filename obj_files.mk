@@ -3061,10 +3061,11 @@ $(BUILD_DIR)/asm/src/scn/step/weapon/jucklecutter/StateMain.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/tsukikageshuriken/ModelDesc.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/tsukikageshuriken/StateMain.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/weapon/whispyroot/ModelDesc.o \
+$(BUILD_DIR)/asm/src/scn/step/weapon/whispyroot/StateMain.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/weapon/whispyroot/ModelDesc_803ea768.o \
-$(BUILD_DIR)/asm/src/scn/step/weapon/whispyroot/StateMain_803ea864.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/combinationairball/ModelDesc_803eacac.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/combinationairball/StateMain_803eadc8.o \
 $(BUILD_DIR)/asm/src/scn/step/weapon/combinationdededebomber/StateExplosion_803eb86c.o \

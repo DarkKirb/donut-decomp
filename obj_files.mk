@@ -1161,10 +1161,11 @@ $(BUILD_DIR)/asm/src/scn/history/effect/Table.o \
 \
 $(BUILD_DIR)/asm/src/scn/init/SceneInit.o \
 \
+$(BUILD_DIR)/asm/src/scn/packagelist/Main.o \
+$(BUILD_DIR)/asm/src/scn/packagelist/ScenePackageList.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/packagelist/Main_8021c05c.o \
-$(BUILD_DIR)/asm/src/scn/packagelist/ScenePackageList_8021c954.o \
 $(BUILD_DIR)/asm/src/scn/step/AddOnMint_8021ccc8.o \
 $(BUILD_DIR)/asm/src/scn/step/ChallengeKindUtil_8021cd3c.o \
 $(BUILD_DIR)/asm/src/scn/step/Component_8021d0d4.o \

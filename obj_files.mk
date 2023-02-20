@@ -1639,22 +1639,23 @@ $(BUILD_DIR)/asm/src/scn/step/enemy/bonkersbomb/ModelDesc.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/bonkersbomb/StateLanding.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/bonkersbomb/StateShot.o \
 \
+$(BUILD_DIR)/asm/src/scn/step/enemy/bouncy/AddOnMint.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/bouncy/BrainCreditPraise.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/bouncy/BrainGrandLowper.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/bouncy/BrainMove.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/bouncy/BrainWait.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/bouncy/CharaParam.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/bouncy/Custom.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/bouncy/ModelDesc.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/bouncy/StateGrandLowperAppear.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/bouncy/StateGrandLowperEscape.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/bouncy/StateGrandLowperEscapeStart.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/bouncy/StateJump.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/bouncy/StateLanding.o \
+$(BUILD_DIR)/asm/src/scn/step/enemy/bouncy/StatePraise.o \
+\
 $(BUILD_DIR)/asm/Linker/Generated/Symbol/File.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/enemy/bouncy/AddOnMint_8029c848.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/bouncy/BrainCreditPraise_8029cb40.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/bouncy/BrainGrandLowper_8029cc0c.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/bouncy/BrainMove_8029cdd4.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/bouncy/BrainWait_8029cf40.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/bouncy/CharaParam_8029d098.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/bouncy/Custom_8029d118.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/bouncy/ModelDesc_8029d1d4.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/bouncy/StateGrandLowperAppear_8029d2b8.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/bouncy/StateGrandLowperEscape_8029d510.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/bouncy/StateGrandLowperEscapeStart_8029d75c.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/bouncy/StateJump_8029d890.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/bouncy/StateLanding_8029dbe4.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/bouncy/StatePraise_8029dc4c.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/bowby/AddOnMint_8029dfdc.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/bowby/BrainFly_8029e244.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/bowby/CharaParam_8029e30c.o \
@@ -3015,10 +3016,6 @@ $(BUILD_DIR)/asm/src/util/StateChanger_80405cd0.o \
 $(BUILD_DIR)/asm/src/util/Thread_80405f14.o \
 $(BUILD_DIR)/asm/src/util/UIntAABBox_8040603c.o \
 \
-$(BUILD_DIR)/asm/src/scn/step/enemy/bouncy/Custom_80561328.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/bouncy/StateGrandLowperAppear_80561330.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/bouncy/StateJump_80561340.o \
-$(BUILD_DIR)/asm/src/scn/step/enemy/bouncy/StatePraise_80561348.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/bowby/CharaParam_80561350.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/bowby/Custom_80561358.o \
 $(BUILD_DIR)/asm/src/scn/step/enemy/bowby/StateAttack_80561380.o \

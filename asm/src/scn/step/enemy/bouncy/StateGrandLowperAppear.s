@@ -185,3 +185,25 @@ __vt__Q53scn4step5enemy6bouncy22StateGrandLowperAppear:
 	.4byte procConstraint__Q43scn4step5enemy9StateBaseFv
 	.4byte procFixPos__Q53scn4step5enemy6bouncy22StateGrandLowperAppearFv
 	.4byte procObjCollReact__Q43scn4step5enemy9StateBaseFv
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@56493_80561330"
+"@56493_80561330":
+
+	.4byte 0x44340000
+
+.global "@56494_80561334"
+"@56494_80561334":
+
+	.4byte 0x3F800000
+
+.global "@56495_80561338"
+"@56495_80561338":
+
+	.4byte 0x42B40000
+
+.global "@56496_8056133C"
+"@56496_8056133C":
+
+	.4byte 0

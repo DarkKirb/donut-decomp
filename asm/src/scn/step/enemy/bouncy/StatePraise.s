@@ -273,3 +273,11 @@ __vt__Q53scn4step5enemy6bouncy11StatePraise:
 	.4byte procConstraint__Q43scn4step5enemy9StateBaseFv
 	.4byte procFixPos__Q53scn4step5enemy6bouncy11StatePraiseFv
 	.4byte procObjCollReact__Q43scn4step5enemy9StateBaseFv
+.include "macros.inc"
+
+.section .sdata2, "wa"  # 0x8055DF80 - 0x805643C0 ; 0x00006440
+.global "@56661_80561348"
+"@56661_80561348":
+
+	.4byte 0x3E23D70A
+	.4byte 0

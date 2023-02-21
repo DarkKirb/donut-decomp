@@ -1632,6 +1632,7 @@ lbl_8001B794:
 .include "macros.inc"
 
 .section .data, "wa"  # 0x80421040 - 0x80496700 ; 0x000756C0
+.align 3
 .global "@1_80421DD8"
 "@1_80421DD8":
 

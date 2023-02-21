@@ -108,6 +108,7 @@ $(BUILD_DIR)/asm/TRK_Hollywood_Revolution/targimpl.o \
 $(BUILD_DIR)/asm/TRK_Hollywood_Revolution/target_options.o \
 \
 $(BUILD_DIR)/src/base/PPCArch.o \
+$(BUILD_DIR)/src/base/PPCPm.o \
 \
 $(BUILD_DIR)/asm/os/OS.o \
 $(BUILD_DIR)/asm/os/OSAlarm.o \
